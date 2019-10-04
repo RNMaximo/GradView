@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="gde_pacote.sql" id="Project_3cf1f2f" template="Default" database="MySql" >
+	<schema name="Default" schemaname="Default" >
+		<table name="colaboracao_oferecimentos" >
+			<column name="id_colaboracao" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_oferecimento" type="int" length="10" jt="4" unsigned="y" />
+			<column name="id_usuario" type="int" length="10" jt="4" unsigned="y" />
+			<column name="campo" type="varchar" length="255" jt="12" mandatory="y" />
+			<column name="valor" type="varchar" length="255" jt="12" mandatory="y" />
+			<column name="status" type="varchar" length="1" jt="12" mandatory="y" />
+			<column name="data" type="datetime" jt="93" mandatory="y" />
+			<fk name="FK_8C04BEE5E7CB0C91" to_schema="Default" to_table="oferecimentos" >
+				<fk_column name="id_oferecimento" pk="id_oferecimento" />
+			</fk>
+			<fk name="FK_8C04BEE5FCF8192D" to_schema="Default" to_table="usuarios" >
+				<fk_column name="id_usuario" pk="id_usuario" />
+			</fk>
+		</table>
+		<table name="colaboracao_professores" >
+			<column name="id_colaboracao" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_professor" type="int" length="10" jt="4" unsigned="y" />
+			<column name="id_usuario" type="int" length="10" jt="4" unsigned="y" />
+			<column name="campo" type="varchar" length="255" jt="12" mandatory="y" />
+			<column name="valor" type="varchar" length="255" jt="12" mandatory="y" />
+			<column name="status" type="varchar" length="1" jt="12" mandatory="y" />
+			<column name="data" type="datetime" jt="93" mandatory="y" />
+			<fk name="FK_33C5B99FF9386BC4" to_schema="Default" to_table="professores" >
+				<fk_column name="id_professor" pk="id_professor" />
+			</fk>
+			<fk name="FK_33C5B99FFCF8192D" to_schema="Default" to_table="usuarios" >
+				<fk_column name="id_usuario" pk="id_usuario" />
+			</fk>
+		</table>
+		<table name="curriculos" >
+			<column name="id_curriculo" type="int" length="11" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_curso" type="int" length="10" jt="4" unsigned="y" />
+			<column name="id_modalidade" type="int" length="10" jt="4" unsigned="y" />
+			<column name="catalogo" type="smallint" length="6" jt="5" mandatory="y" />
+			<column name="sigla" type="varchar" length="5" jt="12" mandatory="y" />
+			<column name="semestre" type="smallint" length="5" jt="5" mandatory="y" unsigned="y" />
+			<fk name="FK_7F1CD61124BE01DC" to_schema="Default" to_table="cursos" >
+				<fk_column name="id_curso" pk="id_curso" />
+			</fk>
+			<fk name="FK_7F1CD611B2AFE02E" to_schema="Default" to_table="modalidades" >
+				<fk_column name="id_modalidade" pk="id_modalidade" />
+			</fk>
+		</table>
+		<table name="curriculos_eletivas" >
+			<column name="id_eletivas" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_curso" type="int" length="10" jt="4" unsigned="y" />
+			<column name="id_modalidade" type="int" length="10" jt="4" unsigned="y" />
+			<column name="catalogo" type="smallint" length="5" jt="5" mandatory="y" unsigned="y" />
+			<column name="creditos" type="smallint" length="5" jt="5" mandatory="y" unsigned="y" />
+			<fk name="FK_49EF7CAD24BE01DC" to_schema="Default" to_table="cursos" >
+				<fk_column name="id_curso" pk="id_curso" />
+			</fk>
+			<fk name="FK_49EF7CADB2AFE02E" to_schema="Default" to_table="modalidades" >
+				<fk_column name="id_modalidade" pk="id_modalidade" />
+			</fk>
+		</table>
+		<table name="curriculos_eletivas_conjuntos" >
+			<column name="id" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_eletivas" type="int" length="10" jt="4" unsigned="y" />
+			<column name="sigla" type="varchar" length="5" jt="12" mandatory="y" />
+			<fk name="FK_E65E6F6B1637B55F" to_schema="Default" to_table="curriculos_eletivas" >
+				<fk_column name="id_eletivas" pk="id_eletivas" />
+			</fk>
+		</table>
+		<table name="cursos" >
+			<column name="id_curso" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="numero" type="smallint" length="6" jt="5" mandatory="y" />
+			<column name="nivel" type="varchar" length="1" jt="12" mandatory="y" />
+			<column name="nome" type="varchar" length="255" jt="12" />
+		</table>
+		<table name="disciplinas" >
+			<column name="id_disciplina" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="sigla" type="varchar" length="5" jt="12" mandatory="y" />
+			<column name="nome" type="varchar" length="255" jt="12" />
+			<column name="creditos" type="smallint" length="5" jt="5" unsigned="y" />
+			<column name="nivel" type="varchar" length="1" jt="12" />
+			<column name="periodicidade" type="smallint" length="6" jt="5" />
+			<column name="parte" type="smallint" length="6" jt="5" mandatory="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<column name="ementa" type="text" jt="-1" />
+			<column name="bibliografia" type="text" jt="-1" />
+			<column name="quinzenal" type="tinyint" length="1" jt="-6" mandatory="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<column name="id_instituto" type="int" length="10" jt="4" unsigned="y" />
+			<column name="cursacoes" type="int" length="10" jt="4" mandatory="y" unsigned="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<column name="reprovacoes" type="int" length="10" jt="4" mandatory="y" unsigned="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<column name="max_reprovacoes" type="int" length="10" jt="4" mandatory="y" unsigned="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<fk name="FK_6458CD2CAAB5E0E9" to_schema="Default" to_table="institutos" >
+				<fk_column name="id_instituto" pk="id_instituto" />
+			</fk>
+		</table>
+		<table name="equivalencias" >
+			<column name="id_equivalencia" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_disciplina" type="int" length="10" jt="4" unsigned="y" />
+			<fk name="FK_FD0532AD759AAF1" to_schema="Default" to_table="disciplinas" >
+				<fk_column name="id_disciplina" pk="id_disciplina" />
+			</fk>
+		</table>
+		<table name="equivalencias_equivalentes" >
+			<column name="id_equivalencia_equivalente" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_equivalencia" type="int" length="10" jt="4" unsigned="y" />
+			<column name="sigla" type="varchar" length="255" jt="12" mandatory="y" />
+			<fk name="FK_427E4A554111C026" to_schema="Default" to_table="equivalencias" >
+				<fk_column name="id_equivalencia" pk="id_equivalencia" />
+			</fk>
+		</table>
+		<table name="eventos" >
+			<column name="id_evento" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_usuario" type="int" length="10" jt="4" unsigned="y" />
+			<column name="id_oferecimento" type="int" length="10" jt="4" unsigned="y" />
+			<column name="nome" type="varchar" length="255" jt="12" mandatory="y" />
+			<column name="tipo" type="varchar" length="1" jt="12" mandatory="y" />
+			<column name="descricao" type="text" jt="-1" />
+			<column name="local" type="text" jt="-1" />
+			<column name="data_inicio" type="datetime" jt="93" mandatory="y" />
+			<column name="data_fim" type="datetime" jt="93" />
+			<column name="dia_todo" type="tinyint" length="1" jt="-6" mandatory="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<fk name="FK_A6D9D12DE7CB0C91" to_schema="Default" to_table="oferecimentos" >
+				<fk_column name="id_oferecimento" pk="id_oferecimento" />
+			</fk>
+			<fk name="FK_A6D9D12DFCF8192D" to_schema="Default" to_table="usuarios" >
+				<fk_column name="id_usuario" pk="id_usuario" />
+			</fk>
+		</table>
+		<table name="institutos" >
+			<column name="id_instituto" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="sigla" type="varchar" length="10" jt="12" mandatory="y" />
+			<column name="nome" type="varchar" length="255" jt="12" />
+			<column name="tecnologia" type="tinyint" length="1" jt="-6" mandatory="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<column name="id_unidade" type="int" length="10" jt="4" unsigned="y" />
+			<column name="link_mapa" type="text" jt="-1" />
+		</table>
+		<table name="modalidades" >
+			<column name="id_modalidade" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_curso" type="int" length="10" jt="4" unsigned="y" />
+			<column name="sigla" type="varchar" length="2" jt="12" />
+			<column name="catalogo" type="smallint" length="5" jt="5" mandatory="y" />
+			<column name="nome" type="varchar" length="255" jt="12" />
+			<fk name="FK_7251F42324BE01DC" to_schema="Default" to_table="cursos" >
+				<fk_column name="id_curso" pk="id_curso" />
+			</fk>
+		</table>
+		<table name="notas" >
+			<column name="id_nota" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_usuario" type="int" length="10" jt="4" unsigned="y" />
+			<column name="id_oferecimento" type="int" length="10" jt="4" unsigned="y" />
+			<column name="sigla" type="varchar" length="255" jt="12" mandatory="y" />
+			<column name="nota" type="decimal" length="4" decimal="2" jt="3" mandatory="y" />
+			<column name="peso" type="decimal" length="10" decimal="5" jt="3" mandatory="y" >
+				<defo>&#039;1.00000&#039;</defo>
+			</column>
+			<fk name="FK_DA91B77E7CB0C91" to_schema="Default" to_table="oferecimentos" >
+				<fk_column name="id_oferecimento" pk="id_oferecimento" />
+			</fk>
+			<fk name="FK_DA91B77FCF8192D" to_schema="Default" to_table="usuarios" >
+				<fk_column name="id_usuario" pk="id_usuario" />
+			</fk>
+		</table>
+		<table name="oferecimentos" >
+			<column name="id_oferecimento" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_disciplina" type="int" length="10" jt="4" unsigned="y" />
+			<column name="id_professor" type="int" length="10" jt="4" unsigned="y" />
+			<column name="id_periodo" type="smallint" length="5" jt="5" unsigned="y" />
+			<column name="turma" type="varchar" length="5" jt="12" mandatory="y" />
+			<column name="vagas" type="smallint" length="6" jt="5" mandatory="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<column name="fechado" type="tinyint" length="1" jt="-6" mandatory="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<column name="pagina" type="varchar" length="255" jt="12" />
+			<fk name="FK_5A73AFC9AD8B6D9D" to_schema="Default" to_table="periodos" >
+				<fk_column name="id_periodo" pk="id_periodo" />
+			</fk>
+			<fk name="FK_5A73AFC9D759AAF1" to_schema="Default" to_table="disciplinas" >
+				<fk_column name="id_disciplina" pk="id_disciplina" />
+			</fk>
+			<fk name="FK_5A73AFC9F9386BC4" to_schema="Default" to_table="professores" >
+				<fk_column name="id_professor" pk="id_professor" />
+			</fk>
+		</table>
+		<table name="oferecimentos_reservas" >
+			<column name="id_reserva" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_oferecimento" type="int" length="10" jt="4" unsigned="y" />
+			<column name="id_curso" type="int" length="10" jt="4" unsigned="y" />
+			<column name="catalogo" type="smallint" length="6" jt="5" />
+			<fk name="FK_93414F7524BE01DC" to_schema="Default" to_table="cursos" >
+				<fk_column name="id_curso" pk="id_curso" />
+			</fk>
+			<fk name="FK_93414F75E7CB0C91" to_schema="Default" to_table="oferecimentos" >
+				<fk_column name="id_oferecimento" pk="id_oferecimento" />
+			</fk>
+		</table>
+		<table name="periodos" >
+			<column name="id_periodo" type="smallint" length="5" jt="5" mandatory="y" unsigned="y" />
+			<column name="nome" type="varchar" length="255" jt="12" mandatory="y" />
+			<column name="tipo" type="varchar" length="1" jt="12" mandatory="y" >
+				<defo>&#039;n&#039;</defo>
+			</column>
+		</table>
+		<table name="planejados" >
+			<column name="id_planejado" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_usuario" type="int" length="10" jt="4" unsigned="y" />
+			<column name="id_periodo" type="smallint" length="5" jt="5" unsigned="y" />
+			<column name="id_periodo_atual" type="smallint" length="5" jt="5" unsigned="y" />
+			<column name="compartilhado" type="tinyint" length="1" jt="-6" mandatory="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<fk name="FK_4A16EBD84D6FE6F1" to_schema="Default" to_table="periodos" >
+				<fk_column name="id_periodo_atual" pk="id_periodo" />
+			</fk>
+			<fk name="FK_4A16EBD8AD8B6D9D" to_schema="Default" to_table="periodos" >
+				<fk_column name="id_periodo" pk="id_periodo" />
+			</fk>
+			<fk name="FK_4A16EBD8FCF8192D" to_schema="Default" to_table="usuarios" >
+				<fk_column name="id_usuario" pk="id_usuario" />
+			</fk>
+		</table>
+		<table name="planejados_eliminadas" >
+			<column name="id_planejado_eliminada" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_planejado" type="int" length="10" jt="4" unsigned="y" />
+			<column name="id_disciplina" type="int" length="10" jt="4" unsigned="y" />
+			<column name="parcial" type="tinyint" length="1" jt="-6" mandatory="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<fk name="FK_45D3B7DD9E246BF4" to_schema="Default" to_table="planejados" >
+				<fk_column name="id_planejado" pk="id_planejado" />
+			</fk>
+			<fk name="FK_45D3B7DDD759AAF1" to_schema="Default" to_table="disciplinas" >
+				<fk_column name="id_disciplina" pk="id_disciplina" />
+			</fk>
+		</table>
+		<table name="planejados_extras" >
+			<column name="id_planejado_extra" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_planejado" type="int" length="10" jt="4" unsigned="y" />
+			<column name="nome" type="varchar" length="255" jt="12" mandatory="y" />
+			<column name="dia" type="smallint" length="6" jt="5" mandatory="y" />
+			<column name="inicio" type="time" jt="92" mandatory="y" />
+			<column name="fim" type="time" jt="92" mandatory="y" />
+			<fk name="FK_87905EE09E246BF4" to_schema="Default" to_table="planejados" >
+				<fk_column name="id_planejado" pk="id_planejado" />
+			</fk>
+		</table>
+		<table name="pre_conjuntos" >
+			<column name="id_conjunto" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_disciplina" type="int" length="10" jt="4" unsigned="y" />
+			<column name="catalogo" type="varchar" length="4" jt="12" mandatory="y" />
+			<fk name="FK_E04E77B4D759AAF1" to_schema="Default" to_table="disciplinas" >
+				<fk_column name="id_disciplina" pk="id_disciplina" />
+			</fk>
+		</table>
+		<table name="pre_lista" >
+			<column name="id_lista" type="int" length="11" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_conjunto" type="int" length="10" jt="4" unsigned="y" />
+			<column name="sigla" type="varchar" length="255" jt="12" mandatory="y" />
+			<column name="parcial" type="tinyint" length="1" jt="-6" mandatory="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<fk name="FK_3901BFE47FE9DFD1" to_schema="Default" to_table="pre_conjuntos" >
+				<fk_column name="id_conjunto" pk="id_conjunto" />
+			</fk>
+		</table>
+		<table name="professores" >
+			<column name="id_professor" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="matricula" type="int" length="10" jt="4" unsigned="y" />
+			<column name="nome" type="varchar" length="255" jt="12" mandatory="y" />
+			<column name="id_instituto" type="int" length="10" jt="4" unsigned="y" />
+			<column name="sala" type="varchar" length="255" jt="12" />
+			<column name="email" type="varchar" length="255" jt="12" />
+			<column name="pagina" type="varchar" length="255" jt="12" />
+			<column name="lattes" type="varchar" length="255" jt="12" />
+			<fk name="FK_5092673EAAB5E0E9" to_schema="Default" to_table="institutos" >
+				<fk_column name="id_instituto" pk="id_instituto" />
+			</fk>
+		</table>
+		<table name="r_planejados_oferecimentos" >
+			<column name="id_planejado" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_oferecimento" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<fk name="FK_5D2BB7FC9E246BF4" to_schema="Default" to_table="planejados" >
+				<fk_column name="id_planejado" pk="id_planejado" />
+			</fk>
+			<fk name="FK_5D2BB7FCE7CB0C91" to_schema="Default" to_table="oferecimentos" >
+				<fk_column name="id_oferecimento" pk="id_oferecimento" />
+			</fk>
+		</table>
+		<table name="usuarios" >
+			<column name="id_usuario" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_curso" type="int" length="10" jt="4" unsigned="y" />
+			<column name="id_modalidade" type="int" length="10" jt="4" unsigned="y" />
+			<column name="id_professor" type="int" length="10" jt="4" unsigned="y" />
+			<column name="login" type="varchar" length="16" jt="12" mandatory="y" />
+			<column name="senha" type="varchar" length="255" jt="12" />
+			<column name="ra" type="int" length="10" jt="4" unsigned="y" />
+			<column name="nome" type="varchar" length="255" jt="12" />
+			<column name="sobrenome" type="varchar" length="255" jt="12" />
+			<column name="email" type="varchar" length="255" jt="12" />
+			<column name="nivel" type="varchar" length="1" jt="12" />
+			<column name="catalogo" type="smallint" length="6" jt="5" />
+			<column name="ingresso" type="smallint" length="6" jt="5" />
+			<column name="sexo" type="varchar" length="1" jt="12" />
+			<column name="foto" type="varchar" length="16" jt="12" />
+			<column name="data_nascimento" type="date" jt="91" />
+			<column name="apelido" type="varchar" length="255" jt="12" />
+			<column name="status" type="varchar" length="255" jt="12" />
+			<column name="facebook" type="varchar" length="255" jt="12" />
+			<column name="twitter" type="varchar" length="255" jt="12" />
+			<column name="cidade" type="varchar" length="255" jt="12" />
+			<column name="estado" type="varchar" length="2" jt="12" />
+			<column name="estado_civil" type="varchar" length="1" jt="12" />
+			<column name="compartilha_horario" type="varchar" length="1" jt="12" mandatory="y" >
+				<defo>&#039;1&#039;</defo>
+			</column>
+			<column name="mudanca_horario" type="date" jt="91" />
+			<column name="ultimo_acesso" type="datetime" jt="93" />
+			<column name="data_cadastro" type="datetime" jt="93" />
+			<column name="email_validado" type="tinyint" length="1" jt="-6" mandatory="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<column name="ativo" type="tinyint" length="1" jt="-6" mandatory="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<fk name="FK_36E3BF5A24BE01DC" to_schema="Default" to_table="cursos" >
+				<fk_column name="id_curso" pk="id_curso" />
+			</fk>
+			<fk name="FK_36E3BF5AB2AFE02E" to_schema="Default" to_table="modalidades" >
+				<fk_column name="id_modalidade" pk="id_modalidade" />
+			</fk>
+			<fk name="FK_36E3BF5AF9386BC4" to_schema="Default" to_table="professores" >
+				<fk_column name="id_professor" pk="id_professor" />
+			</fk>
+		</table>
+		<table name="usuarios_eliminadas" >
+			<column name="id_eliminada" type="int" length="10" jt="4" mandatory="y" unsigned="y" />
+			<column name="id_usuario" type="int" length="10" jt="4" unsigned="y" />
+			<column name="id_disciplina" type="int" length="10" jt="4" unsigned="y" />
+			<column name="id_periodo" type="smallint" length="5" jt="5" unsigned="y" />
+			<column name="parcial" type="tinyint" length="1" jt="-6" mandatory="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<column name="proficiencia" type="tinyint" length="1" jt="-6" mandatory="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<column name="tipo" type="varchar" length="1" jt="12" />
+			<fk name="FK_FD3F1FBBAD8B6D9D" to_schema="Default" to_table="periodos" >
+				<fk_column name="id_periodo" pk="id_periodo" />
+			</fk>
+			<fk name="FK_FD3F1FBBD759AAF1" to_schema="Default" to_table="disciplinas" >
+				<fk_column name="id_disciplina" pk="id_disciplina" />
+			</fk>
+			<fk name="FK_FD3F1FBBFCF8192D" to_schema="Default" to_table="usuarios" >
+				<fk_column name="id_usuario" pk="id_usuario" />
+			</fk>
+		</table>
+	</schema>
+	<layout name="Parsed Script Layout" id="Layout_5ef525d" show_relation="columns" >
+		<comment><![CDATA[banco.sql]]></comment>
+		<entity schema="Default" name="oferecimentos_reservas" color="BED3F4" x="1904" y="800" />
+		<entity schema="Default" name="usuarios" color="D1BEF4" x="368" y="880" />
+		<entity schema="Default" name="planejados_eliminadas" color="C7F4BE" x="1088" y="48" />
+		<entity schema="Default" name="eventos" color="BEBEF4" x="624" y="672" />
+		<entity schema="Default" name="planejados_extras" color="BED3F4" x="1648" y="512" />
+		<entity schema="Default" name="pre_conjuntos" color="F4DDBE" x="1728" y="48" />
+		<entity schema="Default" name="pre_lista" color="F4DDBE" x="1888" y="48" />
+		<entity schema="Default" name="equivalencias" color="C7F4BE" x="1728" y="224" />
+		<entity schema="Default" name="planejados" color="BED3F4" x="1152" y="240" />
+		<entity schema="Default" name="r_planejados_oferecimentos" color="BEBEF4" x="864" y="240" />
+		<entity schema="Default" name="periodos" color="BED3F4" x="1168" y="496" />
+		<entity schema="Default" name="oferecimentos" color="BEBEF4" x="880" y="432" />
+		<entity schema="Default" name="colaboracao_oferecimentos" color="BED3F4" x="816" y="816" />
+		<entity schema="Default" name="notas" color="F4DDBE" x="960" y="1008" />
+		<entity schema="Default" name="colaboracao_professores" color="BED3F4" x="64" y="752" />
+		<entity schema="Default" name="professores" color="BED3F4" x="48" y="480" />
+		<entity schema="Default" name="usuarios_eliminadas" color="BED3F4" x="1216" y="992" />
+		<entity schema="Default" name="modalidades" color="C7F4BE" x="1664" y="1264" />
+		<entity schema="Default" name="cursos" color="BED3F4" x="1760" y="1072" />
+		<entity schema="Default" name="curriculos" color="BED3F4" x="1664" y="832" />
+		<entity schema="Default" name="curriculos_eletivas" color="C7F4BE" x="2016" y="1120" />
+		<entity schema="Default" name="curriculos_eletivas_conjuntos" color="C7F4BE" x="2000" y="1344" />
+		<entity schema="Default" name="disciplinas" color="C7F4BE" x="1504" y="48" />
+		<entity schema="Default" name="institutos" color="BED3F4" x="48" y="48" />
+		<entity schema="Default" name="equivalencias_equivalentes" color="C7F4BE" x="1888" y="208" />
+	</layout>
+</project>
