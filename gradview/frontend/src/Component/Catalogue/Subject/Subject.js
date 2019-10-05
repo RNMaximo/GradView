@@ -11,7 +11,7 @@ class Subject extends React.Component {
       <div
         className={"subject " + subject.name}
         style={{
-          backgroundColor: "white",
+          backgroundColor: subject.color,
           opacity: "1"
         }}
       >
