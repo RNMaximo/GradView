@@ -13,7 +13,7 @@ class SearchInput extends React.Component {
           minLength={1}
           debounceTimeout={200}
           onChange={(event) => this.props.onChangeHandler(event)}
-          placeHolder={"Buscar disciplina"}
+          placeholder={"Buscar disciplina"}
         />
       </div>
     )

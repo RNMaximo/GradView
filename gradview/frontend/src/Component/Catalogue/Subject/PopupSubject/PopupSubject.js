@@ -7,9 +7,9 @@ class PopupSubject extends React.Component {
     const requisitos = subject.requisitos ? subject.requisitos.join(', ') : "Nenhum"
     return (
       <div className={"PopupSubject"}>
-        <a className="closePopup" onClick={this.props.closeModal}>
+        <div className="closePopup" onClick={this.props.closeModal}>
           &times;
-        </a>
+        </div>
         <p><strong>Nome:</strong> {subject.name}</p>
         <p><strong>Código:</strong> {subject.code}</p>
         <p><strong>Créditos:</strong> {subject.creditos}</p>
