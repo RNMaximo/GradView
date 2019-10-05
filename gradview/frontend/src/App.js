@@ -49,7 +49,6 @@ class App extends React.Component {
         requisite = catalogue.filter((req) => {
           return (disc.requisitos.includes(req.name))
         });
-        //TODO pegar média das cores dos requisitos
         ret = {...disc, color: rgbMeanColor(this.getColors(requisite))}
       } else {
         ret = {...disc, color: rgbMeanColor([randomColor(), "#AAAAAA"])}
