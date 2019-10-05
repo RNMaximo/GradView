@@ -21,13 +21,14 @@ class Subject extends React.Component {
   render() {
     const subject = this.props.subject;
     const opacity = this.props.opacity;
+    const color = subject.color ? subject.color : "#ffffff";
 
     return (
       <React.Fragment>
         <div
           className={"subject " + subject.code}
           style={{
-            backgroundColor: subject.color,
+            backgroundColor: color,
             opacity: opacity
           }}
           onClick={this.openModal}>

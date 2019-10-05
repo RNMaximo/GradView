@@ -15,6 +15,13 @@ class App extends React.Component {
   catalogueSem=[];
 
 
+
+  componentDidMount() {
+    const catalogueSem = this.organizeCatalogueBySemester(this.state.catalogue);
+    const coloredCatalogue = this.initializeRandomColors(catalogueSem);
+    this.setState({catalogue: coloredCatalogue})
+  }
+
   organizeCatalogueBySemester  = (catalogue) => {
     const numOfSem = 4;
     let catalogueSem = [];
@@ -26,23 +33,26 @@ class App extends React.Component {
     return catalogueSem
   };
 
-  componentDidMount() {
-    const coloredCatalogue = this.initializeRandomColors();
-    this.setState({catalogue: coloredCatalogue})
-  }
+  initializeNoColors = (catalogueSem) => {
+    const catalogue = this.state.catalogue.slice();
+    const coloredCatalogue = catalogue.map((disc) => {
+      const ret = {...disc, color: '#ffffff'};
+      return (ret)
+    });
+    return coloredCatalogue
+  };
 
-  initializeRandomColors = () => {
-    let catalogueSem = this.organizeCatalogueBySemester(this.state.catalogue);
+  initializeRandomColors = (catalogueSem) => {
     let coloredCatalogue =[];
     const numberOfSemesters = catalogueSem.length;
 
     for (let i =0; i < numberOfSemesters; i++) {
-      coloredCatalogue = [...coloredCatalogue , ...(this.iColor (coloredCatalogue, catalogueSem[i]))];
+      coloredCatalogue = [...coloredCatalogue , ...(this.coloredSemester (coloredCatalogue, catalogueSem[i]))];
     }
     return coloredCatalogue;
   };
 
-  iColor = (catalogue, sem) => {
+  coloredSemester = (catalogue, sem) => {
     const coloredCatalogue = sem.map((disc, index) => {
       let ret;
       let requisite = null
@@ -66,9 +76,6 @@ class App extends React.Component {
 
 
   handleSearch = (event) => {
-    //console.log("Search");
-    //console.log(event.target.value)
-
     const coloredCatalogue = this.state.catalogue.slice();
     /*
     // Computar valor para cada disciplina - searchValue - e com base no máximo e mínimo dar valores de opacidade

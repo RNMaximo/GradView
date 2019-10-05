@@ -9,16 +9,19 @@ class PrerequisiteLine extends React.Component {
     const requisite = this.props.requisite;
 
 
-    let lineOpacity = 1;
-    if (subject.opacity) {
-      lineOpacity = subject.opacity/2;
+    const lineOpacity = subject.opacity ? subject.opacity/2 : 1;
+    let color = "#000000";
+    if (subject.color && subject.color !== "#ffffff") {
+      color = subject.color;
     }
+    const opacity = subject.opacity ? subject.opacity : 1;
+
     return (
       <CurveTo
-        style={{opacity: subject.opacity}}
+        style={{opacity: opacity}}
         from={subject.code}
         to={requisite}
-        borderColor={hexToRgbA(subject.color, lineOpacity * 0.8)}
+        borderColor={hexToRgbA(color, lineOpacity)}
         borderWidth={3}
         zIndex={-10}
         toAnchor="bottom"
