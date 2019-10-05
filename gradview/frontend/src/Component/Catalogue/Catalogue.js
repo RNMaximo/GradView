@@ -15,7 +15,7 @@ class Catalogue extends React.Component {
         }
         return (
           <Subject
-            key={subject.name + "_bt"}
+            key={subject.code + "_bt"}
             subject = {subject}
             opacity = {opacity}
             />
@@ -41,7 +41,7 @@ class Catalogue extends React.Component {
             //TODO achar a req no array de disciplinas ao inves de mandar so seu nome
             return (
               <PrerequisiteLine
-                key={subject.name + "to" + req}
+                key={subject.code + "to" + req}
                 subject={subject}
                 requisite={req}
               />

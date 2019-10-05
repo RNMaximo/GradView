@@ -9,13 +9,14 @@ class Subject extends React.Component {
 
     return (
       <div
-        className={"subject " + subject.name}
+        className={"subject " + subject.code}
         style={{
           backgroundColor: subject.color,
           opacity: opacity
         }}
+        onMouseEnter
       >
-        {subject.name}
+        {subject.code}
       </div>
 
     )

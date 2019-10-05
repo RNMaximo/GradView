@@ -16,7 +16,7 @@ class PrerequisiteLine extends React.Component {
     return (
       <CurveTo
         style={{opacity: subject.opacity}}
-        from={subject.name}
+        from={subject.code}
         to={requisite}
         borderColor={hexToRgbA(subject.color, lineOpacity * 0.8)}
         borderWidth={3}

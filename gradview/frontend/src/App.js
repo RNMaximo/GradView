@@ -48,7 +48,7 @@ class App extends React.Component {
       let requisite = null
       if (disc.requisitos && disc.requisitos !== []) {
         requisite = catalogue.filter((req) => {
-          return (disc.requisitos.includes(req.name))
+          return (disc.requisitos.includes(req.code))
         });
         ret = {...disc, color: rgbMeanColor(this.getColors(requisite))}
       } else {
@@ -74,13 +74,13 @@ class App extends React.Component {
     // Computar valor para cada disciplina - searchValue - e com base no máximo e mínimo dar valores de opacidade
     const searched = coloredCatalogue.filter((disciplina) => {
       //TODO Melhorar a busca
-      return disciplina.name.includes(event.target.value);
+      return disciplina.code.includes(event.target.value);
     });
     */
     //console.log(searched);
     const opacityCatalogue = coloredCatalogue.map((subject) => {
       const newSubject = subject;
-      if (!subject.name.toUpperCase().includes(event.target.value.toUpperCase())) {
+      if (!subject.code.toUpperCase().includes(event.target.value.toUpperCase())) {
         newSubject.opacity = 0.1;
       } else {
         newSubject.opacity = 1;
