@@ -11,15 +11,20 @@ var randomColor = require('randomcolor');
 class App extends React.Component {
   state = {
     catalogue: catalogueComp,
+    borderColored: false,
+    shouldChangeColor: true
   };
   catalogueSem=[];
 
 
 
-  componentDidMount() {
+  componentWillMount() {
     const catalogueSem = this.organizeCatalogueBySemester(this.state.catalogue);
-    const coloredCatalogue = this.initializeRandomColors(catalogueSem);
-    this.setState({catalogue: coloredCatalogue})
+    if (! this.state.isColored) {
+      const coloredCatalogue = this.initializeRandomColors(catalogueSem);
+      this.setState({shouldChangeColor: false})
+      this.setState({catalogue: coloredCatalogue})
+    }
   }
 
   organizeCatalogueBySemester  = (catalogue) => {
@@ -34,9 +39,11 @@ class App extends React.Component {
   };
 
   initializeNoColors = (catalogueSem) => {
+    const borderColored=this.state.borderColored
     const catalogue = this.state.catalogue.slice();
+    const color = borderColored ? '#000000' : '#ffffff';
     const coloredCatalogue = catalogue.map((disc) => {
-      const ret = {...disc, color: '#ffffff'};
+      const ret = {...disc, color: color};
       return (ret)
     });
     return coloredCatalogue
@@ -99,13 +106,29 @@ class App extends React.Component {
     this.setState({catalogue: opacityCatalogue})
   };
 
+  handleBorderButton = () => {
+    console.log("aiosdaijos")
+    const isBorderColored = this.state.borderColored;
+    this.setState({borderColored: !isBorderColored})
+  };
+
   render() {
     this.catalogueSem = this.organizeCatalogueBySemester(this.state.catalogue);
 
+    const buttonText = this.state.borderColored ? "Cor na Borda" : "Cor Interna"
     return (
       <div className="App">
-        <SearchInput onChangeHandler = {this.handleSearch}/>
-        <Catalogue catalogueBySemester={this.catalogueSem}/>
+        <div
+        style={
+          {display: "flex",
+           margin: "auto",
+           alignItems: "center",
+           width: "450px"}
+        }>
+          <SearchInput onChangeHandler = {this.handleSearch}/>
+          <button className={"BorderButton"} onClick={this.handleBorderButton}>{buttonText}</button>
+        </div>
+        <Catalogue catalogueBySemester={this.catalogueSem} borderColored={this.state.borderColored}/>
       </div>
     );
   }

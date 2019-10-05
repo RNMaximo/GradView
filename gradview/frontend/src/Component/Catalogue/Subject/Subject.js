@@ -23,16 +23,26 @@ class Subject extends React.Component {
     const opacity = this.props.opacity;
     const color = subject.color ? subject.color : "#ffffff";
 
+    const style = this.props.borderColored ?
+      {
+        backgroundColor: "white",
+        borderColor: color,
+        borderWidth: "3px",
+        opacity: opacity
+      } :
+      {
+        backgroundColor: color,
+        borderColor: "black",
+        borderWidth: "1px",
+        opacity: opacity
+      };
     return (
       <React.Fragment>
         <div
           className={"subject " + subject.code}
-          style={{
-            backgroundColor: color,
-            opacity: opacity
-          }}
+          style={style}
           onClick={this.openModal}>
-          {subject.code}
+          <span>{subject.code}</span>
         </div>
         <Popup
           open={this.state.open}
