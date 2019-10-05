@@ -4,6 +4,18 @@ import CurveTo from "react-curveto";
 import {hexToRgbA} from "../../../Functions/Colors/rgbMeanColor";
 
 class PrerequisiteLine extends React.Component {
+
+  /* Rerender caso a página mude de tamanho */
+  componentDidMount() {
+    window.addEventListener('resize', this.updateDimensions);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateDimensions);
+  }
+  updateDimensions = () => {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  };
+
   render () {
     const subject = this.props.subject;
     const requisite = this.props.requisite;
