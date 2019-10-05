@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import catalogueComp from './Component/Catalogue/catalogoComp.js';
+import Catalogue from './Component/Catalogue/Catalogue';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    catalogue: catalogueComp,
+  };
+  catalogueSem=[];
+
+
+  organizeCatalogueBySemester  = (catalogue) => {
+    const numOfSem = 4;
+    let catalogueSem = [];
+    for (let i = 1; i < numOfSem+1; i++) {
+      catalogueSem.push(catalogue.filter(subject => {
+        return subject.semestre === i
+      }))
+    }
+    return catalogueSem
+  };
+
+  render() {
+    this.catalogueSem = this.organizeCatalogueBySemester(this.state.catalogue);
+
+    return (
+      <div className="App">
+        <Catalogue catalogueBySemester={this.catalogueSem}/>
+      </div>
+    );
+  }
 }
 
 export default App;
