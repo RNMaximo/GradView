@@ -9,10 +9,15 @@ class Catalogue extends React.Component {
 
     const catalogue = this.props.catalogueBySemester.map((sem, semId) => {
       const subjectsBySemester = sem.map((subject) => {
+        let opacity = 1;
+        if (subject.opacity) {
+          opacity = subject.opacity;
+        }
         return (
           <Subject
             key={subject.name + "_bt"}
             subject = {subject}
+            opacity = {opacity}
             />
 
         )

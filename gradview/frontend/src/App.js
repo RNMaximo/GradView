@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import catalogueComp from './Component/Catalogue/catalogoComp.js';
 import Catalogue from './Component/Catalogue/Catalogue';
+import SearchInput from "./Component/Catalogue/SearchInput/SearchInput";
 
 import rgbMeanColor from './Functions/Colors/rgbMeanColor';
 
@@ -64,11 +65,39 @@ class App extends React.Component {
   };
 
 
+  handleSearch = (event) => {
+    //console.log("Search");
+    //console.log(event.target.value)
+
+    const coloredCatalogue = this.state.catalogue.slice();
+    /*
+    // Computar valor para cada disciplina - searchValue - e com base no máximo e mínimo dar valores de opacidade
+    const searched = coloredCatalogue.filter((disciplina) => {
+      //TODO Melhorar a busca
+      return disciplina.name.includes(event.target.value);
+    });
+    */
+    //console.log(searched);
+    const opacityCatalogue = coloredCatalogue.map((subject) => {
+      const newSubject = subject;
+      if (!subject.name.toUpperCase().includes(event.target.value.toUpperCase())) {
+        newSubject.opacity = 0.1;
+      } else {
+        newSubject.opacity = 1;
+      }
+      return (
+        newSubject
+      )
+    });
+    this.setState({catalogue: opacityCatalogue})
+  };
+
   render() {
     this.catalogueSem = this.organizeCatalogueBySemester(this.state.catalogue);
 
     return (
       <div className="App">
+        <SearchInput onChangeHandler = {this.handleSearch}/>
         <Catalogue catalogueBySemester={this.catalogueSem}/>
       </div>
     );
