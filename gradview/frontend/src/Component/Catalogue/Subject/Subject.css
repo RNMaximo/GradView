@@ -5,9 +5,23 @@
     border-radius: 5px;
     text-align:center;
 
-    line-height: 30px;
+    box-sizing: border-box;
+    line-height: 28px;
     height: 30px;
     width: 70px;
-    z-index: 100;
+    z-index: 990;
     margin: 0 10px;
+    position: inherit !important;
+    cursor: pointer;
+
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+.popup-content {
+    width: 550px !important;
+    z-index: 1000;
+    border-radius: 8px;
 }
