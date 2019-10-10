@@ -12,7 +12,8 @@ class App extends React.Component {
   state = {
     catalogue: catalogueComp,
     borderColored: false,
-    shouldChangeColor: true
+    shouldChangeColor: true,
+    coloredBy: "Random"
   };
   catalogueSem=[];
 
@@ -107,15 +108,22 @@ class App extends React.Component {
   };
 
   handleBorderButton = () => {
-    console.log("aiosdaijos")
     const isBorderColored = this.state.borderColored;
     this.setState({borderColored: !isBorderColored})
+  };
+  handleRandomColorButton = () => {
+    if (this.state.coloredBy==="Random") {
+      this.setState({coloredBy: ""})
+    } else {
+      this.setState({coloredBy: "Random"})
+    }
   };
 
   render() {
     this.catalogueSem = this.organizeCatalogueBySemester(this.state.catalogue);
 
-    const buttonText = this.state.borderColored ? "Cor na Borda" : "Cor Interna"
+    const borderButtonText = this.state.borderColored ? "Cor Interna" : "Cor na Borda"
+    const randomColorButtonText = this.state.coloredBy==="Random" ? "Sem cor" : "Aleatória"
     return (
       <div className="App">
         <div
@@ -123,12 +131,21 @@ class App extends React.Component {
           {display: "flex",
            margin: "auto",
            alignItems: "center",
-           width: "450px"}
+           width: "550px"}
         }>
           <SearchInput onChangeHandler = {this.handleSearch}/>
-          <button className={"BorderButton"} onClick={this.handleBorderButton}>{buttonText}</button>
+          <button className={"BorderButton"} onClick={this.handleBorderButton}>
+            {borderButtonText}
+          </button>
+          <button className={"BorderButton"} onClick={this.handleRandomColorButton}>
+            {randomColorButtonText}
+          </button>
         </div>
-        <Catalogue catalogueBySemester={this.catalogueSem} borderColored={this.state.borderColored}/>
+        <Catalogue
+          catalogueBySemester={this.catalogueSem}
+          borderColored={this.state.borderColored}
+          coloredBy={this.state.coloredBy}
+        />
       </div>
     );
   }

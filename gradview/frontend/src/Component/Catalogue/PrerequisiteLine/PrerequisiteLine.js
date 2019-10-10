@@ -23,8 +23,10 @@ class PrerequisiteLine extends React.Component {
 
     const lineOpacity = subject.opacity ? subject.opacity/2 : 1;
     let color = "#000000";
-    if (subject.color && subject.color !== "#ffffff") {
+    if (this.props.coloredBy==="Random" && subject.color && subject.color !== "#ffffff") {
       color = subject.color;
+    } else if (this.props.coloredBy==="Random") {
+
     }
     const opacity = subject.opacity ? subject.opacity : 1;
 

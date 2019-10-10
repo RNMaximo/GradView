@@ -21,9 +21,10 @@ class Subject extends React.Component {
   render() {
     const subject = this.props.subject;
     const opacity = this.props.opacity;
-    const color = subject.color ? subject.color : "#ffffff";
 
-    const style = this.props.borderColored ?
+    const color = subject.color && this.props.coloredBy==="Random" ? subject.color : "#ffffff";
+
+    const style = this.props.borderColored && this.props.coloredBy==="Random" ?
       {
         backgroundColor: "white",
         borderColor: color,

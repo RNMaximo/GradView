@@ -26,6 +26,7 @@ class Catalogue extends React.Component {
             subject = {subject}
             opacity = {opacity}
             borderColored={this.props.borderColored}
+            coloredBy={this.props.coloredBy}
             />
         )
       });
@@ -54,6 +55,7 @@ class Catalogue extends React.Component {
                   key={subject.code + "to" + req}
                   subject={subject}
                   requisite={req}
+                  coloredBy={this.props.coloredBy}
                 />
               )
             })
