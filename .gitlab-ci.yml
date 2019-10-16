@@ -1,1 +1,11 @@
 # Pegar variaveis cacert, clientcert, e clientkey para os certificados de acesso ao banco.
+
+# build com maven
+
+# construir imagem com docker 
+# docker build -t gitlabci.ic.unicamp.br/ra176675/mc030-gradview .
+
+# subir imagem para o registry
+# docker push gitlabci.ic.unicamp.br/ra176675/mc030-gradview
+
+# chamar o kubernetes pra puxar a imagem do registry
