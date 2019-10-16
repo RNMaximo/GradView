@@ -7,7 +7,11 @@ import PopupSubject from "./PopupSubject/PopupSubject";
 class Subject extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { open: false };
+    this.state =
+      {
+        open: false,
+        visible: true
+      };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
@@ -20,7 +24,7 @@ class Subject extends React.Component {
 
   render() {
     const subject = this.props.subject;
-    const opacity = this.props.opacity;
+    const opacity = this.state.visible ? this.props.opacity : 0.2;
 
     const color = subject.color && this.props.coloredBy==="Random" ? subject.color : "#ffffff";
 
@@ -42,7 +46,11 @@ class Subject extends React.Component {
         <div
           className={"subject " + subject.code}
           style={style}
-          onClick={this.openModal}>
+          onClick={this.openModal}
+          onMouseEnter={this.props.onMouseEnter}
+          onMouseLeave={this.props.onMouseLeave}
+
+        >
           <span>{subject.code}</span>
         </div>
         <Popup

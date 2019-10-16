@@ -12,7 +12,7 @@ class PopupSubject extends React.Component {
         </div>
         <p><strong>Nome:</strong> {subject.name}</p>
         <p><strong>Código:</strong> {subject.code}</p>
-        <p><strong>Créditos:</strong> {subject.creditos}</p>
+        <p><strong>Créditos:</strong> {subject.vector.C}</p>
         <p><strong>Ementa:</strong> {subject.ementa}</p>
         <p><strong>Requisitos:</strong> {requisitos}</p>
       </div>

@@ -5,6 +5,9 @@ import {hexToRgbA} from "../../../Functions/Colors/rgbMeanColor";
 
 class PrerequisiteLine extends React.Component {
 
+  state = {
+    visible: true
+  }
   /* Rerender caso a página mude de tamanho */
   componentDidMount() {
     window.addEventListener('resize', this.updateDimensions);
@@ -28,14 +31,14 @@ class PrerequisiteLine extends React.Component {
     } else if (this.props.coloredBy==="Random") {
 
     }
-    const opacity = subject.opacity ? subject.opacity : 1;
-
+    const opacity = this.state.visible ? lineOpacity : 0.2;
+    console.log(opacity)
     return (
       <CurveTo
         style={{opacity: opacity}}
         from={subject.code}
         to={requisite}
-        borderColor={hexToRgbA(color, lineOpacity)}
+        borderColor={hexToRgbA(color, opacity)}
         borderWidth={3}
         zIndex={-10}
         toAnchor="bottom"
