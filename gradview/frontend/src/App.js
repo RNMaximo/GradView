@@ -100,7 +100,8 @@ class App extends React.Component {
     //console.log(searched);
     const opacityCatalogue = coloredCatalogue.map((subject) => {
       const newSubject = subject;
-      if (!subject.code.toUpperCase().includes(event.target.value.toUpperCase())) {
+      if (!subject.code.toUpperCase().includes(event.target.value.toUpperCase()) &&
+          !subject.ementa.toUpperCase().includes(event.target.value.toUpperCase())) {
         newSubject.opacity = Constants.invisibleOpacity;
       } else {
         newSubject.opacity = 1;
