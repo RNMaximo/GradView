@@ -44,11 +44,13 @@ class Catalogue extends React.Component {
   setVisibleToRequisites = (from, to, boolean) => {
     if (to) {
       to.map((r) => {
-        console.log(from + "to" + r)
-        this.prereq[from + "to" + r].setState({visible: boolean});
-        this.subjects[r].setState({visible: boolean});
-        const newRequisites = this.subjects[r].props.subject.requisitos;
-        this.setVisibleToRequisites(r, newRequisites, boolean)
+        if (this.subjects[r]) {
+          console.log(from + "to" + r)
+          this.prereq[from + "to" + r].setState({visible: boolean});
+          this.subjects[r].setState({visible: boolean});
+          const newRequisites = this.subjects[r].props.subject.requisitos;
+          this.setVisibleToRequisites(r, newRequisites, boolean)
+        }
       });
     }
   };
@@ -99,6 +101,9 @@ class Catalogue extends React.Component {
               //TODO achar a req no array de disciplinas ao inves de mandar so seu nome
               if (subject.code in this.subjects) {
                 console.log(this.subjects[subject.code].state.notOnHover)
+              }
+              if (! this.subjects[req]) {
+                return null
               }
               return (
                 <PrerequisiteLine

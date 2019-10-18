@@ -3,6 +3,7 @@ import Popup from "reactjs-popup";
 
 import './Subject.css';
 import PopupSubject from "./PopupSubject/PopupSubject";
+import * as Constants from '../constants';
 
 class Subject extends React.Component {
   constructor(props) {
@@ -24,10 +25,12 @@ class Subject extends React.Component {
 
   render() {
     const subject = this.props.subject;
-    const opacity = this.state.visible ? this.props.opacity : 0.2;
+    const opacity = this.state.visible ? this.props.opacity : Constants.invisibleOpacity;
 
-    const color = subject.color && this.props.coloredBy==="Random" ? subject.color : "#000";
-
+    let color = subject.color && this.props.coloredBy==="Random" ? subject.color : "#000";
+    if (! this.state.visible) {
+      color = Constants.invisibleColor;
+    }
     const divStyle = ! this.props.borderColored && this.props.coloredBy==="Random" ?
       {
         backgroundColor: color,

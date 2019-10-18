@@ -2,6 +2,7 @@ import React from 'react';
 
 import CurveTo from "react-curveto";
 import {hexToRgbA} from "../../../Functions/Colors/rgbMeanColor";
+import * as Constants from '../constants';
 
 class PrerequisiteLine extends React.Component {
 
@@ -24,15 +25,16 @@ class PrerequisiteLine extends React.Component {
     const requisite = this.props.requisite;
 
 
-    const lineOpacity = subject.opacity ? subject.opacity/2 : 1;
+    const lineOpacity = subject.opacity ? subject.opacity/2 : 1/2;
     let color = "#000000";
     if (this.props.coloredBy==="Random" && subject.color && subject.color !== "#ffffff") {
       color = subject.color;
-    } else if (this.props.coloredBy==="Random") {
-
     }
-    const opacity = this.state.visible ? lineOpacity : 0.2;
-    console.log(opacity)
+    if (! this.state.visible) {
+      color = Constants.invisibleColor;
+    }
+    const opacity = this.state.visible ? lineOpacity : Constants.invisibleOpacity/2;
+
     return (
       <CurveTo
         style={{opacity: opacity}}

@@ -5,6 +5,7 @@ import Catalogue from './Component/Catalogue/Catalogue';
 import SearchInput from "./Component/Catalogue/SearchInput/SearchInput";
 
 import rgbMeanColor from './Functions/Colors/rgbMeanColor';
+import * as Constants from "./Component/Catalogue/constants";
 
 var randomColor = require('randomcolor');
 
@@ -29,7 +30,7 @@ class App extends React.Component {
   }
 
   organizeCatalogueBySemester  = (catalogue) => {
-    const numOfSem = 4;
+    const numOfSem = 10;
     let catalogueSem = [];
     for (let i = 1; i < numOfSem+1; i++) {
       catalogueSem.push(catalogue.filter(subject => {
@@ -68,7 +69,11 @@ class App extends React.Component {
         requisite = catalogue.filter((req) => {
           return (disc.requisitos.includes(req.code))
         });
-        ret = {...disc, color: rgbMeanColor(this.getColors(requisite))}
+        if (requisite.length > 0) {
+          ret = {...disc, color: rgbMeanColor(this.getColors(requisite))}
+        } else {
+          ret = {...disc, color: rgbMeanColor([randomColor(), "#AAAAAA"])}
+        }
       } else {
         ret = {...disc, color: rgbMeanColor([randomColor(), "#AAAAAA"])}
       }
@@ -96,7 +101,7 @@ class App extends React.Component {
     const opacityCatalogue = coloredCatalogue.map((subject) => {
       const newSubject = subject;
       if (!subject.code.toUpperCase().includes(event.target.value.toUpperCase())) {
-        newSubject.opacity = 0.1;
+        newSubject.opacity = Constants.invisibleOpacity;
       } else {
         newSubject.opacity = 1;
       }
