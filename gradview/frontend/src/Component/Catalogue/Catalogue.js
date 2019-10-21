@@ -111,10 +111,10 @@ class Catalogue extends React.Component {
           let prereqLinesBySubject = null;
           if (subject.requisitos && subject.requisitos.length > 0) {
             prereqLinesBySubject = subject.requisitos.map((req) => {
-              //TODO achar a req no array de disciplinas ao inves de mandar so seu nome
               if (subject.code in this.subjects) {
                 console.log(this.subjects[subject.code].state.notOnHover)
               }
+              // Não achou req no catalogo
               if (! this.subjects[req]) {
                 return null
               }
@@ -122,9 +122,8 @@ class Catalogue extends React.Component {
                 <PrerequisiteLine
                   ref={(node) => this.prereq[subject.code + "to" + req]=node}
                   key={subject.code + "to" + req}
-                  subject={subject}
-                  opacity = {this.subjects[subject.code].props.opacity}
-                  requisite={req}
+                  from={subject}
+                  to={this.props.catalogueBySemester.subjects[req]}
                   coloredBy={this.props.coloredBy}
                 />
               )
