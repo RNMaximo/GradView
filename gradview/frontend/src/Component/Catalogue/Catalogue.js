@@ -59,42 +59,55 @@ class Catalogue extends React.Component {
   render() {
     const rowStyle = { margin: '20px', display: 'inherit', padding: "10px", justifyContent: 'space-between', };
 
-    const catalogue = this.props.catalogueBySemester.map((sem, semId) => {
-      const subjectsBySemester = sem.map((subject) => {
-        let opacity = 1;
-        if (subject.opacity) {
-          opacity = subject.opacity;
-        }
-        return (
-          <Subject
-            ref={(node) => this.subjects[subject.code]=node}
-            key={subject.code + "_bt"}
-            subject = {subject}
-            opacity = {opacity}
-            borderColored={this.props.borderColored}
-            coloredBy={this.props.coloredBy}
-            onMouseEnter={this.handleMouseEnter}
-            onMouseLeave={this.handleMouseLeave}
-            />
-        )
-      });
+    const catalogueProps = this.props.catalogueBySemester;
+    const semestersKeys = Object.keys(this.props.catalogueBySemester.semesters);
 
-      return (
-        <div
-          key={"Semestre "+semId}
-          className={"Semestre "+semId}
-          style={rowStyle}
-        >
-          {subjectsBySemester}
-          <br/>
-        </div>
-      )
-    });
+    const semesters = (
+      semestersKeys.map((semestersId) => {
+        const semester = catalogueProps.semesters[semestersId];
+        const subjects = semester.subjects.map(subjectsId => catalogueProps.subjects[subjectsId]);
+
+        const subjectsBySemester = subjects.map((subject) => {
+          let opacity = 1;
+          if (subject.opacity) {
+            opacity = subject.opacity;
+          }
+          return (
+            <Subject
+              ref={(node) => this.subjects[subject.code]=node}
+              key={subject.code + "_bt"}
+              subject = {subject}
+              opacity = {opacity}
+              borderColored={this.props.borderColored}
+              coloredBy={this.props.coloredBy}
+              onMouseEnter={this.handleMouseEnter}
+              onMouseLeave={this.handleMouseLeave}
+            />
+          )
+        });
+
+        return (
+          <div
+            key={"Semestre "+semester.id}
+            className={"Semestre "+semester.id}
+            style={rowStyle}
+          >
+            {subjectsBySemester}
+            <br/>
+          </div>
+        )
+      })
+    );
+
 
     let prereqLines = null;
     if (this.state.hasMountSubjects) {
-      prereqLines = this.props.catalogueBySemester.map((sem) => {
-        const prereqBySemester = sem.map((subject) => {
+      prereqLines = semestersKeys.map((semestersId) => {
+
+        const semester = catalogueProps.semesters[semestersId];
+        const subjects = semester.subjects.map(subjectsId => catalogueProps.subjects[subjectsId]);
+
+        const prereqBySemester = subjects.map((subject) => {
           let prereqLinesBySubject = null;
           if (subject.requisitos && subject.requisitos.length > 0) {
             prereqLinesBySubject = subject.requisitos.map((req) => {
@@ -125,7 +138,7 @@ class Catalogue extends React.Component {
 
     return (
       <div className="Catalogue">
-        {catalogue}
+        {semesters}
         <div className={"PrereqLines"}>
           {prereqLines}
         </div>
