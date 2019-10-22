@@ -14,8 +14,13 @@ class App extends React.Component {
     catalogue: catalogueComp,
     borderColored: false,
     shouldChangeColor: true,
-    coloredBy: "Random"
+    coloredBy: "Random",
+    editing: false,
+    persistentEditing: false,
+    nOfEditions: 0
   };
+  catalogue = React.createRef();
+
   componentDidMount() {
     const catalogueSem = this.state.catalogue;
     if (! this.state.isColored) {
@@ -39,7 +44,6 @@ class App extends React.Component {
   initializeRandomColors = () => {
     let coloredSubjects =[];
     const semesters = Object.keys(this.state.catalogue.semesters)
-    const numberOfSemesters = Object.keys(this.state.catalogue.semesters).length;
 
     for (let i in semesters) {
       const thisSemester = this.state.catalogue.semesters[semesters[i]];
@@ -62,19 +66,17 @@ class App extends React.Component {
           return (subject.requisitos.includes(req.code))
         });
         if (requisite.length > 0) {
-          console.log(requisite)
+          //console.log(requisite)
           subject = {...subject, color: rgbMeanColor(this.getColors(requisite))}
         } else {
           subject = {...subject, color: rgbMeanColor([randomColor(), "#AAAAAA"])}
         }
       } else {
-        console.log('newColor')
-        console.log(subject.code)
         subject = {...subject, color: rgbMeanColor([randomColor(), "#AAAAAA"])}
       }
 
       subjectsAsObject[subject.code] = subject
-    };
+    }
     return subjectsAsObject
   };
 
@@ -113,6 +115,87 @@ class App extends React.Component {
     }
   };
 
+  handleEdit = () => {
+    if (! this.catalogue.current) return;
+    const x = this.state.persistentEditing;
+    this.setState({persistentEditing: !x})
+    this.catalogue.current.setState({onDragging: true})
+    this.catalogue.current.forceUpdate()
+  };
+
+  onDragStart = () => {
+    this.setState({editing: true})
+  };
+
+  onDragEnd = (result) => {
+    const catalogue = this.state.catalogue
+    const { destination, source, draggableId } = result;
+
+    if (!destination) {
+      this.setState({editing: false})
+      return;
+    }
+    if (
+      destination.droppableId === source.droppableId &&
+      destination.index === source.index
+    ) {
+      this.setState({editing: false})
+      return;
+    }
+
+    const nOfEditions = this.state.nOfEditions;
+    const start = catalogue.semesters[source.droppableId];
+    const finish = catalogue.semesters[destination.droppableId];
+
+    if (start === finish) {
+      const newTaskIds = Array.from(start.subjects);
+      newTaskIds.splice(source.index, 1)
+      newTaskIds.splice(destination.index, 0, draggableId)
+
+      const newColumn = {
+        ...start,
+        subjects: newTaskIds,
+      };
+
+      const newState = {
+        ...catalogue,
+        semesters: {
+          ...catalogue.semesters,
+          ["sem-"+newColumn.id]: newColumn,
+        }
+      };
+      this.setState({catalogue: newState, nOfEditions: nOfEditions, editing: false})
+    }
+    else {
+      const startTaskIds = Array.from(start.subjects);
+      startTaskIds.splice(source.index, 1)
+
+      const newStart = {
+        ...start,
+        subjects: startTaskIds,
+      };
+
+      const finishTaskIds = Array.from(finish.subjects);
+      finishTaskIds.splice(destination.index, 0, draggableId)
+
+      const newFinish = {
+        ...finish,
+        subjects: finishTaskIds,
+      };
+
+      const newState = {
+        ...catalogue,
+        semesters: {
+          ...catalogue.semesters,
+          ["sem-"+newStart.id]: newStart,
+          ["sem-"+newFinish.id]: newFinish,
+        }
+      };
+      this.setState({catalogue: newState, nOfEditions: nOfEditions, editing: false})
+    }
+    this.forceUpdate()
+  };
+
   render() {
     const borderButtonText = this.state.borderColored ? "Cor Interna" : "Cor na Borda"
     const randomColorButtonText = this.state.coloredBy==="Random" ? "Sem cor" : "Aleatória"
@@ -123,7 +206,7 @@ class App extends React.Component {
           {display: "flex",
            margin: "auto",
            alignItems: "center",
-           width: "550px"}
+           width: "750px"}
         }>
           <SearchInput onChangeHandler = {this.handleSearch}/>
           <button className={"BorderButton"} onClick={this.handleBorderButton}>
@@ -132,11 +215,19 @@ class App extends React.Component {
           <button className={"BorderButton"} onClick={this.handleRandomColorButton}>
             {randomColorButtonText}
           </button>
+          <button className={"BorderButton"} onClick={this.handleEdit}>
+            {"EDIT"}
+          </button>
         </div>
         <Catalogue
+          ref={this.catalogue}
+          onDragEnd={this.onDragEnd}
+          onDragStart={this.onDragStart}
           catalogueBySemester={this.state.catalogue}
           borderColored={this.state.borderColored}
           coloredBy={this.state.coloredBy}
+          editing={this.state.persistentEditing || this.state.editing}
+          nOfEditions={this.state.nOfEditions}
         />
       </div>
     );

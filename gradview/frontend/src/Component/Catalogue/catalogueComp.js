@@ -21,7 +21,7 @@ const catalogue = {
       subjects: ['EE400', 'EE532', 'MC458', 'MC613', 'MC750', 'ME323']
     },
     'sem-6': {
-      id: 6,
+      id: '6',
       subjects: ['EE534', 'MC426', 'MC536', 'MC558', 'MC732','MS211']
     },
     'sem-7': {
@@ -29,16 +29,24 @@ const catalogue = {
       subjects: ['ELET7', 'BE310', 'CE304', 'MC504']
     },
     'sem-8': {
-      id: 8,
+      id: '8',
       subjects: ['ELET8', 'CE838', 'CE839', 'MC832']
     },
     'sem-9': {
-      id: 9,
+      id: '9',
       subjects: ['ELET9', 'CE738', 'MC714', 'MC833', 'MC921']
     },
     'sem-10': {
-      id: 10,
+      id: '10',
       subjects: ['ELET10', 'MC030']
+    },
+    'sem-11': {
+      id: '11',
+      subjects: []
+    },
+    'sem-12': {
+      id: '12',
+      subjects: []
     }
   },
 

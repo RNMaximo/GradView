@@ -5,6 +5,8 @@ import './Subject.css';
 import PopupSubject from "./PopupSubject/PopupSubject";
 import * as Constants from '../constants';
 
+import {Draggable} from 'react-beautiful-dnd';
+
 class Subject extends React.Component {
   constructor(props) {
     super(props);
@@ -52,28 +54,43 @@ class Subject extends React.Component {
         color: "black"
       };
     return (
-      <React.Fragment>
-        <div
-          className={"subject " + subject.code}
-          style={divStyle}
-          onClick={this.openModal}
-          onMouseEnter={this.props.onMouseEnter}
-          onMouseLeave={this.props.onMouseLeave}
 
-        >
-          <span style={textStyle}>{subject.code}</span>
-        </div>
-        <Popup
-          open={this.state.open}
-          closeOnDocumentClick
-          onClose={this.closeModal}
-        >
-          <PopupSubject
-            subject={subject}
-            closeModal={this.closeModal}
-          />
-        </Popup>
-      </React.Fragment>
+      <Draggable
+        key={subject.code}
+        draggableId={subject.code}
+        index={this.props.index}
+      >
+        {(provided, snapshot) => (
+          <div
+            key={this.props.id}
+            className={"draggable subject " + subject.code}
+            {...provided.draggableProps}
+            {...provided.dragHandleProps}
+            ref={provided.innerRef}
+          >
+            <div
+              className={"subject " + subject.code}
+              style={divStyle}
+              onClick={this.openModal}
+              onMouseEnter={this.props.onMouseEnter}
+              onMouseLeave={this.props.onMouseLeave}
+            >
+              <span style={textStyle}>{subject.code}</span>
+            </div>
+
+            <Popup
+              open={this.state.open}
+              closeOnDocumentClick
+              onClose={this.closeModal}
+            >
+              <PopupSubject
+                subject={subject}
+                closeModal={this.closeModal}
+              />
+            </Popup>
+          </div>
+        )}
+      </Draggable>
     )
   }
 }

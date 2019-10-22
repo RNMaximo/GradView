@@ -24,6 +24,7 @@ class PrerequisiteLine extends React.Component {
     const fromS = this.props.from;
     const toS = this.props.to;
 
+    if (!fromS || !toS) return null;
     // Média da opacidade das duas disciplinas
     const defaultOpacity = (fromS.opacity + toS.opacity)/4;
     let lineOpacity = 1/2;
@@ -40,10 +41,15 @@ class PrerequisiteLine extends React.Component {
     if (! this.state.visible) {
       color = Constants.invisibleColor;
     }
+    if (this.props.editing) {
+      lineOpacity = 0
+    }
     const opacity = this.state.visible ? lineOpacity : Constants.invisibleOpacity/2;
 
     return (
       <CurveTo
+        key={fromS.code+"_to_"+toS.code+"CT"}
+        ref={n => this.curveTo = n}
         style={{opacity: opacity}}
         from={fromS.code}
         to={toS.code}
