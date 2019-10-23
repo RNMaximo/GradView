@@ -21,25 +21,38 @@ class PrerequisiteLine extends React.Component {
   };
 
   render () {
-    const subject = this.props.subject;
-    const requisite = this.props.requisite;
+    const fromS = this.props.from;
+    const toS = this.props.to;
 
-
-    const lineOpacity = subject.opacity ? subject.opacity/2 : 1/2;
+    if (!fromS || !toS) return null;
+    // Média da opacidade das duas disciplinas
+    const defaultOpacity = (fromS.opacity + toS.opacity)/4;
+    let lineOpacity = 1/2;
+    if (this.props.opacity) {
+      lineOpacity = this.props.opacity
+    } else if (defaultOpacity) {
+      console.log(defaultOpacity)
+      lineOpacity = defaultOpacity
+    }
     let color = "#000000";
-    if (this.props.coloredBy==="Random" && subject.color && subject.color !== "#ffffff") {
-      color = subject.color;
+    if (this.props.coloredBy==="Random" && fromS.color && fromS.color !== "#ffffff") {
+      color = fromS.color;
     }
     if (! this.state.visible) {
       color = Constants.invisibleColor;
+    }
+    if (this.props.editing) {
+      lineOpacity = 0
     }
     const opacity = this.state.visible ? lineOpacity : Constants.invisibleOpacity/2;
 
     return (
       <CurveTo
+        key={fromS.code+"_to_"+toS.code+"CT"}
+        ref={n => this.curveTo = n}
         style={{opacity: opacity}}
-        from={subject.code}
-        to={requisite}
+        from={fromS.code}
+        to={toS.code}
         borderColor={hexToRgbA(color, opacity)}
         borderWidth={3}
         zIndex={-10}

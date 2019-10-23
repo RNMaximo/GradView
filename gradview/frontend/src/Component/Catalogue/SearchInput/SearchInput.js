@@ -10,7 +10,7 @@ class SearchInput extends React.Component {
       <DebounceInput
         className={"SearchInput"}
         minLength={1}
-        debounceTimeout={200}
+        debounceTimeout={50}
         onChange={(event) => this.props.onChangeHandler(event)}
         placeholder={"Buscar disciplina"}
       />

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import catalogueComp from './Component/Catalogue/catalogoComp.js';
+import catalogueComp from './Component/Catalogue/catalogueComp.js';
 import Catalogue from './Component/Catalogue/Catalogue';
 import SearchInput from "./Component/Catalogue/SearchInput/SearchInput";
 
@@ -14,31 +14,21 @@ class App extends React.Component {
     catalogue: catalogueComp,
     borderColored: false,
     shouldChangeColor: true,
-    coloredBy: "Random"
+    coloredBy: "Random",
+    editing: false,
+    persistentEditing: false,
+    nOfEditions: 0
   };
-  catalogueSem=[];
+  catalogue = React.createRef();
 
-
-
-  componentWillMount() {
-    const catalogueSem = this.organizeCatalogueBySemester(this.state.catalogue);
+  componentDidMount() {
+    const catalogueSem = this.state.catalogue;
     if (! this.state.isColored) {
       const coloredCatalogue = this.initializeRandomColors(catalogueSem);
       this.setState({shouldChangeColor: false})
-      this.setState({catalogue: coloredCatalogue})
+      this.setState({catalogue: {semesters: catalogueSem.semesters, subjects: coloredCatalogue}})
     }
   }
-
-  organizeCatalogueBySemester  = (catalogue) => {
-    const numOfSem = 10;
-    let catalogueSem = [];
-    for (let i = 1; i < numOfSem+1; i++) {
-      catalogueSem.push(catalogue.filter(subject => {
-        return subject.semestre === i
-      }))
-    }
-    return catalogueSem
-  };
 
   initializeNoColors = (catalogueSem) => {
     const borderColored=this.state.borderColored
@@ -51,67 +41,66 @@ class App extends React.Component {
     return coloredCatalogue
   };
 
-  initializeRandomColors = (catalogueSem) => {
-    let coloredCatalogue =[];
-    const numberOfSemesters = catalogueSem.length;
+  initializeRandomColors = () => {
+    let coloredSubjects =[];
+    const semesters = Object.keys(this.state.catalogue.semesters)
 
-    for (let i =0; i < numberOfSemesters; i++) {
-      coloredCatalogue = [...coloredCatalogue , ...(this.coloredSemester (coloredCatalogue, catalogueSem[i]))];
+    for (let i in semesters) {
+      const thisSemester = this.state.catalogue.semesters[semesters[i]];
+      coloredSubjects = this.colorSemester (coloredSubjects, thisSemester);
     }
-    return coloredCatalogue;
+    return coloredSubjects;
   };
 
-  coloredSemester = (catalogue, sem) => {
-    const coloredCatalogue = sem.map((disc, index) => {
-      let ret;
-      let requisite = null
-      if (disc.requisitos && disc.requisitos !== []) {
-        requisite = catalogue.filter((req) => {
-          return (disc.requisitos.includes(req.code))
+  colorSemester = (catalogue, sem) => {
+    let subjectsAsObject = this.state.catalogue.subjects;
+    const subjectsAsArray = Object.values(subjectsAsObject)
+    let subjectsToColor = sem.subjects.map(subjectsId => this.state.catalogue.subjects[subjectsId]);
+
+    for (let i in subjectsToColor) {
+      let subject = subjectsToColor[i];
+
+      let requisite = null;
+      if (subject.requisitos && subject.requisitos !== []) {
+        requisite = subjectsAsArray.filter((req) => {
+          return (subject.requisitos.includes(req.code))
         });
         if (requisite.length > 0) {
-          ret = {...disc, color: rgbMeanColor(this.getColors(requisite))}
+          //console.log(requisite)
+          subject = {...subject, color: rgbMeanColor(this.getColors(requisite))}
         } else {
-          ret = {...disc, color: rgbMeanColor([randomColor(), "#AAAAAA"])}
+          subject = {...subject, color: rgbMeanColor([randomColor(), "#AAAAAA"])}
         }
       } else {
-        ret = {...disc, color: rgbMeanColor([randomColor(), "#AAAAAA"])}
+        subject = {...subject, color: rgbMeanColor([randomColor(), "#AAAAAA"])}
       }
 
-      return (ret)
-    });
-    return coloredCatalogue
+      subjectsAsObject[subject.code] = subject
+    }
+    return subjectsAsObject
   };
 
   getColors = (prereq) => {
     return prereq.map((r) => {return r.color})
   };
 
-
   handleSearch = (event) => {
-    const coloredCatalogue = this.state.catalogue.slice();
-    /*
-    // Computar valor para cada disciplina - searchValue - e com base no máximo e mínimo dar valores de opacidade
-    const searched = coloredCatalogue.filter((disciplina) => {
-      //TODO Melhorar a busca
-      return disciplina.code.includes(event.target.value);
-    });
-    */
-    //console.log(searched);
-    const opacityCatalogue = coloredCatalogue.map((subject) => {
-      const newSubject = subject;
+    const semesters = this.state.catalogue.semesters
+    let subjectsAsObject = this.state.catalogue.subjects;
+
+    for (let i in subjectsAsObject) {
+      let subject = subjectsAsObject[i];
+
       if (!subject.code.toUpperCase().includes(event.target.value.toUpperCase()) &&
         !subject.name.toUpperCase().includes(event.target.value.toUpperCase()) &&
         !subject.ementa.toUpperCase().includes(event.target.value.toUpperCase())) {
-        newSubject.opacity = Constants.invisibleOpacity;
+        subject.opacity = Constants.invisibleOpacity;
       } else {
-        newSubject.opacity = 1;
+        subject.opacity = 1;
       }
-      return (
-        newSubject
-      )
-    });
-    this.setState({catalogue: opacityCatalogue})
+      subjectsAsObject[subject.code] = subject
+    }
+    this.setState({catalogue: {semesters: semesters, subjects: subjectsAsObject}})
   };
 
   handleBorderButton = () => {
@@ -126,9 +115,88 @@ class App extends React.Component {
     }
   };
 
-  render() {
-    this.catalogueSem = this.organizeCatalogueBySemester(this.state.catalogue);
+  handleEdit = () => {
+    if (! this.catalogue.current) return;
+    const x = this.state.persistentEditing;
+    this.setState({persistentEditing: !x})
+    this.catalogue.current.setState({onDragging: true})
+    this.catalogue.current.forceUpdate()
+  };
 
+  onDragStart = () => {
+    this.setState({editing: true})
+  };
+
+  onDragEnd = (result) => {
+    const catalogue = this.state.catalogue
+    const { destination, source, draggableId } = result;
+
+    if (!destination) {
+      this.setState({editing: false})
+      return;
+    }
+    if (
+      destination.droppableId === source.droppableId &&
+      destination.index === source.index
+    ) {
+      this.setState({editing: false})
+      return;
+    }
+
+    const nOfEditions = this.state.nOfEditions;
+    const start = catalogue.semesters[source.droppableId];
+    const finish = catalogue.semesters[destination.droppableId];
+
+    if (start === finish) {
+      const newTaskIds = Array.from(start.subjects);
+      newTaskIds.splice(source.index, 1)
+      newTaskIds.splice(destination.index, 0, draggableId)
+
+      const newColumn = {
+        ...start,
+        subjects: newTaskIds,
+      };
+
+      const newState = {
+        ...catalogue,
+        semesters: {
+          ...catalogue.semesters,
+          ["sem-"+newColumn.id]: newColumn,
+        }
+      };
+      this.setState({catalogue: newState, nOfEditions: nOfEditions, editing: false})
+    }
+    else {
+      const startTaskIds = Array.from(start.subjects);
+      startTaskIds.splice(source.index, 1)
+
+      const newStart = {
+        ...start,
+        subjects: startTaskIds,
+      };
+
+      const finishTaskIds = Array.from(finish.subjects);
+      finishTaskIds.splice(destination.index, 0, draggableId)
+
+      const newFinish = {
+        ...finish,
+        subjects: finishTaskIds,
+      };
+
+      const newState = {
+        ...catalogue,
+        semesters: {
+          ...catalogue.semesters,
+          ["sem-"+newStart.id]: newStart,
+          ["sem-"+newFinish.id]: newFinish,
+        }
+      };
+      this.setState({catalogue: newState, nOfEditions: nOfEditions, editing: false})
+    }
+    this.forceUpdate()
+  };
+
+  render() {
     const borderButtonText = this.state.borderColored ? "Cor Interna" : "Cor na Borda"
     const randomColorButtonText = this.state.coloredBy==="Random" ? "Sem cor" : "Aleatória"
     return (
@@ -138,7 +206,7 @@ class App extends React.Component {
           {display: "flex",
            margin: "auto",
            alignItems: "center",
-           width: "550px"}
+           width: "750px"}
         }>
           <SearchInput onChangeHandler = {this.handleSearch}/>
           <button className={"BorderButton"} onClick={this.handleBorderButton}>
@@ -147,11 +215,19 @@ class App extends React.Component {
           <button className={"BorderButton"} onClick={this.handleRandomColorButton}>
             {randomColorButtonText}
           </button>
+          <button className={"BorderButton"} onClick={this.handleEdit}>
+            {"EDIT"}
+          </button>
         </div>
         <Catalogue
-          catalogueBySemester={this.catalogueSem}
+          ref={this.catalogue}
+          onDragEnd={this.onDragEnd}
+          onDragStart={this.onDragStart}
+          catalogueBySemester={this.state.catalogue}
           borderColored={this.state.borderColored}
           coloredBy={this.state.coloredBy}
+          editing={this.state.persistentEditing || this.state.editing}
+          nOfEditions={this.state.nOfEditions}
         />
       </div>
     );
