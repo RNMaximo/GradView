@@ -9,6 +9,8 @@ build:
   script:
     - cd maven_test
     - mvn package
+    - docker build -t gitlabci.ic.unicamp.br/ra176675/mc030-gradview .
+    - docker push gitlabci.ic.unicamp.br/ra176675/mc030-gradview
 
 # Pegar variaveis cacert, clientcert, e clientkey para os certificados de acesso ao banco.
 
