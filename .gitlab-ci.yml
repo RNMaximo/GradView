@@ -1,14 +1,14 @@
-# Testar docker:
-before_script:
-  - docker info
+image: maven:latest
 
-build_image:
+cache:
+  paths:
+    - target/
+    
+build:
+  stage: build
   script:
-    - docker build -t my-docker-image .
-    - docker run my-docker-image /script/to/run/tests
-
-
-
+    - cd maven_test
+    - mvn package
 
 # Pegar variaveis cacert, clientcert, e clientkey para os certificados de acesso ao banco.
 
