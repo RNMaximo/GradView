@@ -6,17 +6,13 @@ import {DragDropContext, Droppable} from "react-beautiful-dnd";
 
 class Catalogue extends React.Component {
   state={
-    hasMountSubjects:false,
+    hasMountSubjects: false,
     catalogueIsOnHover: false,
 
     onDragging: false,
   };
-  componentWillMount() {
-    this.subjects={}
-    this.prereq={}
-  }
-
-
+  subjects={}
+  prereq={}
 
   componentDidMount() {
     this.setState({hasMountSubjects: true})
@@ -33,7 +29,7 @@ class Catalogue extends React.Component {
   };
   handleMouseLeave = (event) => {
     this.setVisibleToAllSubjects(true)
-    this.setVisibleToAllPrereq(true)
+    this.setVisibleToAllPrereq(false)
   };
 
   setVisibleToAllSubjects = (boolean) => {
@@ -47,7 +43,7 @@ class Catalogue extends React.Component {
     if (!prereq) return;
 
     for (let key in prereq) {
-      if (this.prereq[key]) this.prereq[key].setState({visible: boolean});
+      if (this.prereq[key]) this.prereq[key].setState({onHover: boolean});
     }
   };
 
@@ -56,7 +52,7 @@ class Catalogue extends React.Component {
       to.map((r) => {
         if (this.subjects[r]) {
           const req = from + "to" + r
-          if (this.prereq[req]) this.prereq[req].setState({visible: boolean});
+          if (this.prereq[req]) this.prereq[req].setState({onHover: boolean});
           this.subjects[r].setState({visible: boolean});
           const newRequisites = this.subjects[r].props.subject.requisitos;
           this.setVisibleToRequisites(r, newRequisites, boolean)
@@ -121,21 +117,17 @@ class Catalogue extends React.Component {
 
     let prereqLines = null;
     if (this.state.hasMountSubjects) {
-      //console.log(this.prereq)
       prereqLines = semestersKeys.map((semestersId) => {
 
         const semester = catalogueProps.semesters[semestersId];
         const subjects = semester.subjects.map(subjectsId => catalogueProps.subjects[subjectsId]);
 
-        const prereqBySemester = subjects.map((subject) => {
-          let prereqLinesBySubject = null;
+        const reqBySemester = subjects.map((subject) => {
+          let reqLinesBySubject = null;
           if (subject.requisitos && subject.requisitos.length > 0) {
-            prereqLinesBySubject = subject.requisitos.map((req) => {
-              if (subject.code in this.subjects) {
-                //console.log(this.subjects[subject.code].state.notOnHover)
-              }
-              // Não achou req no catalogo
-              if (! this.subjects[req]) {
+            reqLinesBySubject = subject.requisitos.map((req) => {
+              // Não achou o div da disciplina
+              if (! this.subjects[req] || ! this.subjects) {
                 return null
               }
               return (
@@ -146,14 +138,13 @@ class Catalogue extends React.Component {
                   to={this.props.catalogueBySemester.subjects[req]}
                   coloredBy={this.props.coloredBy}
                   editing={this.props.editing}
-                  nOfEditions={this.props.nOfEditions}
                 />
               )
             })
           }
-          return prereqLinesBySubject;
+          return reqLinesBySubject;
         });
-        return prereqBySemester
+        return reqBySemester
       });
     }
 

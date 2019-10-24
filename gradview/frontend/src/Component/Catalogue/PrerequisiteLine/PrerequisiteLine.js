@@ -5,10 +5,10 @@ import {hexToRgbA} from "../../../Functions/Colors/rgbMeanColor";
 import * as Constants from '../constants';
 
 class PrerequisiteLine extends React.Component {
-
   state = {
-    visible: true
-  }
+    onHover: false
+  };
+
   /* Rerender caso a página mude de tamanho */
   componentDidMount() {
     window.addEventListener('resize', this.updateDimensions);
@@ -26,40 +26,37 @@ class PrerequisiteLine extends React.Component {
 
     if (!fromS || !toS) return null;
     // Média da opacidade das duas disciplinas
-    const defaultOpacity = (fromS.opacity + toS.opacity)/4;
-    let lineOpacity = 1/2;
-    if (this.props.opacity) {
-      lineOpacity = this.props.opacity
-    } else if (defaultOpacity) {
-      console.log(defaultOpacity)
-      lineOpacity = defaultOpacity
-    }
-    let color = "#000000";
-    if (this.props.coloredBy==="Random" && fromS.color && fromS.color !== "#ffffff") {
-      color = fromS.color;
-    }
-    if (! this.state.visible) {
-      color = Constants.invisibleColor;
-    }
+    let lineOpacity = 1;
     if (this.props.editing) {
       lineOpacity = 0
+    } else if (! this.state.onHover) {
+      lineOpacity = Constants.invisibleOpacity/2
+    } else if (this.props.opacity) {
+      lineOpacity = this.props.opacity
     }
-    const opacity = this.state.visible ? lineOpacity : Constants.invisibleOpacity/2;
+
+    let color = "#000000";
+    if (! this.state.onHover) {
+      color = Constants.invisibleColor;
+    } else if (this.props.coloredBy==="Random" && fromS.color && fromS.color !== "#ffffff") {
+      color = fromS.color;
+    }
 
     return (
       <CurveTo
         key={fromS.code+"_to_"+toS.code+"CT"}
         ref={n => this.curveTo = n}
-        style={{opacity: opacity}}
+        style={{opacity: lineOpacity}}
         from={fromS.code}
         to={toS.code}
-        borderColor={hexToRgbA(color, opacity)}
+        borderColor={hexToRgbA(color, lineOpacity)}
         borderWidth={3}
         zIndex={-10}
         toAnchor="bottom"
         fromAnchor="top"
         curveFrom={[0, 0]}
         curveTo={[0, 5]}
+        delay={50}
       />
     )
   }

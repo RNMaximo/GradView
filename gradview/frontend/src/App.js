@@ -17,7 +17,6 @@ class App extends React.Component {
     coloredBy: "Random",
     editing: false,
     persistentEditing: false,
-    nOfEditions: 0
   };
   catalogue = React.createRef();
 
@@ -66,7 +65,6 @@ class App extends React.Component {
           return (subject.requisitos.includes(req.code))
         });
         if (requisite.length > 0) {
-          //console.log(requisite)
           subject = {...subject, color: rgbMeanColor(this.getColors(requisite))}
         } else {
           subject = {...subject, color: rgbMeanColor([randomColor(), "#AAAAAA"])}
@@ -143,7 +141,6 @@ class App extends React.Component {
       return;
     }
 
-    const nOfEditions = this.state.nOfEditions;
     const start = catalogue.semesters[source.droppableId];
     const finish = catalogue.semesters[destination.droppableId];
 
@@ -164,7 +161,7 @@ class App extends React.Component {
           ["sem-"+newColumn.id]: newColumn,
         }
       };
-      this.setState({catalogue: newState, nOfEditions: nOfEditions, editing: false})
+      this.setState({catalogue: newState, editing: false})
     }
     else {
       const startTaskIds = Array.from(start.subjects);
@@ -191,7 +188,7 @@ class App extends React.Component {
           ["sem-"+newFinish.id]: newFinish,
         }
       };
-      this.setState({catalogue: newState, nOfEditions: nOfEditions, editing: false})
+      this.setState({catalogue: newState, editing: false})
     }
     this.forceUpdate()
   };
@@ -227,7 +224,6 @@ class App extends React.Component {
           borderColored={this.state.borderColored}
           coloredBy={this.state.coloredBy}
           editing={this.state.persistentEditing || this.state.editing}
-          nOfEditions={this.state.nOfEditions}
         />
       </div>
     );
