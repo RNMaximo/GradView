@@ -42,6 +42,9 @@ class PrerequisiteLine extends React.Component {
       color = fromS.color;
     }
 
+
+    const borderStyle = this.props.partial ? "dashed" : "solid";
+
     return (
       <CurveTo
         key={fromS.code+"_to_"+toS.code+"CT"}
@@ -57,6 +60,7 @@ class PrerequisiteLine extends React.Component {
         curveFrom={[0, 0]}
         curveTo={[0, 5]}
         delay={50}
+        borderStyle={borderStyle}
       />
     )
   }

@@ -6,6 +6,7 @@ import SearchInput from "./Component/Catalogue/SearchInput/SearchInput";
 
 import rgbMeanColor from './Functions/Colors/rgbMeanColor';
 import * as Constants from "./Component/Catalogue/constants";
+import { getCleanCode } from "./Functions/SubjectCode/SubjectCode";
 
 var randomColor = require('randomcolor');
 
@@ -60,9 +61,12 @@ class App extends React.Component {
       let subject = subjectsToColor[i];
 
       let requisite = null;
-      if (subject.requisitos && subject.requisitos !== []) {
+      if (subject.requisitos && subject.requisitos.length > 0) {
+        const cleanCodes = subject.requisitos.map((req) => {
+          return getCleanCode(req);
+        });
         requisite = subjectsAsArray.filter((req) => {
-          return (subject.requisitos.includes(req.code))
+          return (cleanCodes.includes(req.code))
         });
         if (requisite.length > 0) {
           subject = {...subject, color: rgbMeanColor(this.getColors(requisite))}

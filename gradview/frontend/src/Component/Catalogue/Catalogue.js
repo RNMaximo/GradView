@@ -3,6 +3,7 @@ import './Catalogue.css'
 import Subject from './Subject/Subject';
 import PrerequisiteLine from './PrerequisiteLine/PrerequisiteLine';
 import {DragDropContext, Droppable} from "react-beautiful-dnd";
+import { getCleanCode, isPartialRequisite } from "../../Functions/SubjectCode/SubjectCode";
 
 class Catalogue extends React.Component {
   state={
@@ -33,7 +34,7 @@ class Catalogue extends React.Component {
   };
 
   setVisibleToAllSubjects = (boolean) => {
-    const subjects = {...this.subjects}
+    const subjects = {...this.subjects};
     for (let key in subjects) {
       this.subjects[key].setState({visible: boolean});
     }
@@ -41,7 +42,6 @@ class Catalogue extends React.Component {
   setVisibleToAllPrereq = (boolean) => {
     const prereq = {...this.prereq};
     if (!prereq) return;
-
     for (let key in prereq) {
       if (this.prereq[key]) this.prereq[key].setState({onHover: boolean});
     }
@@ -50,8 +50,9 @@ class Catalogue extends React.Component {
   setVisibleToRequisites = (from, to, boolean) => {
     if (to) {
       to.map((r) => {
+        r = getCleanCode(r);
         if (this.subjects[r]) {
-          const req = from + "to" + r
+          const req = from + "to" + r;
           if (this.prereq[req]) this.prereq[req].setState({onHover: boolean});
           this.subjects[r].setState({visible: boolean});
           const newRequisites = this.subjects[r].props.subject.requisitos;
@@ -73,12 +74,13 @@ class Catalogue extends React.Component {
   };
 
   isSubjectBeforeSemester = (semesters, subject, semesterId) => {
+    subject = getCleanCode(subject);
     if (subject === "AA200") {
       return true
     }
 
     if (subject.substring(0, 3) === "AA4") {
-      const cpNeeded = subject.substring(3,5)
+      const cpNeeded = subject.substring(3,5);
       const currentCP = this.getCurrentCP(semesters, semesterId)
       return (currentCP >= cpNeeded/100)
     }
@@ -182,18 +184,23 @@ class Catalogue extends React.Component {
           let reqLinesBySubject = null;
           if (subject.requisitos && subject.requisitos.length > 0) {
             reqLinesBySubject = subject.requisitos.map((req) => {
+              const partial = isPartialRequisite(req);
+              req = getCleanCode(req);
+
               // Não achou o div da disciplina
               if (! this.subjects[req] || ! this.subjects) {
                 return null
               }
+
               return (
                 <PrerequisiteLine
                   ref={(node) => this.prereq[subject.code + "to" + req]=node}
-                  key={subject.code + "to" + req+"PL"}
+                  key={subject.code + "to" + req +"PL"}
                   from={subject}
                   to={this.props.catalogueBySemester.subjects[req]}
                   coloredBy={this.props.coloredBy}
                   editing={this.props.editing}
+                  partial={partial}
                 />
               )
             })
@@ -203,7 +210,6 @@ class Catalogue extends React.Component {
         return reqBySemester
       });
     }
-
     return (
       <DragDropContext
         onDragEnd={this.props.onDragEnd}
