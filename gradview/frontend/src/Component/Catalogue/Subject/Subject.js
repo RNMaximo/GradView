@@ -6,6 +6,7 @@ import PopupSubject from "./PopupSubject/PopupSubject";
 import * as Constants from '../constants';
 
 import {Draggable} from 'react-beautiful-dnd';
+import {getVisualCode} from "../../../Functions/SubjectCode/SubjectCode";
 
 class Subject extends React.Component {
   constructor(props) {
@@ -53,7 +54,7 @@ class Subject extends React.Component {
     }
     const alert = this.props.alert ? <div className={"Alert"}>!</div> : null;
 
-    const subjectCode = subject.code.replace("_", " ");
+    const subjectCode = getVisualCode(subject.code);
     return (
 
       <Draggable

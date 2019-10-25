@@ -6,7 +6,7 @@ import SearchInput from "./Component/Catalogue/SearchInput/SearchInput";
 
 import rgbMeanColor from './Functions/Colors/rgbMeanColor';
 import * as Constants from "./Component/Catalogue/constants";
-import { getCleanCode } from "./Functions/SubjectCode/SubjectCode";
+import {getCleanCode, getVisualCode} from "./Functions/SubjectCode/SubjectCode";
 
 var randomColor = require('randomcolor');
 
@@ -91,8 +91,7 @@ class App extends React.Component {
 
     for (let i in subjectsAsObject) {
       let subject = subjectsAsObject[i];
-
-      if (!subject.code.toUpperCase().includes(event.target.value.toUpperCase()) &&
+      if (!(getVisualCode(subject.code)).toUpperCase().includes(event.target.value.toUpperCase()) &&
         !subject.name.toUpperCase().includes(event.target.value.toUpperCase()) &&
         !subject.ementa.toUpperCase().includes(event.target.value.toUpperCase())) {
         subject.opacity = Constants.invisibleOpacity;
