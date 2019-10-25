@@ -51,7 +51,9 @@ class Subject extends React.Component {
     if (! this.props.borderColored && this.props.coloredBy==="Random") {
       textStyle = {color: "white"};
     }
-    const alert = this.props.alert ? <div className={"Alert"}>!</div> : null
+    const alert = this.props.alert ? <div className={"Alert"}>!</div> : null;
+
+    const subjectCode = subject.code.replace("_", " ");
     return (
 
       <Draggable
@@ -75,7 +77,7 @@ class Subject extends React.Component {
               onMouseLeave={this.props.onMouseLeave}
             >
               {alert}
-              <span style={textStyle}>{subject.code}</span>
+              <span style={textStyle}>{subjectCode}</span>
             </div>
 
             <Popup

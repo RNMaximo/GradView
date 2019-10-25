@@ -3,19 +3,19 @@ const catalogue = {
   semesters: {
     'sem-1': {
       id: '1',
-      subjects: ['F128', 'F129', 'HZ291', 'MA111', 'MA141', 'MC102', 'QG111', 'QG122']
+      subjects: ['F_128', 'F_129', 'HZ291', 'MA111', 'MA141', 'MC102', 'QG111', 'QG122']
     },
     'sem-2': {
       id: '2',
-      subjects: ['F228', 'F229', 'LA122', 'MA211', 'MA327', 'MC202']
+      subjects: ['F_228', 'F_229', 'LA122', 'MA211', 'MA327', 'MC202']
     },
     'sem-3': {
       id: '3',
-      subjects: ['EA513', 'F315', 'F328', 'F329', 'MA311', 'MC322']
+      subjects: ['EA513', 'F_315', 'F_328', 'F_329', 'MA311', 'MC322']
     },
     'sem-4': {
       id: '4',
-      subjects: ['EA772', 'EM423', 'F428', 'F429', 'MC358', 'MC404']
+      subjects: ['EA772', 'EM423', 'F_428', 'F_429', 'MC358', 'MC404']
     },
     'sem-5': {
       id: '5',
@@ -53,16 +53,16 @@ const catalogue = {
 
   subjects: {
     //1
-    'F128': {
-      code: 'F128',
+    'F_128': {
+      code: 'F_128',
       name: 'Física Geral I',
       ementa: 'Cinemática do ponto. Leis de Newton. Estática e dinâmica da partícula. Trabalho e energia. Conservação da Energia. Momento linear e sua conservação. Colisões. Momento angular da partícula e de sistemas de partículas. Rotação de corpos rígidos.',
       semestre: 1,
       vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
       requisitos: ''
     },
-    'F129': {
-      code: 'F129',
+    'F_129': {
+      code: 'F_129',
       name: 'Física Experimental I',
       ementa: 'Grandezas físicas e suas medidas. Erros. Instrumentos de medida. Tabelas, gráficos. Leis de Newton. Lei de Hooke. Estatística de dados, método de mínimos quadrados e propagação de erros. Movimento bidimensional. Conservação de energia. Colisões e conservação do movimento linear.',
       semestre: 1,
@@ -118,21 +118,21 @@ const catalogue = {
       requisitos: ''
     },
     //2
-    'F228': {
-      code: 'F228',
+    'F_228': {
+      code: 'F_228',
       name: 'Física Geral II',
       ementa: 'Oscilações. Gravitação. Ondas em meios elásticos. Ondas sonoras. Hidrostática e hidrodinâmica. Viscosidade. Temperatura. Calorimetria e condução de calor. Leis da termodinâmica; teoria cinética dos gases.',
       semestre: 2,
       vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
-      requisitos: ['F128']
+      requisitos: ['F_128']
     },
-    'F229': {
-      code: 'F229',
+    'F_229': {
+      code: 'F_229',
       name: 'Física Experimental II',
       ementa: 'Experiências de laboratório sobre: oscilações, gravitação, ondas em meios elásticos, ondas sonoras, hidrostática e hidrodinâmica, viscosidade, temperatura, calorimetria e condução de calor, leis da termodinâmica e teoria cinética dos gases.',
       semestre: 2,
       vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
-      requisitos: ['F128', 'F129']
+      requisitos: ['F_128', 'F_129']
     },
     'LA122': {
       code: 'LA122',
@@ -175,29 +175,29 @@ const catalogue = {
       vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
       requisitos: ['MA111']
     },
-    'F315': {
-      code: 'F315',
+    'F_315': {
+      code: 'F_315',
       name: 'Mecânica Geral I',
       ementa: 'Revisão de matrizes e cálculo vetorial. Mecânica Newtoniana. Oscilações lineares. Oscilações não lineares e Caos. Gravitação. Cálculo variacional. Equações de Lagrange e de Hamilton.',
       semestre: 3,
       vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
-      requisitos: ['F128', 'MA211']
+      requisitos: ['F_128', 'MA211']
     },
-    'F328': {
-      code: 'F328',
+    'F_328': {
+      code: 'F_328',
       name: 'Física Geral III',
       ementa: 'Lei de Coulomb, Campo Elétrico, Lei de Gauss, Potencial Elétrico, Capacitância, Corrente e Resistência, Força Eletromotriz e Circuitos Elétricos, Campo Magnético, Lei de Ampère, Lei da Indução de Faraday, Indutância, Propriedades Magnéticas da Matéria, Oscilações Eletromagnéticas, Correntes Alternadas, Equações de Maxwell.',
       semestre: 3,
       vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
-      requisitos: ['F128', 'MA111', 'MA141']
+      requisitos: ['F_128', 'MA111', 'MA141']
     },
-    'F329': {
-      code: 'F329',
+    'F_329': {
+      code: 'F_329',
       name: 'Física Experimental III',
       ementa: 'Experiências de laboratório sobre: lei de Coulomb e campo elétrico, lei de Gauss, potencial elétrico, capacitores e dielétricos, corrente, resistência e força eletromotriz, circuitos e instrumentos de corrente contínua, campo magnético de uma corrente, forças magnéticas sobre correntes, força eletromotriz induzida e circuitos de corrente alternada.',
       semestre: 3,
       vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
-      requisitos: ['F129', 'MA111']
+      requisitos: ['F_129', 'MA111']
     },
     'MA311': {
       code: 'MA311',
@@ -230,23 +230,23 @@ const catalogue = {
       ementa: 'Noções sobre o material. Conceituação de tensões, solicitação axial. Cisalhamento puro. Torção em eixos circulares. Flexão pura, simples e oblíqua. Deflexão em vigas retas. Estado triplo de tensões e deformações. Círculo de Mohr. Cisalhamento puro. Estado hidrostático de tensões.',
       semestre: 4,
       vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
-      requisitos: ['F315']
+      requisitos: ['F_315']
     },
-    'F428': {
-      code: 'F428',
+    'F_428': {
+      code: 'F_428',
       name: 'Física Geral IV',
       ementa: 'Ondas Eletromagnéticas, Óptica Geométrica, Interferência, Difração, Teoria da Relatividade, Física Quântica, Modelos Atômicos, Condução de Eletricidade em Sólidos, Física Nuclear, Quarks, Léptons, e o Big-Bang.',
       semestre: 4,
       vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
-      requisitos: ['F328']
+      requisitos: ['F_328']
     },
-    'F429': {
-      code: 'F429',
+    'F_429': {
+      code: 'F_429',
       name: 'Física Experimental IV',
       ementa: 'Experiências de laboratório sobre: propriedades magnéticas da matéria, correntes alternadas, ondas eletromagnéticas, reflexão e refração da luz, polarização, interferência e difração da luz e introdução à física atômica e nuclear.',
       semestre: 4,
       vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
-      requisitos: ['F329']
+      requisitos: ['F_329']
     },
     'MC358': {
       code: 'MC358',
