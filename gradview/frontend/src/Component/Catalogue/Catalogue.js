@@ -62,6 +62,58 @@ class Catalogue extends React.Component {
     }
   };
 
+  // TODO: Retornar texto explicando o motivo: {boolean: _, reason: _}
+  areSubjectsBeforeSemester = (semesters, subjects, semesterId) => {
+    for (let i in subjects) {
+      if (! this.isSubjectBeforeSemester(semesters, subjects[i], semesterId)) {
+        return false;
+      }
+    }
+    return true
+  };
+
+  isSubjectBeforeSemester = (semesters, subject, semesterId) => {
+    if (subject === "AA200") {
+      return true
+    }
+
+    if (subject.substring(0, 3) === "AA4") {
+      const cpNeeded = subject.substring(3,5)
+      const currentCP = this.getCurrentCP(semesters, semesterId)
+      return (currentCP >= cpNeeded/100)
+    }
+
+    for (let i in semesters) {
+      if (parseInt(semesters[i].id,10) >= parseInt(semesterId,10)) {
+        return false;
+      }
+      if (semesters[i].subjects.includes(subject)) {
+        return true;
+      }
+    }
+    return false;
+  };
+
+  getCurrentCP = (semesters, semesterId) => {
+    let totalCredits = 0;
+    for (let i in semesters) {
+      if (parseInt(semesters[i].id,10) >= parseInt(semesterId,10)) {
+        const currentCP = totalCredits / this.props.catalogueBySemester.totalCredits;
+        return currentCP;
+      }
+
+      const subjects = semesters[i].subjects;
+      for (let i in subjects) {
+        const subject = subjects[i];
+        const vector = this.props.catalogueBySemester.subjects[subject].vector;
+        totalCredits += vector.C
+      }
+    }
+
+    const currentCP = totalCredits / this.props.catalogueBySemester.totalCredits;
+    return currentCP;
+  };
+
   render() {
     const catalogueProps = this.props.catalogueBySemester;
     const semestersKeys = Object.keys(this.props.catalogueBySemester.semesters);
@@ -76,14 +128,18 @@ class Catalogue extends React.Component {
           if (subject.opacity) {
             opacity = subject.opacity;
           }
+          const smIsWrong = ! this.areSubjectsBeforeSemester(catalogueProps.semesters, subject.requisitos, semester.id);
           return (
             <Subject
               ref={(node) => this.subjects[subject.code]=node}
               key={subject.code + "_bt"}
+
               subject = {subject}
               opacity = {opacity}
               borderColored={this.props.borderColored}
               coloredBy={this.props.coloredBy}
+              alert={smIsWrong}
+
               onMouseEnter={this.handleMouseEnter}
               onMouseLeave={this.handleMouseLeave}
               index={index}

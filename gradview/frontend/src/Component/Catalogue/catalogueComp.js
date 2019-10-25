@@ -1,4 +1,5 @@
 const catalogue = {
+  totalCredits: 240,
   semesters: {
     'sem-1': {
       id: '1',

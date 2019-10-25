@@ -46,13 +46,12 @@ class Subject extends React.Component {
         borderWidth: "3px",
         opacity: opacity
       };
-    const textStyle = ! this.props.borderColored && this.props.coloredBy==="Random" ?
-      {
-        color: "white"
-      } :
-      {
-        color: "black"
-      };
+
+    let textStyle = {color: "black"};
+    if (! this.props.borderColored && this.props.coloredBy==="Random") {
+      textStyle = {color: "white"};
+    }
+    const alert = this.props.alert ? <div className={"Alert"}>!</div> : null
     return (
 
       <Draggable
@@ -63,7 +62,7 @@ class Subject extends React.Component {
         {(provided, snapshot) => (
           <div
             key={this.props.id}
-            className={"draggable subject " + subject.code}
+            className={"draggable " + subject.code}
             {...provided.draggableProps}
             {...provided.dragHandleProps}
             ref={provided.innerRef}
@@ -75,6 +74,7 @@ class Subject extends React.Component {
               onMouseEnter={this.props.onMouseEnter}
               onMouseLeave={this.props.onMouseLeave}
             >
+              {alert}
               <span style={textStyle}>{subject.code}</span>
             </div>
 

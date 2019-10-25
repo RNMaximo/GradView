@@ -25,7 +25,7 @@ class App extends React.Component {
     if (! this.state.isColored) {
       const coloredCatalogue = this.initializeRandomColors(catalogueSem);
       this.setState({shouldChangeColor: false})
-      this.setState({catalogue: {semesters: catalogueSem.semesters, subjects: coloredCatalogue}})
+      this.setState({catalogue: {...this.state.catalogue, subjects: coloredCatalogue}})
     }
   }
 
@@ -83,7 +83,6 @@ class App extends React.Component {
   };
 
   handleSearch = (event) => {
-    const semesters = this.state.catalogue.semesters
     let subjectsAsObject = this.state.catalogue.subjects;
 
     for (let i in subjectsAsObject) {
@@ -98,7 +97,7 @@ class App extends React.Component {
       }
       subjectsAsObject[subject.code] = subject
     }
-    this.setState({catalogue: {semesters: semesters, subjects: subjectsAsObject}})
+    this.setState({catalogue: {...this.state.catalogue, subjects: subjectsAsObject}})
   };
 
   handleBorderButton = () => {
