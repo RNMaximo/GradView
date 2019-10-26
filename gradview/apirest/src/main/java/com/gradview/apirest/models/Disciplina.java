@@ -25,6 +25,8 @@ public class Disciplina {
 	private String ementa;
 	private String bibliografia;
 	private long unidade_ensino; //  Chave estrangeira
+	
+	
 	public long getId() {
 		return id;
 	}
