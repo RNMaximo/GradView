@@ -6,19 +6,12 @@ cache:
     
 build:
   stage: build
-  image:
-    name: gcr.io/kaniko-project/executor:debug
-    entrypoint: [""]
   script:
     - cd maven_test
     - mvn package
-    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
-    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:$CI_COMMIT_TAG
-  only:
-    - tags
-    
-#    - docker build -t gitlabci.ic.unicamp.br/ra176675/mc030-gradview .
-#    - docker push gitlabci.ic.unicamp.br/ra176675/mc030-gradview
+    - apt-get 
+    - docker build -t gitlabci.ic.unicamp.br/ra176675/mc030-gradview .
+    - docker push gitlabci.ic.unicamp.br/ra176675/mc030-gradview
 
 # Pegar variaveis cacert, clientcert, e clientkey para os certificados de acesso ao banco.
 
