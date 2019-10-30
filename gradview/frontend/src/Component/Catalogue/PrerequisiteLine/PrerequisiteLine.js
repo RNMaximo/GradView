@@ -4,6 +4,8 @@ import CurveTo from "react-curveto";
 import {hexToRgbA} from "../../../Functions/Colors/rgbMeanColor";
 import * as Constants from '../constants';
 
+import './PrerequisiteLine.css'
+
 class PrerequisiteLine extends React.Component {
   state = {
     onHover: false
@@ -50,6 +52,7 @@ class PrerequisiteLine extends React.Component {
         key={fromS.code+"_to_"+toS.code+"CT"}
         ref={n => this.curveTo = n}
         style={{opacity: lineOpacity}}
+        className={"Line"}
         from={fromS.code}
         to={toS.code}
         borderColor={hexToRgbA(color, lineOpacity)}
