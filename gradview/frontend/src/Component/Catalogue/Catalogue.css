@@ -4,12 +4,11 @@
     border-radius: 5px;
     border-color: black;
 
-    width: 850px;
     margin: auto;
 }
 .Semestre {
     height: 34px;
-    margin: 20px;
+    margin: 20px auto 0 auto;
     padding: 10px;
 
     display: flex;
@@ -19,6 +18,8 @@
     border: 1px dashed transparent;
     border-radius: 10px;
 
+    min-width: 250px;
+    width: max-content;
 }
 
 .editing {

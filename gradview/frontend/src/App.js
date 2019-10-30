@@ -18,6 +18,7 @@ class App extends React.Component {
     coloredBy: "Random",
     editing: false,
     persistentEditing: false,
+    sizedByCredits: false,
   };
   catalogue = React.createRef();
 
@@ -107,6 +108,7 @@ class App extends React.Component {
     const isBorderColored = this.state.borderColored;
     this.setState({borderColored: !isBorderColored})
   };
+
   handleRandomColorButton = () => {
     if (this.state.coloredBy==="Random") {
       this.setState({coloredBy: ""})
@@ -121,6 +123,11 @@ class App extends React.Component {
     this.setState({persistentEditing: !x})
     this.catalogue.current.setState({onDragging: true})
     this.catalogue.current.forceUpdate()
+  };
+
+  handleCreditsButton = () => {
+    const isSizedByCredits = this.state.sizedByCredits;
+    this.setState({sizedByCredits: !isSizedByCredits})
   };
 
   onDragStart = () => {
@@ -217,6 +224,9 @@ class App extends React.Component {
           <button className={"BorderButton"} onClick={this.handleEdit}>
             {"EDIT"}
           </button>
+          <button className={"BorderButton"} onClick={this.handleCreditsButton}>
+            {"Por créditos"}
+          </button>
         </div>
         <Catalogue
           ref={this.catalogue}
@@ -226,6 +236,7 @@ class App extends React.Component {
           borderColored={this.state.borderColored}
           coloredBy={this.state.coloredBy}
           editing={this.state.persistentEditing || this.state.editing}
+          sizedByCredits={this.state.sizedByCredits}
         />
       </div>
     );

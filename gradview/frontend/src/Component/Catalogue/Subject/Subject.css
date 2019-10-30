@@ -20,6 +20,7 @@
 
     transition: background-color 0.5s ease-in-out,  opacity 0.5s ease-in-out;
 }
+
 .draggable {
     margin: 2px 10px;
     height: 100%;
@@ -31,6 +32,9 @@
     -khtml-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
+}
+.margin1 {
+    margin: 1px;
 }
 .subject span {
     display: table-cell;
@@ -62,4 +66,6 @@
     line-height: 20px;
     font-size: 16px;
     font-weight: bold;
+
+    z-index: 150;
 }

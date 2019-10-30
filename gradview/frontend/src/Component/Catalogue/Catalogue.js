@@ -140,6 +140,7 @@ class Catalogue extends React.Component {
               opacity = {opacity}
               borderColored={this.props.borderColored}
               coloredBy={this.props.coloredBy}
+              sizedByCredits={this.props.sizedByCredits}
               alert={smIsWrong}
 
               onMouseEnter={this.handleMouseEnter}

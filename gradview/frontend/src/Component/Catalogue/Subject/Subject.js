@@ -48,6 +48,12 @@ class Subject extends React.Component {
         opacity: opacity
       };
 
+    const sizeStyle = this.props.sizedByCredits ?
+      {
+        width: 35*subject.vector.C+'px',
+      } :
+      {};
+
     let textStyle = {color: "black"};
     if (! this.props.borderColored && this.props.coloredBy==="Random") {
       textStyle = {color: "white"};
@@ -61,38 +67,40 @@ class Subject extends React.Component {
         key={subject.code}
         draggableId={subject.code}
         index={this.props.index}
+        style={{margin: 1}}
       >
         {(provided, snapshot) => (
-          <div
-            key={this.props.id}
-            className={"draggable " + subject.code}
-            {...provided.draggableProps}
-            {...provided.dragHandleProps}
-            ref={provided.innerRef}
-          >
             <div
-              className={"subject " + subject.code}
-              style={divStyle}
-              onClick={this.openModal}
-              onMouseEnter={this.props.onMouseEnter}
-              onMouseLeave={this.props.onMouseLeave}
+              key={this.props.id}
+              className={"draggable " + subject.code + (this.props.sizedByCredits ? " margin1" : "")}
+              {...provided.draggableProps}
+              {...provided.dragHandleProps}
+              ref={provided.innerRef}
             >
-              {alert}
-              <span style={textStyle}>{subjectCode}</span>
-            </div>
+              <div
+                className={"subject " + subject.code}
+                style={{...divStyle, ...sizeStyle}}
+                onClick={this.openModal}
+                onMouseEnter={this.props.onMouseEnter}
+                onMouseLeave={this.props.onMouseLeave}
+              >
+                {alert}
+                <span style={textStyle}>{subjectCode}</span>
+              </div>
 
-            <Popup
-              open={this.state.open}
-              closeOnDocumentClick
-              onClose={this.closeModal}
-            >
-              <PopupSubject
-                subject={subject}
-                closeModal={this.closeModal}
-              />
-            </Popup>
-          </div>
-        )}
+              <Popup
+                open={this.state.open}
+                closeOnDocumentClick
+                onClose={this.closeModal}
+              >
+                <PopupSubject
+                  subject={subject}
+                  closeModal={this.closeModal}
+                />
+              </Popup>
+            </div>
+          )
+        }
       </Draggable>
     )
   }
