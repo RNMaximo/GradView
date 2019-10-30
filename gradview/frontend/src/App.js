@@ -116,6 +116,13 @@ class App extends React.Component {
       this.setState({coloredBy: "Random"})
     }
   };
+  handleCreditsColorButton = () => {
+    if (this.state.coloredBy==="Credits") {
+      this.setState({coloredBy: ""})
+    } else {
+      this.setState({coloredBy: "Credits"})
+    }
+  };
 
   handleEdit = () => {
     if (! this.catalogue.current) return;
@@ -205,6 +212,7 @@ class App extends React.Component {
   render() {
     const borderButtonText = this.state.borderColored ? "Cor Interna" : "Cor na Borda"
     const randomColorButtonText = this.state.coloredBy==="Random" ? "Sem cor" : "Aleatória"
+    const creditsColorButtonText = this.state.coloredBy==="Credits" ? "Sem cor" : "Cor por C"
     return (
       <div className="App">
         <div
@@ -212,7 +220,7 @@ class App extends React.Component {
           {display: "flex",
            margin: "auto",
            alignItems: "center",
-           width: "750px"}
+           width: "950px"}
         }>
           <SearchInput onChangeHandler = {this.handleSearch}/>
           <button className={"BorderButton"} onClick={this.handleBorderButton}>
@@ -220,6 +228,9 @@ class App extends React.Component {
           </button>
           <button className={"BorderButton"} onClick={this.handleRandomColorButton}>
             {randomColorButtonText}
+          </button>
+          <button className={"BorderButton"} onClick={this.handleCreditsColorButton}>
+            {creditsColorButtonText}
           </button>
           <button className={"BorderButton"} onClick={this.handleEdit}>
             {"EDIT"}
