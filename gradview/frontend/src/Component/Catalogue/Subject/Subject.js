@@ -7,6 +7,7 @@ import * as Constants from '../constants';
 
 import {Draggable} from 'react-beautiful-dnd';
 import {getVisualCode} from "../../../Functions/SubjectCode/SubjectCode";
+import * as colorConstans from "../colorConstants";
 
 class Subject extends React.Component {
   constructor(props) {
@@ -46,12 +47,12 @@ class Subject extends React.Component {
         }
     }
     else if (! this.props.borderColored && this.props.coloredBy==="Credits") {
-      const TColor = " rgb(86, 120, 189) ";
-      const PColor = " rgb(212, 137, 102) ";
-      const LColor = " rgb(176, 209, 85) ";
-      const OColor = " rgb(146, 100, 203) ";
-      const DColor = " rgb(90, 132, 157) ";
-      const RestColor = " rgb(0, 0, 0) ";
+      const TColor = colorConstans.TColor;
+      const PColor = colorConstans.PColor;
+      const LColor = colorConstans.LColor;
+      const OColor = colorConstans.OColor;
+      const DColor = colorConstans.DColor;
+      const RestColor = colorConstans.RestColor;
 
       const TPercent = subject.vector.T/subject.vector.C*100;
       const PPercent = TPercent + subject.vector.P/subject.vector.C*100;
@@ -59,11 +60,11 @@ class Subject extends React.Component {
       const OPercent = LPercent + subject.vector.O/subject.vector.C*100;
       const DPercent = OPercent + subject.vector.D/subject.vector.C*100;
 
-      const T = TColor +"," + TColor + " "+TPercent +"%, ";
-      const P = PColor + TPercent +"%, " + PColor +"," + PColor + PPercent +"%, ";
-      const L = LColor + PPercent +"%, " + LColor +"," + LColor + LPercent +"%, ";
-      const O = OColor + LPercent +"%, " + OColor +"," + OColor + OPercent +"%, ";
-      const D = DColor + OPercent +"%, " + DColor +"," + DColor + DPercent +"%, ";
+      const T = TColor +", " + TColor+" "+TPercent +"%, ";
+      const P = PColor +" "+ TPercent +"%, " + PColor +", " + PColor +" "+ PPercent +"%, ";
+      const L = LColor +" "+ PPercent +"%, " + LColor +", " + LColor +" "+ LPercent +"%, ";
+      const O = OColor +" "+ LPercent +"%, " + OColor +", " + OColor +" "+ OPercent +"%, ";
+      const D = DColor +" "+ OPercent +"%, " + DColor +", " + DColor +" "+ DPercent +"%, ";
       const Rest = RestColor + DPercent +"%, " + RestColor;
       const linearGradColors = T + P + L + O + D + Rest;
 
