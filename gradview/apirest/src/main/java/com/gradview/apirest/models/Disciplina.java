@@ -1,10 +1,13 @@
 package com.gradview.apirest.models;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -24,7 +27,10 @@ public class Disciplina {
 	private long[] equivalencias; // Conjuntos de equivalencias - chave estrangeira
 	private String ementa;
 	private String bibliografia;
-	private long unidade_ensino; //  Chave estrangeira
+	
+	@OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "unidade_ensino", referencedColumnName = "id")
+    private UnidadeEnsino unidade_ensino;
 	
 	
 	public long getId() {
@@ -87,10 +93,10 @@ public class Disciplina {
 	public void setBibliografia(String bibliografia) {
 		this.bibliografia = bibliografia;
 	}
-	public long getUnidade_ensino() {
+	public UnidadeEnsino getUnidade_ensino() {
 		return unidade_ensino;
 	}
-	public void setUnidade_ensino(long unidade_ensino) {
+	public void setUnidade_ensino(UnidadeEnsino unidade_ensino) {
 		this.unidade_ensino = unidade_ensino;
 	}
 	
