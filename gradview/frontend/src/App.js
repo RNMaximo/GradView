@@ -19,6 +19,7 @@ class App extends React.Component {
     editing: false,
     persistentEditing: false,
     sizedByCredits: false,
+    isColored: false
   };
   catalogue = React.createRef();
 
@@ -26,13 +27,13 @@ class App extends React.Component {
     const catalogueSem = this.state.catalogue;
     if (! this.state.isColored) {
       const coloredCatalogue = this.initializeRandomColors(catalogueSem);
-      this.setState({shouldChangeColor: false})
+      this.setState({shouldChangeColor: false});
       this.setState({catalogue: {...this.state.catalogue, subjects: coloredCatalogue}})
     }
   }
 
   initializeNoColors = (catalogueSem) => {
-    const borderColored=this.state.borderColored
+    const borderColored=this.state.borderColored;
     const catalogue = this.state.catalogue.slice();
     const color = borderColored ? '#000000' : '#ffffff';
     const coloredCatalogue = catalogue.map((disc) => {
@@ -44,7 +45,7 @@ class App extends React.Component {
 
   initializeRandomColors = () => {
     let coloredSubjects =[];
-    const semesters = Object.keys(this.state.catalogue.semesters)
+    const semesters = Object.keys(this.state.catalogue.semesters);
 
     for (let i in semesters) {
       const thisSemester = this.state.catalogue.semesters[semesters[i]];
@@ -55,7 +56,7 @@ class App extends React.Component {
 
   colorSemester = (catalogue, sem) => {
     let subjectsAsObject = this.state.catalogue.subjects;
-    const subjectsAsArray = Object.values(subjectsAsObject)
+    const subjectsAsArray = Object.values(subjectsAsObject);
     let subjectsToColor = sem.subjects.map(subjectsId => this.state.catalogue.subjects[subjectsId]);
 
     for (let i in subjectsToColor) {
@@ -104,31 +105,19 @@ class App extends React.Component {
     this.setState({catalogue: {...this.state.catalogue, subjects: subjectsAsObject}})
   };
 
-  handleBorderButton = () => {
-    const isBorderColored = this.state.borderColored;
-    this.setState({borderColored: !isBorderColored})
-  };
-
-  handleRandomColorButton = () => {
+  handleSwitchColorButton = () => {
     if (this.state.coloredBy==="Random") {
-      this.setState({coloredBy: ""})
+      this.setState({coloredBy: "Credits"})
     } else {
       this.setState({coloredBy: "Random"})
-    }
-  };
-  handleCreditsColorButton = () => {
-    if (this.state.coloredBy==="Credits") {
-      this.setState({coloredBy: ""})
-    } else {
-      this.setState({coloredBy: "Credits"})
     }
   };
 
   handleEdit = () => {
     if (! this.catalogue.current) return;
     const x = this.state.persistentEditing;
-    this.setState({persistentEditing: !x})
-    this.catalogue.current.setState({onDragging: true})
+    this.setState({persistentEditing: !x});
+    this.catalogue.current.setState({onDragging: true});
     this.catalogue.current.forceUpdate()
   };
 
@@ -142,18 +131,18 @@ class App extends React.Component {
   };
 
   onDragEnd = (result) => {
-    const catalogue = this.state.catalogue
+    const catalogue = this.state.catalogue;
     const { destination, source, draggableId } = result;
 
     if (!destination) {
-      this.setState({editing: false})
+      this.setState({editing: false});
       return;
     }
     if (
       destination.droppableId === source.droppableId &&
       destination.index === source.index
     ) {
-      this.setState({editing: false})
+      this.setState({editing: false});
       return;
     }
 
@@ -162,8 +151,8 @@ class App extends React.Component {
 
     if (start === finish) {
       const newTaskIds = Array.from(start.subjects);
-      newTaskIds.splice(source.index, 1)
-      newTaskIds.splice(destination.index, 0, draggableId)
+      newTaskIds.splice(source.index, 1);
+      newTaskIds.splice(destination.index, 0, draggableId);
 
       const newColumn = {
         ...start,
@@ -181,7 +170,7 @@ class App extends React.Component {
     }
     else {
       const startTaskIds = Array.from(start.subjects);
-      startTaskIds.splice(source.index, 1)
+      startTaskIds.splice(source.index, 1);
 
       const newStart = {
         ...start,
@@ -189,7 +178,7 @@ class App extends React.Component {
       };
 
       const finishTaskIds = Array.from(finish.subjects);
-      finishTaskIds.splice(destination.index, 0, draggableId)
+      finishTaskIds.splice(destination.index, 0, draggableId);
 
       const newFinish = {
         ...finish,
@@ -210,9 +199,7 @@ class App extends React.Component {
   };
 
   render() {
-    const borderButtonText = this.state.borderColored ? "Cor Interna" : "Cor na Borda"
-    const randomColorButtonText = this.state.coloredBy==="Random" ? "Sem cor" : "Aleatória"
-    const creditsColorButtonText = this.state.coloredBy==="Credits" ? "Sem cor" : "Cor por C"
+    const nextColorButtonText = this.state.coloredBy==="Random" ? "Teoria/Prática" : "Aleatória";
     return (
       <div className="App">
         <div
@@ -220,17 +207,11 @@ class App extends React.Component {
           {display: "flex",
            margin: "auto",
            alignItems: "center",
-           width: "950px"}
+           width: "650px"}
         }>
           <SearchInput onChangeHandler = {this.handleSearch}/>
-          <button className={"BorderButton"} onClick={this.handleBorderButton}>
-            {borderButtonText}
-          </button>
-          <button className={"BorderButton"} onClick={this.handleRandomColorButton}>
-            {randomColorButtonText}
-          </button>
-          <button className={"BorderButton"} onClick={this.handleCreditsColorButton}>
-            {creditsColorButtonText}
+          <button className={"BorderButton"} onClick={this.handleSwitchColorButton}>
+            {nextColorButtonText}
           </button>
           <button className={"BorderButton"} onClick={this.handleEdit}>
             {"EDIT"}
@@ -243,8 +224,8 @@ class App extends React.Component {
           ref={this.catalogue}
           onDragEnd={this.onDragEnd}
           onDragStart={this.onDragStart}
+
           catalogueBySemester={this.state.catalogue}
-          borderColored={this.state.borderColored}
           coloredBy={this.state.coloredBy}
           editing={this.state.persistentEditing || this.state.editing}
           sizedByCredits={this.state.sizedByCredits}
