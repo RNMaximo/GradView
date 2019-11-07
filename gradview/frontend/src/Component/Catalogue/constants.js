@@ -1,2 +1,1 @@
-export const invisibleColor = "#666";
-export const invisibleOpacity = 0.2;
+export const invisibleOpacity = 0.1;

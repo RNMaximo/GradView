@@ -31,28 +31,26 @@ class PrerequisiteLine extends React.Component {
     let lineOpacity = 1;
     if (this.props.editing) {
       lineOpacity = 0
-    } else if (! this.state.onHover) {
-      lineOpacity = Constants.invisibleOpacity/2
     } else if (this.props.opacity) {
       lineOpacity = this.props.opacity
     }
 
     let color = "#000000";
-    if (! this.state.onHover) {
-      color = Constants.invisibleColor;
-    } else if (this.props.coloredBy==="Random" && fromS.color && fromS.color !== "#ffffff") {
+    if (this.props.coloredBy==="Random" && fromS.color && fromS.color !== "#ffffff") {
       color = fromS.color;
     }
 
 
     const borderStyle = this.props.partial ? "dashed" : "solid";
 
+    const visibleClass = !this.state.onHover ? " lessVisible " : "";
+
     return (
       <CurveTo
         key={fromS.code+"_to_"+toS.code+"CT"}
         ref={n => this.curveTo = n}
         style={{opacity: lineOpacity}}
-        className={"Line"}
+        className={"Line" + visibleClass}
         from={fromS.code}
         to={toS.code}
         borderColor={hexToRgbA(color, lineOpacity)}

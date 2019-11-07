@@ -1,3 +1,10 @@
 .Line path{
     transition: stroke 0.5s ease-in-out,  opacity 0.5s ease-in-out;
 }
+
+
+.Line.lessVisible path {
+    stroke: #666 !important;
+    opacity: 0.1 !important;
+    transition: 0.5s ease-in-out;
+}

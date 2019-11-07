@@ -29,12 +29,10 @@ class Subject extends React.Component {
 
   render() {
     const subject = this.props.subject;
-    const opacity = this.state.visible ? this.props.opacity : Constants.invisibleOpacity;
+    const opacity = this.props.opacity;
 
     let color = subject.color && this.props.coloredBy==="Random" ? subject.color : "#000";
-    if (! this.state.visible) {
-      color = Constants.invisibleColor;
-    }
+
     let divStyle;
 
     if (! this.props.borderColored && this.props.coloredBy==="Random") {
@@ -102,6 +100,8 @@ class Subject extends React.Component {
     const alert = this.props.alert ? <div className={"Alert"}>!</div> : null;
 
     const subjectCode = getVisualCode(subject.code);
+
+    const visibleClass = this.state.visible ? "" : " lessVisible ";
     return (
 
       <Draggable
@@ -119,7 +119,7 @@ class Subject extends React.Component {
             ref={provided.innerRef}
           >
             <div
-              className={"subject " + subject.code}
+              className={"subject " + subject.code + visibleClass}
               style={{...divStyle, ...sizeStyle}}
               onClick={this.openModal}
               onMouseEnter={this.props.onMouseEnter}
