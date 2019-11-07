@@ -2,9 +2,9 @@ import React from 'react';
 
 import CurveTo from "react-curveto";
 import {hexToRgbA} from "../../../Functions/Colors/rgbMeanColor";
-import * as Constants from '../constants';
 
 import './PrerequisiteLine.css'
+import {maxLineOpacity} from "../constants";
 
 class PrerequisiteLine extends React.Component {
   state = {
@@ -27,13 +27,8 @@ class PrerequisiteLine extends React.Component {
     const toS = this.props.to;
 
     if (!fromS || !toS) return null;
-    // Média da opacidade das duas disciplinas
-    let lineOpacity = 1;
-    if (this.props.editing) {
-      lineOpacity = 0
-    } else if (this.props.opacity) {
-      lineOpacity = this.props.opacity
-    }
+
+    const lineOpacity = maxLineOpacity;
 
     let color = "#000000";
     if (this.props.coloredBy==="Random" && fromS.color && fromS.color !== "#ffffff") {
@@ -44,13 +39,14 @@ class PrerequisiteLine extends React.Component {
     const borderStyle = this.props.partial ? "dashed" : "solid";
 
     const visibleClass = !this.state.onHover ? " lessVisible " : "";
+    const editingClass = this.props.editing ? " editing " : "";
 
     return (
       <CurveTo
         key={fromS.code+"_to_"+toS.code+"CT"}
         ref={n => this.curveTo = n}
         style={{opacity: lineOpacity}}
-        className={"Line" + visibleClass}
+        className={"Line" + visibleClass + editingClass}
         from={fromS.code}
         to={toS.code}
         borderColor={hexToRgbA(color, lineOpacity)}

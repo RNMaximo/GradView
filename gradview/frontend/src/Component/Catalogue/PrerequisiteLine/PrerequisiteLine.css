@@ -5,6 +5,9 @@
 
 .Line.lessVisible path {
     stroke: #666 !important;
-    opacity: 0.1 !important;
+    opacity: 0.1;
     transition: 0.5s ease-in-out;
+}
+.Line.editing path {
+    opacity: 0;
 }
