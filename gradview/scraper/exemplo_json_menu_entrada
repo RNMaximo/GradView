@@ -1,0 +1,20 @@
+catalogos = {
+	'2020': {
+		'34': {
+			nome: 'Engenharia de Computação',
+			instituto: 'IC',
+			modalidades: {
+				'AA - Sistemas xxx': {
+					
+				}
+				'AB - Sistemas xxx': {
+					
+				}
+				'AX - Sistemas xxx': {
+					
+				}
+			}
+		}
+	}
+}
+			
