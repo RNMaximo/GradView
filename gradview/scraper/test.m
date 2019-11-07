@@ -1,0 +1,1 @@
+disp(split(disc{1},["<br/>"," créditos eletivos"]));
