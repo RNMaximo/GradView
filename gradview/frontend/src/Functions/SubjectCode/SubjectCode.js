@@ -1,9 +1,12 @@
 export const getCleanCode = (subjectCode) => {
-  return subjectCode.substring(0, 5);
+  if (subjectCode.length == 6) {
+    return subjectCode.substring(1, 6);
+  }
+  return subjectCode;
 };
 
 export const isPartialRequisite = (requisite) => {
-  return requisite[5] === '*';
+  return requisite[0] === '*';
 };
 
 export const getVisualCode = (subjectCode) => {

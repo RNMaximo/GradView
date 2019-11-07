@@ -124,7 +124,7 @@ const catalogue = {
       ementa: 'Oscilações. Gravitação. Ondas em meios elásticos. Ondas sonoras. Hidrostática e hidrodinâmica. Viscosidade. Temperatura. Calorimetria e condução de calor. Leis da termodinâmica; teoria cinética dos gases.',
       semestre: 2,
       vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
-      requisitos: ['F_128*']
+      requisitos: ['*F_128']
     },
     'F_229': {
       code: 'F_229',
@@ -230,7 +230,7 @@ const catalogue = {
       ementa: 'Noções sobre o material. Conceituação de tensões, solicitação axial. Cisalhamento puro. Torção em eixos circulares. Flexão pura, simples e oblíqua. Deflexão em vigas retas. Estado triplo de tensões e deformações. Círculo de Mohr. Cisalhamento puro. Estado hidrostático de tensões.',
       semestre: 4,
       vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
-      requisitos: ['F_315*']
+      requisitos: ['*F_315']
     },
     'F_428': {
       code: 'F_428',
