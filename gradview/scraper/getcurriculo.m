@@ -20,6 +20,7 @@ function curriculo = getcurriculo(url,todas_disciplinas)
         clear disciplinasusadas
         inddisc=1;
         blocos_semestre=strsplit(dados{1},'Semestre :');
+        creditos = 0;
         for j=2:length(blocos_semestre)
             semestre_sugerido=[];
             cred_semestre = str2double(strtok(blocos_semestre{j},' '));
@@ -45,13 +46,15 @@ function curriculo = getcurriculo(url,todas_disciplinas)
             if cred_semestre ~= creditos_sum
                 error('Os creditos dos semestres não bateram com os creditos das disciplinas indicadas.');
             end
+            creditos = creditos+cred_semestre;
 
             curriculo.modalidade(1).semestre{j-1}=semestre_sugerido;
         end
         curriculo.modalidade(1).disciplinas=horzcat(disciplinasusadas{:});
+        curriculo.modalidade(1).creditos=creditos;
     else
         for i=2:length(dados)
-
+            creditos = 0;
             blocos_semestre=strsplit(dados{i},'Semestre :');
             nome=strsplit(blocos_semestre{1},'</h1>');
             curriculo.modalidade(i-1).nome=nome{1};
@@ -82,9 +85,11 @@ function curriculo = getcurriculo(url,todas_disciplinas)
                 if cred_semestre ~= creditos_sum
                     error('Os creditos dos semestres não bateram com os creditos das disciplinas indicadas.');
                 end
+                creditos = creditos+cred_semestre;
 
                 curriculo.modalidade(i-1).semestre{j-1}=semestre_sugerido;
             end
             curriculo.modalidade(i-1).disciplinas=horzcat(disciplinasusadas{:});
+            curriculo.modalidade(i-1).creditos=creditos;
         end
     end

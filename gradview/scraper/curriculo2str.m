@@ -1,5 +1,5 @@
 function curriculostr = curriculo2str(curriculo)
-    curriculostr = sprintf('{\n\tsemesters: {');
+    curriculostr = sprintf('const catalogue = {\n\ttotalCredits: %d,\n\tsemesters: {',curriculo.creditos);
     for i=1:length(curriculo.semestre)
         %curriculostr = [curriculostr '''sem-' num2str(i) ''': {id: ''' num2str(i) ''', subjects: ' '[''' strjoin(curriculo.semestre{i},''', ''') ''']}, '];
         semstr=strjoin(curriculo.semestre{i},''', ''');
@@ -15,6 +15,5 @@ function curriculostr = curriculo2str(curriculo)
     end
     subjects(end)=[]; % remove virgula a mais
 
-    curriculostr = sprintf('%s%s\n\t}\n};',curriculostr,subjects);
-
+    curriculostr = sprintf('%s%s\n\t}\n};\n\nexport default catalogue;',curriculostr,subjects);
 end
