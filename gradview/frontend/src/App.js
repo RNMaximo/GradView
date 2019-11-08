@@ -234,8 +234,10 @@ class App extends React.Component {
       /> : null;
 
     const nextColorButtonText = this.state.coloredBy==="Random" ? "Teoria/Prática" : "Aleatória";
+    const nextSizeButtonText = this.state.sizedByCredits ? "Padrão" : "Por créditos";
     return (
       <div className="App">
+        <br/>
         <div>
           <select onChange={this.handleChangeCatalogue}>
             <option value={'catalogueComp.js'}>AA - Engenharia de Computação</option>
@@ -247,22 +249,23 @@ class App extends React.Component {
             <option value={'curso20_mod1.js'}>Pedagogia</option>
           </select>
         </div>
+        <br/>
         <div
           style={
             {display: "flex",
               margin: "auto",
               alignItems: "center",
-              width: "650px"}
+              width: "700px"}
           }>
           <SearchInput onChangeHandler = {this.handleSearch}/>
           <button className={"BorderButton"} onClick={this.handleSwitchColorButton}>
             {nextColorButtonText}
           </button>
-          <button className={"BorderButton"} onClick={this.handleEdit}>
-            {"EDIT"}
-          </button>
           <button className={"BorderButton"} onClick={this.handleCreditsButton}>
-            {"Por créditos"}
+            {nextSizeButtonText}
+          </button>
+          <button className={"BorderButton"} onClick={this.handleEdit} style={{ width: "150px"}}>
+            {"Modo de Edição"}
           </button>
         </div>
         {catalogue}
