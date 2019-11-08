@@ -10,11 +10,11 @@ function curriculo = getcurriculo(url,todas_disciplinas)
     dados=strsplit(dados,'<h2>');
     dados=dados{2};
     dados=strsplit(dados,'</h2>');
-    curso=dados{1};
+    curriculo.curso=dados{1};
     dados=dados{2};
 
     dados=strsplit(dados,'<h1>');
-    clear mod modalidade curriculo sugestao
+    clear mod modalidade sugestao
     if length(dados)==1
         curriculo.modalidade(1).nome=[];
         clear disciplinasusadas
