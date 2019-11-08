@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import catalogueComp from './Component/Catalogue/catalogueComp.js';
 import Catalogue from './Component/Catalogue/Catalogue';
 import SearchInput from "./Component/Catalogue/SearchInput/SearchInput";
 
@@ -8,11 +7,14 @@ import rgbMeanColor from './Functions/Colors/rgbMeanColor';
 import * as Constants from "./Component/Catalogue/constants";
 import {getCleanCode, getVisualCode} from "./Functions/SubjectCode/SubjectCode";
 
+import catalogueComp from './Component/Catalogue/Catalogues/catalogueComp.js';
+
 var randomColor = require('randomcolor');
 
 class App extends React.Component {
   state = {
     catalogue: catalogueComp,
+    cataloguePath: 'catalogueComp',
     borderColored: false,
     shouldChangeColor: true,
     coloredBy: "Random",
@@ -24,11 +26,13 @@ class App extends React.Component {
   catalogue = React.createRef();
 
   componentDidMount() {
-    const catalogueSem = this.state.catalogue;
-    if (! this.state.isColored) {
-      const coloredCatalogue = this.initializeRandomColors(catalogueSem);
-      this.setState({shouldChangeColor: false});
-      this.setState({catalogue: {...this.state.catalogue, subjects: coloredCatalogue}})
+    if (this.state.catalogue) {
+      const catalogue = this.state.catalogue;
+      if (!this.state.isColored) {
+        const coloredCatalogue = this.initializeRandomColors(catalogue);
+        this.setState({shouldChangeColor: false});
+        this.setState({catalogue: {...this.state.catalogue, subjects: coloredCatalogue}})
+      }
     }
   }
 
@@ -43,21 +47,22 @@ class App extends React.Component {
     return coloredCatalogue
   };
 
-  initializeRandomColors = () => {
+  initializeRandomColors = (catalogue) => {
+    const catalogueSemesters = catalogue.semesters;
     let coloredSubjects =[];
-    const semesters = Object.keys(this.state.catalogue.semesters);
+    const semesters = Object.keys(catalogueSemesters);
 
     for (let i in semesters) {
-      const thisSemester = this.state.catalogue.semesters[semesters[i]];
-      coloredSubjects = this.colorSemester (coloredSubjects, thisSemester);
+      const thisSemester = catalogueSemesters[semesters[i]];
+      coloredSubjects = this.colorSemester (catalogue, thisSemester);
     }
     return coloredSubjects;
   };
 
   colorSemester = (catalogue, sem) => {
-    let subjectsAsObject = this.state.catalogue.subjects;
+    let subjectsAsObject = catalogue.subjects;
     const subjectsAsArray = Object.values(subjectsAsObject);
-    let subjectsToColor = sem.subjects.map(subjectsId => this.state.catalogue.subjects[subjectsId]);
+    let subjectsToColor = sem.subjects.map(subjectsId => catalogue.subjects[subjectsId]);
 
     for (let i in subjectsToColor) {
       let subject = subjectsToColor[i];
@@ -198,17 +203,57 @@ class App extends React.Component {
     this.forceUpdate()
   };
 
+  handleChangeCatalogue = (e) => {
+    console.log(e.target.value)
+    //console.log(this.state.catalogue)
+    const catalogue = (require('./Component/Catalogue/Catalogues/'+e.target.value)).default;
+    const catalogueSem = catalogue.semesters;
+    const coloredCatalogue = this.initializeRandomColors(catalogue);
+    const newCatalogue = {...catalogue, subjects: coloredCatalogue};
+    console.log(catalogue)
+    console.log(coloredCatalogue)
+    console.log(newCatalogue)
+    this.setState({catalogue: newCatalogue, cataloguePath: e.target.value})
+  };
+  handleOmitCatalogue = () => {
+    this.setState({catalogue: null, isColored: false})
+  }
   render() {
+
+    const catalogue = this.state.catalogue ?
+      <Catalogue
+        key={this.state.cataloguePath}
+        ref={this.catalogue}
+        onDragEnd={this.onDragEnd}
+        onDragStart={this.onDragStart}
+
+        catalogueBySemester={this.state.catalogue}
+        coloredBy={this.state.coloredBy}
+        editing={this.state.persistentEditing || this.state.editing}
+        sizedByCredits={this.state.sizedByCredits}
+      /> : null;
+
     const nextColorButtonText = this.state.coloredBy==="Random" ? "Teoria/Prática" : "Aleatória";
     return (
       <div className="App">
+        <div>
+          <select onChange={this.handleChangeCatalogue}>
+            <option value={'catalogueComp.js'}>AA - Engenharia de Computação</option>
+            <option value={'curso1_mod1.js'}>AA - Bacharelado em Matemática</option>
+            <option value={'curso1_mod2.js'}>AB - Bacharelado em Matemática</option>
+            <option value={'curso4_mod1.js'}>AA - Bacharelado em  Física</option>
+            <option value={'curso8_mod1.js'}>Engenharia Agrícola</option>
+            <option value={'curso11_mod1.js'}>Engenharia Elétrica</option>
+            <option value={'curso20_mod1.js'}>Pedagogia</option>
+          </select>
+        </div>
         <div
-        style={
-          {display: "flex",
-           margin: "auto",
-           alignItems: "center",
-           width: "650px"}
-        }>
+          style={
+            {display: "flex",
+              margin: "auto",
+              alignItems: "center",
+              width: "650px"}
+          }>
           <SearchInput onChangeHandler = {this.handleSearch}/>
           <button className={"BorderButton"} onClick={this.handleSwitchColorButton}>
             {nextColorButtonText}
@@ -220,16 +265,7 @@ class App extends React.Component {
             {"Por créditos"}
           </button>
         </div>
-        <Catalogue
-          ref={this.catalogue}
-          onDragEnd={this.onDragEnd}
-          onDragStart={this.onDragStart}
-
-          catalogueBySemester={this.state.catalogue}
-          coloredBy={this.state.coloredBy}
-          editing={this.state.persistentEditing || this.state.editing}
-          sizedByCredits={this.state.sizedByCredits}
-        />
+        {catalogue}
       </div>
     );
   }
