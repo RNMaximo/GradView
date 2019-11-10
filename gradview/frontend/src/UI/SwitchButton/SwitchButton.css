@@ -1,0 +1,15 @@
+.SwitchButton {
+    display: contents;
+    margin: 0 18px;
+}
+
+.SwitchButton span {
+    margin: 0 6px 0 18px;
+    line-height: 28px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}

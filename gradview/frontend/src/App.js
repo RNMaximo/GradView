@@ -250,15 +250,14 @@ class App extends React.Component {
         <br/>
         <div
           style={
-            {display: "flex",
+            {display: "inline-flex",
               margin: "auto",
-              alignItems: "center",
-              width: "700px"}
+              alignItems: "center"}
           }>
           <SearchInput onChangeHandler = {this.handleSearch}/>
 
           <Switch
-            text={"Teoria/Prática"}
+            text={"Teoria / Prática"}
             onChange={this.handleChangeColor}
             checked={this.state.isColoredByTPChecked}
           />
