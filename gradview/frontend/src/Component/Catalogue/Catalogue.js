@@ -19,9 +19,9 @@ class Catalogue extends React.Component {
     this.setState({hasMountSubjects: true})
   }
   handleMouseEnter = (event) => {
-    if (this.props.editing) return;
-    this.setVisibleToAllSubjects(false)
-    this.setVisibleToAllPrereq(false)
+    if (this.props.editing || this.props.onSearch) return;
+    this.setVisibleToAllSubjects(false);
+    this.setVisibleToAllPrereq(false);
     const subjectClassName = event.currentTarget.classList[1];
     const requisites = this.subjects[subjectClassName].props.subject.requisitos;
     this.subjects[subjectClassName].setState({visible: true});

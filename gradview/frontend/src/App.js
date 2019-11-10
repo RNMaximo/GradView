@@ -18,10 +18,11 @@ class App extends React.Component {
     borderColored: false,
     shouldChangeColor: true,
     coloredBy: "Random",
+    onSearch: false,
     editing: false,
     persistentEditing: false,
     sizedByCredits: false,
-    isColored: false
+    isColored: false,
   };
   catalogue = React.createRef();
 
@@ -95,19 +96,22 @@ class App extends React.Component {
 
   handleSearch = (event) => {
     let subjectsAsObject = this.state.catalogue.subjects;
+    const searchedStr = event.target.value.trim();
 
     for (let i in subjectsAsObject) {
       let subject = subjectsAsObject[i];
-      if (!(getVisualCode(subject.code)).toUpperCase().includes(event.target.value.toUpperCase()) &&
-        !subject.name.toUpperCase().includes(event.target.value.toUpperCase()) &&
-        !subject.ementa.toUpperCase().includes(event.target.value.toUpperCase())) {
+      if (!(getVisualCode(subject.code)).toUpperCase().includes(searchedStr.toUpperCase()) &&
+        !subject.name.toUpperCase().includes(searchedStr.toUpperCase()) &&
+        !subject.ementa.toUpperCase().includes(searchedStr.toUpperCase())) {
         subject.opacity = Constants.invisibleOpacity;
       } else {
         subject.opacity = 1;
       }
       subjectsAsObject[subject.code] = subject
     }
-    this.setState({catalogue: {...this.state.catalogue, subjects: subjectsAsObject}})
+    const onSearch = searchedStr !== "";
+
+    this.setState({catalogue: {...this.state.catalogue, subjects: subjectsAsObject}, onSearch: onSearch})
   };
 
   handleSwitchColorButton = () => {
@@ -204,20 +208,17 @@ class App extends React.Component {
   };
 
   handleChangeCatalogue = (e) => {
-    console.log(e.target.value)
-    //console.log(this.state.catalogue)
     const catalogue = (require('./Component/Catalogue/Catalogues/'+e.target.value)).default;
     const catalogueSem = catalogue.semesters;
     const coloredCatalogue = this.initializeRandomColors(catalogue);
     const newCatalogue = {...catalogue, subjects: coloredCatalogue};
-    console.log(catalogue)
-    console.log(coloredCatalogue)
-    console.log(newCatalogue)
+
     this.setState({catalogue: newCatalogue, cataloguePath: e.target.value})
   };
   handleOmitCatalogue = () => {
     this.setState({catalogue: null, isColored: false})
-  }
+  };
+
   render() {
 
     const catalogue = this.state.catalogue ?
@@ -226,9 +227,9 @@ class App extends React.Component {
         ref={this.catalogue}
         onDragEnd={this.onDragEnd}
         onDragStart={this.onDragStart}
-
         catalogueBySemester={this.state.catalogue}
         coloredBy={this.state.coloredBy}
+        onSearch={this.state.onSearch}
         editing={this.state.persistentEditing || this.state.editing}
         sizedByCredits={this.state.sizedByCredits}
       /> : null;
