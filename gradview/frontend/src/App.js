@@ -7,41 +7,32 @@ import rgbMeanColor from './Functions/Colors/rgbMeanColor';
 import * as Constants from "./Component/Catalogue/constants";
 import {getCleanCode, getVisualCode} from "./Functions/SubjectCode/SubjectCode";
 
-import catalogueComp from './Component/Catalogue/Catalogues/catalogueComp.js';
 import Switch from "./UI/SwitchButton/SwitchButton";
+import Select from 'react-select'
 
 var randomColor = require('randomcolor');
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      catalogue: catalogueComp,
-      cataloguePath: 'catalogueComp',
-      borderColored: false,
-      shouldChangeColor: true,
+  state = {
+    catalogueOpt: null,
+    catalogue: null,
 
-      isColoredByTPChecked: false,
-      isSizedByCreditsChecked: false,
-      isPersistentEditing: false,
+    borderColored: false,
+    shouldChangeColor: true,
 
-      isEditing: false,
-      onSearch: false,
-      sizedByCredits: false,
-      isColored: false,
-    };
-  }
+    isColoredByTPChecked: false,
+    isSizedByCreditsChecked: false,
+    isPersistentEditing: false,
+
+    isEditing: false,
+    onSearch: false,
+    sizedByCredits: false,
+    isColored: false,
+  };
   catalogue = React.createRef();
 
   componentDidMount() {
-    if (this.state.catalogue) {
-      const catalogue = this.state.catalogue;
-      if (!this.state.isColored) {
-        const coloredCatalogue = this.initializeRandomColors(catalogue);
-        this.setState({shouldChangeColor: false});
-        this.setState({catalogue: {...this.state.catalogue, subjects: coloredCatalogue}})
-      }
-    }
+    this.handleChangeCatalogue(this.coursesOptions[0]);
   }
 
   initializeNoColors = (catalogueSem) => {
@@ -193,13 +184,19 @@ class App extends React.Component {
     this.setState({catalogue: {...this.state.catalogue, subjects: subjectsAsObject}, onSearch: onSearch})
   };
 
-  handleChangeCatalogue = (e) => {
-    const catalogue = (require('./Component/Catalogue/Catalogues/'+e.target.value)).default;
-    const coloredCatalogue = this.initializeRandomColors(catalogue);
-    const newCatalogue = {...catalogue, subjects: coloredCatalogue};
+  handleChangeCatalogue = (selectedOption) => {
+    if (selectedOption === null) {
+      this.setState({catalogue: null, catalogueOpt: selectedOption})
+    } else {
+      const newValue = selectedOption.value;
+      const catalogue = (require('./Component/Catalogue/Catalogues/' + newValue)).default;
+      const coloredCatalogue = this.initializeRandomColors(catalogue);
+      const newCatalogue = {...catalogue, subjects: coloredCatalogue};
 
-    this.setState({catalogue: newCatalogue, cataloguePath: e.target.value})
+      this.setState({catalogue: newCatalogue, catalogueOpt: selectedOption})
+    }
   };
+
   handleOmitCatalogue = () => {
     this.setState({catalogue: null, isColored: false})
   };
@@ -217,10 +214,24 @@ class App extends React.Component {
     this.catalogue.current.forceUpdate();
   };
 
+  coursesOptions = [
+    {value: "catalogueComp.js", label: "AA - Engenharia de Computação"},
+    {value: "curso1_mod1.js", label: "AA - Bacharelado em Matemática"},
+    {value: "curso1_mod2.js", label: "AB - Bacharelado em Matemática"},
+    {value: "curso4_mod1.js", label: "AA - Bacharelado em  Física"},
+    {value: "curso8_mod1.js", label: "Engenharia Agrícola"},
+    {value: "curso11_mod1.js", label: "Engenharia Elétrica"},
+    {value: "curso102_mod1.js", label: "Engenharia de Produção"},
+    {value: "curso20_mod1.js", label: "Pedagogia"},
+    //{value: ".js", label: ""},
+  ];
+
   render() {
+    const selectOpt = this.state.catalogueOpt ? this.state.catalogueOpt : null;
+
     const catalogue = this.state.catalogue ?
       <Catalogue
-        key={this.state.cataloguePath}
+        key={selectOpt.value}
         ref={this.catalogue}
         onDragEnd={this.onDragEnd}
         onDragStart={this.onDragStart}
@@ -236,16 +247,22 @@ class App extends React.Component {
     return (
       <div className="App">
         <br/>
-        <div>
-          <select onChange={this.handleChangeCatalogue}>
-            <option value={'catalogueComp.js'}>AA - Engenharia de Computação</option>
-            <option value={'curso1_mod1.js'}>AA - Bacharelado em Matemática</option>
-            <option value={'curso1_mod2.js'}>AB - Bacharelado em Matemática</option>
-            <option value={'curso4_mod1.js'}>AA - Bacharelado em  Física</option>
-            <option value={'curso8_mod1.js'}>Engenharia Agrícola</option>
-            <option value={'curso11_mod1.js'}>Engenharia Elétrica</option>
-            <option value={'curso20_mod1.js'}>Pedagogia</option>
-          </select>
+        <div
+          style={
+            {display: "inline-flex",
+              margin: "auto",
+              alignItems: "center",
+            }
+          }>
+          <Select
+            value={selectOpt}
+            className={"course-select"}
+            onChange={this.handleChangeCatalogue}
+            options={this.coursesOptions}
+            placeholder={"Selecione um catálogo"}
+            isSearchable={true}
+            isClearable={true}
+          />
         </div>
         <br/>
         <div
