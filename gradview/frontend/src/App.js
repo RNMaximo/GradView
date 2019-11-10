@@ -8,22 +8,29 @@ import * as Constants from "./Component/Catalogue/constants";
 import {getCleanCode, getVisualCode} from "./Functions/SubjectCode/SubjectCode";
 
 import catalogueComp from './Component/Catalogue/Catalogues/catalogueComp.js';
+import Switch from "./UI/SwitchButton/SwitchButton";
 
 var randomColor = require('randomcolor');
 
 class App extends React.Component {
-  state = {
-    catalogue: catalogueComp,
-    cataloguePath: 'catalogueComp',
-    borderColored: false,
-    shouldChangeColor: true,
-    coloredBy: "Random",
-    onSearch: false,
-    editing: false,
-    persistentEditing: false,
-    sizedByCredits: false,
-    isColored: false,
-  };
+  constructor() {
+    super();
+    this.state = {
+      catalogue: catalogueComp,
+      cataloguePath: 'catalogueComp',
+      borderColored: false,
+      shouldChangeColor: true,
+
+      isColoredByTPChecked: false,
+      isSizedByCreditsChecked: false,
+      isPersistentEditing: false,
+
+      isEditing: false,
+      onSearch: false,
+      sizedByCredits: false,
+      isColored: false,
+    };
+  }
   catalogue = React.createRef();
 
   componentDidMount() {
@@ -94,49 +101,8 @@ class App extends React.Component {
     return prereq.map((r) => {return r.color})
   };
 
-  handleSearch = (event) => {
-    let subjectsAsObject = this.state.catalogue.subjects;
-    const searchedStr = event.target.value.trim();
-
-    for (let i in subjectsAsObject) {
-      let subject = subjectsAsObject[i];
-      if (!(getVisualCode(subject.code)).toUpperCase().includes(searchedStr.toUpperCase()) &&
-        !subject.name.toUpperCase().includes(searchedStr.toUpperCase()) &&
-        !subject.ementa.toUpperCase().includes(searchedStr.toUpperCase())) {
-        subject.opacity = Constants.invisibleOpacity;
-      } else {
-        subject.opacity = 1;
-      }
-      subjectsAsObject[subject.code] = subject
-    }
-    const onSearch = searchedStr !== "";
-
-    this.setState({catalogue: {...this.state.catalogue, subjects: subjectsAsObject}, onSearch: onSearch})
-  };
-
-  handleSwitchColorButton = () => {
-    if (this.state.coloredBy==="Random") {
-      this.setState({coloredBy: "Credits"})
-    } else {
-      this.setState({coloredBy: "Random"})
-    }
-  };
-
-  handleEdit = () => {
-    if (! this.catalogue.current) return;
-    const x = this.state.persistentEditing;
-    this.setState({persistentEditing: !x});
-    this.catalogue.current.setState({onDragging: true});
-    this.catalogue.current.forceUpdate()
-  };
-
-  handleCreditsButton = () => {
-    const isSizedByCredits = this.state.sizedByCredits;
-    this.setState({sizedByCredits: !isSizedByCredits})
-  };
-
   onDragStart = () => {
-    this.setState({editing: true})
+    this.setState({isEditing: true})
   };
 
   onDragEnd = (result) => {
@@ -144,14 +110,14 @@ class App extends React.Component {
     const { destination, source, draggableId } = result;
 
     if (!destination) {
-      this.setState({editing: false});
+      this.setState({isEditing: false});
       return;
     }
     if (
       destination.droppableId === source.droppableId &&
       destination.index === source.index
     ) {
-      this.setState({editing: false});
+      this.setState({isEditing: false});
       return;
     }
 
@@ -175,7 +141,7 @@ class App extends React.Component {
           ["sem-"+newColumn.id]: newColumn,
         }
       };
-      this.setState({catalogue: newState, editing: false})
+      this.setState({catalogue: newState, isEditing: false})
     }
     else {
       const startTaskIds = Array.from(start.subjects);
@@ -202,14 +168,33 @@ class App extends React.Component {
           ["sem-"+newFinish.id]: newFinish,
         }
       };
-      this.setState({catalogue: newState, editing: false})
+      this.setState({catalogue: newState, isEditing: false})
     }
     this.forceUpdate()
   };
 
+  handleSearch = (event) => {
+    let subjectsAsObject = this.state.catalogue.subjects;
+    const searchedStr = event.target.value.trim();
+
+    for (let i in subjectsAsObject) {
+      let subject = subjectsAsObject[i];
+      if (!(getVisualCode(subject.code)).toUpperCase().includes(searchedStr.toUpperCase()) &&
+        !subject.name.toUpperCase().includes(searchedStr.toUpperCase()) &&
+        !subject.ementa.toUpperCase().includes(searchedStr.toUpperCase())) {
+        subject.opacity = Constants.invisibleOpacity;
+      } else {
+        subject.opacity = 1;
+      }
+      subjectsAsObject[subject.code] = subject
+    }
+    const onSearch = searchedStr !== "";
+
+    this.setState({catalogue: {...this.state.catalogue, subjects: subjectsAsObject}, onSearch: onSearch})
+  };
+
   handleChangeCatalogue = (e) => {
     const catalogue = (require('./Component/Catalogue/Catalogues/'+e.target.value)).default;
-    const catalogueSem = catalogue.semesters;
     const coloredCatalogue = this.initializeRandomColors(catalogue);
     const newCatalogue = {...catalogue, subjects: coloredCatalogue};
 
@@ -219,8 +204,20 @@ class App extends React.Component {
     this.setState({catalogue: null, isColored: false})
   };
 
-  render() {
+  handleChangeColor = (check) => {
+    this.setState({ isColoredByTPChecked: check });
+  };
+  handleChangeSize = (check) => {
+    this.setState({ isSizedByCreditsChecked: check });
+  };
+  handleChangeEditing = (check) => {
+    if (! this.catalogue.current) return;
+    this.setState({isPersistentEditing: check});
+    this.catalogue.current.setState({onDragging: true});
+    this.catalogue.current.forceUpdate();
+  };
 
+  render() {
     const catalogue = this.state.catalogue ?
       <Catalogue
         key={this.state.cataloguePath}
@@ -228,14 +225,14 @@ class App extends React.Component {
         onDragEnd={this.onDragEnd}
         onDragStart={this.onDragStart}
         catalogueBySemester={this.state.catalogue}
-        coloredBy={this.state.coloredBy}
+
+        coloredByVector={this.state.isColoredByTPChecked}
+        sizedByCredits={this.state.isSizedByCreditsChecked}
+
         onSearch={this.state.onSearch}
-        editing={this.state.persistentEditing || this.state.editing}
-        sizedByCredits={this.state.sizedByCredits}
+        editing={this.state.isPersistentEditing || this.state.isEditing}
       /> : null;
 
-    const nextColorButtonText = this.state.coloredBy==="Random" ? "Teoria/Prática" : "Aleatória";
-    const nextSizeButtonText = this.state.sizedByCredits ? "Padrão" : "Por créditos";
     return (
       <div className="App">
         <br/>
@@ -259,15 +256,25 @@ class App extends React.Component {
               width: "700px"}
           }>
           <SearchInput onChangeHandler = {this.handleSearch}/>
-          <button className={"BorderButton"} onClick={this.handleSwitchColorButton}>
-            {nextColorButtonText}
-          </button>
-          <button className={"BorderButton"} onClick={this.handleCreditsButton}>
-            {nextSizeButtonText}
-          </button>
-          <button className={"BorderButton"} onClick={this.handleEdit} style={{ width: "150px"}}>
-            {"Modo de Edição"}
-          </button>
+
+          <Switch
+            text={"Teoria/Prática"}
+            onChange={this.handleChangeColor}
+            checked={this.state.isColoredByTPChecked}
+          />
+
+          <Switch
+            text={"Tamanho por créditos"}
+            onChange={this.handleChangeSize}
+            checked={this.state.isSizedByCreditsChecked}
+          />
+
+          <Switch
+            text={"Modo de Edição"}
+            onChange={this.handleChangeEditing}
+            checked={this.state.isPersistentEditing}
+          />
+
         </div>
         {catalogue}
       </div>

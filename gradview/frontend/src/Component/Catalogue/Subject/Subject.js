@@ -39,11 +39,11 @@ class Subject extends React.Component {
     const subject = this.props.subject;
     const opacity = this.props.opacity;
 
-    let color = subject.color && this.props.coloredBy==="Random" ? subject.color : "#000";
+    let color = subject.color ? subject.color : "#000";
 
     let divStyle;
 
-    if (! this.props.borderColored && this.props.coloredBy==="Random") {
+    if (! this.props.borderColored && !this.props.coloredByVector) {
       divStyle =
         {
           backgroundColor: color,
@@ -52,7 +52,7 @@ class Subject extends React.Component {
           opacity: opacity
         }
     }
-    else if (! this.props.borderColored && this.props.coloredBy==="Credits") {
+    else if (! this.props.borderColored && this.props.coloredByVector) {
       const TColor = colorConstans.TColor;
       const PColor = colorConstans.PColor;
       const LColor = colorConstans.LColor;
@@ -92,7 +92,6 @@ class Subject extends React.Component {
         };
     }
 
-
     const sizeStyle = this.props.sizedByCredits ?
       {
         width: 35*subject.vector.C+'px',
@@ -100,9 +99,9 @@ class Subject extends React.Component {
       {};
 
     let textStyle = {color: "black"};
-    if (! this.props.borderColored && this.props.coloredBy==="Random") {
+    if (! this.props.borderColored && !this.props.coloredByVector) {
       textStyle = {color: "white"};
-    } else if (! this.props.borderColored && this.props.coloredBy==="Credits") {
+    } else if (! this.props.borderColored && this.props.coloredByVector) {
       textStyle = {color: "white"};
     }
 

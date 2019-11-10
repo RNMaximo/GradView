@@ -31,7 +31,7 @@ class PrerequisiteLine extends React.Component {
     const lineOpacity = maxLineOpacity;
 
     let color = "#000000";
-    if (this.props.coloredBy==="Random" && fromS.color && fromS.color !== "#ffffff") {
+    if (! this.props.coloredByVector && fromS.color && fromS.color !== "#ffffff") {
       color = toS.color;
     }
 

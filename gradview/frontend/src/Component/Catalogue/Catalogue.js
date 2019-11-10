@@ -146,7 +146,8 @@ class Catalogue extends React.Component {
               subject = {subject}
               opacity = {opacity}
               borderColored={this.props.borderColored}
-              coloredBy={this.props.coloredBy}
+
+              coloredByVector={this.props.coloredByVector}
               sizedByCredits={this.props.sizedByCredits}
               alert={! prereqInfo.areCompleted}
               reason={prereqInfo.reasons}
@@ -207,7 +208,7 @@ class Catalogue extends React.Component {
                   key={subject.code + "to" + req +"PL"}
                   from={subject}
                   to={this.props.catalogueBySemester.subjects[req]}
-                  coloredBy={this.props.coloredBy}
+                  coloredByVector={this.props.coloredByVector}
                   editing={this.props.editing}
                   partial={partial}
                 />
