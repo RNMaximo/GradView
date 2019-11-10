@@ -1,5 +1,5 @@
 export const getCleanCode = (subjectCode) => {
-  if (subjectCode.length == 6) {
+  if (subjectCode.length === 6) {
     return subjectCode.substring(1, 6);
   }
   return subjectCode;

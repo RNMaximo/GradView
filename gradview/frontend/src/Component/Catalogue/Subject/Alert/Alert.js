@@ -6,7 +6,7 @@ class Alert extends React.Component {
     return this.props.show ?
       <div
         className={"Alert"}
-        {...this.props}
+        onClick={this.props.onClick}
       >!</div>
     : null
   }

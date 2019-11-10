@@ -154,12 +154,13 @@ class Subject extends React.Component {
             subject={subject}
           />
 
-          <PopupAlert
-            open={this.state.isAlertOpen}
-            closeOnDocumentClick
-            onClose={this.closeAlertModal}
-            reason={this.props.reason}
-          />
+          { this.props.alert?
+            <PopupAlert
+              open={this.state.isAlertOpen}
+              closeOnDocumentClick
+              onClose={this.closeAlertModal}
+              reason={this.props.reason}
+            /> : null }
         </div>
 
 
