@@ -32,7 +32,7 @@ class PrerequisiteLine extends React.Component {
 
     let color = "#000000";
     if (this.props.coloredBy==="Random" && fromS.color && fromS.color !== "#ffffff") {
-      color = fromS.color;
+      color = toS.color;
     }
 
 
