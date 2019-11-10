@@ -1,5 +1,6 @@
 import React from 'react';
 import {getVisualCode} from "../../../../Functions/SubjectCode/SubjectCode";
+import Popup from "reactjs-popup";
 
 class PopupAlert extends React.Component {
   render() {
@@ -8,15 +9,19 @@ class PopupAlert extends React.Component {
     const notCompleted = realCodes.join(", ");
 
     return (
-      <React.Fragment>
-        <div className="closePopup" onClick={this.props.closeModal}>
+      <Popup
+        open={this.props.open}
+        onClose={this.onClose}
+        {...this.props}
+      >
+        <div className="closePopup" onClick={this.props.onClose}>
           &times;
         </div>
         <div>
           <p>Pré-requisitos não cumpridos: </p>
           <p>{notCompleted}</p>
         </div>
-      </React.Fragment>
+      </Popup>
     )
   }
 }

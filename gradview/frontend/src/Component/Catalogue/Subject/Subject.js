@@ -1,15 +1,16 @@
 import React from 'react';
-import Popup from "reactjs-popup";
 
 import './Subject.css';
-import PopupSubject from "./PopupSubject/PopupSubject";
-import * as Constants from '../constants';
 
 import {Draggable} from 'react-beautiful-dnd';
+
+import Alert from "./Alert/Alert";
+import PopupSubject from "./PopupSubject/PopupSubject";
+import PopupAlert from "./PopupAlert/PopupAlert";
+
 import {getVisualCode} from "../../../Functions/SubjectCode/SubjectCode";
 import * as colorConstans from "../colorConstants";
-import Alert from "./Alert/Alert";
-import PopupAlert from "./PopupAlert/PopupAlert";
+
 
 class Subject extends React.Component {
   constructor(props) {
@@ -147,27 +148,19 @@ class Subject extends React.Component {
             }
           </Draggable>
 
-          <Popup
+          <PopupSubject
             open={this.state.isDetailsOpen}
             closeOnDocumentClick
             onClose={this.closeModal}
-          >
-            <PopupSubject
-              subject={subject}
-              closeModal={this.closeModal}
-            />
-          </Popup>
+            subject={subject}
+          />
 
-          <Popup
+          <PopupAlert
             open={this.state.isAlertOpen}
             closeOnDocumentClick
             onClose={this.closeAlertModal}
-          >
-            <PopupAlert
-              reason={this.props.reason}
-              closeModal={this.closeAlertModal}
-            />
-          </Popup>
+            reason={this.props.reason}
+          />
         </div>
 
 
