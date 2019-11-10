@@ -9,24 +9,30 @@ import {Draggable} from 'react-beautiful-dnd';
 import {getVisualCode} from "../../../Functions/SubjectCode/SubjectCode";
 import * as colorConstans from "../colorConstants";
 import Alert from "./Alert/Alert";
+import PopupAlert from "./PopupAlert/PopupAlert";
 
 class Subject extends React.Component {
   constructor(props) {
     super(props);
     this.state =
       {
-        open: false,
-        visible: true
+        visible: true,
+        isDetailsOpen: false,
+        isAlertOpen: false,
       };
-    this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
   }
-  openModal() {
-    this.setState({ open: true });
-  }
-  closeModal() {
-    this.setState({ open: false });
-  }
+  openModal = () => {
+    this.setState({ isDetailsOpen: true });
+  };
+  closeModal = () => {
+    this.setState({ isDetailsOpen: false });
+  };
+  openAlertModal = () => {
+    this.setState({ isAlertOpen: true });
+  };
+  closeAlertModal = () => {
+    this.setState({ isAlertOpen: false });
+  };
 
   render() {
     const subject = this.props.subject;
@@ -102,52 +108,70 @@ class Subject extends React.Component {
     const subjectCode = getVisualCode(subject.code);
 
     const visibleClass = this.state.visible ? "" : " lessVisible ";
+
+
     return (
-
-      <Draggable
-        key={subject.code}
-        draggableId={subject.code}
-        index={this.props.index}
-        style={{margin: 1}}
-      >
-        {(provided, snapshot) => (
-          <div
-            key={this.props.id}
-            className={"draggable " + subject.code + (this.props.sizedByCredits ? " margin1" : "")}
-            {...provided.draggableProps}
-            {...provided.dragHandleProps}
-            ref={provided.innerRef}
+      <React.Fragment>
+        <div className={"subject-container"}>
+          <Draggable
+            key={subject.code}
+            draggableId={subject.code}
+            index={this.props.index}
+            style={{margin: 1}}
           >
-            <Alert
-              show={this.props.alert}
-              reason={this.props.reason}
-            />
-            <div
-              className={"subject " + subject.code + visibleClass}
-              style={{...divStyle, ...sizeStyle}}
-              onMouseEnter={this.props.onMouseEnter}
-              onMouseLeave={this.props.onMouseLeave}
-            >
-              <span
-                style={textStyle}
-                onClick={this.openModal}
-              >{subjectCode}</span>
-            </div>
+            {(provided, snapshot) => (
+              <div
+                key={this.props.id}
+                className={"draggable " + subject.code + (this.props.sizedByCredits ? " margin1" : "")}
+                {...provided.draggableProps}
+                {...provided.dragHandleProps}
+                ref={provided.innerRef}
+              >
+                <div
+                  className={"subject " + subject.code + visibleClass}
+                  style={{...divStyle, ...sizeStyle}}
+                  onMouseEnter={this.props.onMouseEnter}
+                  onMouseLeave={this.props.onMouseLeave}
+                >
+                  <Alert
+                    show={this.props.alert}
+                    onClick={this.openAlertModal}
+                  />
+                  <span
+                    style={textStyle}
+                    onClick={this.openModal}
+                  >{subjectCode}</span>
+                </div>
+              </div>
+            )
+            }
+          </Draggable>
 
-            <Popup
-              open={this.state.open}
-              closeOnDocumentClick
-              onClose={this.closeModal}
-            >
-              <PopupSubject
-                subject={subject}
-                closeModal={this.closeModal}
-              />
-            </Popup>
-          </div>
-        )
-        }
-      </Draggable>
+          <Popup
+            open={this.state.isDetailsOpen}
+            closeOnDocumentClick
+            onClose={this.closeModal}
+          >
+            <PopupSubject
+              subject={subject}
+              closeModal={this.closeModal}
+            />
+          </Popup>
+
+          <Popup
+            open={this.state.isAlertOpen}
+            closeOnDocumentClick
+            onClose={this.closeAlertModal}
+          >
+            <PopupAlert
+              reason={this.props.reason}
+              closeModal={this.closeAlertModal}
+            />
+          </Popup>
+        </div>
+
+
+      </React.Fragment>
     )
   }
 }
