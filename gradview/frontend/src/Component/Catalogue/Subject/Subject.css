@@ -1,9 +1,10 @@
 .subject-container {
+    display: inline-table;
     height: 34px;
     position: relative;
     margin: 2px 10px;
     width: 70px;
-
+    box-sizing: border-box;
 }
 
 .subject {

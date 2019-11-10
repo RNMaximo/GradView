@@ -113,7 +113,7 @@ class Subject extends React.Component {
 
     return (
       <React.Fragment>
-        <div className={"subject-container"}>
+        <div className={"subject-container " + (this.props.sizedByCredits ? " margin1" : "")}>
           <Draggable
             key={subject.code}
             draggableId={subject.code}
@@ -123,7 +123,7 @@ class Subject extends React.Component {
             {(provided, snapshot) => (
               <div
                 key={this.props.id}
-                className={"draggable " + subject.code + (this.props.sizedByCredits ? " margin1" : "")}
+                className={"draggable " + subject.code}
                 {...provided.draggableProps}
                 {...provided.dragHandleProps}
                 ref={provided.innerRef}
