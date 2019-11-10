@@ -8,6 +8,7 @@ import * as Constants from '../constants';
 import {Draggable} from 'react-beautiful-dnd';
 import {getVisualCode} from "../../../Functions/SubjectCode/SubjectCode";
 import * as colorConstans from "../colorConstants";
+import Alert from "./Alert/Alert";
 
 class Subject extends React.Component {
   constructor(props) {
@@ -97,7 +98,6 @@ class Subject extends React.Component {
     } else if (! this.props.borderColored && this.props.coloredBy==="Credits") {
       textStyle = {color: "white"};
     }
-    const alert = this.props.alert ? <div className={"Alert"}>!</div> : null;
 
     const subjectCode = getVisualCode(subject.code);
 
@@ -118,15 +118,20 @@ class Subject extends React.Component {
             {...provided.dragHandleProps}
             ref={provided.innerRef}
           >
+            <Alert
+              show={this.props.alert}
+              reason={this.props.reason}
+            />
             <div
               className={"subject " + subject.code + visibleClass}
               style={{...divStyle, ...sizeStyle}}
-              onClick={this.openModal}
               onMouseEnter={this.props.onMouseEnter}
               onMouseLeave={this.props.onMouseLeave}
             >
-              {alert}
-              <span style={textStyle}>{subjectCode}</span>
+              <span
+                style={textStyle}
+                onClick={this.openModal}
+              >{subjectCode}</span>
             </div>
 
             <Popup

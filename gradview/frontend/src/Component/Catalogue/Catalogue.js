@@ -3,7 +3,7 @@ import './Catalogue.css'
 import Subject from './Subject/Subject';
 import PrerequisiteLine from './PrerequisiteLine/PrerequisiteLine';
 import {DragDropContext, Droppable} from "react-beautiful-dnd";
-import { getCleanCode, isPartialRequisite } from "../../Functions/SubjectCode/SubjectCode";
+import {getCleanCode, isPartialRequisite} from "../../Functions/SubjectCode/SubjectCode";
 
 class Catalogue extends React.Component {
   state={
@@ -63,17 +63,23 @@ class Catalogue extends React.Component {
     }
   };
 
-  // TODO: Retornar texto explicando o motivo: {boolean: _, reason: _}
-  areSubjectsBeforeSemester = (semesters, subjects, semesterId) => {
+  // Retorna Objeto {areCompleted: bool, reasons: [strings]}
+  arePrerequisitesCompleted = (semesters, subjects, semesterId) => {
+    let areCompleted = true;
+    let reasons = [];
+
     for (let i in subjects) {
-      if (! this.isSubjectBeforeSemester(semesters, subjects[i], semesterId)) {
-        return false;
+      const isComplete = this.isPrerequisitesCompleted(semesters, subjects[i], semesterId);
+      areCompleted = areCompleted && isComplete;
+
+      if (! isComplete) {
+        reasons = [...reasons, subjects[i]]
       }
     }
-    return true
+    return {areCompleted: areCompleted, reasons: reasons}
   };
 
-  isSubjectBeforeSemester = (semesters, subject, semesterId) => {
+  isPrerequisitesCompleted = (semesters, subject, semesterId) => {
     subject = getCleanCode(subject);
     if (subject === "AA200") {
       return true
@@ -81,8 +87,8 @@ class Catalogue extends React.Component {
 
     if (subject.substring(0, 3) === "AA4") {
       const cpNeeded = subject.substring(3,5);
-      const currentCP = this.getCurrentCP(semesters, semesterId)
-      return (currentCP >= cpNeeded/100)
+      const currentCP = this.getCurrentCP(semesters, semesterId);
+      return (currentCP >= cpNeeded/100);
     }
 
     for (let i in semesters) {
@@ -130,7 +136,8 @@ class Catalogue extends React.Component {
           if (subject.opacity) {
             opacity = subject.opacity;
           }
-          const smIsWrong = ! this.areSubjectsBeforeSemester(catalogueProps.semesters, subject.requisitos, semester.id);
+          const prereqInfo = this.arePrerequisitesCompleted(catalogueProps.semesters, subject.requisitos, semester.id);
+
           return (
             <Subject
               ref={(node) => this.subjects[subject.code]=node}
@@ -141,7 +148,8 @@ class Catalogue extends React.Component {
               borderColored={this.props.borderColored}
               coloredBy={this.props.coloredBy}
               sizedByCredits={this.props.sizedByCredits}
-              alert={smIsWrong}
+              alert={! prereqInfo.areCompleted}
+              reason={prereqInfo.reasons}
 
               onMouseEnter={this.handleMouseEnter}
               onMouseLeave={this.handleMouseLeave}
@@ -150,7 +158,7 @@ class Catalogue extends React.Component {
           )
         });
 
-        const className = this.props.editing ? " editing " : ""
+        const className = this.props.editing ? " editing " : "";
         return (
           <Droppable
             key={"Semestre "+semester.id}

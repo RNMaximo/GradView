@@ -37,6 +37,10 @@
     -khtml-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
+
+    box-sizing: border-box;
+    cursor: pointer;
+    position :relative;
 }
 .margin1 {
     margin: 1px;
@@ -54,23 +58,4 @@
     z-index: 1000;
     border-radius: 8px;
     padding: 5px 10px !important;
-}
-
-.Alert {
-    width: 20px;
-    height: 20px;
-    background-color: #FFBB00;
-    border-radius: 50%;
-    border: 2px solid black;
-
-    position: absolute;
-    top: -10px;
-    right: -10px;
-
-    text-align: center;
-    line-height: 20px;
-    font-size: 16px;
-    font-weight: bold;
-
-    z-index: 150;
 }

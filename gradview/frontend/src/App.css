@@ -24,3 +24,8 @@
 .BorderButton {
   width: 130px;
 }
+
+.popup-content p {
+  text-align: left;
+  margin: 10px 0;
+}
