@@ -9,6 +9,10 @@
   width: 450px;
   margin: 0 10px;
 }
+.year-select {
+  width: 100px;
+  margin: 0 10px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

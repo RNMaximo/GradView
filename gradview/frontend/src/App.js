@@ -16,6 +16,8 @@ class App extends React.Component {
   state = {
     catalogueOpt: null,
     catalogue: null,
+    catalogueYear: null,
+    catalogueId: "",
 
     borderColored: false,
     shouldChangeColor: true,
@@ -32,7 +34,7 @@ class App extends React.Component {
   catalogue = React.createRef();
 
   componentDidMount() {
-    this.handleChangeCatalogue(this.coursesOptions[0]);
+    this.initializeOptions();
   }
 
   initializeNoColors = (catalogueSem) => {
@@ -184,21 +186,28 @@ class App extends React.Component {
     this.setState({catalogue: {...this.state.catalogue, subjects: subjectsAsObject}, onSearch: onSearch})
   };
 
+  handleChangeCatalogueYear = (catalogueYear) => {
+    this.setState({catalogueYear: catalogueYear});
+    const year = catalogueYear.value;
+    this.handleChangeCatalogue(this.coursesOptions[year][0])
+  };
+
   handleChangeCatalogue = (selectedOption) => {
-    if (selectedOption === null) {
-      this.setState({catalogue: null, catalogueOpt: selectedOption})
+    this.setState({catalogueOpt: selectedOption});
+  };
+
+  handleSearchCatalogue = (catalogue) => {
+    const selectedCatalogue = catalogue ? catalogue : this.state.catalogueOpt;
+    if (! selectedCatalogue) {
+      this.setState({catalogue: null})
     } else {
-      const newValue = selectedOption.value;
+      const newValue = selectedCatalogue.value;
       const catalogue = (require('./Component/Catalogue/Catalogues/' + newValue)).default;
       const coloredCatalogue = this.initializeRandomColors(catalogue);
       const newCatalogue = {...catalogue, subjects: coloredCatalogue};
 
-      this.setState({catalogue: newCatalogue, catalogueOpt: selectedOption})
+      this.setState({catalogue: newCatalogue, catalogueId: newValue})
     }
-  };
-
-  handleOmitCatalogue = () => {
-    this.setState({catalogue: null, isColored: false})
   };
 
   handleChangeColor = (check) => {
@@ -214,35 +223,47 @@ class App extends React.Component {
     this.catalogue.current.forceUpdate();
   };
 
-  coursesOptions = [
-    {value: "catalogueComp.js", label: "AA - Engenharia de Computação"},
-    {value: "curso1_mod1.js", label: "AA - Bacharelado em Matemática"},
-    {value: "curso1_mod2.js", label: "AB - Bacharelado em Matemática"},
-    {value: "curso4_mod1.js", label: "AA - Bacharelado em  Física"},
-    {value: "curso8_mod1.js", label: "Engenharia Agrícola"},
-    {value: "curso11_mod1.js", label: "Engenharia Elétrica"},
-    {value: "curso102_mod1.js", label: "Engenharia de Produção"},
-    {value: "curso20_mod1.js", label: "Pedagogia"},
-    //{value: ".js", label: ""},
-  ];
+  createOptions = () => {
+    this.coursesOptions = {
+      "2019": [
+        {value: "2019/catalogueComp.js", label: "AA - Engenharia de Computação"},
+        {value: "2019/curso1_mod1.js", label: "AA - Bacharelado em Matemática"},
+        {value: "2019/curso1_mod2.js", label: "AB - Bacharelado em Matemática"},
+        {value: "2019/curso4_mod1.js", label: "AA - Bacharelado em  Física"},
+        {value: "2019/curso8_mod1.js", label: "Engenharia Agrícola"},
+        {value: "2019/curso11_mod1.js", label: "Engenharia Elétrica"},
+        {value: "2019/curso102_mod1.js", label: "Engenharia de Produção"},
+        {value: "2019/curso20_mod1.js", label: "Pedagogia"},
+        //{value: ".js", label: ""},
+      ],
+      "2020": [
+        {value: "2020/catalogueComp.js", label: "AA - Engenharia de Computação"},
+        {value: "2020/curso102_mod1.js", label: "Engenharia de Produção"},
+        {value: "2020/curso20_mod1.js", label: "Pedagogia"},
+        //{value: ".js", label: ""},
+      ]
+    };
+
+    const courseYears = Object.keys(this.coursesOptions);
+    this.yearsOptions = courseYears.map((year) => {
+      return {value: year, label: year}
+    });
+  };
+
+  initializeOptions = () => {
+    const initialYearOpt = this.yearsOptions[0];
+    const year = initialYearOpt.value;
+    const initialCatalogueOpt = this.coursesOptions[year][0];
+
+    this.setState({catalogueYear: initialYearOpt, catalogueOpt: initialCatalogueOpt});
+    this.handleSearchCatalogue(initialCatalogueOpt)
+  };
 
   render() {
-    const selectOpt = this.state.catalogueOpt ? this.state.catalogueOpt : null;
+    this.createOptions();
 
-    const catalogue = this.state.catalogue ?
-      <Catalogue
-        key={selectOpt.value}
-        ref={this.catalogue}
-        onDragEnd={this.onDragEnd}
-        onDragStart={this.onDragStart}
-        catalogueBySemester={this.state.catalogue}
+    const currentCataloguesYear = this.state.catalogueYear ? this.state.catalogueYear.value : null;
 
-        coloredByVector={this.state.isColoredByTPChecked}
-        sizedByCredits={this.state.isSizedByCreditsChecked}
-
-        onSearch={this.state.onSearch}
-        editing={this.state.isPersistentEditing || this.state.isEditing}
-      /> : null;
 
     return (
       <div className="App">
@@ -255,14 +276,23 @@ class App extends React.Component {
             }
           }>
           <Select
-            value={selectOpt}
+            value={this.state.catalogueYear}
+            className={"year-select"}
+            onChange={this.handleChangeCatalogueYear}
+            options={this.yearsOptions}
+            placeholder={"Selecione o ano do catálogo"}
+            isDisable
+          />
+          <Select
+            value={this.state.catalogueOpt}
             className={"course-select"}
             onChange={this.handleChangeCatalogue}
-            options={this.coursesOptions}
+            options={this.coursesOptions[currentCataloguesYear]}
             placeholder={"Selecione um catálogo"}
             isSearchable={true}
             isClearable={true}
           />
+          <button onClick={() => this.handleSearchCatalogue ()} >Buscar</button>
         </div>
         <br/>
         <div
@@ -292,7 +322,20 @@ class App extends React.Component {
           />
 
         </div>
-        {catalogue}
+        {this.state.catalogue ?
+        <Catalogue
+          key={"catalogue"+this.state.catalogueId}
+          ref={this.catalogue}
+          onDragEnd={this.onDragEnd}
+          onDragStart={this.onDragStart}
+          catalogueBySemester={this.state.catalogue}
+
+          coloredByVector={this.state.isColoredByTPChecked}
+          sizedByCredits={this.state.isSizedByCreditsChecked}
+
+          onSearch={this.state.onSearch}
+          editing={this.state.isPersistentEditing || this.state.isEditing}
+        /> : null}
       </div>
     );
   }
