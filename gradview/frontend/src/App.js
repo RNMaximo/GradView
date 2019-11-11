@@ -9,6 +9,7 @@ import {getCleanCode, getVisualCode} from "./Functions/SubjectCode/SubjectCode";
 
 import Switch from "./UI/SwitchButton/SwitchButton";
 import Select from 'react-select'
+import CourseSelectBar from "./Component/Catalogue/CourseSelectBar/CourseSelectBar";
 
 var randomColor = require('randomcolor');
 
@@ -234,13 +235,11 @@ class App extends React.Component {
         {value: "2019/curso11_mod1.js", label: "Engenharia Elétrica"},
         {value: "2019/curso102_mod1.js", label: "Engenharia de Produção"},
         {value: "2019/curso20_mod1.js", label: "Pedagogia"},
-        //{value: ".js", label: ""},
       ],
       "2020": [
         {value: "2020/catalogueComp.js", label: "AA - Engenharia de Computação"},
         {value: "2020/curso102_mod1.js", label: "Engenharia de Produção"},
         {value: "2020/curso20_mod1.js", label: "Pedagogia"},
-        //{value: ".js", label: ""},
       ]
     };
 
@@ -267,33 +266,17 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <br/>
-        <div
-          style={
-            {display: "inline-flex",
-              margin: "auto",
-              alignItems: "center",
-            }
-          }>
-          <Select
-            value={this.state.catalogueYear}
-            className={"year-select"}
-            onChange={this.handleChangeCatalogueYear}
-            options={this.yearsOptions}
-            placeholder={"Selecione o ano do catálogo"}
-            isDisable
-          />
-          <Select
-            value={this.state.catalogueOpt}
-            className={"course-select"}
-            onChange={this.handleChangeCatalogue}
-            options={this.coursesOptions[currentCataloguesYear]}
-            placeholder={"Selecione um catálogo"}
-            isSearchable={true}
-            isClearable={true}
-          />
-          <button onClick={() => this.handleSearchCatalogue ()} >Buscar</button>
-        </div>
+        <CourseSelectBar
+          catalogueYearOpt={this.state.catalogueYear}
+          yearsOptions={this.yearsOptions}
+
+          catalogueOpt={this.state.catalogueOpt}
+          coursesOptions={this.coursesOptions[currentCataloguesYear]}
+
+          handleChangeCatalogueYear={this.handleChangeCatalogueYear}
+          handleChangeCatalogue={this.handleChangeCatalogue}
+          handleSearchCatalogue={() => this.handleSearchCatalogue()}
+        />
         <br/>
         <div
           style={
@@ -323,19 +306,19 @@ class App extends React.Component {
 
         </div>
         {this.state.catalogue ?
-        <Catalogue
-          key={"catalogue"+this.state.catalogueId}
-          ref={this.catalogue}
-          onDragEnd={this.onDragEnd}
-          onDragStart={this.onDragStart}
-          catalogueBySemester={this.state.catalogue}
+          <Catalogue
+            key={"catalogue"+this.state.catalogueId}
+            ref={this.catalogue}
+            onDragEnd={this.onDragEnd}
+            onDragStart={this.onDragStart}
+            catalogueBySemester={this.state.catalogue}
 
-          coloredByVector={this.state.isColoredByTPChecked}
-          sizedByCredits={this.state.isSizedByCreditsChecked}
+            coloredByVector={this.state.isColoredByTPChecked}
+            sizedByCredits={this.state.isSizedByCreditsChecked}
 
-          onSearch={this.state.onSearch}
-          editing={this.state.isPersistentEditing || this.state.isEditing}
-        /> : null}
+            onSearch={this.state.onSearch}
+            editing={this.state.isPersistentEditing || this.state.isEditing}
+          /> : null}
       </div>
     );
   }
