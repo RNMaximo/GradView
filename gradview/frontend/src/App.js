@@ -274,9 +274,6 @@ class App extends React.Component {
           courseOpt={this.state.catalogueCourse}
           coursesOptions={this.cataloguesOptions[currentCataloguesYear]}
           modalityOpt={this.state.catalogueOpt}
-          cataloguesOptions={modalitiesOpt}
-
-          modalityOpt={this.state.catalogueOpt}
           modalitiesOptions={modalitiesOpt}
 
           handleChangeCatalogueYear={this.handleChangeCatalogueYear}
