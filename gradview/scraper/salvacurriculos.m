@@ -1,4 +1,4 @@
-slCharacterEncoding('UTF-8');
+%slCharacterEncoding('UTF-8');
 load('disciplinas.mat');
 catlist = sprintf('catalogos = {');
 for ano=2012:2020
@@ -6,7 +6,7 @@ for ano=2012:2020
     create(['js/ano' num2str(ano)]);
     for i=[1:200]
         try
-            curriculos = getcurriculo(['https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo' num2str(ano) '/proposta/sug' num2str(i) '.html'],disciplinas{ano-2011});
+            curriculos = getcurriculo(['https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo' num2str(ano) '/proposta/sug' num2str(i) '.html'],disciplinas{ano});
 
             catlist = sprintf('%s\n\t\t''%s'': {',catlist,curriculos.curso);
 

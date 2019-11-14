@@ -10,7 +10,7 @@ for ano=2012:2020
         end
     end
 
-    disciplinas{ano-2011} = horzcat(conjuntos{:});
+    disciplinas{ano} = horzcat(conjuntos{:});
 
 end
 % 

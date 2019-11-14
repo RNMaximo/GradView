@@ -42,7 +42,10 @@ function disciplinas = getdisciplinasweb(url)
         disciplinas(i-2).vetor=strrep(strrep(strjoin(vetor(2:9),', '),':0',':'),':0',':');
         disciplinas(i-2).creditos=str2num(vetor{9}(3:end));
         % Para levar em conta mais dados das disciplinas utilizar aqui vetor{n}
-        disciplinas(i-2).prereqs=strsplit(strtrim(lineparts{7}),'/ ');
+        disciplinas(i-2).prereqs=strsplit(strtrim(lineparts{7}),'/');
+        for j=1:length(disciplinas(i-2).prereqs)
+            disciplinas(i-2).prereqs{j}=strtrim(disciplinas(i-2).prereqs{j});
+        end
         
         for j=1:length(disciplinas(i-2).prereqs)
             if ~isempty(disciplinas(i-2).prereqs{j})
