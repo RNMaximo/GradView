@@ -8,17 +8,22 @@ import * as Constants from "./Component/Catalogue/constants";
 import {getCleanCode, getVisualCode} from "./Functions/SubjectCode/SubjectCode";
 
 import Switch from "./UI/SwitchButton/SwitchButton";
-import Select from 'react-select'
 import CourseSelectBar from "./Component/Catalogue/CourseSelectBar/CourseSelectBar";
+import {
+  getModalitiesOptionsByYearAndCourse,
+  getCatalogueYearOptions,
+  getCatalogueCourseOptionsByYear
+} from "./Component/Catalogue/Catalogues/cataloguesFunctions";
 
 var randomColor = require('randomcolor');
 
 class App extends React.Component {
   state = {
-    catalogueOpt: null,
-    catalogue: null,
     catalogueYear: null,
+    catalogueCourse: null,
+    catalogueOpt: null,
     catalogueId: "",
+    catalogue: null,
 
     borderColored: false,
     shouldChangeColor: true,
@@ -187,13 +192,39 @@ class App extends React.Component {
     this.setState({catalogue: {...this.state.catalogue, subjects: subjectsAsObject}, onSearch: onSearch})
   };
 
+  createOptions = () => {
+    this.yearsOptions = getCatalogueYearOptions();
+    this.cataloguesOptions = getCatalogueCourseOptionsByYear();
+    this.optionsByYearAndCourse = getModalitiesOptionsByYearAndCourse();
+  };
+
+  initializeOptions = () => {
+    const initialYearOpt = this.yearsOptions[0];
+    this.currentYear = initialYearOpt.value;
+    const initialCourseOpt = this.cataloguesOptions[this.currentYear][0];
+    this.currentCourse = initialCourseOpt.value;
+    const initialCatalogueOpt = this.optionsByYearAndCourse[this.currentYear][this.currentCourse][0];
+
+    this.handleChangeCatalogueYear(initialYearOpt);
+    //this.handleChangeCatalogueCourse(initialCourseOpt);
+    //this.handleChangeCatalogue(initialCatalogueOpt);
+    this.handleSearchCatalogue(initialCatalogueOpt)
+  };
+
   handleChangeCatalogueYear = (catalogueYear) => {
     this.setState({catalogueYear: catalogueYear});
-    const year = catalogueYear.value;
-    this.handleChangeCatalogue(this.coursesOptions[year][0])
+    this.currentYear = catalogueYear.value;
+    this.handleChangeCatalogueCourse(this.cataloguesOptions[this.currentYear][0])
+  };
+
+  handleChangeCatalogueCourse = (selectedOption) => {
+    this.setState({catalogueCourse: selectedOption});
+    this.currentCourse = selectedOption.value;
+    this.handleChangeCatalogue(this.optionsByYearAndCourse[this.currentYear][this.currentCourse][0])
   };
 
   handleChangeCatalogue = (selectedOption) => {
+    this.currentCatalogue = selectedOption.label;
     this.setState({catalogueOpt: selectedOption});
   };
 
@@ -202,6 +233,8 @@ class App extends React.Component {
     if (! selectedCatalogue) {
       this.setState({catalogue: null})
     } else {
+      this.selectedCatalogue = {year: this.currentYear, course: this.currentCourse, catalogue: this.currentCatalogue};
+
       const newValue = selectedCatalogue.value;
       const catalogue = (require('./Component/Catalogue/Catalogues/' + newValue)).default;
       const coloredCatalogue = this.initializeRandomColors(catalogue);
@@ -224,56 +257,30 @@ class App extends React.Component {
     this.catalogue.current.forceUpdate();
   };
 
-  createOptions = () => {
-    this.coursesOptions = {
-      "2019": [
-        {value: "2019/catalogueComp.js", label: "AA - Engenharia de Computação"},
-        {value: "2019/curso1_mod1.js", label: "AA - Bacharelado em Matemática"},
-        {value: "2019/curso1_mod2.js", label: "AB - Bacharelado em Matemática"},
-        {value: "2019/curso4_mod1.js", label: "AA - Bacharelado em  Física"},
-        {value: "2019/curso8_mod1.js", label: "Engenharia Agrícola"},
-        {value: "2019/curso11_mod1.js", label: "Engenharia Elétrica"},
-        {value: "2019/curso102_mod1.js", label: "Engenharia de Produção"},
-        {value: "2019/curso20_mod1.js", label: "Pedagogia"},
-      ],
-      "2020": [
-        {value: "2020/catalogueComp.js", label: "AA - Engenharia de Computação"},
-        {value: "2020/curso102_mod1.js", label: "Engenharia de Produção"},
-        {value: "2020/curso20_mod1.js", label: "Pedagogia"},
-      ]
-    };
-
-    const courseYears = Object.keys(this.coursesOptions);
-    this.yearsOptions = courseYears.map((year) => {
-      return {value: year, label: year}
-    });
-  };
-
-  initializeOptions = () => {
-    const initialYearOpt = this.yearsOptions[0];
-    const year = initialYearOpt.value;
-    const initialCatalogueOpt = this.coursesOptions[year][0];
-
-    this.setState({catalogueYear: initialYearOpt, catalogueOpt: initialCatalogueOpt});
-    this.handleSearchCatalogue(initialCatalogueOpt)
-  };
 
   render() {
     this.createOptions();
 
     const currentCataloguesYear = this.state.catalogueYear ? this.state.catalogueYear.value : null;
-
+    const currentCataloguesCourse = this.state.catalogueCourse ? this.state.catalogueCourse.value : null;
+    const aux = this.optionsByYearAndCourse[currentCataloguesYear]
+    const modalitiesOpt = aux ? aux[currentCataloguesCourse] : null;
 
     return (
       <div className="App">
         <CourseSelectBar
-          catalogueYearOpt={this.state.catalogueYear}
+          yearOpt={this.state.catalogueYear}
           yearsOptions={this.yearsOptions}
+          courseOpt={this.state.catalogueCourse}
+          coursesOptions={this.cataloguesOptions[currentCataloguesYear]}
+          modalityOpt={this.state.catalogueOpt}
+          cataloguesOptions={modalitiesOpt}
 
-          catalogueOpt={this.state.catalogueOpt}
-          coursesOptions={this.coursesOptions[currentCataloguesYear]}
+          modalityOpt={this.state.catalogueOpt}
+          modalitiesOptions={modalitiesOpt}
 
           handleChangeCatalogueYear={this.handleChangeCatalogueYear}
+          handleChangeCatalogueCourse={this.handleChangeCatalogueCourse}
           handleChangeCatalogue={this.handleChangeCatalogue}
           handleSearchCatalogue={() => this.handleSearchCatalogue()}
         />
