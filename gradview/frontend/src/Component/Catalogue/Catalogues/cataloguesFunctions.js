@@ -1,5 +1,8 @@
 import catalogueOptions from './allCatalogues';
 
+export const getCourseName = (year, courseCode) => {
+  return catalogueOptions[year][courseCode].name;
+};
 
 export const getCatalogueYearOptions = () => {
   const courseYears = Object.keys(catalogueOptions);

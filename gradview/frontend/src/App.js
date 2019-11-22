@@ -12,7 +12,7 @@ import CourseSelectBar from "./Component/Catalogue/CourseSelectBar/CourseSelectB
 import {
   getModalitiesOptionsByYearAndCourse,
   getCatalogueYearOptions,
-  getCatalogueCourseOptionsByYear
+  getCatalogueCourseOptionsByYear, getCourseName
 } from "./Component/Catalogue/Catalogues/cataloguesFunctions";
 
 var randomColor = require('randomcolor');
@@ -282,32 +282,42 @@ class App extends React.Component {
           handleSearchCatalogue={() => this.handleSearchCatalogue()}
         />
         <br/>
-        <div
-          style={
-            {display: "inline-flex",
-              margin: "auto",
-              alignItems: "center"}
-          }>
+
+
+        <div className={"catalogue-control"}>
+          {
+            this.selectedCatalogue ?
+              <div className={"selected-catalogue"}>
+                <p className={"year"}>{this.selectedCatalogue.year}</p>
+                <div >
+                  <p className={"course"}>{this.selectedCatalogue.course+' - '+getCourseName(this.selectedCatalogue.year, this.selectedCatalogue.course)}</p>
+                  <p className={"modality"}>{this.selectedCatalogue.catalogue}</p>
+                </div>
+              </div>
+              : null
+          }
+          <div className={"control-buttons"}>
+            <Switch
+              text={"Teoria / Prática"}
+              onChange={this.handleChangeColor}
+              checked={this.state.isColoredByTPChecked}
+            />
+
+            <Switch
+              text={"Tamanho por créditos"}
+              onChange={this.handleChangeSize}
+              checked={this.state.isSizedByCreditsChecked}
+            />
+
+            <Switch
+              text={"Modo de Edição"}
+              onChange={this.handleChangeEditing}
+              checked={this.state.isPersistentEditing}
+            />
+          </div>
+        </div>
+        <div style={{margin: "auto", alignItems: "center"}}>
           <SearchInput onChangeHandler = {this.handleSearch}/>
-
-          <Switch
-            text={"Teoria / Prática"}
-            onChange={this.handleChangeColor}
-            checked={this.state.isColoredByTPChecked}
-          />
-
-          <Switch
-            text={"Tamanho por créditos"}
-            onChange={this.handleChangeSize}
-            checked={this.state.isSizedByCreditsChecked}
-          />
-
-          <Switch
-            text={"Modo de Edição"}
-            onChange={this.handleChangeEditing}
-            checked={this.state.isPersistentEditing}
-          />
-
         </div>
         {this.state.catalogue ?
           <Catalogue
