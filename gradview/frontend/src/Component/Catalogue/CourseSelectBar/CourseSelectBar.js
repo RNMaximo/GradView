@@ -24,7 +24,7 @@ class CourseSelectBar extends React.Component {
             className={"year-select"}
             onChange={this.props.handleChangeCatalogueYear}
             options={this.props.yearsOptions}
-            placeholder={"Selecione o ano do catálogo"}
+            placeholder={"Ano"}
             isSearchable={true}
             isDisabled={! this.props.yearsOptions || this.props.yearsOptions.length <= 1}
             noOptionsMessage={this.noOptionsMessage}
@@ -34,7 +34,7 @@ class CourseSelectBar extends React.Component {
             className={"course-select"}
             onChange={this.props.handleChangeCatalogueCourse}
             options={this.props.coursesOptions}
-            placeholder={"Selecione um catálogo"}
+            placeholder={"Curso"}
             isSearchable={true}
             isDisabled={! this.props.coursesOptions || this.props.coursesOptions.length <= 1}
             noOptionsMessage={this.noOptionsMessage}
@@ -45,7 +45,7 @@ class CourseSelectBar extends React.Component {
             className={"course-select"}
             onChange={this.props.handleChangeCatalogue}
             options={this.props.modalitiesOptions}
-            placeholder={"Selecione um catálogo"}
+            placeholder={"Modalidade"}
             isSearchable={true}
             isDisabled={! this.props.modalitiesOptions || this.props.modalitiesOptions.length <= 1}
             noOptionsMessage={this.noOptionsMessage}

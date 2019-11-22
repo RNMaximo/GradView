@@ -12,7 +12,7 @@ class SearchInput extends React.Component {
         minLength={1}
         debounceTimeout={50}
         onChange={(event) => this.props.onChangeHandler(event)}
-        placeholder={"Buscar disciplina"}
+        placeholder={"Buscar disciplina por código, nome ou ementa"}
       />
     )
   }
