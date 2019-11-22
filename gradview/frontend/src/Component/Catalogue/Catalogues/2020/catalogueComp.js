@@ -41,14 +41,6 @@ const catalogue = {
       id: '10',
       subjects: ['ELET10', 'MC030']
     },
-    'sem-11': {
-      id: '11',
-      subjects: []
-    },
-    'sem-12': {
-      id: '12',
-      subjects: []
-    }
   },
 
   subjects: {

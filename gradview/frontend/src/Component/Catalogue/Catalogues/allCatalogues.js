@@ -44,7 +44,7 @@ const catalogueOptions = {
       name: "Engenharia de Computação - Integral",
       modality: [
         {
-          name: '',
+          name: 'AA - Sistemas de Computação',
           file: '2019/catalogueComp.js'
         },
       ]
