@@ -5,14 +5,7 @@
 .App-logo {
   height: 40vmin;
 }
-.course-select {
-  width: 450px;
-  margin: 0 10px;
-}
-.year-select {
-  width: 100px;
-  margin: 0 10px;
-}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,11 +29,11 @@
   text-align: left;
   margin: 10px 0;
 }
-
 .catalogue-control {
   display: flex;
-  margin: 4px 30px;
+  margin: 4px auto;
   align-items: center;
+  width: 1150px;
 }
 
 .selected-catalogue {
@@ -53,7 +46,7 @@
 .selected-catalogue .year {
   font-weight: bold;
   font-size: 36px;
-  margin: auto 8px;
+  margin: auto 8px 0 0;
 }
 .selected-catalogue .course {
   margin: 0;

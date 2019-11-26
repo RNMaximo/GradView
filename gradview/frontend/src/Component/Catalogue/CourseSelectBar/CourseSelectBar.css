@@ -4,6 +4,16 @@
     padding: 0 auto;
     align-items: center;
     background: #888;
+    min-width: 1150px;
     width: 100%;
     height: 55px;
+}
+
+.course-select {
+    width: 450px;
+    margin: 0 25px 0 0;
+}
+.year-select {
+    width: 100px;
+    margin: 0 25px 0 0;
 }

@@ -10,11 +10,12 @@ class CourseSelectBar extends React.Component {
   render() {
     return (
       <div
-        className={"CourseSelectBar"}
+        className={"CourseSelectBar content"}
       >
         <div
           style={
             {
+              justifyContent: 'space-between',
               display: "inline-flex",
               margin: "auto",
             }

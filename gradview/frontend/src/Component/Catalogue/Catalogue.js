@@ -161,24 +161,27 @@ class Catalogue extends React.Component {
 
         const className = this.props.editing ? " editing " : "";
         return (
-          <Droppable
-            key={"Semestre "+semester.id}
-            droppableId={semestersId}
-            direction={"horizontal"}
-          >
-            {(provided, snapshot) => (
-              <div
-                key={"Semestre "+semester.id}
-                className={"Semestre "+semester.id + className}
-                ref={provided.innerRef}
-                {...provided.droppableProps}
-              >
-                {subjectsBySemester}
-                {provided.placeholder}
-                <br/>
-              </div>
-            )}
-          </Droppable>
+          <div className={"semester "+semester.id}>
+            <p className={"info"}><strong>{semester.id}º</strong> sem.</p>
+            <Droppable
+              key={"Semestre "+semester.id}
+              droppableId={semestersId}
+              direction={"horizontal"}
+            >
+              {(provided, snapshot) => (
+                <div
+                  key={"Semestre "+semester.id}
+                  className={"subjects "+semester.id + className}
+                  ref={provided.innerRef}
+                  {...provided.droppableProps}
+                >
+                  {subjectsBySemester}
+                  {provided.placeholder}
+                  <br/>
+                </div>
+              )}
+            </Droppable>
+          </div>
         )
       })
     );
