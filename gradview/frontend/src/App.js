@@ -75,20 +75,18 @@ class App extends React.Component {
       let subject = subjectsToColor[i];
 
       let requisite = null;
-      if (subject.requisitos && subject.requisitos.length > 0) {
-        const cleanCodes = subject.requisitos.map((req) => {
-          return getCleanCode(req);
-        });
-        requisite = subjectsAsArray.filter((req) => {
-          return (cleanCodes.includes(req.code))
-        });
-        if (requisite.length > 0) {
-          subject = {...subject, color: rgbMeanColor(this.getColors(requisite))}
-        } else {
-          subject = {...subject, color: rgbMeanColor([randomColor(), "#AAAAAA"])}
+      if (subject.color.length === 0) {
+        if (subject.requisitos && subject.requisitos.length > 0) {
+          const cleanCodes = subject.requisitos.map((req) => {
+            return getCleanCode(req);
+          });
+          requisite = subjectsAsArray.filter((req) => {
+            return (cleanCodes.includes(req.code))
+          });
+          if (requisite.length > 0) {
+            subject = {...subject, color: rgbMeanColor(this.getColors(requisite))}
+          }
         }
-      } else {
-        subject = {...subject, color: rgbMeanColor([randomColor(), "#AAAAAA"])}
       }
 
       subjectsAsObject[subject.code] = subject
@@ -199,7 +197,8 @@ class App extends React.Component {
   };
 
   initializeOptions = () => {
-    const initialYearOpt = this.yearsOptions[0];
+    // Inicia sempre com o último ano cadastrado
+    const initialYearOpt = this.yearsOptions[this.yearsOptions.length-1];
     this.currentYear = initialYearOpt.value;
     const initialCourseOpt = this.cataloguesOptions[this.currentYear][0];
     this.currentCourse = initialCourseOpt.value;
@@ -236,7 +235,7 @@ class App extends React.Component {
       this.selectedCatalogue = {year: this.currentYear, course: this.currentCourse, catalogue: this.currentCatalogue};
 
       const newValue = selectedCatalogue.value;
-      const catalogue = (require('./Component/Catalogue/Catalogues/' + newValue)).default;
+      const catalogue = (require('../public/catalogues/' + newValue)).default;
       const coloredCatalogue = this.initializeRandomColors(catalogue);
       const newCatalogue = {...catalogue, subjects: coloredCatalogue};
 
