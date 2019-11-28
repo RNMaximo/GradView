@@ -105,7 +105,7 @@ const catalogueOptions = {
       ]
     },
     '11': {
-      name: "Engenharia El�trica",
+      name: "Engenharia Elétrica",
       modality: [
         {
           name: '',
@@ -117,7 +117,7 @@ const catalogueOptions = {
       name: "Engenharia Civil",
       modality: [
         {
-          name: 'EA - Ênfase em Recursos Hídricos, Energ�ticos e Ambientais',
+          name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
           file: '2013/curso12_mod1.js'
         },
         {
@@ -125,7 +125,7 @@ const catalogueOptions = {
           file: '2013/curso12_mod2.js'
         },
         {
-          name: 'EP - Ênfase em Gest�o do Projeto e da Constru��o',
+          name: 'EP - Ênfase em Gestão do Projeto e da Construção',
           file: '2013/curso12_mod3.js'
         },
         {
@@ -173,7 +173,7 @@ const catalogueOptions = {
           file: '2013/curso16_mod1.js'
         },
         {
-          name: 'AB - Bacharelado em Ciências Sociais - Pol�tica',
+          name: 'AB - Bacharelado em Ciências Sociais - Política',
           file: '2013/curso16_mod2.js'
         },
         {
@@ -191,7 +191,7 @@ const catalogueOptions = {
       ]
     },
     '17': {
-      name: "Ciências Econ�micas",
+      name: "Ciências Econômicas",
       modality: [
         {
           name: '',
@@ -222,14 +222,14 @@ const catalogueOptions = {
       ]
     },
     '23': {
-      name: "Dan�a",
+      name: "Dança",
       modality: [
         {
-          name: 'AA - Bacharelado em Dan�a',
+          name: 'AA - Bacharelado em Dança',
           file: '2013/curso23_mod1.js'
         },
         {
-          name: 'AB - Licenciatura em Artes - Dan�a',
+          name: 'AB - Licenciatura em Artes - Dança',
           file: '2013/curso23_mod2.js'
         },
       ]
@@ -248,7 +248,7 @@ const catalogueOptions = {
       ]
     },
     '26': {
-      name: "Artes C�nicas",
+      name: "Artes Cênicas",
       modality: [
         {
           name: '',
@@ -257,14 +257,14 @@ const catalogueOptions = {
       ]
     },
     '27': {
-      name: "Educa��o Física",
+      name: "Educação Física",
       modality: [
         {
-          name: 'AB - Licenciatura em Educa��o Física',
+          name: 'AB - Licenciatura em Educação Física',
           file: '2013/curso27_mod1.js'
         },
         {
-          name: 'AF - Bacharelado em Educa��o Física',
+          name: 'AF - Bacharelado em Educação Física',
           file: '2013/curso27_mod2.js'
         },
       ]
@@ -305,7 +305,7 @@ const catalogueOptions = {
       ]
     },
     '36': {
-      name: "Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas",
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
       modality: [
         {
           name: '',
@@ -341,7 +341,7 @@ const catalogueOptions = {
       ]
     },
     '41': {
-      name: "Engenharia El�trica",
+      name: "Engenharia Elétrica",
       modality: [
         {
           name: '',
@@ -375,7 +375,7 @@ const catalogueOptions = {
           file: '2013/curso44_mod1.js'
         },
         {
-          name: 'AB - Bacharelado em Ciências Sociais - Pol�tica',
+          name: 'AB - Bacharelado em Ciências Sociais - Política',
           file: '2013/curso44_mod2.js'
         },
         {
@@ -393,14 +393,14 @@ const catalogueOptions = {
       ]
     },
     '45': {
-      name: "Educa��o Física",
+      name: "Educação Física",
       modality: [
         {
-          name: 'AB - Licenciatura em Educa��o Física',
+          name: 'AB - Licenciatura em Educação Física',
           file: '2013/curso45_mod1.js'
         },
         {
-          name: 'AF - Bacharelado em Educa��o Física',
+          name: 'AF - Bacharelado em Educação Física',
           file: '2013/curso45_mod2.js'
         },
       ]
@@ -415,7 +415,7 @@ const catalogueOptions = {
       ]
     },
     '47': {
-      name: "Ciências Econ�micas",
+      name: "Ciências Econômicas",
       modality: [
         {
           name: '',
@@ -433,7 +433,7 @@ const catalogueOptions = {
       ]
     },
     '49': {
-      name: "Engenharia de Controle e Automa��o",
+      name: "Engenharia de Controle e Automação",
       modality: [
         {
           name: '',
@@ -506,7 +506,7 @@ const catalogueOptions = {
           file: '2013/curso56_mod2.js'
         },
         {
-          name: 'AX - Para Matr�cula Antes da Op��o',
+          name: 'AX - Para Matrícula Antes da Opção',
           file: '2013/curso56_mod3.js'
         },
       ]
@@ -521,7 +521,7 @@ const catalogueOptions = {
       ]
     },
     '63': {
-      name: "Farm�cia",
+      name: "Farmácia",
       modality: [
         {
           name: '',
@@ -530,7 +530,7 @@ const catalogueOptions = {
       ]
     },
     '64': {
-      name: "Comunica��o Social - Midialogia",
+      name: "Comunicação Social - Midialogia",
       modality: [
         {
           name: '',
@@ -548,7 +548,7 @@ const catalogueOptions = {
       ]
     },
     '83': {
-      name: "Curso Superior de Tecnologia em Constru��o de Edif�cios",
+      name: "Curso Superior de Tecnologia em Construção de Edifícios",
       modality: [
         {
           name: '',
@@ -566,7 +566,7 @@ const catalogueOptions = {
       ]
     },
     '88': {
-      name: "Engenharia de Telecomunica��es",
+      name: "Engenharia de Telecomunicações",
       modality: [
         {
           name: '',
@@ -584,7 +584,7 @@ const catalogueOptions = {
       ]
     },
     '94': {
-      name: "Sistemas de Informa��o",
+      name: "Sistemas de Informação",
       modality: [
         {
           name: '',
@@ -611,7 +611,7 @@ const catalogueOptions = {
       ]
     },
     '102': {
-      name: "Engenharia de Produ��o",
+      name: "Engenharia de Produção",
       modality: [
         {
           name: '',
@@ -620,7 +620,7 @@ const catalogueOptions = {
       ]
     },
     '103': {
-      name: "Gest�o do Agroneg�cio",
+      name: "Gestão do Agronegócio",
       modality: [
         {
           name: '',
@@ -629,7 +629,7 @@ const catalogueOptions = {
       ]
     },
     '104': {
-      name: "Gest�o de Com�rcio Internacional",
+      name: "Gestão de Comércio Internacional",
       modality: [
         {
           name: '',
@@ -638,7 +638,7 @@ const catalogueOptions = {
       ]
     },
     '105': {
-      name: "Gest�o de Empresas",
+      name: "Gestão de Empresas",
       modality: [
         {
           name: '',
@@ -647,7 +647,7 @@ const catalogueOptions = {
       ]
     },
     '106': {
-      name: "Gest�o de Pol�ticas P�blicas",
+      name: "Gestão de Políticas Públicas",
       modality: [
         {
           name: '',
@@ -656,7 +656,7 @@ const catalogueOptions = {
       ]
     },
     '107': {
-      name: "Nutri��o",
+      name: "Nutrição",
       modality: [
         {
           name: '',
@@ -668,17 +668,17 @@ const catalogueOptions = {
       name: "Engenharia Física",
       modality: [
         {
-          name: 'AA - Ênfase em Optoeletr�nica',
+          name: 'AA - Ênfase em Optoeletrônica',
           file: '2013/curso108_mod1.js'
         },
         {
-          name: 'AB - Ênfase em Produ��o Tecnológica',
+          name: 'AB - Ênfase em Produção Tecnológica',
           file: '2013/curso108_mod2.js'
         },
       ]
     },
     '200': {
-      name: "Programa de Forma��o Interdisciplinar Superior - ProFIS",
+      name: "Programa de Formação Interdisciplinar Superior - ProFIS",
       modality: [
         {
           name: '',
@@ -805,7 +805,7 @@ const catalogueOptions = {
       name: "Engenharia Civil",
       modality: [
         {
-          name: 'EA - Ênfase em Recursos Hídricos, Energ�ticos e Ambientais',
+          name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
           file: '2014/curso12_mod1.js'
         },
         {
@@ -813,7 +813,7 @@ const catalogueOptions = {
           file: '2014/curso12_mod2.js'
         },
         {
-          name: 'EP - Ênfase em Gest�o do Projeto e da Constru��o',
+          name: 'EP - Ênfase em Gestão do Projeto e da Construção',
           file: '2014/curso12_mod3.js'
         },
         {
@@ -879,7 +879,7 @@ const catalogueOptions = {
       ]
     },
     '17': {
-      name: "Ciências Econ�micas",
+      name: "Ciências Econômicas",
       modality: [
         {
           name: '',
@@ -910,14 +910,14 @@ const catalogueOptions = {
       ]
     },
     '23': {
-      name: "Dan�a",
+      name: "Dança",
       modality: [
         {
-          name: 'AA - Bacharelado em Dan�a',
+          name: 'AA - Bacharelado em Dança',
           file: '2014/curso23_mod1.js'
         },
         {
-          name: 'AB - Licenciatura em Artes - Dan�a',
+          name: 'AB - Licenciatura em Artes - Dança',
           file: '2014/curso23_mod2.js'
         },
       ]
@@ -936,7 +936,7 @@ const catalogueOptions = {
       ]
     },
     '26': {
-      name: "Artes C�nicas",
+      name: "Artes Cênicas",
       modality: [
         {
           name: '',
@@ -945,14 +945,14 @@ const catalogueOptions = {
       ]
     },
     '27': {
-      name: "Educa��o Física",
+      name: "Educação Física",
       modality: [
         {
-          name: 'AB - Licenciatura em Educa��o Física',
+          name: 'AB - Licenciatura em Educação Física',
           file: '2014/curso27_mod1.js'
         },
         {
-          name: 'AF - Bacharelado em Educa��o Física',
+          name: 'AF - Bacharelado em Educação Física',
           file: '2014/curso27_mod2.js'
         },
       ]
@@ -993,7 +993,7 @@ const catalogueOptions = {
       ]
     },
     '36': {
-      name: "Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas",
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
       modality: [
         {
           name: '',
@@ -1081,14 +1081,14 @@ const catalogueOptions = {
       ]
     },
     '45': {
-      name: "Educa��o Física",
+      name: "Educação Física",
       modality: [
         {
-          name: 'AB - Licenciatura em Educa��o Física',
+          name: 'AB - Licenciatura em Educação Física',
           file: '2014/curso45_mod1.js'
         },
         {
-          name: 'AF - Bacharelado em Educa��o Física',
+          name: 'AF - Bacharelado em Educação Física',
           file: '2014/curso45_mod2.js'
         },
       ]
@@ -1103,7 +1103,7 @@ const catalogueOptions = {
       ]
     },
     '47': {
-      name: "Ciências Econ�micas",
+      name: "Ciências Econômicas",
       modality: [
         {
           name: '',
@@ -1121,7 +1121,7 @@ const catalogueOptions = {
       ]
     },
     '49': {
-      name: "Engenharia de Controle e Automa��o",
+      name: "Engenharia de Controle e Automação",
       modality: [
         {
           name: '',
@@ -1194,7 +1194,7 @@ const catalogueOptions = {
           file: '2014/curso56_mod2.js'
         },
         {
-          name: 'AX - Para Matr�cula Antes da Op��o',
+          name: 'AX - Para Matrícula Antes da Opção',
           file: '2014/curso56_mod3.js'
         },
       ]
@@ -1209,7 +1209,7 @@ const catalogueOptions = {
       ]
     },
     '63': {
-      name: "Farm�cia",
+      name: "Farmácia",
       modality: [
         {
           name: '',
@@ -1236,7 +1236,7 @@ const catalogueOptions = {
       ]
     },
     '83': {
-      name: "Curso Superior de Tecnologia em Constru��o de Edif�cios",
+      name: "Curso Superior de Tecnologia em Construção de Edifícios",
       modality: [
         {
           name: '',
@@ -1254,7 +1254,7 @@ const catalogueOptions = {
       ]
     },
     '88': {
-      name: "Engenharia de Telecomunica��es",
+      name: "Engenharia de Telecomunicações",
       modality: [
         {
           name: '',
@@ -1272,7 +1272,7 @@ const catalogueOptions = {
       ]
     },
     '94': {
-      name: "Sistemas de Informa��o",
+      name: "Sistemas de Informação",
       modality: [
         {
           name: '',
@@ -1299,7 +1299,7 @@ const catalogueOptions = {
       ]
     },
     '102': {
-      name: "Engenharia de Produ��o",
+      name: "Engenharia de Produção",
       modality: [
         {
           name: '',
@@ -1308,7 +1308,7 @@ const catalogueOptions = {
       ]
     },
     '107': {
-      name: "Nutri��o",
+      name: "Nutrição",
       modality: [
         {
           name: '',
@@ -1320,17 +1320,17 @@ const catalogueOptions = {
       name: "Engenharia Física",
       modality: [
         {
-          name: 'AA - Ênfase em Optoeletr�nica',
+          name: 'AA - Ênfase em Optoeletrônica',
           file: '2014/curso108_mod1.js'
         },
         {
-          name: 'AB - Ênfase em Produ��o Tecnológica',
+          name: 'AB - Ênfase em Produção Tecnológica',
           file: '2014/curso108_mod2.js'
         },
       ]
     },
     '109': {
-      name: "Administra��o",
+      name: "Administração",
       modality: [
         {
           name: '',
@@ -1339,7 +1339,7 @@ const catalogueOptions = {
       ]
     },
     '110': {
-      name: "Administra��o P�blica",
+      name: "Administração Pública",
       modality: [
         {
           name: '',
@@ -1348,7 +1348,7 @@ const catalogueOptions = {
       ]
     },
     '200': {
-      name: "Programa de Forma��o Interdisciplinar Superior - ProFIS",
+      name: "Programa de Formação Interdisciplinar Superior - ProFIS",
       modality: [
         {
           name: '',
@@ -1443,7 +1443,7 @@ const catalogueOptions = {
           file: '2015/curso7_mod1.js'
         },
         {
-          name: 'AF - Licenciatura em Letras - Portugu�s como Segunda L�ngua / L�ngua Estrangeira',
+          name: 'AF - Licenciatura em Letras - Português como Segunda Língua / Língua Estrangeira',
           file: '2015/curso7_mod2.js'
         },
       ]
@@ -1476,7 +1476,7 @@ const catalogueOptions = {
       ]
     },
     '11': {
-      name: "Engenharia El�trica",
+      name: "Engenharia Elétrica",
       modality: [
         {
           name: '',
@@ -1488,7 +1488,7 @@ const catalogueOptions = {
       name: "Engenharia Civil",
       modality: [
         {
-          name: 'EA - Ênfase em Recursos Hídricos, Energ�ticos e Ambientais',
+          name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
           file: '2015/curso12_mod1.js'
         },
         {
@@ -1496,7 +1496,7 @@ const catalogueOptions = {
           file: '2015/curso12_mod2.js'
         },
         {
-          name: 'EP - Ênfase em Gest�o do Projeto e da Constru��o',
+          name: 'EP - Ênfase em Gestão do Projeto e da Construção',
           file: '2015/curso12_mod3.js'
         },
         {
@@ -1544,7 +1544,7 @@ const catalogueOptions = {
           file: '2015/curso16_mod1.js'
         },
         {
-          name: 'AB - Bacharelado em Ciências Sociais - Pol�tica',
+          name: 'AB - Bacharelado em Ciências Sociais - Política',
           file: '2015/curso16_mod2.js'
         },
         {
@@ -1562,7 +1562,7 @@ const catalogueOptions = {
       ]
     },
     '17': {
-      name: "Ciências Econ�micas",
+      name: "Ciências Econômicas",
       modality: [
         {
           name: '',
@@ -1571,7 +1571,7 @@ const catalogueOptions = {
       ]
     },
     '18': {
-      name: "Lingu�stica",
+      name: "Linguística",
       modality: [
         {
           name: '',
@@ -1580,14 +1580,14 @@ const catalogueOptions = {
       ]
     },
     '19': {
-      name: "Hist�ria",
+      name: "História",
       modality: [
         {
-          name: 'AA - Bacharelado em Hist�ria',
+          name: 'AA - Bacharelado em História',
           file: '2015/curso19_mod1.js'
         },
         {
-          name: 'AB - Licenciatura em Hist�ria',
+          name: 'AB - Licenciatura em História',
           file: '2015/curso19_mod2.js'
         },
       ]
@@ -1615,7 +1615,7 @@ const catalogueOptions = {
       ]
     },
     '22': {
-      name: "M�sica",
+      name: "Música",
       modality: [
         {
           name: 'CB - Contrabaixo',
@@ -1626,11 +1626,11 @@ const catalogueOptions = {
           file: '2015/curso22_mod2.js'
         },
         {
-          name: 'CO - Composi��o',
+          name: 'CO - Composição',
           file: '2015/curso22_mod3.js'
         },
         {
-          name: 'CP - Cordas - M�sica Popular',
+          name: 'CP - Cordas - Música Popular',
           file: '2015/curso22_mod4.js'
         },
         {
@@ -1642,15 +1642,15 @@ const catalogueOptions = {
           file: '2015/curso22_mod6.js'
         },
         {
-          name: 'LI - Licenciatura em Artes - M�sica',
+          name: 'LI - Licenciatura em Artes - Música',
           file: '2015/curso22_mod7.js'
         },
         {
-          name: 'OB - Obo�',
+          name: 'OB - Oboé',
           file: '2015/curso22_mod8.js'
         },
         {
-          name: 'PC - Percuss�o',
+          name: 'PC - Percussão',
           file: '2015/curso22_mod9.js'
         },
         {
@@ -1658,15 +1658,15 @@ const catalogueOptions = {
           file: '2015/curso22_mod10.js'
         },
         {
-          name: 'PP - Percuss�o - M�sica Popular',
+          name: 'PP - Percussão - Música Popular',
           file: '2015/curso22_mod11.js'
         },
         {
-          name: 'RG - Reg�ncia',
+          name: 'RG - Regência',
           file: '2015/curso22_mod12.js'
         },
         {
-          name: 'SP - Sopros - M�sica Popular',
+          name: 'SP - Sopros - Música Popular',
           file: '2015/curso22_mod13.js'
         },
         {
@@ -1674,7 +1674,7 @@ const catalogueOptions = {
           file: '2015/curso22_mod14.js'
         },
         {
-          name: 'TC - Teclados - M�sica Popular',
+          name: 'TC - Teclados - Música Popular',
           file: '2015/curso22_mod15.js'
         },
         {
@@ -1694,11 +1694,11 @@ const catalogueOptions = {
           file: '2015/curso22_mod19.js'
         },
         {
-          name: 'VO - Viol�o',
+          name: 'VO - Violão',
           file: '2015/curso22_mod20.js'
         },
         {
-          name: 'VP - Voz - M�sica Popular',
+          name: 'VP - Voz - Música Popular',
           file: '2015/curso22_mod21.js'
         },
         {
@@ -1708,14 +1708,14 @@ const catalogueOptions = {
       ]
     },
     '23': {
-      name: "Dan�a",
+      name: "Dança",
       modality: [
         {
-          name: 'AA - Bacharelado em Dan�a',
+          name: 'AA - Bacharelado em Dança',
           file: '2015/curso23_mod1.js'
         },
         {
-          name: 'AB - Licenciatura em Artes - Dan�a',
+          name: 'AB - Licenciatura em Artes - Dança',
           file: '2015/curso23_mod2.js'
         },
       ]
@@ -1734,7 +1734,7 @@ const catalogueOptions = {
       ]
     },
     '26': {
-      name: "Artes C�nicas",
+      name: "Artes Cênicas",
       modality: [
         {
           name: '',
@@ -1743,14 +1743,14 @@ const catalogueOptions = {
       ]
     },
     '27': {
-      name: "Educa��o Física",
+      name: "Educação Física",
       modality: [
         {
-          name: 'AB - Licenciatura em Educa��o Física',
+          name: 'AB - Licenciatura em Educação Física',
           file: '2015/curso27_mod1.js'
         },
         {
-          name: 'AF - Bacharelado em Educa��o Física',
+          name: 'AF - Bacharelado em Educação Física',
           file: '2015/curso27_mod2.js'
         },
       ]
@@ -1804,7 +1804,7 @@ const catalogueOptions = {
       ]
     },
     '36': {
-      name: "Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas",
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
       modality: [
         {
           name: '',
@@ -1840,7 +1840,7 @@ const catalogueOptions = {
       ]
     },
     '41': {
-      name: "Engenharia El�trica",
+      name: "Engenharia Elétrica",
       modality: [
         {
           name: '',
@@ -1874,7 +1874,7 @@ const catalogueOptions = {
           file: '2015/curso44_mod1.js'
         },
         {
-          name: 'AB - Bacharelado em Ciências Sociais - Pol�tica',
+          name: 'AB - Bacharelado em Ciências Sociais - Política',
           file: '2015/curso44_mod2.js'
         },
         {
@@ -1892,14 +1892,14 @@ const catalogueOptions = {
       ]
     },
     '45': {
-      name: "Educa��o Física",
+      name: "Educação Física",
       modality: [
         {
-          name: 'AB - Licenciatura em Educa��o Física',
+          name: 'AB - Licenciatura em Educação Física',
           file: '2015/curso45_mod1.js'
         },
         {
-          name: 'AF - Bacharelado em Educa��o Física',
+          name: 'AF - Bacharelado em Educação Física',
           file: '2015/curso45_mod2.js'
         },
       ]
@@ -1914,7 +1914,7 @@ const catalogueOptions = {
       ]
     },
     '47': {
-      name: "Ciências Econ�micas",
+      name: "Ciências Econômicas",
       modality: [
         {
           name: '',
@@ -1932,7 +1932,7 @@ const catalogueOptions = {
       ]
     },
     '49': {
-      name: "Engenharia de Controle e Automa��o",
+      name: "Engenharia de Controle e Automação",
       modality: [
         {
           name: '',
@@ -2005,20 +2005,20 @@ const catalogueOptions = {
           file: '2015/curso56_mod2.js'
         },
         {
-          name: 'AX - Para Matr�cula Antes da Op��o',
+          name: 'AX - Para Matrícula Antes da Opção',
           file: '2015/curso56_mod3.js'
         },
       ]
     },
     '57': {
-      name: "Licenciatura em Letras - Portugu�s",
+      name: "Licenciatura em Letras - Português",
       modality: [
         {
-          name: 'AA - Licenciatura em Letras - Portugu�s',
+          name: 'AA - Licenciatura em Letras - Português',
           file: '2015/curso57_mod1.js'
         },
         {
-          name: 'AB - Licenciatura em Letras - Portugu�s como Segunda L�ngua / L�ngua Estrangeira',
+          name: 'AB - Licenciatura em Letras - Português como Segunda Língua / Língua Estrangeira',
           file: '2015/curso57_mod2.js'
         },
       ]
@@ -2033,7 +2033,7 @@ const catalogueOptions = {
       ]
     },
     '63': {
-      name: "Farm�cia",
+      name: "Farmácia",
       modality: [
         {
           name: '',
@@ -2042,7 +2042,7 @@ const catalogueOptions = {
       ]
     },
     '64': {
-      name: "Comunica��o Social - Midialogia",
+      name: "Comunicação Social - Midialogia",
       modality: [
         {
           name: '',
@@ -2060,7 +2060,7 @@ const catalogueOptions = {
       ]
     },
     '75': {
-      name: "Estudos Liter�rios",
+      name: "Estudos Literários",
       modality: [
         {
           name: '',
@@ -2069,7 +2069,7 @@ const catalogueOptions = {
       ]
     },
     '83': {
-      name: "Curso Superior de Tecnologia em Constru��o de Edif�cios",
+      name: "Curso Superior de Tecnologia em Construção de Edifícios",
       modality: [
         {
           name: '',
@@ -2087,7 +2087,7 @@ const catalogueOptions = {
       ]
     },
     '88': {
-      name: "Engenharia de Telecomunica��es",
+      name: "Engenharia de Telecomunicações",
       modality: [
         {
           name: '',
@@ -2105,7 +2105,7 @@ const catalogueOptions = {
       ]
     },
     '94': {
-      name: "Sistemas de Informa��o",
+      name: "Sistemas de Informação",
       modality: [
         {
           name: '',
@@ -2132,7 +2132,7 @@ const catalogueOptions = {
       ]
     },
     '102': {
-      name: "Engenharia de Produ��o",
+      name: "Engenharia de Produção",
       modality: [
         {
           name: '',
@@ -2141,7 +2141,7 @@ const catalogueOptions = {
       ]
     },
     '107': {
-      name: "Nutri��o",
+      name: "Nutrição",
       modality: [
         {
           name: '',
@@ -2153,17 +2153,17 @@ const catalogueOptions = {
       name: "Engenharia Física",
       modality: [
         {
-          name: 'AA - Ênfase em Optoeletr�nica',
+          name: 'AA - Ênfase em Optoeletrônica',
           file: '2015/curso108_mod1.js'
         },
         {
-          name: 'AB - Ênfase em Produ��o Tecnológica',
+          name: 'AB - Ênfase em Produção Tecnológica',
           file: '2015/curso108_mod2.js'
         },
       ]
     },
     '109': {
-      name: "Administra��o",
+      name: "Administração",
       modality: [
         {
           name: '',
@@ -2172,7 +2172,7 @@ const catalogueOptions = {
       ]
     },
     '110': {
-      name: "Administra��o P�blica",
+      name: "Administração Pública",
       modality: [
         {
           name: '',
@@ -2181,7 +2181,7 @@ const catalogueOptions = {
       ]
     },
     '200': {
-      name: "Programa de Forma��o Interdisciplinar Superior - ProFIS",
+      name: "Programa de Formação Interdisciplinar Superior - ProFIS",
       modality: [
         {
           name: '',
@@ -2269,14 +2269,14 @@ const catalogueOptions = {
       ]
     },
     '7': {
-      name: "Licenciatura em Letras - Portugu�s",
+      name: "Licenciatura em Letras - Português",
       modality: [
         {
-          name: 'AE - Licenciatura em Letras - Portugu�s',
+          name: 'AE - Licenciatura em Letras - Português',
           file: '2016/curso7_mod1.js'
         },
         {
-          name: 'AF - Licenciatura em Letras - Portugu�s como Segunda L�ngua / L�ngua Estrangeira',
+          name: 'AF - Licenciatura em Letras - Português como Segunda Língua / Língua Estrangeira',
           file: '2016/curso7_mod2.js'
         },
       ]
@@ -2321,7 +2321,7 @@ const catalogueOptions = {
       name: "Engenharia Civil",
       modality: [
         {
-          name: 'EA - Ênfase em Recursos Hídricos, Energ�ticos e Ambientais',
+          name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
           file: '2016/curso12_mod1.js'
         },
         {
@@ -2329,7 +2329,7 @@ const catalogueOptions = {
           file: '2016/curso12_mod2.js'
         },
         {
-          name: 'EP - Ênfase em Gest�o do Projeto e da Constru��o',
+          name: 'EP - Ênfase em Gestão do Projeto e da Construção',
           file: '2016/curso12_mod3.js'
         },
         {
@@ -2377,7 +2377,7 @@ const catalogueOptions = {
           file: '2016/curso16_mod1.js'
         },
         {
-          name: 'AB - Bacharelado em Ciências Sociais - Pol�tica',
+          name: 'AB - Bacharelado em Ciências Sociais - Política',
           file: '2016/curso16_mod2.js'
         },
         {
@@ -2395,7 +2395,7 @@ const catalogueOptions = {
       ]
     },
     '17': {
-      name: "Ciências Econ�micas",
+      name: "Ciências Econômicas",
       modality: [
         {
           name: '',
@@ -2404,7 +2404,7 @@ const catalogueOptions = {
       ]
     },
     '18': {
-      name: "Lingu�stica",
+      name: "Linguística",
       modality: [
         {
           name: '',
@@ -2413,14 +2413,14 @@ const catalogueOptions = {
       ]
     },
     '19': {
-      name: "Hist�ria",
+      name: "História",
       modality: [
         {
-          name: 'AA - Bacharelado em Hist�ria',
+          name: 'AA - Bacharelado em História',
           file: '2016/curso19_mod1.js'
         },
         {
-          name: 'AB - Licenciatura em Hist�ria',
+          name: 'AB - Licenciatura em História',
           file: '2016/curso19_mod2.js'
         },
       ]
@@ -2448,7 +2448,7 @@ const catalogueOptions = {
       ]
     },
     '22': {
-      name: "M�sica",
+      name: "Música",
       modality: [
         {
           name: 'CB - Contrabaixo',
@@ -2459,11 +2459,11 @@ const catalogueOptions = {
           file: '2016/curso22_mod2.js'
         },
         {
-          name: 'CO - Composi��o',
+          name: 'CO - Composição',
           file: '2016/curso22_mod3.js'
         },
         {
-          name: 'CP - Cordas - M�sica Popular',
+          name: 'CP - Cordas - Música Popular',
           file: '2016/curso22_mod4.js'
         },
         {
@@ -2475,15 +2475,15 @@ const catalogueOptions = {
           file: '2016/curso22_mod6.js'
         },
         {
-          name: 'LI - Licenciatura em Artes - M�sica',
+          name: 'LI - Licenciatura em Artes - Música',
           file: '2016/curso22_mod7.js'
         },
         {
-          name: 'OB - Obo�',
+          name: 'OB - Oboé',
           file: '2016/curso22_mod8.js'
         },
         {
-          name: 'PC - Percuss�o',
+          name: 'PC - Percussão',
           file: '2016/curso22_mod9.js'
         },
         {
@@ -2491,15 +2491,15 @@ const catalogueOptions = {
           file: '2016/curso22_mod10.js'
         },
         {
-          name: 'PP - Percuss�o - M�sica Popular',
+          name: 'PP - Percussão - Música Popular',
           file: '2016/curso22_mod11.js'
         },
         {
-          name: 'RG - Reg�ncia',
+          name: 'RG - Regência',
           file: '2016/curso22_mod12.js'
         },
         {
-          name: 'SP - Sopros - M�sica Popular',
+          name: 'SP - Sopros - Música Popular',
           file: '2016/curso22_mod13.js'
         },
         {
@@ -2507,7 +2507,7 @@ const catalogueOptions = {
           file: '2016/curso22_mod14.js'
         },
         {
-          name: 'TC - Teclados - M�sica Popular',
+          name: 'TC - Teclados - Música Popular',
           file: '2016/curso22_mod15.js'
         },
         {
@@ -2527,11 +2527,11 @@ const catalogueOptions = {
           file: '2016/curso22_mod19.js'
         },
         {
-          name: 'VO - Viol�o',
+          name: 'VO - Violão',
           file: '2016/curso22_mod20.js'
         },
         {
-          name: 'VP - Voz - M�sica Popular',
+          name: 'VP - Voz - Música Popular',
           file: '2016/curso22_mod21.js'
         },
         {
@@ -2541,14 +2541,14 @@ const catalogueOptions = {
       ]
     },
     '23': {
-      name: "Dan�a",
+      name: "Dança",
       modality: [
         {
-          name: 'AA - Bacharelado em Dan�a',
+          name: 'AA - Bacharelado em Dança',
           file: '2016/curso23_mod1.js'
         },
         {
-          name: 'AB - Licenciatura em Artes - Dan�a',
+          name: 'AB - Licenciatura em Artes - Dança',
           file: '2016/curso23_mod2.js'
         },
       ]
@@ -2567,7 +2567,7 @@ const catalogueOptions = {
       ]
     },
     '26': {
-      name: "Artes C�nicas",
+      name: "Artes Cênicas",
       modality: [
         {
           name: '',
@@ -2576,14 +2576,14 @@ const catalogueOptions = {
       ]
     },
     '27': {
-      name: "Educa��o Física",
+      name: "Educação Física",
       modality: [
         {
-          name: 'AB - Licenciatura em Educa��o Física',
+          name: 'AB - Licenciatura em Educação Física',
           file: '2016/curso27_mod1.js'
         },
         {
-          name: 'AF - Bacharelado em Educa��o Física',
+          name: 'AF - Bacharelado em Educação Física',
           file: '2016/curso27_mod2.js'
         },
       ]
@@ -2620,10 +2620,10 @@ const catalogueOptions = {
       ]
     },
     '34': {
-      name: "Engenharia de Computa��o",
+      name: "Engenharia de Computação",
       modality: [
         {
-          name: 'AA - Sistemas de Computa��o',
+          name: 'AA - Sistemas de Computação',
           file: '2016/curso34_mod1.js'
         },
         {
@@ -2631,13 +2631,13 @@ const catalogueOptions = {
           file: '2016/curso34_mod2.js'
         },
         {
-          name: 'AX - Para Matr�cula Antes da Op��o',
+          name: 'AX - Para Matrícula Antes da Opção',
           file: '2016/curso34_mod3.js'
         },
       ]
     },
     '36': {
-      name: "Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas",
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
       modality: [
         {
           name: '',
@@ -2682,7 +2682,7 @@ const catalogueOptions = {
       ]
     },
     '42': {
-      name: "Ci�ncia da Computa��o",
+      name: "Ciência da Computação",
       modality: [
         {
           name: '',
@@ -2707,7 +2707,7 @@ const catalogueOptions = {
           file: '2016/curso44_mod1.js'
         },
         {
-          name: 'AB - Bacharelado em Ciências Sociais - Pol�tica',
+          name: 'AB - Bacharelado em Ciências Sociais - Política',
           file: '2016/curso44_mod2.js'
         },
         {
@@ -2725,14 +2725,14 @@ const catalogueOptions = {
       ]
     },
     '45': {
-      name: "Educa��o Física",
+      name: "Educação Física",
       modality: [
         {
-          name: 'AB - Licenciatura em Educa��o Física',
+          name: 'AB - Licenciatura em Educação Física',
           file: '2016/curso45_mod1.js'
         },
         {
-          name: 'AF - Bacharelado em Educa��o Física',
+          name: 'AF - Bacharelado em Educação Física',
           file: '2016/curso45_mod2.js'
         },
       ]
@@ -2747,7 +2747,7 @@ const catalogueOptions = {
       ]
     },
     '47': {
-      name: "Ciências Econ�micas",
+      name: "Ciências Econômicas",
       modality: [
         {
           name: '',
@@ -2765,7 +2765,7 @@ const catalogueOptions = {
       ]
     },
     '49': {
-      name: "Engenharia de Controle e Automa��o",
+      name: "Engenharia de Controle e Automação",
       modality: [
         {
           name: '',
@@ -2838,20 +2838,20 @@ const catalogueOptions = {
           file: '2016/curso56_mod2.js'
         },
         {
-          name: 'AX - Para Matr�cula Antes da Op��o',
+          name: 'AX - Para Matrícula Antes da Opção',
           file: '2016/curso56_mod3.js'
         },
       ]
     },
     '57': {
-      name: "Licenciatura em Letras - Portugu�s",
+      name: "Licenciatura em Letras - Português",
       modality: [
         {
-          name: 'AA - Licenciatura em Letras - Portugu�s',
+          name: 'AA - Licenciatura em Letras - Português',
           file: '2016/curso57_mod1.js'
         },
         {
-          name: 'AB - Licenciatura em Letras - Portugu�s como Segunda L�ngua / L�ngua Estrangeira',
+          name: 'AB - Licenciatura em Letras - Português como Segunda Língua / Língua Estrangeira',
           file: '2016/curso57_mod2.js'
         },
       ]
@@ -2866,7 +2866,7 @@ const catalogueOptions = {
       ]
     },
     '63': {
-      name: "Farm�cia",
+      name: "Farmácia",
       modality: [
         {
           name: '',
@@ -2875,7 +2875,7 @@ const catalogueOptions = {
       ]
     },
     '64': {
-      name: "Comunica��o Social - Midialogia",
+      name: "Comunicação Social - Midialogia",
       modality: [
         {
           name: '',
@@ -2893,7 +2893,7 @@ const catalogueOptions = {
       ]
     },
     '75': {
-      name: "Estudos Liter�rios",
+      name: "Estudos Literários",
       modality: [
         {
           name: '',
@@ -2902,7 +2902,7 @@ const catalogueOptions = {
       ]
     },
     '83': {
-      name: "Curso Superior de Tecnologia em Constru��o de Edif�cios",
+      name: "Curso Superior de Tecnologia em Construção de Edifícios",
       modality: [
         {
           name: '',
@@ -2920,7 +2920,7 @@ const catalogueOptions = {
       ]
     },
     '88': {
-      name: "Engenharia de Telecomunica��es",
+      name: "Engenharia de Telecomunicações",
       modality: [
         {
           name: '',
@@ -2938,7 +2938,7 @@ const catalogueOptions = {
       ]
     },
     '94': {
-      name: "Sistemas de Informa��o",
+      name: "Sistemas de Informação",
       modality: [
         {
           name: '',
@@ -2965,7 +2965,7 @@ const catalogueOptions = {
       ]
     },
     '102': {
-      name: "Engenharia de Produ��o",
+      name: "Engenharia de Produção",
       modality: [
         {
           name: '',
@@ -2974,7 +2974,7 @@ const catalogueOptions = {
       ]
     },
     '107': {
-      name: "Nutri��o",
+      name: "Nutrição",
       modality: [
         {
           name: '',
@@ -2986,17 +2986,17 @@ const catalogueOptions = {
       name: "Engenharia Física",
       modality: [
         {
-          name: 'AA - Ênfase em Optoeletr�nica',
+          name: 'AA - Ênfase em Optoeletrônica',
           file: '2016/curso108_mod1.js'
         },
         {
-          name: 'AB - Ênfase em Produ��o Tecnológica',
+          name: 'AB - Ênfase em Produção Tecnológica',
           file: '2016/curso108_mod2.js'
         },
       ]
     },
     '109': {
-      name: "Administra��o",
+      name: "Administração",
       modality: [
         {
           name: '',
@@ -3005,7 +3005,7 @@ const catalogueOptions = {
       ]
     },
     '110': {
-      name: "Administra��o P�blica",
+      name: "Administração Pública",
       modality: [
         {
           name: '',
@@ -3014,7 +3014,7 @@ const catalogueOptions = {
       ]
     },
     '200': {
-      name: "Programa de Forma��o Interdisciplinar Superior - ProFIS",
+      name: "Programa de Formação Interdisciplinar Superior - ProFIS",
       modality: [
         {
           name: '',
@@ -3138,7 +3138,7 @@ const catalogueOptions = {
       ]
     },
     '11': {
-      name: "Engenharia El�trica",
+      name: "Engenharia Elétrica",
       modality: [
         {
           name: '',
@@ -3224,7 +3224,7 @@ const catalogueOptions = {
       ]
     },
     '17': {
-      name: "Ciências Econ�micas",
+      name: "Ciências Econômicas",
       modality: [
         {
           name: '',
@@ -3242,14 +3242,14 @@ const catalogueOptions = {
       ]
     },
     '19': {
-      name: "Hist�ria",
+      name: "História",
       modality: [
         {
-          name: 'AA - Bacharelado em Hist�ria',
+          name: 'AA - Bacharelado em História',
           file: '2017/curso19_mod1.js'
         },
         {
-          name: 'AB - Licenciatura em Hist�ria',
+          name: 'AB - Licenciatura em História',
           file: '2017/curso19_mod2.js'
         },
       ]
@@ -3277,7 +3277,7 @@ const catalogueOptions = {
       ]
     },
     '22': {
-      name: "M�sica",
+      name: "Música",
       modality: [
         {
           name: 'CB - Contrabaixo',
@@ -3288,11 +3288,11 @@ const catalogueOptions = {
           file: '2017/curso22_mod2.js'
         },
         {
-          name: 'CO - Composi��o',
+          name: 'CO - Composição',
           file: '2017/curso22_mod3.js'
         },
         {
-          name: 'CP - Cordas - M�sica Popular',
+          name: 'CP - Cordas - Música Popular',
           file: '2017/curso22_mod4.js'
         },
         {
@@ -3304,15 +3304,15 @@ const catalogueOptions = {
           file: '2017/curso22_mod6.js'
         },
         {
-          name: 'LI - Licenciatura em Artes - M�sica',
+          name: 'LI - Licenciatura em Artes - Música',
           file: '2017/curso22_mod7.js'
         },
         {
-          name: 'OB - Obo�',
+          name: 'OB - Oboé',
           file: '2017/curso22_mod8.js'
         },
         {
-          name: 'PC - Percuss�o',
+          name: 'PC - Percussão',
           file: '2017/curso22_mod9.js'
         },
         {
@@ -3320,15 +3320,15 @@ const catalogueOptions = {
           file: '2017/curso22_mod10.js'
         },
         {
-          name: 'PP - Percuss�o - M�sica Popular',
+          name: 'PP - Percussão - Música Popular',
           file: '2017/curso22_mod11.js'
         },
         {
-          name: 'RG - Reg�ncia',
+          name: 'RG - Regência',
           file: '2017/curso22_mod12.js'
         },
         {
-          name: 'SP - Sopros - M�sica Popular',
+          name: 'SP - Sopros - Música Popular',
           file: '2017/curso22_mod13.js'
         },
         {
@@ -3336,7 +3336,7 @@ const catalogueOptions = {
           file: '2017/curso22_mod14.js'
         },
         {
-          name: 'TC - Teclados - M�sica Popular',
+          name: 'TC - Teclados - Música Popular',
           file: '2017/curso22_mod15.js'
         },
         {
@@ -3356,11 +3356,11 @@ const catalogueOptions = {
           file: '2017/curso22_mod19.js'
         },
         {
-          name: 'VO - Viol�o',
+          name: 'VO - Violão',
           file: '2017/curso22_mod20.js'
         },
         {
-          name: 'VP - Voz - M�sica Popular',
+          name: 'VP - Voz - Música Popular',
           file: '2017/curso22_mod21.js'
         },
         {
@@ -3370,14 +3370,14 @@ const catalogueOptions = {
       ]
     },
     '23': {
-      name: "Dan�a",
+      name: "Dança",
       modality: [
         {
-          name: 'AA - Bacharelado em Dan�a',
+          name: 'AA - Bacharelado em Dança',
           file: '2017/curso23_mod1.js'
         },
         {
-          name: 'AB - Licenciatura em Artes - Dan�a',
+          name: 'AB - Licenciatura em Artes - Dança',
           file: '2017/curso23_mod2.js'
         },
       ]
@@ -3396,7 +3396,7 @@ const catalogueOptions = {
       ]
     },
     '26': {
-      name: "Artes C�nicas",
+      name: "Artes Cênicas",
       modality: [
         {
           name: '',
@@ -3405,14 +3405,14 @@ const catalogueOptions = {
       ]
     },
     '27': {
-      name: "Educa��o Física",
+      name: "Educação Física",
       modality: [
         {
-          name: 'AB - Licenciatura em Educa��o Física',
+          name: 'AB - Licenciatura em Educação Física',
           file: '2017/curso27_mod1.js'
         },
         {
-          name: 'AF - Bacharelado em Educa��o Física',
+          name: 'AF - Bacharelado em Educação Física',
           file: '2017/curso27_mod2.js'
         },
       ]
@@ -3466,7 +3466,7 @@ const catalogueOptions = {
       ]
     },
     '36': {
-      name: "Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas",
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
       modality: [
         {
           name: '',
@@ -3502,7 +3502,7 @@ const catalogueOptions = {
       ]
     },
     '41': {
-      name: "Engenharia El�trica",
+      name: "Engenharia Elétrica",
       modality: [
         {
           name: '',
@@ -3536,7 +3536,7 @@ const catalogueOptions = {
           file: '2017/curso44_mod1.js'
         },
         {
-          name: 'AB - Bacharelado em Ciências Sociais - Pol�tica',
+          name: 'AB - Bacharelado em Ciências Sociais - Política',
           file: '2017/curso44_mod2.js'
         },
         {
@@ -3576,7 +3576,7 @@ const catalogueOptions = {
       ]
     },
     '47': {
-      name: "Ciências Econ�micas",
+      name: "Ciências Econômicas",
       modality: [
         {
           name: '',
@@ -3594,7 +3594,7 @@ const catalogueOptions = {
       ]
     },
     '49': {
-      name: "Engenharia de Controle e Automa��o",
+      name: "Engenharia de Controle e Automação",
       modality: [
         {
           name: '',
@@ -3695,7 +3695,7 @@ const catalogueOptions = {
       ]
     },
     '63': {
-      name: "Farm�cia",
+      name: "Farmácia",
       modality: [
         {
           name: '',
@@ -3704,7 +3704,7 @@ const catalogueOptions = {
       ]
     },
     '64': {
-      name: "Comunica��o Social - Midialogia",
+      name: "Comunicação Social - Midialogia",
       modality: [
         {
           name: '',
@@ -3722,7 +3722,7 @@ const catalogueOptions = {
       ]
     },
     '75': {
-      name: "Estudos Liter�rios",
+      name: "Estudos Literários",
       modality: [
         {
           name: '',
@@ -3731,7 +3731,7 @@ const catalogueOptions = {
       ]
     },
     '83': {
-      name: "Curso Superior de Tecnologia em Constru��o de Edif�cios",
+      name: "Curso Superior de Tecnologia em Construção de Edifícios",
       modality: [
         {
           name: '',
@@ -3749,7 +3749,7 @@ const catalogueOptions = {
       ]
     },
     '88': {
-      name: "Engenharia de Telecomunica��es",
+      name: "Engenharia de Telecomunicações",
       modality: [
         {
           name: '',
@@ -3767,7 +3767,7 @@ const catalogueOptions = {
       ]
     },
     '94': {
-      name: "Sistemas de Informa��o",
+      name: "Sistemas de Informação",
       modality: [
         {
           name: '',
@@ -3815,11 +3815,11 @@ const catalogueOptions = {
       name: "Engenharia Física",
       modality: [
         {
-          name: 'AA - Ênfase em Optoeletr�nica',
+          name: 'AA - Ênfase em Optoeletrônica',
           file: '2017/curso108_mod1.js'
         },
         {
-          name: 'AB - Ênfase em Produ��o Tecnológica',
+          name: 'AB - Ênfase em Produção Tecnológica',
           file: '2017/curso108_mod2.js'
         },
       ]
@@ -3843,7 +3843,7 @@ const catalogueOptions = {
       ]
     },
     '200': {
-      name: "Programa de Forma��o Interdisciplinar Superior - ProFIS",
+      name: "Programa de Formação Interdisciplinar Superior - ProFIS",
       modality: [
         {
           name: '',
