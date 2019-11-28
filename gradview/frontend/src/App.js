@@ -30,7 +30,6 @@ class App extends React.Component {
 
     isColoredByTPChecked: false,
     isSizedByCreditsChecked: false,
-    isPersistentEditing: false,
 
     isEditing: false,
     onSearch: false,
@@ -249,13 +248,6 @@ class App extends React.Component {
   handleChangeSize = (check) => {
     this.setState({ isSizedByCreditsChecked: check });
   };
-  handleChangeEditing = (check) => {
-    if (! this.catalogue.current) return;
-    this.setState({isPersistentEditing: check});
-    this.catalogue.current.setState({onDragging: true});
-    this.catalogue.current.forceUpdate();
-  };
-
 
   render() {
     this.createOptions();
@@ -307,12 +299,6 @@ class App extends React.Component {
               onChange={this.handleChangeSize}
               checked={this.state.isSizedByCreditsChecked}
             />
-
-            <Switch
-              text={"Modo de Edição"}
-              onChange={this.handleChangeEditing}
-              checked={this.state.isPersistentEditing}
-            />
           </div>
         </div>
         <div style={{margin: "auto", alignItems: "center"}}>
@@ -330,7 +316,7 @@ class App extends React.Component {
             sizedByCredits={this.state.isSizedByCreditsChecked}
 
             onSearch={this.state.onSearch}
-            editing={this.state.isPersistentEditing || this.state.isEditing}
+            editing={this.state.isEditing}
           /> : null}
       </div>
     );
