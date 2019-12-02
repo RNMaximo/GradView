@@ -10,5 +10,6 @@ export const isPartialRequisite = (requisite) => {
 };
 
 export const getVisualCode = (subjectCode) => {
+  if (subjectCode.startsWith("ELET")) return "Eletiva"
   return subjectCode.replace("_", " ");
 };
