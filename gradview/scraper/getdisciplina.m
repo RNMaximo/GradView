@@ -2,8 +2,8 @@ function disciplina = getdisciplina(tudo,codigo,discusadas,semestre)
     if strncmp(codigo,'ELET',3)
         disciplina.codigo=['ELET' num2str(semestre,'%02d')];
         disciplina.nome='Eletiva';
-        disciplina.ementa='';
-        disciplina.vetor=['T:' codigo(5:end) ', P:0, L:0, O:0, D:0, HS:0, SL:0, C:' codigo(5:end)];
+        disciplina.ementa='Eletivas sao creditos de escolha do aluno. O aluno deve escolher as disciplinas eletivas dentro de conjuntos pre-definidos ou, em alguns casos, dentre quaisquer disciplinas da Unicamp.';
+        disciplina.vetor=['T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:' num2str(str2num(codigo(5:end)))];
         disciplina.prereqs={''''''};
         disciplina.oferecimento='';
         disciplina.creditos=str2double(codigo(5:end));
@@ -28,8 +28,8 @@ function disciplina = getdisciplina(tudo,codigo,discusadas,semestre)
             for k=1:length(discusadas{j})
                 if sum(contains(prereqs,discusadas{j}(k).codigo))>0
                     foundinds=foundinds+1;
-                    disp('');
-                    disp(['Conjunto: ' num2str(i) ' Pai: ' disciplina.codigo '  ' discusadas{j}(k).codigo ' encontrada em ' prereqsstr]);
+                    %disp('');
+                    %disp(['Conjunto: ' num2str(i) ' Pai: ' disciplina.codigo '  ' discusadas{j}(k).codigo ' encontrada em ' prereqsstr]);
                 end
             end
         end
@@ -37,15 +37,8 @@ function disciplina = getdisciplina(tudo,codigo,discusadas,semestre)
         if(foundinds==length(prereqs))
             prereqsOK(i)=1;
         end
-    end
+    end        
     
     indsok=find(prereqsOK);
     [~,indmin]=min(nprereqs(prereqsOK));
-    
-    
-    disp('Antes:');
-    disp(disciplina.prereqs);
     disciplina.prereqs = disciplina.prereqs(indsok(indmin));
-    
-    disp('Depois:');
-    disp(disciplina.prereqs);

@@ -1,5 +1,5 @@
-function curriculo = getcurriculo(url,todas_disciplinas)
-
+function curriculo = getcurriculo(ano,curso,todas_disciplinas)
+    url = ['https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo' num2str(ano) '/proposta/sug' num2str(curso) '.html'];
     dados = webread(url,'ContentType','text/html','CharacterEncoding','auto');
     dados=htmlEntities('entities.mat',dados,0);
     dados=strsplit(dados,'<div class=''div100''>');
@@ -9,10 +9,17 @@ function curriculo = getcurriculo(url,todas_disciplinas)
     dados=strsplit(dados,'<h2>');
     dados=dados{2};
     dados=strsplit(dados,'</h2>');
-    curriculo.curso=dados{1};
     dados=dados{2};
     
     dados=strsplit(dados,'<h1>');
+    
+    url = ['https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo' num2str(ano) '/cursos/cur' num2str(curso) '.html'];
+    dados2 = webread(url,'ContentType','text/html','CharacterEncoding','auto');
+    dados2=htmlEntities('entities.mat',dados2,0);
+    dados2=strsplit(dados2,'<h1>');
+    dados2=strsplit(dados2{2},'</h1>');
+    curriculo.curso=dados2{1};
+    
     clear mod modalidade sugestao
     if length(dados)==1
         curriculo.modalidade(1).nome=[];
@@ -29,10 +36,14 @@ function curriculo = getcurriculo(url,todas_disciplinas)
                 disc_sug_semestre{k-1}=strrep(discparts{2},' ','_');
             end
 
-            discparts=split(disciplinas{1},["<br/>"," cr"]);
-
+            discparts=split(disciplinas{1},["<br/>","  , "," cr"]);
+            
             if length(discparts)>2
-                disc_sug_semestre{end+1}=['ELET' discparts{2}];
+                creds = discparts{2};
+                if length(discparts)>4
+                    creds = num2str(str2num(discparts{4})+str2num(creds));
+                end
+                disc_sug_semestre{end+1}=['ELET' creds];
             end
 
             % Cross check se os creditos das disciplinas estao ok com o semestre.
@@ -69,12 +80,16 @@ function curriculo = getcurriculo(url,todas_disciplinas)
                     disc_sug_semestre{k-1}=strrep(discparts{2},' ','_');
                 end
 
-                discparts=split(disciplinas{1},["<br/>"," cr"]);
-
+                discparts=split(disciplinas{1},["<br/>","  , "," cr"]);
+                
                 if length(discparts)>2
-                    disc_sug_semestre{end+1}=['ELET' discparts{2}];
+                    creds = discparts{2};
+                    if length(discparts)>4
+                        creds = num2str(str2num(discparts{4})+str2num(creds));
+                    end
+                    disc_sug_semestre{end+1}=['ELET' creds];
                 end
-
+                
                 % Cross check se os creditos das disciplinas estao ok com o semestre.
                 creditos_sum=0;
                 for ind=1:length(disc_sug_semestre)
