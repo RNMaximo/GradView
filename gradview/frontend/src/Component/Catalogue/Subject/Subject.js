@@ -8,7 +8,7 @@ import Alert from "./Alert/Alert";
 import PopupSubject from "./PopupSubject/PopupSubject";
 import PopupAlert from "./PopupAlert/PopupAlert";
 
-import {getVisualCode} from "../../../Functions/SubjectCode/SubjectCode";
+import {getVisualCode, isEletiva} from "../../../Functions/SubjectCode/SubjectCode";
 import * as colorConstans from "../colorConstants";
 
 
@@ -105,7 +105,7 @@ class Subject extends React.Component {
       textStyle = {color: "white"};
     }
 
-    const subjectCode = getVisualCode(subject.code);
+    const subjectCode = isEletiva(subject.code) ? "ELE("+subject.vector.C+")": getVisualCode(subject.code);
 
     const visibleClass = this.state.visible ? "" : " lessVisible ";
 

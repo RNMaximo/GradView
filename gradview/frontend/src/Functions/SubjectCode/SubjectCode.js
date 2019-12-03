@@ -8,8 +8,10 @@ export const getCleanCode = (subjectCode) => {
 export const isPartialRequisite = (requisite) => {
   return requisite[0] === '*';
 };
+export const isEletiva = (subjectCode) => {
+  return (subjectCode.startsWith("ELET"));
+};
 
 export const getVisualCode = (subjectCode) => {
-  if (subjectCode.startsWith("ELET")) return "Eletiva"
   return subjectCode.replace("_", " ");
 };
