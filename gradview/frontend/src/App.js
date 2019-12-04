@@ -105,7 +105,6 @@ class App extends React.Component {
   onDragEnd = (result) => {
     const catalogue = this.state.catalogue;
     const { destination, source, draggableId } = result;
-    const isFromEletivas = source.droppableId.startsWith("elet");
 
     //TODO: se não tiver destino e for eletiva, remove do catalogo = volta pra lista?
     if (!destination) {
@@ -113,16 +112,59 @@ class App extends React.Component {
       return;
     }
 
+    const isFromEletivas = source.droppableId.startsWith("elet");
     const isToEletivas = destination.droppableId.startsWith("elet");
-    if (isToEletivas) {
-      this.setState({isEditing: false});
-      return;
-    }
+    // Nada mudou
     if (destination.droppableId === source.droppableId && destination.index === source.index) {
       this.setState({isEditing: false});
       return;
     }
-    if (! isFromEletivas) {
+
+    // Eletiva -> Eletiva
+    else if (isFromEletivas && isToEletivas) {
+      if (destination.droppableId !== source.droppableId) {
+        // TODO: POPUP instruindo
+        console.log("Não é possível mover disciplinas entre os blocos de eletivas");
+      }
+      this.setState({ isEditing: false });
+      return;
+    }
+
+    // Semestre -> Eletiva
+    else if (isToEletivas && !isFromEletivas) {
+      const start = catalogue.semesters[source.droppableId];
+      const startTaskIds = Array.from(start.subjects);
+      startTaskIds.splice(source.index, 1);
+
+      const newStart = {
+        ...start,
+        subjects: startTaskIds,
+      };
+
+      if (catalogue.subjects[draggableId].obligatory) {
+        // TODO: POPUP instruindo
+        console.log("Não é possível remover disciplinas obrigatórias");
+        this.setState({ isEditing: false });
+        return
+      }
+
+      const newState = {
+        ...catalogue,
+        semesters: {
+          ...catalogue.semesters,
+          ["sem-" + newStart.id]: newStart,
+        },
+        subjects: {
+          ...catalogue.subjects,
+          [draggableId]: {...catalogue.subjects[draggableId], planned: false}
+        }
+      };
+      this.setState({catalogue: newState, isEditing: false});
+      return;
+    }
+
+    // Semestre -> Semestre
+    else if (!isFromEletivas && !isToEletivas) {
       const start = catalogue.semesters[source.droppableId];
       const finish = catalogue.semesters[destination.droppableId];
 
@@ -171,7 +213,10 @@ class App extends React.Component {
         };
         this.setState({catalogue: newState, isEditing: false})
       }
-    } else {
+    }
+
+    // Eletiva -> Semestre
+    else if (isFromEletivas && !isToEletivas) {
       const start = catalogue.eletivas[source.droppableId];
       const finish = catalogue.semesters[destination.droppableId];
 
@@ -203,6 +248,7 @@ class App extends React.Component {
         this.setState({catalogue: newState, isEditing: false})
       }
     }
+
     this.forceUpdate()
   };
 

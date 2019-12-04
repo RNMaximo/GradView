@@ -117,8 +117,6 @@ class Subject extends React.Component {
             <div
               className={"subject " + visibleClass + " planned"}
               style={{...divStyle, ...sizeStyle}}
-              onMouseEnter={this.props.onMouseEnter}
-              onMouseLeave={this.props.onMouseLeave}
             >
               <span
                 style={textStyle}

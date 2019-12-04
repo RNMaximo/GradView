@@ -258,10 +258,9 @@ class Catalogue extends React.Component {
               alert={false}
               reason={[]}
 
-              onMouseEnter={() => {
-              }}
-              onMouseLeave={() => {
-              }}
+              onMouseEnter={this.handleMouseEnter}
+              onMouseLeave={this.handleMouseLeave}
+
               index={index}
             />
           )
@@ -291,7 +290,7 @@ class Catalogue extends React.Component {
         );
       })
     );
-    console.log(this.subjects)
+
     return (
       <DragDropContext
         onDragEnd={this.props.onDragEnd}
