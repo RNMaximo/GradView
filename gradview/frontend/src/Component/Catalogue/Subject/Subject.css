@@ -27,8 +27,8 @@
 
     position :relative;
 }
-.planned {
-    background-color: #888 !important;
+.subject.planned {
+    background: #aaa !important;
 }
 
 .subject.lessVisible {

@@ -10,6 +10,7 @@ import PopupAlert from "./PopupAlert/PopupAlert";
 
 import {getVisualCode, isEletiva} from "../../../Functions/SubjectCode/SubjectCode";
 import * as colorConstans from "../colorConstants";
+import Check from "./Check/Check";
 
 
 class Subject extends React.Component {
@@ -118,6 +119,9 @@ class Subject extends React.Component {
               className={"subject " + visibleClass + " planned"}
               style={{...divStyle, ...sizeStyle}}
             >
+              <Check
+                show={true}
+              />
               <span
                 style={textStyle}
                 onClick={this.openModal}
