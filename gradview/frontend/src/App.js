@@ -30,6 +30,7 @@ class App extends React.Component {
 
     isColoredByTPChecked: false,
     isSizedByCreditsChecked: false,
+    showEletivasChecked: true,
 
     isEditing: false,
     onSearch: false,
@@ -104,67 +105,103 @@ class App extends React.Component {
   onDragEnd = (result) => {
     const catalogue = this.state.catalogue;
     const { destination, source, draggableId } = result;
+    const isFromEletivas = source.droppableId.startsWith("elet");
 
+    //TODO: se não tiver destino e for eletiva, remove do catalogo = volta pra lista?
     if (!destination) {
       this.setState({isEditing: false});
       return;
     }
-    if (
-      destination.droppableId === source.droppableId &&
-      destination.index === source.index
-    ) {
+
+    const isToEletivas = destination.droppableId.startsWith("elet");
+    if (isToEletivas) {
       this.setState({isEditing: false});
       return;
     }
-
-    const start = catalogue.semesters[source.droppableId];
-    const finish = catalogue.semesters[destination.droppableId];
-
-    if (start === finish) {
-      const newTaskIds = Array.from(start.subjects);
-      newTaskIds.splice(source.index, 1);
-      newTaskIds.splice(destination.index, 0, draggableId);
-
-      const newColumn = {
-        ...start,
-        subjects: newTaskIds,
-      };
-
-      const newState = {
-        ...catalogue,
-        semesters: {
-          ...catalogue.semesters,
-          ["sem-"+newColumn.id]: newColumn,
-        }
-      };
-      this.setState({catalogue: newState, isEditing: false})
+    if (destination.droppableId === source.droppableId && destination.index === source.index) {
+      this.setState({isEditing: false});
+      return;
     }
-    else {
-      const startTaskIds = Array.from(start.subjects);
-      startTaskIds.splice(source.index, 1);
+    if (! isFromEletivas) {
+      const start = catalogue.semesters[source.droppableId];
+      const finish = catalogue.semesters[destination.droppableId];
 
-      const newStart = {
-        ...start,
-        subjects: startTaskIds,
-      };
+      if (start === finish) {
+        const newTaskIds = Array.from(start.subjects);
+        newTaskIds.splice(source.index, 1);
+        newTaskIds.splice(destination.index, 0, draggableId);
 
-      const finishTaskIds = Array.from(finish.subjects);
-      finishTaskIds.splice(destination.index, 0, draggableId);
+        const newColumn = {
+          ...start,
+          subjects: newTaskIds,
+        };
 
-      const newFinish = {
-        ...finish,
-        subjects: finishTaskIds,
-      };
+        const newState = {
+          ...catalogue,
+          semesters: {
+            ...catalogue.semesters,
+            ["sem-" + newColumn.id]: newColumn,
+          }
+        };
+        this.setState({catalogue: newState, isEditing: false})
+      } else {
+        const startTaskIds = Array.from(start.subjects);
+        startTaskIds.splice(source.index, 1);
 
-      const newState = {
-        ...catalogue,
-        semesters: {
-          ...catalogue.semesters,
-          ["sem-"+newStart.id]: newStart,
-          ["sem-"+newFinish.id]: newFinish,
-        }
-      };
-      this.setState({catalogue: newState, isEditing: false})
+        const newStart = {
+          ...start,
+          subjects: startTaskIds,
+        };
+
+        const finishTaskIds = Array.from(finish.subjects);
+        finishTaskIds.splice(destination.index, 0, draggableId);
+
+        const newFinish = {
+          ...finish,
+          subjects: finishTaskIds,
+        };
+
+        const newState = {
+          ...catalogue,
+          semesters: {
+            ...catalogue.semesters,
+            ["sem-" + newStart.id]: newStart,
+            ["sem-" + newFinish.id]: newFinish,
+          }
+        };
+        this.setState({catalogue: newState, isEditing: false})
+      }
+    } else {
+      const start = catalogue.eletivas[source.droppableId];
+      const finish = catalogue.semesters[destination.droppableId];
+
+      if (start !== finish) {
+        const startTaskIds = Array.from(start.subjects);
+        startTaskIds.splice(source.index, 1);
+
+        const finishTaskIds = Array.from(finish.subjects);
+        finishTaskIds.splice(destination.index, 0, draggableId);
+
+        const newFinish = {
+          ...finish,
+          subjects: finishTaskIds,
+        };
+
+        const newState = {
+          ...catalogue,
+          semesters: {
+            ...catalogue.semesters,
+            ["sem-" + newFinish.id]: newFinish,
+          },
+          subjects: {
+            ...catalogue.subjects,
+            [draggableId]: {...catalogue.subjects[draggableId], planned: true}
+          }
+        };
+
+
+        this.setState({catalogue: newState, isEditing: false})
+      }
     }
     this.forceUpdate()
   };
@@ -199,7 +236,7 @@ class App extends React.Component {
     // Inicia sempre com o último ano cadastrado
     const initialYearOpt = this.yearsOptions[this.yearsOptions.length-1];
     this.currentYear = initialYearOpt.value;
-    const initialCourseOpt = this.cataloguesOptions[this.currentYear][0];
+    const initialCourseOpt = this.cataloguesOptions[this.currentYear][28];
     this.currentCourse = initialCourseOpt.value;
     const initialCatalogueOpt = this.optionsByYearAndCourse[this.currentYear][this.currentCourse][0];
 
@@ -212,7 +249,7 @@ class App extends React.Component {
   handleChangeCatalogueYear = (catalogueYear) => {
     this.setState({catalogueYear: catalogueYear});
     this.currentYear = catalogueYear.value;
-    this.handleChangeCatalogueCourse(this.cataloguesOptions[this.currentYear][0])
+    this.handleChangeCatalogueCourse(this.cataloguesOptions[this.currentYear][28])
   };
 
   handleChangeCatalogueCourse = (selectedOption) => {
@@ -247,6 +284,9 @@ class App extends React.Component {
   };
   handleChangeSize = (check) => {
     this.setState({ isSizedByCreditsChecked: check });
+  };
+  handleShowEletivas = (check) => {
+    this.setState({ showEletivasChecked: check });
   };
 
   render() {
@@ -299,6 +339,12 @@ class App extends React.Component {
               onChange={this.handleChangeSize}
               checked={this.state.isSizedByCreditsChecked}
             />
+
+            <Switch
+              text={"Mostrar Eletivas"}
+              onChange={this.handleShowEletivas}
+              checked={this.state.showEletivasChecked}
+            />
           </div>
         </div>
         <div style={{margin: "auto", alignItems: "center"}}>
@@ -314,6 +360,7 @@ class App extends React.Component {
 
             coloredByVector={this.state.isColoredByTPChecked}
             sizedByCredits={this.state.isSizedByCreditsChecked}
+            showeletivas={this.state.showEletivasChecked}
 
             onSearch={this.state.onSearch}
             editing={this.state.isEditing}

@@ -223,11 +223,90 @@ class Catalogue extends React.Component {
         return reqBySemester
       });
     }
+
+    const eletivasKeys = Object.keys(this.props.catalogueBySemester.eletivas);
+    const eletivasData = this.props.catalogueBySemester.eletivas;
+    const eletivas = (
+      eletivasKeys.map((eletivaId) => {
+        const subjects = eletivasData[eletivaId].subjects.map(subjectsId => catalogueProps.subjects[subjectsId]);
+        if (! eletivasData[eletivaId].hasRestrictions) {
+          return (
+            <div className={"eletivas "+ eletivaId}>
+              <p className={"info"}><strong>{eletivasData[eletivaId].credits}º</strong> créditos dentre:</p>
+              <p className={"subjects"}>Qualquer disciplina da UNICAMP</p>
+            </div>
+          )
+        }
+
+        const subjectsOptions = subjects.map((subject, index) => {
+          let opacity = 1;
+          if (subject.opacity) {
+            opacity = subject.opacity;
+          }
+          return (
+            <Subject
+              ref={(node) => this.subjects[subject.code] = node}
+              key={subject.code + "_bt"}
+
+              subject={subject}
+              opacity={opacity}
+              borderColored={this.props.borderColored}
+              isNotDraggable={subject.planned}
+
+              coloredByVector={this.props.coloredByVector}
+              sizedByCredits={this.props.sizedByCredits}
+              alert={false}
+              reason={[]}
+
+              onMouseEnter={() => {
+              }}
+              onMouseLeave={() => {
+              }}
+              index={index}
+            />
+          )
+        });
+        return (
+          <div className={"eletivas "+ eletivaId}>
+            <p className={"info"}><strong>0/{eletivasData[eletivaId].credits}</strong> créditos dentre:</p>
+            <Droppable
+              key={"Eletivas "+eletivaId}
+              droppableId={eletivaId}
+              direction={"horizontal"}
+            >
+              {(provided, snapshot) => (
+                <div
+                  key={"Eletivas "+eletivaId}
+                  className={"subjects editing"}
+                  ref={provided.innerRef}
+                  {...provided.droppableProps}
+                >
+                  {subjectsOptions}
+                  {provided.placeholder}
+                  <br/>
+                </div>
+              )}
+            </Droppable>
+          </div>
+        );
+      })
+    );
+    console.log(this.subjects)
     return (
       <DragDropContext
         onDragEnd={this.props.onDragEnd}
         onDragStart={this.props.onDragStart}
       >
+        {this.props.showeletivas ?
+          <div>
+            <strong>Eletivas:</strong>
+            {eletivas}
+          </div>
+          :
+          <div style={{display: 'none'}}>
+            <strong>Eletivas:</strong>
+            {eletivas}
+          </div>}
         <div className="Catalogue">
           {semesters}
           <div className={"PrereqLines"}>

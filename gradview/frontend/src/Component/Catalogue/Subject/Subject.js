@@ -113,39 +113,52 @@ class Subject extends React.Component {
     return (
       <React.Fragment>
         <div className={"subject-container " + (this.props.sizedByCredits ? " margin1" : "")}>
-          <Draggable
-            key={subject.code}
-            draggableId={subject.code}
-            index={this.props.index}
-            style={{margin: 1}}
-          >
-            {(provided, snapshot) => (
-              <div
-                key={this.props.id}
-                className={"draggable " + subject.code}
-                {...provided.draggableProps}
-                {...provided.dragHandleProps}
-                ref={provided.innerRef}
-              >
+          {this.props.isNotDraggable ?
+            <div
+              className={"subject " + visibleClass + " planned"}
+              style={{...divStyle, ...sizeStyle}}
+              onMouseEnter={this.props.onMouseEnter}
+              onMouseLeave={this.props.onMouseLeave}
+            >
+              <span
+                style={textStyle}
+                onClick={this.openModal}
+              >{subjectCode}</span>
+            </div> :
+            <Draggable
+              key={subject.code}
+              draggableId={subject.code}
+              index={this.props.index}
+              style={{margin: 1}}
+            >
+              {(provided, snapshot) => (
                 <div
-                  className={"subject " + subject.code + visibleClass}
-                  style={{...divStyle, ...sizeStyle}}
-                  onMouseEnter={this.props.onMouseEnter}
-                  onMouseLeave={this.props.onMouseLeave}
+                  key={this.props.id}
+                  className={"draggable " + subject.code}
+                  {...provided.draggableProps}
+                  {...provided.dragHandleProps}
+                  ref={provided.innerRef}
                 >
-                  <Alert
-                    show={this.props.alert}
-                    onClick={this.openAlertModal}
-                  />
-                  <span
-                    style={textStyle}
-                    onClick={this.openModal}
-                  >{subjectCode}</span>
+                  <div
+                    className={"subject " + subject.code + visibleClass}
+                    style={{...divStyle, ...sizeStyle}}
+                    onMouseEnter={this.props.onMouseEnter}
+                    onMouseLeave={this.props.onMouseLeave}
+                  >
+                    <Alert
+                      show={this.props.alert}
+                      onClick={this.openAlertModal}
+                    />
+                    <span
+                      style={textStyle}
+                      onClick={this.openModal}
+                    >{subjectCode}</span>
+                  </div>
                 </div>
-              </div>
-            )
-            }
-          </Draggable>
+              )
+              }
+            </Draggable>
+          }
 
           <PopupSubject
             open={this.state.isDetailsOpen}
