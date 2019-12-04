@@ -35,6 +35,44 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 18,
+			hasRestrictions: true,
+			subjects: ['HZ140', 'HZ240', 'HZ249', 'HZ340', 'HZ346', 'HZ348', 'HZ440', 'HZ540', 'HZ640', 'HZ740', 'HZ840', 'HZ940', 'HZ942'],
+		},
+		'elet-2': {
+			credits: 4,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-3': {
+			credits: 12,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-4': {
+			credits: 36,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-5': {
+			credits: 8,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-6': {
+			credits: 8,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-7': {
+			credits: 6,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'CE131': {
 			code: 'CE131',
@@ -43,7 +81,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40A6D9'
+			color: '#40D997',
+			obligatory: true
 		},
 		'HZ141': {
 			code: 'HZ141',
@@ -52,7 +91,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D9A6'
+			color: '#D94097',
+			obligatory: true
 		},
 		'HZ158': {
 			code: 'HZ158',
@@ -61,7 +101,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#A6D940'
+			color: '#D94040',
+			obligatory: true
 		},
 		'HZ161': {
 			code: 'HZ161',
@@ -70,7 +111,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D9A640'
+			color: '#C3D940',
+			obligatory: true
 		},
 		'HZ248': {
 			code: 'HZ248',
@@ -79,7 +121,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['HZ141'],
-			color: ''
+			color: '#D94097',
+			obligatory: true
 		},
 		'HZ258': {
 			code: 'HZ258',
@@ -88,7 +131,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D940A6'
+			color: '#40D940',
+			obligatory: true
 		},
 		'HZ263': {
 			code: 'HZ263',
@@ -97,7 +141,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['HZ161'],
-			color: ''
+			color: '#C3D940',
+			obligatory: true
 		},
 		'ELET02': {
 			code: 'ELET02',
@@ -106,7 +151,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HZ345': {
 			code: 'HZ345',
@@ -115,7 +161,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['HZ141'],
-			color: ''
+			color: '#D94097',
+			obligatory: true
 		},
 		'HZ358': {
 			code: 'HZ358',
@@ -124,7 +171,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#D96B40',
+			obligatory: true
 		},
 		'HZ363': {
 			code: 'HZ363',
@@ -133,7 +181,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['HZ263'],
-			color: ''
+			color: '#C3D940',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -142,7 +191,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HZ431': {
 			code: 'HZ431',
@@ -151,7 +201,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['HZ141', 'HZ158', 'HZ161'],
-			color: ''
+			color: '#D2735D',
+			obligatory: true
 		},
 		'HZ447': {
 			code: 'HZ447',
@@ -160,7 +211,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D94040'
+			color: '#4097D9',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -169,7 +221,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:16},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HZ546': {
 			code: 'HZ546',
@@ -178,7 +231,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#A640D9'
+			color: '#D9406B',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -187,7 +241,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:16},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HZ631': {
 			code: 'HZ631',
@@ -196,7 +251,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#40D940'
+			color: '#D940C3',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -205,7 +261,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CE730': {
 			code: 'CE730',
@@ -214,7 +271,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE131', 'HZ141', 'HZ158', 'HZ161'],
-			color: ''
+			color: '#AD8D6C',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -223,7 +281,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:16},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -232,7 +291,138 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:20},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'HZ140': {
+			code: 'HZ140',
+			name: 'Partidos Políticos',
+			ementa: 'Esse curso percorre, na sua primeira parte, os três mais importantes enfoques teóricos sobre partidos políticos - o marxista, o organizacional e institucional. Na segunda parte, trata de sistemas partidários, dando enfoque ao funcionamento dos partidos em sistemas competitivos e não competitivos.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D99740',
+			obligatory: false
+		},
+		'HZ240': {
+			code: 'HZ240',
+			name: 'Democracia e Cidadania',
+			ementa: 'Paradigmas de análise sobre ação coletiva e movimentos sociais nos Estados Unidos e Europa e seus desdobramentos mais recentes.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#406BD9',
+			obligatory: false
+		},
+		'HZ249': {
+			code: 'HZ249',
+			name: 'Pensamento Político: Debates Contemporâneos',
+			ementa: 'O objetivo do curso é apresentar tendências contemporâneas do pensamento político e debates teóricos que marcaram o campo da ciência política nas últimas décadas.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: ['HZ141'],
+			color: '#D94097',
+			obligatory: false
+		},
+		'HZ340': {
+			code: 'HZ340',
+			name: 'Política e Direito I',
+			ementa: 'A disciplina tem o objetivo de introduzir o estudante de ciências sociais nos temas e debates no campo das relações entre política e direito. O curso tem uma parte fixa com o objetivo de introduzir os estudantes aos autores e temas fundamentais no campo, e uma parte variável, na qual diferentes temas serão tratados, com o objetivo de propiciar aos estudantes o conhecimento de temas, conceitos e técnicas de pesquisa atuais no campo.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D9C340',
+			obligatory: false
+		},
+		'HZ346': {
+			code: 'HZ346',
+			name: 'Política e Direito II',
+			ementa: 'A disciplina tem o objetivo de introduzir o estudante de ciências sociais nos temas e debates no campo das relações entre política e direito. O curso tem uma parte fixa com o objetivo de introduzir os estudantes aos autores e temas fundamentais no campo, e uma parte variável, na qual diferentes temas serão tratados, com o objetivo de propiciar aos estudantes o conhecimento de temas, conceitos e técnicas de pesquisa atuais no campo.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#4040D9',
+			obligatory: false
+		},
+		'HZ348': {
+			code: 'HZ348',
+			name: 'Teorias da Ação Coletiva e Movimentos Sociais',
+			ementa: 'Paradigmas de análise sobre ação coletiva e movimentos sociais nos Estados Unidos e Europa e seus desdobramentos mais recentes.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#9740D9',
+			obligatory: false
+		},
+		'HZ440': {
+			code: 'HZ440',
+			name: 'Trabalho e Sindicalismo',
+			ementa: 'O conceito de trabalho. Transformações nas relações de trabalho. Formas de organização e representação de interesses dos trabalhadores. Formas de ação sindical. Desafios do sindicalismo.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#97D940',
+			obligatory: false
+		},
+		'HZ540': {
+			code: 'HZ540',
+			name: 'Políticas Públicas',
+			ementa: 'Introduzir a temática das políticas públicas com base nas experiências contemporâneas do Estado de Bem-Estar Social. Examinar as principais abordagens com relação à formulação, implementação, legitimação e avaliação das políticas públicas. Analisar o papel das políticas públicas em relação ao processo de formação da cidadania democrática e os desafios da gestão participativa.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40C3D9',
+			obligatory: false
+		},
+		'HZ640': {
+			code: 'HZ640',
+			name: 'Pensamento Político Brasileiro',
+			ementa: 'Introdução ao estudo das principais linhagens do pensamento político no Brasil nos séculos XIX e XX, como: o liberalismo, o conservadorismo, o autoritarismo, o marxismo, o desenvolvimentismo, o nacionalismo etc. A disciplina procura articular a análise de obras clássicas e seu impacto na compreensão dos períodos críticos da formação do estado no Brasil.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#C340D9',
+			obligatory: false
+		},
+		'HZ740': {
+			code: 'HZ740',
+			name: 'Regimes e Sistemas Políticos Comparados',
+			ementa: 'A disciplina tem como objetivo desenvolver conceitos e reflexões necessários à compreensão do processo de construção dos estados modernos. Para isto enfatizará, de uma perspectiva histórica e teórica, a relação entre o desenvolvimento dos sistemas políticos contemporâneos e os principais tipos de regime político. Nesta perspectiva comparada, ênfase especial será atribuída ao sistema político brasileiro.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#6B40D9',
+			obligatory: false
+		},
+		'HZ840': {
+			code: 'HZ840',
+			name: 'Estado e Reformas Econômicas no Capitalismo Contemporâneo',
+			ementa: 'O papel do estado no capitalismo contemporâneo. Estado e classes sociais. Estado e relações internacionais. O debate sobre globalização e o declínio do Estado. As reformas econômicas neoliberais - com especial destaque para o Brasil. As mudanças na sociedade e na economia.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D96B',
+			obligatory: false
+		},
+		'HZ940': {
+			code: 'HZ940',
+			name: 'Estado, Nação e Nacionalismo',
+			ementa: 'A teoria do Estado burguês: o Estado no modo de produção capitalista. O Estado do capitalismo monopolista de Estado. O Estado dependente na era de capitalismo mundial. O Estado de transição.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: ['AA200'],
+			color: '#40D9C3',
+			obligatory: false
+		},
+		'HZ942': {
+			code: 'HZ942',
+			name: 'Relações Internacionais',
+			ementa: 'Introdução às relações internacionais. Noções básicas; algumas abordagens teóricas. Evolução do sistema internacional, do pós-guerra aos dias de hoje, com ênfase na América Latina.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#6BD940',
+			obligatory: false
 		}
 	}
 };

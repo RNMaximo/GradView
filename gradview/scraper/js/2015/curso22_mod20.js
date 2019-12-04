@@ -35,6 +35,24 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 20,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-2': {
+			credits: 20,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-3': {
+			credits: 4,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'MU058': {
 			code: 'MU058',
@@ -43,7 +61,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: '',
-			color: '#8C40D9'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'MU105': {
 			code: 'MU105',
@@ -52,7 +71,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#8CD940'
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'MU120': {
 			code: 'MU120',
@@ -61,7 +81,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94040'
+			color: '#D9B340',
+			obligatory: true
 		},
 		'MU193': {
 			code: 'MU193',
@@ -70,7 +91,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: '',
-			color: '#D9B340'
+			color: '#40D966',
+			obligatory: true
 		},
 		'MU194': {
 			code: 'MU194',
@@ -79,7 +101,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
 			requisitos: '',
-			color: '#40D966'
+			color: '#8CD940',
+			obligatory: true
 		},
 		'MU360': {
 			code: 'MU360',
@@ -88,7 +111,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D940B3'
+			color: '#4066D9',
+			obligatory: true
 		},
 		'MU049': {
 			code: 'MU049',
@@ -97,7 +121,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU105'],
-			color: ''
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'MU059': {
 			code: 'MU059',
@@ -106,7 +131,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: ['MU058'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'MU205': {
 			code: 'MU205',
@@ -115,7 +141,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU105'],
-			color: ''
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'MU220': {
 			code: 'MU220',
@@ -124,7 +151,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU120'],
-			color: ''
+			color: '#D9B340',
+			obligatory: true
 		},
 		'MU293': {
 			code: 'MU293',
@@ -133,7 +161,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: ['MU193'],
-			color: ''
+			color: '#40D966',
+			obligatory: true
 		},
 		'MU294': {
 			code: 'MU294',
@@ -142,7 +171,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
 			requisitos: ['MU194'],
-			color: ''
+			color: '#8CD940',
+			obligatory: true
 		},
 		'MU460': {
 			code: 'MU460',
@@ -151,7 +181,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU360'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'ELET02': {
 			code: 'ELET02',
@@ -160,7 +191,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:2},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'MU060': {
 			code: 'MU060',
@@ -169,7 +201,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: ['MU059'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'MU114': {
 			code: 'MU114',
@@ -178,7 +211,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU205'],
-			color: ''
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'MU146': {
 			code: 'MU146',
@@ -187,7 +221,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#4066D9'
+			color: '#D940B3',
+			obligatory: true
 		},
 		'MU178': {
 			code: 'MU178',
@@ -196,7 +231,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#D94040',
+			obligatory: true
 		},
 		'MU393': {
 			code: 'MU393',
@@ -205,7 +241,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: ['MU293'],
-			color: ''
+			color: '#40D966',
+			obligatory: true
 		},
 		'MU394': {
 			code: 'MU394',
@@ -214,7 +251,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
 			requisitos: ['MU294'],
-			color: ''
+			color: '#8CD940',
+			obligatory: true
 		},
 		'MU560': {
 			code: 'MU560',
@@ -223,7 +261,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU460'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -232,7 +271,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'MU061': {
 			code: 'MU061',
@@ -241,7 +281,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: ['MU060'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'MU214': {
 			code: 'MU214',
@@ -250,7 +291,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU114'],
-			color: ''
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'MU246': {
 			code: 'MU246',
@@ -259,7 +301,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU146'],
-			color: ''
+			color: '#D940B3',
+			obligatory: true
 		},
 		'MU278': {
 			code: 'MU278',
@@ -268,7 +311,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
 			requisitos: ['MU178'],
-			color: ''
+			color: '#D94040',
+			obligatory: true
 		},
 		'MU493': {
 			code: 'MU493',
@@ -277,7 +321,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: ['MU393'],
-			color: ''
+			color: '#40D966',
+			obligatory: true
 		},
 		'MU494': {
 			code: 'MU494',
@@ -286,7 +331,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
 			requisitos: ['MU394'],
-			color: ''
+			color: '#8CD940',
+			obligatory: true
 		},
 		'MU660': {
 			code: 'MU660',
@@ -295,7 +341,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU560'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -304,7 +351,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'MU190': {
 			code: 'MU190',
@@ -313,7 +361,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU560'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'MU314': {
 			code: 'MU314',
@@ -322,7 +371,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU214'],
-			color: ''
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'MU346': {
 			code: 'MU346',
@@ -331,7 +381,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU246'],
-			color: ''
+			color: '#D940B3',
+			obligatory: true
 		},
 		'MU378': {
 			code: 'MU378',
@@ -340,7 +391,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
 			requisitos: ['MU278'],
-			color: ''
+			color: '#D94040',
+			obligatory: true
 		},
 		'MU594': {
 			code: 'MU594',
@@ -349,7 +401,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
 			requisitos: ['MU494'],
-			color: ''
+			color: '#8CD940',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -358,7 +411,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'MU290': {
 			code: 'MU290',
@@ -367,7 +421,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU190'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'MU414': {
 			code: 'MU414',
@@ -376,7 +431,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU314'],
-			color: ''
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'MU446': {
 			code: 'MU446',
@@ -385,7 +441,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU346'],
-			color: ''
+			color: '#D940B3',
+			obligatory: true
 		},
 		'MU478': {
 			code: 'MU478',
@@ -394,7 +451,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
 			requisitos: ['MU378'],
-			color: ''
+			color: '#D94040',
+			obligatory: true
 		},
 		'MU694': {
 			code: 'MU694',
@@ -403,7 +461,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
 			requisitos: ['MU594'],
-			color: ''
+			color: '#8CD940',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -412,7 +471,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'MU794': {
 			code: 'MU794',
@@ -421,7 +481,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
 			requisitos: ['MU694'],
-			color: ''
+			color: '#8CD940',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -430,7 +491,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:18},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'MU894': {
 			code: 'MU894',
@@ -439,7 +501,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
 			requisitos: ['MU794'],
-			color: ''
+			color: '#8CD940',
+			obligatory: true
 		},
 		'MU998': {
 			code: 'MU998',
@@ -448,7 +511,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:6, D:0, HS:6, SL:0, C:6},
 			requisitos: ['MU694'],
-			color: ''
+			color: '#8CD940',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -457,7 +521,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		}
 	}
 };

@@ -35,6 +35,29 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 18,
+			hasRestrictions: true,
+			subjects: ['EL142', 'EL212', 'EL485', 'EL511', 'EL683'],
+		},
+		'elet-2': {
+			credits: 42,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-3': {
+			credits: 8,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-4': {
+			credits: 4,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'HG107': {
 			code: 'HG107',
@@ -43,7 +66,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: '',
-			color: '#7DD940'
+			color: '#8040D9',
+			obligatory: true
 		},
 		'HG108': {
 			code: 'HG108',
@@ -52,7 +76,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: '',
-			color: '#40D9BA'
+			color: '#40C1D9',
+			obligatory: true
 		},
 		'ELET01': {
 			code: 'ELET01',
@@ -61,7 +86,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HG207': {
 			code: 'HG207',
@@ -70,7 +96,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['AA200'],
-			color: '#40D97D'
+			color: '#D9A040',
+			obligatory: true
 		},
 		'HG208': {
 			code: 'HG208',
@@ -79,7 +106,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#407DD9'
+			color: '#40D990',
+			obligatory: true
 		},
 		'ELET02': {
 			code: 'ELET02',
@@ -88,7 +116,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HG301': {
 			code: 'HG301',
@@ -97,7 +126,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#7D40D9'
+			color: '#4090D9',
+			obligatory: true
 		},
 		'HG302': {
 			code: 'HG302',
@@ -106,7 +136,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D9BA40'
+			color: '#D94040',
+			obligatory: true
 		},
 		'HG304': {
 			code: 'HG304',
@@ -115,7 +146,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:5, L:0, O:5, D:0, HS:12, SL:4, C:12},
 			requisitos: ['AA200'],
-			color: '#D97D40'
+			color: '#80D940',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -124,7 +156,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HG401': {
 			code: 'HG401',
@@ -133,7 +166,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D940BA'
+			color: '#40D9C1',
+			obligatory: true
 		},
 		'HG402': {
 			code: 'HG402',
@@ -142,7 +176,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#BAD940'
+			color: '#D9D140',
+			obligatory: true
 		},
 		'HG404': {
 			code: 'HG404',
@@ -151,7 +186,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D9407D'
+			color: '#B040D9',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -160,7 +196,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:14},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL213': {
 			code: 'EL213',
@@ -169,7 +206,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#B0D940',
+			obligatory: true
 		},
 		'EL774': {
 			code: 'EL774',
@@ -178,7 +216,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['AA200', 'AA445'],
-			color: '#BA40D9'
+			color: '#D940A0',
+			obligatory: true
 		},
 		'HG303': {
 			code: 'HG303',
@@ -187,7 +226,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:5, L:0, O:5, D:0, HS:12, SL:4, C:12},
 			requisitos: ['AA200'],
-			color: '#D94040'
+			color: '#D97040',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -196,7 +236,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL874': {
 			code: 'EL874',
@@ -205,7 +246,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['EL774'],
-			color: ''
+			color: '#D940A0',
+			obligatory: true
 		},
 		'HG403': {
 			code: 'HG403',
@@ -214,7 +256,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:5, L:0, O:5, D:0, HS:12, SL:4, C:12},
 			requisitos: ['AA200'],
-			color: '#40D940'
+			color: '#40D960',
+			obligatory: true
 		},
 		'HG861': {
 			code: 'HG861',
@@ -223,7 +266,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:4, D:0, HS:6, SL:2, C:6},
 			requisitos: ['AA430', 'HG207', 'HG208'],
-			color: '#40BAD9'
+			color: '#8DBD68',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -232,7 +276,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -241,7 +286,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:24},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HG862': {
 			code: 'HG862',
@@ -250,7 +296,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:5, D:0, HS:6, SL:1, C:6},
 			requisitos: ['HG861'],
-			color: ''
+			color: '#8DBD68',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -259,7 +306,58 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:22},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'EL142': {
+			code: 'EL142',
+			name: 'Tópicos Especiais em Ciências Sociais Aplicadas à Educação',
+			ementa: 'A disciplina aborda temas fundamentais da Educação a partir de aportes teóricos metodológicos das Ciências Sociais numa perspectiva interdisciplinar.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#50D940',
+			obligatory: false
+		},
+		'EL212': {
+			code: 'EL212',
+			name: 'Política Educacional: Organização da Educação Brasileira',
+			ementa: 'Estudo analítico das políticas educacionais no Brasil com destaque para: a política educacional no contexto das políticas públicas; organização dos sistemas de ensino considerando as peculiaridades nacionais e os contextos e legislação de ensino; organização da educação básica e do ensino superior.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#D94070',
+			obligatory: false
+		},
+		'EL485': {
+			code: 'EL485',
+			name: 'Filosofia e História da Educação',
+			ementa: 'Introdução à Filosofia e História da Educação, consideradas à luz de suas diferenças frente à Ciência e à Pedagogia: estudo e discussões das origens históricas da Filosofia e dos processos, narrativas e ideias que se relacionam com as configurações assumidas pela Educação no Brasil, principalmente em seu período de formação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#D940D1',
+			obligatory: false
+		},
+		'EL511': {
+			code: 'EL511',
+			name: 'Psicologia e Educação',
+			ementa: 'Fundamentos teóricos e contribuições da psicologia para o estudo e compreensão de questões relacionadas à Educação, considerando as possibilidades de atuação docente. Inserção em contextos educativos e análise do cotidiano escolar.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#5040D9',
+			obligatory: false
+		},
+		'EL683': {
+			code: 'EL683',
+			name: 'Escola e Cultura',
+			ementa: 'Dimensões da escola e da cultura na Pesquisa e no Conhecimento em Educação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#4060D9',
+			obligatory: false
 		}
 	}
 };

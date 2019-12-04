@@ -43,6 +43,14 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 4,
+			hasRestrictions: true,
+			subjects: ['F_602', 'F_789', 'F_856', 'F_885', 'F_887', 'F_888'],
+		},
+	},
+
 	subjects: {
 		'F_128': {
 			code: 'F_128',
@@ -51,7 +59,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#404FD9'
+			color: '#D9C940',
+			obligatory: true
 		},
 		'F_129': {
 			code: 'F_129',
@@ -60,7 +69,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#5ED940'
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'FM003': {
 			code: 'FM003',
@@ -69,7 +79,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D96E40'
+			color: '#D94040',
+			obligatory: true
 		},
 		'MA111': {
 			code: 'MA111',
@@ -78,7 +89,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#40D97D'
+			color: '#D96E40',
+			obligatory: true
 		},
 		'MA141': {
 			code: 'MA141',
@@ -87,7 +99,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#5E40D9'
+			color: '#407DD9',
+			obligatory: true
 		},
 		'MS149': {
 			code: 'MS149',
@@ -96,7 +109,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D99C40'
+			color: '#40D9AB',
+			obligatory: true
 		},
 		'F_228': {
 			code: 'F_228',
@@ -105,7 +119,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*F_128'],
-			color: ''
+			color: '#D9C940',
+			obligatory: true
 		},
 		'F_229': {
 			code: 'F_229',
@@ -114,7 +129,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_128', 'F_129'],
-			color: ''
+			color: '#B3858D',
+			obligatory: true
 		},
 		'MA211': {
 			code: 'MA211',
@@ -123,7 +139,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', '*MA141'],
-			color: ''
+			color: '#8D768D',
+			obligatory: true
 		},
 		'MA327': {
 			code: 'MA327',
@@ -132,7 +149,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*MA141'],
-			color: ''
+			color: '#407DD9',
+			obligatory: true
 		},
 		'MC102': {
 			code: 'MC102',
@@ -141,7 +159,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D94040'
+			color: '#40D97D',
+			obligatory: true
 		},
 		'F_328': {
 			code: 'F_328',
@@ -150,7 +169,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA111', 'MA141'],
-			color: ''
+			color: '#A69173',
+			obligatory: true
 		},
 		'F_329': {
 			code: 'F_329',
@@ -159,7 +179,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_129', 'MA111'],
-			color: ''
+			color: '#B3578D',
+			obligatory: true
 		},
 		'MA311': {
 			code: 'MA311',
@@ -168,7 +189,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['*MA211'],
-			color: ''
+			color: '#8D768D',
+			obligatory: true
 		},
 		'ME210': {
 			code: 'ME210',
@@ -177,7 +199,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MS149'],
-			color: ''
+			color: '#8DA476',
+			obligatory: true
 		},
 		'MS211': {
 			code: 'MS211',
@@ -186,7 +209,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MA141', 'MC102'],
-			color: ''
+			color: '#739787',
+			obligatory: true
 		},
 		'F_315': {
 			code: 'F_315',
@@ -195,7 +219,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA211'],
-			color: ''
+			color: '#B3A067',
+			obligatory: true
 		},
 		'F_428': {
 			code: 'F_428',
@@ -204,7 +229,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_328'],
-			color: ''
+			color: '#A69173',
+			obligatory: true
 		},
 		'F_429': {
 			code: 'F_429',
@@ -213,7 +239,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_329'],
-			color: ''
+			color: '#B3578D',
+			obligatory: true
 		},
 		'MA044': {
 			code: 'MA044',
@@ -222,7 +249,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MA141', 'MA211'],
-			color: ''
+			color: '#8D768D',
+			obligatory: true
 		},
 		'QG101': {
 			code: 'QG101',
@@ -231,7 +259,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#BAD940'
+			color: '#404FD9',
+			obligatory: true
 		},
 		'QG102': {
 			code: 'QG102',
@@ -240,7 +269,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#D940C9',
+			obligatory: true
 		},
 		'BS580': {
 			code: 'BS580',
@@ -249,7 +279,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_429'],
-			color: ''
+			color: '#B3578D',
+			obligatory: true
 		},
 		'F_502': {
 			code: 'F_502',
@@ -258,7 +289,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#40ABD9'
+			color: '#8CD940',
+			obligatory: true
 		},
 		'F_520': {
 			code: 'F_520',
@@ -267,7 +299,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D9409C'
+			color: '#5ED940',
+			obligatory: true
 		},
 		'F_540': {
 			code: 'F_540',
@@ -276,7 +309,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D9C940'
+			color: '#5E40D9',
+			obligatory: true
 		},
 		'F_589': {
 			code: 'F_589',
@@ -285,7 +319,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#8C40D9'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'BS681': {
 			code: 'BS681',
@@ -294,7 +329,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BS580'],
-			color: ''
+			color: '#B3578D',
+			obligatory: true
 		},
 		'F_320': {
 			code: 'F_320',
@@ -303,7 +339,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_228', 'MA211'],
-			color: ''
+			color: '#B3A067',
+			obligatory: true
 		},
 		'F_550': {
 			code: 'F_550',
@@ -312,7 +349,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_429', 'F_589'],
-			color: ''
+			color: '#7A98B3',
+			obligatory: true
 		},
 		'F_620': {
 			code: 'F_620',
@@ -321,7 +359,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_520'],
-			color: ''
+			color: '#5ED940',
+			obligatory: true
 		},
 		'F_689': {
 			code: 'F_689',
@@ -330,7 +369,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_589', 'MA327'],
-			color: ''
+			color: '#40ABD9',
+			obligatory: true
 		},
 		'F_604': {
 			code: 'F_604',
@@ -339,7 +379,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D9406E'
+			color: '#D9406E',
+			obligatory: true
 		},
 		'F_740': {
 			code: 'F_740',
@@ -348,7 +389,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#8CD940'
+			color: '#BA40D9',
+			obligatory: true
 		},
 		'F_752': {
 			code: 'F_752',
@@ -357,7 +399,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_520', 'F_589'],
-			color: ''
+			color: '#4FD98D',
+			obligatory: true
 		},
 		'F_758': {
 			code: 'F_758',
@@ -366,7 +409,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BS580', 'F_550'],
-			color: ''
+			color: '#9778A0',
+			obligatory: true
 		},
 		'F_790': {
 			code: 'F_790',
@@ -375,7 +419,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#407DD9'
+			color: '#40D94F',
+			obligatory: true
 		},
 		'F_837': {
 			code: 'F_837',
@@ -384,7 +429,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#40D94F'
+			color: '#40ABD9',
+			obligatory: true
 		},
 		'F_852': {
 			code: 'F_852',
@@ -393,7 +439,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_758'],
-			color: ''
+			color: '#9778A0',
+			obligatory: true
 		},
 		'F_853': {
 			code: 'F_853',
@@ -402,7 +449,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_758'],
-			color: ''
+			color: '#9778A0',
+			obligatory: true
 		},
 		'F_854': {
 			code: 'F_854',
@@ -411,7 +459,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_758'],
-			color: ''
+			color: '#9778A0',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -420,7 +469,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'MD760': {
 			code: 'MD760',
@@ -429,7 +479,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#BA40D9'
+			color: '#D9409C',
+			obligatory: true
 		},
 		'MD947': {
 			code: 'MD947',
@@ -438,7 +489,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:12, L:0, O:12, D:0, HS:24, SL:0, C:24},
 			requisitos: ['AA200'],
-			color: '#40D9AB'
+			color: '#BAD940',
+			obligatory: true
 		},
 		'MD948': {
 			code: 'MD948',
@@ -447,7 +499,68 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:12, L:0, O:12, D:0, HS:24, SL:0, C:24},
 			requisitos: ['AA200'],
-			color: '#D940C9'
+			color: '#D99C40',
+			obligatory: true
+		},
+		'F_602': {
+			code: 'F_602',
+			name: 'Eletromagnetismo II',
+			ementa: 'Equações de Maxwell. Propagação de ondas eletromagnéticas. Reflexão. Refração. Guias de onda. Radiação. Antenas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['F_502'],
+			color: '#8CD940',
+			obligatory: false
+		},
+		'F_789': {
+			code: 'F_789',
+			name: 'Mecânica Quântica II',
+			ementa: 'Forças centrais e o átomo de Hidrogênio. Teoria de Espalhamento de uma partícula por um potencial. Spinores na teoria quântica não-relativística. Adição de momentos angulares. Teoria de perturbação independente do tempo. Estruturas fina e hiperfina do átomo de hidrogênio. Teoria de perturbação dependente do tempo. Partículas idênticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['F_689'],
+			color: '#40ABD9',
+			obligatory: false
+		},
+		'F_856': {
+			code: 'F_856',
+			name: 'Biofotônica',
+			ementa: 'Óptica geométrica e instrumentos ópticos - microscópios. Guias de onda e fibras ópticas. Detectores de luz: fotomultiplicadores, APD, e câmeras CCD. Interação da luz com a matéria. Marcadores fluorescentes: proteínas e quantum dots. Funcionalização de interfaces. Espectroscopias de infravermelho e Raman. Óptica não linear. Biossensores fotônicos. Lasers. Cirurgias e terapias com laser. Visualizações fotônicas: OCT, NIR-DOT. Microscopias de fluorescência. Microscopias Multifotônicas. Microscopias Raman. Microscopias com resolução subdifração. Pinças ópticas e medidas biomecânicas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['F_589'],
+			color: '#40D9D9',
+			obligatory: false
+		},
+		'F_885': {
+			code: 'F_885',
+			name: 'Partículas Elementares e Campos',
+			ementa: 'Introdução histórica. Conteúdo de partículas elementares previstos no modelo padrão. Cinemática relativística. Interações fundamentais: bósons intermediários e vértices primitivos da QED, QCD e interações fracas. Teorias de Gauge. Unificação eletrofraca. O mecanismo de Higgs. O modelo padrão.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['F_689'],
+			color: '#40ABD9',
+			obligatory: false
+		},
+		'F_887': {
+			code: 'F_887',
+			name: 'Física Nuclear',
+			ementa: 'O átomo nuclear e o núcleo atômico. O modelo de gás de Fermi. O modelo de partícula independente. Aplicações do modelo de partícula independente. Núcleos com mais que um nucleon fora de camadas fechadas. Supercondutividade nuclear. O modelo coletivo. O modelo unificado. Aplicações do modelo unificado: vibrações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['F_689'],
+			color: '#40ABD9',
+			obligatory: false
+		},
+		'F_888': {
+			code: 'F_888',
+			name: 'Física do Estado Sólido',
+			ementa: 'O problema geral do sólido e suas aproximações. Movimento de caroços e movimento de elétrons: visão puramente conceitual da aproximação adiabática Born-Oppenheimer. Revisão de estatística quântica: distribuições de Fermi-Dirac, Bose-Einstein e aplicações. Moléculas: ligações e espectros moleculares. Estrutura cristalina e rede recíproca. Condutores, semicondutores, supercondutores. Propriedades magnéticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['F_689'],
+			color: '#40ABD9',
+			obligatory: false
 		}
 	}
 };

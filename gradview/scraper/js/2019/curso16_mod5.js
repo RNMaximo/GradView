@@ -35,6 +35,39 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 12,
+			hasRestrictions: true,
+			subjects: ['EL142', 'EL212', 'EL485', 'EL683'],
+		},
+		'elet-2': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['EP107', 'EP110', 'EP130', 'EP152', 'EP162', 'EP164', 'EP315', 'EP340', 'EP347', 'EP348', 'EP372', 'EP814', 'EP887'],
+		},
+		'elet-3': {
+			credits: 30,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-4': {
+			credits: 10,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-5': {
+			credits: 6,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-6': {
+			credits: 6,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'CE131': {
 			code: 'CE131',
@@ -43,7 +76,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D97640'
+			color: '#D0D940',
+			obligatory: true
 		},
 		'HZ141': {
 			code: 'HZ141',
@@ -52,7 +86,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: '',
-			color: '#4088D9'
+			color: '#7FD940',
+			obligatory: true
 		},
 		'HZ158': {
 			code: 'HZ158',
@@ -61,7 +96,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: '',
-			color: '#9AD940'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'HZ160': {
 			code: 'HZ160',
@@ -70,7 +106,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: '',
-			color: '#40D952'
+			color: '#D94091',
+			obligatory: true
 		},
 		'HZ248': {
 			code: 'HZ248',
@@ -79,7 +116,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['HZ141'],
-			color: ''
+			color: '#7FD940',
+			obligatory: true
 		},
 		'HZ258': {
 			code: 'HZ258',
@@ -88,7 +126,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: '',
-			color: '#D9AC40'
+			color: '#9AD940',
+			obligatory: true
 		},
 		'HZ260': {
 			code: 'HZ260',
@@ -97,7 +136,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['HZ160'],
-			color: ''
+			color: '#D94091',
+			obligatory: true
 		},
 		'ELET02': {
 			code: 'ELET02',
@@ -106,7 +146,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL105': {
 			code: 'EL105',
@@ -115,7 +156,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:4, D:0, HS:6, SL:2, C:6},
 			requisitos: '',
-			color: '#D94040'
+			color: '#D97640',
+			obligatory: true
 		},
 		'HZ345': {
 			code: 'HZ345',
@@ -124,7 +166,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['HZ141'],
-			color: ''
+			color: '#7FD940',
+			obligatory: true
 		},
 		'HZ358': {
 			code: 'HZ358',
@@ -133,7 +176,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: '',
-			color: '#64D940'
+			color: '#D9405B',
+			obligatory: true
 		},
 		'HZ360': {
 			code: 'HZ360',
@@ -142,7 +186,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['HZ260'],
-			color: ''
+			color: '#D94091',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -151,7 +196,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HZ379': {
 			code: 'HZ379',
@@ -160,7 +206,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#6440D9'
+			color: '#B540D9',
+			obligatory: true
 		},
 		'HZ431': {
 			code: 'HZ431',
@@ -169,7 +216,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['HZ141', 'HZ158', 'HZ160'],
-			color: ''
+			color: '#88A68E',
+			obligatory: true
 		},
 		'LA001': {
 			code: 'LA001',
@@ -178,7 +226,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D0D940'
+			color: '#49D940',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -187,7 +236,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL774': {
 			code: 'EL774',
@@ -196,7 +246,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['AA200', 'AA445'],
-			color: '#D94076'
+			color: '#64D940',
+			obligatory: true
 		},
 		'HZ369': {
 			code: 'HZ369',
@@ -205,7 +256,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:2, D:0, HS:8, SL:4, C:8},
 			requisitos: ['AA200'],
-			color: '#D940AC'
+			color: '#D9AC40',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -214,7 +266,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL874': {
 			code: 'EL874',
@@ -223,7 +276,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['EL774'],
-			color: ''
+			color: '#64D940',
+			obligatory: true
 		},
 		'HZ349': {
 			code: 'HZ349',
@@ -232,7 +286,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#40BED9'
+			color: '#40D952',
+			obligatory: true
 		},
 		'HZ631': {
 			code: 'HZ631',
@@ -241,7 +296,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#40D9BE'
+			color: '#D99140',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -250,7 +306,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CE730': {
 			code: 'CE730',
@@ -259,7 +316,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE131', 'HZ141', 'HZ158', 'HZ160'],
-			color: ''
+			color: '#9AB37B',
+			obligatory: true
 		},
 		'EL511': {
 			code: 'EL511',
@@ -268,7 +326,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D988'
+			color: '#D940C7',
+			obligatory: true
 		},
 		'HZ103': {
 			code: 'HZ103',
@@ -277,7 +336,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:2, C:8},
 			requisitos: ['AA450'],
-			color: '#D040D9'
+			color: '#B5D940',
+			obligatory: true
 		},
 		'HZ339': {
 			code: 'HZ339',
@@ -286,7 +346,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#9A40D9'
+			color: '#40D9BE',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -295,7 +356,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HZ104': {
 			code: 'HZ104',
@@ -304,7 +366,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:2, C:8},
 			requisitos: ['HZ103'],
-			color: ''
+			color: '#B5D940',
+			obligatory: true
 		},
 		'HZ359': {
 			code: 'HZ359',
@@ -313,7 +376,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:2, D:0, HS:8, SL:4, C:8},
 			requisitos: ['AA200'],
-			color: '#4052D9'
+			color: '#40D988',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -322,7 +386,178 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'EL142': {
+			code: 'EL142',
+			name: 'Tópicos Especiais em Ciências Sociais Aplicadas à Educação',
+			ementa: 'A disciplina aborda temas fundamentais da Educação a partir de aportes teóricos metodológicos das Ciências Sociais numa perspectiva interdisciplinar.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#7F40D9',
+			obligatory: false
+		},
+		'EL212': {
+			code: 'EL212',
+			name: 'Política Educacional: Organização da Educação Brasileira',
+			ementa: 'Estudo analítico das políticas educacionais no Brasil com destaque para: a política educacional no contexto das políticas públicas; organização dos sistemas de ensino considerando as peculiaridades nacionais e os contextos e legislação de ensino; organização da educação básica e do ensino superior.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#D94076',
+			obligatory: false
+		},
+		'EL485': {
+			code: 'EL485',
+			name: 'Filosofia e História da Educação',
+			ementa: 'Introdução à Filosofia e História da Educação, consideradas à luz de suas diferenças frente à Ciência e à Pedagogia: estudo e discussões das origens históricas da Filosofia e dos processos, narrativas e ideias que se relacionam com as configurações assumidas pela Educação no Brasil, principalmente em seu período de formação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#D940AC',
+			obligatory: false
+		},
+		'EL683': {
+			code: 'EL683',
+			name: 'Escola e Cultura',
+			ementa: 'Dimensões da escola e da cultura na Pesquisa e no Conhecimento em Educação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#9A40D9',
+			obligatory: false
+		},
+		'EP107': {
+			code: 'EP107',
+			name: 'Introdução à Pedagogia - Organização do Trabalho Pedagógico',
+			ementa: 'O objetivo das ciências da educação. O problema da unidade, especificidade e autonomia das ciências da educação. A educação como ponto de partida e de chegada dos estudos e das reflexões dos cientistas. A contribuição das ciências para a explicação e compreensão da educação. Contextualização histórica da Pedagogia no Brasil - o curso de Pedagogia da Unicamp.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#6440D9',
+			obligatory: false
+		},
+		'EP110': {
+			code: 'EP110',
+			name: 'História da Educação I',
+			ementa: 'Introdução à História da Educação. Bases epistemológicas, metodológicas e teóricas da História e História da Educação. Fundamentos da História e História da Educação e da pedagogia: na antiguidade, na medievalidade, na modernidade e na contemporaneidade geral e no Brasil.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40BED9',
+			obligatory: false
+		},
+		'EP130': {
+			code: 'EP130',
+			name: 'Filosofia da Educação I',
+			ementa: 'Introdução à filosofia mediante sua caracterização em face de outras formas de conhecimento. Estudo de pensadores antigos que contribuíram significativamente para a reflexão sobre problemas pedagógicos ou que forneceram os fundamentos filosóficos da educação ocidental, entre eles: Sócrates, os sofistas, Platão e Aristóteles.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D95B40',
+			obligatory: false
+		},
+		'EP152': {
+			code: 'EP152',
+			name: 'Didática - Teoria Pedagógica',
+			ementa: 'As características da instituição escolar no contexto socioeconômico cultural brasileiro: objetivos, finalidades, organização, política educacional, recursos humanos e materiais. As diferentes formas de ensino como planos de organização e processos de interação. Identificação e análise de estratégias de ensino, da natureza dos conteúdos e das formas de avaliação em consonância com as características da clientela escolar.',
+			semestre: 1,
+			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#40D9A3',
+			obligatory: false
+		},
+		'EP162': {
+			code: 'EP162',
+			name: 'Escola e Currículo',
+			ementa: 'História do Currículo, concepções de currículo, fundamentos filosóficos, sociológicos, históricos e culturais, teorias e práticas curriculares. Análise e compreensão da transformação do conhecimento, da educação e da escola na contemporaneidade.',
+			semestre: 1,
+			vector: {T:4, P:1, L:0, O:0, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#40A3D9',
+			obligatory: false
+		},
+		'EP164': {
+			code: 'EP164',
+			name: 'Organização do Trabalho Pedagógico e Gestão Escolar',
+			ementa: 'Fundamentos teóricos da Administração. Teorias da Administração e Gestão Educacional. Escola, Gestão e Projeto Político da escola. A organização do trabalho escolar: linguagem, tempo, espaço.',
+			semestre: 1,
+			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#4052D9',
+			obligatory: false
+		},
+		'EP315': {
+			code: 'EP315',
+			name: 'Pesquisa e Prática Pedagógica I',
+			ementa: 'Estudo de questões ligadas à educação e à escola, a partir das contribuições teóricas e da pesquisa em distintas áreas do conhecimento. Investigação e análise das práticas educacionais.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:1, C:2},
+			requisitos: '',
+			color: '#D040D9',
+			obligatory: false
+		},
+		'EP340': {
+			code: 'EP340',
+			name: 'Sociologia da Educação I',
+			ementa: 'Introduz os estudantes aos temas da Sociologia da Educação por intermédio de abordagem de autores clássicos - Karl Marx, Max Weber e Émile Durkheim - e dos seus novos enfoques. Propicia a compreensão das dimensões sociais da Educação, na sociedade contemporânea, a partir de categorias analíticas das principais teorias sociológicas. Analisa a relevância da educação nas relações sociais que engendram exploração, dominação e solidariedade.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#406DD9',
+			obligatory: false
+		},
+		'EP347': {
+			code: 'EP347',
+			name: 'Educação, Cultura e Linguagens',
+			ementa: 'Estudos sobre as diferentes linguagens verbais (fala e escrita), visuais (artes plásticas) e audiovisuais (cinema e televisão) que dão forma à Educação cultural e escolar,ao imaginário e à inteligência contemporâneas.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D94040',
+			obligatory: false
+		},
+		'EP348': {
+			code: 'EP348',
+			name: 'Educação Especial e Inclusão',
+			ementa: 'O acesso ao conhecimento e aos ambientes sociais e escolares de alunos com deficiência e altas habilidades, diante da responsabilidade de se garantir o direito à educação, como prescrição constitucional, no ensino básico e superior. A produção social da normalidade e da anormalidade. A constituição da educação especial e as propostas de escolarização das pessoas com deficiência, em diferentes momentos históricos.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#D9C740',
+			obligatory: false
+		},
+		'EP372': {
+			code: 'EP372',
+			name: 'Avaliação',
+			ementa: 'A disciplina toma a escola como objeto de estudo, do ponto de vista de sua organização do trabalho pedagógico; insere a avaliação nesse contexto e discute a função ideológica da escola e dos processos de avaliação. São examinados os vários níveis de avaliação - em sala de aula, institucional e de redes de ensino. Discutem-se novas abordagens para o trabalho pedagógico que permitam visualizar novas formas de avaliação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#4940D9',
+			obligatory: false
+		},
+		'EP814': {
+			code: 'EP814',
+			name: 'Seminário de Educação, Cultura e Artes',
+			ementa: 'Abordagem de temas que articulem a Arte, em suas diferentes linguagens (dança, música, teatro e artes visuais), e a Educação como produções culturais.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4088D9',
+			obligatory: false
+		},
+		'EP887': {
+			code: 'EP887',
+			name: 'Educação Não Formal',
+			ementa: 'A disciplina objetiva fornecer aos alunos uma visão teórico-prática sobre modos, formas e processos educacionais existentes na sociedade e que possa contribuir para a formação crítica do profissional da área da Educação, especialmente em campos que dizem respeito à formação para a cidadania do indivíduo e à atuação de grupos socioculturais.',
+			semestre: 1,
+			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#40D96D',
+			obligatory: false
 		}
 	}
 };

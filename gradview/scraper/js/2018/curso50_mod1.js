@@ -43,6 +43,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 4,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-2': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['QA851', 'QA910', 'QA920', 'QF573', 'QF851', 'QF930', 'QF940', 'QF953', 'QG960', 'QG970', 'QI851', 'QI940', 'QI950', 'QO851', 'QO920', 'QO930'],
+		},
+	},
+
 	subjects: {
 		'MA111': {
 			code: 'MA111',
@@ -51,7 +64,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#40D97D'
+			color: '#CB40D9',
+			obligatory: true
 		},
 		'MA141': {
 			code: 'MA141',
@@ -60,7 +74,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#5ED940'
+			color: '#40D95C',
+			obligatory: true
 		},
 		'QG108': {
 			code: 'QG108',
@@ -69,7 +84,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9409C'
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'QG362': {
 			code: 'QG362',
@@ -78,7 +94,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D99C40'
+			color: '#D99340',
+			obligatory: true
 		},
 		'F_128': {
 			code: 'F_128',
@@ -87,7 +104,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#BAD940'
+			color: '#A1D940',
+			obligatory: true
 		},
 		'F_129': {
 			code: 'F_129',
@@ -96,7 +114,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#5E40D9'
+			color: '#4ED940',
+			obligatory: true
 		},
 		'MA211': {
 			code: 'MA211',
@@ -105,7 +124,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', '*MA141'],
-			color: ''
+			color: '#868D9B',
+			obligatory: true
 		},
 		'QG109': {
 			code: 'QG109',
@@ -114,7 +134,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#407DD9'
+			color: '#D94069',
+			obligatory: true
 		},
 		'MA311': {
 			code: 'MA311',
@@ -123,7 +144,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['*MA211'],
-			color: ''
+			color: '#868D9B',
+			obligatory: true
 		},
 		'QA282': {
 			code: 'QA282',
@@ -132,7 +154,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:4, O:0, D:0, HS:8, SL:8, C:8},
 			requisitos: ['QG108', 'QG109'],
-			color: ''
+			color: '#8D78A1',
+			obligatory: true
 		},
 		'QI145': {
 			code: 'QI145',
@@ -141,7 +164,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: ['QG108'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'QO321': {
 			code: 'QO321',
@@ -150,7 +174,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QG108'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'QA381': {
 			code: 'QA381',
@@ -159,7 +184,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QA282'],
-			color: ''
+			color: '#8D78A1',
+			obligatory: true
 		},
 		'QA383': {
 			code: 'QA383',
@@ -168,7 +194,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QA282'],
-			color: ''
+			color: '#8D78A1',
+			obligatory: true
 		},
 		'QF431': {
 			code: 'QF431',
@@ -177,7 +204,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA211', 'QG108'],
-			color: ''
+			color: '#639EBA',
+			obligatory: true
 		},
 		'QI345': {
 			code: 'QI345',
@@ -186,7 +214,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: ['QI145'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'QO423': {
 			code: 'QO423',
@@ -195,7 +224,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QO321'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'QO521': {
 			code: 'QO521',
@@ -204,7 +234,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['QO321'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'F_328': {
 			code: 'F_328',
@@ -213,7 +244,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA111', 'MA141'],
-			color: ''
+			color: '#8FA67C',
+			obligatory: true
 		},
 		'QA481': {
 			code: 'QA481',
@@ -222,7 +254,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QA282'],
-			color: ''
+			color: '#8D78A1',
+			obligatory: true
 		},
 		'QA483': {
 			code: 'QA483',
@@ -231,7 +264,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QA282'],
-			color: ''
+			color: '#8D78A1',
+			obligatory: true
 		},
 		'QF531': {
 			code: 'QF531',
@@ -240,7 +274,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QF431'],
-			color: ''
+			color: '#639EBA',
+			obligatory: true
 		},
 		'QG464': {
 			code: 'QG464',
@@ -249,7 +284,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QG108', 'QG109'],
-			color: ''
+			color: '#8D78A1',
+			obligatory: true
 		},
 		'QI245': {
 			code: 'QI245',
@@ -258,7 +294,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QI145'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'QO424': {
 			code: 'QO424',
@@ -267,7 +304,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QO321'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'EQ481': {
 			code: 'EQ481',
@@ -276,7 +314,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*QF531'],
-			color: ''
+			color: '#639EBA',
+			obligatory: true
 		},
 		'QA583': {
 			code: 'QA583',
@@ -285,7 +324,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QA381', 'QA383', 'QA481', 'QA483'],
-			color: ''
+			color: '#8D78A1',
+			obligatory: true
 		},
 		'QA584': {
 			code: 'QA584',
@@ -294,7 +334,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:4, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['QA381', 'QA383', 'QA481', 'QA483'],
-			color: ''
+			color: '#8D78A1',
+			obligatory: true
 		},
 		'QG650': {
 			code: 'QG650',
@@ -303,7 +344,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:6, O:2, D:0, HS:8, SL:6, C:8},
 			requisitos: ['QI145', 'QO521'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'QO551': {
 			code: 'QO551',
@@ -312,7 +354,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QO521'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'EM312': {
 			code: 'EM312',
@@ -321,7 +364,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#D9BD40',
+			obligatory: true
 		},
 		'EQ582': {
 			code: 'EQ582',
@@ -330,7 +374,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EQ481'],
-			color: ''
+			color: '#639EBA',
+			obligatory: true
 		},
 		'QO620': {
 			code: 'QO620',
@@ -339,7 +384,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:5, O:2, D:0, HS:8, SL:6, C:8},
 			requisitos: ['QG650', 'QO423', 'QO424'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'TA918': {
 			code: 'TA918',
@@ -348,7 +394,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QO551'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -357,7 +404,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'QF530': {
 			code: 'QF530',
@@ -366,7 +414,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_328', '*MA311'],
-			color: ''
+			color: '#8B9A8C',
+			obligatory: true
 		},
 		'QF835': {
 			code: 'QF835',
@@ -375,7 +424,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EQ582'],
-			color: ''
+			color: '#639EBA',
+			obligatory: true
 		},
 		'QF952': {
 			code: 'QF952',
@@ -384,7 +434,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:6, O:2, D:0, HS:8, SL:6, C:8},
 			requisitos: ['*QF531'],
-			color: ''
+			color: '#639EBA',
+			obligatory: true
 		},
 		'QI545': {
 			code: 'QI545',
@@ -393,7 +444,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QI345'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'CE738': {
 			code: 'CE738',
@@ -402,7 +454,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94040'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'QA815': {
 			code: 'QA815',
@@ -411,7 +464,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QA282', '*QF531'],
-			color: ''
+			color: '#788BAE',
+			obligatory: true
 		},
 		'QF661': {
 			code: 'QF661',
@@ -420,7 +474,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*QF531', '*QO521'],
-			color: ''
+			color: '#52A7CA',
+			obligatory: true
 		},
 		'QI543': {
 			code: 'QI543',
@@ -429,7 +484,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:6, O:2, D:0, HS:8, SL:6, C:8},
 			requisitos: ['QG650', 'QI545'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'ELET09': {
 			code: 'ELET09',
@@ -438,7 +494,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'QF053': {
 			code: 'QF053',
@@ -447,7 +504,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EQ481'],
-			color: ''
+			color: '#639EBA',
+			obligatory: true
 		},
 		'QG080': {
 			code: 'QG080',
@@ -456,7 +514,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:8, D:0, HS:8, SL:0, C:8},
 			requisitos: ['AA475'],
-			color: '#BA40D9'
+			color: '#D94040',
+			obligatory: true
 		},
 		'ELET10': {
 			code: 'ELET10',
@@ -465,7 +524,168 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'QA851': {
+			code: 'QA851',
+			name: 'Validação de Métodos Analíticos',
+			ementa: 'Validação de métodos analíticos',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['QA584'],
+			color: '#8D78A1',
+			obligatory: false
+		},
+		'QA910': {
+			code: 'QA910',
+			name: 'Tópicos Especiais em Química Analítica I',
+			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#405CD9',
+			obligatory: false
+		},
+		'QA920': {
+			code: 'QA920',
+			name: 'Tópicos Especiais em Química Analítica XI',
+			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#7740D9',
+			obligatory: false
+		},
+		'QF573': {
+			code: 'QF573',
+			name: 'Introdução à Análise Térmica e Dinâmica de Materiais',
+			ementa: 'Introdução às técnicas térmicas e mecânicas de caracterização de materiais de maior relevância na atualidade.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['QG108', '*QF431'],
+			color: '#52A7CA',
+			obligatory: false
+		},
+		'QF851': {
+			code: 'QF851',
+			name: 'Quimiometria e Controle Multivariado de Processos Químicos',
+			ementa: 'O monitoramento do estado de um processo químico ao longo do tempo é muito importante pois o operador ao ser alertado quando o processo sofre qualquer alteração inesperada pode tomar, a tempo, as devidas providências.O objetivo dar uma introdução de como é feita a modelagem multivariada dos processos usando a Quimiometria e como se faz o acompanhamento e a otimização dos mesmos ao longo do tempo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4085D9',
+			obligatory: false
+		},
+		'QF930': {
+			code: 'QF930',
+			name: 'Tópicos Especiais em Físico-Química I',
+			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D940BD',
+			obligatory: false
+		},
+		'QF940': {
+			code: 'QF940',
+			name: 'Tópicos Especiais em Físico-Química XI',
+			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#4E40D9',
+			obligatory: false
+		},
+		'QF953': {
+			code: 'QF953',
+			name: 'Reologia e Processamento de Polímeros',
+			ementa: 'Classificação e descrição das principais técnicas de processamento. Comportamento reológico de polímeros.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['QF661'],
+			color: '#52A7CA',
+			obligatory: false
+		},
+		'QG960': {
+			code: 'QG960',
+			name: 'Tópicos Especiais em Química Geral I',
+			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40D9AF',
+			obligatory: false
+		},
+		'QG970': {
+			code: 'QG970',
+			name: 'Tópicos Especiais em Química Geral XI',
+			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:1, P:0, L:0, O:1, D:0, HS:2, SL:1, C:2},
+			requisitos: ['AA200'],
+			color: '#A140D9',
+			obligatory: false
+		},
+		'QI851': {
+			code: 'QI851',
+			name: 'Química Bioinorgânica',
+			ementa: 'Conceitos e definições em Química Bioinorgânica. Íons metálicos em sistemas biológicos. Elementos essenciais ao organismo humano (zinco, ferro, cobre e outros) e intoxicações por metais pesados (chumbo, mercúrio e cádmio). Complexos metálicos em medicina: planejamento, síntese e aplicações de metalofármacos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D94093',
+			obligatory: false
+		},
+		'QI940': {
+			code: 'QI940',
+			name: 'Tópicos Especiais em Química Inorgânica I',
+			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40D985',
+			obligatory: false
+		},
+		'QI950': {
+			code: 'QI950',
+			name: 'Tópicos Especiais em Química Inorgânica XI',
+			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D96940',
+			obligatory: false
+		},
+		'QO851': {
+			code: 'QO851',
+			name: 'Aplicação de Tecnologias em Química Orgânica Sintética',
+			ementa: 'Introdução. Química Verde. Sonoquímica. Irradiação Microondas. Química em Fluxo Contínuo. Mecanoquímica.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['QO321', '*QO521'],
+			color: '#40AFD9',
+			obligatory: false
+		},
+		'QO920': {
+			code: 'QO920',
+			name: 'Tópicos Especiais em Química Orgânica I',
+			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#CBD940',
+			obligatory: false
+		},
+		'QO930': {
+			code: 'QO930',
+			name: 'Tópicos Especiais em Química Orgânica XI',
+			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#77D940',
+			obligatory: false
 		}
 	}
 };

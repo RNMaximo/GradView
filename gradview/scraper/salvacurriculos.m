@@ -1,10 +1,10 @@
 slCharacterEncoding('UTF-8');
 load('disciplinas.mat');
 catlist = sprintf('const catalogueOptions = {');
-for ano=2020:2020
+for ano=2012:2020
     catlist = sprintf('%s\n\t"%d": {',catlist,ano);
     create(['js/' num2str(ano)]);
-    for i=[34:34]
+    for i=[1:200]
         disp(['Obtendo curso ' num2str(i)]);
         try
             curriculos = getcurriculo(ano,i,disciplinas{ano});
@@ -26,9 +26,10 @@ for ano=2020:2020
             end
             catlist = sprintf('%s\t\t\t]\n\t\t},',catlist);
 
-        catch error
-            disp(error.message);
-            disp(['Nao ha curso ' num2str(i)]);
+        catch ME
+            errorMessage = sprintf('Error in function %s() at line %d.\nError Message:\n%s', ...
+            ME.stack(1).name, ME.stack(1).line, ME.message);
+            fprintf(2, '%s\n', errorMessage);
         end
     end
     catlist(end)=[];

@@ -35,6 +35,24 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 24,
+			hasRestrictions: true,
+			subjects: ['CS001', 'CS041', 'CS042', 'CS043', 'CS044', 'CS045', 'CS046', 'CS047', 'CS060', 'CS061', 'CS062', 'CS063', 'CS064', 'CS065', 'CS066', 'CS067', 'CS068', 'CS069', 'CS070', 'CS071', 'CS072', 'CS073', 'CS074'],
+		},
+		'elet-2': {
+			credits: 34,
+			hasRestrictions: true,
+			subjects: ['AR130', 'CS006', 'CS007', 'CS008', 'CS009', 'CS011', 'CS014', 'CS015', 'CS017', 'CS018', 'CS019', 'CS020', 'CS021', 'CS024', 'CS025', 'CS026', 'CS027', 'CS028', 'CS029', 'CS030', 'CS031', 'CS032', 'CS033', 'CS034', 'CS035', 'CS036', 'CS037', 'CS038', 'CS048', 'CS049', 'CS054', 'CS055', 'CS059', 'CS305', 'CS504', 'CS505', 'CS506', 'CS507', 'CS800', 'CS801'],
+		},
+		'elet-3': {
+			credits: 12,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'CS100': {
 			code: 'CS100',
@@ -43,7 +61,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4075D9'
+			color: '#40D9AF',
+			obligatory: true
 		},
 		'CS102': {
 			code: 'CS102',
@@ -52,7 +71,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#AAD940'
+			color: '#D96440',
+			obligatory: true
 		},
 		'CS103': {
 			code: 'CS103',
@@ -61,7 +81,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94068'
+			color: '#405CD9',
+			obligatory: true
 		},
 		'CS104': {
 			code: 'CS104',
@@ -70,7 +91,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94090'
+			color: '#40D944',
+			obligatory: true
 		},
 		'CS106': {
 			code: 'CS106',
@@ -79,7 +101,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#5A40D9'
+			color: '#B340D9',
+			obligatory: true
 		},
 		'CS107': {
 			code: 'CS107',
@@ -88,7 +111,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940B7'
+			color: '#D94064',
+			obligatory: true
 		},
 		'MC001': {
 			code: 'MC001',
@@ -97,7 +121,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#8240D9'
+			color: '#40D3D9',
+			obligatory: true
 		},
 		'CS200': {
 			code: 'CS200',
@@ -106,7 +131,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#82D940'
+			color: '#D94093',
+			obligatory: true
 		},
 		'CS202': {
 			code: 'CS202',
@@ -115,7 +141,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D94D'
+			color: '#6040D9',
+			obligatory: true
 		},
 		'CS203': {
 			code: 'CS203',
@@ -124,7 +151,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CS102'],
-			color: ''
+			color: '#D96440',
+			obligatory: true
 		},
 		'CS204': {
 			code: 'CS204',
@@ -133,7 +161,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D99040'
+			color: '#D9C340',
+			obligatory: true
 		},
 		'CS205': {
 			code: 'CS205',
@@ -142,7 +171,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40C5D9'
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'CS206': {
 			code: 'CS206',
@@ -151,7 +181,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#5AD940'
+			color: '#D94C40',
+			obligatory: true
 		},
 		'CS039': {
 			code: 'CS039',
@@ -160,7 +191,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D975'
+			color: '#407FD9',
+			obligatory: true
 		},
 		'CS052': {
 			code: 'CS052',
@@ -169,7 +201,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CS102'],
-			color: ''
+			color: '#D96440',
+			obligatory: true
 		},
 		'CS300': {
 			code: 'CS300',
@@ -178,7 +211,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CS200'],
-			color: ''
+			color: '#D94093',
+			obligatory: true
 		},
 		'CS301': {
 			code: 'CS301',
@@ -187,7 +221,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D96840'
+			color: '#40A3D9',
+			obligatory: true
 		},
 		'CS302': {
 			code: 'CS302',
@@ -196,7 +231,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#409DD9'
+			color: '#40D97F',
+			obligatory: true
 		},
 		'CS303': {
 			code: 'CS303',
@@ -205,7 +241,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:1, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['CS203'],
-			color: ''
+			color: '#D96440',
+			obligatory: true
 		},
 		'CS304': {
 			code: 'CS304',
@@ -214,7 +251,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9B740'
+			color: '#D96F40',
+			obligatory: true
 		},
 		'CS040': {
 			code: 'CS040',
@@ -223,7 +261,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#404DD9'
+			color: '#40D9BB',
+			obligatory: true
 		},
 		'CS400': {
 			code: 'CS400',
@@ -232,7 +271,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:3, C:4},
 			requisitos: '',
-			color: '#40D99D'
+			color: '#D940C3',
+			obligatory: true
 		},
 		'CS401': {
 			code: 'CS401',
@@ -241,7 +281,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9C5'
+			color: '#D99340',
+			obligatory: true
 		},
 		'CS402': {
 			code: 'CS402',
@@ -250,7 +291,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CS102'],
-			color: ''
+			color: '#D96440',
+			obligatory: true
 		},
 		'CS404': {
 			code: 'CS404',
@@ -259,7 +301,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94040'
+			color: '#D9AB40',
+			obligatory: true
 		},
 		'CS405': {
 			code: 'CS405',
@@ -268,7 +311,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D2D940'
+			color: '#83D940',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -277,7 +321,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CS500': {
 			code: 'CS500',
@@ -286,7 +331,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D240D9'
+			color: '#D940CF',
+			obligatory: true
 		},
 		'CS508': {
 			code: 'CS508',
@@ -295,7 +341,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#AA40D9'
+			color: '#D95840',
+			obligatory: true
 		},
 		'CS601': {
 			code: 'CS601',
@@ -304,7 +351,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CS100'],
-			color: ''
+			color: '#40D9AF',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -313,7 +361,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -322,7 +371,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:20},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -331,7 +381,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:20},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -340,7 +391,638 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'AR130': {
+			code: 'AR130',
+			name: 'Arte e Produção',
+			ementa: 'Abordagens interdisciplinares sobre o processo de produção em arte. As relações entre a arte e os sistemas de difusão e exibição. Analisar as tendências contemporâneas na área de produção em artes visuais, artes cênicas, música erudita e popular, e no audiovisual.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9C7',
+			obligatory: false
+		},
+		'CS001': {
+			code: 'CS001',
+			name: 'Projeto em Fotografia',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham, individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção, conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores.',
+			semestre: 1,
+			vector: {T:0, P:6, L:0, O:0, D:0, HS:6, SL:6, C:6},
+			requisitos: ['AA200'],
+			color: '#48D940',
+			obligatory: false
+		},
+		'CS006': {
+			code: 'CS006',
+			name: 'Tópicos Especiais em Cinema I',
+			ementa: 'Propiciar abordagens temáticas e de gêneros diferenciadas em relação ao cinema; discussão e interpretação de filmografias fundamentais neste meio audiovisual. Dedica-se aos estudos de obras tanto quanto à realização de produtos cinematográficos.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40C7D9',
+			obligatory: false
+		},
+		'CS007': {
+			code: 'CS007',
+			name: 'Tópicos Especiais em Cinema II',
+			ementa: 'Propiciar abordagem temáticas e de gêneros diferenciadas em relação ao cinema; discussão e interpretação de filmografias fundamentais neste meio audiovisual. Dedica-se a estudos de obras tanto quanto à realização de produtos cinematográficos.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#77D940',
+			obligatory: false
+		},
+		'CS008': {
+			code: 'CS008',
+			name: 'Tópicos Especiais em Cinema Brasileiro I',
+			ementa: 'Proporcionar a reflexão sobre aspectos da cultura brasileira, por meio do discurso cinematográfico. Realizar recortes no imaginário produzido/refletido na produção cinematográfica, visando compreender suas relações com os processos histórico, social e político. Por meio dos filmes, explorar as questões que envolvem os conceitos de nacional, popular e as políticas de identidade nas representações audiovisuais. Discutir as relações entre cultura de massa, cultura de rede e sociedade.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#408BD9',
+			obligatory: false
+		},
+		'CS009': {
+			code: 'CS009',
+			name: 'Tópicos Especiais em Cinema Brasileiro II',
+			ementa: 'Proporcionar a reflexão sobre aspectos da cultura brasileira, por meio do discurso cinematográfico. Realizar recortes no imaginário produzido/refletido na produção cinematográfica, visando compreender suas relações com os processos histórico, social e político. Por meio dos filmes, explorar as questões que envolvem os conceitos de nacional, popular e as políticas de identidade nas representações audiovisuais. Discutir as relações entre cultura de massa, cultura de rede e sociedade.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#7740D9',
+			obligatory: false
+		},
+		'CS011': {
+			code: 'CS011',
+			name: 'Tópicos Especiais em Fotografia',
+			ementa: 'Propiciar abordagens de temáticas e de gêneros diferenciados em relação à fotografia. A questão autoral na fotografia; apresentação do trabalho de fotógrafos referenciais no conjunto da expressão fotográfica. Estudo do conjunto do trabalho de um fotógrafo ou de uma época específica da História da Fotografia. Aprofundamento técnico.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D98740',
+			obligatory: false
+		},
+		'CS014': {
+			code: 'CS014',
+			name: 'Tópicos Especiais em Internet/Multimídia',
+			ementa: 'Estudo do desenvolvimento de produtos para ambientes virtuais na Web. Integração das mídias e suas possíveis convergências. Desenvolvimento dos aplicativos de multimídia.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#8FD940',
+			obligatory: false
+		},
+		'CS015': {
+			code: 'CS015',
+			name: 'Tópicos Especiais em Midialogia I',
+			ementa: 'Analisar situações de configuração contemporânea das redes de comunicação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#BF40D9',
+			obligatory: false
+		},
+		'CS017': {
+			code: 'CS017',
+			name: 'Projeto de Iniciação Científica',
+			ementa: 'Destina-se ao desenvolvimento de projeto de Iniciação Científica com bolsa de agência de fomento.',
+			semestre: 1,
+			vector: {T:1, P:0, L:0, O:7, D:0, HS:8, SL:1, C:8},
+			requisitos: ['AA200'],
+			color: '#D9CF40',
+			obligatory: false
+		},
+		'CS018': {
+			code: 'CS018',
+			name: 'Arte e Tecnologia',
+			ementa: 'Nesta disciplina pretende-se traçar um panorama e fazer uma reflexão sobre as diferentes utilizações e manifestações artísticas possibilitadas pelas novas mídias audiovisuais.',
+			semestre: 1,
+			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#A7D940',
+			obligatory: false
+		},
+		'CS019': {
+			code: 'CS019',
+			name: 'Tópicos Especiais em Midialogia III',
+			ementa: 'Esta disciplina terá seu programa definido em função das pesquisas que se realizam no Departamento de Multimeios, Mídia e Comunicação e das discussões prévias entre alunos e professores.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9406F',
+			obligatory: false
+		},
+		'CS020': {
+			code: 'CS020',
+			name: 'Tópicos Especiais em Midialogia IV',
+			ementa: 'Esta disciplina terá seu programa definido em função das pesquisas que se realizam no Departamento de Multimeios, Mídia e Comunicação e das discussões prévias entre alunos e professores.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#BFD940',
+			obligatory: false
+		},
+		'CS021': {
+			code: 'CS021',
+			name: 'Tópicos Especiais em Fotografia II',
+			ementa: 'Propiciar abordagens de temáticas e de gêneros diferenciados em relação à fotografia. A questão autoral na fotografia; apresentação do trabalho de fotógrafos referenciais no conjunto da expressão fotográfica. Estudo do conjunto do trabalho de um fotógrafo ou de uma época específica da História da Fotografia. Aprofundamento técnico.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D94040',
+			obligatory: false
+		},
+		'CS024': {
+			code: 'CS024',
+			name: 'Tópicos Especiais em Internet/Multimídia II',
+			ementa: 'A empresa de televisão (mídia), os compromissos entre as atividades lucrativas e a geração da informação. Produto da televisão (mídia) e mercadoria da televisão (mídia). Mídia e informação no século XX. O papel das mídias corporativas, populares e comunitárias na construção da informação. Informação e mercado. Informação e Estado. As tecnologias da informação. Educação à distância e mídias emergentes.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#9BD940',
+			obligatory: false
+		},
+		'CS025': {
+			code: 'CS025',
+			name: 'Oficina de Produção Audiovisual',
+			ementa: 'Gestão das demandas operacionais e financeiras do produto audiovisual.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#B3D940',
+			obligatory: false
+		},
+		'CS026': {
+			code: 'CS026',
+			name: 'Oficina de Direção de Fotografia',
+			ementa: 'Projeto e realização da produção fotográfica dentro da obra audiovisual. Técnica, linguagem e projeto estético em direção de fotografia para imagem e som em movimento. A direção de fotografia e o audiovisual brasileiro.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4050D9',
+			obligatory: false
+		},
+		'CS027': {
+			code: 'CS027',
+			name: 'Oficina de Direção de Arte',
+			ementa: 'Disciplina oferecida de par com um projeto integrado. Projeto e realização de todos os elementos visuais da obra audiovisual.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D99F40',
+			obligatory: false
+		},
+		'CS028': {
+			code: 'CS028',
+			name: 'Tópicos Especiais em Midialogia III',
+			ementa: 'Esta disciplina terá seu programa definido em função das pesquisas que se realizam no Departamento de Multimeios, Mídia e Comunicação e das discussões prévias entre alunos e professores.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#CB40D9',
+			obligatory: false
+		},
+		'CS029': {
+			code: 'CS029',
+			name: 'Tópicos Especiais em Midialogia V',
+			ementa: 'Esta disciplina terá seu programa definido em função das pesquisas que se realizam no Departamento de Multimeios, Mídia e Comunicação e das discussões prévias entre alunos e professores.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
+			requisitos: ['AA200'],
+			color: '#40D9A3',
+			obligatory: false
+		},
+		'CS030': {
+			code: 'CS030',
+			name: 'Estudos Dirigidos II',
+			ementa: 'Conjunto de leituras, atividades e orientação correlato aos projetos de pesquisa em andamento, propostos pelos professores do curso.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D95C',
+			obligatory: false
+		},
+		'CS031': {
+			code: 'CS031',
+			name: 'Estudos Dirigidos I',
+			ementa: 'Conjunto de leituras, atividades e orientações correlato aos projetos de pesquisa em andamento, propostas pelos professores do curso.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4840D9',
+			obligatory: false
+		},
+		'CS032': {
+			code: 'CS032',
+			name: 'Monitoria',
+			ementa: 'Trabalho de Monitoria para auxiliar o docente responsável pela disciplina CS, na orientação de atividades didáticas, exercícios práticos e/ou em laboratório, leituras, seminários, pesquisas.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:1, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#40D967',
+			obligatory: false
+		},
+		'CS033': {
+			code: 'CS033',
+			name: 'Difusão Cultural e Tecnológica em Midialogia',
+			ementa: 'Seminários e/ou Palestras sobre temas culturais, conceituais, tecnológicos relativos à área das Mídias Audiovisuais.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#6BD940',
+			obligatory: false
+		},
+		'CS034': {
+			code: 'CS034',
+			name: 'Tópicos Especiais em Midialogia VI',
+			ementa: 'Esta disciplina terá seu programa definido em função das pesquisas que se realizam no Departamento de Multimeios, Mídia e Comunicação e das discussões prévias entre alunos e professores.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D98B',
+			obligatory: false
+		},
+		'CS035': {
+			code: 'CS035',
+			name: 'Tópicos Especiais em Midialogia VII',
+			ementa: 'Esta disciplina terá seu programa definido em função das pesquisas que se realizam no Departamento de Multimeios, Mídia e Comunicação e das discussões prévias entre alunos e professores.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D740D9',
+			obligatory: false
+		},
+		'CS036': {
+			code: 'CS036',
+			name: 'Tópicos Especiais em Midialogia VIII',
+			ementa: 'Esta disciplina terá seu programa definido em função das pesquisas que se realizam no Departamento de Multimeios, Mídia e Comunicação e das discussões prévias entre alunos e professores.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D9D3',
+			obligatory: false
+		},
+		'CS037': {
+			code: 'CS037',
+			name: 'Tópicos Especiais em Midialogia IX',
+			ementa: 'Esta disciplina terá seu programa definido em função das pesquisas que se realizam no Departamento de Multimeios, Mídia e Comunicação e das discussões prévias entre alunos e professores.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D7D940',
+			obligatory: false
+		},
+		'CS038': {
+			code: 'CS038',
+			name: 'Tópicos Especiais em Midialogia X',
+			ementa: 'Esta disciplina terá seu programa definido em função das pesquisas que se realizam no Departamento de Multimeios, Mídia e Comunicação e das discussões prévias entre alunos e professores.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D973',
+			obligatory: false
+		},
+		'CS041': {
+			code: 'CS041',
+			name: 'Projeto de Cinema I',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40BBD9',
+			obligatory: false
+		},
+		'CS042': {
+			code: 'CS042',
+			name: 'Projeto de Cinema II',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D97B40',
+			obligatory: false
+		},
+		'CS043': {
+			code: 'CS043',
+			name: 'Projetos Especiais',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores.',
+			semestre: 1,
+			vector: {T:0, P:6, L:0, O:0, D:0, HS:6, SL:6, C:6},
+			requisitos: '',
+			color: '#60D940',
+			obligatory: false
+		},
+		'CS044': {
+			code: 'CS044',
+			name: 'Projeto em Produção Sonora I',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#4044D9',
+			obligatory: false
+		},
+		'CS045': {
+			code: 'CS045',
+			name: 'Projeto em Produção Sonora II',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D94087',
+			obligatory: false
+		},
+		'CS046': {
+			code: 'CS046',
+			name: 'Projeto em TV e Vídeo I',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham, individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção, pós-produção, conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#CBD940',
+			obligatory: false
+		},
+		'CS047': {
+			code: 'CS047',
+			name: 'Projeto em TV e Vídeo II',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham, individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção, conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizads no DMM/IA e/ou discussões entre alunos e professores.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D997',
+			obligatory: false
+		},
+		'CS048': {
+			code: 'CS048',
+			name: 'Tópicos Especiais em Midialogia XI',
+			ementa: 'Esta disciplina terá seu programa definido em função das pesquisas que se realizam no Departamento de Multimeios, Mídia e Comunicação e das discussões prévias entre alunos e professores.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D940B7',
+			obligatory: false
+		},
+		'CS049': {
+			code: 'CS049',
+			name: 'Tópicos Especiais em Midialogia XII',
+			ementa: 'Esta disciplina terá seu programa definido em função das pesquisas que se realizam no Departamento de Multimeios, Mídia e Comunicação e das discussões prévias entre alunos e professores.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D950',
+			obligatory: false
+		},
+		'CS054': {
+			code: 'CS054',
+			name: 'Teleficção',
+			ementa: 'A televisão em sua dinâmica de programação necessita de um leque grande de formatos televisivos. Desde muito cedo a televisão incorporou e se adaptou as mais diversas artes e mídias narrativas: a literatura, o rádio, o cinema, o folhetim. Aos poucos desenvolveu determinados formatos de características ficcionais em sua grade de programação. A disciplina discute o papel da produção ficcional da televisão, à disposição do público.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9B740',
+			obligatory: false
+		},
+		'CS055': {
+			code: 'CS055',
+			name: 'Poéticas da Imagem',
+			ementa: 'O poético e a imagem planar; recodificação e intertextualidade; o projeto criativo e a imagem-máquina. Teorias da imagem: modernidade e pós-modernidade. Processos de produção de imagens técnicas e digitais. Visionamento e interpretação de imagens.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9407B',
+			obligatory: false
+		},
+		'CS059': {
+			code: 'CS059',
+			name: 'Documentário: História, Teoria e Análise',
+			ementa: 'Abordagem teórica e histórica sobre o desenvolvimento do filme documentário, nos contextos mundial e nacional. As fases e modalidades do documentário. O documentário e a ideia de vanguarda. A institucionalização do documentário. As revoluções do Cinema Direto e Cinema Verdade. O documentário no contexto do cinema moderno. Autoria e documentário. O documentário e a televisão. O papel do vídeo na linguagem e nas apropriações contemporâneas do formato. O documentário e as mídias digitais.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D94058',
+			obligatory: false
+		},
+		'CS060': {
+			code: 'CS060',
+			name: 'Projetos Especiais II',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores. A disciplina pode ser oferecida por 1 ou mais professores simultaneamente.',
+			semestre: 1,
+			vector: {T:0, P:6, L:0, O:0, D:0, HS:6, SL:6, C:6},
+			requisitos: ['AA200'],
+			color: '#6B40D9',
+			obligatory: false
+		},
+		'CS061': {
+			code: 'CS061',
+			name: 'Projetos Especiais III - I',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores. A disciplina pode ser oferecida por 1 ou mais professores simultaneamente.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D940AB',
+			obligatory: false
+		},
+		'CS062': {
+			code: 'CS062',
+			name: 'Projetos Especiais III - II',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores. A disciplina pode ser oferecida por 1 ou mais professores simultaneamente. A disciplina é um desdobramento da CS061.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['CS061'],
+			color: '#D940AB',
+			obligatory: false
+		},
+		'CS063': {
+			code: 'CS063',
+			name: 'Projetos Especiais IV - I',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores. A disciplina pode ser oferecida por 1 ou mais professores simultaneamente.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#4073D9',
+			obligatory: false
+		},
+		'CS064': {
+			code: 'CS064',
+			name: 'Projetos Especiais IV - II',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores. A disciplina pode ser oferecida por 1 ou mais professores simultaneamente. A disciplina é um desdobramento da CS063.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['CS063'],
+			color: '#4073D9',
+			obligatory: false
+		},
+		'CS065': {
+			code: 'CS065',
+			name: 'Projetos Integrados I - I',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores. A disciplina deve ser oferecida por 2 ou mais professores simultaneamente, integrando duas ou mais áreas.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D9409F',
+			obligatory: false
+		},
+		'CS066': {
+			code: 'CS066',
+			name: 'Projetos Integrados I - II',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores. A disciplina deve ser oferecida por 2 ou mais professores simultaneamente, integrando duas ou mais áreas. A disciplina é um desdobramento da CS065.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['CS065'],
+			color: '#D9409F',
+			obligatory: false
+		},
+		'CS067': {
+			code: 'CS067',
+			name: 'Projetos Integrados II - I',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores. A disciplina deve ser oferecida por 2 ou mais professores simultaneamente, integrando duas ou mais áreas.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#5440D9',
+			obligatory: false
+		},
+		'CS068': {
+			code: 'CS068',
+			name: 'Projetos Integrados II - II',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores. A disciplina deve ser oferecida por 2 ou mais professores simultaneamente, integrando duas ou mais áreas. A disciplina é um desdobramento da CS067.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['CS067'],
+			color: '#5440D9',
+			obligatory: false
+		},
+		'CS069': {
+			code: 'CS069',
+			name: 'Projetos Integrados III - I',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores. A disciplina deve ser oferecida por 2 ou mais professores simultaneamente, integrando duas ou mais áreas.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#9B40D9',
+			obligatory: false
+		},
+		'CS070': {
+			code: 'CS070',
+			name: 'Projetos Integrados III - II',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores. A disciplina deve ser oferecida por 2 ou mais professores simultaneamente, integrando duas ou mais áreas. A disciplina é um desdobramento da CS069.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['CS069'],
+			color: '#9B40D9',
+			obligatory: false
+		},
+		'CS071': {
+			code: 'CS071',
+			name: 'Projetos Integrados IV',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores. A disciplina deve ser oferecida por 2 ou mais professores simultaneamente, integrando duas ou mais áreas.',
+			semestre: 1,
+			vector: {T:0, P:6, L:0, O:0, D:0, HS:6, SL:6, C:6},
+			requisitos: ['AA200'],
+			color: '#54D940',
+			obligatory: false
+		},
+		'CS072': {
+			code: 'CS072',
+			name: 'Projetos Integrados V',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação nesta área - pré-produção, produção e pós-produção; conhecimento técnico e de planejamentos administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores. A disciplina deve ser oferecida por 2 ou mais professores simultaneamente, integrando duas ou mais áreas.',
+			semestre: 1,
+			vector: {T:0, P:6, L:0, O:0, D:0, HS:6, SL:6, C:6},
+			requisitos: ['AA200'],
+			color: '#4067D9',
+			obligatory: false
+		},
+		'CS073': {
+			code: 'CS073',
+			name: 'Projeto em Narrativas Digitais I',
+			ementa: 'Compreensão da integração das mídias digitais emergentes e suas possíveis convergências. Fundamentação voltada ao desenvolvimento de aplicativos para os suportes digitais. Análise e discussão das concepções de produção de narrativas digitais com as mídias emergentes. Avaliação das implicações cognitivas e no campo do conhecimento dessas tecnologias.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#4097D9',
+			obligatory: false
+		},
+		'CS074': {
+			code: 'CS074',
+			name: 'Projeto em Narrativas Digitais II',
+			ementa: 'Disciplina de caráter experimental. Os alunos formam equipes de trabalho e/ou desempenham, individualmente as funções de cada projeto. O curso possibilita vivência em um processo de criação utilizando os suportes digitais - pré produção, produção e pós-produção, conhecimento técnico e de planejamento administrativo, econômico e executivo. Seu programa é definido em função das pesquisas realizadas no DMM/IA e/ou discussões entre alunos e professores.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['CS073'],
+			color: '#4097D9',
+			obligatory: false
+		},
+		'CS305': {
+			code: 'CS305',
+			name: 'Redes Convergentes',
+			ementa: 'Fundamentos conceituais da convergência tecnológica digital. As questões técnicas e tecnológicas da convergência. As questões políticas, legislativas e mercadológicas na área de telecomunicações. Novos paradigmas de comunicação. O contexto educacional no Brasil e as tecnologias digitais.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['CS205'],
+			color: '#40AFD9',
+			obligatory: false
+		},
+		'CS504': {
+			code: 'CS504',
+			name: 'Realização Audiovisual I',
+			ementa: 'A disciplina oferece conteúdo voltado para os princípios da direção de produtos audiovisuais em cinema, TV, vídeo e novas mídias, com foco na ficção.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['CS039', 'CS040', 'CS203', 'CS303', 'CS402'],
+			color: '#9C8177',
+			obligatory: false
+		},
+		'CS505': {
+			code: 'CS505',
+			name: 'Realização Audiovisual II',
+			ementa: 'A disciplina oferece conteúdo voltado para os princípios da direção de produtos audiovisuais em cinema, TV, vídeo e novas mídias, com foco no documentário.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['CS504'],
+			color: '#9C8177',
+			obligatory: false
+		},
+		'CS506': {
+			code: 'CS506',
+			name: 'Direção de Atores',
+			ementa: 'Conceitos fundamentais de direção de atores para produtos audiovisuais (cinema e televisão). As singularidades da interpretação para o audiovisual. Atores, atrizes e câmeras. Os não-atores e o contingente na filmagem da ficção. Como compor um casting. Métodos de interpretação em produtos audiovisuais. Procedimentos de ensaios. Análises de interpretação em produtos audiovisuais.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#8F40D9',
+			obligatory: false
+		},
+		'CS507': {
+			code: 'CS507',
+			name: 'Narrativas Audiovisuais: Teorias, Análises e Processos',
+			ementa: 'Trata-se do estudo conceitual da narrativa voltado para sua manifestação nos produtos em mídias audiovisuais (cinema, televisão, vídeo e novas mídias), por meio de abordagens distintas. Os gêneros e os formatos narrativos e a expressão audiovisual. Narrativas clássicas, modernas e contemporâneas. Narrativas e os domínios das telas expandidas no contexto do digital. Narrativas, identidades e alteridades.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9404C',
+			obligatory: false
+		},
+		'CS800': {
+			code: 'CS800',
+			name: 'Estágio Supervisionado em Midialogia I',
+			ementa: 'Estágio supervisionado a ser cumprido pelo graduando em Comunicação Social na área de produção e/ou crítica cultural.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:6, D:0, HS:8, SL:2, C:8},
+			requisitos: ['AA200'],
+			color: '#A740D9',
+			obligatory: false
+		},
+		'CS801': {
+			code: 'CS801',
+			name: 'Estágio Supervisionado em Midialogia II',
+			ementa: 'Estágio supervisionado a ser cumprido pelo graduando em Comunicação Social na área de produção e/ou crítica cultural.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:10, D:0, HS:12, SL:2, C:12},
+			requisitos: ['AA200'],
+			color: '#8340D9',
+			obligatory: false
 		}
 	}
 };

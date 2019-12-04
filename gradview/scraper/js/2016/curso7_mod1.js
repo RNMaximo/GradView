@@ -35,6 +35,14 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: ,
+			hasRestrictions: true,
+			subjects: ['TL110', 'TL111', 'TL112', 'TL113', 'TL114', 'TL115', 'TL117', 'TL119', 'TL145', 'TL146', 'TL149', 'TL151', 'TL152', 'TL153', 'TL154', 'TL156', 'TL159', 'TL161', 'TL174', 'TL175', 'TL176', 'TL177', 'TL178', 'TL179', 'TL180', 'TL181', 'TL182', 'TL183', 'TL184', 'TL185', 'TL186', 'TL187', 'TL188', 'TL189'],
+		},
+	},
+
 	subjects: {
 		'HL121': {
 			code: 'HL121',
@@ -43,7 +51,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#8440D9'
+			color: '#D940C7',
+			obligatory: true
 		},
 		'HL127': {
 			code: 'HL127',
@@ -52,7 +61,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#C8D940'
+			color: '#40B3D9',
+			obligatory: true
 		},
 		'HL143': {
 			code: 'HL143',
@@ -61,7 +71,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#4084D9'
+			color: '#D94040',
+			obligatory: true
 		},
 		'LA104': {
 			code: 'LA104',
@@ -70,7 +81,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40A6D9'
+			color: '#63D940',
+			obligatory: true
 		},
 		'LG021': {
 			code: 'LG021',
@@ -79,7 +91,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D984'
+			color: '#40D959',
+			obligatory: true
 		},
 		'TL108': {
 			code: 'TL108',
@@ -88,7 +101,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#D9A640'
+			color: '#D9C740',
+			obligatory: true
 		},
 		'HL220': {
 			code: 'HL220',
@@ -97,7 +111,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#D9406D',
+			obligatory: true
 		},
 		'HL236': {
 			code: 'HL236',
@@ -106,7 +121,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#84D940'
+			color: '#D9405E',
+			obligatory: true
 		},
 		'LA204': {
 			code: 'LA204',
@@ -115,7 +131,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940A6'
+			color: '#7240D9',
+			obligatory: true
 		},
 		'LG022': {
 			code: 'LG022',
@@ -124,7 +141,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D940C8'
+			color: '#5440D9',
+			obligatory: true
 		},
 		'TL118': {
 			code: 'TL118',
@@ -133,7 +151,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D96240'
+			color: '#40D1D9',
+			obligatory: true
 		},
 		'TL222': {
 			code: 'TL222',
@@ -142,7 +161,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#62D940'
+			color: '#40D9C2',
+			obligatory: true
 		},
 		'ELET02': {
 			code: 'ELET02',
@@ -151,7 +171,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HL323': {
 			code: 'HL323',
@@ -160,7 +181,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D962'
+			color: '#D96D40',
+			obligatory: true
 		},
 		'LA303': {
 			code: 'LA303',
@@ -169,7 +191,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9A6'
+			color: '#D97C40',
+			obligatory: true
 		},
 		'LG023': {
 			code: 'LG023',
@@ -178,7 +201,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#A640D9'
+			color: '#40D968',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -187,7 +211,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:16},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HL422': {
 			code: 'HL422',
@@ -196,7 +221,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D98440'
+			color: '#9FD940',
+			obligatory: true
 		},
 		'LA403': {
 			code: 'LA403',
@@ -205,7 +231,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#6240D9'
+			color: '#40D986',
+			obligatory: true
 		},
 		'LG024': {
 			code: 'LG024',
@@ -214,7 +241,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D9C8'
+			color: '#40A4D9',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -223,7 +251,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:16},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HL135': {
 			code: 'HL135',
@@ -232,7 +261,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9C840'
+			color: '#D9407C',
+			obligatory: true
 		},
 		'LA001': {
 			code: 'LA001',
@@ -241,7 +271,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D940'
+			color: '#AED940',
+			obligatory: true
 		},
 		'LA504': {
 			code: 'LA504',
@@ -250,7 +281,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#A6D940'
+			color: '#D940D6',
+			obligatory: true
 		},
 		'LG025': {
 			code: 'LG025',
@@ -259,7 +291,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40C8D9'
+			color: '#40C2D9',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -268,7 +301,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:21},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HL245': {
 			code: 'HL245',
@@ -277,7 +311,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94084'
+			color: '#40D9B3',
+			obligatory: true
 		},
 		'LA712': {
 			code: 'LA712',
@@ -286,7 +321,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4062D9'
+			color: '#40D9A4',
+			obligatory: true
 		},
 		'LG026': {
 			code: 'LG026',
@@ -295,7 +331,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94062'
+			color: '#81D940',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -304,7 +341,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:23},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL774': {
 			code: 'EL774',
@@ -313,7 +351,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['AA200', 'AA445'],
-			color: '#D94040'
+			color: '#4077D9',
+			obligatory: true
 		},
 		'LG027': {
 			code: 'LG027',
@@ -322,7 +361,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#C840D9'
+			color: '#8140D9',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -331,7 +371,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:14},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL874': {
 			code: 'EL874',
@@ -340,7 +381,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['EL774'],
-			color: ''
+			color: '#4077D9',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -349,7 +391,348 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'TL110': {
+			code: 'TL110',
+			name: 'Textos em Teatro I',
+			ementa: 'Leitura e interpretação de textos teatrais selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4095D9',
+			obligatory: false
+		},
+		'TL111': {
+			code: 'TL111',
+			name: 'Textos em Teatro II',
+			ementa: 'Leitura e interpretação de textos teatrais selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#90D940',
+			obligatory: false
+		},
+		'TL112': {
+			code: 'TL112',
+			name: 'Textos em Poesia I',
+			ementa: 'Leitura e interpretação de textos poéticos selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9B840',
+			obligatory: false
+		},
+		'TL113': {
+			code: 'TL113',
+			name: 'Textos em Poesia II',
+			ementa: 'Leitura e interpretação de textos poéticos selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D940A9',
+			obligatory: false
+		},
+		'TL114': {
+			code: 'TL114',
+			name: 'Textos em Prosa de Ficção I',
+			ementa: 'Leitura e interpretação de textos de prosa ficcional selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#CC40D9',
+			obligatory: false
+		},
+		'TL115': {
+			code: 'TL115',
+			name: 'Textos em Prosa de Ficção II',
+			ementa: 'Leitura e interpretação de textos de prosa ficcional selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9D1',
+			obligatory: false
+		},
+		'TL117': {
+			code: 'TL117',
+			name: 'Textos em Prosa Não-Ficcional II',
+			ementa: 'Leitura e interpretação de textos de prosa não ficcional (ensaio, memórias, correspondência, diários, crônica e etc.) selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#AE40D9',
+			obligatory: false
+		},
+		'TL119': {
+			code: 'TL119',
+			name: 'Textos em Teoria, Crítica e História Literária II',
+			ementa: 'Leitura e interpretação de textos de teoria, crítica e historiografia literária selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D99A40',
+			obligatory: false
+		},
+		'TL145': {
+			code: 'TL145',
+			name: 'Tópicos X: Textos em Teatro III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9D640',
+			obligatory: false
+		},
+		'TL146': {
+			code: 'TL146',
+			name: 'Tópicos XI: Textos em Teatro IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9408B',
+			obligatory: false
+		},
+		'TL149': {
+			code: 'TL149',
+			name: 'Tópicos XII: Textos em Poesia III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#BDD940',
+			obligatory: false
+		},
+		'TL151': {
+			code: 'TL151',
+			name: 'Tópicos XIII: Textos em Poesia IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D94F40',
+			obligatory: false
+		},
+		'TL152': {
+			code: 'TL152',
+			name: 'Tópicos XIV: Textos em Prosa de Ficção III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4540D9',
+			obligatory: false
+		},
+		'TL153': {
+			code: 'TL153',
+			name: 'Tópicos XV: Textos em Prosa de Ficção IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#BD40D9',
+			obligatory: false
+		},
+		'TL154': {
+			code: 'TL154',
+			name: 'Tópicos XVI: Textos em Prosa Não-Ficcional III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#CCD940',
+			obligatory: false
+		},
+		'TL156': {
+			code: 'TL156',
+			name: 'Tópicos XVII: Textos em Prosa Não-Ficcional IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4086D9',
+			obligatory: false
+		},
+		'TL159': {
+			code: 'TL159',
+			name: 'Tópicos XVIII: Textos em Teoria, Crítica e História Literária III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#45D940',
+			obligatory: false
+		},
+		'TL161': {
+			code: 'TL161',
+			name: 'Tópicos XIX: Textos em Teoria, Crítica e História Literária IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9404F',
+			obligatory: false
+		},
+		'TL174': {
+			code: 'TL174',
+			name: 'Textos em Poesia V',
+			ementa: 'Leitura e interpretação de textos poéticos selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D94A',
+			obligatory: false
+		},
+		'TL175': {
+			code: 'TL175',
+			name: 'Textos em Poesia VI',
+			ementa: 'Leitura e interpretação de textos poéticos selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4059D9',
+			obligatory: false
+		},
+		'TL176': {
+			code: 'TL176',
+			name: 'Textos em Poesia VII',
+			ementa: 'Leitura e interpretação de textos poéticos selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#54D940',
+			obligatory: false
+		},
+		'TL177': {
+			code: 'TL177',
+			name: 'Textos em Poesia VIII',
+			ementa: 'Leitura e interpretação de textos poéticos selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#6340D9',
+			obligatory: false
+		},
+		'TL178': {
+			code: 'TL178',
+			name: 'Textos em Prosa de Ficção V',
+			ementa: 'Leitura e interpretação de textos de prosa ficcional selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D95E40',
+			obligatory: false
+		},
+		'TL179': {
+			code: 'TL179',
+			name: 'Textos em Prosa de Ficção VI',
+			ementa: 'Leitura e interpretação de textos de prosa ficcional selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9A940',
+			obligatory: false
+		},
+		'TL180': {
+			code: 'TL180',
+			name: 'Textos em Prosa de Ficção VII',
+			ementa: 'Leitura e interpretação de textos de prosa ficcional selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D995',
+			obligatory: false
+		},
+		'TL181': {
+			code: 'TL181',
+			name: 'Textos em Prosa de Ficção VIII',
+			ementa: 'Leitura e interpretação de textos de prosa ficcional selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D940B8',
+			obligatory: false
+		},
+		'TL182': {
+			code: 'TL182',
+			name: 'Textos em Prosa Não-Ficcional V',
+			ementa: 'Leitura e interpretação de textos de prosa não ficcional (ensaio, memórias, correspondência, diários, crônica e etc.) selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D977',
+			obligatory: false
+		},
+		'TL183': {
+			code: 'TL183',
+			name: 'Textos em Prosa Não-Ficcional VI',
+			ementa: 'Leitura e interpretação de textos de prosa não ficcional (ensaio, memórias, correspondência, diários, crônica e etc.) selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#9F40D9',
+			obligatory: false
+		},
+		'TL184': {
+			code: 'TL184',
+			name: 'Textos em Prosa Não-Ficcional VII',
+			ementa: 'Leitura e interpretação de textos de prosa não ficcional (ensaio, memórias, correspondência, diários, crônica e etc.) selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D98B40',
+			obligatory: false
+		},
+		'TL185': {
+			code: 'TL185',
+			name: 'Textos em Prosa Não-Ficcional VIII',
+			ementa: 'Leitura e interpretação de textos de prosa não ficcional (ensaio, memórias, correspondência, diários, crônica e etc.) selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4068D9',
+			obligatory: false
+		},
+		'TL186': {
+			code: 'TL186',
+			name: 'Textos em Teoria, Crítica e História Literária V',
+			ementa: 'Leitura e interpretação de textos de teoria, crítica e historiografia literária selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#404AD9',
+			obligatory: false
+		},
+		'TL187': {
+			code: 'TL187',
+			name: 'Textos em Teoria, Crítica e História Literária VI',
+			ementa: 'Leitura e interpretação de textos de teoria, crítica e historiografia literária selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#72D940',
+			obligatory: false
+		},
+		'TL188': {
+			code: 'TL188',
+			name: 'Textos em Teoria, Crítica e História Literária VII',
+			ementa: 'Leitura e interpretação de textos de teoria, crítica e historiografia literária selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9409A',
+			obligatory: false
+		},
+		'TL189': {
+			code: 'TL189',
+			name: 'Textos em Teoria, Crítica e História Literária VIII',
+			ementa: 'Leitura e interpretação de textos de teoria, crítica e historiografia literária selecionados de modo a constituir repertório formativo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#9040D9',
+			obligatory: false
 		}
 	}
 };

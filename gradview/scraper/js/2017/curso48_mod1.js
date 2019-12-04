@@ -51,6 +51,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['AM031', 'AR101', 'BE180', 'BT280', 'BT330', 'BT380', 'BT591', 'BT680', 'GE903', 'GF100', 'GF102', 'GF105', 'GF112', 'GF503', 'GF604', 'GF702', 'GF805', 'GN301', 'ML102'],
+		},
+		'elet-2': {
+			credits: 12,
+			hasRestrictions: true,
+			subjects: ['AU191', 'AU192', 'AU193', 'AU194', 'AU195', 'AU196', 'AU197', 'AU198', 'AU199', 'AU311', 'AU312', 'AU313', 'AU700', 'AU701', 'AU901', 'AU902', 'AU903', 'AU904', 'AU905', 'AU906', 'AU907', 'AU908', 'AU909', 'AU910', 'AU911', 'AU912', 'AU913', 'AU915', 'AU916', 'AU920', 'AU921', 'AU922', 'AU923', 'AU924', 'AU925'],
+		},
+	},
+
 	subjects: {
 		'AP111': {
 			code: 'AP111',
@@ -59,7 +72,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#7D40D9'
+			color: '#D9404A',
+			obligatory: true
 		},
 		'AP211': {
 			code: 'AP211',
@@ -68,7 +82,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#91D940'
+			color: '#40D983',
+			obligatory: true
 		},
 		'AU110': {
 			code: 'AU110',
@@ -77,7 +92,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D954'
+			color: '#8AD940',
+			obligatory: true
 		},
 		'AU221': {
 			code: 'AU221',
@@ -86,7 +102,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9A640'
+			color: '#D94068',
+			obligatory: true
 		},
 		'AU991': {
 			code: 'AU991',
@@ -95,7 +112,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
 			requisitos: '',
-			color: '#40D991'
+			color: '#D98640',
+			obligatory: true
 		},
 		'HH788': {
 			code: 'HH788',
@@ -104,7 +122,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#7DD940'
+			color: '#4097D9',
+			obligatory: true
 		},
 		'MS123': {
 			code: 'MS123',
@@ -113,7 +132,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D940'
+			color: '#D9405E',
+			obligatory: true
 		},
 		'AP112': {
 			code: 'AP112',
@@ -122,7 +142,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AP111', '*AP211'],
-			color: ''
+			color: '#8D8D67',
+			obligatory: true
 		},
 		'AP120': {
 			code: 'AP120',
@@ -131,7 +152,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#69D940'
+			color: '#40A1D9',
+			obligatory: true
 		},
 		'AU212': {
 			code: 'AU212',
@@ -140,7 +162,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AU221'],
-			color: ''
+			color: '#D94068',
+			obligatory: true
 		},
 		'AU223': {
 			code: 'AU223',
@@ -149,7 +172,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AU221'],
-			color: ''
+			color: '#D94068',
+			obligatory: true
 		},
 		'AU992': {
 			code: 'AU992',
@@ -158,7 +182,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
 			requisitos: '',
-			color: '#CF40D9'
+			color: '#40D98D',
+			obligatory: true
 		},
 		'HH804': {
 			code: 'HH804',
@@ -167,7 +192,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940CF'
+			color: '#D9407C',
+			obligatory: true
 		},
 		'AP115': {
 			code: 'AP115',
@@ -176,7 +202,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9CF40'
+			color: '#D940B9',
+			obligatory: true
 		},
 		'AU302': {
 			code: 'AU302',
@@ -185,7 +212,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*AU221'],
-			color: ''
+			color: '#D94068',
+			obligatory: true
 		},
 		'AU501': {
 			code: 'AU501',
@@ -194,7 +222,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*MS123'],
-			color: ''
+			color: '#D9405E',
+			obligatory: true
 		},
 		'AU601': {
 			code: 'AU601',
@@ -203,7 +232,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9A6'
+			color: '#40D946',
+			obligatory: true
 		},
 		'AU811': {
 			code: 'AU811',
@@ -212,7 +242,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4054D9'
+			color: '#D99B40',
+			obligatory: true
 		},
 		'AU993': {
 			code: 'AU993',
@@ -221,7 +252,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
 			requisitos: '',
-			color: '#D94040'
+			color: '#40D965',
+			obligatory: true
 		},
 		'HH789': {
 			code: 'HH789',
@@ -230,7 +262,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D94069'
+			color: '#40B5D9',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -239,7 +272,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'AP314': {
 			code: 'AP314',
@@ -248,7 +282,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#407DD9'
+			color: '#6BD940',
+			obligatory: true
 		},
 		'AU145': {
 			code: 'AU145',
@@ -257,7 +292,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:4, L:1, O:2, D:0, HS:8, SL:6, C:8},
 			requisitos: ['AA200'],
-			color: '#40CFD9'
+			color: '#40D9C0',
+			obligatory: true
 		},
 		'AU605': {
 			code: 'AU605',
@@ -266,7 +302,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#BAD940'
+			color: '#40D96F',
+			obligatory: true
 		},
 		'AU812': {
 			code: 'AU812',
@@ -275,7 +312,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU811'],
-			color: ''
+			color: '#D99B40',
+			obligatory: true
 		},
 		'AU994': {
 			code: 'AU994',
@@ -284,7 +322,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
 			requisitos: '',
-			color: '#D96940'
+			color: '#A8D940',
+			obligatory: true
 		},
 		'HH805': {
 			code: 'HH805',
@@ -293,7 +332,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#4091D9'
+			color: '#4D40D9',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -302,7 +342,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:2},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'AP213': {
 			code: 'AP213',
@@ -311,7 +352,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AP211'],
-			color: ''
+			color: '#40D983',
+			obligatory: true
 		},
 		'AU146': {
 			code: 'AU146',
@@ -320,7 +362,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:5, L:1, O:2, D:0, HS:10, SL:8, C:10},
 			requisitos: ['AA200'],
-			color: '#A640D9'
+			color: '#D9D740',
+			obligatory: true
 		},
 		'AU401': {
 			code: 'AU401',
@@ -329,7 +372,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*MS123'],
-			color: ''
+			color: '#D9405E',
+			obligatory: true
 		},
 		'AU609': {
 			code: 'AU609',
@@ -338,7 +382,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#40D9CF'
+			color: '#57D940',
+			obligatory: true
 		},
 		'AU817': {
 			code: 'AU817',
@@ -347,7 +392,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AU501'],
-			color: ''
+			color: '#D9405E',
+			obligatory: true
 		},
 		'AU995': {
 			code: 'AU995',
@@ -356,7 +402,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
 			requisitos: '',
-			color: '#D94091'
+			color: '#D940CD',
+			obligatory: true
 		},
 		'AP741': {
 			code: 'AP741',
@@ -365,7 +412,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU601'],
-			color: ''
+			color: '#40D946',
+			obligatory: true
 		},
 		'AU147': {
 			code: 'AU147',
@@ -374,7 +422,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:2, D:0, HS:8, SL:6, C:8},
 			requisitos: ['AA200'],
-			color: '#CFD940'
+			color: '#B240D9',
+			obligatory: true
 		},
 		'AU303': {
 			code: 'AU303',
@@ -383,7 +432,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#D94054'
+			color: '#4051D9',
+			obligatory: true
 		},
 		'AU402': {
 			code: 'AU402',
@@ -392,7 +442,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*AU401'],
-			color: ''
+			color: '#D9405E',
+			obligatory: true
 		},
 		'AU502': {
 			code: 'AU502',
@@ -401,7 +452,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*MS123'],
-			color: ''
+			color: '#D9405E',
+			obligatory: true
 		},
 		'AU613': {
 			code: 'AU613',
@@ -410,7 +462,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#9140D9'
+			color: '#D9A540',
+			obligatory: true
 		},
 		'AU996': {
 			code: 'AU996',
@@ -419,7 +472,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#D940C3',
+			obligatory: true
 		},
 		'AP742': {
 			code: 'AP742',
@@ -428,7 +482,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU601', '*AP741'],
-			color: ''
+			color: '#40D946',
+			obligatory: true
 		},
 		'AU144': {
 			code: 'AU144',
@@ -437,7 +492,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:5, L:0, O:4, D:0, HS:12, SL:8, C:12},
 			requisitos: ['AA200'],
-			color: '#D97D40'
+			color: '#D9CD40',
+			obligatory: true
 		},
 		'AU405': {
 			code: 'AU405',
@@ -446,7 +502,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU402'],
-			color: ''
+			color: '#D9405E',
+			obligatory: true
 		},
 		'AU997': {
 			code: 'AU997',
@@ -455,7 +512,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
 			requisitos: '',
-			color: '#40D969'
+			color: '#405BD9',
+			obligatory: true
 		},
 		'HH806': {
 			code: 'HH806',
@@ -464,7 +522,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D99140'
+			color: '#6B40D9',
+			obligatory: true
 		},
 		'AP216': {
 			code: 'AP216',
@@ -473,7 +532,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D97D'
+			color: '#C6D940',
+			obligatory: true
 		},
 		'AU148': {
 			code: 'AU148',
@@ -482,7 +542,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:2, D:0, HS:8, SL:6, C:8},
 			requisitos: ['AA200'],
-			color: '#40A6D9'
+			color: '#D94A40',
+			obligatory: true
 		},
 		'AU406': {
 			code: 'AU406',
@@ -491,7 +552,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU405'],
-			color: ''
+			color: '#D9405E',
+			obligatory: true
 		},
 		'AU504': {
 			code: 'AU504',
@@ -500,7 +562,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*AU502'],
-			color: ''
+			color: '#D9405E',
+			obligatory: true
 		},
 		'AU610': {
 			code: 'AU610',
@@ -509,7 +572,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:0, O:1, D:0, HS:2, SL:1, C:2},
 			requisitos: '',
-			color: '#A6D940'
+			color: '#40C0D9',
+			obligatory: true
 		},
 		'AU612': {
 			code: 'AU612',
@@ -518,7 +582,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:2, D:0, HS:5, SL:3, C:5},
 			requisitos: ['*AU601'],
-			color: ''
+			color: '#40D946',
+			obligatory: true
 		},
 		'AU998': {
 			code: 'AU998',
@@ -527,7 +592,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
 			requisitos: '',
-			color: '#D940A6'
+			color: '#408DD9',
+			obligatory: true
 		},
 		'AP217': {
 			code: 'AP217',
@@ -536,7 +602,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#5440D9'
+			color: '#D94072',
+			obligatory: true
 		},
 		'AU225': {
 			code: 'AU225',
@@ -545,7 +612,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200'],
-			color: '#4069D9'
+			color: '#7640D9',
+			obligatory: true
 		},
 		'AU404': {
 			code: 'AU404',
@@ -554,7 +622,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU402'],
-			color: ''
+			color: '#D9405E',
+			obligatory: true
 		},
 		'AU614': {
 			code: 'AU614',
@@ -563,7 +632,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU613'],
-			color: ''
+			color: '#D9A540',
+			obligatory: true
 		},
 		'AU814': {
 			code: 'AU814',
@@ -572,7 +642,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU812'],
-			color: ''
+			color: '#D99B40',
+			obligatory: true
 		},
 		'AU999': {
 			code: 'AU999',
@@ -581,7 +652,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
 			requisitos: '',
-			color: '#40D9BA'
+			color: '#40D9B5',
+			obligatory: true
 		},
 		'HH796': {
 			code: 'HH796',
@@ -590,7 +662,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#40BAD9'
+			color: '#40D9A1',
+			obligatory: true
 		},
 		'ELET09': {
 			code: 'ELET09',
@@ -599,7 +672,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'AU149': {
 			code: 'AU149',
@@ -608,7 +682,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:2, D:0, HS:8, SL:6, C:8},
 			requisitos: ['AA200'],
-			color: '#D9407D'
+			color: '#9440D9',
+			obligatory: true
 		},
 		'AU713': {
 			code: 'AU713',
@@ -617,7 +692,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#BA40D9'
+			color: '#D0D940',
+			obligatory: true
 		},
 		'AU815': {
 			code: 'AU815',
@@ -626,7 +702,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA450'],
-			color: '#D95440'
+			color: '#D95440',
+			obligatory: true
 		},
 		'AU816': {
 			code: 'AU816',
@@ -635,7 +712,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:2, D:2, HS:6, SL:2, C:4},
 			requisitos: ['AU502'],
-			color: ''
+			color: '#D9405E',
+			obligatory: true
 		},
 		'AU917': {
 			code: 'AU917',
@@ -644,7 +722,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AU814'],
-			color: ''
+			color: '#D99B40',
+			obligatory: true
 		},
 		'AU990': {
 			code: 'AU990',
@@ -653,7 +732,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
 			requisitos: '',
-			color: '#54D940'
+			color: '#D97C40',
+			obligatory: true
 		},
 		'AU001': {
 			code: 'AU001',
@@ -662,7 +742,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:6, D:0, HS:10, SL:4, C:10},
 			requisitos: ['AA200'],
-			color: '#6940D9'
+			color: '#D94054',
+			obligatory: true
 		},
 		'AU023': {
 			code: 'AU023',
@@ -671,7 +752,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#D940BA'
+			color: '#D9AF40',
+			obligatory: true
 		},
 		'ELET11': {
 			code: 'ELET11',
@@ -680,7 +762,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'AU020': {
 			code: 'AU020',
@@ -689,7 +772,548 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:10, D:0, HS:14, SL:4, C:14},
 			requisitos: ['AA200'],
-			color: '#D9BA40'
+			color: '#8A40D9',
+			obligatory: true
+		},
+		'AM031': {
+			code: 'AM031',
+			name: 'Trabalhos em Alfabetização Ambiental',
+			ementa: 'Esta disciplina pretende desenvolver trabalhos sob a Plataforma Lixo e Cidadania e do conceito de bacia Ambiental com alunos de graduação da UNICAMP.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:0, C:2},
+			requisitos: '',
+			color: '#D940AF',
+			obligatory: false
+		},
+		'AR101': {
+			code: 'AR101',
+			name: 'Fundamentos Filosóficos da Arte Educação',
+			ementa: 'O processo do conhecimento humano: vivências e significações. O conhecimento inteligível e o saber sensível. Linguagem e conhecimento conceitual (inteligível). Os signos estéticos como simbolização do saber sensível. A dimensão educacional da arte. Compreensão da História e dos desdobramentos sócio-filosóficos das ideias pedagógicas ao longo do tempo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
+			requisitos: '',
+			color: '#40D979',
+			obligatory: false
+		},
+		'AU191': {
+			code: 'AU191',
+			name: 'Teoria e Projeto: Ateliê Vertical 1',
+			ementa: 'Ateliê temático com equipes mistas transversalmente ao curso. Metodologia do processo de concepção e conceitos projetuais: partido, programa, humanização e sustentabilidade. Condicionantes do lugar, uso, tecnologias construtivas e contexto socioambiental na concepção do projeto de arquitetura aplicadas à prática projetual. Análise de projetos em relação ao meio e a paisagem: eixos, preexistências edificadas, comunidades e vegetação. Processo de projeto com instrumentos e ambientes colaborativos. Building Information Modeling. Metodologias e estratégias organizacionais para projetos integrados. Coordenação de projetos. Desenvolvimento de projetos de arquitetura de forma colaborativa utilizando recursos da tecnologia da informação e comunicação.',
+			semestre: 1,
+			vector: {T:1, P:5, L:0, O:0, D:0, HS:6, SL:6, C:6},
+			requisitos: '',
+			color: '#40D9AB',
+			obligatory: false
+		},
+		'AU192': {
+			code: 'AU192',
+			name: 'Teoria e Projeto: Ateliê Vertical 2',
+			ementa: 'Ateliê temático com equipes mistas transversalmente ao curso. Metodologia do processo de concepção e conceitos projetuais: partido, programa, humanização e sustentabilidade. Condicionantes do lugar, uso, tecnologias construtivas e contexto socioambiental na concepção do projeto de arquitetura aplicadas à prática projetual. Análise de projetos em relação ao meio e a paisagem: eixos, preexistências edificadas, comunidades e vegetação. Processo de projeto com instrumentos e ambientes colaborativos. Building Information Modeling. Metodologias e estratégias organizacionais para projetos integrados. Coordenação de projetos. Desenvolvimento de projetos de arquitetura de forma colaborativa utilizando recursos da tecnologia da informação e comunicação.',
+			semestre: 1,
+			vector: {T:1, P:5, L:0, O:0, D:0, HS:6, SL:6, C:6},
+			requisitos: '',
+			color: '#40D9CA',
+			obligatory: false
+		},
+		'AU193': {
+			code: 'AU193',
+			name: 'Teoria e Projeto: Ateliê Vertical 3',
+			ementa: 'Ateliê temático com equipes mistas transversalmente ao curso. Metodologia do processo de concepção e conceitos projetuais: partido, programa, humanização e sustentabilidade. Condicionantes do lugar, uso, tecnologias construtivas e contexto socioambiental na concepção do projeto de arquitetura aplicadas à prática projetual. Análise de projetos em relação ao meio e a paisagem: eixos, preexistências edificadas, comunidades e vegetação. Processo de projeto com instrumentos e ambientes colaborativos. Building Information Modeling. Metodologias e estratégias organizacionais para projetos integrados. Coordenação de projetos. Desenvolvimento de projetos de arquitetura de forma colaborativa utilizando recursos da tecnologia da informação e comunicação.',
+			semestre: 1,
+			vector: {T:1, P:5, L:0, O:0, D:0, HS:6, SL:6, C:6},
+			requisitos: '',
+			color: '#40D95B',
+			obligatory: false
+		},
+		'AU194': {
+			code: 'AU194',
+			name: 'Teoria e Projeto: Ateliê Vertical 4',
+			ementa: 'Ateliê temático com equipes mistas transversalmente ao curso. Metodologia do processo de concepção e conceitos projetuais: partido, programa, humanização e sustentabilidade. Condicionantes do lugar, uso, tecnologias construtivas e contexto socioambiental na concepção do projeto de arquitetura aplicadas à prática projetual. Análise de projetos em relação ao meio e a paisagem: eixos, preexistências edificadas, comunidades e vegetação. Processo de projeto com instrumentos e ambientes colaborativos. Building Information Modeling. Metodologias e estratégias organizacionais para projetos integrados. Coordenação de projetos. Desenvolvimento de projetos de arquitetura de forma colaborativa utilizando recursos da tecnologia da informação e comunicação.',
+			semestre: 1,
+			vector: {T:1, P:5, L:0, O:0, D:0, HS:6, SL:6, C:6},
+			requisitos: '',
+			color: '#D96840',
+			obligatory: false
+		},
+		'AU195': {
+			code: 'AU195',
+			name: 'Teoria e Projeto: Ateliê Vertical 5',
+			ementa: 'Ateliê temático com equipes mistas transversalmente ao curso. Metodologia do processo de concepção e conceitos projetuais: partido, programa, humanização e sustentabilidade. Condicionantes do lugar, uso, tecnologias construtivas e contexto socioambiental na concepção do projeto de arquitetura aplicadas à prática projetual. Análise de projetos em relação ao meio e a paisagem: eixos, preexistências edificadas, comunidades e vegetação. Processo de projeto com instrumentos e ambientes colaborativos. Building Information Modeling. Metodologias e estratégias organizacionais para projetos integrados. Coordenação de projetos. Desenvolvimento de projetos de arquitetura de forma colaborativa utilizando recursos da tecnologia da informação e comunicação.',
+			semestre: 1,
+			vector: {T:1, P:5, L:0, O:0, D:0, HS:6, SL:6, C:6},
+			requisitos: '',
+			color: '#4046D9',
+			obligatory: false
+		},
+		'AU196': {
+			code: 'AU196',
+			name: 'Teoria e Projeto: Ateliê Vertical 6',
+			ementa: 'Ateliê temático com equipes mistas transversalmente ao curso. Metodologia do processo de concepção e conceitos projetuais: partido, programa, humanização e sustentabilidade. Condicionantes do lugar, uso, tecnologias construtivas e contexto socioambiental na concepção do projeto de arquitetura aplicadas à prática projetual. Análise de projetos em relação ao meio e a paisagem: eixos, preexistências edificadas, comunidades e vegetação. Processo de projeto com instrumentos e ambientes colaborativos. Building Information Modeling. Metodologias e estratégias organizacionais para projetos integrados. Coordenação de projetos. Desenvolvimento de projetos de arquitetura de forma colaborativa utilizando recursos da tecnologia da informação e comunicação.',
+			semestre: 1,
+			vector: {T:1, P:5, L:0, O:0, D:0, HS:6, SL:6, C:6},
+			requisitos: '',
+			color: '#D9C340',
+			obligatory: false
+		},
+		'AU197': {
+			code: 'AU197',
+			name: 'Teoria e Projeto: Ateliê Vertical 7',
+			ementa: 'Ateliê temático com equipes mistas transversalmente ao curso. Metodologia do processo de concepção e conceitos projetuais: partido, programa, humanização e sustentabilidade. Condicionantes do lugar, uso, tecnologias construtivas e contexto socioambiental na concepção do projeto de arquitetura aplicadas à prática projetual. Análise de projetos em relação ao meio e a paisagem: eixos, preexistências edificadas, comunidades e vegetação. Processo de projeto com instrumentos e ambientes colaborativos. Building Information Modeling. Metodologias e estratégias organizacionais para projetos integrados. Coordenação de projetos. Desenvolvimento de projetos de arquitetura de forma colaborativa utilizando recursos da tecnologia da informação e comunicação.',
+			semestre: 1,
+			vector: {T:1, P:5, L:0, O:0, D:0, HS:6, SL:6, C:6},
+			requisitos: '',
+			color: '#D94086',
+			obligatory: false
+		},
+		'AU198': {
+			code: 'AU198',
+			name: 'Teoria e Projeto: Ateliê Vertical 8',
+			ementa: 'Ateliê temático com equipes mistas transversalmente ao curso. Metodologia do processo de concepção e conceitos projetuais: partido, programa, humanização e sustentabilidade. Condicionantes do lugar, uso, tecnologias construtivas e contexto socioambiental na concepção do projeto de arquitetura aplicadas à prática projetual. Análise de projetos em relação ao meio e a paisagem: eixos, preexistências edificadas, comunidades e vegetação. Processo de projeto com instrumentos e ambientes colaborativos. Building Information Modeling. Metodologias e estratégias organizacionais para projetos integrados. Coordenação de projetos. Desenvolvimento de projetos de arquitetura de forma colaborativa utilizando recursos da tecnologia da informação e comunicação.',
+			semestre: 1,
+			vector: {T:1, P:5, L:0, O:0, D:0, HS:6, SL:6, C:6},
+			requisitos: '',
+			color: '#D97240',
+			obligatory: false
+		},
+		'AU199': {
+			code: 'AU199',
+			name: 'Teoria e Projeto: Ateliê Vertical 9',
+			ementa: 'Ateliê temático com equipes mistas transversalmente ao curso. Metodologia do processo de concepção e conceitos projetuais: partido, programa, humanização e sustentabilidade. Condicionantes do lugar, uso, tecnologias construtivas e contexto socioambiental na concepção do projeto de arquitetura aplicadas à prática projetual. Análise de projetos em relação ao meio e a paisagem: eixos, preexistências edificadas, comunidades e vegetação. Processo de projeto com instrumentos e ambientes colaborativos. Building Information Modeling. Metodologias e estratégias organizacionais para projetos integrados. Coordenação de projetos. Desenvolvimento de projetos de arquitetura de forma colaborativa utilizando recursos da tecnologia da informação e comunicação.',
+			semestre: 1,
+			vector: {T:1, P:5, L:0, O:0, D:0, HS:6, SL:6, C:6},
+			requisitos: '',
+			color: '#9E40D9',
+			obligatory: false
+		},
+		'AU311': {
+			code: 'AU311',
+			name: 'Informática Aplicada I: Introdução',
+			ementa: 'Laboratório de microinformática. Introdução à informática: equipamentos e sistemas operacionais. Utilização de editores de desenho e de imagens. Utilização de sistemas integrados para escritório: editor de texto, planilha eletrônica e editor de apresentações. Introdução à Internet.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#9ED940',
+			obligatory: false
+		},
+		'AU312': {
+			code: 'AU312',
+			name: 'Informática Aplicada II: Planos e Volumes',
+			ementa: 'Composição e articulação de formas, superfícies e volumes. Aplicação de softwares específicos, editores de imagens e modeladores de superfícies e sólidos, animação e multimídia.',
+			semestre: 1,
+			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*AU303'],
+			color: '#4051D9',
+			obligatory: false
+		},
+		'AU313': {
+			code: 'AU313',
+			name: 'Informática Aplicada III: CADD',
+			ementa: 'Desenho e projeto em 2D (plantas baixas) e 3D (maquetes virtuais). Distribuição e organização do desenho em níveis de informação. Blocos de bibliotecas. Visualização em 3D. Impressão.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AU312', '*AU212'],
+			color: '#8D49A1',
+			obligatory: false
+		},
+		'AU700': {
+			code: 'AU700',
+			name: 'Eficiência Energética no Projeto e na Construção',
+			ementa: 'O consumo de energia no setor de edificações. Bioclimatologia, eficiência no setor residencial. Eficiência no setor comercial e em edifícios de serviços e públicos. Legislação brasileira. O PROCEL. Avaliação de eficiência energética no projeto. Método de cálculo da eficiência, sistemas de iluminação, sistemas de condicionamento de ar, envoltória. Simulação.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40ABD9',
+			obligatory: false
+		},
+		'AU701': {
+			code: 'AU701',
+			name: 'Arquitetura Sustentável: Projeto e Construção',
+			ementa: 'Desenvolvimento sustentável. Agenda 21 para a Construção sustentável. Projeto e arquitetura sustentável. Construção sustentável. Tecnologias para a sustentabilidade. Análise de ciclo de vida. Indicadores de sustentabilidade. Metodologias para avaliação ambiental e certificação verde de produtos e edifícios. Avaliação da sustentabilidade de edifícios. Apresentação e discussão de casos de referência. Aplicações em estudo de caso e exercícios de projeto.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: ['AA200'],
+			color: '#6140D9',
+			obligatory: false
+		},
+		'AU901': {
+			code: 'AU901',
+			name: 'Sistema de Informação Geográfica Aplicado ao Urbanismo',
+			ementa: 'Introdução ao Sistema de Informação Geográfica. Definição, Histórico, Aplicações e Potenciais usuários. A Arquitetura de Sistemas de Informação Geográfica e os Dados Geográficos: Aquisição, armazenamento, estruturação, manipulação e consulta. Análise, apresentação e gerenciamento. Operações de Análise Geográfica e as experiências na implantação e uso de SIG nas Organizações.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AU223', '*AU601'],
+			color: '#8D8D57',
+			obligatory: false
+		},
+		'AU902': {
+			code: 'AU902',
+			name: 'Geoprocessamento Aplicado à Arquitetura e Engenharia Civil',
+			ementa: 'Conceitos Básicos em Geoprocessamento: tipos de dados e estrutura de armazenamento. Cartografia básica para Geoprocessamento. Entendimento e Modelagem de dados de Arquitetura e Engenharia para uso em geoprocessamento. A Estrutura dos dados Geográficos para uso em ambiente Urbano e as Operações básicas de Análise Territorial com Geoprocessamento. Experiências de uso do Geoprocessamento em organismos que elaboram análise espacial.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#76D940',
+			obligatory: false
+		},
+		'AU903': {
+			code: 'AU903',
+			name: 'Seminários e Arquitetura Contemporânea',
+			ementa: 'Panorama da produção contemporânea da Arquitetura e do Urbanismo, a partir da 2ª Guerra Mundial até os dias atuais e os debates culturais suscitados por esta produção, com destaque para a questão da pós-modernidade e o pluralismo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D4D9',
+			obligatory: false
+		},
+		'AU904': {
+			code: 'AU904',
+			name: 'CAD Aplicado ao Projeto de Arquitetura',
+			ementa: 'Abordagem projetual em ferramenta de CAD para o desenvolvimento de projetos complexos. Aplicação de padrão de nomenclatura de diretórios, arquivos e layers. Integração de projetos em CAD.',
+			semestre: 1,
+			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200', 'AU302'],
+			color: '#D94068',
+			obligatory: false
+		},
+		'AU905': {
+			code: 'AU905',
+			name: 'Saneamento Ambiental e Saúde Pública',
+			ementa: 'Fundamentos de Saneamento e de Saúde Pública. Qualidade socioambiental do meio. Impactos Ambientais dos processos urbanos. Legislação Pertinente. Estudo de Caso.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA440'],
+			color: '#D95E40',
+			obligatory: false
+		},
+		'AU906': {
+			code: 'AU906',
+			name: 'Gestão Ambiental por Bacias',
+			ementa: 'Fundamentos de planejamento ambiental e gestão pública. Legislação pertinente. Processos participativos. Representação social/percepção. Manejo urbano de recursos naturais. Serviços ambientais. Estudo de Caso.',
+			semestre: 1,
+			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: ['AA440'],
+			color: '#A840D9',
+			obligatory: false
+		},
+		'AU907': {
+			code: 'AU907',
+			name: 'Teoria e História da Conservação e Restauração',
+			ementa: 'Estudo das teorias relativas às justificativas e transformações dos critérios para preservação dos monumentos arquitetônicos e bens culturais ao longo da história através da análise de seus principais autores e tendências.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#BCD940',
+			obligatory: false
+		},
+		'AU908': {
+			code: 'AU908',
+			name: 'Introdução à Programação em Arquitetura',
+			ementa: 'Introdução à programação em ambiente CAD. Conceitos de algoritmo, script, macro, variável (tipo e declaração), vetor, procedimento, sub-rotina, função, condicional, estruturas de repetição, interface gráfica, entrada de dados, linguagem orientada a objetos, classe, método, propriedade, instanciamento. Usos da programação, da automoção de tarefas repetitivas à geração exploratória de formas. Desenvolvimento de um programa em um ambiente CAD.',
+			semestre: 1,
+			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AU302'],
+			color: '#D94068',
+			obligatory: false
+		},
+		'AU909': {
+			code: 'AU909',
+			name: 'Modelos no Estudo de Formas Tridimensionais',
+			ementa: 'Noções teóricas e práticas para estudos de formas e composições geométricas. Técnicas para o pensar por modelos virtuais e físicos.',
+			semestre: 1,
+			vector: {T:1, P:0, L:3, O:0, D:1, HS:5, SL:4, C:4},
+			requisitos: ['AU302'],
+			color: '#D94068',
+			obligatory: false
+		},
+		'AU910': {
+			code: 'AU910',
+			name: 'Prototipagem e Fabricação Digital',
+			ementa: 'Conceitos de modelo, maquete e protótipo. Conceitos de prototipagem rápida, ferramental rápido e manufatura rápida. Tecnologias de materialização digital: sistemas aditivos, subtrativos e formativos. Tecnologias de digitalização 3D. Exemplos de aplicação: maquetes arquitetônicas, protótipos funcionais, engenharia reversa, formas para concreto, mobiliário e elementos construtivos. Desenvolvimento de um exercício de projeto e produção de um protótipo.',
+			semestre: 1,
+			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AU303'],
+			color: '#4051D9',
+			obligatory: false
+		},
+		'AU911': {
+			code: 'AU911',
+			name: 'Integração de Projeto em CAD 4D',
+			ementa: 'Moldagem tridimensional de maquete eletrônica arquitetônica e de sistemas estruturais. Compatibilização tridimensional do projeto arquitetônico estrutural. Estudos de colisão. Simulação da construção.',
+			semestre: 1,
+			vector: {T:0, P:0, L:2, O:0, D:1, HS:3, SL:2, C:2},
+			requisitos: '',
+			color: '#4083D9',
+			obligatory: false
+		},
+		'AU912': {
+			code: 'AU912',
+			name: 'Teoria e Crítica na Arquitetura Contemporânea',
+			ementa: 'Teoria e crítica na arquitetura contemporânea. Análise crítica de projetos de arquitetura. Arquitetura e cultura. Filosofia e arquitetura. Lógica. Desconstrutivismo. Teoria do projeto. Crítica tipológica. Conceito de espaço. Arquitetura contemporânea nacional e internacional.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#406FD9',
+			obligatory: false
+		},
+		'AU913': {
+			code: 'AU913',
+			name: 'Eficiência Energética em Edificações',
+			ementa: 'Panorama energético nacional e mundial. Evolução da oferta e da demanda de energia no Brasil. Tendências atuais na área de conservação de energia. O consumo no setor de edificações. Variáveis climáticas, variáveis humanas e arquitetônicas. Bioclimatologia, eficiência no setor residencial. Eficiência no setor comercial e em edifícios de serviços e públicos. Legislação brasileira. O PROCEL. Método de cálculo da eficiência, sistemas de iluminação, sistemas de condicionamento de ar, envoltória. Simulação, certificação.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4079D9',
+			obligatory: false
+		},
+		'AU915': {
+			code: 'AU915',
+			name: 'Laboratório de Restauro I: A Documentação do Patrimônio Arquitetônico',
+			ementa: 'Associando aulas teóricas à prática de campo, a disciplina aborda métodos de análise e documentação científica de edifícios e sítios de valor histórico e cultural. Em acordo com as prerrogativas preservacionistas internacionais de restauro arquitetônico busca fornecer aos estudantes instrumentação conceitual e técnica necessária à abordagem dos problemas conservativos enfrentados no âmbito do projeto sobre o pré-construído. O enfoque principal do curso é o registro documental das características formais e estado de conservação de arquiteturas históricas a partir de estudos realizados <em>in situ</em>.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D9B940',
+			obligatory: false
+		},
+		'AU916': {
+			code: 'AU916',
+			name: 'Análise de Projetos de Arquitetura e Urbanismo',
+			ementa: 'Análise de projetos como método de aprendizado em arquitetura e urbanismo. A codificação do projeto e o papel da planta, do corte e do croqui como instrumentos de compreensão e concepção do espaço. Estudo da linguagem do projeto arquitetônico. Análise de elementos de arquitetura, composição formal, estrutura funcional, técnica e de conforto em projetos paradigmáticos modernos e contemporâneos.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#80D940',
+			obligatory: false
+		},
+		'AU920': {
+			code: 'AU920',
+			name: 'Tópicos Integrados AU-EC',
+			ementa: 'Disciplina de tópicos integrados e viagens de estudo.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#5740D9',
+			obligatory: false
+		},
+		'AU921': {
+			code: 'AU921',
+			name: 'Tópicos Integrados AU-EC',
+			ementa: 'Disciplina de tópicos integrados e viagens de estudo.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#BC40D9',
+			obligatory: false
+		},
+		'AU922': {
+			code: 'AU922',
+			name: 'Tópicos Integrados AU-EC',
+			ementa: 'Disciplina de tópicos integrados e viagens de estudo.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#4340D9',
+			obligatory: false
+		},
+		'AU923': {
+			code: 'AU923',
+			name: 'Tópicos Integrados AU-EC',
+			ementa: 'Disciplina de tópicos integrados e viagens de estudo.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#4DD940',
+			obligatory: false
+		},
+		'AU924': {
+			code: 'AU924',
+			name: 'Tópicos Integrados AU-EC',
+			ementa: 'Disciplina de tópicos integrados e viagens de estudo.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#D940A5',
+			obligatory: false
+		},
+		'AU925': {
+			code: 'AU925',
+			name: 'Tópicos Integrados AU-EC',
+			ementa: 'Disciplina de tópicos integrados e viagens de estudo.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:3, C:2},
+			requisitos: '',
+			color: '#40D951',
+			obligatory: false
+		},
+		'BE180': {
+			code: 'BE180',
+			name: 'Introdução à Ecologia',
+			ementa: 'Conceitos básicos de sistemas ecológicos. Enfoque teórico-prático de situações reais envolvendo observação, métodos e interpretação de dados ecológicos. Excursões obrigatórias, elaboração de projetos, relatórios científicos, apresentações orais e em forma de painel.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#43D940',
+			obligatory: false
+		},
+		'BT280': {
+			code: 'BT280',
+			name: 'Botânica I',
+			ementa: 'Ciclo de vida, estratégias reprodutivas e morfologia básica das angiospermas. Noções anatômicas de órgãos vegetativos e reprodutivos.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40CAD9',
+			obligatory: false
+		},
+		'BT330': {
+			code: 'BT330',
+			name: 'Botânica Básica',
+			ementa: 'Aspectos gerais de morfologia de Dicotiledôneas e Monocotiledôneas, raiz, caule, folhas, flores, frutos e sementes. Aspectos gerais da fisiologia de plantas superiores, enfocando relações energéticas, relações hídricas e minerais, relações hormonais e a fisiologia da germinação. Aspectos gerais de taxonomia vegetal, com ênfase nas espécies cultivadas. Ciclo de vida das culturas de maior importância econômica.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#8040D9',
+			obligatory: false
+		},
+		'BT380': {
+			code: 'BT380',
+			name: 'Botânica II',
+			ementa: 'Apresentação do Reino Vegetal e Diversidade de organismos. Evolução do sistema reprodutivo. Ciclos de vida. Morfologia dos principais grupos de criptógamas. Organização do talo. Evolução do sistema vascular. Gimnospermas. Evolução da semente. Elaboração de relatórios sobre atividade de campo. Elaboração e apresentação de seminários em grupo.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9409B',
+			obligatory: false
+		},
+		'BT591': {
+			code: 'BT591',
+			name: 'Tópicos em Morfologia e Taxonomia Vegetal',
+			ementa: 'Análise de temas atuais em morfologia e taxonomia vegetal a partir da literatura especializada recente.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#D940D7',
+			obligatory: false
+		},
+		'BT680': {
+			code: 'BT680',
+			name: 'Botânica V',
+			ementa: 'Noções de biossistemática vegetal. Uso de métodos experimentais em taxonomia. Citotaxonomia. Quimiotaxonomia. Biologia da polinização e da reprodução.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#4065D9',
+			obligatory: false
+		},
+		'GE903': {
+			code: 'GE903',
+			name: 'Geologia Urbana',
+			ementa: 'Gestão, supervisão, orientação técnica sobre geologia ambiental. Coleta de dados, planejamento e projeto geológicos do curso e ocupação do solo urbano. Estudo e recuperação ambiental de solos e águas subterrâneas, contaminadas, implantação de aterros de resíduos sólidos e avaliação de impactos ambientais, risco geológico (erosão, inundações, instabilidade de encostas). Cartas geotécnica, planejamento do uso racional de recursos minerais hídricos. Trabalhos de campo e elaboração de relatório referente a casos de tratamento de resíduos, levantamento de contaminação e risco geológico.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D040D9',
+			obligatory: false
+		},
+		'GF100': {
+			code: 'GF100',
+			name: 'Geomorfologia e Meio Ambiente',
+			ementa: 'Conteúdo, semiologia e aplicabilidade das legendas geomorfológicas. Cartografia geomorfológica e planejamento: estudos de caso. Monitoramento ambiental e a questão dos geoindicadores.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#B2D940',
+			obligatory: false
+		},
+		'GF102': {
+			code: 'GF102',
+			name: 'Movimentos Sociais',
+			ementa: 'Debate sobre as teorias dos Movimentos Sociais. Formas de organização dos Movimentos Urbanos e Rurais. Autonomia, organizações locais, nacionais e internacionais. Movimentos libertários: feministas, ecologistas e estudantis. Organizações não governamentais.',
+			semestre: 1,
+			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D94040',
+			obligatory: false
+		},
+		'GF105': {
+			code: 'GF105',
+			name: 'Metrópoles e Metropolização',
+			ementa: 'O surgimento das metrópoles e o processo de metropolização contemporâneo. O fenômeno da urbanização/conurbação e as estratégias de planejamento. Qualidade de vida, sociedade e meio ambiente nas grandes metrópoles. As cidades mundiais.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D99040',
+			obligatory: false
+		},
+		'GF112': {
+			code: 'GF112',
+			name: 'Organização do Espaço Regional',
+			ementa: 'Teorias e conceitos do desenvolvimento regional. Região, regionalização e regionalismos: planejamento e organização do espaço. Transformações econômicas e novas estratégias espaciais. Sociedade e natureza na organização socioespacial. Estudos de casos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#D94090',
+			obligatory: false
+		},
+		'GF503': {
+			code: 'GF503',
+			name: 'Sociologia',
+			ementa: 'Conceitos básicos, fundamentos e constituição da sociologia. Durkheim, Weber e Marx. Comportamento coletivo. Controle e desvio social. Organização social: estrutura, estratificação e mobilidade social. Grupos e Instituições. Mudança social. Política social. Movimentos sociais.',
+			semestre: 1,
+			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:2, C:3},
+			requisitos: '',
+			color: '#61D940',
+			obligatory: false
+		},
+		'GF604': {
+			code: 'GF604',
+			name: 'Geografia Urbana',
+			ementa: 'Definição e evolução do fenômeno urbano. As cidades: os sítios, o crescimento horizontal e vertical, a estrutura urbana, as áreas funcionais, o sistema viário e a circulação. A interdisciplinaridade dos estudos urbanos. Centralidade, hierarquia e redes urbanas. Conjuntos urbanos complexos: áreas metropolitanas e conurbação. Valor e renda da terra. Meio ambiente e qualidade de vida no meio urbano. Paisagens, usos do solo e culturas urbanas.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#C640D9',
+			obligatory: false
+		},
+		'GF702': {
+			code: 'GF702',
+			name: 'Meio Ambiente Urbano',
+			ementa: 'Produção e consumo da e na Cidade. A metropolização e as redes de relações. Problemáticas urbanas: uso do solo, segregação especial e problemas ambientais da urbanização.',
+			semestre: 1,
+			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['GF604'],
+			color: '#C640D9',
+			obligatory: false
+		},
+		'GF805': {
+			code: 'GF805',
+			name: 'Planejamento Territorial',
+			ementa: 'O território como unidade condicionante do planejamento econômico. O planejamento como instrumento de ação política. O papel do estado (Federal, Estadual, Municipal) e das empresas no planejamento do território. A regionalização como instrumento de ação do planejamento. A organização do território impondo-se às ações de planejamento econômico no atual período técnico-científico e informacional. As noções de progresso, desenvolvimento e competitividade como norteadoras do processo de planejamento capitalista. O desenvolvimento geograficamente desigual e os paradoxos do planejamento territorial. Esta disciplina prevê a realização de trabalho de campo.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: '',
+			color: '#94D940',
+			obligatory: false
+		},
+		'GN301': {
+			code: 'GN301',
+			name: 'História das Teorias Econômicas',
+			ementa: 'Elementos de economia. Análise do surgimento e da evolução da Economia Política como ramo do conhecimento científico. As principais escolas do pensamento econômico e suas respectivas contribuições ao entendimento do mundo em que vivemos. Disciplinas propedêuticas para o estudo da Economia dos Recursos Naturais.',
+			semestre: 1,
+			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:2, C:3},
+			requisitos: '',
+			color: '#40D9D4',
+			obligatory: false
+		},
+		'ML102': {
+			code: 'ML102',
+			name: 'Linguagem Fotográfica I',
+			ementa: 'Instrumentalização de aluno, permitindo um conhecimento básico das técnicas fotográficas e da relação destas com a construção daquilo que se convencionou denominar de \"Linguagem Fotográfica\". Debate sobre os impactos da \"visualidade\" fotográfica na sociedade moderna, na arte e nos meios de comunicação de massa.',
+			semestre: 1,
+			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D997',
+			obligatory: false
 		}
 	}
 };

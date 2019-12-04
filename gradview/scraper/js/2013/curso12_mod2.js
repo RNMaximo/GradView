@@ -43,6 +43,24 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 16,
+			hasRestrictions: true,
+			subjects: ['CV010', 'CV011', 'CV012', 'CV013', 'CV014', 'CV015', 'CV016', 'CV017', 'CV018', 'CV019', 'CV064', 'CV065', 'CV066', 'CV067', 'CV070', 'CV071', 'CV072', 'CV073', 'CV074', 'CV075', 'CV091', 'CV092', 'CV910', 'CV913', 'CV914', 'CV915', 'CV917', 'CV918', 'CV919', 'CV952', 'CV953'],
+		},
+		'elet-2': {
+			credits: 7,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-3': {
+			credits: 2,
+			hasRestrictions: true,
+			subjects: ['HZ291', 'HZ292', 'HZ293'],
+		},
+	},
+
 	subjects: {
 		'CV101': {
 			code: 'CV101',
@@ -51,7 +69,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:1, HS:4, SL:3, C:3},
 			requisitos: '',
-			color: '#D94073'
+			color: '#C1D940',
+			obligatory: true
 		},
 		'CV111': {
 			code: 'CV111',
@@ -60,7 +79,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:0, O:0, D:0, HS:1, SL:1, C:1},
 			requisitos: '',
-			color: '#D9A640'
+			color: '#D9CD40',
+			obligatory: true
 		},
 		'CV141': {
 			code: 'CV141',
@@ -69,7 +89,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:1, D:1, HS:4, SL:2, C:3},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#40D9B5',
+			obligatory: true
 		},
 		'CV151': {
 			code: 'CV151',
@@ -78,7 +99,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:0, O:0, D:0, HS:1, SL:1, C:1},
 			requisitos: '',
-			color: '#40A6D9'
+			color: '#9E40D9',
+			obligatory: true
 		},
 		'MA111': {
 			code: 'MA111',
@@ -87,7 +109,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D940A6'
+			color: '#D94063',
+			obligatory: true
 		},
 		'MA141': {
 			code: 'MA141',
@@ -96,7 +119,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#A6D940'
+			color: '#40B5D9',
+			obligatory: true
 		},
 		'MC102': {
 			code: 'MC102',
@@ -105,7 +129,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D9D940'
+			color: '#7B40D9',
+			obligatory: true
 		},
 		'QG102': {
 			code: 'QG102',
@@ -114,7 +139,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940D9'
+			color: '#40D96F',
+			obligatory: true
 		},
 		'CV201': {
 			code: 'CV201',
@@ -123,7 +149,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:1, D:1, HS:4, SL:2, C:3},
 			requisitos: ['CV101'],
-			color: ''
+			color: '#C1D940',
+			obligatory: true
 		},
 		'CV202': {
 			code: 'CV202',
@@ -132,7 +159,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV141', 'QG102'],
-			color: ''
+			color: '#40D992',
+			obligatory: true
 		},
 		'F_128': {
 			code: 'F_128',
@@ -141,7 +169,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D940'
+			color: '#D940CD',
+			obligatory: true
 		},
 		'F_129': {
 			code: 'F_129',
@@ -150,7 +179,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#A640D9'
+			color: '#406FD9',
+			obligatory: true
 		},
 		'GM420': {
 			code: 'GM420',
@@ -159,7 +189,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: '',
-			color: '#4073D9'
+			color: '#D98640',
+			obligatory: true
 		},
 		'MA211': {
 			code: 'MA211',
@@ -168,7 +199,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', '*MA141'],
-			color: ''
+			color: '#8D7B9E',
+			obligatory: true
 		},
 		'ME203': {
 			code: 'ME203',
@@ -177,7 +209,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111'],
-			color: ''
+			color: '#D94063',
+			obligatory: true
 		},
 		'CV301': {
 			code: 'CV301',
@@ -186,7 +219,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'F_129', 'MA111'],
-			color: ''
+			color: '#A650AE',
+			obligatory: true
 		},
 		'CV311': {
 			code: 'CV311',
@@ -195,7 +229,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['*MA211'],
-			color: ''
+			color: '#8D7B9E',
+			obligatory: true
 		},
 		'CV312': {
 			code: 'CV312',
@@ -204,7 +239,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['AA200'],
-			color: '#40D9A6'
+			color: '#D94086',
+			obligatory: true
 		},
 		'CV321': {
 			code: 'CV321',
@@ -213,7 +249,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:2, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV101'],
-			color: ''
+			color: '#C1D940',
+			obligatory: true
 		},
 		'CV332': {
 			code: 'CV332',
@@ -222,7 +259,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV202'],
-			color: ''
+			color: '#40D992',
+			obligatory: true
 		},
 		'CV351': {
 			code: 'CV351',
@@ -231,7 +269,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94040'
+			color: '#404CD9',
+			obligatory: true
 		},
 		'F_229': {
 			code: 'F_229',
@@ -240,7 +279,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_128', 'F_129'],
-			color: ''
+			color: '#8D58D3',
+			obligatory: true
 		},
 		'MS211': {
 			code: 'MS211',
@@ -249,7 +289,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MA141', 'MC102'],
-			color: ''
+			color: '#8767B2',
+			obligatory: true
 		},
 		'CV401': {
 			code: 'CV401',
@@ -258,7 +299,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['CV351'],
-			color: ''
+			color: '#404CD9',
+			obligatory: true
 		},
 		'CV402': {
 			code: 'CV402',
@@ -267,7 +309,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV201', '*CV321'],
-			color: ''
+			color: '#C1D940',
+			obligatory: true
 		},
 		'CV411': {
 			code: 'CV411',
@@ -276,7 +319,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:2, L:0, O:1, D:0, HS:6, SL:5, C:6},
 			requisitos: ['CV111', '*CV312'],
-			color: ''
+			color: '#D98763',
+			obligatory: true
 		},
 		'CV421': {
 			code: 'CV421',
@@ -285,7 +329,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:2, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['*CV321'],
-			color: ''
+			color: '#C1D940',
+			obligatory: true
 		},
 		'CV422': {
 			code: 'CV422',
@@ -294,7 +339,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['CV311'],
-			color: ''
+			color: '#8D7B9E',
+			obligatory: true
 		},
 		'CV431': {
 			code: 'CV431',
@@ -303,7 +349,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:1, O:0, D:0, HS:5, SL:5, C:5},
 			requisitos: ['MA211', '*CV312'],
-			color: ''
+			color: '#B35E92',
+			obligatory: true
 		},
 		'CV450': {
 			code: 'CV450',
@@ -312,7 +359,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#4040D9'
+			color: '#9ED940',
+			obligatory: true
 		},
 		'F_328': {
 			code: 'F_328',
@@ -321,7 +369,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA111', 'MA141'],
-			color: ''
+			color: '#A667AE',
+			obligatory: true
 		},
 		'F_329': {
 			code: 'F_329',
@@ -330,7 +379,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_129', 'MA111'],
-			color: ''
+			color: '#8D589E',
+			obligatory: true
 		},
 		'CV501': {
 			code: 'CV501',
@@ -339,7 +389,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['*CV402'],
-			color: ''
+			color: '#C1D940',
+			obligatory: true
 		},
 		'CV511': {
 			code: 'CV511',
@@ -348,7 +399,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:2, L:0, O:1, D:0, HS:6, SL:5, C:6},
 			requisitos: ['CV311', 'CV312', '*CV411'],
-			color: ''
+			color: '#C06B82',
+			obligatory: true
 		},
 		'CV521': {
 			code: 'CV521',
@@ -357,7 +409,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['GM420'],
-			color: ''
+			color: '#D98640',
+			obligatory: true
 		},
 		'CV522': {
 			code: 'CV522',
@@ -366,7 +419,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*CV351'],
-			color: ''
+			color: '#404CD9',
+			obligatory: true
 		},
 		'CV531': {
 			code: 'CV531',
@@ -375,7 +429,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:1, O:0, D:0, HS:5, SL:5, C:5},
 			requisitos: ['*CV431'],
-			color: ''
+			color: '#B35E92',
+			obligatory: true
 		},
 		'CV532': {
 			code: 'CV532',
@@ -384,7 +439,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['F_329', '*F_328'],
-			color: ''
+			color: '#9A60A6',
+			obligatory: true
 		},
 		'CV541': {
 			code: 'CV541',
@@ -393,7 +449,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:1, D:1, HS:6, SL:4, C:5},
 			requisitos: ['CV141', 'QG102'],
-			color: ''
+			color: '#40D992',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -402,7 +459,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:3},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CV612': {
 			code: 'CV612',
@@ -411,7 +469,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CV411', '*CV511'],
-			color: ''
+			color: '#CD7973',
+			obligatory: true
 		},
 		'CV613': {
 			code: 'CV613',
@@ -420,7 +479,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: ['CV511'],
-			color: ''
+			color: '#C06B82',
+			obligatory: true
 		},
 		'CV621': {
 			code: 'CV621',
@@ -429,7 +489,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV521', '*CV511'],
-			color: ''
+			color: '#CD7961',
+			obligatory: true
 		},
 		'CV622': {
 			code: 'CV622',
@@ -438,7 +499,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['CV201', 'CV321', 'CV522', '*CV421'],
-			color: ''
+			color: '#A1B666',
+			obligatory: true
 		},
 		'CV631': {
 			code: 'CV631',
@@ -447,7 +509,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV201', 'CV532'],
-			color: ''
+			color: '#AE9D73',
+			obligatory: true
 		},
 		'CV632': {
 			code: 'CV632',
@@ -456,7 +519,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*CV531', '*ME203', '*MC102'],
-			color: ''
+			color: '#AD4A9A',
+			obligatory: true
 		},
 		'CV633': {
 			code: 'CV633',
@@ -465,7 +529,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['*CV332'],
-			color: ''
+			color: '#40D992',
+			obligatory: true
 		},
 		'CV641': {
 			code: 'CV641',
@@ -474,7 +539,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:2, O:1, D:1, HS:5, SL:3, C:4},
 			requisitos: ['CV531', '*CV541'],
-			color: ''
+			color: '#7A9C92',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -483,7 +549,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:3},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CV701': {
 			code: 'CV701',
@@ -492,7 +559,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ME203', '*CV401'],
-			color: ''
+			color: '#8D469E',
+			obligatory: true
 		},
 		'CV702': {
 			code: 'CV702',
@@ -501,7 +569,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:2, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV201', 'CV531', '*CV632'],
-			color: ''
+			color: '#B68079',
+			obligatory: true
 		},
 		'CV712': {
 			code: 'CV712',
@@ -510,7 +579,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['CV511', '*CV612'],
-			color: ''
+			color: '#C7727B',
+			obligatory: true
 		},
 		'CV713': {
 			code: 'CV713',
@@ -519,7 +589,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['CV511', '*CV612'],
-			color: ''
+			color: '#C7727B',
+			obligatory: true
 		},
 		'CV714': {
 			code: 'CV714',
@@ -528,7 +599,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['CV511', '*CV332', '*CV612'],
-			color: ''
+			color: '#9A9482',
+			obligatory: true
 		},
 		'CV721': {
 			code: 'CV721',
@@ -537,7 +609,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['CV521', 'CV621'],
-			color: ''
+			color: '#D38051',
+			obligatory: true
 		},
 		'CV722': {
 			code: 'CV722',
@@ -546,7 +619,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['CV421', 'CV622', '*CV632'],
-			color: ''
+			color: '#B09E6B',
+			obligatory: true
 		},
 		'CV741': {
 			code: 'CV741',
@@ -555,7 +629,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['CV632', 'CV641'],
-			color: ''
+			color: '#947396',
+			obligatory: true
 		},
 		'CV811': {
 			code: 'CV811',
@@ -564,7 +639,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: ['CV714'],
-			color: ''
+			color: '#9A9482',
+			obligatory: true
 		},
 		'CV812': {
 			code: 'CV812',
@@ -573,7 +649,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: ['CV714'],
-			color: ''
+			color: '#9A9482',
+			obligatory: true
 		},
 		'CV813': {
 			code: 'CV813',
@@ -582,7 +659,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['CV612', '*CV712', '*CV713'],
-			color: ''
+			color: '#C97478',
+			obligatory: true
 		},
 		'CV814': {
 			code: 'CV814',
@@ -591,7 +669,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:2, L:0, O:1, D:0, HS:6, SL:5, C:6},
 			requisitos: ['CV612', '*CV714', '*CV712'],
-			color: ''
+			color: '#BA807B',
+			obligatory: true
 		},
 		'CV821': {
 			code: 'CV821',
@@ -600,7 +679,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:1, HS:3, SL:2, C:2},
 			requisitos: ['CV522'],
-			color: ''
+			color: '#404CD9',
+			obligatory: true
 		},
 		'CV822': {
 			code: 'CV822',
@@ -609,7 +689,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['CV722'],
-			color: ''
+			color: '#B09E6B',
+			obligatory: true
 		},
 		'CV823': {
 			code: 'CV823',
@@ -618,7 +699,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['CV522', 'CV622'],
-			color: ''
+			color: '#7181A0',
+			obligatory: true
 		},
 		'CV831': {
 			code: 'CV831',
@@ -627,7 +709,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA460'],
-			color: '#73D940'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'CV832': {
 			code: 'CV832',
@@ -636,7 +719,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*CV531', '*CV632'],
-			color: ''
+			color: '#B05496',
+			obligatory: true
 		},
 		'CV841': {
 			code: 'CV841',
@@ -645,7 +729,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['AA460'],
-			color: '#D97340'
+			color: '#40D992',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -654,7 +739,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CV911': {
 			code: 'CV911',
@@ -663,7 +749,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV714', 'CV814'],
-			color: ''
+			color: '#AA8A7F',
+			obligatory: true
 		},
 		'CV912': {
 			code: 'CV912',
@@ -672,7 +759,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV713'],
-			color: ''
+			color: '#C7727B',
+			obligatory: true
 		},
 		'CV916': {
 			code: 'CV916',
@@ -681,7 +769,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['CV511'],
-			color: ''
+			color: '#C06B82',
+			obligatory: true
 		},
 		'CV954': {
 			code: 'CV954',
@@ -690,7 +779,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:1, D:0, HS:3, SL:0, C:3},
 			requisitos: ['AA200', 'AA480', 'CV450'],
-			color: '#40D973'
+			color: '#9ED940',
+			obligatory: true
 		},
 		'ELET09': {
 			code: 'ELET09',
@@ -699,7 +789,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:9},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CV951': {
 			code: 'CV951',
@@ -708,7 +799,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:12, D:0, HS:12, SL:0, C:12},
 			requisitos: ['AA480'],
-			color: '#7340D9'
+			color: '#5740D9',
+			obligatory: true
 		},
 		'CV955': {
 			code: 'CV955',
@@ -717,7 +809,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
 			requisitos: ['CV954'],
-			color: ''
+			color: '#9ED940',
+			obligatory: true
 		},
 		'ELET10': {
 			code: 'ELET10',
@@ -726,7 +819,348 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'CV010': {
+			code: 'CV010',
+			name: 'Complementos de Pontes de Concreto',
+			ementa: 'Sistemas Estruturais. Superestrutura das pontes em grelhas. Aparelhos de apoio. Infraestrutura das pontes.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['CV812'],
+			color: '#9A9482',
+			obligatory: false
+		},
+		'CV011': {
+			code: 'CV011',
+			name: 'Complementos de Concreto Protendido',
+			ementa: 'Perdas de Protenção. Estruturas hiperestáticas protendidas. Análise das tensões ao longo do vão. Traçado de cabos.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['CV811'],
+			color: '#9A9482',
+			obligatory: false
+		},
+		'CV012': {
+			code: 'CV012',
+			name: 'Projetos de Estruturas de Madeira',
+			ementa: 'Vigas entarugadas. Pontilhão rodoviário. Pontes com postes de eucalipto ligados por anéis metálicos. Cobertura com treliças ligadas por chapas com dentes estampados. Arcos de madeira para cobertura. Estruturas com laminados-colados.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['CV613'],
+			color: '#C06B82',
+			obligatory: false
+		},
+		'CV013': {
+			code: 'CV013',
+			name: 'Complementos de Mecânica dos Sólidos',
+			ementa: 'Introdução à teoria da elasticidade. Teoria das tensões e deformações. Estados planos de tensões e deformações. Vigas sobre base elástica. Barras esbeltas com flexão combinada com força axial.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['CV511'],
+			color: '#C06B82',
+			obligatory: false
+		},
+		'CV014': {
+			code: 'CV014',
+			name: 'Patologia e Monitoração de Estruturas',
+			ementa: 'Estudos das principais patologias em estrutura de concreto armado. Principais reforços nas estruturas. Técnicas de monitoração em estruturas. Principais equipamentos de medição. Equipamentos de interpretação das medidas. Exemplos de aplicação',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['AA460'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'CV015': {
+			code: 'CV015',
+			name: 'Dinâmica das Estruturas',
+			ementa: 'Princípios da dinâmica. Equação geral do movimento de uma partícula. Princípio de D\'Alembert. Solução da equação diferencial do movimento. Sistemas com um grau de liberdade.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['CV311'],
+			color: '#8D7B9E',
+			obligatory: false
+		},
+		'CV016': {
+			code: 'CV016',
+			name: 'Técnicas de Programação',
+			ementa: 'Técnicas de programação para resolução de problemas numéricos. Métodos de operações computacionais de matrizes. Métodos elementares de álgebra linear numérica. Aplicações e desenvolvimento de programas computacionais.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['MS211'],
+			color: '#8767B2',
+			obligatory: false
+		},
+		'CV017': {
+			code: 'CV017',
+			name: 'Placas e Cascas',
+			ementa: 'Introdução às placas. Definições e hipóteses. Flexão elástica linear de placas retangulares e circulares. Placas retangulares contínuas. Teoria geral das cascas finas. Aplicações das cascas finas em geral. Cascas cilíndricas circulares: coberturas e reservatórios. Cascas esféricas. Cascas cilíndricas com enrigecedores longitudinais e transversais.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['CV511'],
+			color: '#C06B82',
+			obligatory: false
+		},
+		'CV018': {
+			code: 'CV018',
+			name: 'Reservatório e Silos de Concreto Armado',
+			ementa: 'Análise de estruturas de silos e de reservatórios de concreto armado, incluindo cálculo de pressões, cálculo estrutural e dimensionamento. Teoria para cálculo de pressões causadas por produto sólido. Detalhamento da estrutura. Especificações de normas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['CV714'],
+			color: '#9A9482',
+			obligatory: false
+		},
+		'CV019': {
+			code: 'CV019',
+			name: 'Tópicos Especiais em Concreto I',
+			ementa: 'A ser definida no semestre em que for oferecida pelo Departamento de Estruturas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['CV714'],
+			color: '#9A9482',
+			obligatory: false
+		},
+		'CV064': {
+			code: 'CV064',
+			name: 'Tópicos Especiais em Concreto II',
+			ementa: 'A ser definida no semestre em que for oferecida pelo Departamento de Estruturas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['CV714'],
+			color: '#9A9482',
+			obligatory: false
+		},
+		'CV065': {
+			code: 'CV065',
+			name: 'Tópicos em Engenharia de Estruturas I',
+			ementa: 'A ser definida no semestre em que for oferecida pelo Departamento de Estruturas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['AA470'],
+			color: '#7BD940',
+			obligatory: false
+		},
+		'CV066': {
+			code: 'CV066',
+			name: 'Tópicos em Engenharia de Estruturas II',
+			ementa: 'A ser definida no semestre em que for oferecida pelo Departamento de Estruturas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['AA470'],
+			color: '#D96340',
+			obligatory: false
+		},
+		'CV067': {
+			code: 'CV067',
+			name: 'Introdução ao Projeto de Estruturas em Steel Framing',
+			ementa: 'Conceitos gerais sobre cargas e estabilidade estrutural, apresentação ao steel framing, fundações, painéis e entrepisos, lajes e coberturas, em steel framing, fixações das peças em steel framing, montagem, noções sobre ventilação das estruturas, acabamento interno, acabamento externo, desenvolvimento do projeto. Noções básicas do dimensionamento em chapa dobrada para o dimensionamento de barras tracionadas, comprimidas, fletidas e flexo-comprimidas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['AA200'],
+			color: '#40D94C',
+			obligatory: false
+		},
+		'CV070': {
+			code: 'CV070',
+			name: 'Programação Matemática Aplicada à Engenharia de Estruturas',
+			ementa: 'Descrição de alguns problemas. Revisão de álgebra linear. Implementação em computador do algoritmo simples. Formulação, especificação e interpretação das soluções de modelos matemáticos. Poderão ser estudados: carga e colapso. Plásticos em estruturas, pórticos planos com cabos pré-tensionados, orçamento de capital, transportes, planejamento financeiro.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:1, D:2, HS:5, SL:2, C:3},
+			requisitos: ['CV712', 'MS211'],
+			color: '#A76D97',
+			obligatory: false
+		},
+		'CV071': {
+			code: 'CV071',
+			name: 'Tensoestruturas',
+			ementa: 'Evolução das tensoestruturas ao longo do tempo. Compreendendo a forma das tensoestruturas. As formas básicas. As formas em paraboloide hiperbólico. As formas cônicas. As formas suportadas por arcos. Combinação das formas básicas. Indicações para projeto arquitetônico. Estudo de caso com aspectos do projeto, dimensionamento e construção.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['CV712'],
+			color: '#C7727B',
+			obligatory: false
+		},
+		'CV072': {
+			code: 'CV072',
+			name: 'Laje sobre Solo para Fundação ou Piso',
+			ementa: 'Lajes sobre solo. Reforço de aço para minimizar fissuras devidas à retratação do concreto. Análise estrutural para laje sobre solo. Análise estrutural baseada em programa de computador. Recomendações da literatura estrangeira para investigação do solo, análise estrutural e construção de laje sobre solo. Recomendações para minimizar fissuras em laje de concreto sobre o solo. Estudo de caso com aspectos do projeto, dimensionamento e construção.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['CV712', 'CV714'],
+			color: '#B1837F',
+			obligatory: false
+		},
+		'CV073': {
+			code: 'CV073',
+			name: 'Introdução à Análise Não Linear de Estruturas',
+			ementa: 'Busca unidimensional. Algoritmo para o mínimo de interpolação cúbica. Algoritmo para a busca unidimensional. Método de Newton. Método quase Newton. Método incremental Newton Raphson. A estratégia dos quadrados mínimos. A avaliação numérica da matriz de rigidez. Poderão ser estudados: treliças sob não-linearidade geométrica e elasticidade não linear, treliças sob não-linearidade geométrica e elasto-plasticidade, pórticos planos sob não-linearidade geométrica e elasticidade não linear.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:0, D:2, HS:5, SL:3, C:3},
+			requisitos: ['CV713', 'CV714'],
+			color: '#B1837F',
+			obligatory: false
+		},
+		'CV074': {
+			code: 'CV074',
+			name: 'Análise Matricial de Estruturas',
+			ementa: 'Matrizes de rigidez e de flexibilidade. Processo dos esforços. Processo dos deslocamentos. Efeitos de variação de temperatura, deformação inicial e recalques de apoio. Rotação plana dos eixos de coordenadas. Programas automáticos para cálculo de vigas, grelhas, treliças e pórticos planos.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: ['MC102', '*CV712'],
+			color: '#A159AA',
+			obligatory: false
+		},
+		'CV075': {
+			code: 'CV075',
+			name: 'Estruturas Metálicas Tubulares',
+			ementa: 'Introdução. Aços utilizados e suas propriedades. Fabricação de barras laminadas tubulares de aço. Concepções de estruturas metálicas tubulares. Dimensionamento de barras tubulares de aço. Dimensionamento de ligações de barras tubulares de aço. Dimensionamento de estruturas mistas aço-concreto. Detalhamento de projeto de estruturas tubulares. Utilização de software no desenvolvimento de projetos.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['CV813'],
+			color: '#C97478',
+			obligatory: false
+		},
+		'CV091': {
+			code: 'CV091',
+			name: 'Flexo-Torção em Elementos de Estruturas Metálicas',
+			ementa: 'Introdução à teoria de torção de barras e à teoria de flexo-torção, conceitos básicos, equação diferencial da peça de seção delgada, exemplos numéricos, o efeito da não linearidade geométrica, barras comprimidas axialmente, barras flexo-comprimidas, efeito da flexo-torção na flexão de barras, efeito de flexo-torção na compressão de barras, efeito da flexo-torção em barras flexo-comprimidas.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['CV411'],
+			color: '#D98763',
+			obligatory: false
+		},
+		'CV092': {
+			code: 'CV092',
+			name: 'Instabilidade e Flexo-Torção em Elementos de Estruturas Metálicas',
+			ementa: 'Torção de peças delgadas e não delgadas com seção qualquer. Problemas de flexo-compressão. Efeito da não linearidade geométrica, linearizada ou não-linearizada. Tratamento dos problemas de flexo-compressão por métodos aproximados. Cargas críticas. Determinação de deslocamentos em peças esbeltas com seção delgada. Flambagem de placas e cascas.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: ['CV511'],
+			color: '#C06B82',
+			obligatory: false
+		},
+		'CV910': {
+			code: 'CV910',
+			name: 'Estruturas de Concreto Armado III',
+			ementa: 'Projetos estruturais de escadas especiais, lajes nervuradas, lajes cogumelo e muros de arrimo.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['*CV714', '*CV814'],
+			color: '#AA8A7F',
+			obligatory: false
+		},
+		'CV913': {
+			code: 'CV913',
+			name: 'Estruturas Metálicas dos Edifícios Industriais',
+			ementa: 'Introdução. Composição da estrutura. Detalhes construtivos. Cargas. Determinação dos esforços no pórtico transversal. Análise dos pilares. Vigas de rolamento. Contraventamentos especiais. Viga mestra que substitui alguns pilares.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: ['CV813'],
+			color: '#C97478',
+			obligatory: false
+		},
+		'CV914': {
+			code: 'CV914',
+			name: 'Ações e Segurança das Estruturas',
+			ementa: 'Segurança: conceito, métodos determinísticos, métodos semiprobabilísticos. Método dos estados limites. Classificação das ações em estruturas, carregamentos, combinações últimas e combinações de serviço. Ações devidas ao vento em edificações.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['CV202', 'CV411', 'ME203'],
+			color: '#A68B73',
+			obligatory: false
+		},
+		'CV915': {
+			code: 'CV915',
+			name: 'Complementos de Teoria das Estruturas',
+			ementa: 'Aplicação do método dos elementos finitos (MEF) em análise estrutural utilizando softwares comerciais. Considerações sobre as diversas fases de análise: pré-processamento, processamento e pós-processamento. Estudos das bibliotecas de elementos disponíveis nos softwares em estudo e suas aplicações. Aplicação dos softwares na moldagem de um edifício padrão: carregamentos a considerar, análise dos esforços, combinações de resultados. Cuidados no uso indevido do MEF e das opções de modelagem.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['CV712'],
+			color: '#C7727B',
+			obligatory: false
+		},
+		'CV917': {
+			code: 'CV917',
+			name: 'Projeto de Estruturas de Concreto Armado Assistido por Computador',
+			ementa: 'Lançamento da estrutura e análise estrutural. Avaliação estrutural incluindo durabilidade, estabilidade global e estados limites de serviço. Obtenção de esforços em estado limite último para o dimensionamento.',
+			semestre: 1,
+			vector: {T:0, P:0, L:2, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['CV714'],
+			color: '#9A9482',
+			obligatory: false
+		},
+		'CV918': {
+			code: 'CV918',
+			name: 'Estruturas em Situação de Incêndio',
+			ementa: 'O incêndio padrão. Curvas temperatura-tempo padronizadas. O incêndio natural. O modelo do incêndio e a temperatura na estrutura. Segurança das estruturas em situação de incêndio. Comportamento das estruturas de aço, concreto e madeira em situação de incêndio. Métodos simplificados de dimensionamento.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['CV714'],
+			color: '#9A9482',
+			obligatory: false
+		},
+		'CV919': {
+			code: 'CV919',
+			name: 'Alvenaria Estrutural',
+			ementa: 'Introdução. Histórico e conceituação atual. Elementos componentes e suas propriedades. Elementos complementares industriais. Projetos de arquitetura, estrutural e de instalações. Técnicas construtivas, equipamentos e gerenciamento das construções.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['CV714'],
+			color: '#9A9482',
+			obligatory: false
+		},
+		'CV952': {
+			code: 'CV952',
+			name: 'Iniciação Científica em Engenharia Civil I',
+			ementa: 'A ser definida em função de pesquisas em que o aluno se engajar.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:0, C:2},
+			requisitos: ['AA200'],
+			color: '#D940AA',
+			obligatory: false
+		},
+		'CV953': {
+			code: 'CV953',
+			name: 'Iniciação Científica em Engenharia Civil II',
+			ementa: 'A ser definida em função de pesquisas em que o aluno se angajar.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:0, C:2},
+			requisitos: ['AA200'],
+			color: '#57D940',
+			obligatory: false
+		},
+		'HZ291': {
+			code: 'HZ291',
+			name: 'Tópicos Especiais de Humanidades I',
+			ementa: 'O curso é dedicado a uma introdução das relações entre ciência, tecnologia e a sociedade contemporânea. Será dada ênfase especial ao caso brasileiro, tentando mostrar como se concretizam essas relações num contexto específico. A abordagem será interdisciplinar, através de uma contribuição da Antropologia, da Ciência Política, da História e da Sociologia. Obs.: Sendo uma disciplina reservada aos cursos de Engenharia, nos quais consta como eletiva em seus currículos, os alunos de Humanidades, Artes e do Curso de Filosofia não poderão cursar esta disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#C140D9',
+			obligatory: false
+		},
+		'HZ292': {
+			code: 'HZ292',
+			name: 'Tópicos Especiais de Humanidades II',
+			ementa: 'Filosofia da ciência. Elementos de sociologia. Sociologia rural. Antropologia. Deontologia.Obs.: Sendo uma disciplina reservada aos cursos de engenharia, nos quais consta como eletiva em seus currículos, os alunos das Áreas de Humanidades, Artes e do curso de Filosofia não poderão cursar esta disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9AA40',
+			obligatory: false
+		},
+		'HZ293': {
+			code: 'HZ293',
+			name: 'Tópicos Especiais de Humanidades III',
+			ementa: 'O curso abordará a análise dos aspectos sociais das inovações tecnológicas e da pesquisa científica. No decorrer das exposições e seminários, serão desenvolvidas análises de casos precisos, tentando incorporar um quadro de referência comparativo entre a sociedade brasileira e o contexto internacional.Obs.: Sendo uma disciplina reservada aos cursos de Engenharia, nos quais consta como eletiva em seus currículos, os alunos das Áreas de Humanidades, Artes e do curso de Filosofia não poderão cursar esta disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4092D9',
+			obligatory: false
 		}
 	}
 };

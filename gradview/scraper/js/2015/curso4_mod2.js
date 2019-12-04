@@ -35,6 +35,39 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 4,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-2': {
+			credits: 4,
+			hasRestrictions: true,
+			subjects: ['F_540', 'F_839'],
+		},
+		'elet-3': {
+			credits: 12,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-4': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['F_902', 'MA901'],
+		},
+		'elet-5': {
+			credits: 6,
+			hasRestrictions: true,
+			subjects: ['F_709', 'MA224'],
+		},
+		'elet-6': {
+			credits: 12,
+			hasRestrictions: true,
+			subjects: ['F_590', 'F_690', 'F_896', 'FM201', 'FM301', 'FM401', 'FM501', 'FM601', 'FM701', 'MA811', 'MA812', 'MA813'],
+		},
+	},
+
 	subjects: {
 		'F_128': {
 			code: 'F_128',
@@ -43,7 +76,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#73D940'
+			color: '#D940CF',
+			obligatory: true
 		},
 		'F_129': {
 			code: 'F_129',
@@ -52,7 +86,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D973'
+			color: '#4083D9',
+			obligatory: true
 		},
 		'FM003': {
 			code: 'FM003',
@@ -61,7 +96,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D940D9'
+			color: '#40BCD9',
+			obligatory: true
 		},
 		'MA111': {
 			code: 'MA111',
@@ -70,7 +106,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D94040'
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'MA141': {
 			code: 'MA141',
@@ -79,7 +116,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940A6'
+			color: '#C6D940',
+			obligatory: true
 		},
 		'MS149': {
 			code: 'MS149',
@@ -88,7 +126,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D9A6'
+			color: '#70D940',
+			obligatory: true
 		},
 		'EL284': {
 			code: 'EL284',
@@ -97,7 +136,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4073D9'
+			color: '#D94079',
+			obligatory: true
 		},
 		'EL285': {
 			code: 'EL285',
@@ -106,7 +146,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94073'
+			color: '#D940B3',
+			obligatory: true
 		},
 		'F_228': {
 			code: 'F_228',
@@ -115,7 +156,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*F_128'],
-			color: ''
+			color: '#D940CF',
+			obligatory: true
 		},
 		'F_229': {
 			code: 'F_229',
@@ -124,7 +166,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_128', 'F_129'],
-			color: ''
+			color: '#8D62D4',
+			obligatory: true
 		},
 		'MA211': {
 			code: 'MA211',
@@ -133,7 +176,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', '*MA141'],
-			color: ''
+			color: '#A98D8D',
+			obligatory: true
 		},
 		'MA327': {
 			code: 'MA327',
@@ -142,7 +186,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*MA141'],
-			color: ''
+			color: '#C6D940',
+			obligatory: true
 		},
 		'ELET02': {
 			code: 'ELET02',
@@ -151,7 +196,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:2},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL683': {
 			code: 'EL683',
@@ -160,7 +206,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40A6D9'
+			color: '#40D983',
+			obligatory: true
 		},
 		'F_328': {
 			code: 'F_328',
@@ -169,7 +216,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA111', 'MA141'],
-			color: ''
+			color: '#B973A3',
+			obligatory: true
 		},
 		'F_329': {
 			code: 'F_329',
@@ -178,7 +226,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_129', 'MA111'],
-			color: ''
+			color: '#6662D9',
+			obligatory: true
 		},
 		'MA311': {
 			code: 'MA311',
@@ -187,7 +236,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['*MA211'],
-			color: ''
+			color: '#A98D8D',
+			obligatory: true
 		},
 		'ME210': {
 			code: 'ME210',
@@ -196,7 +246,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MS149'],
-			color: ''
+			color: '#7E8D8D',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -205,7 +256,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL212': {
 			code: 'EL212',
@@ -214,7 +266,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#D99640',
+			obligatory: true
 		},
 		'F_315': {
 			code: 'F_315',
@@ -223,7 +276,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA211'],
-			color: ''
+			color: '#C167AE',
+			obligatory: true
 		},
 		'F_428': {
 			code: 'F_428',
@@ -232,7 +286,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_328'],
-			color: ''
+			color: '#B973A3',
+			obligatory: true
 		},
 		'MA044': {
 			code: 'MA044',
@@ -241,7 +296,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MA141', 'MA211'],
-			color: ''
+			color: '#A98D8D',
+			obligatory: true
 		},
 		'MC102': {
 			code: 'MC102',
@@ -250,7 +306,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#A6D940'
+			color: '#D9405C',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -259,7 +316,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:2},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL511': {
 			code: 'EL511',
@@ -268,7 +326,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#A640D9'
+			color: '#8CD940',
+			obligatory: true
 		},
 		'F_429': {
 			code: 'F_429',
@@ -277,7 +336,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_329'],
-			color: ''
+			color: '#6662D9',
+			obligatory: true
 		},
 		'F_589': {
 			code: 'F_589',
@@ -286,7 +346,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D9A640'
+			color: '#53D940',
+			obligatory: true
 		},
 		'F_901': {
 			code: 'F_901',
@@ -295,7 +356,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:0, C:8},
 			requisitos: ['AA200'],
-			color: '#40D9D9'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -304,7 +366,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL685': {
 			code: 'EL685',
@@ -313,7 +376,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EL285'],
-			color: ''
+			color: '#D940B3',
+			obligatory: true
 		},
 		'F_320': {
 			code: 'F_320',
@@ -322,7 +386,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_228', 'MA211'],
-			color: ''
+			color: '#C167AE',
+			obligatory: true
 		},
 		'F_489': {
 			code: 'F_489',
@@ -331,7 +396,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_589'],
-			color: ''
+			color: '#53D940',
+			obligatory: true
 		},
 		'F_609': {
 			code: 'F_609',
@@ -340,7 +406,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:2, C:6},
 			requisitos: ['F_328', 'F_329'],
-			color: ''
+			color: '#906BBE',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -349,7 +416,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL774': {
 			code: 'EL774',
@@ -358,7 +426,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['AA200', 'AA445'],
-			color: '#D9D940'
+			color: '#D94096',
+			obligatory: true
 		},
 		'F_740': {
 			code: 'F_740',
@@ -367,7 +436,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#7340D9'
+			color: '#D95C40',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -376,7 +446,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL213': {
 			code: 'EL213',
@@ -385,7 +456,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D940'
+			color: '#C640D9',
+			obligatory: true
 		},
 		'EL874': {
 			code: 'EL874',
@@ -394,7 +466,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['EL774'],
-			color: ''
+			color: '#D94096',
+			obligatory: true
 		},
 		'EL884': {
 			code: 'EL884',
@@ -403,7 +476,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D97340'
+			color: '#4049D9',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -412,7 +486,188 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'FM201': {
+			code: 'FM201',
+			name: 'Atividades Científico - Culturais I',
+			ementa: 'Atividades Científicas e Culturais a serem desenvolvidas no âmbito da Unicamp.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#409FD9',
+			obligatory: false
+		},
+		'FM301': {
+			code: 'FM301',
+			name: 'Atividades Científico - Culturais II',
+			ementa: 'Atividades Científivas e Culturais a serem desenvolvidas no âmbito da Unicamp.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D94040',
+			obligatory: false
+		},
+		'FM401': {
+			code: 'FM401',
+			name: 'Atividades Científico - Culturais III',
+			ementa: 'Atividades Científicas e Culturais a serem desenvolvidas no âmbito da Unicamp.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9BC',
+			obligatory: false
+		},
+		'FM501': {
+			code: 'FM501',
+			name: 'Atividades Científico - Culturais IV',
+			ementa: 'Atividades Científicas e Culturais a serem desenvolvidas no âmbito da Unicamp.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#A940D9',
+			obligatory: false
+		},
+		'FM601': {
+			code: 'FM601',
+			name: 'Atividades Científico - Culturais V',
+			ementa: 'Atividades Científicas e Culturais a serem desenvolvidas no âmbito da unicamp.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9CF40',
+			obligatory: false
+		},
+		'FM701': {
+			code: 'FM701',
+			name: 'Atividades Científico - Culturais VI',
+			ementa: 'Atividades Científicas e Culturais a serem desenvolvidas no âmbito da Unicamp.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9B340',
+			obligatory: false
+		},
+		'F_540': {
+			code: 'F_540',
+			name: 'Métodos da Física Experimental I',
+			ementa: 'Circuitos básicos DC-AC. Componentes passivos. Instrumentos de medida. Diodos. Transistores. Amplificação. Amplificadores operacionais. Realimentação. Osciladores. Circuitos digitais básicos. Textos de laboratório.Obs.: A autorização AA200 não será aplicada aos alunos dos cursos de Física.',
+			semestre: 1,
+			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#7040D9',
+			obligatory: false
+		},
+		'F_590': {
+			code: 'F_590',
+			name: 'Iniciação Científica I',
+			ementa: 'Iniciação a um projeto de pesquisa sob orientação individual de um professor.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:0, C:2},
+			requisitos: ['AA200'],
+			color: '#5340D9',
+			obligatory: false
+		},
+		'F_690': {
+			code: 'F_690',
+			name: 'Iniciação Científica II',
+			ementa: 'Iniciação a um projeto de pesquisa sob orientação individual de um professor.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:0, C:2},
+			requisitos: ['AA200'],
+			color: '#40D966',
+			obligatory: false
+		},
+		'F_709': {
+			code: 'F_709',
+			name: 'Tópicos de Ensino de Física II',
+			ementa: 'Esta disciplina pretende fornecer ao licenciado uma discussão sobre a inserção dos conceitos de Física diante dos problemas de ensino de Física nas escolas de ensino médio. Deverá ser enfatizado o projeto, a confecção e o uso das demonstrações sobre Física no ensino médio.',
+			semestre: 1,
+			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:2, C:6},
+			requisitos: ['F_609'],
+			color: '#906BBE',
+			obligatory: false
+		},
+		'F_839': {
+			code: 'F_839',
+			name: 'Métodos da Física Experimental VI',
+			ementa: 'Ótica geométrica, Propagação, Natureza vetorial (relações vetoriais, vetor de Poynting, polarização, reflexão e refração, ondas evanescentes), Interferência e coerência (interferômetros, coerência, autocorrelação, espectro de potência, pulsos), Difração, Holografia (elementos, materiais, reconstrução de uma onda, capacidade e conteúdo de informação). Óptica de sólidos (dielétricos isotrópicos, condutores, interfaces com índices de refração complexos, meios anisotrópicos, cristais eletro-ópticos, óptica não linear.Obs.: A autorização AA200 não será aplicada aos alunos dos cursos de Física.',
+			semestre: 1,
+			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#4066D9',
+			obligatory: false
+		},
+		'F_896': {
+			code: 'F_896',
+			name: 'Monografia',
+			ementa: 'Esta disciplina consistirá de aulas em sala, enfatizando a organização e o formalismo do desenvolvimento do trabalho científico, incluindo técnicas de redação científica, ferramentas de busca, referências bibliográficas, estruturas formais de divulgação científica, etc.. Na parte prática, deverá ser desenvolvido um tema de pesquisa individualmente pelo aluno, com o formato de um trabalho de Iniciação Científica, sob a orientação de um professor ou pesquisador autorizado pela Comissão de Graduação. A Monografia será avaliada no final da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:0, C:8},
+			requisitos: ['AA480'],
+			color: '#D97940',
+			obligatory: false
+		},
+		'F_902': {
+			code: 'F_902',
+			name: 'Estágio Supervisionado II',
+			ementa: 'Aplicação de conhecimentos específicos de Física e técnicas didáticas em situações concretas de ensino, possibilitando a realização de mini-projetos, preparação de material didático e recursos paralelos, visando uma maior eficácia do trabalho formativo.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:0, C:8},
+			requisitos: ['AA200'],
+			color: '#40D949',
+			obligatory: false
+		},
+		'MA224': {
+			code: 'MA224',
+			name: 'Resolução de Problemas Matemáticos',
+			ementa: 'Resolução de problemas matemáticos nem sempre elementares, utilizando matemática elementar. Os problemas propostos abordarão os seguintes tópicos: proporcionalidade, funções de primeiro e segundo grau, áreas e volumes, funções exponenciais e logarítmicas, Teorema de Pitágoras, trigonometria e aplicações, combinatória e probabilidade.Discussão e reflexão sobre como apresentar e orientar alunos da escola básica na resolução de problemas. Preparação de listas de exercícios e avaliações para o ensino básico.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: ['AA420'],
+			color: '#40D99F',
+			obligatory: false
+		},
+		'MA811': {
+			code: 'MA811',
+			name: 'Cultura Matemática I',
+			ementa: 'Participação em seminários, palestras, conferências e outras atividades de enriquecimento do universo cultural matemático.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
+			requisitos: ['EL284', 'MA211'],
+			color: '#C16783',
+			obligatory: false
+		},
+		'MA812': {
+			code: 'MA812',
+			name: 'Cultura Matemática II',
+			ementa: 'Participação em seminários, palestras, conferências e outras atividades de enriquecimento do universo cultural matemático.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
+			requisitos: ['EL284', 'MA211'],
+			color: '#C16783',
+			obligatory: false
+		},
+		'MA813': {
+			code: 'MA813',
+			name: 'Cultura Matemática III',
+			ementa: 'Participaçao em seminários, palestras, conferências e outras atividades de enriquecimento do universo cultural matemático.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
+			requisitos: ['EL284', 'MA211'],
+			color: '#C16783',
+			obligatory: false
+		},
+		'MA901': {
+			code: 'MA901',
+			name: 'Estágio Supervisionado I',
+			ementa: 'Elaboração, planejamento e execução de atividades de ensino de matemática, seguida de análise e reestruturação das mesmas.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:2, C:8},
+			requisitos: ['AA450'],
+			color: '#A9D940',
+			obligatory: false
 		}
 	}
 };

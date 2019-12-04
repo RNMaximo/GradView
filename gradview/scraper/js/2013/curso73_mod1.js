@@ -27,6 +27,29 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 4,
+			hasRestrictions: true,
+			subjects: ['ST001', 'ST002', 'ST003', 'ST004', 'ST005', 'ST007', 'ST009', 'ST019', 'ST090', 'TT350', 'TT601'],
+		},
+		'elet-2': {
+			credits: 2,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-3': {
+			credits: 12,
+			hasRestrictions: true,
+			subjects: ['ST025', 'ST026', 'ST035', 'ST037', 'ST043', 'ST045', 'ST070', 'ST071', 'ST072', 'ST073', 'ST074', 'ST075', 'ST077', 'ST078', 'ST080', 'ST081', 'ST083', 'ST084', 'ST088', 'ST089', 'ST100', 'ST714', 'ST715'],
+		},
+		'elet-4': {
+			credits: 4,
+			hasRestrictions: true,
+			subjects: ['ST873', 'ST874'],
+		},
+	},
+
 	subjects: {
 		'ST103': {
 			code: 'ST103',
@@ -35,7 +58,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#D97340',
+			obligatory: true
 		},
 		'ST107': {
 			code: 'ST107',
@@ -44,7 +68,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: '',
-			color: '#D940C3'
+			color: '#40D9BF',
+			obligatory: true
 		},
 		'ST108': {
 			code: 'ST108',
@@ -53,7 +78,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#AD40D9'
+			color: '#D940A6',
+			obligatory: true
 		},
 		'ST109': {
 			code: 'ST109',
@@ -62,7 +88,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94081'
+			color: '#4040D9',
+			obligatory: true
 		},
 		'ST111': {
 			code: 'ST111',
@@ -71,7 +98,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4056D9'
+			color: '#40D973',
+			obligatory: true
 		},
 		'TT101': {
 			code: 'TT101',
@@ -80,7 +108,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D94040'
+			color: '#5940D9',
+			obligatory: true
 		},
 		'ST008': {
 			code: 'ST008',
@@ -89,7 +118,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4097D9'
+			color: '#8CD940',
+			obligatory: true
 		},
 		'ST207': {
 			code: 'ST207',
@@ -98,7 +128,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST107'],
-			color: ''
+			color: '#40D9BF',
+			obligatory: true
 		},
 		'ST209': {
 			code: 'ST209',
@@ -107,7 +138,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST109'],
-			color: ''
+			color: '#4040D9',
+			obligatory: true
 		},
 		'ST210': {
 			code: 'ST210',
@@ -116,7 +148,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST109', 'TT101'],
-			color: ''
+			color: '#4D40D9',
+			obligatory: true
 		},
 		'ST211': {
 			code: 'ST211',
@@ -125,7 +158,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D997'
+			color: '#A6D940',
+			obligatory: true
 		},
 		'ST212': {
 			code: 'ST212',
@@ -134,7 +168,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#6B40D9'
+			color: '#D940D9',
+			obligatory: true
 		},
 		'ST305': {
 			code: 'ST305',
@@ -143,7 +178,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST108'],
-			color: ''
+			color: '#D940A6',
+			obligatory: true
 		},
 		'ST301': {
 			code: 'ST301',
@@ -152,7 +188,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST103'],
-			color: ''
+			color: '#D97340',
+			obligatory: true
 		},
 		'ST303': {
 			code: 'ST303',
@@ -161,7 +198,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST209', 'TT101'],
-			color: ''
+			color: '#4D40D9',
+			obligatory: true
 		},
 		'ST304': {
 			code: 'ST304',
@@ -170,7 +208,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#ADD940'
+			color: '#4073D9',
+			obligatory: true
 		},
 		'ST307': {
 			code: 'ST307',
@@ -179,7 +218,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST207'],
-			color: ''
+			color: '#40D9BF',
+			obligatory: true
 		},
 		'ST405': {
 			code: 'ST405',
@@ -188,7 +228,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST305'],
-			color: ''
+			color: '#D940A6',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -197,7 +238,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ST306': {
 			code: 'ST306',
@@ -206,7 +248,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST211', 'TT101'],
-			color: ''
+			color: '#808D8D',
+			obligatory: true
 		},
 		'ST403': {
 			code: 'ST403',
@@ -215,7 +258,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST303'],
-			color: ''
+			color: '#4D40D9',
+			obligatory: true
 		},
 		'ST571': {
 			code: 'ST571',
@@ -224,7 +268,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9C340'
+			color: '#BFD940',
+			obligatory: true
 		},
 		'ST573': {
 			code: 'ST573',
@@ -233,7 +278,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['ST405'],
-			color: ''
+			color: '#D940A6',
+			obligatory: true
 		},
 		'ST574': {
 			code: 'ST574',
@@ -242,7 +288,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST211', 'TT101'],
-			color: ''
+			color: '#808D8D',
+			obligatory: true
 		},
 		'ST575': {
 			code: 'ST575',
@@ -251,7 +298,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST405'],
-			color: ''
+			color: '#D940A6',
+			obligatory: true
 		},
 		'ST673': {
 			code: 'ST673',
@@ -260,7 +308,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['ST211', 'TT101'],
-			color: ''
+			color: '#808D8D',
+			obligatory: true
 		},
 		'ST676': {
 			code: 'ST676',
@@ -269,7 +318,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['ST207'],
-			color: ''
+			color: '#40D9BF',
+			obligatory: true
 		},
 		'ST572': {
 			code: 'ST572',
@@ -278,7 +328,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST405'],
-			color: ''
+			color: '#D940A6',
+			obligatory: true
 		},
 		'ST671': {
 			code: 'ST671',
@@ -287,7 +338,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST405'],
-			color: ''
+			color: '#D940A6',
+			obligatory: true
 		},
 		'ST672': {
 			code: 'ST672',
@@ -296,7 +348,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST575'],
-			color: ''
+			color: '#D940A6',
+			obligatory: true
 		},
 		'ST674': {
 			code: 'ST674',
@@ -305,7 +358,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA450'],
-			color: '#6BD940'
+			color: '#D94073',
+			obligatory: true
 		},
 		'ST675': {
 			code: 'ST675',
@@ -314,7 +368,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST575'],
-			color: ''
+			color: '#D940A6',
+			obligatory: true
 		},
 		'ST776': {
 			code: 'ST776',
@@ -323,7 +378,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['ST209'],
-			color: ''
+			color: '#4040D9',
+			obligatory: true
 		},
 		'ST777': {
 			code: 'ST777',
@@ -332,7 +388,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA460'],
-			color: '#40D956'
+			color: '#D9408C',
+			obligatory: true
 		},
 		'ST778': {
 			code: 'ST778',
@@ -341,7 +398,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:2, D:0, HS:2, SL:0, C:2},
 			requisitos: ['AA465'],
-			color: '#D98140'
+			color: '#40BFD9',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -350,7 +408,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ST772': {
 			code: 'ST772',
@@ -359,7 +418,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['ST672'],
-			color: ''
+			color: '#D940A6',
+			obligatory: true
 		},
 		'ST773': {
 			code: 'ST773',
@@ -368,7 +428,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST671', 'ST672', 'ST675'],
-			color: ''
+			color: '#D940A6',
+			obligatory: true
 		},
 		'ST774': {
 			code: 'ST774',
@@ -377,7 +438,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST574', 'ST672', 'ST673'],
-			color: ''
+			color: '#9E7395',
+			obligatory: true
 		},
 		'ST775': {
 			code: 'ST775',
@@ -386,7 +448,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST574', 'ST575', 'ST675'],
-			color: ''
+			color: '#BB5A9E',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -395,7 +458,368 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'ST001': {
+			code: 'ST001',
+			name: 'Português',
+			ementa: 'Desenvolvimento verbal. Organização do pensamento. Linguagem escrita e falada. Redação de textos técnicos. Elaboração de Relatório. Regras de tratamento e utilização de tempos verbais.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D95940',
+			obligatory: false
+		},
+		'ST002': {
+			code: 'ST002',
+			name: 'Inglês Técnico',
+			ementa: 'Traduções e Interpretações de Textos Técnicos. Vocabulário e Gramática.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D959',
+			obligatory: false
+		},
+		'ST003': {
+			code: 'ST003',
+			name: 'Teorias da Qualidade',
+			ementa: 'Conceitos de Qualidade. As Teorias da Qualidade. Normas para a Qualidade. Controle Estatístico do Processo. Evolução Histórica da Administração da Qualidade.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D940',
+			obligatory: false
+		},
+		'ST004': {
+			code: 'ST004',
+			name: 'Legislação Trabalhista e Segurança do Trabalho',
+			ementa: 'Direito Trabalhista: Conceito e formação histórica. O empregador e o empregado. Contrato de trabalho e suas alterações. Salário e remuneração. Estabilidade. Normas gerais de proteção ao trabalho. A justiça do trabalho. Previdência social. Segurança do trabalho: Introdução à segurança, higiene e medicina do trabalho. Avaliação e controle dos riscos profissionais. Normas e leis. Proteção contra incêndios. Responsabilidades sobre acidentes.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#BF40D9',
+			obligatory: false
+		},
+		'ST005': {
+			code: 'ST005',
+			name: 'Relações Humanas',
+			ementa: 'Das ciências do comportamento: individual e social. Princípios éticos e hierárquicos. Da divisão das pessoas: naturais e jurídicas. Da responsabilidade civil. Direitos Humanos e suas implicações nas relações individuais. Noções de Direito Civil.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:2, C:2},
+			requisitos: '',
+			color: '#D9BF40',
+			obligatory: false
+		},
+		'ST007': {
+			code: 'ST007',
+			name: 'Humanidades',
+			ementa: 'Estrutura do mundo moderno. Ação do indivíduo na atualidade. Os veículos de comunicação em massas. As artes e sua conceituação. O indivíduo como componente de um mundo cultural. O cinema, o teatro e sua importância no mundo moderno. Os grandes conflitos e suas consequências no plano cultural. Relacionamento entre os povos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D94040',
+			obligatory: false
+		},
+		'ST009': {
+			code: 'ST009',
+			name: 'Regulamentação e Política Ambiental',
+			ementa: 'Legislação ambiental na constituição federal. Legislação ambiental na constituição estadual. Política nacional do meio ambiente. História do movimento ambientalista no Brasil.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#8C40D9',
+			obligatory: false
+		},
+		'ST019': {
+			code: 'ST019',
+			name: 'A Sociedade e os Portadores de Necessidades Especiais',
+			ementa: 'Histórico. Legislação. Desenho universal. Inclusão. Tecnologia assistiva. O trabalho e a legislação. Trabalho prático.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#A640D9',
+			obligatory: false
+		},
+		'ST025': {
+			code: 'ST025',
+			name: 'Computação Gráfica Aplicada I',
+			ementa: 'Desenho técnico auxiliado por computador em duas dimensões.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ST103'],
+			color: '#D97340',
+			obligatory: false
+		},
+		'ST026': {
+			code: 'ST026',
+			name: 'Computação Gráfica Aplicada II',
+			ementa: 'Desenho técnico auxiliado por computador em três dimensões.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ST025'],
+			color: '#D97340',
+			obligatory: false
+		},
+		'ST035': {
+			code: 'ST035',
+			name: 'Tratamento de Efluentes por Processos Químicos Avançados',
+			ementa: 'Tratamento de Efluentes por meio de Processos Oxidativos Avançados (POAs). Estudos dos Processos de Tratamento empregando Ozônio, Peróxido de Hidrogênio, Reação de Fenton. Processos Fotocatalítico, Eletroquímico e Fotoeletroquímico. Estudos mecanísticos de cada método. Práticas empregando Fotocatálise e processos Eletroquímicos.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ST572'],
+			color: '#D940A6',
+			obligatory: false
+		},
+		'ST037': {
+			code: 'ST037',
+			name: 'Microbiologia Aplicada',
+			ementa: 'Diversidade microbiana. Ecologia Microbiana do solo. Xenobióticos no solo. Biodegradação e Biorremediação. Respirometria.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST207'],
+			color: '#40D9BF',
+			obligatory: false
+		},
+		'ST043': {
+			code: 'ST043',
+			name: 'Biomatemática',
+			ementa: 'Evolução dos modelos. Formulação e estudo de modelos matemáticos ligados à biomatemática.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['TT101'],
+			color: '#5940D9',
+			obligatory: false
+		},
+		'ST045': {
+			code: 'ST045',
+			name: 'Hidrologia das Águas Subterrâneas',
+			ementa: 'Recursos hídricos. Tipos de aquífero. Origem e distribuição das águas subterrâneas. Processos físicos do fluxo de água em meios porosos e fraturados. Métodos de investigação das águas subsuperficiais e subterrâneas. Noções de hidrogeoquímica de águas subterrâneas. Físico-química dos processos de contaminação de águas subterrâneas. Processos de descontaminação e remediação de áreas contaminadas. Estudos de casos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST306'],
+			color: '#808D8D',
+			obligatory: false
+		},
+		'ST070': {
+			code: 'ST070',
+			name: 'Radiações Não Ionizantes',
+			ementa: 'Terminologia utilizada. Campo elétrico, campo magnético e campo eletromagnético. Influência da distância nos campos eletromagnéticos. Campo próximo e campo distante. Radiofreqüência, microondas, radiações infravermelhas, radiações ultravioletas, laser - conceituação, limites de tolerância e medidas de controle. Normas internacionais. Avaliação da exposição a radiações não-ionizantes. Efeitos biológicos das radiações não-ionizantes nos seres humanos. Exemplo de trabalhos e processos utilizando radiação não-ionizante e seu controle.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST209'],
+			color: '#4040D9',
+			obligatory: false
+		},
+		'ST071': {
+			code: 'ST071',
+			name: 'Ciência da Mudança Global',
+			ementa: 'Histórico das mudanças globais. Clima e Sistemas hidrológicos. Processos estratosféricos e influência solar. Ciclos biogeoquímicos. Sistemas ecológicos e seu desenvolvimento. Evolução humana e sua interação com o meio ambiente.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA430'],
+			color: '#4059D9',
+			obligatory: false
+		},
+		'ST072': {
+			code: 'ST072',
+			name: 'Recursos Energéticos e Meio Ambiente',
+			ementa: 'Recursos energéticos e matriz energética do Brasil. Atividades antrópicas, demanda de energia e desenvolvimento socioeconômico. Disponibilidade de fontes e avaliação do potencial de geração de energia. Energia elétrica: fundamentos sobre geração, transmissão e distribuição. Usinas hidroelétricas, termoelétricas e nucleares. Energia solar. Energia eólica. Energia fóssil. Energia da biomassa. Impactos ambientais decorrentes da geração, transmissão, disponibilidade e oferta de energia no desenvolvimento regional.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA430'],
+			color: '#40A6D9',
+			obligatory: false
+		},
+		'ST073': {
+			code: 'ST073',
+			name: 'Qualidade do Meio Ambiente e Normas Específicas',
+			ementa: 'Noções sobre qualidade. Desenvolvimento histórico da qualidade nas organizações. Noções sobre as normas ISO 9000. Planejamento estratégico nas organizações e sua importância para a gestão ambiental. Técnicas de qualidade aplicadas ao meio ambiente. Normas internacionais: Responsable Care (Atuação Responsável - ABIQUIM), ISO 14001.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#59D940',
+			obligatory: false
+		},
+		'ST074': {
+			code: 'ST074',
+			name: 'Técnica de Amostragem de Poluentes Atmosféricos',
+			ementa: 'Metodologia de avaliação das características qualitativas e quantitativas de amostragem. Normas técnicas específicas de amostragem. Realização prática de amostragem de chaminé.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST675'],
+			color: '#D940A6',
+			obligatory: false
+		},
+		'ST075': {
+			code: 'ST075',
+			name: 'Tópicos Especiais em Controle Ambiental',
+			ementa: 'Estudos de assuntos relevantes introduzidos na área de interesse.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D9D940',
+			obligatory: false
+		},
+		'ST077': {
+			code: 'ST077',
+			name: 'Preservação e Conservação de Recursos Hídricos',
+			ementa: 'Usos múltiplos dos recursos hídricos. Planejamento territorial e conservação dos recursos hídricos. Uso múltiplo e integrado de recursos hídricos. Avaliação de impactos ambientais.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST405'],
+			color: '#D940A6',
+			obligatory: false
+		},
+		'ST078': {
+			code: 'ST078',
+			name: 'Meio Ambiente e Desenvolvimento',
+			ementa: 'Temas ligados aos grandes desafios atuais envolvendo questões ambientais: aquecimento global e clima mundial, matriz energética, consumo consciente, geração de resíduos, consumo da água, preservação de florestas naturais, sustentabilidade (Agenda 21, Relatório Brundtland, Protocolo de Kyoto).',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#7340D9',
+			obligatory: false
+		},
+		'ST080': {
+			code: 'ST080',
+			name: 'Radiação Ionizante',
+			ementa: 'Terminologia utilizada. Conceituação de acidente, irradiação, contaminação, monitoração e dose. Limites de doses. Normas da CNEN - Comissão Nacional de Energia Nuclear. Introdução à proteção radiológica. Avaliação da exposição a radiações ionizantes. Efeitos biológicos das radiações ionizantes nos seres humanos. Métodos de controle da exposição. Exemplo de trabalhos e processos utilizando radiação ionizante e seu controle. O descarte de fontes radioativas e do lixo nuclear. Principais acidentes ambientais envolvendo materiais radioativos registrados.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST209'],
+			color: '#4040D9',
+			obligatory: false
+		},
+		'ST081': {
+			code: 'ST081',
+			name: 'Cidade e Meio Ambiente',
+			ementa: 'Urbanização brasileira: políticas e influência no meio ambiente. Iniciativas locais de desenvolvimento sustentável. Desenvolvimento e políticas públicas de sucesso. Riscos ambientais. Dimensões sociais e econômicas. Pesquisa de campo.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D9A640',
+			obligatory: false
+		},
+		'ST083': {
+			code: 'ST083',
+			name: 'Recuperação de Áreas Degradadas',
+			ementa: 'Conceitos de degradação e recuperação; ecologia florestal, restauração de processos ecológicos, procedimentos para recuperação de áreas degradadas.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40D9D9',
+			obligatory: false
+		},
+		'ST084': {
+			code: 'ST084',
+			name: 'Cromatografia Gasosa Aplicada ao Saneamento',
+			ementa: 'Definições básicas da cromatografia gasosa e evolução histórica; Esquema de um cromatógrafo a gás; Instrumentação básica; Parâmentros fundamentais; Fases estacionárias; Colunas cromatográficas; Detectores: Características básicas; Detector por Ionização em Chama (DIC); Análises Quantitativas e Qualitativas aplicadas a amostras ambientais; Coleta e preservação de amostras; Pré-concentração de amostras ambientais; Padronização; Curvas de calibração.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST405'],
+			color: '#D940A6',
+			obligatory: false
+		},
+		'ST088': {
+			code: 'ST088',
+			name: 'Tópicos Especiais em Controle Ambiental I',
+			ementa: 'Estudos de assuntos relevantes introduzidos na área de interesse.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D940BF',
+			obligatory: false
+		},
+		'ST089': {
+			code: 'ST089',
+			name: 'Tópicos Especiais em Controle Ambiental II',
+			ementa: 'Estudos de assuntos relevantes introduzidos na área de interesse.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40D98C',
+			obligatory: false
+		},
+		'ST090': {
+			code: 'ST090',
+			name: 'Ergonomia - Aplicação Prática ao Trabalho',
+			ementa: 'Conceitos sobre o estudo do espaço, posturas e posições de trabalho. Manipulação de materiais e ferramentas manuais. Movimentação de materiais. Trabalho repetitivo e com computador. Organização do trabalho. A importância da antropometria na adequação do trabalho ao homem. Condições ambientais de trabalho (Norma Regulamentadora 17). Avaliação ergonômica: roteiros e métodos para simplificar a avaliação.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#408CD9',
+			obligatory: false
+		},
+		'ST100': {
+			code: 'ST100',
+			name: 'Tópicos Especiais em Controle Ambiental III',
+			ementa: 'Estudos de assuntos relevantes introduzidos na área de interesse.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40D9A6',
+			obligatory: false
+		},
+		'ST714': {
+			code: 'ST714',
+			name: 'Higiene e Segurança Ocupacional',
+			ementa: 'O ambiente de trabalho e os riscos à saúde. Segurança e higiene ocupacional. Prevenção de acidentes e doenças relacionadas ao trabalho. Aspectos legais (Normas Regulamentadoras). Noções de toxicologia ocupacional. Controle dos riscos nos ambientes de trabalho e de situações de emergências. Primeiros socorros.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D98C40',
+			obligatory: false
+		},
+		'ST715': {
+			code: 'ST715',
+			name: 'Técnicas de Separação e Análises Cromatográficas Aplicadas ao Meio Ambiente',
+			ementa: 'Conceitos em separação química. Definições básicas da cromatografia e evolução histórica. Cromatografia líquida. Equipamentos para HPLC. Cromatografia gasosa. Instrumentação básica. Fases estacionárias. Colunas cromatográficas. Detectores: características básicas, análises quantitativas e qualitativas aplicadas às amostras ambientais, pré-concentração de amostras ambientais, extração líquido-líquido (ELL). Extração em fase sólida (SPE). Padronização. Calibração. Validação.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST405'],
+			color: '#D940A6',
+			obligatory: false
+		},
+		'ST873': {
+			code: 'ST873',
+			name: 'Trabalho de Graduação Interdisciplinar',
+			ementa: 'Realização do Trabalho de Graduação Interdisciplinar do Curso de Tecnologia em Controle Ambiental, com objetivo de aprofundar e aplicar os conhecimentos específicos das disciplinas, sob orientação do professor.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
+			requisitos: ['ST778'],
+			color: '#40BFD9',
+			obligatory: false
+		},
+		'ST874': {
+			code: 'ST874',
+			name: 'Estágio Supervisionado',
+			ementa: 'Realização do Estágio Supervisionado do Curso de Tecnologia em Controle Ambiental, sob orientação de um professor. Obs.: Não é responsabilidade da Unicamp providenciar o estágio para os alunos.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
+			requisitos: ['ST778'],
+			color: '#40BFD9',
+			obligatory: false
+		},
+		'TT350': {
+			code: 'TT350',
+			name: 'Administração de Empresas',
+			ementa: 'Evolução do pensamento em administração. Tendências contemporâneas em administração. Processo decisório e estratégia corporativa. Organizações que aprendem. Processos de controle. Administração de marketing. Estrutura do capital. Participação nos lucros e distribuição de dividendos.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D94059',
+			obligatory: false
+		},
+		'TT601': {
+			code: 'TT601',
+			name: 'Gestão Empreendedora',
+			ementa: 'Empreendedorimo, ética profissional, diagnóstico empresarial, modelos de avaliação econômico-financeiros. Plano estratégico, modelos de avaliação de impacto social e ambiental: balanço social.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#73D940',
+			obligatory: false
 		}
 	}
 };

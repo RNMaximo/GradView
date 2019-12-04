@@ -35,6 +35,34 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 40,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-2': {
+			credits: 4,
+			hasRestrictions: true,
+			subjects: ['BA500', 'BB500', 'BC500', 'BD500', 'BE500', 'BE501', 'BF500', 'BF501', 'BG500', 'BG501', 'BH501', 'BH502', 'BH511', 'BI500', 'BM500', 'BP500', 'BT500', 'BT501', 'BV500', 'BZ500', 'EL201', 'EL505', 'EL506'],
+		},
+		'elet-3': {
+			credits: 4,
+			hasRestrictions: true,
+			subjects: ['BA600', 'BB600', 'BC600', 'BD600', 'BE600', 'BE601', 'BF600', 'BF601', 'BG600', 'BG601', 'BH601', 'BH602', 'BH611', 'BI600', 'BM600', 'BP600', 'BT600', 'BT601', 'BV600', 'BZ600', 'EL605', 'EL606'],
+		},
+		'elet-4': {
+			credits: 20,
+			hasRestrictions: true,
+			subjects: ['BA692', 'BB583', 'BC694', 'BC696', 'BD692', 'BD694', 'BD792', 'BD794', 'BE694', 'BF694', 'BG594', 'BH694', 'BM694', 'BP694', 'BT596', 'BV694', 'BZ594', 'GM082'],
+		},
+		'elet-5': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['EL110', 'EL142', 'EL210', 'EL485', 'EP108'],
+		},
+	},
+
 	subjects: {
 		'BC182': {
 			code: 'BC182',
@@ -43,7 +71,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94079'
+			color: '#409CD9',
+			obligatory: true
 		},
 		'BE180': {
 			code: 'BE180',
@@ -52,7 +81,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4066D9'
+			color: '#D4D940',
+			obligatory: true
 		},
 		'BG180': {
 			code: 'BG180',
@@ -61,7 +91,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#40D949'
+			color: '#D94940',
+			obligatory: true
 		},
 		'BT181': {
 			code: 'BT181',
@@ -70,7 +101,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:0, C:2},
 			requisitos: '',
-			color: '#40BCD9'
+			color: '#D98140',
+			obligatory: true
 		},
 		'BZ183': {
 			code: 'BZ183',
@@ -79,7 +111,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#53D940'
+			color: '#4052D9',
+			obligatory: true
 		},
 		'EL212': {
 			code: 'EL212',
@@ -88,7 +121,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D94096'
+			color: '#D97740',
+			obligatory: true
 		},
 		'F_107': {
 			code: 'F_107',
@@ -97,7 +131,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94040'
+			color: '#406ED9',
+			obligatory: true
 		},
 		'QG107': {
 			code: 'QG107',
@@ -106,7 +141,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:4, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D940CF'
+			color: '#40D4D9',
+			obligatory: true
 		},
 		'BA281': {
 			code: 'BA281',
@@ -115,7 +151,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D99640'
+			color: '#D9406E',
+			obligatory: true
 		},
 		'BB281': {
 			code: 'BB281',
@@ -124,7 +161,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4083D9'
+			color: '#B840D9',
+			obligatory: true
 		},
 		'BC282': {
 			code: 'BC282',
@@ -133,7 +171,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['BC182'],
-			color: ''
+			color: '#409CD9',
+			obligatory: true
 		},
 		'BG282': {
 			code: 'BG282',
@@ -142,7 +181,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['BG180'],
-			color: ''
+			color: '#D94940',
+			obligatory: true
 		},
 		'BH282': {
 			code: 'BH282',
@@ -151,7 +191,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BC182'],
-			color: ''
+			color: '#409CD9',
+			obligatory: true
 		},
 		'BT281': {
 			code: 'BT281',
@@ -160,7 +201,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D97940'
+			color: '#5240D9',
+			obligatory: true
 		},
 		'BZ280': {
 			code: 'BZ280',
@@ -169,7 +211,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#70D940'
+			color: '#CB40D9',
+			obligatory: true
 		},
 		'EL683': {
 			code: 'EL683',
@@ -178,7 +221,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#D95C40',
+			obligatory: true
 		},
 		'ELET02': {
 			code: 'ELET02',
@@ -187,7 +231,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'BB381': {
 			code: 'BB381',
@@ -196,7 +241,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9B340'
+			color: '#40D9C2',
+			obligatory: true
 		},
 		'BF381': {
 			code: 'BF381',
@@ -205,7 +251,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#8C40D9'
+			color: '#D94093',
+			obligatory: true
 		},
 		'BG380': {
 			code: 'BG380',
@@ -214,7 +261,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BG282'],
-			color: ''
+			color: '#D94940',
+			obligatory: true
 		},
 		'BI381': {
 			code: 'BI381',
@@ -223,7 +271,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BC282'],
-			color: ''
+			color: '#409CD9',
+			obligatory: true
 		},
 		'BM382': {
 			code: 'BM382',
@@ -232,7 +281,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#8CD940'
+			color: '#D9CB40',
+			obligatory: true
 		},
 		'BT382': {
 			code: 'BT382',
@@ -241,7 +291,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940B3'
+			color: '#D94049',
+			obligatory: true
 		},
 		'BZ380': {
 			code: 'BZ380',
@@ -250,7 +301,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BZ280'],
-			color: ''
+			color: '#CB40D9',
+			obligatory: true
 		},
 		'EL511': {
 			code: 'EL511',
@@ -259,7 +311,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D983'
+			color: '#A640D9',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -268,7 +321,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'BE480': {
 			code: 'BE480',
@@ -277,7 +331,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BE180', 'BT181'],
-			color: ''
+			color: '#D7AD40',
+			obligatory: true
 		},
 		'BF481': {
 			code: 'BF481',
@@ -286,7 +341,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BF381'],
-			color: ''
+			color: '#D94093',
+			obligatory: true
 		},
 		'BG480': {
 			code: 'BG480',
@@ -295,7 +351,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BG380'],
-			color: ''
+			color: '#D94940',
+			obligatory: true
 		},
 		'BH420': {
 			code: 'BH420',
@@ -304,7 +361,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['BH282'],
-			color: ''
+			color: '#409CD9',
+			obligatory: true
 		},
 		'BT482': {
 			code: 'BT482',
@@ -313,7 +371,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BT382'],
-			color: ''
+			color: '#D94049',
+			obligatory: true
 		},
 		'BV481': {
 			code: 'BV481',
@@ -322,7 +381,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#7040D9'
+			color: '#D99C40',
+			obligatory: true
 		},
 		'GM450': {
 			code: 'GM450',
@@ -331,7 +391,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D99F'
+			color: '#40D96E',
+			obligatory: true
 		},
 		'MS380': {
 			code: 'MS380',
@@ -340,7 +401,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D95C40'
+			color: '#C2D940',
+			obligatory: true
 		},
 		'BD520': {
 			code: 'BD520',
@@ -349,7 +411,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#5340D9'
+			color: '#5C40D9',
+			obligatory: true
 		},
 		'BH520': {
 			code: 'BH520',
@@ -358,7 +421,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['BG380', 'BH420'],
-			color: ''
+			color: '#8D738D',
+			obligatory: true
 		},
 		'BP582': {
 			code: 'BP582',
@@ -367,7 +431,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#A940D9'
+			color: '#40D949',
+			obligatory: true
 		},
 		'BT201': {
 			code: 'BT201',
@@ -376,7 +441,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: '',
-			color: '#D9CF40'
+			color: '#D9AF40',
+			obligatory: true
 		},
 		'BV581': {
 			code: 'BV581',
@@ -385,7 +451,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['BV481'],
-			color: ''
+			color: '#D99C40',
+			obligatory: true
 		},
 		'ME480': {
 			code: 'ME480',
@@ -394,7 +461,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MS380'],
-			color: ''
+			color: '#C2D940',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -403,7 +471,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:14},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'BD621': {
 			code: 'BD621',
@@ -412,7 +481,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#C640D9'
+			color: '#405CD9',
+			obligatory: true
 		},
 		'BT200': {
 			code: 'BT200',
@@ -421,7 +491,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: '',
-			color: '#4049D9'
+			color: '#4040D9',
+			obligatory: true
 		},
 		'BZ480': {
 			code: 'BZ480',
@@ -430,7 +501,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#409FD9'
+			color: '#D9B840',
+			obligatory: true
 		},
 		'GM280': {
 			code: 'GM280',
@@ -439,7 +511,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D966'
+			color: '#408AD9',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -448,7 +521,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:16},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL774': {
 			code: 'EL774',
@@ -457,7 +531,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200', 'AA445'],
-			color: '#C6D940'
+			color: '#40D9D4',
+			obligatory: true
 		},
 		'EL876': {
 			code: 'EL876',
@@ -466,7 +541,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['AA200', 'AA450'],
-			color: '#A9D940'
+			color: '#93D940',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -475,7 +551,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:18},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'BT681': {
 			code: 'BT681',
@@ -484,7 +561,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA470'],
-			color: '#D9405C'
+			color: '#AFD940',
+			obligatory: true
 		},
 		'EL885': {
 			code: 'EL885',
@@ -493,7 +571,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:9, D:0, HS:13, SL:4, C:13},
 			requisitos: '',
-			color: '#40D9BC'
+			color: '#AF40D9',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -502,7 +581,688 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:20},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'BA500': {
+			code: 'BA500',
+			name: 'Iniciação Científica em Anatomia I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Anatomia. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#CBD940',
+			obligatory: false
+		},
+		'BA600': {
+			code: 'BA600',
+			name: 'Iniciação Científica em Anatomia II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Anatomia. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#8A40D9',
+			obligatory: false
+		},
+		'BA692': {
+			code: 'BA692',
+			name: 'Ensino de Biologia 1: Anatomia',
+			ementa: 'Planejamento, elaboração, aplicação e avaliação de atividades e programas para o ensino de Anatomia. Abordagem e elaboração de diferentes metodologias para o ensino de Anatomia. Articulação temática e integrada de temas contemporâneos para o ensino de biologia. Criação de conteúdos e formas de ensinar, pautados na ideia de transversalidade no currículo.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#D940D4',
+			obligatory: false
+		},
+		'BB500': {
+			code: 'BB500',
+			name: 'Iniciação Científica em Bioquímica I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Bioquímica. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#40A6D9',
+			obligatory: false
+		},
+		'BB583': {
+			code: 'BB583',
+			name: 'Informática Aplicada ao Ensino de Biologia',
+			ementa: 'Utilização de computadores para o desenvolvimento de material didático na área de biologia.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:4, D:0, HS:8, SL:2, C:8},
+			requisitos: ['AA200'],
+			color: '#D9405C',
+			obligatory: false
+		},
+		'BB600': {
+			code: 'BB600',
+			name: 'Iniciação Científica em Bioquímica II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Bioquímica. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#D94065',
+			obligatory: false
+		},
+		'BC500': {
+			code: 'BC500',
+			name: 'Iniciação Científica em Biologia Celular I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Biologia Celular. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#D9A640',
+			obligatory: false
+		},
+		'BC600': {
+			code: 'BC600',
+			name: 'Iniciação Científica em Biologia Celular II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Biologia Celular. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#D9409C',
+			obligatory: false
+		},
+		'BC694': {
+			code: 'BC694',
+			name: 'Preparo de Material Didático em Biologia Celular',
+			ementa: 'Técnicas para a preparação e execução de aulas práticas para o ensino de Biologia Celular, utilizando a microscopia de luz.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: ['AA200'],
+			color: '#52D940',
+			obligatory: false
+		},
+		'BC696': {
+			code: 'BC696',
+			name: 'Ensino de Biologia II: Biologia Celular',
+			ementa: 'Planejamento, elaboração, aplicação e avaliação de atividades e programas para o ensino de Biologia Celular. Abordagem e elaboração de diferentes metodologia para o ensino de Biologia Celular. Articulação temática e integrada de temas contemporâneos para o ensino de biologia. Criação de conteúdos e formas de ensinar pautados na ideia de transversalidade no currículo.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#40D940',
+			obligatory: false
+		},
+		'BD500': {
+			code: 'BD500',
+			name: 'Iniciação Científica I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Biologia. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#40D98A',
+			obligatory: false
+		},
+		'BD600': {
+			code: 'BD600',
+			name: 'Iniciação Científica II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Biologia. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#D94052',
+			obligatory: false
+		},
+		'BD692': {
+			code: 'BD692',
+			name: 'Temas Transversais no Ensino de Biologia I',
+			ementa: 'Temas transversais no ensino de Biologia.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#D99340',
+			obligatory: false
+		},
+		'BD694': {
+			code: 'BD694',
+			name: 'Temas Transversais no Ensino de Biologia II',
+			ementa: 'Temas transversais em ensino de Biologia.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#B8D940',
+			obligatory: false
+		},
+		'BD792': {
+			code: 'BD792',
+			name: 'Temas Transversais no Ensino de Biologia III',
+			ementa: 'Temas transversais no ensino de Biologia.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#40D981',
+			obligatory: false
+		},
+		'BD794': {
+			code: 'BD794',
+			name: 'Temas Transversais no Ensino de Biologia IV',
+			ementa: 'Temas transversais no Ensino de Biologia.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#D94081',
+			obligatory: false
+		},
+		'BE500': {
+			code: 'BE500',
+			name: 'Iniciação Científica em Ecologia I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Ecologia. Teorias e hipóteses, levantamento de dados, execução de técnicas e protocolos, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'BE501': {
+			code: 'BE501',
+			name: 'Iniciação Científica em Ecologia Animal I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Ecologia Animal. Teorias e hipóteses, levantamento de dados, execução de técnicas e protocolos, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#4077D9',
+			obligatory: false
+		},
+		'BE600': {
+			code: 'BE600',
+			name: 'Iniciação Científica em Ecologia II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Ecologia. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#D9408A',
+			obligatory: false
+		},
+		'BE601': {
+			code: 'BE601',
+			name: 'Iniciação Científica em Ecologia Animal II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Ecologia Animal. Teorias e hipóteses, levantamento de dados, execução de técnicas e protocolos, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#D94077',
+			obligatory: false
+		},
+		'BE694': {
+			code: 'BE694',
+			name: 'Ensino de Biologia III: Ecologia - o Ambiente Terrestre',
+			ementa: 'Planejamento, elaboração, aplicação e avaliação de atividades e programas para o ensino de Ecologia e o ambiente terrestre. Abordagem e elaboração de diferentes metodologias para o ensino de Ecologia. Articulação temática e integrada de temas contemporâneos para o ensino de biologia. Criação de conteúdos e formas de ensinar pautados na ideia de transversalidade no currículo.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#40D9AF',
+			obligatory: false
+		},
+		'BF500': {
+			code: 'BF500',
+			name: 'Iniciação Científica em Fisiologia e Biofísica I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Fisiologia e Biofísica. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#81D940',
+			obligatory: false
+		},
+		'BF501': {
+			code: 'BF501',
+			name: 'Iniciação Científica em Fisiologia Humana I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Fisiologia Humana. Teorias e hipóteses, levantamento de dados, execução de técnicas e protocolos, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#9CD940',
+			obligatory: false
+		},
+		'BF600': {
+			code: 'BF600',
+			name: 'Iniciação Científica em Fisiologia e Biofísica II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Fisiologia e Biofísica. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#D9C240',
+			obligatory: false
+		},
+		'BF601': {
+			code: 'BF601',
+			name: 'Iniciação Científica em Fisiologia Humana II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Fisiologia Humana. Teorias e hipóteses, levantamento de dados, execução de técnicas e protocolos, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#9C40D9',
+			obligatory: false
+		},
+		'BF694': {
+			code: 'BF694',
+			name: 'Ensino de Biologia IV: Fisiologia Humana',
+			ementa: 'Planejamento, elaboração, aplicação e avaliação de atividades e programas para o ensino de Fisiologia Humana. Abordagem e elaboração de diferentes metodologias para o ensino de Fisiologia Humana. Articulação temática e integrada de temas contemporâneos para o ensino de biologia. Criação de conteúdos e formas de ensinar pautados na ideia de transversalidade no currículo.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#5CD940',
+			obligatory: false
+		},
+		'BG500': {
+			code: 'BG500',
+			name: 'Iniciação Científica em Genética I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Genética e Evolução. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#D96E40',
+			obligatory: false
+		},
+		'BG501': {
+			code: 'BG501',
+			name: 'Iniciação Científica em Evolução I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Evolução. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#49D940',
+			obligatory: false
+		},
+		'BG594': {
+			code: 'BG594',
+			name: 'Ensino de Biologia V: Genética e Evolução',
+			ementa: 'Planejamento, elaboração, aplicação e avaliação de atividades e programas para o ensino de Genética e Evolução. Abordagem e elaboração de diferentes metodologias par o ensino de Genétioca e Evolução. Articulação temática e integrada de temas contemporâneos para o ensino de biologia. Criação de conteúdos e formas de ensinar pautados na ideia de transversalidade no currículo.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#8140D9',
+			obligatory: false
+		},
+		'BG600': {
+			code: 'BG600',
+			name: 'Iniciação Científica em Genética II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Genética. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#7740D9',
+			obligatory: false
+		},
+		'BG601': {
+			code: 'BG601',
+			name: 'Iniciação Científica em Evolução II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Evolução. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#D98A40',
+			obligatory: false
+		},
+		'BH501': {
+			code: 'BH501',
+			name: 'Iniciação Científica em Embriologia I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Embriologia. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#C240D9',
+			obligatory: false
+		},
+		'BH502': {
+			code: 'BH502',
+			name: 'Iniciação Científica em Biologia Tecidual I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Biologia Tecidual. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#9340D9',
+			obligatory: false
+		},
+		'BH511': {
+			code: 'BH511',
+			name: 'Iniciação Científica em Biologia do Desenvolvimento I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Biologia do Desenvolvimento. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#40CBD9',
+			obligatory: false
+		},
+		'BH601': {
+			code: 'BH601',
+			name: 'Iniciação Científica em Embriologia II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Biologia do desenvolvimento. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#40D9A6',
+			obligatory: false
+		},
+		'BH602': {
+			code: 'BH602',
+			name: 'Iniciação Científica em Biologia Tecidual II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Biologia Tecidual. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#6ED940',
+			obligatory: false
+		},
+		'BH611': {
+			code: 'BH611',
+			name: 'Iniciação Científica em Biologia do Desenvolvimento I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Biologia do Desenvolvimento. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#40D9CB',
+			obligatory: false
+		},
+		'BH694': {
+			code: 'BH694',
+			name: 'Ensino de Biologia VI: Biologia Tecidual e do Desenvolvimento',
+			ementa: 'Planejamento, elaboração, aplicação e avaliação de atividades e programas para o ensino de Biologia Tecidual e do Desenvolvimento. Abordagens e elaboração de diferentes metodologias para o ensino de Biologia tecidual e do Desenvolvimento. Articulação temática e integrada de temas contemporâneos para o ensino de biologia. Criação de conteúdos e formas de ensinar pautados na ideia de transversalidade no currículo.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['BH282', 'BH520'],
+			color: '#6788B3',
+			obligatory: false
+		},
+		'BI500': {
+			code: 'BI500',
+			name: 'Iniciação Científica em Imunologia I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Imunologia. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#D95240',
+			obligatory: false
+		},
+		'BI600': {
+			code: 'BI600',
+			name: 'Iniciação Científica em Imunologia II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Imunologia. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#D940CB',
+			obligatory: false
+		},
+		'BM500': {
+			code: 'BM500',
+			name: 'Iniciação Científica em Microbiologia I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Microbiologia. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#D96540',
+			obligatory: false
+		},
+		'BM600': {
+			code: 'BM600',
+			name: 'Iniciação Científica em Microbiologia II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Microbiologia. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#40D993',
+			obligatory: false
+		},
+		'BM694': {
+			code: 'BM694',
+			name: 'Ensino de Biologia VII: Saúde e Doença, Contágio e Prevenção',
+			ementa: 'Planejamento, elaboração, aplicação e avaliação de atividades e programas para o ensino de Microbiologia e Saúde Humana. Abordagem e elaboração de diferentes metodoloigas para o ensino de Microbiologia e Epidemiologia. Articulação temática e integrada de temas contemporâneos para o ensino de biologia. Criação de conteúdos e formas de ensinar pautados na ideia de transversalidade no currículo.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#4081D9',
+			obligatory: false
+		},
+		'BP500': {
+			code: 'BP500',
+			name: 'Iniciação Científica em Parasitologia I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Parasitologia. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#40D952',
+			obligatory: false
+		},
+		'BP600': {
+			code: 'BP600',
+			name: 'Iniciação Científica em Parasitologia II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Parasitologia. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#4065D9',
+			obligatory: false
+		},
+		'BP694': {
+			code: 'BP694',
+			name: 'Ensino de Biologia VIII: Parasitologia',
+			ementa: 'Planejamento, elaboração, aplicação e avaliação de atividades e programas para o ensino de Parasitologia. Abordagem e elaboração de diferentes metodologias para o ensino de Parasitologia. Articulação temática e integrada de temas contemporâneos para o ensino de Biologia. Criação de conteúdos de formas de ensinar pautdados na ideia de transversalidade no currículo.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#40B8D9',
+			obligatory: false
+		},
+		'BT500': {
+			code: 'BT500',
+			name: 'Iniciação Científica em Botânica I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Botânica. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#40D977',
+			obligatory: false
+		},
+		'BT501': {
+			code: 'BT501',
+			name: 'Iniciação Científica em Ecologia Vegetal I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Ecologia Vegetal. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#40D965',
+			obligatory: false
+		},
+		'BT596': {
+			code: 'BT596',
+			name: 'Ensino de Biologia IX: Biologia Vegetal',
+			ementa: 'Planejamento, elaboração, aplicação e avaliação de atividade e programas para o ensino de Botânica e Ecologia Vegetal. Abordagem e elaboração de diferentes metodologias para o ensino de Botância e Ecologia Vegetal. Articulação temática e integrada de temas contemporâneos para o ensino de Biologia. Criação de conteúdos e formas de ensinar pautados na ideia de transversalidade no currículo.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#A6D940',
+			obligatory: false
+		},
+		'BT600': {
+			code: 'BT600',
+			name: 'Iniciação Científica em Botânica II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Botânica II. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#40D95C',
+			obligatory: false
+		},
+		'BT601': {
+			code: 'BT601',
+			name: 'Iniciação Científica em Ecologia Vegetal II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Ecologia Vegetal. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#D940C2',
+			obligatory: false
+		},
+		'BV500': {
+			code: 'BV500',
+			name: 'Iniciação Científica em Fisiologia Vegetal I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Fisiologia Vegetal. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#4093D9',
+			obligatory: false
+		},
+		'BV600': {
+			code: 'BV600',
+			name: 'Iniciação Científica em Fisiologia Vegetal II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Fisiologia Vegetal. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#D940B8',
+			obligatory: false
+		},
+		'BV694': {
+			code: 'BV694',
+			name: 'Ensino de Biologia X: Fisiologia Vegetal',
+			ementa: 'Planejamento, elaboração, aplicação e avaliação de atividades e programas para o ensino de Fisiologia Vegetal. Abordagem e elaboração de diferentes metodologias para o ensino de Fisiologia Vegetal. Articulação temática e integrada de temas contemporâneos para o ensino de biologia. Criação de conteúdos e formas de ensinar pautados na ideia de transversalidade no currículo.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#40D9B8',
+			obligatory: false
+		},
+		'BZ500': {
+			code: 'BZ500',
+			name: 'Iniciação Científica em Zoologia I',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Zoologia. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#D440D9',
+			obligatory: false
+		},
+		'BZ594': {
+			code: 'BZ594',
+			name: 'Ensino de Biologia XI: Fauna e Ambiente',
+			ementa: 'Planejamento, elaboração, aplicação e avaliação de atividades e programas para o ensino de Zoologia de Invertebrados e Vertebrados. Abordagem e elaboração de diferentes metodologias para o ensino de Zoologia de Invertebrados e Vertebrados. Articulação temática e integrada de temas contemporâneos para o ensino de biologia. Criação de conteúdos e formas de ensinar pautados na ideia de transversalidade no currículo.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#D940A6',
+			obligatory: false
+		},
+		'BZ600': {
+			code: 'BZ600',
+			name: 'Iniciação Científica em Zoologia II',
+			ementa: 'Introdução à abordagem científica na solução de problemas relacionados aos estudos em Zoologia. Teorias e hipóteses, levantamento de dados, execução de protocolos e técnicas, análise de resultados. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA430'],
+			color: '#65D940',
+			obligatory: false
+		},
+		'EL110': {
+			code: 'EL110',
+			name: 'Tópicos Especiais em Educação I',
+			ementa: 'A ementa desta disciplina deverá ser definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#8AD940',
+			obligatory: false
+		},
+		'EL142': {
+			code: 'EL142',
+			name: 'Tópicos Especiais em Ciências Sociais Aplicadas à Educação',
+			ementa: 'Programa a ser definido semestralmente pelo DECISAE sobre tópicos especiais em Ciências Sociais e Educação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#6E40D9',
+			obligatory: false
+		},
+		'EL201': {
+			code: 'EL201',
+			name: 'Iniciação Científica em Educação II',
+			ementa: 'Introdução às atividades de pesquisa em educação sob a supervisão de um professor.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:0, C:2},
+			requisitos: ['AA200'],
+			color: '#40AFD9',
+			obligatory: false
+		},
+		'EL210': {
+			code: 'EL210',
+			name: 'Tópicos Especiais em Educação II',
+			ementa: 'A ementa desta disciplina deverá ser definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40C2D9',
+			obligatory: false
+		},
+		'EL485': {
+			code: 'EL485',
+			name: 'Filosofia e História da Educação',
+			ementa: 'Estudo das transformações históricas da sociedade e da educação brasileira, com ênfase nas principais concepções filosóficas presentes no pensamento educacional brasileiro.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#D940AF',
+			obligatory: false
+		},
+		'EL505': {
+			code: 'EL505',
+			name: 'Iniciação Científica em Ensino de Ciências I',
+			ementa: 'Introdução à abordagem científica de problemas relacionados aos estudos em Ensino de Ciências. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#77D940',
+			obligatory: false
+		},
+		'EL506': {
+			code: 'EL506',
+			name: 'Iniciação Científica em Ensino de Biologia I',
+			ementa: 'Introdução à abordagem científica de problemas relacionados aos estudos em Ensino de Biologia. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40D99C',
+			obligatory: false
+		},
+		'EL605': {
+			code: 'EL605',
+			name: 'Iniciação Científica em Ensino de Ciências II',
+			ementa: 'Introdução à abordagem científica de problemas relacionados aos estudos em Ensino de Ciências. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#6540D9',
+			obligatory: false
+		},
+		'EL606': {
+			code: 'EL606',
+			name: 'Iniciação Científica em Ensino de Biologia II',
+			ementa: 'Introdução à abordagem científica de problemas relacionados aos estudos em Ensino de Biologia. Elaboração de relatórios de pesquisa e de outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#4049D9',
+			obligatory: false
+		},
+		'EP108': {
+			code: 'EP108',
+			name: 'Pesquisa Pedagógica I',
+			ementa: 'Espaço de introdução do aluno às linguagens de acesso às diferentes fontes de produção da pesquisa educacional: biblioteca, meios informatizados, leitura e produção de textos e artigos com diferentes abordagens. Discussão do profissional da educação frente aos desafios da realidade atual no campo da pesquisa educacional.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#4940D9',
+			obligatory: false
+		},
+		'GM082': {
+			code: 'GM082',
+			name: 'Geociências para Ensino Fundamental e Médio',
+			ementa: 'Propostas de ensino de conteúdos de Geociências para as disciplinas de Ciências, Biologia e Geografia no ensino Fundamental e Médio. Adequação e inadequação de conteúdos ensinados e de métodos e técnicas aplicados noensino de Geociências para esses níveis de escolaridade. Planejamento, elaboração, aplicação e avaliação de atividades voltadas ao ensino de Geociências.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:2, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#D9D440',
+			obligatory: false
 		}
 	}
 };

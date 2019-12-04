@@ -31,6 +31,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 20,
+			hasRestrictions: true,
+			subjects: ['SI901', 'SI902', 'SI903', 'SI904', 'SI905', 'SI906', 'SI907', 'SI908', 'SI909'],
+		},
+		'elet-2': {
+			credits: 6,
+			hasRestrictions: true,
+			subjects: ['SI011', 'SI101', 'SI120', 'SI220', 'SI250', 'SI302', 'SI350', 'SI450', 'SI500', 'SI501', 'SI502', 'SI701', 'SI702', 'SI801', 'ST047', 'ST048', 'ST049', 'ST050', 'ST052', 'ST053', 'ST054', 'ST060', 'ST061', 'ST062', 'ST066', 'ST067', 'ST068', 'ST069', 'ST094', 'ST095', 'ST099', 'ST113', 'ST115', 'ST116', 'ST211', 'ST468', 'ST566', 'ST680', 'TT001', 'TT002', 'TT003', 'TT004', 'TT005', 'TT006', 'TT007', 'TT008', 'TT011', 'TT012', 'TT013', 'TT040', 'TT050', 'TT220', 'TT302', 'TT401'],
+		},
+	},
+
 	subjects: {
 		'SI100': {
 			code: 'SI100',
@@ -39,7 +52,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D940'
+			color: '#4066D9',
+			obligatory: true
 		},
 		'SI221': {
 			code: 'SI221',
@@ -48,7 +62,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D9D940'
+			color: '#D940D9',
+			obligatory: true
 		},
 		'TT106': {
 			code: 'TT106',
@@ -57,7 +72,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#40B3D9',
+			obligatory: true
 		},
 		'TT120': {
 			code: 'TT120',
@@ -66,7 +82,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#8C40D9'
+			color: '#40D940',
+			obligatory: true
 		},
 		'SI102': {
 			code: 'SI102',
@@ -75,7 +92,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#4053D9',
+			obligatory: true
 		},
 		'SI200': {
 			code: 'SI200',
@@ -84,7 +102,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI100'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'SI201': {
 			code: 'SI201',
@@ -93,7 +112,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI100'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'SI202': {
 			code: 'SI202',
@@ -102,7 +122,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: ['SI100'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'ST008': {
 			code: 'ST008',
@@ -111,7 +132,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#8CD940'
+			color: '#D94066',
+			obligatory: true
 		},
 		'ST266': {
 			code: 'ST266',
@@ -120,7 +142,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['SI100'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'TT304': {
 			code: 'TT304',
@@ -129,7 +152,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['TT106'],
-			color: ''
+			color: '#40B3D9',
+			obligatory: true
 		},
 		'SI010': {
 			code: 'SI010',
@@ -138,7 +162,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: ['SI201'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'SI300': {
 			code: 'SI300',
@@ -147,7 +172,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI100'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'SI304': {
 			code: 'SI304',
@@ -156,7 +182,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST266'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'SI404': {
 			code: 'SI404',
@@ -165,7 +192,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['ST266'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'ST567': {
 			code: 'ST567',
@@ -174,7 +202,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI201'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'TT350': {
 			code: 'TT350',
@@ -183,7 +212,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D98C'
+			color: '#D940B3',
+			obligatory: true
 		},
 		'SI305': {
 			code: 'SI305',
@@ -192,7 +222,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI300', 'TT106'],
-			color: ''
+			color: '#408DD9',
+			obligatory: true
 		},
 		'SI400': {
 			code: 'SI400',
@@ -201,7 +232,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: ['SI300'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'ST096': {
 			code: 'ST096',
@@ -210,7 +242,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA435'],
-			color: '#D940D9'
+			color: '#D94053',
+			obligatory: true
 		},
 		'ST562': {
 			code: 'ST562',
@@ -219,7 +252,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI201'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'ST767': {
 			code: 'ST767',
@@ -228,7 +262,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST567'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -237,7 +272,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'SI405': {
 			code: 'SI405',
@@ -246,7 +282,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI305'],
-			color: ''
+			color: '#408DD9',
+			obligatory: true
 		},
 		'SI703': {
 			code: 'SI703',
@@ -255,7 +292,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['TT350'],
-			color: ''
+			color: '#D940B3',
+			obligatory: true
 		},
 		'ST568': {
 			code: 'ST568',
@@ -264,7 +302,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['TT106'],
-			color: ''
+			color: '#40B3D9',
+			obligatory: true
 		},
 		'ST765': {
 			code: 'ST765',
@@ -273,7 +312,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI201', 'SI221'],
-			color: ''
+			color: '#8D53D9',
+			obligatory: true
 		},
 		'TT060': {
 			code: 'TT060',
@@ -282,7 +322,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST266'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -291,7 +332,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'SI401': {
 			code: 'SI401',
@@ -300,7 +342,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI300', '*SI201'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'SI700': {
 			code: 'SI700',
@@ -309,7 +352,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI300', '*SI201'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'SI800': {
 			code: 'SI800',
@@ -318,7 +362,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94040'
+			color: '#C6D940',
+			obligatory: true
 		},
 		'SI912': {
 			code: 'SI912',
@@ -327,7 +372,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:5, D:0, HS:6, SL:0, C:6},
 			requisitos: ['AA465'],
-			color: '#D98C40'
+			color: '#D9409F',
+			obligatory: true
 		},
 		'SI914': {
 			code: 'SI914',
@@ -336,7 +382,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:6, D:0, HS:6, SL:0, C:6},
 			requisitos: ['AA465'],
-			color: '#408CD9'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -345,7 +392,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:2},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'SI704': {
 			code: 'SI704',
@@ -354,7 +402,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9408C'
+			color: '#40D99F',
+			obligatory: true
 		},
 		'SI913': {
 			code: 'SI913',
@@ -363,7 +412,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:5, D:0, HS:6, SL:0, C:6},
 			requisitos: ['SI912'],
-			color: ''
+			color: '#D9409F',
+			obligatory: true
 		},
 		'SI915': {
 			code: 'SI915',
@@ -372,7 +422,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:6, D:0, HS:6, SL:0, C:6},
 			requisitos: ['SI914'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -381,7 +432,638 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'SI011': {
+			code: 'SI011',
+			name: 'Paradigmas de Linguagens de Programação',
+			ementa: 'Paradigmas de linguagens de programação. Programação imperativa: não estruturada, estruturada e orientada a objetos. Programação declarativa: funcional e lógica. Desenvolvimento de programas utilizando os paradigmas estudados.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['SI100'],
+			color: '#4066D9',
+			obligatory: false
+		},
+		'SI101': {
+			code: 'SI101',
+			name: 'Fundamentos de Sistemas de Informação',
+			ementa: 'Bases conceituais e filosóficas da área de Sistemas de Informação. Conceitos, objetivos, funções e componentes dos sistemas de informação. Dimensões tecnológica, organizacional e humana dos sistemas de informação. Tipos de sistemas de informação. Áreas de pesquisa em Sistemas de Informação. Conhecimento científico e metodologia de pesquisa em Sistemas de Informação.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9408C',
+			obligatory: false
+		},
+		'SI120': {
+			code: 'SI120',
+			name: 'Lógica Matemática',
+			ementa: 'Lógica sentencial e de Primeira ordem. Sistemas dedutivos naturais e axiomáticos. Completeza, consistência e coerência. Formalização de problemas. Formalização de programas e sistemas de computação simples.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#53D940',
+			obligatory: false
+		},
+		'SI220': {
+			code: 'SI220',
+			name: 'Matemática Discreta',
+			ementa: 'Conjuntos. Álgebra dos conjuntos. Relações. Funções. Estruturas algébricas. Reticulados. Álgebra Booleana.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D953',
+			obligatory: false
+		},
+		'SI250': {
+			code: 'SI250',
+			name: 'Economia e Finanças',
+			ementa: 'Introdução à Economia; economia política e marxista. Introdução à teoria do consumidor e teoria do mercado. Introdução à engenharia econômica. Tipos de investimento e métodos de análise de investimento.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['TT350'],
+			color: '#D940B3',
+			obligatory: false
+		},
+		'SI302': {
+			code: 'SI302',
+			name: 'Resolução de Problemas II',
+			ementa: 'Atividades práticas e supervisionadas de resolução de problemas diversos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
+			requisitos: ['SI101', '*SI201'],
+			color: '#8D53B3',
+			obligatory: false
+		},
+		'SI350': {
+			code: 'SI350',
+			name: 'Teoria Geral de Sistemas',
+			ementa: 'A origem e o conceito da Teoria Geral de Sistemas. O conceito de sistema. Componentes genéricos de um sistema. As relações entre sistema e ambiente. Hierarquia de sistemas. Classificações dos sistemas. Enfoque sistêmico. O pensamento sistêmico aplicado na resolução de problemas. O pensamento sistêmico aplicado às organizações. Modelagem de Sistemas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['TT350'],
+			color: '#D940B3',
+			obligatory: false
+		},
+		'SI450': {
+			code: 'SI450',
+			name: 'Administração da Produção',
+			ementa: 'Sistemas de produção, ferramentas da produção enxuta e produção sustentável. Gestão da cadeia de suprimentos. Planejamento e coordenação de atividades em projetos. Indicadores de desempenho. Estratégia de produção.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['TT350'],
+			color: '#D940B3',
+			obligatory: false
+		},
+		'SI500': {
+			code: 'SI500',
+			name: 'Complexidade de Algoritmos',
+			ementa: 'Desenvolvimento de algoritmos. Técnicas de projeto de algoritmos eficientes. Análise assintótica de limites de complexidade. Técnicas de prova de cotas inferiores. Exemplos de análise de algoritmos iterativos e recursivos. Programação dinâmica. Algoritmos probabilísticos. Complexidade Pessimista, Complexidade Média, Complexidade Mínima do problema, Classes de problemas: P, NP, NP-Completa.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['SI201'],
+			color: '#4066D9',
+			obligatory: false
+		},
+		'SI501': {
+			code: 'SI501',
+			name: 'Redes de Comunicação II',
+			ementa: 'Protocolos para interconexão de redes. Arquiteturas e Protocolos para comunicação sem fio. Gerência de redes. Introdução a redes móveis e ópticas. Comunicação multimídia. Modelos de tráfego. Atividades práticas e supervisionadas de desenvolvimento de protocolos de comunicação.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:2, D:0, HS:4, SL:2, C:4},
+			requisitos: ['ST568'],
+			color: '#40B3D9',
+			obligatory: false
+		},
+		'SI502': {
+			code: 'SI502',
+			name: 'Projeto Integrador',
+			ementa: 'Atividades práticas e supervisionadas de planejamento e execução de projeto que integre os conteúdos de diversas disciplinas do curso.',
+			semestre: 1,
+			vector: {T:0, P:0, L:2, O:2, D:0, HS:4, SL:2, C:4},
+			requisitos: ['SI201', 'SI300', 'ST767', 'SI304', 'SI404', 'SI305', 'TT060'],
+			color: '#406CD9',
+			obligatory: false
+		},
+		'SI701': {
+			code: 'SI701',
+			name: 'Introdução a Multimídia',
+			ementa: 'Conceitos de multimídia e sistemas multimídia. Arquitetura e aplicações multimídia, classificação dos tipos de sistemas multimídias. Dispositivos de entrada e saída em ambientes multimídia. Fundamentos do processamento de imagens. Fundamentos de animação. Fundamentos de processamento de som. Critérios de seleção de soluções multimídia.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#C640D9',
+			obligatory: false
+		},
+		'SI702': {
+			code: 'SI702',
+			name: 'Inteligência Artificial',
+			ementa: 'Fundamentos de IA. Agentes inteligentes. Representação de conhecimento e solução de problemas. Estruturas e estratégias de busca. Lógica matemática, representação e inferência. Sistemas baseados em regras. Inteligência computacional. Aplicações.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['SI120'],
+			color: '#53D940',
+			obligatory: false
+		},
+		'SI801': {
+			code: 'SI801',
+			name: 'Introdução a Auditoria e Segurança de Sistemas',
+			ementa: 'Conceitos e tipos de ameaças, riscos e vulnerabilidades dos sistemas de informação. Conceito e objetivos da segurança de informações. Planejamento, implementação e avaliação de políticas de segurança de informações. Conceito e objetivos da auditoria de sistemas de informação. Técnicas de auditoria em sistemas de informação. Softwares de auditoria. Estrutura da função de auditoria de sistemas de informação nas organizações.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['SI101'],
+			color: '#D9408C',
+			obligatory: false
+		},
+		'SI901': {
+			code: 'SI901',
+			name: 'Iniciação Científica I',
+			ementa: 'Atividades de Iniciação Científica, desenvolvidas sob orientação de docente da Unicamp.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:9, D:0, HS:10, SL:0, C:10},
+			requisitos: ['AA200'],
+			color: '#40D9B3',
+			obligatory: false
+		},
+		'SI902': {
+			code: 'SI902',
+			name: 'Iniciação Científica II',
+			ementa: 'Atividades de Iniciação Científica, desenvolvidas sob orientação de docente da Unicamp.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:9, D:0, HS:10, SL:0, C:10},
+			requisitos: ['AA200', 'SI901'],
+			color: '#40D9B3',
+			obligatory: false
+		},
+		'SI903': {
+			code: 'SI903',
+			name: 'Iniciação Tecnológica I',
+			ementa: 'Atividades de Iniciação Tecnológica, desenvolvidas sob orientação de docente da Unicamp.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:9, D:0, HS:10, SL:0, C:10},
+			requisitos: ['AA200'],
+			color: '#B340D9',
+			obligatory: false
+		},
+		'SI904': {
+			code: 'SI904',
+			name: 'Iniciação Tecnológica II',
+			ementa: 'Atividades de Iniciação Tecnológica, desenvolvidas sob orientação de docente da Unicamp.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:9, D:0, HS:10, SL:0, C:10},
+			requisitos: ['AA200', 'SI903'],
+			color: '#B340D9',
+			obligatory: false
+		},
+		'SI905': {
+			code: 'SI905',
+			name: 'Monitoria I',
+			ementa: 'Participação em atividades de monitoria, sob orientação de docente responsável pela disciplina em que o discente irá atuar.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:4, D:0, HS:5, SL:0, C:5},
+			requisitos: ['AA200', 'AA410'],
+			color: '#6640D9',
+			obligatory: false
+		},
+		'SI906': {
+			code: 'SI906',
+			name: 'Monitoria II',
+			ementa: 'Participação em atividades de monitoria, sob orientação de docente responsável pela disciplina em que o discente irá atuar.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:4, D:0, HS:5, SL:0, C:5},
+			requisitos: ['AA200', 'AA410', 'SI905'],
+			color: '#6640D9',
+			obligatory: false
+		},
+		'SI907': {
+			code: 'SI907',
+			name: 'Intercâmbio Acadêmico I',
+			ementa: 'Participação em Intercâmbio Acadêmico.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:10, D:0, HS:10, SL:0, C:10},
+			requisitos: ['AA200', 'AA435'],
+			color: '#D95340',
+			obligatory: false
+		},
+		'SI908': {
+			code: 'SI908',
+			name: 'Intercâmbio Acadêmico II',
+			ementa: 'Participação em Intercâmbio Acadêmico.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:10, D:0, HS:10, SL:0, C:10},
+			requisitos: ['AA200', 'AA435', 'SI907'],
+			color: '#D95340',
+			obligatory: false
+		},
+		'SI909': {
+			code: 'SI909',
+			name: 'Atividades Complementares',
+			ementa: 'Participação em Atividades Complementares. A matrícula nesta disciplina será autorizada pela Coordenação do Curso mediante apresentação de documentos comprobatórios da execução de atividades complementares por parte do aluno, de acordo com regras internas do curso, visando a contabilização, em créditos, das atividades efetuadas.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:8, D:0, HS:10, SL:0, C:10},
+			requisitos: ['AA200'],
+			color: '#D98C40',
+			obligatory: false
+		},
+		'ST047': {
+			code: 'ST047',
+			name: 'Introdução a Interfaces Humano-Computador',
+			ementa: 'Construção de Interfaces Humano-Computador. Aspectos Humanos e Tecnológicos. Uso de Ferramentas para desenvolvimento de interfaces de sistemas.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST266'],
+			color: '#4066D9',
+			obligatory: false
+		},
+		'ST048': {
+			code: 'ST048',
+			name: 'Compiladores',
+			ementa: 'Teoria de linguagens. Análise léxica e sintática. Geração e otimização de código. Análise semântica. Aspectos e ferramentas para construção de compiladores.',
+			semestre: 1,
+			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['TT304'],
+			color: '#40B3D9',
+			obligatory: false
+		},
+		'ST049': {
+			code: 'ST049',
+			name: 'Sistemas Distribuídos',
+			ementa: 'Coordenação, sincronização e comunicação entre processos. Sistemas operacionais distribuídos: Sistemas de arquivos, Servidores de nomes, Memória compartilhada. Segurança.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ST568', 'TT304'],
+			color: '#40B3D9',
+			obligatory: false
+		},
+		'ST050': {
+			code: 'ST050',
+			name: 'Tópicos Avançados em Redes',
+			ementa: 'Disciplina de ementa aberta.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ST568'],
+			color: '#40B3D9',
+			obligatory: false
+		},
+		'ST052': {
+			code: 'ST052',
+			name: 'Introdução ao Processamento Discreto de Sinais',
+			ementa: 'Sinais e Sistemas Discretos no Tempo. Amostragem de Sinais Contínuos no Tempo. Transformada de Fourier Discreta. Computação e Análise de Sinais usando Transformada de Fourier Discreta.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#4040D9',
+			obligatory: false
+		},
+		'ST053': {
+			code: 'ST053',
+			name: 'Tópicos em Modelagem Computacional',
+			ementa: 'Aplicações computacionais na resolução de problemas de diferentes naturezas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#4079D9',
+			obligatory: false
+		},
+		'ST054': {
+			code: 'ST054',
+			name: 'Protocolos de Comunicação e Redes',
+			ementa: 'Protocolos adaptativos. Protocolos de sinalização. Implementação de protocolos de comunicação. Máquinas de estado dirigidas por eventos. Modelos de tráfego em redes. Simulações e emulações.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST568'],
+			color: '#40B3D9',
+			obligatory: false
+		},
+		'ST060': {
+			code: 'ST060',
+			name: 'Tópicos Avançados em Banco de Dados',
+			ementa: 'Problemas de Segurança. Recuperação de Falhas e Controle de Concorrência em banco de Dados. Conceito de Banco de Dados Distribuídos. Bancos de Dados OO e Banco de Dados Multimídia.',
+			semestre: 1,
+			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ST567'],
+			color: '#4066D9',
+			obligatory: false
+		},
+		'ST061': {
+			code: 'ST061',
+			name: 'Tópicos Avançados em Programação',
+			ementa: 'Estudo de Assuntos Avançados em Programação.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#B3D940',
+			obligatory: false
+		},
+		'ST062': {
+			code: 'ST062',
+			name: 'Engenharia de Software III',
+			ementa: 'Aplicação de técnicas de engenharia de software em um ambiente simulado para o desenvolvimento, validação e verificação de sistemas de software.',
+			semestre: 1,
+			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9C640',
+			obligatory: false
+		},
+		'ST066': {
+			code: 'ST066',
+			name: 'Tópicos Avançados em Arquitetura de Computadores',
+			ementa: 'Tópicos de organização e arquitetura. Máquinas multinível. Máquinas risc. Arquitetura paralela. Arquiteturas avançadas e alternativas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['TT106'],
+			color: '#40B3D9',
+			obligatory: false
+		},
+		'ST067': {
+			code: 'ST067',
+			name: 'Tópicos Especiais em Informática',
+			ementa: 'Estudo de Assuntos Especiais de Informática de acordo com a Evolução Tecnológica.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#8CD940',
+			obligatory: false
+		},
+		'ST068': {
+			code: 'ST068',
+			name: 'Introdução à Inteligência Artificial',
+			ementa: 'Introdução à Inteligência Artificial. Lógica e Dedução. Estratégias de busca. Sistemas Especialistas. Processamento de Linguagem Natural. Sistemas de programação.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA430'],
+			color: '#5340D9',
+			obligatory: false
+		},
+		'ST069': {
+			code: 'ST069',
+			name: 'Tópicos em Teoria da Computação',
+			ementa: 'Estudo de Assuntos Especiais em Teoria da Computação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#9FD940',
+			obligatory: false
+		},
+		'ST094': {
+			code: 'ST094',
+			name: 'Introdução às Telecomunicações',
+			ementa: 'Sistemas de comunicação. Propagação de ondas eletromagnéticas. Eletrônica básica para telecomunicações: amplificadores, osciladores, filtros e casamento de impedâncias. Modulação em amplitude e frequência. Modulação chaveada. Rádio digital. Telefonia celular. Comunicação por satélites. Transmissão digital. Transmissão por fibras ópticas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#9F40D9',
+			obligatory: false
+		},
+		'ST095': {
+			code: 'ST095',
+			name: 'Técnicas de Interfaceamento com Computadores',
+			ementa: 'Organização geral de um computador. Dispositivos de entrada e saída. Portas paralelas e seriais. Técnicas de interfaceamento usando portas paralelas. Técnicas de interfaceamento usando portas seriais. Desenvolvimento de hardware para interfaceamento. Aplicações práticas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['TT106'],
+			color: '#40B3D9',
+			obligatory: false
+		},
+		'ST099': {
+			code: 'ST099',
+			name: 'Autômatos',
+			ementa: 'Revisão de Conceitos Básicos. Alfabetos e linguagens. Autômatos Finitos. Linguagens Regulares. Linguagens Livres de Contexto. Linguagens Recursivas e Linguagem Recursivamente Enumeráveis. Computabilidade e Decidibilidade.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D96640',
+			obligatory: false
+		},
+		'ST113': {
+			code: 'ST113',
+			name: 'Fundamentos de Eletricidade',
+			ementa: 'Conceitos de Eletrostática. Conceitos de Eletrodinâmica. Medições Elétricas. Instalações Elétricas. Normas para Instalações Elétricas.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#408CD9',
+			obligatory: false
+		},
+		'ST115': {
+			code: 'ST115',
+			name: 'Processamento de Imagens',
+			ementa: 'Conceitos básicos de imagens digitais; representação de imagens; histograma; rotulação e filtragem; segmentação.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#8C40D9',
+			obligatory: false
+		},
+		'ST116': {
+			code: 'ST116',
+			name: 'Fundamentos de Jogos Digitais',
+			ementa: 'Terminologia; Introdução à matemática e física de jogos; Princípios básicos de áudio e vídeo: características e manipulação; Técnicas e elementos para construção de jogos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ST765'],
+			color: '#8D53D9',
+			obligatory: false
+		},
+		'ST211': {
+			code: 'ST211',
+			name: 'Estatística',
+			ementa: 'Estatística descritiva. Probabilidade. Distribuições: Binomial, Poisson e Normal. Amostragem Estimação. Testes de hipótese. Intervalos de confiança. Regressão. Correlação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D94040',
+			obligatory: false
+		},
+		'ST468': {
+			code: 'ST468',
+			name: 'Cálculo Numérico',
+			ementa: 'Erro de truncamento e arredondamento. Aritmética de ponto flutuante. Zeros de funções. Métodos de solução de sistemas lineares. Resolução de problemas não-lineares. Interpolação. Ajuste de funções. Integração numérica.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#7940D9',
+			obligatory: false
+		},
+		'ST566': {
+			code: 'ST566',
+			name: 'Tópicos em Desenvolvimento Tecnológico',
+			ementa: 'Estudos de assuntos ligados a informática de acordo com os avanços da tecnologia.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA450'],
+			color: '#40D9C6',
+			obligatory: false
+		},
+		'ST680': {
+			code: 'ST680',
+			name: 'Pesquisa Operacional',
+			ementa: 'Problema Padrão da Programação Linear. Métodos Simplex. Teoria do Estoque. Teoria das Filas.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST468'],
+			color: '#7940D9',
+			obligatory: false
+		},
+		'TT001': {
+			code: 'TT001',
+			name: 'Tópicos em Computação e Informática I',
+			ementa: 'Estudo de temas relevantes em Computação e Informática. A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA425'],
+			color: '#66D940',
+			obligatory: false
+		},
+		'TT002': {
+			code: 'TT002',
+			name: 'Tópicos em Computação e Informática II',
+			ementa: 'Estudo de temas relevantes em Computação e Informática. A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA435'],
+			color: '#40D966',
+			obligatory: false
+		},
+		'TT003': {
+			code: 'TT003',
+			name: 'Tópicos em Computação e Informática III',
+			ementa: 'Estudo de temas relevantes em Computação e Informática. A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA450'],
+			color: '#40D98C',
+			obligatory: false
+		},
+		'TT004': {
+			code: 'TT004',
+			name: 'Tópicos em Computação e Informática IV',
+			ementa: 'Estudo de temas relevantes em Computação e Informática. A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA450'],
+			color: '#409FD9',
+			obligatory: false
+		},
+		'TT005': {
+			code: 'TT005',
+			name: 'Tópicos Especiais em Telecomunicações I',
+			ementa: 'Estudo de assuntos relevantes em telecomunicações de acordo com a evolução tecnológica.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D9B340',
+			obligatory: false
+		},
+		'TT006': {
+			code: 'TT006',
+			name: 'Tópicos Especiais em Telecomunicações II',
+			ementa: 'Estudo de assuntos relevantes em telecomunicações de acordo com a evolução tecnológica.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#79D940',
+			obligatory: false
+		},
+		'TT007': {
+			code: 'TT007',
+			name: 'Tópicos Especiais em Telecomunicações III',
+			ementa: 'Estudo de assuntos relevantes em telecomunicações de acordo com a evolução tecnológica.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D94079',
+			obligatory: false
+		},
+		'TT008': {
+			code: 'TT008',
+			name: 'Tópicos Especiais em Telecomunicações IV',
+			ementa: 'Estudo de assuntos relevantes em telecomunicações de acordo com a evolução tecnológica.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40C6D9',
+			obligatory: false
+		},
+		'TT011': {
+			code: 'TT011',
+			name: 'Estruturas Algébricas',
+			ementa: 'Assuntos preliminares: conjuntos, relações, relações de equivalência, congruência. Grupos. Anéis. Corpos. Polinômios.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9D940',
+			obligatory: false
+		},
+		'TT012': {
+			code: 'TT012',
+			name: 'Grafos',
+			ementa: 'Conceito, representação e aplicação de grafos. Operações sobre grafos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA425'],
+			color: '#D97940',
+			obligatory: false
+		},
+		'TT013': {
+			code: 'TT013',
+			name: 'Redes Complexas',
+			ementa: 'Redes complexas: introdução, exemplos. Redes complexas em sistemas naturais e construídos pelo ser humano. Modelagem e representação de redes complexas. Modelos estáticos e de crescimento. Caracterização e medidas de redes complexas. Operação, falhas, falhas em cascata, ataques e dinâmica de redes complexas.',
+			semestre: 1,
+			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA450'],
+			color: '#D940C6',
+			obligatory: false
+		},
+		'TT040': {
+			code: 'TT040',
+			name: 'Matemática Discreta Aplicada',
+			ementa: 'Lógica proposicional. Métodos de prova. Indução matemática. Relações de recorrências. Noções de teoria dos grafos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D979',
+			obligatory: false
+		},
+		'TT050': {
+			code: 'TT050',
+			name: 'Sistemas de Apoio à Decisão',
+			ementa: 'Teoria da decisão, modelos de decisão; modelagem qualitativa; árvores de decisão, agentes de decisão, análise multicritério; Processo cognitivo e tomada de decisão; Heuristicas de solução de problemas. Sistemas especialistas e sistemas baseados em conhecimento. Introdução às Tecnologias de suporte à decisão.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ST211'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'TT220': {
+			code: 'TT220',
+			name: 'Cálculo II',
+			ementa: 'Funções de várias variáveis reais. Derivadas e diferenciais. Máximos e mínimos. Integrais múltiplas. Integrais de linha. Teorema da divergência. Teorema de Stokes. Séries numéricas e séries de funções. Série de Fourier.',
+			semestre: 1,
+			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
+			requisitos: ['TT120'],
+			color: '#40D940',
+			obligatory: false
+		},
+		'TT302': {
+			code: 'TT302',
+			name: 'Circuitos Digitais',
+			ementa: 'Sistemas de numeração; Portas lógicas e álgebra booleana; Circuitos lógicos combinacionais; Flip-Flops e dispositivos relacionados; Aritmética digital: Operações e circuitos; Famílias lógicas; Contadores e registradores; Contadores binários: tipos, divisor da frequência. Memórias: tipos, expansão, tempo de acesso. Conversores analógicos/digitais.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D99F40',
+			obligatory: false
+		},
+		'TT401': {
+			code: 'TT401',
+			name: 'Microcontroladores',
+			ementa: 'Arquitetura e princípios de operação de microcontroladores. Interfaces. Projeto com microcontroladores.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['TT302'],
+			color: '#D99F40',
+			obligatory: false
 		}
 	}
 };

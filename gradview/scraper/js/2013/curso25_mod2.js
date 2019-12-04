@@ -35,6 +35,34 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 10,
+			hasRestrictions: true,
+			subjects: ['AP303', 'AP403', 'AP515', 'AP615', 'AP618', 'AP620', 'AP724'],
+		},
+		'elet-2': {
+			credits: 20,
+			hasRestrictions: true,
+			subjects: ['AP106', 'AP140', 'AP199', 'AP206', 'AP240', 'AP299', 'AP308', 'AP309', 'AP313', 'AP340', 'AP399', 'AP401', 'AP409', 'AP413', 'AP440', 'AP499', 'AP501', 'AP503', 'AP504', 'AP509', 'AP510', 'AP599', 'AP601', 'AP603', 'AP604', 'AP609', 'AP610', 'AP614', 'AP632', 'AP699', 'AP701', 'AP709', 'AP710', 'AP714', 'AP718', 'AP732', 'AP733', 'AP734', 'AP745', 'AP760', 'AP764', 'AP799', 'AP801', 'AP810', 'AP814', 'AP895', 'AP896', 'AP897', 'AP898', 'AP899', 'AP901', 'AP910', 'AP931', 'AP932', 'AP933', 'AP934', 'AP935', 'AP936', 'AP937', 'AP938', 'AP939', 'AP940', 'AP941', 'AP975', 'AP976', 'AP977', 'AP978', 'AP981', 'AP982', 'AP983', 'AP991', 'AP992', 'AP993', 'EP158'],
+		},
+		'elet-3': {
+			credits: 8,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-4': {
+			credits: 8,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-5': {
+			credits: 22,
+			hasRestrictions: true,
+			subjects: ['AP735', 'AP737', 'AP836', 'AP838'],
+		},
+	},
+
 	subjects: {
 		'AP100': {
 			code: 'AP100',
@@ -43,7 +71,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: '',
-			color: '#A640D9'
+			color: '#D94072',
+			obligatory: true
 		},
 		'AP103': {
 			code: 'AP103',
@@ -52,7 +81,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: '',
-			color: '#D940D9'
+			color: '#40D96B',
+			obligatory: true
 		},
 		'AP104': {
 			code: 'AP104',
@@ -61,7 +91,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: '',
-			color: '#D94073'
+			color: '#B440D9',
+			obligatory: true
 		},
 		'AP110': {
 			code: 'AP110',
@@ -70,7 +101,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: '',
-			color: '#40D973'
+			color: '#4061D9',
+			obligatory: true
 		},
 		'AP198': {
 			code: 'AP198',
@@ -79,7 +111,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#4073D9'
+			color: '#40D99D',
+			obligatory: true
 		},
 		'AR101': {
 			code: 'AR101',
@@ -88,7 +121,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#D940A6'
+			color: '#D94068',
+			obligatory: true
 		},
 		'AP200': {
 			code: 'AP200',
@@ -97,7 +131,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['AP100'],
-			color: ''
+			color: '#D94072',
+			obligatory: true
 		},
 		'AP203': {
 			code: 'AP203',
@@ -106,7 +141,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['AP103'],
-			color: ''
+			color: '#40D96B',
+			obligatory: true
 		},
 		'AP204': {
 			code: 'AP204',
@@ -115,7 +151,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['AP104'],
-			color: ''
+			color: '#B440D9',
+			obligatory: true
 		},
 		'AP210': {
 			code: 'AP210',
@@ -124,7 +161,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['AP110'],
-			color: ''
+			color: '#4061D9',
+			obligatory: true
 		},
 		'AP298': {
 			code: 'AP298',
@@ -133,7 +171,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: ['AP198'],
-			color: ''
+			color: '#40D99D',
+			obligatory: true
 		},
 		'AP415': {
 			code: 'AP415',
@@ -142,7 +181,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['AP110'],
-			color: ''
+			color: '#4061D9',
+			obligatory: true
 		},
 		'AP304': {
 			code: 'AP304',
@@ -151,7 +191,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['AP204'],
-			color: ''
+			color: '#B440D9',
+			obligatory: true
 		},
 		'AP398': {
 			code: 'AP398',
@@ -160,7 +201,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: ['AP298'],
-			color: ''
+			color: '#40D99D',
+			obligatory: true
 		},
 		'EL511': {
 			code: 'EL511',
@@ -169,7 +211,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D9A6'
+			color: '#4075D9',
+			obligatory: true
 		},
 		'EL683': {
 			code: 'EL683',
@@ -178,7 +221,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#A6D940'
+			color: '#C840D9',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -187,7 +231,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'AP404': {
 			code: 'AP404',
@@ -196,7 +241,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['AP304'],
-			color: ''
+			color: '#B440D9',
+			obligatory: true
 		},
 		'AP498': {
 			code: 'AP498',
@@ -205,7 +251,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: ['AP398'],
-			color: ''
+			color: '#40D99D',
+			obligatory: true
 		},
 		'AP520': {
 			code: 'AP520',
@@ -214,7 +261,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['AP204'],
-			color: ''
+			color: '#B440D9',
+			obligatory: true
 		},
 		'EL212': {
 			code: 'EL212',
@@ -223,7 +271,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#8240D9',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -232,7 +281,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'AP518': {
 			code: 'AP518',
@@ -241,7 +291,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: '',
-			color: '#40A6D9'
+			color: '#AAD940',
+			obligatory: true
 		},
 		'AP598': {
 			code: 'AP598',
@@ -250,7 +301,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['AP498'],
-			color: ''
+			color: '#40D99D',
+			obligatory: true
 		},
 		'AR301': {
 			code: 'AR301',
@@ -259,7 +311,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#D9D940'
+			color: '#40B1D9',
+			obligatory: true
 		},
 		'EL774': {
 			code: 'EL774',
@@ -268,7 +321,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200', 'AA445'],
-			color: '#4040D9'
+			color: '#D96840',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -277,7 +331,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'AP600': {
 			code: 'AP600',
@@ -286,7 +341,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D940'
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'AP625': {
 			code: 'AP625',
@@ -295,7 +351,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#D97340'
+			color: '#D94086',
+			obligatory: true
 		},
 		'EL874': {
 			code: 'EL874',
@@ -304,7 +361,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['EL774'],
-			color: ''
+			color: '#D96840',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -313,7 +371,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'AP725': {
 			code: 'AP725',
@@ -322,7 +381,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#7340D9'
+			color: '#40D943',
+			obligatory: true
 		},
 		'AP762': {
 			code: 'AP762',
@@ -331,7 +391,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:4, D:0, HS:6, SL:2, C:6},
 			requisitos: ['AA200'],
-			color: '#D94040'
+			color: '#4089D9',
+			obligatory: true
 		},
 		'AR501': {
 			code: 'AR501',
@@ -340,7 +401,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#73D940'
+			color: '#40D957',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -349,7 +411,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'AP862': {
 			code: 'AP862',
@@ -358,7 +421,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:2, C:8},
 			requisitos: ['AA200'],
-			color: '#D9A640'
+			color: '#64D940',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -367,7 +431,858 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:22},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'AP106': {
+			code: 'AP106',
+			name: 'Plástica I',
+			ementa: 'Conceituação plástica no espaço bi e tridimensional.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D94090',
+			obligatory: false
+		},
+		'AP140': {
+			code: 'AP140',
+			name: 'Ateliê Experimental Multidisciplinar I',
+			ementa: 'A disciplina tem como objetivo estimular a vivência e troca de experiências em ateliê coletivo dando ênfase à produção e ao desenvolvimento de processos de criação em diferentes procedimentos artísticos.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D97C40',
+			obligatory: false
+		},
+		'AP199': {
+			code: 'AP199',
+			name: 'Atividades Artísticas - Culturais - Ensino I',
+			ementa: 'Participação como organizador, assistente ou expositor em atividades artísticas, culturais, ensino e científicas (produção cultural, cenografia, mostra individual e coletiva em instituições especializadas e afins; visitas monitoradas a ateliês, exposições e acervos; atividades de extensão como congressos e seminários em áreas de Artes Visuais, História da Arte, Arte e Ensino e afins). Critérios a serem definidos pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
+			requisitos: '',
+			color: '#40D961',
+			obligatory: false
+		},
+		'AP206': {
+			code: 'AP206',
+			name: 'Plástica II',
+			ementa: 'A forma e sua dinâmica no espaço. Suportes e técnicas construtivas de investigação plástica na tridimensionalidade.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['AP106'],
+			color: '#D94090',
+			obligatory: false
+		},
+		'AP240': {
+			code: 'AP240',
+			name: 'Ateliê Experimental Multidisciplinar II',
+			ementa: 'A disciplina tem como objetivo estimular a vivência e troca de experiências em ateliê coletivo dando ênfase à produção e ao desenvolvimento de processos de criação em diferentes procedimentos artísticos. Sequência da disciplina AP140.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D9B740',
+			obligatory: false
+		},
+		'AP299': {
+			code: 'AP299',
+			name: 'Atividades Artísticas - Culturais - Ensino II',
+			ementa: 'Participação como organizador, assistente ou expositor em atividades artísticas, culturais, ensino e científicas (produção cultural, cenografia, mostra individual e coletiva em instituições especializadas e afins; visitas monitoradas a ateliers, exposições e acervos; atividades de extensão como congressos e seminários em áreas de Artes Visuais, Histórias da Arte, Arte e Ensino e afins). Critérios a serem definidos pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
+			requisitos: '',
+			color: '#A0D940',
+			obligatory: false
+		},
+		'AP303': {
+			code: 'AP303',
+			name: 'Pintura III',
+			ementa: 'Teorias da cor: aprofundamento e desenvolvimento dos estudos cromáticos considerando a pintura na história da arte e a pesquisa de novos materiais e suportes.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['AP203'],
+			color: '#40D96B',
+			obligatory: false
+		},
+		'AP308': {
+			code: 'AP308',
+			name: 'Cultura Popular',
+			ementa: 'A disciplina propõe apresentar e discutir as culturas popular e urbana e o folclore sob enfoque antropológico, estendendo-se para a aplicação na educação.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: '',
+			color: '#D9409A',
+			obligatory: false
+		},
+		'AP309': {
+			code: 'AP309',
+			name: 'Iniciação Científica I',
+			ementa: 'A ser definida a cada semestre em que for oferecida.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#40D9B1',
+			obligatory: false
+		},
+		'AP313': {
+			code: 'AP313',
+			name: 'Arte Fotográfica I',
+			ementa: 'Histórico da fotografia. Fotografia e seus recursos técnicos e visuais.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#78D940',
+			obligatory: false
+		},
+		'AP340': {
+			code: 'AP340',
+			name: 'Ateliê Experimental Multidisciplinar III',
+			ementa: 'A disciplina tem como objetivo estimular a vivência e troca de experiências em ateliê coletivo dando ênfase à produção e ao desenvolvimento de processos de criação em diferentes procedimentos artísticos. Sequência da disciplina AP240.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#4057D9',
+			obligatory: false
+		},
+		'AP399': {
+			code: 'AP399',
+			name: 'Atividades Artísticas - Culturais - Ensino III',
+			ementa: 'Participação como organizador, assistente ou expositor em atividades artísticas, culturais, ensino e científicas (produção cultural, cenografia, mostra individual e coletiva em instituições especializadas e afins; visitas monitoradas a ateliers, exposições e acervos; atividades de extensão como congressos e seminários em áreas de Artes Visuais, Histórias da Arte, Arte e Ensino e afins). Critérios a serem definidos pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
+			requisitos: '',
+			color: '#D9C140',
+			obligatory: false
+		},
+		'AP401': {
+			code: 'AP401',
+			name: 'Monitoria I',
+			ementa: 'Funções de monitoria a serem exercidas por alunos do Curso de Licenciatura em Artes: Artes Visuais, em disciplinas curriculares e áreas de pesquisa do Departamento de Artes Plásticas: tarefas de ensino e pesquisa a serem desenvolvidas de acordo com o rendimento do aluno e seu plano de estudos.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['AA200'],
+			color: '#40D9BB',
+			obligatory: false
+		},
+		'AP403': {
+			code: 'AP403',
+			name: 'Pintura IV',
+			ementa: 'Tema e representação na pintura: desenvolvimento das questões abordadas na disciplina anterior.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['AP303'],
+			color: '#40D96B',
+			obligatory: false
+		},
+		'AP409': {
+			code: 'AP409',
+			name: 'Iniciação Científica II',
+			ementa: 'A ser definida a cada semestre em que for oferecida.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#D97240',
+			obligatory: false
+		},
+		'AP413': {
+			code: 'AP413',
+			name: 'Arte Fotográfica II',
+			ementa: 'Laboratório fotográfico. Experimentações práticas e teóricas. Fotogravura. Foto conceitual. A fotografia como temática nas expressões visuais.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D2D940',
+			obligatory: false
+		},
+		'AP440': {
+			code: 'AP440',
+			name: 'Ateliê Experimental Multidisciplinar IV',
+			ementa: 'A disciplina tem como objetivo estimular a vivência e troca de experiências em ateliê coletivo dando ênfase à produção e ao desenvolvimento de processos de criação em diferentes procedimentos artísticos. Sequência da disciplina AP340.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#40CFD9',
+			obligatory: false
+		},
+		'AP499': {
+			code: 'AP499',
+			name: 'Atividades Artísticas - Culturais - Ensino IV',
+			ementa: 'Participação como organizador, assistente ou expositor em atividades artísticas, culturais, ensino e científicas (produção cultural, cenografia, mostra individual e coletiva em instituições especializadas e afins; visitas monitoradas a ateliers, exposições e acervos; atividades de extensão como congressos e seminários em áreas de Artes Visuais, História da Arte, Arte e Ensino e afins). Critérios a serem definidos pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
+			requisitos: '',
+			color: '#D940A4',
+			obligatory: false
+		},
+		'AP501': {
+			code: 'AP501',
+			name: 'Monitoria II',
+			ementa: 'Funções de monitoria a serem exercidas por alunos do Curso de Licenciatura em Artes: Artes Visuais, em disciplinas curriculares e áreas de pesquisa do Departamento de Artes Plásticas: tarefas de ensino e pesquisa a serem desenvolvidas de acordo com o rendimento do aluno e seu plano de estudos.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['AA200'],
+			color: '#6440D9',
+			obligatory: false
+		},
+		'AP503': {
+			code: 'AP503',
+			name: 'Pintura V',
+			ementa: 'Teorias da Cor: O estudo das relações cromáticas em pintura. A representação do espaço.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#A040D9',
+			obligatory: false
+		},
+		'AP504': {
+			code: 'AP504',
+			name: 'Desenho Artístico V',
+			ementa: 'Da observação à construção: o desenho como instrumento de conhecimento sensível. A representação do espaço: introdução ao estudo das concepções espaciais.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D9404A',
+			obligatory: false
+		},
+		'AP509': {
+			code: 'AP509',
+			name: 'Computação Gráfica I',
+			ementa: 'Conceitos básicos de informática e computação gráfica.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D940C1',
+			obligatory: false
+		},
+		'AP510': {
+			code: 'AP510',
+			name: 'Tópicos Especiais em Processos Criativos III',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Pláticas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#40D989',
+			obligatory: false
+		},
+		'AP515': {
+			code: 'AP515',
+			name: 'Escultura II',
+			ementa: 'Novas proposições para o espaço escultórico: conceitos de apropriação, instalação e intervenção nos processos de produção e pensamento da escultura contemporânea.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['AP415'],
+			color: '#4061D9',
+			obligatory: false
+		},
+		'AP599': {
+			code: 'AP599',
+			name: 'Atividades Artísticas - Culturais - Ensino V',
+			ementa: 'Participação como organizador, assistente ou expositor em atividades artísticas, culturais, ensino e científicas (produção cultural, cenografia, mostra individual e coletiva em instituições especializadas e afins; visitas monitoradas a ateliers, exposições e acervos; atividades de extensão como congressos e seminários em áreas de Artes Visuais, História da Arte, Arte e Ensino e afins). Critérios a serem definidos pela comissão de Graduação.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
+			requisitos: '',
+			color: '#409DD9',
+			obligatory: false
+		},
+		'AP601': {
+			code: 'AP601',
+			name: 'Monitoria III',
+			ementa: 'Funções de monitoria a serem exercidas por alunos do Curso de Licenciatura em Artes: Artes Visuais, em disciplinas curriculares e áreas de pesquisa do Departamento de Artes Plásticas: tarefas de ensino e pesquisa a serem desenvolvidas de acordo com o rendimento do aluno e seu plano de estudos.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['AA200'],
+			color: '#40D97F',
+			obligatory: false
+		},
+		'AP603': {
+			code: 'AP603',
+			name: 'Pintura VI',
+			ementa: 'Teorias da cor: Desenvolvimento das questões abordadas na disciplina, Pintura V.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D9AE40',
+			obligatory: false
+		},
+		'AP604': {
+			code: 'AP604',
+			name: 'Desenho Artístico VI',
+			ementa: 'Da observação à construção: a estruturação do desenho como pensamento visual. Desenvolvimento da pesquisa de materiais e suportes. Aprofundamento das questões desenvolvidas na disciplina Desenho Artístico V.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D9D9',
+			obligatory: false
+		},
+		'AP609': {
+			code: 'AP609',
+			name: 'Computação Gráfica II',
+			ementa: 'Desenvolvimento da disciplina AP509.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['AA200'],
+			color: '#6ED940',
+			obligatory: false
+		},
+		'AP610': {
+			code: 'AP610',
+			name: 'Tópicos Especiais em Processos Criativos IV',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D940AE',
+			obligatory: false
+		},
+		'AP614': {
+			code: 'AP614',
+			name: 'Tópicos Especiais em Processos Criativos V',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#6E40D9',
+			obligatory: false
+		},
+		'AP615': {
+			code: 'AP615',
+			name: 'Escultura III',
+			ementa: 'Abordagens da escultura brasileira e sua inserção no panorama internacional.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['AP515'],
+			color: '#4061D9',
+			obligatory: false
+		},
+		'AP618': {
+			code: 'AP618',
+			name: 'Cerâmica II',
+			ementa: 'Conhecimentos artesanais da cerâmica. Uso do forno. O engobe, os esmaltes vitrificáveis e outras. Suas propriedades. Processo de criação e consideração geral sobre os seus aspectos sociais. Processos de expressão. Aplicações artesanais e industriais. O torno e sua função.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['AP518'],
+			color: '#AAD940',
+			obligatory: false
+		},
+		'AP620': {
+			code: 'AP620',
+			name: 'Gravura II',
+			ementa: 'Introdução à gravura em encavo: calcografia ou gravura em metal. História da gravura em metal. Procedimentos básicos: técnicas de gravação diretas e indiretas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['AP520'],
+			color: '#B440D9',
+			obligatory: false
+		},
+		'AP632': {
+			code: 'AP632',
+			name: 'Desenho Animado I',
+			ementa: 'Representação gráfica do movimento. Noções básicas sobre animação.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#96D940',
+			obligatory: false
+		},
+		'AP699': {
+			code: 'AP699',
+			name: 'Atividades Artísticas - Culturais - Ensino VI',
+			ementa: 'Participação como organizador, assistente ou expositor em atividades artísticas, culturais, ensino e científicas (produção cultural, cenografia, mostra individual e coletiva em instituições especializadas e afins; visitas monitoradas a ateliers, exposições e acervos; atividades de extensão como congressos e seminários em áreas de Artes Visuais, História da Arte, Arte e Ensino e afins). Critérios a serem definidos pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
+			requisitos: '',
+			color: '#40D9C5',
+			obligatory: false
+		},
+		'AP701': {
+			code: 'AP701',
+			name: 'Tópicos Especiais em Processos Criativos I',
+			ementa: 'O programa da disciplina será estabelicido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D99A40',
+			obligatory: false
+		},
+		'AP709': {
+			code: 'AP709',
+			name: 'Arte e Novos Meios I',
+			ementa: 'A disciplina propõe apresentar e discutir as linguagens tecnológicas enfocando a criação digital para construção da pesquisa artística: a imagem eletrônica videobjetos, videoinstalações e outros, ambientes interativos e imersivos.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#50D940',
+			obligatory: false
+		},
+		'AP710': {
+			code: 'AP710',
+			name: 'Tópicos Especiais em Processos Criativos VI',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D9407C',
+			obligatory: false
+		},
+		'AP714': {
+			code: 'AP714',
+			name: 'Tópicos Especiais em Processos Criativos VII',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D95440',
+			obligatory: false
+		},
+		'AP718': {
+			code: 'AP718',
+			name: 'Cerâmica III',
+			ementa: 'Definição e orientação no desenvolvimento de projetos artísticos baseados nos conhecimentos adquiridos em cerâmica I e II, associados a novas informações históricas e técnicas, encaminhando a reflexão para a cerâmica contemporânea.',
+			semestre: 1,
+			vector: {T:0, P:3, L:4, O:1, D:0, HS:8, SL:4, C:8},
+			requisitos: ['AP618'],
+			color: '#AAD940',
+			obligatory: false
+		},
+		'AP724': {
+			code: 'AP724',
+			name: 'Gravura III',
+			ementa: 'Introdução à gravura planográfica: história da gravura planográfica, séculos XIX e XX; Introdução à gravura contemporânea. Procedimentos básicos: técnicas de gravação e impressão em litografia e serigrafia.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['AP620'],
+			color: '#B440D9',
+			obligatory: false
+		},
+		'AP732': {
+			code: 'AP732',
+			name: 'Desenho Animado II',
+			ementa: 'Desenho animado e outras técnicas de cinema de animação. Aborda os principais processos de produção de um desenho animado, desde a criação da ideia, planejamento da história, animação de desenhos, filmagem e revelação do material com o auxílio da computação gráfica.',
+			semestre: 1,
+			vector: {T:0, P:0, L:8, O:0, D:0, HS:8, SL:8, C:8},
+			requisitos: ['AP632'],
+			color: '#96D940',
+			obligatory: false
+		},
+		'AP733': {
+			code: 'AP733',
+			name: 'Pintura VII',
+			ementa: 'Definição e orientação no desenvolvimento de projetos artísticos baseado nos conhecimentos adquiridos nas disciplinas anteriores. Aprofundamento das questões históricas, estéticas e técnicas dos processos pictóricos encaminhando a reflexão para a pintura conteporânea.',
+			semestre: 1,
+			vector: {T:0, P:3, L:4, O:1, D:0, HS:8, SL:4, C:8},
+			requisitos: ['AA200'],
+			color: '#40BBD9',
+			obligatory: false
+		},
+		'AP734': {
+			code: 'AP734',
+			name: 'Desenho Artístico VII',
+			ementa: 'Definição e orientação no desenvolvimento de projetos artísticos baseados nos conhecimentos adquiridos nas disciplinas anteriores. Aprofundamento das questões históricas, estéticas e técnicas dos processos gráficos encaminhando a reflexão para o desenho contemporâneo.',
+			semestre: 1,
+			vector: {T:0, P:3, L:4, O:1, D:0, HS:8, SL:4, C:8},
+			requisitos: ['AA200'],
+			color: '#5AD940',
+			obligatory: false
+		},
+		'AP735': {
+			code: 'AP735',
+			name: 'Projeto Experimental em Artes Visuais I',
+			ementa: 'Orientação para o aprimoramento do projeto poético do(a) aluno(a), visando o desenvolvimento de trabalhos artísticos que articulem os conhecimentos de arte e da linguagem artística, construídos através das teorias estudadas em disciplinas anteriores, assim como as competências para a criação e produção artística, desenvolvidas durante o curso. Aprofundamento das questões históricas, estéticas e técnicas dos processos de criação e pesquisas artísticas. Articulação entre teoria e prática, com ênfase na produção artística.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:0, C:8},
+			requisitos: ['AA200'],
+			color: '#82D940',
+			obligatory: false
+		},
+		'AP737': {
+			code: 'AP737',
+			name: 'Projeto Experimental em Abordagens Teóricas das Artes Visuais I',
+			ementa: 'Orientação para o aprimoramento do projeto de pesquisa do(a) aluno(a) visando o desenvolvimento de trabalhos teóricos que articulem das teorias estudadas para a compreensão de algum aspecto da arte. Esse trabalho também deve mobilizar as competências de pesquisa desenvolvidas nas disciplinas anteriores.Aprofundamento das questões históricas, estéticas e técnicas, dos processos de criação e pesquisas artísticas. Articulação entre teoria e prática, com ênfase na produção teórica.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:0, C:8},
+			requisitos: ['AA200'],
+			color: '#D94054',
+			obligatory: false
+		},
+		'AP745': {
+			code: 'AP745',
+			name: 'Escultura IV',
+			ementa: 'Definição e orientação no desenvolvimento de projetos artísticos baseado nos conhecimentos adquiridos nas disciplinas anteriores. Aprofundamento das questões históricas, estéticas e técnicas dos processos escultóricos encaminhado a reflexão para o estudo da produção escultórica contemporânea brasileira.',
+			semestre: 1,
+			vector: {T:0, P:3, L:4, O:1, D:0, HS:8, SL:4, C:8},
+			requisitos: ['AA200'],
+			color: '#407FD9',
+			obligatory: false
+		},
+		'AP760': {
+			code: 'AP760',
+			name: 'Computação Gráfica e Multimídia',
+			ementa: 'Definição e orientação no desenvolvimento de projetos artísticos baseado nos conhecimentos adquiridos nas disciplinas anteriores. Aprofundamento das questões históricas, estéticas e técnicas dos processos tecnológicos encaminhando a reflexão para o uso da tecnologia na arte contemporânea.',
+			semestre: 1,
+			vector: {T:0, P:3, L:4, O:1, D:0, HS:8, SL:4, C:8},
+			requisitos: ['AA200'],
+			color: '#D9A440',
+			obligatory: false
+		},
+		'AP764': {
+			code: 'AP764',
+			name: 'Gravura IV',
+			ementa: 'Definição e orientação no desenvolvimento de projetos artísticos baseados nos conhecimentos adquiridos em Gravura I, II e III. Aprofundamento das questões históricas, estéticas e técnicas dos processos gráficos, encaminhando a reflexão para a gravura contemporânea.',
+			semestre: 1,
+			vector: {T:0, P:3, L:4, O:1, D:0, HS:8, SL:4, C:8},
+			requisitos: ['AP620'],
+			color: '#B440D9',
+			obligatory: false
+		},
+		'AP799': {
+			code: 'AP799',
+			name: 'Atividades Artísticas - Culturais - Ensino VII',
+			ementa: 'Participação como organizador, assistente ou expositor em atividades artísticas, culturais, ensino e científicas (produção cultural, cenografia, mostra individual e coletiva em instituições especializadas e afins; visitas monitoradas a ateliers, exposições e acervos; atividades de extensão como congressos e seminários em áreas de Artes Visuais, História da Arte, Arte e Ensino e afins). Critérios a serem definidos pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
+			requisitos: '',
+			color: '#7840D9',
+			obligatory: false
+		},
+		'AP801': {
+			code: 'AP801',
+			name: 'Tópicos Especiais em Processos Criativos II',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#40D9A7',
+			obligatory: false
+		},
+		'AP810': {
+			code: 'AP810',
+			name: 'Tópicos Especiais em Processos Criativos VIII',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#BED940',
+			obligatory: false
+		},
+		'AP814': {
+			code: 'AP814',
+			name: 'Tópicos Especiais em Processos Criativos IX',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#40C5D9',
+			obligatory: false
+		},
+		'AP836': {
+			code: 'AP836',
+			name: 'Projeto Experimental em Artes Visuais II',
+			ementa: 'Orientação para o aprimoramento do projeto poético do(a) aluno(a), visando o desenvolvimento de trabalhos artísticos que articulem os conhecimentos de arte e da linguagem artística, construídos através das teorias estudadas em disciplinas anteriores, assim como as competências para a criação e produção artística, desenvolvidas durante o curso. Aprofundamento das questões históricas, estéticas e técnicas dos processos de criação e pesquisas artísticas. Articulação entre teoria e prática, com ênfase na produção artística.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:12, D:0, HS:14, SL:0, C:14},
+			requisitos: ['AA200'],
+			color: '#404DD9',
+			obligatory: false
+		},
+		'AP838': {
+			code: 'AP838',
+			name: 'Projeto Experimental em Abordagens Teóricas das Artes Visuais II',
+			ementa: 'Orientação para o aprimoramento do projeto de pesquisa do(a) aluno(a) visando o desenvolvimento de trabalhos teóricos que articulem das teorias estudadas para a compreensão de algum aspecto da arte. Esse trabalho também deve mobilizar as competências de pesquisa desenvolvidas nas disciplinas anteriores.Aprofundamento das questões históricas, estéticas e técnicas, dos processos de criação e pesquisas artísticas. Articulação entre teoria e prática, com ênfase na produção teórica.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:12, D:0, HS:14, SL:0, C:14},
+			requisitos: ['AA200'],
+			color: '#D240D9',
+			obligatory: false
+		},
+		'AP895': {
+			code: 'AP895',
+			name: 'Tópicos Especiais em Processos Criativos XII',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#4640D9',
+			obligatory: false
+		},
+		'AP896': {
+			code: 'AP896',
+			name: 'Tópicos Especiais em Processos Criativos XIII',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D98640',
+			obligatory: false
+		},
+		'AP897': {
+			code: 'AP897',
+			name: 'Tópicos Especiais em Processos Criativos XIV',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#46D940',
+			obligatory: false
+		},
+		'AP898': {
+			code: 'AP898',
+			name: 'Tópicos Especiais em Processos Criativos XV',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#40D975',
+			obligatory: false
+		},
+		'AP899': {
+			code: 'AP899',
+			name: 'Atividades Artísticas - Culturais - Ensino VIII',
+			ementa: 'Participação como organizador, assistente ou expositor em atividades artísticas, culturais, ensino e científicas (produção cultural, cenografia, mostra individual e coletiva em instituições especializadas e afins; visitas monitoradas a ateliers, exposições e acervos; atividades de extensão como congressos e seminários em áreas de Artes Visuais, História da Arte, Arte e Ensino e afins). Critérios a serem definidos pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
+			requisitos: '',
+			color: '#4093D9',
+			obligatory: false
+		},
+		'AP901': {
+			code: 'AP901',
+			name: 'Tópicos Especiais em Processos Criativos X',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#40A7D9',
+			obligatory: false
+		},
+		'AP910': {
+			code: 'AP910',
+			name: 'Tópicos Especiais em Processos Criativos XI',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#406BD9',
+			obligatory: false
+		},
+		'AP931': {
+			code: 'AP931',
+			name: 'Tópicos Especiais em Teorias das Artes I',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D94040',
+			obligatory: false
+		},
+		'AP932': {
+			code: 'AP932',
+			name: 'Tópicos Especiais em Teorias das Artes II',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D95E40',
+			obligatory: false
+		},
+		'AP933': {
+			code: 'AP933',
+			name: 'Tópicos Especiais em Teorias das Artes III',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D940B7',
+			obligatory: false
+		},
+		'AP934': {
+			code: 'AP934',
+			name: 'Tópicos Especiais em Teorias das Artes IV',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#40D94D',
+			obligatory: false
+		},
+		'AP935': {
+			code: 'AP935',
+			name: 'Tópicos Especiais em Teorias da Artes V',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#40D993',
+			obligatory: false
+		},
+		'AP936': {
+			code: 'AP936',
+			name: 'Tópicos Especiais em Teorias das Artes VI',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#4043D9',
+			obligatory: false
+		},
+		'AP937': {
+			code: 'AP937',
+			name: 'Tópicos Especiais em Teorias das Artes VII',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D9D540',
+			obligatory: false
+		},
+		'AP938': {
+			code: 'AP938',
+			name: 'Tópicos Especiais em Teorias das Artes VIII',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em Curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#5040D9',
+			obligatory: false
+		},
+		'AP939': {
+			code: 'AP939',
+			name: 'Tópicos Especiais em Teorias das Artes IX',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#40D9CF',
+			obligatory: false
+		},
+		'AP940': {
+			code: 'AP940',
+			name: 'Tópicos Especiais em Teorias das Artes X',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#AA40D9',
+			obligatory: false
+		},
+		'AP941': {
+			code: 'AP941',
+			name: 'Tópicos Especiais em Teorias das Artes XI',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D940CB',
+			obligatory: false
+		},
+		'AP975': {
+			code: 'AP975',
+			name: 'Tópicos Especiais em Ensino de Artes Visuais I',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#9640D9',
+			obligatory: false
+		},
+		'AP976': {
+			code: 'AP976',
+			name: 'Tópicos Especiais em Ensino de Artes Visuais II',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D99040',
+			obligatory: false
+		},
+		'AP977': {
+			code: 'AP977',
+			name: 'Tópicos Especiais em Ensino de Artes Visuais III',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D9405E',
+			obligatory: false
+		},
+		'AP978': {
+			code: 'AP978',
+			name: 'Tópicos Especiais em Ensino de Artes Visuais IV',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#B4D940',
+			obligatory: false
+		},
+		'AP981': {
+			code: 'AP981',
+			name: 'Preservação e Restauro I: Fundamentos e Conceitos',
+			ementa: 'Serão apresentadas as principais teorias e referências conceituais da área de preservação e restauro, enquanto disciplina, enfatizando sua vinculação com os artefatos de natureza visual.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:2, D:0, HS:5, SL:3, C:5},
+			requisitos: '',
+			color: '#5A40D9',
+			obligatory: false
+		},
+		'AP982': {
+			code: 'AP982',
+			name: 'Tópicos Especiais em Preservação e Restauro I: Análise de Experiências',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:2, D:0, HS:5, SL:3, C:5},
+			requisitos: ['AA200'],
+			color: '#8CD940',
+			obligatory: false
+		},
+		'AP983': {
+			code: 'AP983',
+			name: 'Tópicos Especiais em Preservação e Restauro II: Técnicas e Métodos',
+			ementa: 'O programa da disciplina será estabelecido em função das pesquisas em curso no Departamento de Artes Plásticas.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:2, D:0, HS:5, SL:3, C:5},
+			requisitos: ['AA200'],
+			color: '#C8D940',
+			obligatory: false
+		},
+		'AP991': {
+			code: 'AP991',
+			name: 'Design I: Princípios de Projeto em Programação Visual',
+			ementa: 'História, teoria e estética do design gráfico. Terminologia e conceitos fundamentais. Áreas de atuação em programação visual. Método clássico de desenvolvimento de projetos de design aplicado à programação visual. Programas de identidade visual. Ergonomia da informação. Semântica do design gráfico. Ética do design gráfico.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D940D5',
+			obligatory: false
+		},
+		'AP992': {
+			code: 'AP992',
+			name: 'Design II: Princípios de Tipografia',
+			ementa: 'História da escrita ocidental, do alfabeto romano e da tipografia. Classificação das famílias de letras do alfabeto romano. Nomenclatura simplificada de letras. Fontes mais utilizadas por comunicadores visuais. Principais tipógrafos do Século XX. Tipografia digital. Visibilidade, legibilidade e inteligibilidade. Diagramação e paginação. Malhas e proporções clássicas. Implicações técnicas e estéticas relacionadas ao desenho de letras e as composições tipográficas.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#D94A40',
+			obligatory: false
+		},
+		'AP993': {
+			code: 'AP993',
+			name: 'Design III: Princípios de Projeto em Projeto de Produto',
+			ementa: 'História, teoria e estética do design gráfico. Terminologia e conceitos fundamentais. Áreas de atuação em projeto de produto. Método clássico de desenvolvimento de projetos de design aplicado ao projeto de produto. Ergonomia do produto. Semântica do produto. Ética do design de produto.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: '',
+			color: '#BE40D9',
+			obligatory: false
+		},
+		'EP158': {
+			code: 'EP158',
+			name: 'Educação, Corpo e Arte',
+			ementa: 'Esta disciplina, de caráter teórico-prático, visa introduzir os(as) alunos(as) às diferentes linguagens corporais e/ou artísticas em suas relações com o processo educacional.',
+			semestre: 1,
+			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#D9CB40',
+			obligatory: false
 		}
 	}
 };

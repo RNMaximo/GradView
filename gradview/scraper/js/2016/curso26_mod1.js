@@ -35,6 +35,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 4,
+			hasRestrictions: true,
+			subjects: ['AC001', 'AC002', 'AC003', 'AC004', 'AC105', 'AC112', 'AC143', 'AC160', 'AC161', 'AC205', 'AC212', 'AC219', 'AC221', 'AC229', 'AC243', 'AC260', 'AC261', 'AC270', 'AC280', 'AC325', 'AC350', 'AC360', 'AC361', 'AC370', 'AC425', 'AC431', 'AC460', 'AC461'],
+		},
+		'elet-2': {
+			credits: 4,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'AC109': {
 			code: 'AC109',
@@ -43,7 +56,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D97940'
+			color: '#D940C8',
+			obligatory: true
 		},
 		'AC110': {
 			code: 'AC110',
@@ -52,7 +66,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:6, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#4049D9'
+			color: '#4073D9',
+			obligatory: true
 		},
 		'AC113': {
 			code: 'AC113',
@@ -61,7 +76,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#409FD9'
+			color: '#40D9A6',
+			obligatory: true
 		},
 		'AC120': {
 			code: 'AC120',
@@ -70,7 +86,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: '',
-			color: '#D9CF40'
+			color: '#51D940',
+			obligatory: true
 		},
 		'AC129': {
 			code: 'AC129',
@@ -79,7 +96,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D940CF'
+			color: '#D94084',
+			obligatory: true
 		},
 		'AC142': {
 			code: 'AC142',
@@ -88,7 +106,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9B340'
+			color: '#D94062',
+			obligatory: true
 		},
 		'AC148': {
 			code: 'AC148',
@@ -97,7 +116,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94040'
+			color: '#D9D940',
+			obligatory: true
 		},
 		'AC311': {
 			code: 'AC311',
@@ -106,7 +126,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9405C'
+			color: '#D99540',
+			obligatory: true
 		},
 		'AC321': {
 			code: 'AC321',
@@ -115,7 +136,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4066D9'
+			color: '#D940B7',
+			obligatory: true
 		},
 		'AC150': {
 			code: 'AC150',
@@ -124,7 +146,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AC110'],
-			color: ''
+			color: '#4073D9',
+			obligatory: true
 		},
 		'AC170': {
 			code: 'AC170',
@@ -133,7 +156,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AC110'],
-			color: ''
+			color: '#4073D9',
+			obligatory: true
 		},
 		'AC180': {
 			code: 'AC180',
@@ -142,7 +166,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AC110'],
-			color: ''
+			color: '#4073D9',
+			obligatory: true
 		},
 		'AC209': {
 			code: 'AC209',
@@ -151,7 +176,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AC109'],
-			color: ''
+			color: '#D940C8',
+			obligatory: true
 		},
 		'AC213': {
 			code: 'AC213',
@@ -160,7 +186,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D9BC'
+			color: '#40D995',
+			obligatory: true
 		},
 		'AC218': {
 			code: 'AC218',
@@ -169,7 +196,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D966'
+			color: '#40D962',
+			obligatory: true
 		},
 		'AC242': {
 			code: 'AC242',
@@ -178,7 +206,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AC142'],
-			color: ''
+			color: '#D94062',
+			obligatory: true
 		},
 		'AC248': {
 			code: 'AC248',
@@ -187,7 +216,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AC148'],
-			color: ''
+			color: '#D9D940',
+			obligatory: true
 		},
 		'AC316': {
 			code: 'AC316',
@@ -196,7 +226,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#C6D940'
+			color: '#40D940',
+			obligatory: true
 		},
 		'AC411': {
 			code: 'AC411',
@@ -205,7 +236,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AC311'],
-			color: ''
+			color: '#D99540',
+			obligatory: true
 		},
 		'AC305': {
 			code: 'AC305',
@@ -214,7 +246,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#5340D9'
+			color: '#D94051',
+			obligatory: true
 		},
 		'AC315': {
 			code: 'AC315',
@@ -223,7 +256,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D949'
+			color: '#D96240',
+			obligatory: true
 		},
 		'AC317': {
 			code: 'AC317',
@@ -232,7 +266,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['AA200'],
-			color: '#D99640'
+			color: '#6240D9',
+			obligatory: true
 		},
 		'AC320': {
 			code: 'AC320',
@@ -241,7 +276,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#D940A6',
+			obligatory: true
 		},
 		'AC331': {
 			code: 'AC331',
@@ -250,7 +286,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#A940D9'
+			color: '#84D940',
+			obligatory: true
 		},
 		'AC340': {
 			code: 'AC340',
@@ -259,7 +296,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:6, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#A9D940'
+			color: '#D9A640',
+			obligatory: true
 		},
 		'AC420': {
 			code: 'AC420',
@@ -268,7 +306,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#4083D9'
+			color: '#D9B740',
+			obligatory: true
 		},
 		'AC511': {
 			code: 'AC511',
@@ -277,7 +316,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#7040D9'
+			color: '#9540D9',
+			obligatory: true
 		},
 		'AC318': {
 			code: 'AC318',
@@ -286,7 +326,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40BCD9'
+			color: '#B740D9',
+			obligatory: true
 		},
 		'AC319': {
 			code: 'AC319',
@@ -295,7 +336,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D940B3'
+			color: '#D98440',
+			obligatory: true
 		},
 		'AC405': {
 			code: 'AC405',
@@ -304,7 +346,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AC305'],
-			color: ''
+			color: '#D94051',
+			obligatory: true
 		},
 		'AC415': {
 			code: 'AC415',
@@ -313,7 +356,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AC315'],
-			color: ''
+			color: '#D96240',
+			obligatory: true
 		},
 		'AC440': {
 			code: 'AC440',
@@ -322,7 +366,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:6, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#40D99F'
+			color: '#C8D940',
+			obligatory: true
 		},
 		'AC611': {
 			code: 'AC611',
@@ -331,7 +376,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D94096'
+			color: '#40B7D9',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -340,7 +386,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'AC555': {
 			code: 'AC555',
@@ -349,7 +396,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:16, L:0, O:4, D:0, HS:20, SL:16, C:20},
 			requisitos: ['AA200'],
-			color: '#53D940'
+			color: '#D94095',
+			obligatory: true
 		},
 		'AC556': {
 			code: 'AC556',
@@ -358,7 +406,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#D95C40'
+			color: '#95D940',
+			obligatory: true
 		},
 		'AC121': {
 			code: 'AC121',
@@ -367,7 +416,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#8CD940'
+			color: '#4062D9',
+			obligatory: true
 		},
 		'AC666': {
 			code: 'AC666',
@@ -376,7 +426,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:16, L:0, O:4, D:0, HS:20, SL:16, C:20},
 			requisitos: ['AA200'],
-			color: '#40D983'
+			color: '#40D973',
+			obligatory: true
 		},
 		'AC667': {
 			code: 'AC667',
@@ -385,7 +436,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AC556'],
-			color: ''
+			color: '#95D940',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -394,7 +446,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'AC777': {
 			code: 'AC777',
@@ -403,7 +456,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:16, L:0, O:4, D:0, HS:20, SL:16, C:20},
 			requisitos: ['AA200'],
-			color: '#8C40D9'
+			color: '#A6D940',
+			obligatory: true
 		},
 		'AC778': {
 			code: 'AC778',
@@ -412,7 +466,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AC667'],
-			color: ''
+			color: '#95D940',
+			obligatory: true
 		},
 		'AC887': {
 			code: 'AC887',
@@ -421,7 +476,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#D94079'
+			color: '#40D984',
+			obligatory: true
 		},
 		'AC888': {
 			code: 'AC888',
@@ -430,7 +486,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:8, D:0, HS:12, SL:4, C:12},
 			requisitos: ['AA200'],
-			color: '#70D940'
+			color: '#73D940',
+			obligatory: true
 		},
 		'AC889': {
 			code: 'AC889',
@@ -439,7 +496,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AC778'],
-			color: ''
+			color: '#95D940',
+			obligatory: true
 		},
 		'AC890': {
 			code: 'AC890',
@@ -448,7 +506,288 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#C640D9'
+			color: '#40D9C8',
+			obligatory: true
+		},
+		'AC001': {
+			code: 'AC001',
+			name: 'Laboratório de Prática Teatral: Interpretação',
+			ementa: 'Elaboração de exercícios cênicos integrando os procedimentos desenvolvidos nas disciplinas práticas anteriores. Relação do sujeito atuante com a construção cênica.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#4095D9',
+			obligatory: false
+		},
+		'AC002': {
+			code: 'AC002',
+			name: 'Laboratório de Prática Teatral: Direção',
+			ementa: 'Concepção e prática de direção de espetáculo teatral de curta duração. Planejamento do processo de criação e montagem. A produção de sentido no discurso cênico a partir dos diversos elementos componentes do texto espetacular.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D9D9',
+			obligatory: false
+		},
+		'AC003': {
+			code: 'AC003',
+			name: 'Laboratório de Prática Teatral: Dramaturgia',
+			ementa: 'Elaboração de dramaturgias teatrais. Integração do texto à experimentação cênica. Instrumentalização do aluno para a construção ficcional.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#62D940',
+			obligatory: false
+		},
+		'AC004': {
+			code: 'AC004',
+			name: 'Laboratório de Prática Teatral: Cenografia e Figurino',
+			ementa: 'Processos de criação e execução em cenografia e figurino. Desenvolvimento da percepção espacial e visual e sua relação com os elementos plásticos que compõem a cena.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: '',
+			color: '#40C8D9',
+			obligatory: false
+		},
+		'AC105': {
+			code: 'AC105',
+			name: 'Canto para o Ator I',
+			ementa: 'Desenvolvimento das potencialidades musicais do aluno através do canto individual e do canto coral como elemento de qualificação para o trabalho do ator.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#8440D9',
+			obligatory: false
+		},
+		'AC112': {
+			code: 'AC112',
+			name: 'Técnicas Circenses I',
+			ementa: 'Treinamento das técnicas básicas de acrobacia e malabarismo. Estudo das modalidades de equilíbrio.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D9C840',
+			obligatory: false
+		},
+		'AC143': {
+			code: 'AC143',
+			name: 'Técnicas Corpóreas: Luta I',
+			ementa: 'Introdução aos elementos técnicos de uma luta ou arte marcial enfatizando os aspectos lúdicos presentes no jogo de combate.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#5140D9',
+			obligatory: false
+		},
+		'AC160': {
+			code: 'AC160',
+			name: 'Tópicos em Prática de Encenação',
+			ementa: 'Estudos orientados para a investigação de procedimentos específicos de criação cênica.',
+			semestre: 1,
+			vector: {T:1, P:1, L:1, O:1, D:0, HS:4, SL:2, C:4},
+			requisitos: '',
+			color: '#40A6D9',
+			obligatory: false
+		},
+		'AC161': {
+			code: 'AC161',
+			name: 'Tópicos em Criação Cênica I',
+			ementa: 'Estudos orientados para a investigação de procedimentos específicos de criação cênica.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: '',
+			color: '#D94040',
+			obligatory: false
+		},
+		'AC205': {
+			code: 'AC205',
+			name: 'Canto para o Ator II',
+			ementa: 'Estudo das diferentes funções do canto na cena a partir de diversas poéticas teatrais. Articulação entre a palavra cantada e a palavra falada.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#A640D9',
+			obligatory: false
+		},
+		'AC212': {
+			code: 'AC212',
+			name: 'Técnicas Circenses II',
+			ementa: 'Aperfeiçoamento das modalidades estudadas em Técnicas Circenses I. Prática de exercícios coletivos e composição de partituras cênicas.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D94073',
+			obligatory: false
+		},
+		'AC219': {
+			code: 'AC219',
+			name: 'Estética Teatral: Dramaturgia Moderna e Contemporânea',
+			ementa: 'Abordagem de diferentes concepções e práticas dramatúrgicas a partir da modernidade.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#C840D9',
+			obligatory: false
+		},
+		'AC221': {
+			code: 'AC221',
+			name: 'Práticas de Ação Teatral na Comunidade II',
+			ementa: 'O compromisso e as ações do artista de teatro em interação com a comunidade. Criação e experimentação de práticas específicas de ação teatral junto à comunidade, com apresentação de resultado final.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AC121'],
+			color: '#4062D9',
+			obligatory: false
+		},
+		'AC229': {
+			code: 'AC229',
+			name: 'Formas Espetaculares e Cultura Popular Brasileira II',
+			ementa: 'Continuidade dos estudos empreendidos na AC129 de forma a elaborar um exercício cênico de rua que envolva a cultura popular brasileira.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AC129'],
+			color: '#D94084',
+			obligatory: false
+		},
+		'AC243': {
+			code: 'AC243',
+			name: 'Técnicas Corpóreas: Luta II',
+			ementa: 'Utilização de elementos do jogo de combate em situações de conflito dramático.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AC143'],
+			color: '#5140D9',
+			obligatory: false
+		},
+		'AC260': {
+			code: 'AC260',
+			name: 'Tópicos em Prática de Encenação',
+			ementa: 'Estudos orientados para a investigação de procedimentos específicos de criação cênica.',
+			semestre: 1,
+			vector: {T:1, P:1, L:1, O:1, D:0, HS:4, SL:2, C:4},
+			requisitos: '',
+			color: '#B7D940',
+			obligatory: false
+		},
+		'AC261': {
+			code: 'AC261',
+			name: 'Tópicos em Criação Cênica II',
+			ementa: 'Estudos orientados para a investigação de procedimentos específicos de criação cênica.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: '',
+			color: '#D95140',
+			obligatory: false
+		},
+		'AC270': {
+			code: 'AC270',
+			name: 'Improvisação: O Silêncio II',
+			ementa: 'Aprofundamento dos procedimentos desenvolvidos na disciplina Improvisação: O Silêncio I, aplicados à construção da cena.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AC170'],
+			color: '#4073D9',
+			obligatory: false
+		},
+		'AC280': {
+			code: 'AC280',
+			name: 'Improvisação: A Palavra II',
+			ementa: 'Aprofundamento dos procedimentos desenvolvidos na disciplina Improvisação: A Palavra I, com ênfase na estruturação da cena.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AC180'],
+			color: '#4073D9',
+			obligatory: false
+		},
+		'AC325': {
+			code: 'AC325',
+			name: 'Danças do Brasil I',
+			ementa: 'Iniciação ao estudo de matrizes gestuais de danças brasileiras populares e religiosas. Utilização de recursos específicos da dança na compreensão e expressão desse vocabulário.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:2, D:0, HS:6, SL:2, C:6},
+			requisitos: ['AA200'],
+			color: '#D97340',
+			obligatory: false
+		},
+		'AC350': {
+			code: 'AC350',
+			name: 'Análise de Dramaturgia',
+			ementa: 'Estudo aprofundado dos elementos presentes nos textos dramáticos. Leitura, análise e debate de peças importantes da dramaturgia ocidental.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AC316'],
+			color: '#40D940',
+			obligatory: false
+		},
+		'AC360': {
+			code: 'AC360',
+			name: 'Tópicos em Prática de Encenação',
+			ementa: 'Estudos orientados para a investigação de procedimentos específicos de criação cênica.',
+			semestre: 1,
+			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D940D9',
+			obligatory: false
+		},
+		'AC361': {
+			code: 'AC361',
+			name: 'Tópicos em Criação Cênica III',
+			ementa: 'Estudos orientados para a investigação de procedimentos específicos de criação cênica.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: '',
+			color: '#4040D9',
+			obligatory: false
+		},
+		'AC370': {
+			code: 'AC370',
+			name: 'Introdução à Pesquisa: Projetos',
+			ementa: 'Introdução aos elementos que constituem a pesquisa em arte e à elaboração de projeto na área.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
+			requisitos: '',
+			color: '#4051D9',
+			obligatory: false
+		},
+		'AC425': {
+			code: 'AC425',
+			name: 'Danças do Brasil II',
+			ementa: 'Aprofundamento no estudo do gestual das danças brasileiras identificadas com a cultura popular brasileira. Investigação dos aspectos de teatralidade presentes nas manifestações.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#4084D9',
+			obligatory: false
+		},
+		'AC431': {
+			code: 'AC431',
+			name: 'Corpo e Teatralidades Brasileiras II',
+			ementa: 'Realizar um exercício cênico tomando como referência aspectos da dança e da teatralidade na oralidade popular brasileira. O ponto de vista do artista.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: ['AA200'],
+			color: '#40D9B7',
+			obligatory: false
+		},
+		'AC460': {
+			code: 'AC460',
+			name: 'Tópicos em Práticas de Encenação',
+			ementa: 'Estudos orientados para a investigação de procedimentos específicos de criação cênica.',
+			semestre: 1,
+			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#7340D9',
+			obligatory: false
+		},
+		'AC461': {
+			code: 'AC461',
+			name: 'Tópicos em Criação Cênica IV',
+			ementa: 'Estudos orientados para a investigação de procedimentos específicos de criação cênica.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: '',
+			color: '#40D951',
+			obligatory: false
 		}
 	}
 };

@@ -43,6 +43,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 12,
+			hasRestrictions: true,
+			subjects: ['CE100', 'CE181', 'CE200', 'CE243', 'CE281', 'CE351', 'CE414', 'CE451', 'CE505', 'CE526', 'CE539', 'CE623', 'CE641', 'CE651', 'CE652', 'CE653', 'CE654', 'CE712', 'CE723', 'CE731', 'CE742', 'CE751', 'CE753', 'CE782', 'CE783', 'CE823', 'CE841', 'CE856', 'CE857', 'CE858', 'CE859', 'CE860', 'CE861', 'CE862', 'CE863', 'CE864', 'CE865', 'CE866', 'CE867', 'CE868', 'CE869', 'CE870', 'CE871', 'CE872', 'CE873', 'CE874', 'CE875', 'CE876', 'CE877', 'CE878', 'CE879', 'CE880', 'CE881', 'CE891', 'CE892', 'CE923', 'CE939'],
+		},
+		'elet-2': {
+			credits: 12,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'CE105': {
 			code: 'CE105',
@@ -51,7 +64,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9A640'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'CE141': {
 			code: 'CE141',
@@ -60,7 +74,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94040'
+			color: '#D9B640',
+			obligatory: true
 		},
 		'CE142': {
 			code: 'CE142',
@@ -69,7 +84,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9A6'
+			color: '#D96C40',
+			obligatory: true
 		},
 		'CE172': {
 			code: 'CE172',
@@ -78,7 +94,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#A640D9'
+			color: '#A240D9',
+			obligatory: true
 		},
 		'CE191': {
 			code: 'CE191',
@@ -87,7 +104,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#D94040',
+			obligatory: true
 		},
 		'CE205': {
 			code: 'CE205',
@@ -96,7 +114,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40A6D9'
+			color: '#D9405D',
+			obligatory: true
 		},
 		'CE242': {
 			code: 'CE242',
@@ -105,7 +124,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['CE172'],
-			color: ''
+			color: '#A240D9',
+			obligatory: true
 		},
 		'CE272': {
 			code: 'CE272',
@@ -114,7 +134,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE172'],
-			color: ''
+			color: '#A240D9',
+			obligatory: true
 		},
 		'CE291': {
 			code: 'CE291',
@@ -123,7 +144,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE191'],
-			color: ''
+			color: '#D94040',
+			obligatory: true
 		},
 		'MA111': {
 			code: 'MA111',
@@ -132,7 +154,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#A6D940'
+			color: '#58D940',
+			obligatory: true
 		},
 		'CE112': {
 			code: 'CE112',
@@ -141,7 +164,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111'],
-			color: ''
+			color: '#58D940',
+			obligatory: true
 		},
 		'CE262': {
 			code: 'CE262',
@@ -150,7 +174,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111'],
-			color: ''
+			color: '#58D940',
+			obligatory: true
 		},
 		'CE305': {
 			code: 'CE305',
@@ -159,7 +184,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE105', 'CE205'],
-			color: ''
+			color: '#8D8D9B',
+			obligatory: true
 		},
 		'CE372': {
 			code: 'CE372',
@@ -168,7 +194,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE242', 'CE272'],
-			color: ''
+			color: '#A240D9',
+			obligatory: true
 		},
 		'CE391': {
 			code: 'CE391',
@@ -177,7 +204,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE291'],
-			color: ''
+			color: '#D94040',
+			obligatory: true
 		},
 		'CE302': {
 			code: 'CE302',
@@ -186,7 +214,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D940A6'
+			color: '#CFD940',
+			obligatory: true
 		},
 		'CE342': {
 			code: 'CE342',
@@ -195,7 +224,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['CE372'],
-			color: ''
+			color: '#A240D9',
+			obligatory: true
 		},
 		'CE362': {
 			code: 'CE362',
@@ -204,7 +234,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE262'],
-			color: ''
+			color: '#58D940',
+			obligatory: true
 		},
 		'CE405': {
 			code: 'CE405',
@@ -213,7 +244,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE305'],
-			color: ''
+			color: '#8D8D9B',
+			obligatory: true
 		},
 		'CE472': {
 			code: 'CE472',
@@ -222,7 +254,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE372'],
-			color: ''
+			color: '#A240D9',
+			obligatory: true
 		},
 		'ME414': {
 			code: 'ME414',
@@ -231,7 +264,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111'],
-			color: ''
+			color: '#58D940',
+			obligatory: true
 		},
 		'CE113': {
 			code: 'CE113',
@@ -240,7 +274,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE112'],
-			color: ''
+			color: '#58D940',
+			obligatory: true
 		},
 		'CE462': {
 			code: 'CE462',
@@ -249,7 +284,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE362'],
-			color: ''
+			color: '#58D940',
+			obligatory: true
 		},
 		'CE482': {
 			code: 'CE482',
@@ -258,7 +294,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE362'],
-			color: ''
+			color: '#58D940',
+			obligatory: true
 		},
 		'CE491': {
 			code: 'CE491',
@@ -267,7 +304,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE391'],
-			color: ''
+			color: '#D94040',
+			obligatory: true
 		},
 		'CE572': {
 			code: 'CE572',
@@ -276,7 +314,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE342', 'CE472'],
-			color: ''
+			color: '#A240D9',
+			obligatory: true
 		},
 		'CE323': {
 			code: 'CE323',
@@ -285,7 +324,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ME414'],
-			color: ''
+			color: '#58D940',
+			obligatory: true
 		},
 		'CE562': {
 			code: 'CE562',
@@ -294,7 +334,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE462'],
-			color: ''
+			color: '#58D940',
+			obligatory: true
 		},
 		'CE582': {
 			code: 'CE582',
@@ -303,7 +344,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE291', 'CE482'],
-			color: ''
+			color: '#998D40',
+			obligatory: true
 		},
 		'CE591': {
 			code: 'CE591',
@@ -312,7 +354,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE491'],
-			color: ''
+			color: '#D94040',
+			obligatory: true
 		},
 		'CE671': {
 			code: 'CE671',
@@ -321,7 +364,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE342', 'CE472'],
-			color: ''
+			color: '#A240D9',
+			obligatory: true
 		},
 		'CE423': {
 			code: 'CE423',
@@ -330,7 +374,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE113', 'CE323'],
-			color: ''
+			color: '#58D940',
+			obligatory: true
 		},
 		'CE592': {
 			code: 'CE592',
@@ -339,7 +384,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE591'],
-			color: ''
+			color: '#D94040',
+			obligatory: true
 		},
 		'CE672': {
 			code: 'CE672',
@@ -348,7 +394,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE141', 'CE142', 'CE562'],
-			color: ''
+			color: '#AEA940',
+			obligatory: true
 		},
 		'CE682': {
 			code: 'CE682',
@@ -357,7 +404,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE582'],
-			color: ''
+			color: '#998D40',
+			obligatory: true
 		},
 		'CE853': {
 			code: 'CE853',
@@ -366,7 +414,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE591'],
-			color: ''
+			color: '#D94040',
+			obligatory: true
 		},
 		'CE442': {
 			code: 'CE442',
@@ -375,7 +424,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['CE423'],
-			color: ''
+			color: '#58D940',
+			obligatory: true
 		},
 		'CE593': {
 			code: 'CE593',
@@ -384,7 +434,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE592'],
-			color: ''
+			color: '#D94040',
+			obligatory: true
 		},
 		'CE625': {
 			code: 'CE625',
@@ -393,7 +444,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA450'],
-			color: '#40D940'
+			color: '#D9406C',
+			obligatory: true
 		},
 		'CE791': {
 			code: 'CE791',
@@ -402,7 +454,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE405', 'CE671'],
-			color: ''
+			color: '#9867BA',
+			obligatory: true
 		},
 		'CE792': {
 			code: 'CE792',
@@ -411,7 +464,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE391', 'CE682'],
-			color: ''
+			color: '#B96740',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -420,7 +474,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CE542': {
 			code: 'CE542',
@@ -429,7 +484,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE593'],
-			color: ''
+			color: '#D94040',
+			obligatory: true
 		},
 		'CE725': {
 			code: 'CE725',
@@ -438,7 +494,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:0, C:8},
 			requisitos: ['CE625'],
-			color: ''
+			color: '#D9406C',
+			obligatory: true
 		},
 		'ELET09': {
 			code: 'ELET09',
@@ -447,7 +504,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CE825': {
 			code: 'CE825',
@@ -456,7 +514,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:0, C:8},
 			requisitos: ['CE725'],
-			color: ''
+			color: '#D9406C',
+			obligatory: true
 		},
 		'ELET10': {
 			code: 'ELET10',
@@ -465,7 +524,578 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'CE100': {
+			code: 'CE100',
+			name: 'Tópicos Especiais de Economia XXVI',
+			ementa: 'Estudos de tópicos específicos em qualquer área da Economia. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#D9408A',
+			obligatory: false
+		},
+		'CE181': {
+			code: 'CE181',
+			name: 'Intérpretes do Brasil',
+			ementa: 'Leitura e discussão de clássicos do pensamento brasileiro. Identidade Nacional. Pensamento político e social brasileiro.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#408FD9',
+			obligatory: false
+		},
+		'CE200': {
+			code: 'CE200',
+			name: 'Tópicos Especiais de Economia XXVII',
+			ementa: 'Estudos de tópicos específicos em qualquer área da Economia. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#C040D9',
+			obligatory: false
+		},
+		'CE243': {
+			code: 'CE243',
+			name: 'Ciência Política',
+			ementa: 'Estado e Industrialização: nacionalismo e desenvolvimento. O significado histórico da Revolução de 64. O sentido da abertura prática e da redemocratização. O tempo do neo-liberalismo.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40ACD9',
+			obligatory: false
+		},
+		'CE281': {
+			code: 'CE281',
+			name: 'Fundamentos de História Econômica do Brasil',
+			ementa: 'A organização do Estado nacional: Estado nação no século XIX. Independência e unidade nacional na América. Processo de independência no Brasil. Economia, sociedade e identidade nacional no Brasil: Economia nacional e organização social. Escravismo e identidade nacional. Liberalismo e instituições políticas. Abolição e República. Estado e modernização no Brasil: origens do Brasil moderno. Revolução de 30 e a redefinição da questão nacional. Desenvolvimento e sociabilidade na segunda metade do século XX.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#76D940',
+			obligatory: false
+		},
+		'CE351': {
+			code: 'CE351',
+			name: 'Matemática Financeira',
+			ementa: 'Regime de capitalização simples, composto e contínuo. Taxas equivalentes. Operações e desconto. Taxa nominal, taxa efetiva e taxa real. Série de pagamentos uniformes. Sistemas de amortização. Operações financeiras mais comuns. Critério de avaliação de investimento: taxa interna de retorno e valor presente líquido. Títulos de renda fixa.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#6740D9',
+			obligatory: false
+		},
+		'CE414': {
+			code: 'CE414',
+			name: 'Política e Políticas Sociais no Brasil',
+			ementa: 'Políticas públicas e seu papel no mundo contemporâneo. Instrumental analítico da análise e da avaliação de políticas públicas na área social. Processo de constituição do Estado do Bem-Estar Social na perspectiva histórica e internacional. Evolução do sistema de proteção social brasileiro desde os anos trinta até a atualidade.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D9BB',
+			obligatory: false
+		},
+		'CE451': {
+			code: 'CE451',
+			name: 'Métodos Quantitativos Aplicados à Economia Financeira',
+			ementa: 'Processo decisório em condições de risco. Risco e retorno de um ativo e de uma carteira. Seleção de carteiras e teoria de Markowitz. Modelo de índice único. Modelo de índice múltiplo. Outros modelos de escolha de carteiras. Análise da utilidade do investidor. Modelo de precificação de ativos. Modelo de formação de preços por arbritagem. Eficiência de mercado. Mercado de opções e métodos de apreçamento. Mercado de renda fixa: formação de preços e administração de carteiras.',
+			semestre: 1,
+			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#4071D9',
+			obligatory: false
+		},
+		'CE505': {
+			code: 'CE505',
+			name: 'Economia Política Contemporânea',
+			ementa: 'As corporações capitalistas produtivas e suas estratégias de acumulação. Dinâmica da renda e do emprego e a dinâmica da riqueza. Impactos da financeirização do capitalismo. Análise das expansões e crises. Identificação e avaliação das diferentes abordagens vigentes desde o enfoque da Economia Política.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['CE405'],
+			color: '#8D8D9B',
+			obligatory: false
+		},
+		'CE526': {
+			code: 'CE526',
+			name: 'Teoria do Desenvolvimento',
+			ementa: 'Teorias sobre o desenvolvimento do capitalismo no século XX. O capital financeiro. O imperialismo. O capitalismo monopolista de Estado. Classes sociais no capitalismo de hoje.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#85D940',
+			obligatory: false
+		},
+		'CE539': {
+			code: 'CE539',
+			name: 'Métodos Quantitativos Aplicados à Administração de Empresas I',
+			ementa: 'Processo e sistema integrado de informações para gestão empresarial estratégica. Métodos para o controle e dimensionamento do capital produtivo. Métodos para dimensionamento do mercado, controle de vendas, controle da utilização e reposição dinâmica dos recursos produtivos. Conceituação de custos e processo de custeio. Métodos para determinação dos custos, preços e lucros unitários dos produtos. Sistemas de custeio: formação do preço devenda. Ferramentas para utilização das informações de custos e preços no processo estratégico. Métodos para avaliação dos resultados econômico e financeiro das empresas.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#4053D9',
+			obligatory: false
+		},
+		'CE623': {
+			code: 'CE623',
+			name: 'Sistema Monetário Internacional',
+			ementa: 'A evolução do sistema financeiro internacional de 1870 até o presente.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#94D940',
+			obligatory: false
+		},
+		'CE641': {
+			code: 'CE641',
+			name: 'Introdução à Administração',
+			ementa: 'Organização do trabalho e revolução industrial. Organizações e administração. Teorias da administração clássicas e modernas. Processo administrativo e as aplicações nas empresas: planejamento, organização, liderança e controle. Administração de projetos. Administração de operações. Empresa classe mundial, toyotismo, qualidade total. Modelos de melhoria. Administração da tecnologia e da informação. Responsabilidade social.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D9C540',
+			obligatory: false
+		},
+		'CE651': {
+			code: 'CE651',
+			name: 'Economia Agrícola',
+			ementa: 'Desenvolvimento recente da agricultura e agroindústria no Brasil: situação e persperctivas. Estrutura fundiária. Financiamento e comercialização.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#A2D940',
+			obligatory: false
+		},
+		'CE652': {
+			code: 'CE652',
+			name: 'Economia Industrial',
+			ementa: 'A indústria de transformação na economia mundial contemporânea. Diagnóstico da atual indústria brasileira. Evolução e transformação da indústria brasileira. Panorama recente de setores, empresas e grupos industriais. Política industrial, tecnológica e de comércio exterior no Brasil.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#7640D9',
+			obligatory: false
+		},
+		'CE653': {
+			code: 'CE653',
+			name: 'Economia Regional e Urbana',
+			ementa: 'Fundamentos históricos dos desequilíbrios regionais no Brasil. Integração do mercado nacional. Processo de urbanização. Políticas de desenvolvimento regional.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D9AC',
+			obligatory: false
+		},
+		'CE654': {
+			code: 'CE654',
+			name: 'Economia do Trabalho',
+			ementa: 'População e força de trabalho. Estrutura do emprego e formas de organização da produção. Estrutura do emprego no Brasil. Nível e distribuição dos salários. Políticas de salários e emprego. Relações de trabalho e sindicalismo.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40BBD9',
+			obligatory: false
+		},
+		'CE712': {
+			code: 'CE712',
+			name: 'Teoria Monetária e Financeira',
+			ementa: 'Moeda, crédito e ciclo do capital em Marx. Hilferding e o capital financeiro. Keynes: Moeda, riqueza e composição da carteira dos agentes. Instabilidade financeira e ciclo econômico. Abordagens convencionais e neutralidade da moeda. Institucionalidade e papel dos sistemas financeiros. Teorias da regulação financeira.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D980',
+			obligatory: false
+		},
+		'CE723': {
+			code: 'CE723',
+			name: 'Economia Financeira',
+			ementa: 'Inovações financeiras. Instrumentos derivativos. Processos de Securitização. Agentes e participantes dos mercados. Instrumentos de tomada de decisões e gestão de riscos. Práticas financeiras: internacionalização dos fluxos de capitais, alavancagem, arbitragem e especulação. Os riscos financeiros contemporâneos.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D98F',
+			obligatory: false
+		},
+		'CE731': {
+			code: 'CE731',
+			name: 'Econometria II',
+			ementa: 'Modelos Univariados de Séries de Tempo e suas aplicações. Processos Estacionários versus Processos não Estacionários. Modelos de volatilidade condicional e heterocedastico. Modelos Multivariados de Séries de Tempo e suas aplicações. Análise de Painel.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['CE423'],
+			color: '#58D940',
+			obligatory: false
+		},
+		'CE742': {
+			code: 'CE742',
+			name: 'Economia e Estratégia das Empresas',
+			ementa: 'Empresa: caracterização e objetivos. Processo de administração estratégica: Análise do Ambiente. Estabelecimento da diretriz organizacional. Missão. Formulação da estratégia. Implementação da estratégia. Controle estratégico. Concorrência e processo competitivo. Inovação, desperdício e expansão de mercados. Estratégia competitiva. Vantagem competitiva. Análise da concorrência. Decisões estratégicas. Estratégia como inovação e ruptura. Estratégias para pequenas empresas. Estratégias para empreendimentos associativos e populares.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D940B6',
+			obligatory: false
+		},
+		'CE751': {
+			code: 'CE751',
+			name: 'Elaboração e Análise de Projetos',
+			ementa: 'Crescimento, planejamento econômico e projetos. Estudos do mercado e dos aspectos técnicos do projeto. Estrutura organizacional. Aspectos legais e ambientais. Dimensionamento das grandezas econômicas e financeiras para o período de vigência do projeto. Projeção de receitas e custos. Estimativas de resultados e do investimento. Estudo das fontes de financiamento. Projeção do fluxo de caixa. Métodos de avaliação de projetos: taxa de retorno, análise do fluxo de caixa capitalizado, valor presente líquido, taxa interna de retorno. Avaliação sob a ótima do investidor privado e sob a ótica social.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['CE141', 'CE142', 'CE362'],
+			color: '#AEA940',
+			obligatory: false
+		},
+		'CE753': {
+			code: 'CE753',
+			name: 'Economia do Meio Ambiente',
+			ementa: 'Serviços ecossistêmicos e insumos: sustentabilidade e disponibilidade. Falha de mercado e meio ambiente. Elementos para uma macroeconomia ambiental. Valoração de serviços ecossistêmicos. Desenvolvimento econômico e meio ambiente.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D99E',
+			obligatory: false
+		},
+		'CE782': {
+			code: 'CE782',
+			name: 'Economia Internacional IV',
+			ementa: 'Globalização produtiva e financeira. A evolução da mobilidade do capital e dos regimes cambiais. O debate sobre a abertura financeira. Hierarquia das moedas. O papel do dólar. Os ciclos de liquidez e os países em desenvolvimento. Crises cambiais. Temas contemporâneos em finanças internacionais.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['CE682'],
+			color: '#998D40',
+			obligatory: false
+		},
+		'CE783': {
+			code: 'CE783',
+			name: 'Metodologia Econômica',
+			ementa: 'Introdução à metodologia econômica. Revisão histórica da metodologia econômica. Popper e o falsificacionismo em debate. Realismo dos pressupostos e a economia como instrumento de previsão. Novas perspectivas em racionalidade econômica. Economia como construção de modelos.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#409ED9',
+			obligatory: false
+		},
+		'CE823': {
+			code: 'CE823',
+			name: 'Mercado Bancário',
+			ementa: 'Sistema financeiro no Brasil. Bancos privados e públicos no Brasil. Dinâmica dos sistemas financeiros e tendências da regulamentação. Tipologia e gestão de riscos da intermediação financeira.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D94F40',
+			obligatory: false
+		},
+		'CE841': {
+			code: 'CE841',
+			name: 'Finanças das Empresas',
+			ementa: 'Função financeira. Risco e retorno. Ciclo operacional e fundos gerados. Interpretação e análise das demonstrações financeiras. Lucro e valor econômico agregado. Alavancagem operacional e financeira. Administração financeira no curto prazo. Capital de giro na perspectiva estática e na perspectiva dinâmica. Planejamento financeiro no longo prazo. Fluxos de caixa. Métodos de análise de investimentos. Planejamento periódico: orçamento empresarial. Impacto das decisões financeiras na Economia.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#4A40D9',
+			obligatory: false
+		},
+		'CE856': {
+			code: 'CE856',
+			name: 'Tópicos Especiais de Economia I',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#8540D9',
+			obligatory: false
+		},
+		'CE857': {
+			code: 'CE857',
+			name: 'Tópicos Especiais de Economia II',
+			ementa: 'Estudo de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#67D940',
+			obligatory: false
+		},
+		'CE858': {
+			code: 'CE858',
+			name: 'Tópicos Especiais de Economia III',
+			ementa: 'Estudo de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D945',
+			obligatory: false
+		},
+		'CE859': {
+			code: 'CE859',
+			name: 'Tópicos Especiais de Economia IV',
+			ementa: 'Estudo de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#4080D9',
+			obligatory: false
+		},
+		'CE860': {
+			code: 'CE860',
+			name: 'Tópicos Especiais de Economia V',
+			ementa: 'Estudo de tópicos específicos de qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D971',
+			obligatory: false
+		},
+		'CE861': {
+			code: 'CE861',
+			name: 'Tópicos Especiais de Economia VI',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D9D440',
+			obligatory: false
+		},
+		'CE862': {
+			code: 'CE862',
+			name: 'Tópicos Especiais de Economia VII',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D9404F',
+			obligatory: false
+		},
+		'CE863': {
+			code: 'CE863',
+			name: 'Tópicos Especiais de Economia VIII',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#5840D9',
+			obligatory: false
+		},
+		'CE864': {
+			code: 'CE864',
+			name: 'Tópicos Especiais de Economia IX',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D94099',
+			obligatory: false
+		},
+		'CE865': {
+			code: 'CE865',
+			name: 'Tópicos Especiais de Economia X',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser ficado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D97B40',
+			obligatory: false
+		},
+		'CE866': {
+			code: 'CE866',
+			name: 'Tópicos Especiais de Economia XI',
+			ementa: 'Estudo de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D940C5',
+			obligatory: false
+		},
+		'CE867': {
+			code: 'CE867',
+			name: 'Tópicos Especiais de Economia XII',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#4AD940',
+			obligatory: false
+		},
+		'CE868': {
+			code: 'CE868',
+			name: 'Tópicos Especiais de Economia XIII',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#B1D940',
+			obligatory: false
+		},
+		'CE869': {
+			code: 'CE869',
+			name: 'Tópicos Especiais de Economia XIV',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D9CA',
+			obligatory: false
+		},
+		'CE870': {
+			code: 'CE870',
+			name: 'Tópicos Especiais de Economia XV',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D99940',
+			obligatory: false
+		},
+		'CE871': {
+			code: 'CE871',
+			name: 'Tópicos Especiais de Economia XVI',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#9440D9',
+			obligatory: false
+		},
+		'CE872': {
+			code: 'CE872',
+			name: 'Macroeconomia Pós-Keynesiana',
+			ementa: 'Fundamentos da escola pós-keynesiana. Incerteza e probabilidade. Expectativas e confiança. Convenções. Princípio da Demanda efetiva. Escolha de ativos e acumulação de riqueza. Preferência pela liquidez. Determinantes do investimento. A hipótese da instabilidade financeira. Formação de preços. Inflação. Macroeconomia da economia aberta. Crescimento econômico com restrição do balanço de pagamentos. Política econômica.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D9407B',
+			obligatory: false
+		},
+		'CE873': {
+			code: 'CE873',
+			name: 'Tópicos Especiais em Economia XVII',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D953',
+			obligatory: false
+		},
+		'CE874': {
+			code: 'CE874',
+			name: 'Tópicos Especiais de Economia XVIII',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#4045D9',
+			obligatory: false
+		},
+		'CE875': {
+			code: 'CE875',
+			name: 'Tópicos Especiais de Economia XIX',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40CAD9',
+			obligatory: false
+		},
+		'CE876': {
+			code: 'CE876',
+			name: 'Tópicos Especiais de Economia XX',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D9A740',
+			obligatory: false
+		},
+		'CE877': {
+			code: 'CE877',
+			name: 'Tópicos Especiais de Economia XXI',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D940A7',
+			obligatory: false
+		},
+		'CE878': {
+			code: 'CE878',
+			name: 'Tópicos Especiais de Economia XXII',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#4062D9',
+			obligatory: false
+		},
+		'CE879': {
+			code: 'CE879',
+			name: 'Tópicos Especiais de Economia XXIII',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D962',
+			obligatory: false
+		},
+		'CE880': {
+			code: 'CE880',
+			name: 'Tópicos Especiais de Economia XXIV',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D95D40',
+			obligatory: false
+		},
+		'CE881': {
+			code: 'CE881',
+			name: 'Tópicos Especiais de Economia XXV',
+			ementa: 'Estudos de tópicos específicos em qualquer área da ciência econômica e da economia brasileira. Conteúdo a ser fixado pela Comissão de Graduação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D98A40',
+			obligatory: false
+		},
+		'CE891': {
+			code: 'CE891',
+			name: 'Economia Latino-Americana',
+			ementa: 'Inserção na divisão internacional do trabalho. Tipologia das economias primário-exportadoras. O pós-guerra e a presença dos Estados Unidos. A atualidade. Características sub-regionais. Alternativas de desenvolvimento. Os anos 80: crise e respostas. Anos 90 e 2000: liberalização e crise.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#C0D940',
+			obligatory: false
+		},
+		'CE892': {
+			code: 'CE892',
+			name: 'Estado e Políticas Públicas',
+			ementa: 'Breve abordagem das teorias do Estado. Diversidade de padrões de intervenção estatal. Experiências e instrumentos de políticas públicas setoriais (industrial, infraestrutura, social, agrícola, regional, urbana, etc).',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#CF40D9',
+			obligatory: false
+		},
+		'CE923': {
+			code: 'CE923',
+			name: 'Finanças e Mercado de Capitais',
+			ementa: 'Teorias microeconômicas das decisões financeiras em situações de incerteza. Teorias das resultantes macroeconômicas no mercado de capitais. Aplicações da teoria da instabilidade financeira a crises. Mercado de capitais brasileiro.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#B140D9',
+			obligatory: false
+		},
+		'CE939': {
+			code: 'CE939',
+			name: 'Gestão de Marketing',
+			ementa: 'Conceito de Marketing. Mercados e estruturas de mercado. O composto mercadológico. Abordagem a partir da análise, adaptação, ativação e avaliação. Abordagem a partir do produto, preço, promoção, ponto de vista e pós-venda. Mercados específicos: caracterização, análise, tendências. Plano de marketing.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D940D4',
+			obligatory: false
 		}
 	}
 };

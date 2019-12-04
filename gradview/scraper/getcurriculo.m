@@ -53,6 +53,7 @@ function curriculo = getcurriculo(ano,curso,todas_disciplinas)
             for ind=1:length(disc_sug_semestre)
                 creditos_sum=creditos_sum+getcredits(todas_disciplinas,disc_sug_semestre{ind});
                 disciplinasusadas{inddisc}=getdisciplina(todas_disciplinas,disc_sug_semestre{ind},disciplinasusadas,j-1);
+                disciplinasusadas{inddisc}.obligatory='true';
                 disc_sug_semestre{ind} = disciplinasusadas{inddisc}.codigo;
                 inddisc = inddisc+1;
             end
@@ -66,22 +67,25 @@ function curriculo = getcurriculo(ano,curso,todas_disciplinas)
         curriculo.modalidade(1).creditos=creditos;
         
         % inclusao das eletivas
-        for j=1:length(eletivas_enfase)
-            if(strncmp(curriculo.modalidade(1).nome,eletivas_enfase(j).enfase,3))
-                curriculo.modalidade(1).nome = eletivas_enfase(j).enfase; %VERIFICAR SE FUNCIONA BEM
-                curriculo.modalidade(1).eletivas=eletivas_enfase(j).blocos;
+        if isfield(eletivas_enfase,'blocos')
+            for j=1:length(eletivas_enfase)
+                if(strncmp(curriculo.modalidade(1).nome,eletivas_enfase(j).enfase,3))
+                    curriculo.modalidade(1).nome = eletivas_enfase(j).enfase; %VERIFICAR SE FUNCIONA BEM
+                    curriculo.modalidade(1).eletivas=eletivas_enfase(j).blocos;
 
-                discelets = [];
-                for k=1:length(curriculo.modalidade(1).eletivas)
-                    discelets = [discelets curriculo.modalidade(1).eletivas(k).disc];
-                end
+                    discelets = [];
+                    for k=1:length(curriculo.modalidade(1).eletivas)
+                        discelets = [discelets curriculo.modalidade(1).eletivas(k).disc];
+                    end
 
-                discelets = unique(discelets);
-                for k=1:length(discelets)
-                    disciplinasusadas{inddisc}=getdisciplina(todas_disciplinas,discelets{k},disciplinasusadas,0);
-                    inddisc=inddisc+1;
+                    discelets = unique(discelets);
+                    for k=1:length(discelets)
+                        disciplinasusadas{inddisc}=getdisciplina(todas_disciplinas,discelets{k},disciplinasusadas,0);
+                        disciplinasusadas{inddisc}.obligatory='false';
+                        inddisc=inddisc+1;
+                    end
+                    break;
                 end
-                break;
             end
         end
         curriculo.modalidade(1).disciplinas=horzcat(disciplinasusadas{:});
@@ -117,7 +121,7 @@ function curriculo = getcurriculo(ano,curso,todas_disciplinas)
                 for ind=1:length(disc_sug_semestre)
                     creditos_sum=creditos_sum+getcredits(todas_disciplinas,disc_sug_semestre{ind});
                     disciplinasusadas{inddisc}=getdisciplina(todas_disciplinas,disc_sug_semestre{ind},disciplinasusadas,j-1);
-                    %disciplinasusadas{inddisc}.
+                    disciplinasusadas{inddisc}.obligatory='true';
                     disc_sug_semestre{ind} = disciplinasusadas{inddisc}.codigo;
                     inddisc = inddisc+1;
                 end
@@ -131,24 +135,27 @@ function curriculo = getcurriculo(ano,curso,todas_disciplinas)
             curriculo.modalidade(i-1).creditos=creditos;
             
             % inclusao das eletivas
-            for j=1:length(eletivas_enfase)
-                if(strncmp(curriculo.modalidade(i-1).nome,eletivas_enfase(j).enfase,3))
-                    curriculo.modalidade(i-1).nome = eletivas_enfase(j).enfase; %VERIFICAR SE FUNCIONA BEM
-                    curriculo.modalidade(i-1).eletivas=eletivas_enfase(j).blocos;
+            if isfield(eletivas_enfase,'blocos')
+                for j=1:length(eletivas_enfase)
+                    if(strncmp(curriculo.modalidade(i-1).nome,eletivas_enfase(j).enfase,3))
+                        curriculo.modalidade(i-1).nome = eletivas_enfase(j).enfase; %VERIFICAR SE FUNCIONA BEM
+                        curriculo.modalidade(i-1).eletivas=eletivas_enfase(j).blocos;
 
-                    discelets = [];
-                    for k=1:length(curriculo.modalidade(i-1).eletivas)
-                        discelets = [discelets curriculo.modalidade(i-1).eletivas(k).disc];
-                    end
+                        discelets = [];
+                        for k=1:length(curriculo.modalidade(i-1).eletivas)
+                            discelets = [discelets curriculo.modalidade(i-1).eletivas(k).disc];
+                        end
 
-                    discelets = unique(discelets);
-                    for k=1:length(discelets)
-                        disciplinasusadas{inddisc}=getdisciplina(todas_disciplinas,discelets{k},disciplinasusadas,0);
-                        inddisc=inddisc+1;
+                        discelets = unique(discelets);
+                        for k=1:length(discelets)
+                            disciplinasusadas{inddisc}=getdisciplina(todas_disciplinas,discelets{k},disciplinasusadas,0);
+                            disciplinasusadas{inddisc}.obligatory='false';
+                            inddisc=inddisc+1;
+                        end
+                        break;
                     end
-                    break;
                 end
+                curriculo.modalidade(i-1).disciplinas=horzcat(disciplinasusadas{:});
             end
-            curriculo.modalidade(i-1).disciplinas=horzcat(disciplinasusadas{:});
         end
     end

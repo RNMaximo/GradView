@@ -35,6 +35,24 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 48,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-2': {
+			credits: 24,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-3': {
+			credits: 12,
+			hasRestrictions: true,
+			subjects: ['HH930'],
+		},
+	},
+
 	subjects: {
 		'HH183': {
 			code: 'HH183',
@@ -43,7 +61,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: '',
-			color: '#40D940'
+			color: '#5340D9',
+			obligatory: true
 		},
 		'HH185': {
 			code: 'HH185',
@@ -52,7 +71,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9407D'
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'HH186': {
 			code: 'HH186',
@@ -61,7 +81,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#8CD940',
+			obligatory: true
 		},
 		'HH188': {
 			code: 'HH188',
@@ -70,7 +91,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#407DD9'
+			color: '#D940B3',
+			obligatory: true
 		},
 		'HH285': {
 			code: 'HH285',
@@ -79,7 +101,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D94040'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'ELET02': {
 			code: 'ELET02',
@@ -88,7 +111,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:16},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HH381': {
 			code: 'HH381',
@@ -97,7 +121,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#40D97D'
+			color: '#409FD9',
+			obligatory: true
 		},
 		'HH384': {
 			code: 'HH384',
@@ -106,7 +131,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#40D9BA'
+			color: '#40D99F',
+			obligatory: true
 		},
 		'HH386': {
 			code: 'HH386',
@@ -115,7 +141,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#40BAD9'
+			color: '#C640D9',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -124,7 +151,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HH482': {
 			code: 'HH482',
@@ -133,7 +161,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#7D40D9'
+			color: '#40D966',
+			obligatory: true
 		},
 		'HH483': {
 			code: 'HH483',
@@ -142,7 +171,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#BA40D9'
+			color: '#D94040',
+			obligatory: true
 		},
 		'HH484': {
 			code: 'HH484',
@@ -151,7 +181,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D940BA'
+			color: '#C6D940',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -160,7 +191,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HH584': {
 			code: 'HH584',
@@ -169,7 +201,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#BAD940'
+			color: '#4066D9',
+			obligatory: true
 		},
 		'HH587': {
 			code: 'HH587',
@@ -178,7 +211,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D9BA40'
+			color: '#D94079',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -187,7 +221,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HH682': {
 			code: 'HH682',
@@ -196,7 +231,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#7DD940'
+			color: '#D9B340',
+			obligatory: true
 		},
 		'HH685': {
 			code: 'HH685',
@@ -205,7 +241,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D97D40'
+			color: '#D97940',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -214,7 +251,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -223,7 +261,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:16},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -232,7 +271,18 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:20},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'HH930': {
+			code: 'HH930',
+			name: 'Tópicos Especiais em Teoria da História XXI',
+			ementa: 'Estudo do pensamento histórico e dos textos fundamentais produzidos pela tradição historiográfica.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: ['AA200'],
+			color: '#53D940',
+			obligatory: false
 		}
 	}
 };

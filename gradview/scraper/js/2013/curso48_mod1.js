@@ -51,6 +51,14 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['AM031', 'AR101', 'BE180', 'BT280', 'BT330', 'BT380', 'BT591', 'BT680', 'GE903', 'GF100', 'GF102', 'GF105', 'GF112', 'GF503', 'GF604', 'GF702', 'GF805', 'GN301', 'ML102'],
+		},
+	},
+
 	subjects: {
 		'AP111': {
 			code: 'AP111',
@@ -59,7 +67,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#BED940'
+			color: '#C6D940',
+			obligatory: true
 		},
 		'AP211': {
 			code: 'AP211',
@@ -68,7 +77,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D240D9'
+			color: '#7040D9',
+			obligatory: true
 		},
 		'AU110': {
 			code: 'AU110',
@@ -77,7 +87,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D97C40'
+			color: '#6140D9',
+			obligatory: true
 		},
 		'AU221': {
 			code: 'AU221',
@@ -86,7 +97,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4640D9'
+			color: '#40D9AE',
+			obligatory: true
 		},
 		'AU301': {
 			code: 'AU301',
@@ -95,7 +107,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#6ED940'
+			color: '#D94087',
+			obligatory: true
 		},
 		'HH788': {
 			code: 'HH788',
@@ -104,7 +117,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#409DD9'
+			color: '#A9D940',
+			obligatory: true
 		},
 		'MS123': {
 			code: 'MS123',
@@ -113,7 +127,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#404DD9'
+			color: '#40AED9',
+			obligatory: true
 		},
 		'AP112': {
 			code: 'AP112',
@@ -122,7 +137,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['AP111', '*AP211'],
-			color: ''
+			color: '#9B8D8D',
+			obligatory: true
 		},
 		'AU212': {
 			code: 'AU212',
@@ -131,7 +147,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AU221'],
-			color: ''
+			color: '#40D9AE',
+			obligatory: true
 		},
 		'AU223': {
 			code: 'AU223',
@@ -140,7 +157,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AU221'],
-			color: ''
+			color: '#40D9AE',
+			obligatory: true
 		},
 		'AU401': {
 			code: 'AU401',
@@ -149,7 +167,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*MS123'],
-			color: ''
+			color: '#40AED9',
+			obligatory: true
 		},
 		'AU501': {
 			code: 'AU501',
@@ -158,7 +177,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*MS123'],
-			color: ''
+			color: '#40AED9',
+			obligatory: true
 		},
 		'HH804': {
 			code: 'HH804',
@@ -167,7 +187,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94068'
+			color: '#40D9CA',
+			obligatory: true
 		},
 		'AP115': {
 			code: 'AP115',
@@ -176,7 +197,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#BE40D9'
+			color: '#D94040',
+			obligatory: true
 		},
 		'AU013': {
 			code: 'AU013',
@@ -185,7 +207,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#AAD940'
+			color: '#D99640',
+			obligatory: true
 		},
 		'AU133': {
 			code: 'AU133',
@@ -194,7 +217,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#40D94D'
+			color: '#9BD940',
+			obligatory: true
 		},
 		'AU302': {
 			code: 'AU302',
@@ -203,7 +227,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU301'],
-			color: ''
+			color: '#D94087',
+			obligatory: true
 		},
 		'AU402': {
 			code: 'AU402',
@@ -212,7 +237,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*AU401'],
-			color: ''
+			color: '#40AED9',
+			obligatory: true
 		},
 		'HH789': {
 			code: 'HH789',
@@ -221,7 +247,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#5AD940'
+			color: '#40D983',
+			obligatory: true
 		},
 		'ME180': {
 			code: 'ME180',
@@ -230,7 +257,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MS123'],
-			color: ''
+			color: '#40AED9',
+			obligatory: true
 		},
 		'AP213': {
 			code: 'AP213',
@@ -239,7 +267,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AP211'],
-			color: ''
+			color: '#7040D9',
+			obligatory: true
 		},
 		'AP314': {
 			code: 'AP314',
@@ -248,7 +277,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#96D940'
+			color: '#D94079',
+			obligatory: true
 		},
 		'AU014': {
 			code: 'AU014',
@@ -257,7 +287,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#D2D940'
+			color: '#4049D9',
+			obligatory: true
 		},
 		'AU134': {
 			code: 'AU134',
@@ -266,7 +297,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D9407C'
+			color: '#40D991',
+			obligatory: true
 		},
 		'AU403': {
 			code: 'AU403',
@@ -275,7 +307,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*AU402'],
-			color: ''
+			color: '#40AED9',
+			obligatory: true
 		},
 		'AU601': {
 			code: 'AU601',
@@ -284,7 +317,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4089D9'
+			color: '#4058D9',
+			obligatory: true
 		},
 		'HH805': {
 			code: 'HH805',
@@ -293,7 +327,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#6E40D9'
+			color: '#40D949',
+			obligatory: true
 		},
 		'AU015': {
 			code: 'AU015',
@@ -302,7 +337,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#40B1D9'
+			color: '#D940A4',
+			obligatory: true
 		},
 		'AU135': {
 			code: 'AU135',
@@ -311,7 +347,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#8240D9'
+			color: '#D95C40',
+			obligatory: true
 		},
 		'AU303': {
 			code: 'AU303',
@@ -320,7 +357,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#4075D9'
+			color: '#4091D9',
+			obligatory: true
 		},
 		'AU404': {
 			code: 'AU404',
@@ -329,7 +367,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU403'],
-			color: ''
+			color: '#40AED9',
+			obligatory: true
 		},
 		'AU416': {
 			code: 'AU416',
@@ -338,7 +377,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#46D940'
+			color: '#70D940',
+			obligatory: true
 		},
 		'AU612': {
 			code: 'AU612',
@@ -347,7 +387,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['*AU601'],
-			color: ''
+			color: '#4058D9',
+			obligatory: true
 		},
 		'AU811': {
 			code: 'AU811',
@@ -356,7 +397,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU403'],
-			color: ''
+			color: '#40AED9',
+			obligatory: true
 		},
 		'AP741': {
 			code: 'AP741',
@@ -365,7 +407,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU601'],
-			color: ''
+			color: '#4058D9',
+			obligatory: true
 		},
 		'AU021': {
 			code: 'AU021',
@@ -374,7 +417,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#40C5D9'
+			color: '#D9B340',
+			obligatory: true
 		},
 		'AU136': {
 			code: 'AU136',
@@ -383,7 +427,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D940A4'
+			color: '#7ED940',
+			obligatory: true
 		},
 		'AU405': {
 			code: 'AU405',
@@ -392,7 +437,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU404'],
-			color: ''
+			color: '#40AED9',
+			obligatory: true
 		},
 		'AU613': {
 			code: 'AU613',
@@ -401,7 +447,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#40D9D9'
+			color: '#45D940',
+			obligatory: true
 		},
 		'HH806': {
 			code: 'HH806',
@@ -410,7 +457,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D9B740'
+			color: '#B7D940',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -419,7 +467,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:2},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'AP742': {
 			code: 'AP742',
@@ -428,7 +477,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AP741', '*AU613'],
-			color: ''
+			color: '#43998D',
+			obligatory: true
 		},
 		'AU017': {
 			code: 'AU017',
@@ -437,7 +487,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#40D9C5'
+			color: '#D440D9',
+			obligatory: true
 		},
 		'AU137': {
 			code: 'AU137',
@@ -446,7 +497,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D95440'
+			color: '#40D99F',
+			obligatory: true
 		},
 		'AU406': {
 			code: 'AU406',
@@ -455,7 +507,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU405'],
-			color: ''
+			color: '#40AED9',
+			obligatory: true
 		},
 		'AU502': {
 			code: 'AU502',
@@ -464,7 +517,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*MS123'],
-			color: ''
+			color: '#40AED9',
+			obligatory: true
 		},
 		'AU700': {
 			code: 'AU700',
@@ -473,7 +527,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#5A40D9'
+			color: '#D9405C',
+			obligatory: true
 		},
 		'HH796': {
 			code: 'HH796',
@@ -482,7 +537,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D94054'
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'AP216': {
 			code: 'AP216',
@@ -491,7 +547,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9B1'
+			color: '#61D940',
+			obligatory: true
 		},
 		'AU018': {
 			code: 'AU018',
@@ -500,7 +557,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#D9CB40'
+			color: '#4540D9',
+			obligatory: true
 		},
 		'AU138': {
 			code: 'AU138',
@@ -509,7 +567,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#4061D9'
+			color: '#D98740',
+			obligatory: true
 		},
 		'AU504': {
 			code: 'AU504',
@@ -518,7 +577,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*AU502', '*AU612'],
-			color: ''
+			color: '#4083D9',
+			obligatory: true
 		},
 		'AU713': {
 			code: 'AU713',
@@ -527,7 +587,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D94040'
+			color: '#D97940',
+			obligatory: true
 		},
 		'AU812': {
 			code: 'AU812',
@@ -536,7 +597,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU811'],
-			color: ''
+			color: '#40AED9',
+			obligatory: true
 		},
 		'AU816': {
 			code: 'AU816',
@@ -545,7 +607,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:2, D:2, HS:6, SL:2, C:4},
 			requisitos: ['AU502'],
-			color: ''
+			color: '#40AED9',
+			obligatory: true
 		},
 		'AU817': {
 			code: 'AU817',
@@ -554,7 +617,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AU501'],
-			color: ''
+			color: '#40AED9',
+			obligatory: true
 		},
 		'AP217': {
 			code: 'AP217',
@@ -563,7 +627,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D961'
+			color: '#40BCD9',
+			obligatory: true
 		},
 		'AU019': {
 			code: 'AU019',
@@ -572,7 +637,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#9640D9'
+			color: '#B740D9',
+			obligatory: true
 		},
 		'AU139': {
 			code: 'AU139',
@@ -581,7 +647,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D940B7'
+			color: '#5340D9',
+			obligatory: true
 		},
 		'AU225': {
 			code: 'AU225',
@@ -590,7 +657,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA475'],
-			color: '#D9A440'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'AU614': {
 			code: 'AU614',
@@ -599,7 +667,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU613', '*AU713'],
-			color: ''
+			color: '#8FA940',
+			obligatory: true
 		},
 		'AU814': {
 			code: 'AU814',
@@ -608,7 +677,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*AU812'],
-			color: ''
+			color: '#40AED9',
+			obligatory: true
 		},
 		'AU815': {
 			code: 'AU815',
@@ -617,7 +687,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA450'],
-			color: '#D94090'
+			color: '#A940D9',
+			obligatory: true
 		},
 		'AP120': {
 			code: 'AP120',
@@ -626,7 +697,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['AA200'],
-			color: '#82D940'
+			color: '#D940B3',
+			obligatory: true
 		},
 		'AU022': {
 			code: 'AU022',
@@ -635,7 +707,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D96840'
+			color: '#40D9BC',
+			obligatory: true
 		},
 		'AU140': {
 			code: 'AU140',
@@ -644,7 +717,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D99040'
+			color: '#D9A440',
+			obligatory: true
 		},
 		'AU701': {
 			code: 'AU701',
@@ -653,7 +727,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AU015', 'AU136', 'AU021', 'AU135', 'AU137', 'AU017'],
-			color: ''
+			color: '#B08B7A',
+			obligatory: true
 		},
 		'AU914': {
 			code: 'AU914',
@@ -662,7 +737,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#AA40D9'
+			color: '#40CAD9',
+			obligatory: true
 		},
 		'HH810': {
 			code: 'HH810',
@@ -671,7 +747,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA470'],
-			color: '#D940CB'
+			color: '#9B40D9',
+			obligatory: true
 		},
 		'AU001': {
 			code: 'AU001',
@@ -680,7 +757,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:6, D:0, HS:10, SL:4, C:10},
 			requisitos: ['AA200'],
-			color: '#40D975'
+			color: '#53D940',
+			obligatory: true
 		},
 		'AU023': {
 			code: 'AU023',
@@ -689,7 +767,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D989'
+			color: '#7E40D9',
+			obligatory: true
 		},
 		'ELET11': {
 			code: 'ELET11',
@@ -698,7 +777,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'AU020': {
 			code: 'AU020',
@@ -707,7 +787,198 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:10, D:0, HS:14, SL:4, C:14},
 			requisitos: ['AA200'],
-			color: '#40D99D'
+			color: '#D9404E',
+			obligatory: true
+		},
+		'AM031': {
+			code: 'AM031',
+			name: 'Trabalhos em Alfabetização Ambiental',
+			ementa: 'Esta disciplina pretende desenvolver trabalhos sob a Plataforma Lixo e Cidadania e do conceito de bacia Ambiental com alunos de graduação da UNICAMP.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:0, C:2},
+			requisitos: '',
+			color: '#D940CF',
+			obligatory: false
+		},
+		'AR101': {
+			code: 'AR101',
+			name: 'Fundamentos Filosóficos da Arte Educação',
+			ementa: 'O processo do conhecimento humano: vivências e significações. O conhecimento inteligível e o saber sensível. Linguagem e conhecimento conceitual (inteligível). Os signos estéticos como simbolização do saber sensível. A dimensão educacional da arte.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
+			requisitos: '',
+			color: '#40D958',
+			obligatory: false
+		},
+		'BE180': {
+			code: 'BE180',
+			name: 'Introdução à Ecologia',
+			ementa: 'Conceitos básicos de sistemas ecológicos. Enfoque teórico-prático de situações reais envolvendo observação, métodos e interpretação de dados ecológicos. (Com excursões obrigatórias).',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D974',
+			obligatory: false
+		},
+		'BT280': {
+			code: 'BT280',
+			name: 'Botânica I',
+			ementa: 'Ciclo de vida, estratégias reprodutivas e morfologia básica das angiospermas. Noções anatômicas de órgãos vegetativos e reprodutivos.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D94096',
+			obligatory: false
+		},
+		'BT330': {
+			code: 'BT330',
+			name: 'Botânica Básica',
+			ementa: 'Aspectos gerais de morfologia de Dicotiledôneas e Monocotiledôneas, raiz, caule, folhas, flores, frutos e sementes. Aspectos gerais da fisiologia de plantas superiores, enfocando relações energéticas, relações hídricas e minerais, relações hormonais e a fisiologia da germinação. Aspectos gerais de taxonomia vegetal, com ênfase nas espécies cultivadas. Ciclo de vida das culturas de maior importância econômica.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#409FD9',
+			obligatory: false
+		},
+		'BT380': {
+			code: 'BT380',
+			name: 'Botânica II',
+			ementa: 'Apresentação do Reino Vegetal e Diversidade de organismos. Evolução do sistema reprodutivo. Ciclos de vida. Morfologia dos principais grupos de criptógamas. Organização do talo. Evolução do sistema vascular. Gimnospermas. Evolução da semente.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D966',
+			obligatory: false
+		},
+		'BT591': {
+			code: 'BT591',
+			name: 'Tópicos em Morfologia e Taxonomia Vegetal',
+			ementa: 'Análise de temas atuais em morfologia e taxonomia vegetal a partir da literatura especializada recente.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA200'],
+			color: '#4074D9',
+			obligatory: false
+		},
+		'BT680': {
+			code: 'BT680',
+			name: 'Botânica V',
+			ementa: 'Noções de biossistemática vegetal. Uso de métodos experimentais em taxonomia. Citotaxonomia. Quimiotaxonomia. Biologia da polinização e da reprodução.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9406B',
+			obligatory: false
+		},
+		'GE903': {
+			code: 'GE903',
+			name: 'Geologia Urbana',
+			ementa: 'Gestão, supervisão, orientação técnica sobre geologia ambiental. Coleta de dados, planejamento e projeto geológicos do curso e ocupação do solo urbano. Estudo e recuperação ambiental de solos e águas subterrâneas, contaminadas, implantação de aterros de resíduos sólidos e avaliação de impactos ambientais, risco geológico (erosão, inundações, instabilidade de encostas). Cartas geotécnica, planejamento do uso racional de recursos minerais hídricos. Visita técnica a casos de tratamento de resíduos, levantamento de contaminação e risco geológico.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#8CD940',
+			obligatory: false
+		},
+		'GF100': {
+			code: 'GF100',
+			name: 'Geomorfologia e Meio Ambiente',
+			ementa: 'Conteúdo, semiologia e aplicabilidade das legendas geomorfológicas. Cartografia geomorfológica e planejamento: estudos de caso. Monitoramento ambiental e a questão dos geoindicadores.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D94E40',
+			obligatory: false
+		},
+		'GF102': {
+			code: 'GF102',
+			name: 'Movimentos Sociais',
+			ementa: 'Debate sobre as teorias dos Movimentos Sociais. Formas de organização dos Movimentos Urbanos e Rurais. Autonomia, organizações locais, nacionais e internacionais. Movimentos libertários: feministas, ecologistas e estudantis. Organizações não governamentais.',
+			semestre: 1,
+			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D4D940',
+			obligatory: false
+		},
+		'GF105': {
+			code: 'GF105',
+			name: 'Metrópoles e Metropolização',
+			ementa: 'O surgimento das metrópoles e o processo de metropolização contemporâneo. O fenômeno da urbanização/conurbação e as estratégias de planejamento. Qualidade de vida, sociedade e meio ambiente nas grandes metrópoles. As cidades mundiais.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4083D9',
+			obligatory: false
+		},
+		'GF112': {
+			code: 'GF112',
+			name: 'Organização do Espaço Regional',
+			ementa: 'Teorias e conceitos do desenvolvimento regional. Região, regionalização e regionalismos: planejamento e organização do espaço. Transformações econômicas e novas estratégias espaciais. Sociedade e natureza na organização socioespacial. Estudos de casos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#C640D9',
+			obligatory: false
+		},
+		'GF503': {
+			code: 'GF503',
+			name: 'Sociologia',
+			ementa: 'Conceitos básicos, fundamentos e constituição da sociologia. Durkheim, Weber e Marx. Comportamento coletivo. Controle e desvio social. Organização social: estrutura, estratificação e mobilidade social. Grupos e Instituições. Mudança social. Política social. Movimentos sociais.',
+			semestre: 1,
+			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#4066D9',
+			obligatory: false
+		},
+		'GF604': {
+			code: 'GF604',
+			name: 'Geografia Urbana',
+			ementa: 'Definição e evolução do fenômeno urbano. As cidades: os sítios, o crescimento horizontal e vertical, a estrutura urbana, as áreas funcionais, o sistema viário e a circulação. A interdisciplinaridade dos estudos urbanos. Centralidade, hierarquia e redes urbanas. Conjuntos urbanos complexos: áreas metropolitanas e conurbação. Valor e renda da terra. Meio ambiente e qualidade de vida no meio urbano. Paisagens, usos do solo e culturas urbanas.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D96B40',
+			obligatory: false
+		},
+		'GF702': {
+			code: 'GF702',
+			name: 'Meio Ambiente Urbano',
+			ementa: 'Produção e consumo da e na Cidade. A metropolização e as redes de relações. Problemáticas urbanas: uso do solo, segregação especial e problemas ambientais da urbanização.',
+			semestre: 1,
+			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['GF604'],
+			color: '#D96B40',
+			obligatory: false
+		},
+		'GF805': {
+			code: 'GF805',
+			name: 'Planejamento Territorial',
+			ementa: 'O território como unidade condicionante do planejamento econômico. O planejamento como instrumento de ação política. O papel do estado (Federal, Estadual, Municipal) e das empresas no planejamento do território. A regionalização como instrumento de ação do planejamento. A organização do território impondo-se às ações de planejamento econômico no atual período técnico-científico e informacional. As noções de progresso, desenvolvimento e competitividade como norteadoras do processo de planejamento capitalista. O desenvolvimento geograficamente desigual e os paradoxos do planejamento territorial.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: '',
+			color: '#D9CF40',
+			obligatory: false
+		},
+		'GN301': {
+			code: 'GN301',
+			name: 'História das Teorias Econômicas',
+			ementa: 'Elementos de economia. Análise do surgimento e da evolução da Economia Política como ramo do conhecimento científico. As principais escolas do pensamento econômico e suas respectivas contribuições ao entendimento do mundo em que vivemos. Disciplinas propedêuticas para o estudo da Economia dos Recursos Naturais.',
+			semestre: 1,
+			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#D9C140',
+			obligatory: false
+		},
+		'ML102': {
+			code: 'ML102',
+			name: 'Linguagem Fotográfica I',
+			ementa: 'Instrumentalização de aluno, permitindo um conhecimento básico das técnicas fotográficas e da relação destas com a construção daquilo que se convencionou denominar de \"Linguagem Fotográfica\". Debate sobre os impactos da \"visualidade\" fotográfica na sociedade moderna, na arte e nos meios de comunicação de massa.',
+			semestre: 1,
+			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D940C1',
+			obligatory: false
 		}
 	}
 };

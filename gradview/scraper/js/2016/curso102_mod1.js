@@ -43,6 +43,24 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 8,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-2': {
+			credits: 10,
+			hasRestrictions: true,
+			subjects: ['LE702'],
+		},
+		'elet-3': {
+			credits: 8,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'LE100': {
 			code: 'LE100',
@@ -51,7 +69,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D990'
+			color: '#40D9AB',
+			obligatory: true
 		},
 		'LE101': {
 			code: 'LE101',
@@ -60,7 +79,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#B040D9'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'LE103': {
 			code: 'LE103',
@@ -69,7 +89,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94070'
+			color: '#D940C9',
+			obligatory: true
 		},
 		'LE105': {
 			code: 'LE105',
@@ -78,7 +99,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#5040D9'
+			color: '#D9409C',
+			obligatory: true
 		},
 		'LE106': {
 			code: 'LE106',
@@ -87,7 +109,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#4060D9'
+			color: '#D9406E',
+			obligatory: true
 		},
 		'NC103': {
 			code: 'NC103',
@@ -96,7 +119,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D97040'
+			color: '#D94040',
+			obligatory: true
 		},
 		'LE200': {
 			code: 'LE200',
@@ -105,7 +129,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940D1'
+			color: '#D9C940',
+			obligatory: true
 		},
 		'LE201': {
 			code: 'LE201',
@@ -114,7 +139,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9C1'
+			color: '#D99C40',
+			obligatory: true
 		},
 		'LE202': {
 			code: 'LE202',
@@ -123,7 +149,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94040'
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'LE203': {
 			code: 'LE203',
@@ -132,7 +159,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['LE101', '*LE106'],
-			color: ''
+			color: '#8D8DA4',
+			obligatory: true
 		},
 		'LE400': {
 			code: 'LE400',
@@ -141,7 +169,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE101'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'NC202': {
 			code: 'NC202',
@@ -150,7 +179,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9D140'
+			color: '#5ED940',
+			obligatory: true
 		},
 		'LE300': {
 			code: 'LE300',
@@ -159,7 +189,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['LE101', 'LE106'],
-			color: ''
+			color: '#8D8DA4',
+			obligatory: true
 		},
 		'LE301': {
 			code: 'LE301',
@@ -168,7 +199,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE201'],
-			color: ''
+			color: '#D99C40',
+			obligatory: true
 		},
 		'LE302': {
 			code: 'LE302',
@@ -177,7 +209,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['LE202'],
-			color: ''
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'LE303': {
 			code: 'LE303',
@@ -186,7 +219,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE101'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'LE500': {
 			code: 'LE500',
@@ -195,7 +229,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE400'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'NC301': {
 			code: 'NC301',
@@ -204,7 +239,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D940A0'
+			color: '#40D94F',
+			obligatory: true
 		},
 		'ER402': {
 			code: 'ER402',
@@ -213,7 +249,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#8040D9'
+			color: '#BA40D9',
+			obligatory: true
 		},
 		'LE401': {
 			code: 'LE401',
@@ -222,7 +259,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE200'],
-			color: ''
+			color: '#D9C940',
+			obligatory: true
 		},
 		'LE402': {
 			code: 'LE402',
@@ -231,7 +269,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE101', '*LE106'],
-			color: ''
+			color: '#8D8DA4',
+			obligatory: true
 		},
 		'LE404': {
 			code: 'LE404',
@@ -240,7 +279,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE301'],
-			color: ''
+			color: '#D99C40',
+			obligatory: true
 		},
 		'LE405': {
 			code: 'LE405',
@@ -249,7 +289,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['LE302'],
-			color: ''
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'LE408': {
 			code: 'LE408',
@@ -258,7 +299,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE200'],
-			color: ''
+			color: '#D9C940',
+			obligatory: true
 		},
 		'LE409': {
 			code: 'LE409',
@@ -267,7 +309,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['LE101'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'ER500': {
 			code: 'ER500',
@@ -276,7 +319,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE402'],
-			color: ''
+			color: '#8D8DA4',
+			obligatory: true
 		},
 		'LE406': {
 			code: 'LE406',
@@ -285,7 +329,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['LE405'],
-			color: ''
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'LE501': {
 			code: 'LE501',
@@ -294,7 +339,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE408'],
-			color: ''
+			color: '#D9C940',
+			obligatory: true
 		},
 		'LE503': {
 			code: 'LE503',
@@ -303,7 +349,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['LE103'],
-			color: ''
+			color: '#D940C9',
+			obligatory: true
 		},
 		'LE504': {
 			code: 'LE504',
@@ -312,7 +359,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE408'],
-			color: ''
+			color: '#D9C940',
+			obligatory: true
 		},
 		'NC400': {
 			code: 'NC400',
@@ -321,7 +369,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9A040'
+			color: '#5E40D9',
+			obligatory: true
 		},
 		'ER201': {
 			code: 'ER201',
@@ -330,7 +379,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['NC400'],
-			color: ''
+			color: '#5E40D9',
+			obligatory: true
 		},
 		'ER603': {
 			code: 'ER603',
@@ -339,7 +389,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE503'],
-			color: ''
+			color: '#D940C9',
+			obligatory: true
 		},
 		'LE609': {
 			code: 'LE609',
@@ -348,7 +399,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D960'
+			color: '#404FD9',
+			obligatory: true
 		},
 		'LE704': {
 			code: 'LE704',
@@ -357,7 +409,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE501'],
-			color: ''
+			color: '#D9C940',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -366,7 +419,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ER700': {
 			code: 'ER700',
@@ -375,7 +429,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['LE401'],
-			color: ''
+			color: '#D9C940',
+			obligatory: true
 		},
 		'ER701': {
 			code: 'ER701',
@@ -384,7 +439,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE303', 'LE409', '*ER500'],
-			color: ''
+			color: '#5AC0C7',
+			obligatory: true
 		},
 		'ER704': {
 			code: 'ER704',
@@ -393,7 +449,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ER402'],
-			color: ''
+			color: '#BA40D9',
+			obligatory: true
 		},
 		'GL601': {
 			code: 'GL601',
@@ -402,7 +459,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['NC400'],
-			color: ''
+			color: '#5E40D9',
+			obligatory: true
 		},
 		'LE012': {
 			code: 'LE012',
@@ -411,7 +469,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['LE103'],
-			color: ''
+			color: '#D940C9',
+			obligatory: true
 		},
 		'LE700': {
 			code: 'LE700',
@@ -420,7 +479,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['LE409'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'LE701': {
 			code: 'LE701',
@@ -429,7 +489,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA450'],
-			color: '#B0D940'
+			color: '#40D97D',
+			obligatory: true
 		},
 		'LE703': {
 			code: 'LE703',
@@ -438,7 +499,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#80D940'
+			color: '#D96E40',
+			obligatory: true
 		},
 		'ER808': {
 			code: 'ER808',
@@ -447,7 +509,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['LE703'],
-			color: ''
+			color: '#D96E40',
+			obligatory: true
 		},
 		'LE801': {
 			code: 'LE801',
@@ -456,7 +519,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE703'],
-			color: ''
+			color: '#D96E40',
+			obligatory: true
 		},
 		'LE804': {
 			code: 'LE804',
@@ -465,7 +529,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA465'],
-			color: '#50D940'
+			color: '#40ABD9',
+			obligatory: true
 		},
 		'LE901': {
 			code: 'LE901',
@@ -474,7 +539,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE303'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'MG600': {
 			code: 'MG600',
@@ -483,7 +549,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE409'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -492,7 +559,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ER901': {
 			code: 'ER901',
@@ -501,7 +569,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:8, D:0, HS:8, SL:0, C:8},
 			requisitos: ['AA450'],
-			color: '#40C1D9'
+			color: '#BAD940',
+			obligatory: true
 		},
 		'ER903': {
 			code: 'ER903',
@@ -510,7 +579,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE409'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'EU010': {
 			code: 'EU010',
@@ -519,7 +589,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:2, C:8},
 			requisitos: ['AA470'],
-			color: '#4090D9'
+			color: '#407DD9',
+			obligatory: true
 		},
 		'ELET09': {
 			code: 'ELET09',
@@ -528,7 +599,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ER011': {
 			code: 'ER011',
@@ -537,7 +609,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:8, D:0, HS:8, SL:0, C:8},
 			requisitos: ['ER901'],
-			color: ''
+			color: '#BAD940',
+			obligatory: true
 		},
 		'ER801': {
 			code: 'ER801',
@@ -546,7 +619,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['LE701'],
-			color: ''
+			color: '#40D97D',
+			obligatory: true
 		},
 		'ELET10': {
 			code: 'ELET10',
@@ -555,7 +629,18 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'LE702': {
+			code: 'LE702',
+			name: 'Gestão de Recursos Humanos',
+			ementa: 'Políticas e práticas da gestão de pessoas nas empresas. A gestão de RH e seus objetivos, políticas e estratégias. Histórico de gestão de pessoal. Gestão estratégica de RH. A Gestão de Pessoas por competências. A Atração de Competências para as Organizações. Recrutando e Selecionando Pessoas. Formação Profissional e Desenvolvimento de Pessoas. Sistema de Desenvolvimento de Pessoas. Avaliação de Performance. Outras dimensões da Gestão de Pessoas: qualidade de vida.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#8CD940',
+			obligatory: false
 		}
 	}
 };

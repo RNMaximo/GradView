@@ -43,6 +43,24 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 9,
+			hasRestrictions: true,
+			subjects: ['CV040', 'CV041', 'CV042', 'CV044', 'CV045', 'CV046', 'CV047', 'CV048', 'CV049', 'CV069', 'CV940', 'CV946', 'CV947', 'CV948', 'CV949', 'CV952', 'CV953'],
+		},
+		'elet-2': {
+			credits: 7,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-3': {
+			credits: 2,
+			hasRestrictions: true,
+			subjects: ['HZ291', 'HZ292', 'HZ293'],
+		},
+	},
+
 	subjects: {
 		'CV101': {
 			code: 'CV101',
@@ -51,7 +69,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:1, HS:4, SL:3, C:3},
 			requisitos: '',
-			color: '#4073D9'
+			color: '#D9C340',
+			obligatory: true
 		},
 		'CV111': {
 			code: 'CV111',
@@ -60,7 +79,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:0, O:0, D:0, HS:1, SL:1, C:1},
 			requisitos: '',
-			color: '#40D940'
+			color: '#D98140',
+			obligatory: true
 		},
 		'CV141': {
 			code: 'CV141',
@@ -69,7 +89,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:1, D:1, HS:4, SL:2, C:3},
 			requisitos: '',
-			color: '#A640D9'
+			color: '#D9A240',
+			obligatory: true
 		},
 		'CV151': {
 			code: 'CV151',
@@ -78,7 +99,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:0, O:0, D:0, HS:1, SL:1, C:1},
 			requisitos: '',
-			color: '#D9A640'
+			color: '#D940A2',
+			obligatory: true
 		},
 		'MA111': {
 			code: 'MA111',
@@ -87,7 +109,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#7340D9'
+			color: '#40B8D9',
+			obligatory: true
 		},
 		'MA141': {
 			code: 'MA141',
@@ -96,7 +119,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9D940'
+			color: '#D94040',
+			obligatory: true
 		},
 		'MC102': {
 			code: 'MC102',
@@ -105,7 +129,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#40D973'
+			color: '#4056D9',
+			obligatory: true
 		},
 		'QG102': {
 			code: 'QG102',
@@ -114,7 +139,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D97340'
+			color: '#40D9B8',
+			obligatory: true
 		},
 		'CV201': {
 			code: 'CV201',
@@ -123,7 +149,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:1, D:1, HS:4, SL:2, C:3},
 			requisitos: ['CV101'],
-			color: ''
+			color: '#D9C340',
+			obligatory: true
 		},
 		'CV202': {
 			code: 'CV202',
@@ -132,7 +159,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV141', 'QG102'],
-			color: ''
+			color: '#8DBE7C',
+			obligatory: true
 		},
 		'F_128': {
 			code: 'F_128',
@@ -141,7 +169,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94040'
+			color: '#6BD940',
+			obligatory: true
 		},
 		'F_129': {
 			code: 'F_129',
@@ -150,7 +179,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D940D9'
+			color: '#D96140',
+			obligatory: true
 		},
 		'GM420': {
 			code: 'GM420',
@@ -159,7 +189,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: '',
-			color: '#D94073'
+			color: '#D94061',
+			obligatory: true
 		},
 		'MA211': {
 			code: 'MA211',
@@ -168,7 +199,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', '*MA141'],
-			color: ''
+			color: '#8D7C8D',
+			obligatory: true
 		},
 		'ME203': {
 			code: 'ME203',
@@ -177,7 +209,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111'],
-			color: ''
+			color: '#40B8D9',
+			obligatory: true
 		},
 		'CV301': {
 			code: 'CV301',
@@ -186,7 +219,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'F_129', 'MA111'],
-			color: ''
+			color: '#81A673',
+			obligatory: true
 		},
 		'CV311': {
 			code: 'CV311',
@@ -195,7 +229,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['*MA211'],
-			color: ''
+			color: '#8D7C8D',
+			obligatory: true
 		},
 		'CV312': {
 			code: 'CV312',
@@ -204,7 +239,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['AA200'],
-			color: '#40A6D9'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'CV321': {
 			code: 'CV321',
@@ -213,7 +249,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:2, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV101'],
-			color: ''
+			color: '#D9C340',
+			obligatory: true
 		},
 		'CV332': {
 			code: 'CV332',
@@ -222,7 +259,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV202'],
-			color: ''
+			color: '#8DBE7C',
+			obligatory: true
 		},
 		'CV351': {
 			code: 'CV351',
@@ -231,7 +269,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D940A6'
+			color: '#4B40D9',
+			obligatory: true
 		},
 		'F_229': {
 			code: 'F_229',
@@ -240,7 +279,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_128', 'F_129'],
-			color: ''
+			color: '#A29D40',
+			obligatory: true
 		},
 		'MS211': {
 			code: 'MS211',
@@ -249,7 +289,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MA141', 'MC102'],
-			color: ''
+			color: '#736FA6',
+			obligatory: true
 		},
 		'CV401': {
 			code: 'CV401',
@@ -258,7 +299,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['CV351'],
-			color: ''
+			color: '#4B40D9',
+			obligatory: true
 		},
 		'CV402': {
 			code: 'CV402',
@@ -267,7 +309,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV201', '*CV321'],
-			color: ''
+			color: '#D9C340',
+			obligatory: true
 		},
 		'CV411': {
 			code: 'CV411',
@@ -276,7 +319,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:2, L:0, O:1, D:0, HS:6, SL:5, C:6},
 			requisitos: ['CV111', '*CV312'],
-			color: ''
+			color: '#8DAD8D',
+			obligatory: true
 		},
 		'CV421': {
 			code: 'CV421',
@@ -285,7 +329,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:2, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['*CV321'],
-			color: ''
+			color: '#D9C340',
+			obligatory: true
 		},
 		'CV422': {
 			code: 'CV422',
@@ -294,7 +339,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['CV311'],
-			color: ''
+			color: '#8D7C8D',
+			obligatory: true
 		},
 		'CV431': {
 			code: 'CV431',
@@ -303,7 +349,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:1, O:0, D:0, HS:5, SL:5, C:5},
 			requisitos: ['MA211', '*CV312'],
-			color: ''
+			color: '#67ABB3',
+			obligatory: true
 		},
 		'CV450': {
 			code: 'CV450',
@@ -312,7 +359,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#A6D940'
+			color: '#AD40D9',
+			obligatory: true
 		},
 		'F_328': {
 			code: 'F_328',
@@ -321,7 +369,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA111', 'MA141'],
-			color: ''
+			color: '#819B73',
+			obligatory: true
 		},
 		'F_329': {
 			code: 'F_329',
@@ -330,7 +379,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_129', 'MA111'],
-			color: ''
+			color: '#8D8D8D',
+			obligatory: true
 		},
 		'CV501': {
 			code: 'CV501',
@@ -339,7 +389,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['*CV402'],
-			color: ''
+			color: '#D9C340',
+			obligatory: true
 		},
 		'CV511': {
 			code: 'CV511',
@@ -348,7 +399,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:2, L:0, O:1, D:0, HS:6, SL:5, C:6},
 			requisitos: ['CV311', 'CV312', '*CV411'],
-			color: ''
+			color: '#73ABA6',
+			obligatory: true
 		},
 		'CV521': {
 			code: 'CV521',
@@ -357,7 +409,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['GM420'],
-			color: ''
+			color: '#D94061',
+			obligatory: true
 		},
 		'CV522': {
 			code: 'CV522',
@@ -366,7 +419,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*CV351'],
-			color: ''
+			color: '#4B40D9',
+			obligatory: true
 		},
 		'CV531': {
 			code: 'CV531',
@@ -375,7 +429,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:1, O:0, D:0, HS:5, SL:5, C:5},
 			requisitos: ['*CV431'],
-			color: ''
+			color: '#67ABB3',
+			obligatory: true
 		},
 		'CV532': {
 			code: 'CV532',
@@ -384,7 +439,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['F_329', '*F_328'],
-			color: ''
+			color: '#879480',
+			obligatory: true
 		},
 		'CV541': {
 			code: 'CV541',
@@ -393,7 +449,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:1, D:1, HS:6, SL:4, C:5},
 			requisitos: ['CV141', 'QG102'],
-			color: ''
+			color: '#8DBE7C',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -402,7 +459,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:3},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CV612': {
 			code: 'CV612',
@@ -411,7 +469,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CV411', '*CV511'],
-			color: ''
+			color: '#80AC9A',
+			obligatory: true
 		},
 		'CV613': {
 			code: 'CV613',
@@ -420,7 +479,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: ['CV511'],
-			color: ''
+			color: '#73ABA6',
+			obligatory: true
 		},
 		'CV621': {
 			code: 'CV621',
@@ -429,7 +489,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV521', '*CV511'],
-			color: ''
+			color: '#A67684',
+			obligatory: true
 		},
 		'CV622': {
 			code: 'CV622',
@@ -438,7 +499,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['CV201', 'CV321', 'CV522', '*CV421'],
-			color: ''
+			color: '#B6A266',
+			obligatory: true
 		},
 		'CV631': {
 			code: 'CV631',
@@ -447,7 +509,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV201', 'CV532'],
-			color: ''
+			color: '#B0AC60',
+			obligatory: true
 		},
 		'CV632': {
 			code: 'CV632',
@@ -456,7 +519,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*CV531', '*ME203', '*MC102'],
-			color: ''
+			color: '#4D93CC',
+			obligatory: true
 		},
 		'CV633': {
 			code: 'CV633',
@@ -465,7 +529,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['*CV332'],
-			color: ''
+			color: '#8DBE7C',
+			obligatory: true
 		},
 		'CV641': {
 			code: 'CV641',
@@ -474,7 +539,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:2, O:1, D:1, HS:5, SL:3, C:4},
 			requisitos: ['CV531', '*CV541'],
-			color: ''
+			color: '#7AB598',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -483,7 +549,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:3},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CV701': {
 			code: 'CV701',
@@ -492,7 +559,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ME203', '*CV401'],
-			color: ''
+			color: '#467CD9',
+			obligatory: true
 		},
 		'CV702': {
 			code: 'CV702',
@@ -501,7 +569,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:2, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV201', 'CV531', '*CV632'],
-			color: ''
+			color: '#84AB95',
+			obligatory: true
 		},
 		'CV712': {
 			code: 'CV712',
@@ -510,7 +579,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['CV511', '*CV612'],
-			color: ''
+			color: '#7AACA0',
+			obligatory: true
 		},
 		'CV713': {
 			code: 'CV713',
@@ -519,7 +589,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['CV511', '*CV612'],
-			color: ''
+			color: '#7AACA0',
+			obligatory: true
 		},
 		'CV714': {
 			code: 'CV714',
@@ -528,7 +599,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['CV511', '*CV332', '*CV612'],
-			color: ''
+			color: '#80B294',
+			obligatory: true
 		},
 		'CV721': {
 			code: 'CV721',
@@ -537,7 +609,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['CV521', 'CV621'],
-			color: ''
+			color: '#C05B73',
+			obligatory: true
 		},
 		'CV722': {
 			code: 'CV722',
@@ -546,7 +619,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['CV421', '*CV622', '*CV632'],
-			color: ''
+			color: '#9FA87B',
+			obligatory: true
 		},
 		'CV741': {
 			code: 'CV741',
@@ -555,7 +629,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['CV632', 'CV641'],
-			color: ''
+			color: '#64A4B2',
+			obligatory: true
 		},
 		'CV811': {
 			code: 'CV811',
@@ -564,7 +639,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: ['CV714'],
-			color: ''
+			color: '#80B294',
+			obligatory: true
 		},
 		'CV812': {
 			code: 'CV812',
@@ -573,7 +649,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: ['CV714'],
-			color: ''
+			color: '#80B294',
+			obligatory: true
 		},
 		'CV813': {
 			code: 'CV813',
@@ -582,7 +659,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['CV612', '*CV712', '*CV713'],
-			color: ''
+			color: '#7CAC9E',
+			obligatory: true
 		},
 		'CV814': {
 			code: 'CV814',
@@ -591,7 +669,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:2, L:0, O:1, D:0, HS:6, SL:5, C:6},
 			requisitos: ['CV612', '*CV714', '*CV712'],
-			color: ''
+			color: '#7EAE9A',
+			obligatory: true
 		},
 		'CV821': {
 			code: 'CV821',
@@ -600,7 +679,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:1, HS:3, SL:2, C:2},
 			requisitos: ['CV522'],
-			color: ''
+			color: '#4B40D9',
+			obligatory: true
 		},
 		'CV822': {
 			code: 'CV822',
@@ -609,7 +689,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['CV722'],
-			color: ''
+			color: '#9FA87B',
+			obligatory: true
 		},
 		'CV823': {
 			code: 'CV823',
@@ -618,7 +699,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['CV522', 'CV622'],
-			color: ''
+			color: '#8171A0',
+			obligatory: true
 		},
 		'CV831': {
 			code: 'CV831',
@@ -627,7 +709,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA460'],
-			color: '#40D9D9'
+			color: '#ADD940',
+			obligatory: true
 		},
 		'CV832': {
 			code: 'CV832',
@@ -636,7 +719,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*CV531', '*CV632'],
-			color: ''
+			color: '#5A9FC0',
+			obligatory: true
 		},
 		'CV841': {
 			code: 'CV841',
@@ -645,7 +729,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['AA460'],
-			color: '#40D9A6'
+			color: '#40D976',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -654,7 +739,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CV941': {
 			code: 'CV941',
@@ -663,7 +749,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:2, O:0, D:1, HS:4, SL:3, C:3},
 			requisitos: ['CV141', 'QG102'],
-			color: ''
+			color: '#8DBE7C',
+			obligatory: true
 		},
 		'CV942': {
 			code: 'CV942',
@@ -672,7 +759,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:0, D:1, HS:4, SL:3, C:3},
 			requisitos: ['CV541'],
-			color: ''
+			color: '#8DBE7C',
+			obligatory: true
 		},
 		'CV945': {
 			code: 'CV945',
@@ -681,7 +769,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:1, O:0, D:1, HS:4, SL:3, C:3},
 			requisitos: ['CV541', 'CV841'],
-			color: ''
+			color: '#67CC79',
+			obligatory: true
 		},
 		'CV951': {
 			code: 'CV951',
@@ -690,7 +779,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:12, D:0, HS:12, SL:0, C:12},
 			requisitos: ['AA480'],
-			color: '#4040D9'
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'CV954': {
 			code: 'CV954',
@@ -699,7 +789,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:1, D:0, HS:3, SL:0, C:3},
 			requisitos: ['AA480', 'CV450'],
-			color: '#73D940'
+			color: '#AD40D9',
+			obligatory: true
 		},
 		'CV943': {
 			code: 'CV943',
@@ -708,7 +799,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:0, D:1, HS:4, SL:3, C:3},
 			requisitos: ['CV541'],
-			color: ''
+			color: '#8DBE7C',
+			obligatory: true
 		},
 		'CV944': {
 			code: 'CV944',
@@ -717,7 +809,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV541'],
-			color: ''
+			color: '#8DBE7C',
+			obligatory: true
 		},
 		'CV955': {
 			code: 'CV955',
@@ -726,7 +819,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
 			requisitos: ['CV954'],
-			color: ''
+			color: '#AD40D9',
+			obligatory: true
 		},
 		'ELET10': {
 			code: 'ELET10',
@@ -735,7 +829,208 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'CV040': {
+			code: 'CV040',
+			name: 'Seminários em Gestão e Saneamento Ambiental',
+			ementa: 'Organização de seminários apresentados por especialistas e/ou pesquisadores convidados a expor sobre temas específicos de interesse em Saneamento e Ambiente. Promover palestras e discussões sobre propostas de pesquisas desenvolvidas pelos pesquisadores da pós-graduação e sobre artigos científicos correlatos recentes.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA440'],
+			color: '#CED940',
+			obligatory: false
+		},
+		'CV041': {
+			code: 'CV041',
+			name: 'Tópicos em Saneamento Ambiental I',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:0, P:0, L:2, O:1, D:1, HS:4, SL:2, C:3},
+			requisitos: ['AA470'],
+			color: '#8CD940',
+			obligatory: false
+		},
+		'CV042': {
+			code: 'CV042',
+			name: 'Tópicos em Saneamento Ambiental II',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:1, HS:4, SL:2, C:3},
+			requisitos: ['AA470'],
+			color: '#D94081',
+			obligatory: false
+		},
+		'CV044': {
+			code: 'CV044',
+			name: 'Controle de Poluição de Água, Solo e Atmosfera',
+			ementa: 'Composição e estrutura da atmosfera. Classificação dos poluentes. Fontes e efeitos da poluição. Padrões de qualidade do ar, água e solo. Métodos de controle da poluição; Meteorologia e poluição atmosférica. Melhoramentos de poluentes.',
+			semestre: 1,
+			vector: {T:2, P:0, L:1, O:1, D:1, HS:5, SL:3, C:4},
+			requisitos: ['CV541'],
+			color: '#8DBE7C',
+			obligatory: false
+		},
+		'CV045': {
+			code: 'CV045',
+			name: 'Reuso de Águas',
+			ementa: 'Processos que afetam o transporte de poluentes nos meios aquáticos. Fontes de Poluição Hídrica. Usos da água na indústria e na agricultura. Estudos de casos envolvendo o reuso de águas, a manutenção de vazões, a recarga de aquíferos, atividades municipais, industriais, agrícolas, domésticas e recreacionais.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:1, D:1, HS:4, SL:2, C:3},
+			requisitos: ['CV541'],
+			color: '#8DBE7C',
+			obligatory: false
+		},
+		'CV046': {
+			code: 'CV046',
+			name: 'Tratamento de Lodo de ETE e ETA',
+			ementa: 'Características quantitativas e qualitativas dos lodos gerados em ETAs e ETEs. Processos de digestão, condicionamento químico, adensamento, desidratação e disposição de lodos. Tipos de equipamentos e processos usados no tratamento de lodos. Estudos de tratabilidade em laboratório. Exemplos de casos em escala real.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:1, D:1, HS:4, SL:2, C:3},
+			requisitos: ['*CV942'],
+			color: '#8DBE7C',
+			obligatory: false
+		},
+		'CV047': {
+			code: 'CV047',
+			name: 'Saneamento e Saúde Pública',
+			ementa: 'Meio ambiente. Tópicos de meio ambiente. Legislação ambiental e estrutura institucional de meio ambiente em nível federal e estadual. Política de recurso hídrico federal e estadual. EIAs./RIMAs. Saúde pública no Brasil. Aspectos de intervenções da engenharia e arquitetura e no meio ambiente. Saneamento básico e ambiental impactando a saúde pública. Considerações estruturais. Relação qualidade solo, ar e água com saúde e doenças. Ações de saneamento. Controle de vetores.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:2, HS:4, SL:2, C:2},
+			requisitos: ['CV541'],
+			color: '#8DBE7C',
+			obligatory: false
+		},
+		'CV048': {
+			code: 'CV048',
+			name: 'Tópicos em Gestão Ambiental I',
+			ementa: 'A ementa desta disciplina será oferecida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:1, HS:4, SL:2, C:3},
+			requisitos: ['AA470'],
+			color: '#4097D9',
+			obligatory: false
+		},
+		'CV049': {
+			code: 'CV049',
+			name: 'Tópicos em Gestão Ambiental II',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:1, D:1, HS:4, SL:2, C:3},
+			requisitos: ['AA470'],
+			color: '#4BD940',
+			obligatory: false
+		},
+		'CV069': {
+			code: 'CV069',
+			name: 'Limpeza Urbana',
+			ementa: 'Resíduos Sólidos Urbanos. Impactos Ambientais. Limpeza Pública. Serviços Especiais. Coleta Especial.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['*CV944'],
+			color: '#8DBE7C',
+			obligatory: false
+		},
+		'CV940': {
+			code: 'CV940',
+			name: 'Gestão Ambiental por Bacias',
+			ementa: 'Legislação ambiental e urbana, planejamento ambiental, gestão pública, processos participativos e representação social/percepção. A discussão conceitual será acompanhada de um estudo de caso.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: ['AA440'],
+			color: '#40D956',
+			obligatory: false
+		},
+		'CV946': {
+			code: 'CV946',
+			name: 'Química Sanitária e Ambiental',
+			ementa: 'Fundamentos de química e da qualidade das águas. Produtos químicos utilizados no tratamento de água. Estudos de tratabilidade de águas. Ensaios em aparelhos de jarteste e floteste. Oxidação e Redução. Estequiometria em reações de óxido redução. Cinética de reações. Cloro, hipoclorito e ácido hipocloroso, dióxido de cloro, permanganato de potássio, ozônio, água oxigenada. Subprodutos de oxidação. Custos. Desinfecção.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:1, D:1, HS:4, SL:2, C:3},
+			requisitos: ['CV141'],
+			color: '#D9A240',
+			obligatory: false
+		},
+		'CV947': {
+			code: 'CV947',
+			name: 'Saneamento Aplicado a Casos Específicos',
+			ementa: 'Saneamento de habitações. Saneamento de Hospitais. Saneamento de piscinas. Saneamento de praias, logradouros públicos e cemitérios. Saneamento escolar. Higiene dos alimentos.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:1, D:1, HS:4, SL:2, C:3},
+			requisitos: ['CV541'],
+			color: '#8DBE7C',
+			obligatory: false
+		},
+		'CV948': {
+			code: 'CV948',
+			name: 'Saneamento de Pequenas Comunidades',
+			ementa: 'Mananciais abastecedores. Quantidade de água necessária. Proteção sanitária dos mananciais. Desinfecção. Coleta e disposição de despejos. Projeto.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:1, HS:4, SL:2, C:3},
+			requisitos: ['CV541'],
+			color: '#8DBE7C',
+			obligatory: false
+		},
+		'CV949': {
+			code: 'CV949',
+			name: 'Aspectos Legais e Institucionais em Saneamento e Ambiente',
+			ementa: 'Meio ambiente. Tópicos de meio ambiente. Legislação ambiental e estrutura institucional de meio ambiente em nível federal e estadual. Política de recursos hídricos federal e estadual. EIAs/RIMAs. Saúde pública no Brasil. Aspectos de intervenções da engenharia e arquitetura e no meio ambiente. Saneamento básico e ambiental impactando a saúde pública. Considerações estruturais. Relação qualidade solo, ar e água com saúde e doenças. Ações de saneamento. Controle de vetores.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:1, D:1, HS:4, SL:2, C:3},
+			requisitos: ['CV541', '*CV841'],
+			color: '#67CC79',
+			obligatory: false
+		},
+		'CV952': {
+			code: 'CV952',
+			name: 'Iniciação Científica em Engenharia Civil I',
+			ementa: 'A ser definida em função de pesquisas em que o aluno se engajar.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:0, C:2},
+			requisitos: ['AA200'],
+			color: '#CE40D9',
+			obligatory: false
+		},
+		'CV953': {
+			code: 'CV953',
+			name: 'Iniciação Científica em Engenharia Civil II',
+			ementa: 'A ser definida em função de pesquisas em que o aluno se angajar.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:0, C:2},
+			requisitos: ['AA200'],
+			color: '#40D997',
+			obligatory: false
+		},
+		'HZ291': {
+			code: 'HZ291',
+			name: 'Tópicos Especiais de Humanidades I',
+			ementa: 'O curso é dedicado a uma introdução das relações entre ciência, tecnologia e a sociedade contemporânea. Será dada ênfase especial ao caso brasileiro, tentando mostrar como se concretizam essas relações num contexto específico. A abordagem será interdisciplinar, através de uma contribuição da Antropologia, da Ciência Política, da História e da Sociologia. Obs.: Sendo uma disciplina reservada aos cursos de Engenharia, nos quais consta como eletiva em seus currículos, os alunos de Humanidades, Artes e do Curso de Filosofia não poderão cursar esta disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D940C3',
+			obligatory: false
+		},
+		'HZ292': {
+			code: 'HZ292',
+			name: 'Tópicos Especiais de Humanidades II',
+			ementa: 'Filosofia da ciência. Elementos de sociologia. Sociologia rural. Antropologia. Deontologia.Obs.: Sendo uma disciplina reservada aos cursos de engenharia, nos quais consta como eletiva em seus currículos, os alunos das Áreas de Humanidades, Artes e do curso de Filosofia não poderão cursar esta disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4076D9',
+			obligatory: false
+		},
+		'HZ293': {
+			code: 'HZ293',
+			name: 'Tópicos Especiais de Humanidades III',
+			ementa: 'O curso abordará a análise dos aspectos sociais das inovações tecnológicas e da pesquisa científica. No decorrer das exposições e seminários, serão desenvolvidas análises de casos precisos, tentando incorporar um quadro de referência comparativo entre a sociedade brasileira e o contexto internacional.Obs.: Sendo uma disciplina reservada aos cursos de Engenharia, nos quais consta como eletiva em seus currículos, os alunos das Áreas de Humanidades, Artes e do curso de Filosofia não poderão cursar esta disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#6B40D9',
+			obligatory: false
 		}
 	}
 };

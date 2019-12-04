@@ -35,6 +35,29 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 4,
+			hasRestrictions: true,
+			subjects: ['ST001', 'ST002', 'ST003', 'ST004', 'ST005', 'ST007', 'ST019', 'ST090', 'ST091', 'TT350', 'TT504', 'TT550', 'TT801'],
+		},
+		'elet-2': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['ST020', 'ST021', 'ST022', 'ST023', 'ST024', 'ST026', 'ST027', 'ST028', 'ST029', 'ST042', 'ST044', 'ST045', 'ST046', 'ST617', 'TT013', 'TT020', 'TT021', 'TT404', 'TT601'],
+		},
+		'elet-3': {
+			credits: 4,
+			hasRestrictions: true,
+			subjects: ['ST823', 'ST824'],
+		},
+		'elet-4': {
+			credits: 2,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'ST103': {
 			code: 'ST103',
@@ -43,7 +66,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40AFD9'
+			color: '#40BAD9',
+			obligatory: true
 		},
 		'ST109': {
 			code: 'ST109',
@@ -52,7 +76,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#7740D9'
+			color: '#D9D940',
+			obligatory: true
 		},
 		'ST114': {
 			code: 'ST114',
@@ -61,7 +86,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94040'
+			color: '#D940D9',
+			obligatory: true
 		},
 		'ST362': {
 			code: 'ST362',
@@ -70,7 +96,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94093'
+			color: '#D95E40',
+			obligatory: true
 		},
 		'TT101': {
 			code: 'TT101',
@@ -79,7 +106,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#CB40D9'
+			color: '#D97D40',
+			obligatory: true
 		},
 		'ST209': {
 			code: 'ST209',
@@ -88,7 +116,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST109'],
-			color: ''
+			color: '#D9D940',
+			obligatory: true
 		},
 		'ST211': {
 			code: 'ST211',
@@ -97,7 +126,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D99340'
+			color: '#BAD940',
+			obligatory: true
 		},
 		'ST213': {
 			code: 'ST213',
@@ -106,7 +136,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST103'],
-			color: ''
+			color: '#40BAD9',
+			obligatory: true
 		},
 		'ST215': {
 			code: 'ST215',
@@ -115,7 +146,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST109', 'ST362'],
-			color: ''
+			color: '#D99C40',
+			obligatory: true
 		},
 		'ST216': {
 			code: 'ST216',
@@ -124,7 +156,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#77D940'
+			color: '#4040D9',
+			obligatory: true
 		},
 		'ST210': {
 			code: 'ST210',
@@ -133,7 +166,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST109', 'TT101'],
-			color: ''
+			color: '#D9AB40',
+			obligatory: true
 		},
 		'ST301': {
 			code: 'ST301',
@@ -142,7 +176,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST103'],
-			color: ''
+			color: '#40BAD9',
+			obligatory: true
 		},
 		'ST303': {
 			code: 'ST303',
@@ -151,7 +186,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST209', 'TT101'],
-			color: ''
+			color: '#D9AB40',
+			obligatory: true
 		},
 		'ST304': {
 			code: 'ST304',
@@ -160,7 +196,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#405CD9'
+			color: '#D9405E',
+			obligatory: true
 		},
 		'ST309': {
 			code: 'ST309',
@@ -169,7 +206,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST209', 'ST215', 'TT101'],
-			color: ''
+			color: '#D9A640',
+			obligatory: true
 		},
 		'ST401': {
 			code: 'ST401',
@@ -178,7 +216,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST301'],
-			color: ''
+			color: '#40BAD9',
+			obligatory: true
 		},
 		'ST403': {
 			code: 'ST403',
@@ -187,7 +226,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST303'],
-			color: ''
+			color: '#D9AB40',
+			obligatory: true
 		},
 		'ST410': {
 			code: 'ST410',
@@ -196,7 +236,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST216'],
-			color: ''
+			color: '#4040D9',
+			obligatory: true
 		},
 		'ST420': {
 			code: 'ST420',
@@ -205,7 +246,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST304'],
-			color: ''
+			color: '#D9405E',
+			obligatory: true
 		},
 		'ST423': {
 			code: 'ST423',
@@ -214,7 +256,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST309'],
-			color: ''
+			color: '#D9A640',
+			obligatory: true
 		},
 		'ST515': {
 			code: 'ST515',
@@ -223,7 +266,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST420'],
-			color: ''
+			color: '#D9405E',
+			obligatory: true
 		},
 		'ST525': {
 			code: 'ST525',
@@ -232,7 +276,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST210'],
-			color: ''
+			color: '#D9AB40',
+			obligatory: true
 		},
 		'ST526': {
 			code: 'ST526',
@@ -241,7 +286,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST423'],
-			color: ''
+			color: '#D9A640',
+			obligatory: true
 		},
 		'ST527': {
 			code: 'ST527',
@@ -250,7 +296,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST420', 'ST423'],
-			color: ''
+			color: '#D9734F',
+			obligatory: true
 		},
 		'ST529': {
 			code: 'ST529',
@@ -259,7 +306,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST410', 'ST423'],
-			color: ''
+			color: '#8D738D',
+			obligatory: true
 		},
 		'ST726': {
 			code: 'ST726',
@@ -268,7 +316,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA440'],
-			color: '#CBD940'
+			color: '#7DD940',
+			obligatory: true
 		},
 		'ST008': {
 			code: 'ST008',
@@ -277,7 +326,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D9AF'
+			color: '#40D940',
+			obligatory: true
 		},
 		'ST306': {
 			code: 'ST306',
@@ -286,7 +336,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST211', 'TT101'],
-			color: ''
+			color: '#CAAB40',
+			obligatory: true
 		},
 		'ST618': {
 			code: 'ST618',
@@ -295,7 +346,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST515'],
-			color: ''
+			color: '#D9405E',
+			obligatory: true
 		},
 		'ST625': {
 			code: 'ST625',
@@ -304,7 +356,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST529'],
-			color: ''
+			color: '#8D738D',
+			obligatory: true
 		},
 		'ST626': {
 			code: 'ST626',
@@ -313,7 +366,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST303'],
-			color: ''
+			color: '#D9AB40',
+			obligatory: true
 		},
 		'ST628': {
 			code: 'ST628',
@@ -322,7 +376,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST526', 'ST527'],
-			color: ''
+			color: '#D98D48',
+			obligatory: true
 		},
 		'ST722': {
 			code: 'ST722',
@@ -331,7 +386,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST526'],
-			color: ''
+			color: '#D9A640',
+			obligatory: true
 		},
 		'ST723': {
 			code: 'ST723',
@@ -340,7 +396,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST618'],
-			color: ''
+			color: '#D9405E',
+			obligatory: true
 		},
 		'ST727': {
 			code: 'ST727',
@@ -349,7 +406,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST628'],
-			color: ''
+			color: '#D98D48',
+			obligatory: true
 		},
 		'ST728': {
 			code: 'ST728',
@@ -358,7 +416,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:0, C:2},
 			requisitos: ['AA460'],
-			color: '#40D95C'
+			color: '#407DD9',
+			obligatory: true
 		},
 		'ST729': {
 			code: 'ST729',
@@ -367,7 +426,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['ST628'],
-			color: ''
+			color: '#D98D48',
+			obligatory: true
 		},
 		'ST730': {
 			code: 'ST730',
@@ -376,7 +436,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST628'],
-			color: ''
+			color: '#D98D48',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -385,7 +446,348 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:18},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'ST001': {
+			code: 'ST001',
+			name: 'Português',
+			ementa: 'Desenvolvimento verbal. Organização do pensamento. Linguagem escrita e falada. Redação de textos técnicos. Elaboração de Relatório. Regras de tratamento e utilização de tempos verbais.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9D9',
+			obligatory: false
+		},
+		'ST002': {
+			code: 'ST002',
+			name: 'Inglês Técnico',
+			ementa: 'Traduções e Interpretações de Textos Técnicos. Vocabulário e Gramática.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9BA40',
+			obligatory: false
+		},
+		'ST003': {
+			code: 'ST003',
+			name: 'Teorias da Qualidade',
+			ementa: 'Conceitos de Qualidade. As Teorias da Qualidade. Normas para a Qualidade. Controle Estatístico do Processo. Evolução Histórica da Administração da Qualidade.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9BA',
+			obligatory: false
+		},
+		'ST004': {
+			code: 'ST004',
+			name: 'Legislação Trabalhista e Segurança do Trabalho',
+			ementa: 'Direito Trabalhista: Conceito e formação histórica. O empregador e o empregado. Contrato de trabalho e suas alterações. Salário e remuneração. Estabilidade. Normas gerais de proteção ao trabalho. A justiça do trabalho. Previdência social. Segurança do trabalho: Introdução à segurança, higiene e medicina do trabalho. Avaliação e controle dos riscos profissionais. Normas e leis. Proteção contra incêndios. Responsabilidades sobre acidentes.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9409C',
+			obligatory: false
+		},
+		'ST005': {
+			code: 'ST005',
+			name: 'Relações Humanas',
+			ementa: 'Das ciências do comportamento: individual e social. Princípios éticos e hierárquicos. Da divisão das pessoas: naturais e jurídicas. Da responsabilidade civil. Direitos Humanos e suas implicações nas relações individuais. Noções de Direito Civil.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:2, C:2},
+			requisitos: '',
+			color: '#9C40D9',
+			obligatory: false
+		},
+		'ST007': {
+			code: 'ST007',
+			name: 'Humanidades',
+			ementa: 'Estrutura do mundo moderno. Ação do indivíduo na atualidade. Os veículos de comunicação em massas. As artes e sua conceituação. O indivíduo como componente de um mundo cultural. O cinema, o teatro e sua importância no mundo moderno. Os grandes conflitos e suas consequências no plano cultural. Relacionamento entre os povos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#7D40D9',
+			obligatory: false
+		},
+		'ST019': {
+			code: 'ST019',
+			name: 'A Sociedade e os Portadores de Necessidades Especiais',
+			ementa: 'Histórico. Legislação. Desenho universal. Inclusão. Tecnologia assistiva. O trabalho e a legislação. Trabalho prático.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#BA40D9',
+			obligatory: false
+		},
+		'ST020': {
+			code: 'ST020',
+			name: 'Processos Construtivos',
+			ementa: 'A evolução tecnológica da construção na história. Exposição dos processos: taipa de mão, taipa de pilão, alvenaria de cerâmica, alvenaria de blocos, alvenaria armada e sistemas industrializados.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST515'],
+			color: '#D9405E',
+			obligatory: false
+		},
+		'ST021': {
+			code: 'ST021',
+			name: 'Projeto Executivo',
+			ementa: 'Metodologia para desenvolvimento de projeto de execução. A interação entre os vários níveis de projeto. A coordenação entre projetos: arquitetônico, estrutural, hidráulico, elétrico e outros.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ST525', 'ST626'],
+			color: '#D9AB40',
+			obligatory: false
+		},
+		'ST022': {
+			code: 'ST022',
+			name: 'Instalações Prediais Hidráulico-Sanitárias - Complementação',
+			ementa: 'Tubos e conexões empregados. Características e propriedades dos materiais hidráulicos. Tipos e execução de juntas. Espaços necessários e acessibilidade das instalações. Aparelhos hidráulicos: Válvulas, reguladores de pressão, hidrômetros. Bombas hidráulicas para água e esgoto. Equipamentos para aquecimento de água.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ST626'],
+			color: '#D9AB40',
+			obligatory: false
+		},
+		'ST023': {
+			code: 'ST023',
+			name: 'Instalações Prediais Elétricas - Complementação',
+			ementa: 'Instalações para força motriz. Circuitos alimentadores de motores. Circuitos dos ramais de motores. Proteção de motores contra sobrecargas e curto-circuitos. Quadros de distribuição de luz (QDL), projeto. Quadros de distribuição de força (QDF), projeto. Circuitos de sinalização. Noções básicas sobre aparelhos de medidas elétricas. Manutenção elétrica em instalações prediais.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ST525'],
+			color: '#D9AB40',
+			obligatory: false
+		},
+		'ST024': {
+			code: 'ST024',
+			name: 'Prática da Construção Civil III',
+			ementa: 'Movimento de terra: escoramento de vizinhos, cuidados legais, vistorias. Fundações: riscos a construções próximas. Lençol freático. Concreto: microssílica, concretos especiais. Concreto aparente: tratamentos. Instalações: interferências com a estrutura de concreto e entre hidráulica e elétrica; ar condicionado; telefone, interfone, antena coletiva em edifícios. Visitas.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST515'],
+			color: '#D9405E',
+			obligatory: false
+		},
+		'ST026': {
+			code: 'ST026',
+			name: 'Computação Gráfica Aplicada II',
+			ementa: 'Desenho técnico auxiliado por computador em três dimensões.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ST213'],
+			color: '#40BAD9',
+			obligatory: false
+		},
+		'ST027': {
+			code: 'ST027',
+			name: 'Tópicos Especiais em Edifícios',
+			ementa: 'Estudo de assuntos relevantes introduzidos em Edifícios.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA475'],
+			color: '#D940BA',
+			obligatory: false
+		},
+		'ST028': {
+			code: 'ST028',
+			name: 'Orçamentos de Construções',
+			ementa: 'Sistemas de contratos. Fundamentos de concorrência. Dados de projetos e memoriais descritivos. Gestão de orçamentos: planos de contas, estimativas de custos, custos diretos e indiretos, composição de preços unitários, orçamentos sintéticos e analíticos, relatórios sintéticos e analíticos de custos e insumos. Curvas ABC de custos e insumos, impostos, encargos sociais, benefícios e despesas indiretas-BDI. Aplicativos Computacionais.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ST515'],
+			color: '#D9405E',
+			obligatory: false
+		},
+		'ST029': {
+			code: 'ST029',
+			name: 'Barreiras Arquitetônicas e os Portadores de Necessidades Especiais',
+			ementa: 'NBR 9050 e suas aplicações.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40D95E',
+			obligatory: false
+		},
+		'ST042': {
+			code: 'ST042',
+			name: 'Processo de Projeto',
+			ementa: 'A importância do projeto nos empreendimentos imobiliários. Idealização do Produto. Projetos do Produto. Indicadores da Qualidade em Projeto. Projetos para Produção. Projeto As Built. Avaliação Pós-Ocupação.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST515'],
+			color: '#D9405E',
+			obligatory: false
+		},
+		'ST044': {
+			code: 'ST044',
+			name: 'Alvenaria Estrutural',
+			ementa: 'Histórico e arquitetura, materiais, sistema construtivo, modulação, concepção, estrutural, distribuição das ações, tensões admissíveis, vergas e vigas, paredes e pilares, disposições construtivas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ST527'],
+			color: '#D9734F',
+			obligatory: false
+		},
+		'ST045': {
+			code: 'ST045',
+			name: 'Hidrologia das Águas Subterrâneas',
+			ementa: 'Recursos hídricos. Tipos de aquífero. Origem e distribuição das águas subterrâneas. Processos físicos do fluxo de água em meios porosos e fraturados. Métodos de investigação das águas subsuperficiais e subterrâneas. Noções de hidrogeoquímica de águas subterrâneas. Físico-química dos processos de contaminação de águas subterrâneas. Processos de descontaminação e remediação de áreas contaminadas. Estudos de casos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST306'],
+			color: '#CAAB40',
+			obligatory: false
+		},
+		'ST046': {
+			code: 'ST046',
+			name: 'Projeto de Estruturas de Concreto Assistido por Computador',
+			ementa: 'Modelagem. Lançamento da estrutura e análise estrutural. Avaliação estrutural: durabilidade, estabilidade global e estados limites de serviço. Obtenção de esforços. Dimensionamento.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ST628'],
+			color: '#D98D48',
+			obligatory: false
+		},
+		'ST090': {
+			code: 'ST090',
+			name: 'Ergonomia - Aplicação Prática ao Trabalho',
+			ementa: 'Conceitos sobre o estudo do espaço, posturas e posições de trabalho. Manipulação de materiais e ferramentas manuais. Movimentação de materiais. Trabalho repetitivo e com computador. Organização do trabalho. A importância da antropometria na adequação do trabalho ao homem. Condições ambientais de trabalho (Norma Regulamentadora 17). Avaliação ergonômica: roteiros e métodos para simplificar a avaliação.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D99C40',
+			obligatory: false
+		},
+		'ST091': {
+			code: 'ST091',
+			name: 'Tópicos em Tecnologia da Construção Civil',
+			ementa: 'Estudos de assuntos relevantes na construção civil de acordo com a evolução tecnológica.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'ST617': {
+			code: 'ST617',
+			name: 'Desenho Urbano e Habitação de Interesse Social',
+			ementa: 'Ensino de assuntos relevantes em arquitetura.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ST213'],
+			color: '#40BAD9',
+			obligatory: false
+		},
+		'ST823': {
+			code: 'ST823',
+			name: 'Estágio Supervisionado',
+			ementa: 'Estágio Supervisionado em Tecnologia em Construção de Edifícios, sob a orientação de um professor. Obs.: Não é responsabilidade da Unicamp providenciar estágios para os alunos.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
+			requisitos: ['ST728'],
+			color: '#407DD9',
+			obligatory: false
+		},
+		'ST824': {
+			code: 'ST824',
+			name: 'Trabalho de Graduação Interdisciplinar',
+			ementa: 'Desenvolvimento de um trabalho em Tecnologia em Construção de Edifícios, com objetivo de aplicar e aprofundar os conhecimentos específicos das disciplinas, sob a orientação de um professor.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
+			requisitos: ['ST728'],
+			color: '#407DD9',
+			obligatory: false
+		},
+		'TT013': {
+			code: 'TT013',
+			name: 'Redes Complexas',
+			ementa: 'Redes complexas: introdução, exemplos. Redes complexas em sistemas naturais e construídos pelo ser humano. Modelagem e representação de redes complexas. Modelos estáticos e de crescimento. Caracterização e medidas de redes complexas. Operação, falhas, falhas em cascata, ataques e dinâmica de redes complexas.',
+			semestre: 1,
+			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA450'],
+			color: '#405ED9',
+			obligatory: false
+		},
+		'TT020': {
+			code: 'TT020',
+			name: 'Contabilidade Geral',
+			ementa: 'A empresa e a contabilidade. Princípios Contábeis Geralmente Aceitos. Demonstrações Contábeis. Operações da Contabilidade.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9407D',
+			obligatory: false
+		},
+		'TT021': {
+			code: 'TT021',
+			name: 'Contabilidade de Custos',
+			ementa: 'Evolução e objetivos da Contabilidade de Custos. Terminologia contábil. Classificação de custos. Elementos de custos diretos e indiretos. Materiais diretos e indiretos. Materiais diretos e mão-de-obra direta: controle de valoração. Custos indiretos de fabricação: aplicação, controle, departamentalização e rateio. Métodos e Sistemas de Custeio. Integração da contabilidade de custos à financeira.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['TT020'],
+			color: '#D9407D',
+			obligatory: false
+		},
+		'TT350': {
+			code: 'TT350',
+			name: 'Administração de Empresas',
+			ementa: 'Evolução do pensamento em administração. Tendências contemporâneas em administração. Processo decisório e estratégia corporativa. Organizações que aprendem. Processos de controle. Administração de marketing. Estrutura do capital. Participação nos lucros e distribuição de dividendos.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#5ED940',
+			obligatory: false
+		},
+		'TT404': {
+			code: 'TT404',
+			name: 'Administração de Empresas',
+			ementa: 'Os primórdios da Administração. Influências. As escolas Clássica, Científica e Comportamentalista. A era modernista, a escola contemporânea. Organizações que pensam. A estrutura corporativa. Empreendedorismo. Regulamentação do setor: LGT, Regulamentação de Usos, Serviços, Interesse Público e Societário. Contratos e Distratos, Arrecadação de Receitas. Plano de negócios.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D99C',
+			obligatory: false
+		},
+		'TT504': {
+			code: 'TT504',
+			name: 'Economia e Finanças',
+			ementa: 'Modelo Keynesiano, Governo: Política Orçamentária, Setor Externo, Mercado: Inflação e Emprego. Análise microeconômica, planejamento econômico. Capacidade de geração de serviços. Noções de custos, formação de preço de venda. Aspectos societários e trabalho autônomo, aspectos trabalhistas, regimes tributários. Gestão do conhecimento e da informação. Sistemas de apoio à decisão.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#5E40D9',
+			obligatory: false
+		},
+		'TT550': {
+			code: 'TT550',
+			name: 'Economia e Finanças',
+			ementa: 'Introdução à Economia; economia política e marxista. Introdução à teoria do consumidor e teoria do mercado. Introdução à engenharia econômica. Tipos de investimento e métodos de análise de investimento.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#9CD940',
+			obligatory: false
+		},
+		'TT601': {
+			code: 'TT601',
+			name: 'Gestão Empreendedora',
+			ementa: 'Empreendedorimo, ética profissional, diagnóstico empresarial, modelos de avaliação econômico-financeiros. Plano estratégico, modelos de avaliação de impacto social e ambiental: balanço social.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#409CD9',
+			obligatory: false
+		},
+		'TT801': {
+			code: 'TT801',
+			name: 'Gestão Empreendedora',
+			ementa: 'Empreendedorismo e tipo psicológico do empreendedor. Gestão da Inovação e sustentabilidade. Análise estratégica. Fatores críticos de sucesso e vantagem competitiva. Análise de cenários, técnicas de mercado para novos produtos. Análise financeira de investimento e formação de preço de venda. Composição de plano de negócios.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D97D',
+			obligatory: false
 		}
 	}
 };

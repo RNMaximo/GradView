@@ -43,6 +43,39 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 30,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-2': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['MC851', 'MC853', 'MC855', 'MC857', 'MC859', 'MC861', 'MC911'],
+		},
+		'elet-3': {
+			credits: 4,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-4': {
+			credits: 4,
+			hasRestrictions: true,
+			subjects: ['MC919', 'MC920', 'MC930', 'MC940', 'MC949', 'MC950'],
+		},
+		'elet-5': {
+			credits: 4,
+			hasRestrictions: true,
+			subjects: ['MC886', 'MC896', 'MC906', 'MC959'],
+		},
+		'elet-6': {
+			credits: 6,
+			hasRestrictions: true,
+			subjects: ['MC019', 'MC030', 'MC032', 'MC033', 'MC040'],
+		},
+	},
+
 	subjects: {
 		'MA111': {
 			code: 'MA111',
@@ -51,7 +84,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#8C40D9'
+			color: '#4092D9',
+			obligatory: true
 		},
 		'MA141': {
 			code: 'MA141',
@@ -60,7 +94,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#408CD9'
+			color: '#40D9B5',
+			obligatory: true
 		},
 		'MC009': {
 			code: 'MC009',
@@ -69,7 +104,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:0, O:1, D:0, HS:2, SL:1, C:2},
 			requisitos: '',
-			color: '#40D98C'
+			color: '#C140D9',
+			obligatory: true
 		},
 		'MC102': {
 			code: 'MC102',
@@ -78,7 +114,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D94040'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'F_128': {
 			code: 'F_128',
@@ -87,7 +124,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#8CD940'
+			color: '#D94040',
+			obligatory: true
 		},
 		'F_129': {
 			code: 'F_129',
@@ -96,7 +134,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D940D9'
+			color: '#40B5D9',
+			obligatory: true
 		},
 		'MA211': {
 			code: 'MA211',
@@ -105,7 +144,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', '*MA141'],
-			color: ''
+			color: '#40B6C7',
+			obligatory: true
 		},
 		'MA327': {
 			code: 'MA327',
@@ -114,7 +154,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*MA141'],
-			color: ''
+			color: '#40D9B5',
+			obligatory: true
 		},
 		'MC202': {
 			code: 'MC202',
@@ -123,7 +164,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MC102'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'F_328': {
 			code: 'F_328',
@@ -132,7 +174,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA111', 'MA141'],
-			color: ''
+			color: '#738E9A',
+			obligatory: true
 		},
 		'F_329': {
 			code: 'F_329',
@@ -141,7 +184,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_129', 'MA111'],
-			color: ''
+			color: '#40A4D9',
+			obligatory: true
 		},
 		'MA311': {
 			code: 'MA311',
@@ -150,7 +194,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['*MA211'],
-			color: ''
+			color: '#40B6C7',
+			obligatory: true
 		},
 		'MC302': {
 			code: 'MC302',
@@ -159,7 +204,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MC202'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'ME323': {
 			code: 'ME323',
@@ -168,7 +214,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA211'],
-			color: ''
+			color: '#40B6C7',
+			obligatory: true
 		},
 		'MC038': {
 			code: 'MC038',
@@ -177,7 +224,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D940'
+			color: '#40D96F',
+			obligatory: true
 		},
 		'MC358': {
 			code: 'MC358',
@@ -186,7 +234,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#7B40D9',
+			obligatory: true
 		},
 		'MC602': {
 			code: 'MC602',
@@ -195,7 +244,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9408C'
+			color: '#5740D9',
+			obligatory: true
 		},
 		'MC750': {
 			code: 'MC750',
@@ -204,7 +254,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC302'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'MS211': {
 			code: 'MS211',
@@ -213,7 +264,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MA141', 'MC102'],
-			color: ''
+			color: '#40C1CD',
+			obligatory: true
 		},
 		'MC404': {
 			code: 'MC404',
@@ -222,7 +274,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC602'],
-			color: ''
+			color: '#5740D9',
+			obligatory: true
 		},
 		'MC426': {
 			code: 'MC426',
@@ -231,7 +284,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC302'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'MC458': {
 			code: 'MC458',
@@ -240,7 +294,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC202', 'MC358', 'ME323'],
-			color: ''
+			color: '#549AD3',
+			obligatory: true
 		},
 		'MC536': {
 			code: 'MC536',
@@ -249,7 +304,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MC302'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'MC346': {
 			code: 'MC346',
@@ -258,7 +314,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC302'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'MC437': {
 			code: 'MC437',
@@ -267,7 +324,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC426', 'MC536'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'MC504': {
 			code: 'MC504',
@@ -276,7 +334,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC404'],
-			color: ''
+			color: '#5740D9',
+			obligatory: true
 		},
 		'MC558': {
 			code: 'MC558',
@@ -285,7 +344,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA327', 'MC458'],
-			color: ''
+			color: '#4ABAC4',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -294,7 +354,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'MC626': {
 			code: 'MC626',
@@ -303,7 +364,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC437', 'MC536'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'MC658': {
 			code: 'MC658',
@@ -312,7 +374,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC558'],
-			color: ''
+			color: '#4ABAC4',
+			obligatory: true
 		},
 		'MC722': {
 			code: 'MC722',
@@ -321,7 +384,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC404', 'MC602'],
-			color: ''
+			color: '#5740D9',
+			obligatory: true
 		},
 		'MC822': {
 			code: 'MC822',
@@ -330,7 +394,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC504'],
-			color: ''
+			color: '#5740D9',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -339,7 +404,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CE839': {
 			code: 'CE839',
@@ -348,7 +414,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D98C40'
+			color: '#7BD940',
+			obligatory: true
 		},
 		'MC714': {
 			code: 'MC714',
@@ -357,7 +424,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC504'],
-			color: ''
+			color: '#5740D9',
+			obligatory: true
 		},
 		'MC833': {
 			code: 'MC833',
@@ -366,7 +434,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MC822'],
-			color: ''
+			color: '#5740D9',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -375,7 +444,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CE738': {
 			code: 'CE738',
@@ -384,7 +454,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9D940'
+			color: '#D9AA40',
+			obligatory: true
 		},
 		'ELET09': {
 			code: 'ELET09',
@@ -393,7 +464,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:18},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CE304': {
 			code: 'CE304',
@@ -402,7 +474,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#D96340',
+			obligatory: true
 		},
 		'ELET10': {
 			code: 'ELET10',
@@ -411,7 +484,228 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:18},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'MC019': {
+			code: 'MC019',
+			name: 'Estágio Supervisionado em Ciência da Computação',
+			ementa: 'Trabalho prático que seja válido de acordo com normas internas definidas pelo Instituto de Computação.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:5, D:0, HS:6, SL:0, C:6},
+			requisitos: ['AA200'],
+			color: '#9E40D9',
+			obligatory: false
+		},
+		'MC030': {
+			code: 'MC030',
+			name: 'Projeto Final de Graduação',
+			ementa: 'Projeto teórico ou prático orientado por um ou mais docentes do Instituto de Computação, acompanhado por monografia redigida pelo aluno.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:4, D:0, HS:6, SL:0, C:6},
+			requisitos: ['AA200'],
+			color: '#406FD9',
+			obligatory: false
+		},
+		'MC032': {
+			code: 'MC032',
+			name: 'Estudo Dirigido',
+			ementa: 'Projeto teórico ou prático orientado por um ou mais docentes do Instituto de Computação.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#D940CD',
+			obligatory: false
+		},
+		'MC033': {
+			code: 'MC033',
+			name: 'Estudo Dirigido II',
+			ementa: 'Projeto teórico ou prático orientado por um ou mais docentes do Instituto de Computação.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#9ED940',
+			obligatory: false
+		},
+		'MC040': {
+			code: 'MC040',
+			name: 'Estágio de Iniciação Científica I',
+			ementa: 'Projeto de Iniciação Científica na área de Computação, supervisionado ou orientado por um docente do Instituto de Computação e subvencionado por um órgão oficial (UNICAMP, FAPESP, CNPq, etc).',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:4, D:0, HS:6, SL:0, C:6},
+			requisitos: ['AA200'],
+			color: '#D98640',
+			obligatory: false
+		},
+		'MC851': {
+			code: 'MC851',
+			name: 'Projeto em Computação I',
+			ementa: 'Implementação de um projeto prático na área de Computação.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D9CD40',
+			obligatory: false
+		},
+		'MC853': {
+			code: 'MC853',
+			name: 'Projeto em Sistemas de Programação',
+			ementa: 'Implementação de um projeto prático na área de Sistemas de Programação.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#57D940',
+			obligatory: false
+		},
+		'MC855': {
+			code: 'MC855',
+			name: 'Projeto em Sistemas de Computação',
+			ementa: 'Implementação de um projeto prático na área de Sistemas de Computação.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MC714'],
+			color: '#5740D9',
+			obligatory: false
+		},
+		'MC857': {
+			code: 'MC857',
+			name: 'Projeto em Sistemas de Informação',
+			ementa: 'Implementação de um projeto prático na área de Sistemas de Informação.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MC626'],
+			color: '#40D9D9',
+			obligatory: false
+		},
+		'MC859': {
+			code: 'MC859',
+			name: 'Projeto em Teoria da Computação',
+			ementa: 'Implementação de um projeto prático na área de Teoria da Computação.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MC558'],
+			color: '#4ABAC4',
+			obligatory: false
+		},
+		'MC861': {
+			code: 'MC861',
+			name: 'Projeto em Computação II',
+			ementa: 'Implementação de um projeto prático na área de Computação.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#C1D940',
+			obligatory: false
+		},
+		'MC886': {
+			code: 'MC886',
+			name: 'Aprendizado de Máquina',
+			ementa: 'Técnicas de aprendizado de máquina estatístico para classificação, agrupamento e detecção de outliers.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MA327', 'ME323'],
+			color: '#40C8BE',
+			obligatory: false
+		},
+		'MC896': {
+			code: 'MC896',
+			name: 'Processamento de Línguas Naturais',
+			ementa: 'Introdução ao processamento de línguas naturais. Análise sintática, semântica e pragmática. Ambiguidade. Discurso. Processamento probabilístico da linguagem.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MC346'],
+			color: '#40D9D9',
+			obligatory: false
+		},
+		'MC906': {
+			code: 'MC906',
+			name: 'Introdução à Inteligência Artificial',
+			ementa: 'Estudo introdutório dos fundamentos e aplicações de Inteligência Artificial. Histórico e princípios de IA. Resolução de problemas. Representação de conhecimento. Aplicações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D94C',
+			obligatory: false
+		},
+		'MC911': {
+			code: 'MC911',
+			name: 'Projeto em Compiladores',
+			ementa: 'Implementação de um projeto prático na área de Compiladores.',
+			semestre: 1,
+			vector: {T:0, P:2, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#404CD9',
+			obligatory: false
+		},
+		'MC919': {
+			code: 'MC919',
+			name: 'Tópicos Especiais em Processamento Gráfico',
+			ementa: 'Estudo de problemas especiais em processamento gráfico. A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D940AA',
+			obligatory: false
+		},
+		'MC920': {
+			code: 'MC920',
+			name: 'Introdução ao Processamento de Imagem Digital',
+			ementa: 'Fundamentos de imagem digital. Transformações geométricas. Transformações Radiométricas. Filtragem no domínio espacial. Filtragem no domínio da frequência. Técnicas de restauração. Introdução a segmentação. Introdução a morfologia matemática.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MA311', 'MA327', 'MC202'],
+			color: '#40CDC7',
+			obligatory: false
+		},
+		'MC930': {
+			code: 'MC930',
+			name: 'Computação Gráfica',
+			ementa: 'Conceitos básicos. Algoritmos de primitivas gráficas. Representação e estruturação de informação gráfica. Descrição, construção e utilização de um núcleo de um sistema gráfico. Aplicações.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MA327', 'MC202'],
+			color: '#40D9C7',
+			obligatory: false
+		},
+		'MC940': {
+			code: 'MC940',
+			name: 'Processamento e Análise de Imagens',
+			ementa: 'Segmentação de imagens. Transformações morfológicas. Representação. Descrição. Extração de características. Classificação supervisionada. Classificação não supervisionada.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D94086',
+			obligatory: false
+		},
+		'MC949': {
+			code: 'MC949',
+			name: 'Visão Computacional',
+			ementa: 'Conceitos básicos de processamento de imagens, correspondências e arestas, álgebra linear e coordenadas homogêneas, representações de rotações. Projeções ortográficas, perspectiva e afim. Câmeras e suas calibrações. Matriz essencial, matriz fundamental, homografia, RANSAC. Fatorização rígida e não rígida. Rastreamento, filtro de Kalman e de partículas. Localização e reconhecimento de objetos.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MA327'],
+			color: '#40D9B5',
+			obligatory: false
+		},
+		'MC950': {
+			code: 'MC950',
+			name: 'Recuperação de Imagens por Conteúdo',
+			ementa: 'Introdução à recuperação de informação (modelos de recuperação, avaliação). Bancos de dados de imagem (linguagens de consulta, processamento de consultas, estruturas de indexação). Recuperação de imagem por conteúdo (descrição de imagem, busca por similaridade, relevance feedback). Aplicações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D992',
+			obligatory: false
+		},
+		'MC959': {
+			code: 'MC959',
+			name: 'Tópicos em Inteligência Artificial I',
+			ementa: 'Estudos de tópicos avançados em inteligência artificial.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D94063',
+			obligatory: false
 		}
 	}
 };

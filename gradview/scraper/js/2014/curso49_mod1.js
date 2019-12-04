@@ -51,6 +51,14 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 12,
+			hasRestrictions: true,
+			subjects: ['EA072', 'EA876', 'EA962', 'EA976', 'EA979', 'EE610', 'EE838', 'EE840', 'EE881', 'EE938', 'EE940', 'EG453', 'EG461', 'EG468', 'EG504', 'EG505', 'EG507', 'EG509', 'EG513', 'EG560', 'EG562', 'EG565', 'EG567', 'EG841', 'EG842', 'EG922'],
+		},
+	},
+
 	subjects: {
 		'ES101': {
 			code: 'ES101',
@@ -59,7 +67,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D99F'
+			color: '#40D997',
+			obligatory: true
 		},
 		'F_128': {
 			code: 'F_128',
@@ -68,7 +77,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#53D940'
+			color: '#8640D9',
+			obligatory: true
 		},
 		'MA111': {
 			code: 'MA111',
@@ -77,7 +87,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D94040'
+			color: '#A0D940',
+			obligatory: true
 		},
 		'MA141': {
 			code: 'MA141',
@@ -86,7 +97,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4066D9'
+			color: '#40D963',
+			obligatory: true
 		},
 		'QG100': {
 			code: 'QG100',
@@ -95,7 +107,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#C640D9'
+			color: '#4097D9',
+			obligatory: true
 		},
 		'EM104': {
 			code: 'EM104',
@@ -104,7 +117,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#5340D9'
+			color: '#40CCD9',
+			obligatory: true
 		},
 		'ES330': {
 			code: 'ES330',
@@ -113,7 +127,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D966'
+			color: '#D940C3',
+			obligatory: true
 		},
 		'F_328': {
 			code: 'F_328',
@@ -122,7 +137,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA111', 'MA141'],
-			color: ''
+			color: '#77A67F',
+			obligatory: true
 		},
 		'MA211': {
 			code: 'MA211',
@@ -131,7 +147,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', '*MA141'],
-			color: ''
+			color: '#70D952',
+			obligatory: true
 		},
 		'MC102': {
 			code: 'MC102',
@@ -140,7 +157,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D94079'
+			color: '#BAD940',
+			obligatory: true
 		},
 		'EA513': {
 			code: 'EA513',
@@ -149,7 +167,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111'],
-			color: ''
+			color: '#A0D940',
+			obligatory: true
 		},
 		'ES242': {
 			code: 'ES242',
@@ -158,7 +177,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QG100'],
-			color: ''
+			color: '#4097D9',
+			obligatory: true
 		},
 		'F_129': {
 			code: 'F_129',
@@ -167,7 +187,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#8CD940'
+			color: '#D9A940',
+			obligatory: true
 		},
 		'MA311': {
 			code: 'MA311',
@@ -176,7 +197,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['*MA211'],
-			color: ''
+			color: '#70D952',
+			obligatory: true
 		},
 		'MC202': {
 			code: 'MC202',
@@ -185,7 +207,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MC102'],
-			color: ''
+			color: '#BAD940',
+			obligatory: true
 		},
 		'EM306': {
 			code: 'EM306',
@@ -194,7 +217,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MA141'],
-			color: ''
+			color: '#70D952',
+			obligatory: true
 		},
 		'EM360': {
 			code: 'EM360',
@@ -203,7 +227,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA211'],
-			color: ''
+			color: '#70D952',
+			obligatory: true
 		},
 		'MA327': {
 			code: 'MA327',
@@ -212,7 +237,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*MA141'],
-			color: ''
+			color: '#40D963',
+			obligatory: true
 		},
 		'MC322': {
 			code: 'MC322',
@@ -221,7 +247,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC202'],
-			color: ''
+			color: '#BAD940',
+			obligatory: true
 		},
 		'MS211': {
 			code: 'MS211',
@@ -230,7 +257,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MA141', 'MC102'],
-			color: ''
+			color: '#89D94C',
+			obligatory: true
 		},
 		'EE532': {
 			code: 'EE532',
@@ -239,7 +267,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EA513'],
-			color: ''
+			color: '#A0D940',
+			obligatory: true
 		},
 		'EM404': {
 			code: 'EM404',
@@ -248,7 +277,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM306', 'MA211'],
-			color: ''
+			color: '#70D952',
+			obligatory: true
 		},
 		'EM461': {
 			code: 'EM461',
@@ -257,7 +287,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA311'],
-			color: ''
+			color: '#70D952',
+			obligatory: true
 		},
 		'MC404': {
 			code: 'MC404',
@@ -266,7 +297,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC202'],
-			color: ''
+			color: '#BAD940',
+			obligatory: true
 		},
 		'ME414': {
 			code: 'ME414',
@@ -275,7 +307,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111'],
-			color: ''
+			color: '#A0D940',
+			obligatory: true
 		},
 		'EA611': {
 			code: 'EA611',
@@ -284,7 +317,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EA513'],
-			color: ''
+			color: '#A0D940',
+			obligatory: true
 		},
 		'EE534': {
 			code: 'EE534',
@@ -293,7 +327,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EE532'],
-			color: ''
+			color: '#A0D940',
+			obligatory: true
 		},
 		'EM570': {
 			code: 'EM570',
@@ -302,7 +337,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM360', 'MA311'],
-			color: ''
+			color: '#70D952',
+			obligatory: true
 		},
 		'ES235': {
 			code: 'ES235',
@@ -311,7 +347,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM104'],
-			color: ''
+			color: '#40CCD9',
+			obligatory: true
 		},
 		'ES572': {
 			code: 'ES572',
@@ -320,7 +357,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EE532'],
-			color: ''
+			color: '#A0D940',
+			obligatory: true
 		},
 		'ES601': {
 			code: 'ES601',
@@ -329,7 +367,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA311', 'MA327'],
-			color: ''
+			color: '#58D95B',
+			obligatory: true
 		},
 		'EM406': {
 			code: 'EM406',
@@ -338,7 +377,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM306', 'MA211'],
-			color: ''
+			color: '#70D952',
+			obligatory: true
 		},
 		'EM607': {
 			code: 'EM607',
@@ -347,7 +387,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM404', 'MA327'],
-			color: ''
+			color: '#58D95B',
+			obligatory: true
 		},
 		'ES365': {
 			code: 'ES365',
@@ -356,7 +397,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['ES235', 'ES242'],
-			color: ''
+			color: '#40B2D9',
+			obligatory: true
 		},
 		'ES575': {
 			code: 'ES575',
@@ -365,7 +407,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EE534', 'ES572'],
-			color: ''
+			color: '#A0D940',
+			obligatory: true
 		},
 		'ES672': {
 			code: 'ES672',
@@ -374,7 +417,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM461', 'EM570'],
-			color: ''
+			color: '#70D952',
+			obligatory: true
 		},
 		'MC722': {
 			code: 'MC722',
@@ -383,7 +427,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ES572', 'MC404'],
-			color: ''
+			color: '#ADD940',
+			obligatory: true
 		},
 		'EM506': {
 			code: 'EM506',
@@ -392,7 +437,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM406'],
-			color: ''
+			color: '#70D952',
+			obligatory: true
 		},
 		'ES333': {
 			code: 'ES333',
@@ -401,7 +447,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['ES242'],
-			color: ''
+			color: '#4097D9',
+			obligatory: true
 		},
 		'ES704': {
 			code: 'ES704',
@@ -410,7 +457,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM406', 'EM570', 'ME414'],
-			color: ''
+			color: '#80D94C',
+			obligatory: true
 		},
 		'ES710': {
 			code: 'ES710',
@@ -419,7 +467,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM607', 'ES601'],
-			color: ''
+			color: '#58D95B',
+			obligatory: true
 		},
 		'ES879': {
 			code: 'ES879',
@@ -428,7 +477,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ES601'],
-			color: ''
+			color: '#58D95B',
+			obligatory: true
 		},
 		'ET520': {
 			code: 'ET520',
@@ -437,7 +487,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EA611', 'F_328'],
-			color: ''
+			color: '#8CC060',
+			obligatory: true
 		},
 		'ES563': {
 			code: 'ES563',
@@ -446,7 +497,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['ET520'],
-			color: ''
+			color: '#8CC060',
+			obligatory: true
 		},
 		'ES626': {
 			code: 'ES626',
@@ -455,7 +507,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['ES710'],
-			color: ''
+			color: '#58D95B',
+			obligatory: true
 		},
 		'ES663': {
 			code: 'ES663',
@@ -464,7 +517,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EE532', 'ET520'],
-			color: ''
+			color: '#96CD50',
+			obligatory: true
 		},
 		'ES667': {
 			code: 'ES667',
@@ -473,7 +527,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ES365'],
-			color: ''
+			color: '#40B2D9',
+			obligatory: true
 		},
 		'ES670': {
 			code: 'ES670',
@@ -482,7 +537,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC722'],
-			color: ''
+			color: '#ADD940',
+			obligatory: true
 		},
 		'ES827': {
 			code: 'ES827',
@@ -491,7 +547,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ES710'],
-			color: ''
+			color: '#58D95B',
+			obligatory: true
 		},
 		'ES664': {
 			code: 'ES664',
@@ -500,7 +557,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['ES663'],
-			color: ''
+			color: '#96CD50',
+			obligatory: true
 		},
 		'ES690': {
 			code: 'ES690',
@@ -509,7 +567,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM506'],
-			color: ''
+			color: '#70D952',
+			obligatory: true
 		},
 		'ES728': {
 			code: 'ES728',
@@ -518,7 +577,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ES710'],
-			color: ''
+			color: '#58D95B',
+			obligatory: true
 		},
 		'ES770': {
 			code: 'ES770',
@@ -527,7 +587,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['ES575', 'ES670'],
-			color: ''
+			color: '#A7D940',
+			obligatory: true
 		},
 		'ES926': {
 			code: 'ES926',
@@ -536,7 +597,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ES667', 'ES827'],
-			color: ''
+			color: '#4CC69A',
+			obligatory: true
 		},
 		'ELET10': {
 			code: 'ELET10',
@@ -545,7 +607,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'BE310': {
 			code: 'BE310',
@@ -554,7 +617,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA430'],
-			color: '#D9B340'
+			color: '#BA40D9',
+			obligatory: true
 		},
 		'ES726': {
 			code: 'ES726',
@@ -563,7 +627,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['ES926'],
-			color: ''
+			color: '#4CC69A',
+			obligatory: true
 		},
 		'ES828': {
 			code: 'ES828',
@@ -572,7 +637,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['ES710'],
-			color: ''
+			color: '#58D95B',
+			obligatory: true
 		},
 		'ES927': {
 			code: 'ES927',
@@ -581,7 +647,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ES827'],
-			color: ''
+			color: '#58D95B',
+			obligatory: true
 		},
 		'ES951': {
 			code: 'ES951',
@@ -590,7 +657,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:0, C:2},
 			requisitos: ['AA200', 'AA475'],
-			color: '#8C40D9'
+			color: '#D9C340',
+			obligatory: true
 		},
 		'ELET11': {
 			code: 'ELET11',
@@ -599,7 +667,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CE304': {
 			code: 'CE304',
@@ -608,7 +677,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#C6D940'
+			color: '#40D97D',
+			obligatory: true
 		},
 		'CE738': {
 			code: 'CE738',
@@ -617,7 +687,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D97940'
+			color: '#D440D9',
+			obligatory: true
 		},
 		'ES010': {
 			code: 'ES010',
@@ -626,7 +697,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:10, L:0, O:2, D:0, HS:12, SL:0, C:12},
 			requisitos: ['AA200', 'AA475'],
-			color: '#D940B3'
+			color: '#D97440',
+			obligatory: true
 		},
 		'ES952': {
 			code: 'ES952',
@@ -635,7 +707,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'ES951'],
-			color: '#40D9D9'
+			color: '#D9C340',
+			obligatory: true
 		},
 		'ES965': {
 			code: 'ES965',
@@ -644,7 +717,268 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA480'],
-			color: '#409FD9'
+			color: '#D94040',
+			obligatory: true
+		},
+		'EA072': {
+			code: 'EA072',
+			name: 'Inteligência Artificial em Aplicações Industriais',
+			ementa: 'Resolução de problemas. Fundamentos lógico matemáticos. Lógica proposicional e Lógica de primeira ordem. Representação do conhecimento. Mecanismos de inferência. Aprendizagem. Linguagens para implementação. Inteligência computacional. Aplicações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#6B40D9',
+			obligatory: false
+		},
+		'EA876': {
+			code: 'EA876',
+			name: 'Introdução a Software de Sistema',
+			ementa: 'Montadores. Carregadores. Compiladores. Sistemas Operacionais.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MC404'],
+			color: '#BAD940',
+			obligatory: false
+		},
+		'EA962': {
+			code: 'EA962',
+			name: 'Laboratório de Sistemas Computacionais',
+			ementa: 'Projeto e desenvolvimento de sistemas computacionais.',
+			semestre: 1,
+			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['EA876'],
+			color: '#BAD940',
+			obligatory: false
+		},
+		'EA976': {
+			code: 'EA976',
+			name: 'Engenharia de Software',
+			ementa: 'Software e engenharia de software. Análise de sistemas computacionais. Análise de requisitos de software. Metodologias de análise de requisitos. Projeto de software: projeto preliminar e projeto detalhado. Metodologias de projeto de software. O paradigma da Orientação a Objetos.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['EA876'],
+			color: '#BAD940',
+			obligatory: false
+		},
+		'EA979': {
+			code: 'EA979',
+			name: 'Introdução à Computação Gráfica e ao Processamento de Imagem',
+			ementa: 'Dispositivos de aquisição e exibição de imagens, arquitetura de sistemas gráficos interativos, transformações geométricas, transformação de visualização, calibração de câmeras, modelos de iluminação e tonalização, texturas, algoritmos de recorte, algoritmos de remoção de linhas/superfícies escondidas, algoritmos de rasterização, técnicas de antialiasing, representação de curvas e superfícies, operações aritméticas com imagem, técnicas de filtragem de imagem, algoritmos de realce, algoritmos de detecção de bordas, modelos de cor, transformação entre modelos de cor, algoritmos de quantização.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['EA876'],
+			color: '#BAD940',
+			obligatory: false
+		},
+		'EE610': {
+			code: 'EE610',
+			name: 'Eletrônica Digital I',
+			ementa: 'Pulsos e circuitos de temporização. Circuitos lógicos-digitais. Circuitos Integrados Digitais. Dispositivos Lógicos Programáveis-PLDs.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['EE532'],
+			color: '#A0D940',
+			obligatory: false
+		},
+		'EE838': {
+			code: 'EE838',
+			name: 'Introdução à Engenharia de Som I',
+			ementa: 'Introdução: Acústica, ondas sonoras e instrumentos musicais. Instrumentação. Ondas Elásticas I. Corpos sonoros I. Instrumentos de Percussão. Ondas Elásticas II. Corpos Sonoros II. Instrumentos de Sopro. Salas e Conforto Ambiental. Piano. Palestras convidadas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#407DD9',
+			obligatory: false
+		},
+		'EE840': {
+			code: 'EE840',
+			name: 'Introdução à Engenharia do Som II',
+			ementa: 'Introdução: Panorama de Informática na Música - Conceitos e Exemplos de Mercado e Experimentais. Protocolo MIDI. Sequenciadores. MIDI Aplicada à Composição Algorítmica. Audição e Psico-Acústica. Fundamentos do Áudio Digital. Sound Design: Aplicações Criativas do Áudio Digital - Cinema, Áudio Visual, Paisagem Sonora. Técnicas de Síntese de Sinais Digitais. Sintetizadores Virtuais. Aplicações Musicais do Áudio Digital I. Aplicações Musicais do Áudio Digital II. Perspectivas da Computação Musical.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9B1',
+			obligatory: false
+		},
+		'EE881': {
+			code: 'EE881',
+			name: 'Princípios de Comunicações I',
+			ementa: 'Canal de comunicação. Processos estocásticos. Modulação de amplitude. Modulação angular. Codificação de sinais analógicos. Transmissão digital em banda básica. Modulação digital. Sistemas de múltiplo acesso. Tópicos em comunicações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D9CC',
+			obligatory: false
+		},
+		'EE938': {
+			code: 'EE938',
+			name: 'Engenharia de Som I: Acústica',
+			ementa: 'Som. Acústica. Cordas, tubos e membranas vibrantes, instrumentos musicais. Acústica fisiológica: audibilidade, curvas de Fletcher Munson, intelegibilidade. Transdutores. Amplificadores: ganho, resposta em frequência, distorção. Gravação: discos, fitas, gravação digital.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['EA513'],
+			color: '#A0D940',
+			obligatory: false
+		},
+		'EE940': {
+			code: 'EE940',
+			name: 'Engenharia de Som II: Análise e Síntese de Sinais Musicais',
+			ementa: 'Aspectos gerais e históricos. Acústica e psico-acústica da música. Análise de sinais musicais. Síntese de sinais musicais. Protocolo MIDI.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D948',
+			obligatory: false
+		},
+		'EG453': {
+			code: 'EG453',
+			name: 'Redes Neurais',
+			ementa: 'Paradigmas Computacionais. Ciências da cognição. Modelos elementares de neurônios: discretos e contínuos. Redes neurais artificiais; arquiteturas básicas. Aprendizado através de redes neurais: estratégias e algorítmos. Redes multicamadas. Redes auto-organizadas. Redes de Hopfield. Redes RBF. Aplicações: classificação de padrões, controle e identificação, séries temporais, otimização.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA470'],
+			color: '#5140D9',
+			obligatory: false
+		},
+		'EG461': {
+			code: 'EG461',
+			name: 'Sistemas Nebulosos',
+			ementa: 'Introdução. Noções básicas, conceitos e definições. Operações com conjuntos nebulosos. Relações nebulosas e seu cálculo. Números nebulosos. Variáveis linguísticas. Sistemas baseados em regras nebulosas; representação, interferência e consistência. Lógica nebulosa e raciocínio aproximado. Teoria da possibilidade e inferência possibilística. Rough sets. Modelagem de sistemas e processos. Redes neurais nebulosas; sistemas evolutivos. Metodologia e técnicas de desenvolvimento de aplicações. Estudos de casos. Aplicações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA470'],
+			color: '#4063D9',
+			obligatory: false
+		},
+		'EG468': {
+			code: 'EG468',
+			name: 'Sistemas de Tempo Real I',
+			ementa: 'Definição de sistemas de tempo real e exemplos. Software para sistemas de tempo real: Programação concorrente. Comparação: possibilidade de concorrência usando linguagens de programação (Ada, Occam2, Java) ou sistemas operacionais (Posix e C). Gerenciamento do tempo de resposta: a questão do relógio, gerenciador cíclico, escalonamento estático e dinâmico de processos. Estratégias para atingir as metas de confiabilidade: conceitos básicos sobre tolerância e faltas, redundância estática e dinâmica de software. Introdução a sistemas distribuidos de tempo real.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA470'],
+			color: '#D94074',
+			obligatory: false
+		},
+		'EG504': {
+			code: 'EG504',
+			name: 'Redes Neurais II',
+			ementa: 'Métodos de aprendizagem; estimação de probabilidades; métodos paramétricos e não paramétricos; técnicas Bayesianas; generalização; funções de Kernel; comitê de máquinas; aplicações: classificação e reconhecimento de padrões; \"Clustering\"; identificação de sistemas; predição de séries temporais; controle de processos.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA470'],
+			color: '#A040D9',
+			obligatory: false
+		},
+		'EG505': {
+			code: 'EG505',
+			name: 'Semiótica e Sistemas Inteligentes',
+			ementa: 'Estudo do envolvimento entre a semiótica e os sistemas inteligentes; elementos básicos de semiótica: cognição e comunicação, categorias ceno-pitagóricas, semiosis, signos e suas representações, classes de signos; Semiótica e sistemas inteligentes: A influência da semiótica para representação do conhecimento; introdução à teoria matemática dos objetos: classes e objetos, sistemas de objetos, redes de objetos: semiótica computacional: Representando o conhecimento em redes de objeto, arquiteturas de sistemas inteligentes; Semiótica computacional e o futuro; Agentes inteligentes, Robótica Autônoma',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA470'],
+			color: '#D98E40',
+			obligatory: false
+		},
+		'EG507': {
+			code: 'EG507',
+			name: 'Computação Evolutiva',
+			ementa: 'Introdução a técnicas de solução de problemas inspiradas na natureza. Base biológica e representação computacional. Algorítmos genéticos. Estratégias evolutivas. Programação genética. Programação evolutiva. Sistemas classificadores. Extensões, operadores avançados e aplicações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA470'],
+			color: '#51D940',
+			obligatory: false
+		},
+		'EG509': {
+			code: 'EG509',
+			name: 'Introdução à Teoria de Agentes',
+			ementa: 'Agentes: conceitos básicos. Atributos e usos de agentes; categoria de agentes; agentes e objetos; agentes, processos, threads e programação distribuída, agentes de internet; agentes de interface; agentes móveis; sistemas multi-agentes; ontologias e linguagens de agentes; redes de agentes.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA470'],
+			color: '#D940A9',
+			obligatory: false
+		},
+		'EG513': {
+			code: 'EG513',
+			name: 'Introdução à Computação Natural',
+			ementa: 'Introdução e motivação. Computação inspirada na biologia. Algoritmos evolutivos. Inteligência coletiva. Otimização por colônias de formigas, robótica coletiva e otimização por partículas. Conexionismo. Sistemas imunológicos artificiais. Biologia inspirada na computação. Vida artificial e autômatos celulares. Geometria computacional da natureza. Computação com mecanismos naturais: computação de DNA e computação quântica. Aplicações em engenharia.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA470'],
+			color: '#6BD940',
+			obligatory: false
+		},
+		'EG560': {
+			code: 'EG560',
+			name: 'Inteligência Artificial Distribuida',
+			ementa: 'Introdução: computação distribuída, inteligência artificial distribuída. Agentes inteligentes. Sistemas multiagentes e sociedade de agentes. Comunicação, coordenação, cooperação e negociação. Resolução distribuída de problemas. Algoritmos de busca em sistemas multiagentes. Agentes racionais e aprendizagem. Modelos distribuídos de decisão. Sistemas multiagentes em logística, processamento de informação e automação. Estudos de caso e aplicações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA470'],
+			color: '#4048D9',
+			obligatory: false
+		},
+		'EG562': {
+			code: 'EG562',
+			name: 'Inteligência Artificial em Automação',
+			ementa: 'Introdução. Características, propriedades e requisitos de sistemas inteligentes em problemas de processamento de informação e decisão. Arquiteturas, metodologias e algoritmos de inteligência computacional em sistemas de suporte a tomada de decisão. Conceitos e abordagens de raciocínio e interferência temporal e aplicações em sistemas de tempo real. Arquiteturas e aplicações em logística, automação industrial, controle de tráfego e sistemas hídricos.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA470'],
+			color: '#D9408E',
+			obligatory: false
+		},
+		'EG565': {
+			code: 'EG565',
+			name: 'Introdução à Análise de Imagens e Reconhecimento de Padrões',
+			ementa: 'Fundamentos de segmentação de imagens. Representação de contornos e regiões. \"Template Matching\". Modelos de classificação. Introdução aos métodos de análise sintática. Classificação estatística. Teoria da decisão de Bayes. Estimativa de parâmetros e aprendizagem supervisionada. Aprendizado sem supervisão. \"Clustering\".',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA470'],
+			color: '#D95A40',
+			obligatory: false
+		},
+		'EG567': {
+			code: 'EG567',
+			name: 'Visão Robótica',
+			ementa: 'Aspectos geométricos e fotométricos da formação da imagem. Calibração de câmeras: parâmetros extrínsecos e intrínsecos. Perspectiva inversa. Estéreo visão. Localização (posição e orientação) de objetos no espaço 3D. Mapa de reflectância. Estéreo fotometria. Shape from shading. Shape from motion.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA470'],
+			color: '#40B1D9',
+			obligatory: false
+		},
+		'EG841': {
+			code: 'EG841',
+			name: 'Especificação e Projeto de Sistemas Embutidos',
+			ementa: 'Introdução às técnicas para projetos a nível de sistema, modelos e arquiteturas, linguagens de especificação, métodos de particionamento, métodos de avaliação da qualidade de projetos, detalhamento da especificação, exemplo de projeto.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D4D940',
+			obligatory: false
+		},
+		'EG842': {
+			code: 'EG842',
+			name: 'Coprojeto de Hardware-Software em Sistemas Embutidos',
+			ementa: 'Introdução às técnicas de coprojeto de hardware-software. Estudo de um projeto. Particionamento em Hardware-Software. Cossimulação. Verificação formal. Estimativa de desempenho. Aplicações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#86D940',
+			obligatory: false
+		},
+		'EG922': {
+			code: 'EG922',
+			name: 'Sensores Microeletrônicos',
+			ementa: 'Sistemas de informação e processamento. Princípios básicos de física do semicondutor. Propriedades mecânicas do silício. Conversão de sinais em transdutores de silício. Sensores térmicos. Sensores magnéticos. Sensores radiantes. Sensores inteligentes. Interface. Conversão A/D.Tecnologia para a fabricação de sensores. Introdução a sistemas microeletrônicos. Empacotamento de sensores. Estabilidade e confiabilidade.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9405A',
+			obligatory: false
 		}
 	}
 };

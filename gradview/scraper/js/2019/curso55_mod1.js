@@ -43,6 +43,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 8,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-2': {
+			credits: 4,
+			hasRestrictions: true,
+			subjects: ['GE403', 'GE911', 'GE912', 'GE913', 'GE914', 'GE915', 'GE916', 'GF001', 'GF002', 'GF003', 'GF100', 'GF102', 'GF105', 'GF106', 'GF107', 'GF111', 'GF112', 'GF115', 'GF120', 'GF121', 'GF123', 'GF124', 'GF125', 'GF126', 'GF130', 'GF131', 'GF132', 'GF133', 'GF134', 'GF135', 'GF505', 'GT105'],
+		},
+	},
+
 	subjects: {
 		'GF301': {
 			code: 'GF301',
@@ -51,7 +64,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9A6'
+			color: '#D94094',
+			obligatory: true
 		},
 		'GN101': {
 			code: 'GN101',
@@ -60,7 +74,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#408BD9',
+			obligatory: true
 		},
 		'GN106': {
 			code: 'GN106',
@@ -69,7 +84,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D98C'
+			color: '#40B5D9',
+			obligatory: true
 		},
 		'GN108': {
 			code: 'GN108',
@@ -78,7 +94,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94059'
+			color: '#D99440',
+			obligatory: true
 		},
 		'GN110': {
 			code: 'GN110',
@@ -87,7 +104,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#408CD9'
+			color: '#57D940',
+			obligatory: true
 		},
 		'GF401': {
 			code: 'GF401',
@@ -96,7 +114,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['GF301'],
-			color: ''
+			color: '#D94094',
+			obligatory: true
 		},
 		'GN105': {
 			code: 'GN105',
@@ -105,7 +124,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#A640D9'
+			color: '#D9405C',
+			obligatory: true
 		},
 		'GN107': {
 			code: 'GN107',
@@ -114,7 +134,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#D9D940'
+			color: '#4044D9',
+			obligatory: true
 		},
 		'GN208': {
 			code: 'GN208',
@@ -123,7 +144,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['GN106'],
-			color: ''
+			color: '#40B5D9',
+			obligatory: true
 		},
 		'GN301': {
 			code: 'GN301',
@@ -132,7 +154,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#D9BF40'
+			color: '#C840D9',
+			obligatory: true
 		},
 		'GF303': {
 			code: 'GF303',
@@ -141,7 +164,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['GN110', 'GN208'],
-			color: ''
+			color: '#4CC78D',
+			obligatory: true
 		},
 		'GF603': {
 			code: 'GF603',
@@ -150,7 +174,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#A6D940'
+			color: '#D95C40',
+			obligatory: true
 		},
 		'LA122': {
 			code: 'LA122',
@@ -159,7 +184,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:2, HS:6, SL:2, C:4},
 			requisitos: '',
-			color: '#BF40D9'
+			color: '#D9BF40',
+			obligatory: true
 		},
 		'ME173': {
 			code: 'ME173',
@@ -168,7 +194,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D959'
+			color: '#C8D940',
+			obligatory: true
 		},
 		'QG104': {
 			code: 'QG104',
@@ -177,7 +204,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940BF'
+			color: '#6540D9',
+			obligatory: true
 		},
 		'GE801': {
 			code: 'GE801',
@@ -186,7 +214,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40A6D9'
+			color: '#7440D9',
+			obligatory: true
 		},
 		'GF129': {
 			code: 'GF129',
@@ -195,7 +224,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#D94040'
+			color: '#D94078',
+			obligatory: true
 		},
 		'GF402': {
 			code: 'GF402',
@@ -204,7 +234,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#8C40D9'
+			color: '#D940BF',
+			obligatory: true
 		},
 		'GF410': {
 			code: 'GF410',
@@ -213,7 +244,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940A6'
+			color: '#4053D9',
+			obligatory: true
 		},
 		'GF503': {
 			code: 'GF503',
@@ -222,7 +254,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#D97340'
+			color: '#40D999',
+			obligatory: true
 		},
 		'GN207': {
 			code: 'GN207',
@@ -231,7 +264,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['GN108'],
-			color: ''
+			color: '#D99440',
+			obligatory: true
 		},
 		'LA242': {
 			code: 'LA242',
@@ -240,7 +274,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:3, D:3, HS:7, SL:0, C:4},
 			requisitos: ['AA200'],
-			color: '#40D940'
+			color: '#ACD940',
+			obligatory: true
 		},
 		'GF302': {
 			code: 'GF302',
@@ -249,7 +284,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#4073D9'
+			color: '#40D98B',
+			obligatory: true
 		},
 		'GF506': {
 			code: 'GF506',
@@ -258,7 +294,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#59D940'
+			color: '#BAD940',
+			obligatory: true
 		},
 		'GF508': {
 			code: 'GF508',
@@ -267,7 +304,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#73D940'
+			color: '#90D940',
+			obligatory: true
 		},
 		'GF509': {
 			code: 'GF509',
@@ -276,7 +314,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['GF410'],
-			color: ''
+			color: '#4053D9',
+			obligatory: true
 		},
 		'GF604': {
 			code: 'GF604',
@@ -285,7 +324,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D95940'
+			color: '#D940CD',
+			obligatory: true
 		},
 		'GF405': {
 			code: 'GF405',
@@ -294,7 +334,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9408C'
+			color: '#9E40D9',
+			obligatory: true
 		},
 		'GF507': {
 			code: 'GF507',
@@ -303,7 +344,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#40BFD9'
+			color: '#9ED940',
+			obligatory: true
 		},
 		'GF601': {
 			code: 'GF601',
@@ -312,7 +354,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#7340D9'
+			color: '#40D953',
+			obligatory: true
 		},
 		'GF801': {
 			code: 'GF801',
@@ -321,7 +364,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94073'
+			color: '#9040D9',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -330,7 +374,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'BD101': {
 			code: 'BD101',
@@ -339,7 +384,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9BF'
+			color: '#74D940',
+			obligatory: true
 		},
 		'GF403': {
 			code: 'GF403',
@@ -348,7 +394,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#D97840',
+			obligatory: true
 		},
 		'GF501': {
 			code: 'GF501',
@@ -357,7 +404,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9A640'
+			color: '#8240D9',
+			obligatory: true
 		},
 		'GF502': {
 			code: 'GF502',
@@ -366,7 +414,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:1, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#8CD940'
+			color: '#D640D9',
+			obligatory: true
 		},
 		'GF702': {
 			code: 'GF702',
@@ -375,7 +424,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['GF604'],
-			color: ''
+			color: '#D940CD',
+			obligatory: true
 		},
 		'BT201': {
 			code: 'BT201',
@@ -384,7 +434,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: '',
-			color: '#40D973'
+			color: '#40D9C4',
+			obligatory: true
 		},
 		'GF605': {
 			code: 'GF605',
@@ -393,7 +444,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['GF506'],
-			color: ''
+			color: '#BAD940',
+			obligatory: true
 		},
 		'GF606': {
 			code: 'GF606',
@@ -402,7 +454,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:2, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['GF507', 'GN108'],
-			color: ''
+			color: '#BCB740',
+			obligatory: true
 		},
 		'GN304': {
 			code: 'GN304',
@@ -411,7 +464,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:2, C:6},
 			requisitos: ['GN106', 'GN110'],
-			color: ''
+			color: '#4CC78D',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -420,7 +474,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'GE702': {
 			code: 'GE702',
@@ -429,7 +484,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#BFD940'
+			color: '#40C4D9',
+			obligatory: true
 		},
 		'GF602': {
 			code: 'GF602',
@@ -438,7 +494,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#D940D9'
+			color: '#BA40D9',
+			obligatory: true
 		},
 		'GF703': {
 			code: 'GF703',
@@ -447,7 +504,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['GF501'],
-			color: ''
+			color: '#8240D9',
+			obligatory: true
 		},
 		'GF714': {
 			code: 'GF714',
@@ -456,7 +514,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA470'],
-			color: '#D98C40'
+			color: '#D9CD40',
+			obligatory: true
 		},
 		'GF803': {
 			code: 'GF803',
@@ -465,7 +524,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['GF403'],
-			color: ''
+			color: '#D97840',
+			obligatory: true
 		},
 		'GF406': {
 			code: 'GF406',
@@ -474,7 +534,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:1, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#5940D9'
+			color: '#4099D9',
+			obligatory: true
 		},
 		'GF805': {
 			code: 'GF805',
@@ -483,7 +544,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['GF401'],
-			color: ''
+			color: '#D94094',
+			obligatory: true
 		},
 		'GF814': {
 			code: 'GF814',
@@ -492,7 +554,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:0, C:8},
 			requisitos: ['AA480'],
-			color: '#4059D9'
+			color: '#40D9D2',
+			obligatory: true
 		},
 		'ELET10': {
 			code: 'ELET10',
@@ -501,7 +564,328 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'GE403': {
+			code: 'GE403',
+			name: 'Micropalentologia e Palinologia',
+			ementa: 'Conceitos básicos de sistemática de microfósseis e palinomorfos (polens, esporos e dinoflagelados) e suas aplicações para bioestratigrafia, paleoclimatologia e paleoecologia. Treinamento no reconhecimento de microfósseis e nas técnicas de preparação para estudo.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D98640',
+			obligatory: false
+		},
+		'GE911': {
+			code: 'GE911',
+			name: 'Comunicação Científica em Ciências da Terra',
+			ementa: 'Fundamentos de editoração de artigos científicos. Regras básicas de redação e ilustração. Padronização técnica de artigos, relatórios e textos de divulgação. Noções básicas de operação de programas de ilustração técnica. Internet e Ciências da Terra. Evolução histórica dos recursos didáticos em Geociências. Intercâmbio de formatos de arquivo e utilização de ilustrações, diagramas e mapas no ensino. Exercícios de laboratório e gabinete.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:1, HS:3, SL:2, C:2},
+			requisitos: '',
+			color: '#40D961',
+			obligatory: false
+		},
+		'GE912': {
+			code: 'GE912',
+			name: 'Mapas e Linguagem Visual no Ensino de Ciências Naturais',
+			ementa: 'Mapas e linguagem visual como ferramentas das ciências naturais. Emergência das representações cartográficas e evolução histórica da representação espacial. Princípios metodológicos da elaboração de mapas geológicos e mapas temáticos. Aquisição de dados espaciais no campo e representação da informação científica por meio de geoinformática. Problemas de escala e técnicas de representação. Questões interdisciplinares de educação em ciências relacionadas a mapas. Exercícios de laboratório e gabinete.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: '',
+			color: '#4061D9',
+			obligatory: false
+		},
+		'GE913': {
+			code: 'GE913',
+			name: 'Ciências Naturais e Ambiente',
+			ementa: 'Abordagem epistemológica que busca a construção do entendimento de como as ciências naturais integram-se do ponto de vista de seus objetos de estudo e métodos quando se estuda o ambiente, seja em suas inter-relações no presente - processos e fenômenos atuais, seja em sua evolução ao longo da história da Terra. Natureza do conhecimento geocientífico.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:1, HS:4, SL:2, C:3},
+			requisitos: ['AA200'],
+			color: '#D9404E',
+			obligatory: false
+		},
+		'GE914': {
+			code: 'GE914',
+			name: 'Ciência e Linguagens',
+			ementa: 'Relações entre linguagem / retórica / discurso e a produção e circulação de conhecimentos científico-tecnológicos; interações discursivas e enunciativas em sala de aula; linguagem e cognição; linguagem e epistemologia; leituras da ciência na escola; linguagens e geociências.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:1, HS:4, SL:2, C:3},
+			requisitos: '',
+			color: '#D94040',
+			obligatory: false
+		},
+		'GE915': {
+			code: 'GE915',
+			name: 'Educação, Ciência, Tecnologia e Sociedade',
+			ementa: 'Abordagem CTSA (Ciência, Tecnologia, Sociedade e Ambiente) na Educação básica: princípios pressupostos e elaboração de estratégias de ensino. O papel das Geociências em processos de tomada de decisão e posicionamentos em questões sócio-político-ambientais: impacto ambiental, saúde, riscos naturais e tecnologia para enfrentar esses problemas. Estudos de caso de questões socioambientais envolvendo conhecimentos estudos da Terra.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: '',
+			color: '#D940A3',
+			obligatory: false
+		},
+		'GE916': {
+			code: 'GE916',
+			name: 'Ensino de Ciências da Terra e do Ambiente',
+			ementa: 'Importância do ensino de Ciências da Terra para o ensino básico. Modelos e dificuldades comuns de ensino e aprendizagem. Importância e perspectiva cognitiva, ambiental e política do ensino de ciclo da água. Papel estratégico do ciclo da água entre temas ensinados em ciências naturais, experimentais e tecnológicas. Inclui levantamentos das condições de ensino de problemas ambientais relativos à circulação da água.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: '',
+			color: '#D940B1',
+			obligatory: false
+		},
+		'GF001': {
+			code: 'GF001',
+			name: 'Iniciação Científica',
+			ementa: 'Introdução à abordagem científica relacionada à pesquisa de Geografia. Teorias e hipóteses. Levantamentos de dados. Aplicação de técnicas de pesquisa. Análise de resultados. Elaboração de relatórios de pesquisa e outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:0, C:6},
+			requisitos: ['AA425'],
+			color: '#406FD9',
+			obligatory: false
+		},
+		'GF002': {
+			code: 'GF002',
+			name: 'Estágio Supervisionado I',
+			ementa: 'Atividades de estágio que propiciem ao profissional em formação o contato com experiências, práticas e conhecimentos próprios ao campo profissional.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#D94E40',
+			obligatory: false
+		},
+		'GF003': {
+			code: 'GF003',
+			name: 'Estágio Supervisionado II',
+			ementa: 'Atividades de estágio que propiciem ao profissional em formação o contato com experiências, práticas e conhecimentos próprios ao campo profissional.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#65D940',
+			obligatory: false
+		},
+		'GF100': {
+			code: 'GF100',
+			name: 'Geomorfologia e Meio Ambiente',
+			ementa: 'Conteúdo, semiologia e aplicabilidade das legendas geomorfológicas. Cartografia geomorfológica e planejamento: estudos de caso. Monitoramento ambiental e a questão dos geoindicadores.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D96A40',
+			obligatory: false
+		},
+		'GF102': {
+			code: 'GF102',
+			name: 'Movimentos Sociais',
+			ementa: 'Debate sobre as teorias dos Movimentos Sociais. Formas de organização dos Movimentos Urbanos e Rurais. Autonomia, organizações locais, nacionais e internacionais. Movimentos libertários: feministas, ecologistas e estudantis. Organizações não governamentais.',
+			semestre: 1,
+			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D9A7',
+			obligatory: false
+		},
+		'GF105': {
+			code: 'GF105',
+			name: 'Metrópoles e Metropolização',
+			ementa: 'O surgimento das metrópoles e o processo de metropolização contemporâneo. O fenômeno da urbanização/conurbação e as estratégias de planejamento. Qualidade de vida, sociedade e meio ambiente nas grandes metrópoles. As cidades mundiais.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#5740D9',
+			obligatory: false
+		},
+		'GF106': {
+			code: 'GF106',
+			name: 'Turismo e Novas Territorialidades',
+			ementa: 'Aspectos históricos do surgimento do turismo (sedentarismo, nomadismo, viajantes e turistas). A atividade turística na produção do espaço: paisagens, valores culturais e meio ambiente. Modalidades de turismo: da indústria do turismo de massa ao turismo ecológico. Planejamento, degradação e sustentabilidade.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D944',
+			obligatory: false
+		},
+		'GF107': {
+			code: 'GF107',
+			name: 'América Latina - Novas Relações',
+			ementa: 'Geografia, colonização e geopolítica do continente americano. Os regimes militares, as lutas por emancipação e a nova integração econômica. O Mercosul e as identidades regionais. As metrópoles latino-americanas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9A340',
+			obligatory: false
+		},
+		'GF111': {
+			code: 'GF111',
+			name: 'Mudanças Globais no Sistema Terra',
+			ementa: 'Abordagem integrada das alterações do Sistema Terra, analisando processos ecológicos e socioeconômicos em perspectiva histórica. Ênfase nos prementes problemas ambientais que atingem o planeta e que refletem o modelo de desenvolvimento e padrões de ocupação diferencial do espaço territorial, definidos em macro escala, mas que se cristalizam em escala local. Discussão de problemas atuais na busca de alternativas cientificamente viáveis e socialmente aceitáveis.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#49D940',
+			obligatory: false
+		},
+		'GF112': {
+			code: 'GF112',
+			name: 'Organização do Espaço Regional',
+			ementa: 'Teorias e conceitos do desenvolvimento regional. Região, regionalização e regionalismos: planejamento e organização do espaço. Transformações econômicas e novas estratégias espaciais. Sociedade e natureza na organização socioespacial. Estudos de casos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#40D2D9',
+			obligatory: false
+		},
+		'GF115': {
+			code: 'GF115',
+			name: 'Economia do Desenvolvimento',
+			ementa: 'Características estruturais das economias desenvolvidas e subdesenvolvidas. Modelos conceituais de interpretação do processo de desenvolvimento: análise keynesiana e neokeynesiana; e nokeynesiana; teorias do desenvolvimento; enfoque de Schumpeter. Industrialização, subdesenvolvimento e dependência na América Latina. Ecodesenvolvimento e desenvolvimento sustentado.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#AC40D9',
+			obligatory: false
+		},
+		'GF120': {
+			code: 'GF120',
+			name: 'Tópicos Especiais em Geografia',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D94086',
+			obligatory: false
+		},
+		'GF121': {
+			code: 'GF121',
+			name: 'Tópicos Avançados em Geografia',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40A7D9',
+			obligatory: false
+		},
+		'GF123': {
+			code: 'GF123',
+			name: 'Tópicos Especiais em Geografia I',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D97D',
+			obligatory: false
+		},
+		'GF124': {
+			code: 'GF124',
+			name: 'Tópicos Especiais em Geografia II',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#407DD9',
+			obligatory: false
+		},
+		'GF125': {
+			code: 'GF125',
+			name: 'Tópicos Avançados em Geografia I',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4940D9',
+			obligatory: false
+		},
+		'GF126': {
+			code: 'GF126',
+			name: 'Tópicos Avançados em Geografia II',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9406A',
+			obligatory: false
+		},
+		'GF130': {
+			code: 'GF130',
+			name: 'Geografia Regional do Brasil',
+			ementa: 'Fornecer noções metodológicas fundamentais de regionalização do espaço brasileiro. Para tanto, elencamos os seguintes itens: fundamentos teóricos do processo de regionalização brasileiro; identificação dos diferentes critérios de regionalização do território brasileiro; as funções da regionalização para o planejamento; a regionalização como instrumentalização das ações do Estado e do mercado; a região como categoria analítica e como conceito na geografia; fundamentos teóricos do planejamento regional brasileiro.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
+			requisitos: '',
+			color: '#D6D940',
+			obligatory: false
+		},
+		'GF131': {
+			code: 'GF131',
+			name: 'Mapeamento Pedológico',
+			ementa: 'Sistema Brasileiro de Classificação de Solos. Cartografia de solos. Sistemática de levantamento de solos em campo. Interpretação de análises químicas e físicas para classificação. Geração de mapas geológicos.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['GF508'],
+			color: '#90D940',
+			obligatory: false
+		},
+		'GF132': {
+			code: 'GF132',
+			name: 'Logística e Território Brasileiro',
+			ementa: 'Origem, evolução e abordagens do conceito de logística. Abordagem geográfica da logística. Logística como expressão geográfica da circulação corporativa no período histórico atual e como variável ascendente da globalização. Logística e competitividade regional. As características do território brasileiro como indutora de estratégias, investimentos e organização logística. Logística e planejamento territorial no Brasil.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['GF508'],
+			color: '#90D940',
+			obligatory: false
+		},
+		'GF133': {
+			code: 'GF133',
+			name: 'Fundamentos de Micromorfologia de Solos',
+			ementa: 'Introdução e histórico. Conceitos e definições. Hierarquias e cronologia das organizações. Os constituintes do fundo matricial. As feições pedológicas. Análise e interpretação de dados micromorfológicos com ênfase em solos tropicais.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['GF508'],
+			color: '#90D940',
+			obligatory: false
+		},
+		'GF134': {
+			code: 'GF134',
+			name: 'Fotointerpretação e Mapeamento Térmico',
+			ementa: 'Introdução à fotogrametria. Histórico da fotogrametria. Elementos de fotogrametria, estereoscopia e fotointerpretação. Fundamentos de restituição aerofotogramétrica. Aplicações de fotografias aéreas na Geografia. Procedimentos e técnicas de fotointerpretação geográfica. Processamento digital de fotos aéreas. Elaboração de mapeamentos temáticos a partir da interpretação de fotos aéreas.',
+			semestre: 1,
+			vector: {T:1, P:2, L:1, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#82D940',
+			obligatory: false
+		},
+		'GF135': {
+			code: 'GF135',
+			name: 'Antropologia da Moral e da Ética',
+			ementa: 'Economia moral e ética em processos sociais contemporâneos. Antropologia da moral e da ética. Dimensões morais do estado, da ética, da ciência e da tecnologia. Processos de estruturação e de subjetivação do e no Estado, suas variações tecnológicas e formas de vida social.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D96F',
+			obligatory: false
+		},
+		'GF505': {
+			code: 'GF505',
+			name: 'Recursos Naturais, Meio Ambiente e Desenvolvimento',
+			ementa: 'Os recursos naturais como base para o desenvolvimento, a natureza como recurso. Avaliação socioeconômica e balanço entre oferta e demanda de recursos naturais. Recurso natural, meio ambiente e a mediação tecnológica. A gestão dos recursos naturais sob a ótica ambiental.',
+			semestre: 1,
+			vector: {T:1, P:2, L:1, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9B140',
+			obligatory: false
+		},
+		'GT105': {
+			code: 'GT105',
+			name: 'Teorias e Métodos da Ciência',
+			ementa: 'A emergência da ciência moderna e seu processo de institucionalização. As características da prática científica e do conhecimento produzido pelas ciências. A disputa pela demarcação de fronteiras entre conhecimento científico e outros modos de conhecer e explicar o mundo. Relações e dissensões entre saberes tradicionais e saberes científicos.',
+			semestre: 1,
+			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:2, C:3},
+			requisitos: '',
+			color: '#40D9B5',
+			obligatory: false
 		}
 	}
 };

@@ -35,6 +35,44 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 8,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-2': {
+			credits: 18,
+			hasRestrictions: true,
+			subjects: ['EL142', 'EL212', 'EL485', 'EL511', 'EL683'],
+		},
+		'elet-3': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['EP107', 'EP110', 'EP128', 'EP129', 'EP130', 'EP142', 'EP144', 'EP146', 'EP152', 'EP158', 'EP162', 'EP164', 'EP210', 'EP226', 'EP230', 'EP315', 'EP316', 'EP317', 'EP330', 'EP340', 'EP347', 'EP348', 'EP372', 'EP377', 'EP412', 'EP445', 'EP471', 'EP472', 'EP529', 'EP566', 'EP567', 'EP568', 'EP810', 'EP811', 'EP812', 'EP813', 'EP814', 'EP887', 'EP910', 'EP914'],
+		},
+		'elet-4': {
+			credits: 36,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-5': {
+			credits: 8,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-6': {
+			credits: 8,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-7': {
+			credits: 6,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'CE131': {
 			code: 'CE131',
@@ -43,7 +81,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9A6'
+			color: '#D94062',
+			obligatory: true
 		},
 		'HZ141': {
 			code: 'HZ141',
@@ -52,7 +91,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D940A6'
+			color: '#62D940',
+			obligatory: true
 		},
 		'HZ158': {
 			code: 'HZ158',
@@ -61,7 +101,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#A640D9'
+			color: '#D94051',
+			obligatory: true
 		},
 		'HZ161': {
 			code: 'HZ161',
@@ -70,7 +111,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D94040'
+			color: '#40D973',
+			obligatory: true
 		},
 		'HZ248': {
 			code: 'HZ248',
@@ -79,7 +121,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['HZ141'],
-			color: ''
+			color: '#62D940',
+			obligatory: true
 		},
 		'HZ258': {
 			code: 'HZ258',
@@ -88,7 +131,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#4084D9',
+			obligatory: true
 		},
 		'HZ263': {
 			code: 'HZ263',
@@ -97,7 +141,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['HZ161'],
-			color: ''
+			color: '#40D973',
+			obligatory: true
 		},
 		'ELET02': {
 			code: 'ELET02',
@@ -106,7 +151,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HZ345': {
 			code: 'HZ345',
@@ -115,7 +161,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['HZ141'],
-			color: ''
+			color: '#62D940',
+			obligatory: true
 		},
 		'HZ358': {
 			code: 'HZ358',
@@ -124,7 +171,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D9A640'
+			color: '#D97340',
+			obligatory: true
 		},
 		'HZ363': {
 			code: 'HZ363',
@@ -133,7 +181,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['HZ263'],
-			color: ''
+			color: '#40D973',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -142,7 +191,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HZ431': {
 			code: 'HZ431',
@@ -151,7 +201,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['HZ141', 'HZ158', 'HZ161'],
-			color: ''
+			color: '#7EA657',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -160,7 +211,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:16},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL774': {
 			code: 'EL774',
@@ -169,7 +221,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200', 'AA445'],
-			color: '#40A6D9'
+			color: '#4051D9',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -178,7 +231,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:20},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL874': {
 			code: 'EL874',
@@ -187,7 +241,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['EL774'],
-			color: ''
+			color: '#4051D9',
+			obligatory: true
 		},
 		'HZ631': {
 			code: 'HZ631',
@@ -196,7 +251,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#40D940'
+			color: '#40B7D9',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -205,7 +261,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CE730': {
 			code: 'CE730',
@@ -214,7 +271,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['CE131', 'HZ141', 'HZ158', 'HZ161'],
-			color: ''
+			color: '#958D5A',
+			obligatory: true
 		},
 		'HZ103': {
 			code: 'HZ103',
@@ -223,7 +281,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:2, C:8},
 			requisitos: ['AA450'],
-			color: '#A6D940'
+			color: '#D9B740',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -232,7 +291,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:14},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HZ104': {
 			code: 'HZ104',
@@ -241,7 +301,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:2, C:8},
 			requisitos: ['HZ103'],
-			color: ''
+			color: '#D9B740',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -250,7 +311,458 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:18},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'EL142': {
+			code: 'EL142',
+			name: 'Tópicos Especiais em Ciências Sociais Aplicadas à Educação',
+			ementa: 'Programa a ser definido semestralmente pelo DECISAE sobre tópicos especiais em Ciências Sociais e Educação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#40D9A6',
+			obligatory: false
+		},
+		'EL212': {
+			code: 'EL212',
+			name: 'Política Educacional: Organização da Educação Brasileira',
+			ementa: 'Estudo analítico das políticas educacionais no Brasil com destaque para: a política educacional no contexto das políticas públicas; organização dos sistemas de ensino considerando as peculiaridades nacionais e os contextos e legislação de ensino; organização da educação básica e do ensino superior.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#40D984',
+			obligatory: false
+		},
+		'EL485': {
+			code: 'EL485',
+			name: 'Filosofia e História da Educação',
+			ementa: 'Estudo das transformações históricas da sociedade e da educação brasileira, com ênfase nas principais concepções filosóficas presentes no pensamento educacional brasileiro.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#D94084',
+			obligatory: false
+		},
+		'EL511': {
+			code: 'EL511',
+			name: 'Psicologia e Educação',
+			ementa: 'Contribuições da psicologia para o estudo e compreensão de questões relacionadas à Educação, considerando as possibilidades de atuação dos estudantes em sua área de formação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#D940D9',
+			obligatory: false
+		},
+		'EL683': {
+			code: 'EL683',
+			name: 'Escola e Cultura',
+			ementa: 'Dimensões da escola e da cultura na Pesquisa e no Conhecimento em Educação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#73D940',
+			obligatory: false
+		},
+		'EP107': {
+			code: 'EP107',
+			name: 'Introdução à Pedagogia - Organização do Trabalho Pedagógico',
+			ementa: 'O objetivo das ciências da educação. O problema da unidade, especificidade e autonomia das ciências da educação. A educação como ponto de partida e de chegada dos estudos e das reflexões dos cientistas. A contribuição das ciências para a explicação e compreensão da educação. Contextualização histórica da Pedagogia no Brasil - o curso de Pedagogia da Unicamp.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D95140',
+			obligatory: false
+		},
+		'EP110': {
+			code: 'EP110',
+			name: 'História da Educação I',
+			ementa: 'Introdução à História da Educação. Bases epistemológicas, metodológicas e teóricas da História e História da Educação. Fundamentos da História da educação e da pedagogia: na antiguidade, na modernidade e na contemporaneidade.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#95D940',
+			obligatory: false
+		},
+		'EP128': {
+			code: 'EP128',
+			name: 'Psicologia I',
+			ementa: 'Contribuições das perspectivas teóricas comportamental e psicanalística para o estudo do processo de ensino, aprendizagem e desenvolvimento e suas aplicações para o contexto educativo.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#7340D9',
+			obligatory: false
+		},
+		'EP129': {
+			code: 'EP129',
+			name: 'Psicologia II',
+			ementa: 'Contribuições das perspectivas teóricas cognitiva e histórico-cultural para o estudo do processo de ensino, aprendizagem e desenvolvimento e suas implicações para o contexto educativo.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D9C8',
+			obligatory: false
+		},
+		'EP130': {
+			code: 'EP130',
+			name: 'Filosofia da Educação I',
+			ementa: 'Introdução à filosofia mediante sua caracterização em face de outras formas de conhecimento. Estudo de filósofos antigos que contribuíram significativamente para a reflexão sobre problemas pedagógicos ou que forneceram os fundamentos filosóficos da educação ocidental, entre eles: Sócrates, os sofistas, Platão e Aristóteles.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9A640',
+			obligatory: false
+		},
+		'EP142': {
+			code: 'EP142',
+			name: 'Educação e Antropologia Cultural',
+			ementa: 'Ao propor um diálogo entre educação e antropologia, a disciplina visa discutir a pertinência desta área do conhecimento para a atividade pedagógica como expressão de culturas específicas e de processos históricos e sociais determinados. Os objetivos específicos do curso são introduzir os alunos no quadro conceitual e temático da antropologia, discutir alguns expoentes da literatura antropológica sobre ciclos de vida (especialmente sobre infância e juventude), diversidade cultural, multiculturalismo e interculturalidade na sociedade contemporânea e, em particular, na escola; por fim, pretende-se mostrar a especificidade da antropologia que reside no modo pelo qual delimita seus campos de estudo, propondo modelos de interpretação e análise.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D995',
+			obligatory: false
+		},
+		'EP144': {
+			code: 'EP144',
+			name: 'Metodologia da Pesquisa em Ciências da Educação I',
+			ementa: 'A disciplina visa introduzir os estudantes nas questões ontológicas, epistemológicas e metodológicas que cercam a produção científica do conhecimento tendo em vista o trabalho da pesquisa em educação. Objetiva estimular a compreensão do processo de produção do conhecimento cientifico e iniciar os estudantes nas etapas básicas da pesquisa e da elaboração de projeto de pesquisa, bem como o delineamento e procedimentos para reconstrução da realidade social.',
+			semestre: 1,
+			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#B740D9',
+			obligatory: false
+		},
+		'EP146': {
+			code: 'EP146',
+			name: 'Educação e Tecnologias',
+			ementa: 'Abordagem interdisciplinar, propondo-se o tratamento das tecnologias de comunicação e informação no ambiente educativo. Os alunos vivenciarão situações práticas que os levarão a refletir criticamente sobre o uso de tecnologias na educação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D94040',
+			obligatory: false
+		},
+		'EP152': {
+			code: 'EP152',
+			name: 'Didática - Teoria Pedagógica',
+			ementa: 'As características da instituição escolar no contexto socioeconômico cultural brasileiro: objetivos, finalidades, organização, política educacional, recursos humanos e materiais. As diferentes formas de ensino como planos de organização e processos de interação. Identificação e análise de estratégias de ensino, da natureza dos conteúdos e das formas de avaliação em consonância com as características da clientela escolar.',
+			semestre: 1,
+			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#84D940',
+			obligatory: false
+		},
+		'EP158': {
+			code: 'EP158',
+			name: 'Educação, Corpo e Arte',
+			ementa: 'Esta disciplina, de caráter teórico-prático, visa introduzir os(as) alunos(as) às diferentes linguagens corporais e/ou artísticas em suas relações com o processo educacional.',
+			semestre: 1,
+			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#40D951',
+			obligatory: false
+		},
+		'EP162': {
+			code: 'EP162',
+			name: 'Escola e Currículo',
+			ementa: 'Determinações histórica, cultural, epistemológica, social e ideológica do currículo; paradigmas técnico, prático e crítico e suas implicações para o processo de desenvolvimento curricular; pós-modernidade e suas implicações para o currículo escolar; perspectivas construtivista, pós-construtivista e sociointeracionista do currículo escolar; pressupostos sociofilosóficos de propostas curriculares de diferentes sistemas de educação, níveis de ensino e escolas; o currículo no cotidiano da escola pública.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D99540',
+			obligatory: false
+		},
+		'EP164': {
+			code: 'EP164',
+			name: 'Organização do Trabalho Pedagógico e Gestão Escolar',
+			ementa: 'Fundamentos teóricos da Administração. Teorias da Administração e Gestão Educacional. Escola, Gestão e Projeto Político da escola. A organização do trabalho escolar: linguagem, tempo, espaço. Indivíduo e Organização.',
+			semestre: 1,
+			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#D98440',
+			obligatory: false
+		},
+		'EP210': {
+			code: 'EP210',
+			name: 'História da Educação II',
+			ementa: 'A disciplina história da educação no Brasil. História da educação no Brasil no período colonial e no Império.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D940A6',
+			obligatory: false
+		},
+		'EP226': {
+			code: 'EP226',
+			name: 'Psicologia e Educação',
+			ementa: 'Contribuições da Psicologia para a análise de questões relativas ao contexto educativo com base em pesquisas e relatos de experiências.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#A6D940',
+			obligatory: false
+		},
+		'EP230': {
+			code: 'EP230',
+			name: 'Filosofia da Educação II',
+			ementa: 'Estudo dos filósofos e/ou correntes filosóficas medievais e modernas que mais significativamente contribuíram para a reflexão sobre problemas pedagógicos ou que forneceram os fundamentos filosóficos da educação ocidental: a patrística e a escolástica, o racionalismo, o empirismo, o iluminismo kantiano e a concepção educacional de Rousseau.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#4062D9',
+			obligatory: false
+		},
+		'EP315': {
+			code: 'EP315',
+			name: 'Pesquisa e Prática Pedagógica I',
+			ementa: 'Estudo de questões ligadas à educação e à escola, a partir das contribuições teóricas e da pesquisa em distintas áreas do conhecimento. Investigação e análise das práticas educacionais.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:1, C:2},
+			requisitos: '',
+			color: '#6240D9',
+			obligatory: false
+		},
+		'EP316': {
+			code: 'EP316',
+			name: 'Pesquisa e Prática Pedagógica II',
+			ementa: 'Estudo das questões ligadas à educação e à escola, a partir das contribuições teóricas e da pesquisa em distintas áreas do conhecimento. Investigação e análise das práticas educacionais.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:1, C:2},
+			requisitos: '',
+			color: '#D940B7',
+			obligatory: false
+		},
+		'EP317': {
+			code: 'EP317',
+			name: 'Pesquisa e Prática Pedagógica III',
+			ementa: 'Estudo de questões ligadas à educação e à escola, a partir das contribuições teóricas e da pesquisa em distintas áreas do conhecimento. Investigação e análise das práticas educativas.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:1, C:2},
+			requisitos: '',
+			color: '#D96240',
+			obligatory: false
+		},
+		'EP330': {
+			code: 'EP330',
+			name: 'Filosofia da Educação III',
+			ementa: 'Estudo de filósofos e/ou correntes filosóficas contemporâneas que mais significativamente contribuíram para a reflexão sobre problemas pedagógicos ou que forneceram fundamentos filosóficos da educação ocidental, incluindo as concepções positivista, marxista e as teorias críticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#4073D9',
+			obligatory: false
+		},
+		'EP340': {
+			code: 'EP340',
+			name: 'Sociologia da Educação I',
+			ementa: 'Interpreta as relações entre educação e sociedade e educação e sociologia. Dedica-se ao estudo das concepções teóricas sobre a educação no discurso dos autores clássicos das Ciências Sociais (Durkheim, Weber, Marx).',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#B7D940',
+			obligatory: false
+		},
+		'EP347': {
+			code: 'EP347',
+			name: 'Educação, Cultura e Linguagens',
+			ementa: 'Estudos sobre as diferentes linguagens verbais (fala e escrita), visuais (artes plásticas) e audiovisuais (cinema e televisão) que dão forma à Educação cultural e escolar,ao imaginário e à inteligência contemporâneas.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#5140D9',
+			obligatory: false
+		},
+		'EP348': {
+			code: 'EP348',
+			name: 'Educação Especial e Inclusão',
+			ementa: 'O acesso ao conhecimento e aos ambientes sociais e escolares de alunos com deficiência e altas habilidades, diante da responsabilidade de se garantir o direito à educação, como prescrição constitucional, no ensino básico e superior. A produção social da normalidade e da anormalidade. A constituição da educação especial e as propostas de escolarização das pessoas com deficiência, em diferentes momentos históricos.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9C840',
+			obligatory: false
+		},
+		'EP372': {
+			code: 'EP372',
+			name: 'Avaliação',
+			ementa: 'A disciplina toma a escola como objeto de estudo, do ponto de vista de sua organização do trabalho pedagógico; insere a avaliação nesse contexto e discute a função ideológica da escola e dos processos de avaliação. São examinados os vários níveis de avaliação - em sala de aula, institucional e de redes de ensino. Discutem-se novas abordagens para o trabalho pedagógico que permitam visualizar novas formas de avaliação.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D94095',
+			obligatory: false
+		},
+		'EP377': {
+			code: 'EP377',
+			name: 'Planejamento Educacional e Estágio Supervisionado em Gestão Escolar',
+			ementa: 'Acompanhamento e análise do processo de planejamento escolar e educacional no âmbito da educação básica e suas modalidades, como fase decisiva da implementação da política e da administração da educação, levando em conta os fundamentos teóricos que embasam a organização da escola e do sistema educacional.',
+			semestre: 1,
+			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#40D9D9',
+			obligatory: false
+		},
+		'EP412': {
+			code: 'EP412',
+			name: 'História da Educação III',
+			ementa: 'Fundamentos históricos da educação e da escola no Brasil republicano. Problemas e Perspectivas da educação contemporânea.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D940',
+			obligatory: false
+		},
+		'EP445': {
+			code: 'EP445',
+			name: 'Sociologia da Educação II',
+			ementa: 'Estudo da sociologia do conhecimento com o objetivo de,em termos teóricos, levar à compreensão da sociologia do currículo. Far-se-á o estudo das principais correntes sociológicas atuais, com destaque para discussão do currículo relacionado com os contextos socioculturais e com as novas tecnologias do setor produtivo. Serão analisadas as contribuições dessas teorias nas relações entre escola e sociedade e no conhecimento escolar.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#C840D9',
+			obligatory: false
+		},
+		'EP471': {
+			code: 'EP471',
+			name: 'Escola, Alfabetização e Culturas da Escrita',
+			ementa: 'Conhecimentos da ordem da escrita, seus usos e objetos, discursos e lugares de produção, circulação, divulgação. Estudos sobre o ensino da língua escrita. Alfabetização e Letramento: conceitos e práticas.',
+			semestre: 1,
+			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#40A6D9',
+			obligatory: false
+		},
+		'EP472': {
+			code: 'EP472',
+			name: 'Escola e Conhecimento de História e Geografia',
+			ementa: 'Estudos sobre as questões de tempo e de espaço, como produções socioculturais, intimamente articuladas, historicamente datadas e inscritas nas culturas escolares, bem como extraescolares.',
+			semestre: 1,
+			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#8440D9',
+			obligatory: false
+		},
+		'EP529': {
+			code: 'EP529',
+			name: 'Educação de Surdos e Língua de Sinais',
+			ementa: 'Conhecimentos introdutórios da libra e em libras, assumindo-a como elemento constitutivo do conhecimento do aluno sobre a surdez. Estudo sobre os parâmetros que caracterizam a libras como língua; relação língua e constituição do sujeito humano; história da educação e as organizações dos movimentos políticos dos surdos; comunidades surdas e suas produções culturais; duas abordagens pedagógicas no ensino da pessoa surda - a clínica e a bilíngue; projetos de educação bilíngue; leis de acessibilidade e de garantia à educação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D94073',
+			obligatory: false
+		},
+		'EP566': {
+			code: 'EP566',
+			name: 'Seminário de Integração Curricular I',
+			ementa: 'Problematização de questões de interesse para a Educação no cenário nacional contemporâneo, em uma perspectiva interdisciplinar e articulada.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9B7',
+			obligatory: false
+		},
+		'EP567': {
+			code: 'EP567',
+			name: 'Seminário de Integração Curricular II',
+			ementa: 'Problematização de questões de interesse para a Educação no cenário nacional contemporâneo, em uma perspectiva interdisciplinar e articulada.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40C8D9',
+			obligatory: false
+		},
+		'EP568': {
+			code: 'EP568',
+			name: 'Seminário de Integração Curricular III',
+			ementa: 'Organização conjunta - Coordenação de Pedagogia e alunos concluintes do Curso, de encontros e seminários que permitam a socialização e compartilhamento das experiências de estágio e dos trabalhos desenvolvidos no TCC.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D940C8',
+			obligatory: false
+		},
+		'EP810': {
+			code: 'EP810',
+			name: 'Seminário de Educação Especial',
+			ementa: 'As distintas necessidades especiais e a produção de subjetividade. Perspectiva multidisciplinar para compreensão das necessidades especiais; formas de trabalho educativo e a atuação do pedagogo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#C8D940',
+			obligatory: false
+		},
+		'EP811': {
+			code: 'EP811',
+			name: 'Seminário de Pesquisa nas Áreas do Currículo Escolar',
+			ementa: 'A disciplina propõe identificar, problematizar e analisar a literatura referente a pesquisas que focalizam a educação nas áreas do currículo escolar do Ensino Fundamental, visando contribuir à formação do professor dos anos iniciais da educação básica com um olhar crítico, reflexivo e propositivo para essa dimensão da pesquisa educacional.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D962',
+			obligatory: false
+		},
+		'EP812': {
+			code: 'EP812',
+			name: 'Seminário de Pesquisa em História da África',
+			ementa: 'Dimensão histórica da escravidão. Aspectos da história dos negros na África e contextos da escravidão no Brasil. Reflexos nas condições materiais e simbólicas de existência do negro na atualidade e em sua inserção nos contextos educativos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#A640D9',
+			obligatory: false
+		},
+		'EP813': {
+			code: 'EP813',
+			name: 'Seminário de Pesquisa em História Indígena',
+			ementa: 'Estudos sobre a história indígena no Brasil. Análise das condições materiais e simbólicas de existência das populações indígenas na atualidade e em sua inserção nos contextos educativos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#9540D9',
+			obligatory: false
+		},
+		'EP814': {
+			code: 'EP814',
+			name: 'Seminário de Educação, Cultura e Artes',
+			ementa: 'Abordagem de temas que articulem a Arte, em suas diferentes linguagens (dança, música, teatro e artes visuais), e a Educação como produções culturais.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4095D9',
+			obligatory: false
+		},
+		'EP887': {
+			code: 'EP887',
+			name: 'Educação Não Formal',
+			ementa: 'A disciplina objetiva fornecer aos alunos uma visão teórico-prática sobre modos, formas e processos educacionais existentes na sociedade e que possa contribuir para a formação crítica do profissional da área da Educação, especialmente em campos que dizem respeito à formação para a cidadania do indivíduo e à atuação de grupos socioculturais.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#51D940',
+			obligatory: false
+		},
+		'EP910': {
+			code: 'EP910',
+			name: 'Estágio Supervisionado I - Gestão Escolar',
+			ementa: 'Acompanhamento do processo de organização e administração da escola (educação básica e suas modalidades) enquanto unidade vinculada a um sistema de ensino, buscando o entendimento de seus problemas cotidianos e alternativas de solução baseadas nos fundamentos da política e da administração educacional.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: ['AA430'],
+			color: '#D9D940',
+			obligatory: false
+		},
+		'EP914': {
+			code: 'EP914',
+			name: 'Estágio Supervisionado V - Educação Não Formal',
+			ementa: 'Fornecer conhecimento teórico-prático para uma melhor compreensão da educação não-formal, permitindo que os alunos: 1- percebam, que o campo de trabalho do pedagogo é mais amplo do que o da escola formal; 2 - se conscientizem de que a educação não formal tem propósitos: a) reformadores, contribuindo para o melhor funcionamento da sociedade, b) transformadores objetivando formar nos educandos uma atitude frente à realidade, que busque a transformação social, c) mesclando as duas atitudes ao realizar a educação; 3 - conhecendo propostas não-formais de caráter transformador.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:1, D:0, HS:4, SL:2, C:4},
+			requisitos: ['AA430'],
+			color: '#4040D9',
+			obligatory: false
 		}
 	}
 };

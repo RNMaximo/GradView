@@ -43,6 +43,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['BB415', 'BH515', 'BM915', 'BM925', 'BP584', 'BP915', 'BS615', 'BT925', 'BV915', 'FR001', 'FR002', 'FR003', 'FR004', 'FR005', 'FR006', 'FR007', 'FR009', 'FR010', 'FR012', 'FR013', 'FR014', 'FR016', 'FR018', 'FR020', 'FR021', 'FR022', 'FR023', 'FR024', 'FR025', 'FR026', 'FR027', 'FR028', 'FR029', 'FR030', 'FR031', 'FR032', 'FR033', 'FR034', 'FR035', 'FR036', 'FR037', 'FR038', 'FR039', 'FR040', 'FR041', 'FR042', 'FR043', 'FR325', 'FR326', 'MD182', 'MD183', 'MD187', 'MD188', 'MD189', 'MD190', 'QG863', 'QI445', 'QO423', 'QO424'],
+		},
+		'elet-2': {
+			credits: 6,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'BS115': {
 			code: 'BS115',
@@ -51,7 +64,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:4, L:0, O:0, D:0, HS:10, SL:10, C:10},
 			requisitos: '',
-			color: '#D9D140'
+			color: '#D96D40',
+			obligatory: true
 		},
 		'F_107': {
 			code: 'F_107',
@@ -60,7 +74,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9A040'
+			color: '#D98340',
+			obligatory: true
 		},
 		'FR103': {
 			code: 'FR103',
@@ -69,7 +84,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4090D9'
+			color: '#D940B0',
+			obligatory: true
 		},
 		'MS380': {
 			code: 'MS380',
@@ -78,7 +94,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#5040D9'
+			color: '#BF40D9',
+			obligatory: true
 		},
 		'QG108': {
 			code: 'QG108',
@@ -87,7 +104,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#50D940'
+			color: '#A840D9',
+			obligatory: true
 		},
 		'QG109': {
 			code: 'QG109',
@@ -96,7 +114,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D97040'
+			color: '#92D940',
+			obligatory: true
 		},
 		'QG362': {
 			code: 'QG362',
@@ -105,7 +124,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#80D940'
+			color: '#40D9B7',
+			obligatory: true
 		},
 		'BS215': {
 			code: 'BS215',
@@ -114,7 +134,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:8, P:8, L:0, O:0, D:0, HS:16, SL:16, C:16},
 			requisitos: ['*BS115'],
-			color: ''
+			color: '#D96D40',
+			obligatory: true
 		},
 		'FR204': {
 			code: 'FR204',
@@ -123,7 +144,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94070'
+			color: '#40D974',
+			obligatory: true
 		},
 		'ME480': {
 			code: 'ME480',
@@ -132,7 +154,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MS380'],
-			color: ''
+			color: '#BF40D9',
+			obligatory: true
 		},
 		'QI246': {
 			code: 'QI246',
@@ -141,7 +164,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QG108', 'QG109'],
-			color: ''
+			color: '#9D8D8D',
+			obligatory: true
 		},
 		'QO321': {
 			code: 'QO321',
@@ -150,7 +174,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QG108'],
-			color: ''
+			color: '#A840D9',
+			obligatory: true
 		},
 		'BG515': {
 			code: 'BG515',
@@ -159,7 +184,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4060D9'
+			color: '#40A1D9',
+			obligatory: true
 		},
 		'BI315': {
 			code: 'BI315',
@@ -168,7 +194,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BS115'],
-			color: ''
+			color: '#D96D40',
+			obligatory: true
 		},
 		'BP515': {
 			code: 'BP515',
@@ -177,7 +204,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['BS115'],
-			color: ''
+			color: '#D96D40',
+			obligatory: true
 		},
 		'BT315': {
 			code: 'BT315',
@@ -186,7 +214,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40C1D9'
+			color: '#4047D9',
+			obligatory: true
 		},
 		'FR304': {
 			code: 'FR304',
@@ -195,7 +224,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#8040D9'
+			color: '#405ED9',
+			obligatory: true
 		},
 		'QF331': {
 			code: 'QF331',
@@ -204,7 +234,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QG108'],
-			color: ''
+			color: '#A840D9',
+			obligatory: true
 		},
 		'QO421': {
 			code: 'QO421',
@@ -213,7 +244,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QO321'],
-			color: ''
+			color: '#A840D9',
+			obligatory: true
 		},
 		'BB315': {
 			code: 'BB315',
@@ -222,7 +254,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:2, L:3, O:0, D:0, HS:8, SL:8, C:8},
 			requisitos: ['*QO321'],
-			color: ''
+			color: '#A840D9',
+			obligatory: true
 		},
 		'BM415': {
 			code: 'BM415',
@@ -231,7 +264,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['BI315', 'BS115'],
-			color: ''
+			color: '#D96D40',
+			obligatory: true
 		},
 		'FR406': {
 			code: 'FR406',
@@ -240,7 +274,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94040'
+			color: '#4FD940',
+			obligatory: true
 		},
 		'FR407': {
 			code: 'FR407',
@@ -249,7 +284,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['BG515'],
-			color: ''
+			color: '#40A1D9',
+			obligatory: true
 		},
 		'QA282': {
 			code: 'QA282',
@@ -258,7 +294,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:4, O:0, D:0, HS:8, SL:8, C:8},
 			requisitos: ['QG108', 'QG109'],
-			color: ''
+			color: '#9D8D8D',
+			obligatory: true
 		},
 		'QO721': {
 			code: 'QO721',
@@ -267,7 +304,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QO421'],
-			color: ''
+			color: '#A840D9',
+			obligatory: true
 		},
 		'FR504': {
 			code: 'FR504',
@@ -276,7 +314,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#B040D9'
+			color: '#40B7D9',
+			obligatory: true
 		},
 		'FR505': {
 			code: 'FR505',
@@ -285,7 +324,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['BS215'],
-			color: ''
+			color: '#D96D40',
+			obligatory: true
 		},
 		'FR506': {
 			code: 'FR506',
@@ -294,7 +334,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:5, P:0, L:0, O:0, D:0, HS:5, SL:5, C:5},
 			requisitos: ['BS215'],
-			color: ''
+			color: '#D96D40',
+			obligatory: true
 		},
 		'FR507': {
 			code: 'FR507',
@@ -303,7 +344,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QO421'],
-			color: ''
+			color: '#A840D9',
+			obligatory: true
 		},
 		'FR508': {
 			code: 'FR508',
@@ -312,7 +354,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['QA282', 'QO421'],
-			color: ''
+			color: '#A367B3',
+			obligatory: true
 		},
 		'FR605': {
 			code: 'FR605',
@@ -321,7 +364,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BB315'],
-			color: ''
+			color: '#A840D9',
+			obligatory: true
 		},
 		'QO623': {
 			code: 'QO623',
@@ -330,7 +374,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:4, L:0, O:0, D:0, HS:8, SL:8, C:8},
 			requisitos: ['QO321'],
-			color: ''
+			color: '#A840D9',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -339,7 +384,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'FR155': {
 			code: 'FR155',
@@ -348,7 +394,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:8, P:2, L:0, O:0, D:0, HS:10, SL:10, C:10},
 			requisitos: ['FR505', 'FR506'],
-			color: ''
+			color: '#D96D40',
+			obligatory: true
 		},
 		'FR415': {
 			code: 'FR415',
@@ -357,7 +404,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['BB315', 'BT315', 'QO623', 'FR508'],
-			color: ''
+			color: '#8D4CD0',
+			obligatory: true
 		},
 		'FR602': {
 			code: 'FR602',
@@ -366,7 +414,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:4, L:0, O:0, D:0, HS:8, SL:8, C:8},
 			requisitos: ['QF331', 'QO623'],
-			color: ''
+			color: '#A840D9',
+			obligatory: true
 		},
 		'FR603': {
 			code: 'FR603',
@@ -375,7 +424,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['FR304', 'FR406'],
-			color: ''
+			color: '#489C8D',
+			obligatory: true
 		},
 		'FR606': {
 			code: 'FR606',
@@ -384,7 +434,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BB315', 'FR508'],
-			color: ''
+			color: '#A654C6',
+			obligatory: true
 		},
 		'FR607': {
 			code: 'FR607',
@@ -393,7 +444,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['FR507'],
-			color: ''
+			color: '#A840D9',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -402,7 +454,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'FR156': {
 			code: 'FR156',
@@ -411,7 +464,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:2, L:0, O:0, D:0, HS:8, SL:8, C:8},
 			requisitos: ['FR407', 'FR505', 'FR506', 'FR507'],
-			color: ''
+			color: '#A76F8D',
+			obligatory: true
 		},
 		'FR701': {
 			code: 'FR701',
@@ -420,7 +474,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['FR602'],
-			color: ''
+			color: '#A840D9',
+			obligatory: true
 		},
 		'FR705': {
 			code: 'FR705',
@@ -429,7 +484,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['FR415', 'FR602', 'FR606'],
-			color: ''
+			color: '#9E4BD0',
+			obligatory: true
 		},
 		'FR725': {
 			code: 'FR725',
@@ -438,7 +494,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BM415', 'FR605'],
-			color: ''
+			color: '#C1578D',
+			obligatory: true
 		},
 		'MD191': {
 			code: 'MD191',
@@ -447,7 +504,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D990'
+			color: '#4F40D9',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -456,7 +514,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'FR804': {
 			code: 'FR804',
@@ -465,7 +524,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['FR506', 'FR508'],
-			color: ''
+			color: '#BE6A7A',
+			obligatory: true
 		},
 		'FR805': {
 			code: 'FR805',
@@ -474,7 +534,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BM415', 'FR605', 'BP515'],
-			color: ''
+			color: '#C95E73',
+			obligatory: true
 		},
 		'FR806': {
 			code: 'FR806',
@@ -483,7 +544,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['FR407', 'FR505', 'FR506', 'FR507', 'FR602'],
-			color: ''
+			color: '#A7659C',
+			obligatory: true
 		},
 		'FR807': {
 			code: 'FR807',
@@ -492,7 +554,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['FR602'],
-			color: ''
+			color: '#A840D9',
+			obligatory: true
 		},
 		'FR900': {
 			code: 'FR900',
@@ -501,7 +564,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:12, D:0, HS:14, SL:0, C:14},
 			requisitos: ['AA460'],
-			color: '#B0D940'
+			color: '#40D98A',
+			obligatory: true
 		},
 		'MD151': {
 			code: 'MD151',
@@ -510,7 +574,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:2, L:0, O:0, D:0, HS:8, SL:8, C:8},
 			requisitos: ['ME480'],
-			color: ''
+			color: '#BF40D9',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -519,7 +584,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:2},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'FR901': {
 			code: 'FR901',
@@ -528,7 +594,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:24, D:0, HS:26, SL:0, C:26},
 			requisitos: ['AA200', 'AA460'],
-			color: '#D940A0'
+			color: '#40D9CE',
+			obligatory: true
 		},
 		'FR902': {
 			code: 'FR902',
@@ -537,7 +604,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:23, D:0, HS:25, SL:0, C:25},
 			requisitos: ['AA460'],
-			color: '#40D960'
+			color: '#65D940',
+			obligatory: true
 		},
 		'FR903': {
 			code: 'FR903',
@@ -546,7 +614,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200'],
-			color: '#40D9C1'
+			color: '#40D95E',
+			obligatory: true
 		},
 		'FR904': {
 			code: 'FR904',
@@ -555,7 +624,598 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:10, D:0, HS:10, SL:0, C:10},
 			requisitos: '',
-			color: '#D940D1'
+			color: '#D5D940',
+			obligatory: true
+		},
+		'BB415': {
+			code: 'BB415',
+			name: 'Bioquímica Farmacêutica',
+			ementa: 'Aspectos bioquímicos da interação, metabolização e da resistência medicamentosa. Influência da nutrição na biodisponibilidade de drogas. Monitoramento enzimático da ação medicamentosa.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['BB315'],
+			color: '#A840D9',
+			obligatory: false
+		},
+		'BH515': {
+			code: 'BH515',
+			name: 'Citotécnicas e Histotécnicas em Ciências Farmacêuticas',
+			ementa: 'Introdução às técnicas de histoprocessamento e histotécnicas de materiais de origem animal e vegetal. Fundamentos da Citoquímica. Cultivo celular primário e de linhagens estabelecidas de origem animal para fins de bioensaios. Princípios de microscopia de luz e processamento de imagens.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*BS215', '*BT315'],
+			color: '#8D5A8D',
+			obligatory: false
+		},
+		'BM915': {
+			code: 'BM915',
+			name: 'Metabólitos e Proteínas de Origem Microbiana: Identificação, Obtenção e Purif.',
+			ementa: 'Cultivo de microorganismos para produção de proteínas e metabólicos tóxicos ou famacologicamente ativos. Meios de cultura, condições de cultivo e diferenças na produção em pequena, média e grande escala. Estratégias de identificação, extração, purificação e ensaios de atividades. Bioensaios.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9B040',
+			obligatory: false
+		},
+		'BM925': {
+			code: 'BM925',
+			name: 'Identificação e Caracterização de Microrganismos',
+			ementa: 'Noções de taxonomia e classificação de microrganismos: bactérias, fungos filamentosos e leveduras e arqueas. Metodologias de caracterização taxanômica convencional: morfologia e micromorfologia, caracterização fenotípica e bioquímica. Quimiotaxonomia. Métodos de caracterização molecular: métodos de tipagem, sequenciamento e análise filogenética de DNA. Utilização de chaves e esquemas de identificação. Sistemas semiautomatizados e automatizados de caracterização e identificação para microrganismos clínicos e ambientais.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#A8D940',
+			obligatory: false
+		},
+		'BP584': {
+			code: 'BP584',
+			name: 'Animais de Laboratório',
+			ementa: 'Importância dos animais de laboratório na pesquisa biomédica. Ciência e tecnologia em animais de laboratório. Modelos animais. Infraestrutura de biotérios no Brasil. Caracterização de linhagens de camundongos e ratos. Classificação sanitária e monitoramento da saúde animal. Monitoramento genético de colônias de camundongos. Bioética e Legislação. Biossegurança em biotérios. Práticas sobre ciclo estral, histerectomia, sangria e inoculação, obtenção de embriões murinos e congelamento de embriões de camundongos.',
+			semestre: 1,
+			vector: {T:1, P:2, L:0, O:1, D:1, HS:5, SL:3, C:4},
+			requisitos: ['AA200'],
+			color: '#D540D9',
+			obligatory: false
+		},
+		'BP915': {
+			code: 'BP915',
+			name: 'Qualidade de Água, Saúde e Saneamento',
+			ementa: 'A água e o meio ambiente. Água e parasitos. Água de abastecimento público: tipos de estações de tratamento de água, controles físico-químico, microbiológico e parasitológico das águas de consumo humano incluindo bactérias, algas, fungos, vírus e protozoários patogênicos. Águas residuais: disposição nos ambientes rural e urbano, processos de tratamento. Fármacos no ambiente. Qualidade de água e Portaria 2914, de 14 de dezembro de 2011 (revogada a Portaria 518).',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#9240D9',
+			obligatory: false
+		},
+		'BS615': {
+			code: 'BS615',
+			name: 'Cultivo de Células Animais - Aplicações em Ensaios Biológicos',
+			ementa: 'Infraestrutura e biossegurança em laboratório de cultura celular. Esterilização e avaliação da eficácia. Meios de cultura e soluções complementares. Cultivo celular primário e de linhagens estabelecidas. Estabelecimento de inóculos e avaliação de viabilidade celular. Protocolos de descontaminação de culturas. Medidas de crescimento populacional. Criopreservação; imortalização. Caracterização de linhagens. Princípios, aplicações e técnicas de bioensaios em cultivo celular. Considerações teóricas sobre transformação celular e neoplasias, células tronco, terapia celular e medicina regenerativa.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA430'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'BT925': {
+			code: 'BT925',
+			name: 'Etnobotânica de Plantas de Interesse Farmacêutico',
+			ementa: 'Conceituação, aspectos botânicos, diversidade biológica, distribuição geográfica, importância econômica, uso popular e etnobotânica de plantas de interesse farmacêutico. Histórico da Etnobotânica em diferentes culturas. Metodologia de coleta e registros das informações etnobotânicas. Identificação botânica. Aspectos éticos e legais do direito de propriedade intelectual adquirida. Contexto integrado em conservação e usos de recursos genéticos. Valor farmacêutico e socioeconômico de espécies nativas.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*BT315'],
+			color: '#4047D9',
+			obligatory: false
+		},
+		'BV915': {
+			code: 'BV915',
+			name: 'Metabolismo Vegetal e Produção de Fitofármacos',
+			ementa: 'Multiplicação e domesticação de plantas. Manutenção da biodiversidade. Fatores ambientais e crescimento das plantas. Fotossíntese. Hormônios vegetais. Biossíntese e metabolismo secundário: fenil-propanoides, terpenoides, alcaloides. Manipulação genética.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['BT315'],
+			color: '#4047D9',
+			obligatory: false
+		},
+		'FR001': {
+			code: 'FR001',
+			name: 'Bases Farmacológicas e Fitoquímicas da Fitoterapia',
+			ementa: 'Estudo dos princípios científicos que norteiam a pesquisa, desenvolvimento, mecanismo de ação e prescrição de fitoterápicos. Formulações e controle de qualidade. Alimentos com propriedades funcionais ou de saúde. Farmacologia e fitoquímica de fitoterápicos que atuam no sistema nervoso central, sistema cardiovascular, sistema respiratório, sistema digestório e trato genito-urinário. Processo inflamatório e doloroso, imunoestimulantes e adaptógenos.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['FR407', 'FR505', 'FR506', 'FR507'],
+			color: '#A76F8D',
+			obligatory: false
+		},
+		'FR002': {
+			code: 'FR002',
+			name: 'Biotecnologia Vegetal',
+			ementa: 'Propagação de planta \"in vitro\": micropropagação vegetativa, embriogênese somática, organogênese. Cultura de células e tecidos como fonte de compostos bioativos. Tecnologia de cultivo de plantas medicinais e aromáticas. Pós-colheita e controle de qualidade da matéria prima vegetal. Melhoramento genético de plantas medicinais nativas e exóticas.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*FR415', '*FR725'],
+			color: '#A752AF',
+			obligatory: false
+		},
+		'FR003': {
+			code: 'FR003',
+			name: 'Etnobiologia',
+			ementa: 'Definições de etnofarmacologia, etnobotânica, etnoecologia e etnobiologia. Histórico da etnobotânica em diferentes culturas. Metodologia de coleta e registros das informações etnobotânicas. Identificação botânica e depósito de material testemunha em herbário. Aspectos éticos e legais do direito de propriedade intelectual adquirida. Contexto integrado em conservação e uso de recursos genéticos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA430'],
+			color: '#7BD940',
+			obligatory: false
+		},
+		'FR004': {
+			code: 'FR004',
+			name: 'Óleos Essenciais em Cosmetologia',
+			ementa: 'Noções de Cosmetologia. Óleos essenciais e óleos-resina em Cosmetologia. Avaliação da cadeia de óleos essenciais para uso cosmético. Principais óleos essenciais disponíveis e utilizados em cosmetologia: produção e avaliação de mercado. Métodos de obtenção e de análise dos constituintes de óleos essenciais. Constituintes alergênicos e incompatibilidade no uso de óleos essenciais. Normas e procedimentos para o Registro de Produtos de Higiene Pessoal, Cosméticos e Perfumes junto à ANVISA. Discussão de bibliografia recente.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['QA282', 'QO721'],
+			color: '#A367B3',
+			obligatory: false
+		},
+		'FR005': {
+			code: 'FR005',
+			name: 'Cromatografia Líquida de Alta Eficiência (HPLC)',
+			ementa: 'Fundamentos de cromatografia líquida. Preparo de amostras para sistemas de HPLC. Análises cromatográficas em controle de qualidade e na fabricação de medicamentos.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['QA282'],
+			color: '#9D8D8D',
+			obligatory: false
+		},
+		'FR006': {
+			code: 'FR006',
+			name: 'Estudo de Biodisponibilidade e Bioquivalência de Medicamentos',
+			ementa: 'Etapa clínico-histórica: novos medicamentos, biodisponibilidade e bioequivalência, estudos clínicos, aspectos de segurança. Administração do medicamento, coleta de material biológico, manuseio de amostras biológicas, documentação, responsabilidades. Etapa analítica: fundamentação teórica e método bioanalítico. Etapa estatística: métodos estatísticos em bioequivalência.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['FR407', 'FR505', 'FR506', 'FR507', 'QA282'],
+			color: '#A5758D',
+			obligatory: false
+		},
+		'FR007': {
+			code: 'FR007',
+			name: 'Ferramentas para Estudo de Processos Fermentativos',
+			ementa: 'Estudo de caso: escolha de um produto do metabolismo microbiano de interesse para a indústria. Estudo e compreensão do processo de forma global. Planejamento experimental para o desenvolvimento e otimização de produção.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D940C6',
+			obligatory: false
+		},
+		'FR009': {
+			code: 'FR009',
+			name: 'Biotecnologia Microbiana na Indústria Farmacêutica',
+			ementa: 'Compostos farmacologicamente ativos de origem microbiana e suas aplicações em medicina humana e veterinária, assim como na agricultura. Antibióticos, compostos antitumorais, moduladores de resposta imunológica e anti-inflamatórios, entre outros. Biodiversidade microbiana e estratégias de bioprospecção. Isolamento seletivo e caracterização preliminar de bactérias, fungos e leveduras. Bioensaios para detecção de atividade. Preservação e coleções de microrganismos. Utilização de microrganismos como biorreatores. Patentes e proteção de propriedade intelectual.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['BI315', 'BP515', 'FR407', 'FR505', 'FR506', 'FR507', 'BM415'],
+			color: '#BC6E6C',
+			obligatory: false
+		},
+		'FR010': {
+			code: 'FR010',
+			name: 'Bioprospecção de Compostos Antimicrobianos de Origem Vegetal',
+			ementa: 'Biodiversidade. Princípios ativos em plantas medicinais, aromáticas e extratos vegetais. Coleta, preparo e armazenamento de amostras. Obtenção de extratos e de óleos essenciais em pequena e larga escala. Caracterização química, fracionamento e purificação. Ensaios de seleção e triagem de atividade antimicrobiana: biautografia, concentração mínima inibitória e modo de ação antimicrobiano (bacteriostático, bactericida, esporocida).',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['BI315', 'BP515', 'FR407', 'FR505', 'FR506', 'FR507', 'BM415'],
+			color: '#BC6E6C',
+			obligatory: false
+		},
+		'FR012': {
+			code: 'FR012',
+			name: 'Métodos Espectroscópicos em Análise de Medicamentos',
+			ementa: 'Fundamentos básicos para análise de fármacos por métodos espectroscópicos. Princípios dos métodos espectroscópicos: Infravermelho (IV), Ultravioleta-Visível (UV/VIS), Ressonância Magnética Nuclear (RMN 1H e RMN 13C) e Espectrometria de massas. Interpretação de espectros e aplicação de técnicas hifenadas (CG-EM;LC-EM e CG-IV).',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['QA282', 'QO421'],
+			color: '#A367B3',
+			obligatory: false
+		},
+		'FR013': {
+			code: 'FR013',
+			name: 'Terapias Alternativas',
+			ementa: 'Instrumentos científicos para discussão dos fundamentos de diversas práticas alternativas. Efeito placebo. Homeopatia, aromaterapia, florais, medicina chinesa, medicina ayuvérdica, acupuntura, etc.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['FR407', 'FR505', 'FR506', 'FR507'],
+			color: '#A76F8D',
+			obligatory: false
+		},
+		'FR014': {
+			code: 'FR014',
+			name: 'Tecnologia de Produção de Plantas Medicinais',
+			ementa: 'A formação da planta medicinal. Biodiversidade - trajetória, produtos e interações. Sistemas produtivos: extrativismo, manejo, cultivo orgânico e permacultura. Acesso legal à biodiversidade. Bancos de germoplasma. Produção sustentável de drogas vegetais. Estudos de casos: processos de seleção e de domesticação de espécies nativas. Meio ambiente e controle dos processos produtivos e de pós-colheita.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FR415'],
+			color: '#8D4CD0',
+			obligatory: false
+		},
+		'FR016': {
+			code: 'FR016',
+			name: 'Farmácia Hospitalar',
+			ementa: 'Elementos de assistência farmacêutica integrada ao tratamento, reabilitação e acompanhamento dos pacientes ambulatoriais, internados e de emergência. Subsídios para o uso seguro e racional dos medicamentos e produtos afins. Farmacotécnica hospitalar.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['FR407', 'FR505', 'FR506', 'FR507', 'FR602'],
+			color: '#A7659C',
+			obligatory: false
+		},
+		'FR018': {
+			code: 'FR018',
+			name: 'Empreendedorismo',
+			ementa: 'O empreendedorismo será abordado com aulas dedicadas a plano de negócios, incubadoras e propriedade intelectual.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#4074D9',
+			obligatory: false
+		},
+		'FR020': {
+			code: 'FR020',
+			name: 'Ensaios Biológicos em Farmacologia',
+			ementa: 'Introduzir o aluno às práticas de investigação científica experimental em Farmacologia com ênfase nos ensaios farmacológicos voltados à reatividade de musculatura lisa vascular e não-vascular, à função plaquetária e ao processo inflamatório. Medidas de tônus muscular in vitro utilizando-se câmeras para órgãos isolados; medidas de agregação e de adesão plaquetária in vitro; medidas de edema inflamatório e de infiltração de leucócitos em tecidos.',
+			semestre: 1,
+			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['FR506', 'FR507'],
+			color: '#C1578D',
+			obligatory: false
+		},
+		'FR021': {
+			code: 'FR021',
+			name: 'Farmacologia Quantitativa',
+			ementa: 'Aspectos quantitativos da farmacologia usados no estudo e caracterização de drogas e de novos medicamentos. Conceitos básicos de interação droga-receptor, como curvas dose-resposta, agonistas e antagonistas, atividade intrínseca, eficácia, reserva de receptores, sinergismo, taquifilaxia, desensibilização, tipos de antagonismo. Modelos teóricos. Serão discutidos os métodos utilizados na determinação de parâmetros tais como DE50, CI50, KD, pA2, e na quantificação e classificação de receptores. Também será discutido o uso de modelos teóricos no desenvolvimento de novos medicamentos.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['FR506', 'FR507'],
+			color: '#C1578D',
+			obligatory: false
+		},
+		'FR022': {
+			code: 'FR022',
+			name: 'Farmacologia Clínica e Terapêutica',
+			ementa: 'Esta disciplina introduzirá o aluno a estudos clínicos e terapêuticos onde serão discutidos os seguintes tópicos: o que é um estudo clínico, tipos de estudos clínicos, delineamento de um estudo clínico, os aspectos éticos envolvidos nestes estudos (incluindo a legislação vigente), a escolha de voluntários, conflito de interesse e interpretação de dados dentre outros.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['FR506', 'FR507'],
+			color: '#C1578D',
+			obligatory: false
+		},
+		'FR023': {
+			code: 'FR023',
+			name: 'Imunocosmetologia',
+			ementa: 'Anatomo-fisiologia da pele; principais imperfeições cutâneas: envelhecimento, hiperpigmentação, acne, alterações na região periorbital, lipodistrofia ginóide. Conceitos e tendências de técnicas de avaliação in vitro de compostos para tratamento dermocosmético das imperfeições cutâneas.',
+			semestre: 1,
+			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['FR506', 'FR507'],
+			color: '#C1578D',
+			obligatory: false
+		},
+		'FR024': {
+			code: 'FR024',
+			name: 'Hematopoese e Atividade Funcional de Células Maduras',
+			ementa: 'Desenvolvimento do pensamento científico. Estudo da hematopoese, desenvolvimento de sistemas de cultura clonal que premitem o crescimento e diferenciação de células hematopoéticas in vitro (CFU-C), avaliação da interação entre as células do estroma medular e as células progenitoras hematopoéticas (\"stem cells\"), cultura líquida de longa duração de células da medula óssea (LTBMC), atividade de células imunocompetentes, avaliação da citotoxidade de células NK, linfoproliferação, produção de citocinas.',
+			semestre: 1,
+			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D94056',
+			obligatory: false
+		},
+		'FR025': {
+			code: 'FR025',
+			name: 'Imunomodulação da Reversão do Processo Infeccioso e Tumoral',
+			ementa: 'Diferentes modelos experimentais in vivo, nos quais a hematopoese tem um papel fundamental na evolução da doença, serão empregados para investigar os defeitos de plantas medicinais de domínio popular e outros compostos de origem natural ou sintética sobre os mecanismos reguladores dos sistemas imunológico e hematopoético, visando aumentar ou restabelecer as defesas do próprio hospedeiro capazes de inibir processos malignos e infecciosos.',
+			semestre: 1,
+			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['FR024'],
+			color: '#D94056',
+			obligatory: false
+		},
+		'FR026': {
+			code: 'FR026',
+			name: 'Seminários Gerais',
+			ementa: 'Tópicos avançados de integração entre Química, Biologia e Medicina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9C640',
+			obligatory: false
+		},
+		'FR027': {
+			code: 'FR027',
+			name: 'Quantificação de Fármacos em Amostras Biológicas',
+			ementa: 'Esta disciplina abordará aspectos pertinentes à quantificação de drogas em amostras biológicas (líquido e tecido), baseado em métodos usados atualmente em laboratórios de pesquisa e de análise e na indústria. Serão discutidos os princípios básicos da quantificação de substâncias em amostras biológicas, bem como os principais métodos cromatográficos, espectro(foto)métricos e imunológicos disponíveis para este fim.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['FR506', 'FR507'],
+			color: '#C1578D',
+			obligatory: false
+		},
+		'FR028': {
+			code: 'FR028',
+			name: 'Métodos de Extração e Separação Aplicados às Ciências Farmacêuticas',
+			ementa: 'Apresentar os principais métodos usados em Ciências Farmacêuticas para a extração de compostos de interesse a partir de fluidos biológicos, matrizes vegetais, medicamentos e outros insumos farmacêuticos bem como os principais métodos de separação cromatográfica e detectores utilizados.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: ['QA282'],
+			color: '#9D8D8D',
+			obligatory: false
+		},
+		'FR029': {
+			code: 'FR029',
+			name: 'Farmácia Clínica, Farmacoterapia e Atenção Farmacêutica na Prática Clínica',
+			ementa: 'Compreender o papel do farmacêutico como membro da equipe multidisciplinar de saúde, visando o uso racional de medicamentos, acompanhamento da condição clínica dos pacientes (internados e ambulatoriais) por meio do registro e avaliação farmacoterapêutica. Aplicação dos conceitos de interações medicamentosas das diferentes classes terapêuticas, incluindo aspectos clínicos, reações adversas, correlacionando aspectos terapêuticos e processos patológicos.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['FR603'],
+			color: '#489C8D',
+			obligatory: false
+		},
+		'FR030': {
+			code: 'FR030',
+			name: 'Metodologia e Informação Científica',
+			ementa: 'Compreender o papel da ciência e do cientista na sociedade. A construção do conhecimento científico: juízos de realidade e de valor, o método científico, paradigmas da ciência, influência da atividade do cientista na sociedade. O trabalho científico: resumo e apresentação em congressos, simpósios e eventos similares. Os tipos de monografias científicas: para graduação e especialização (monografia), para Mestrado (dissertação) e para Doutorado (tese). Relatórios.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D94099',
+			obligatory: false
+		},
+		'FR031': {
+			code: 'FR031',
+			name: 'Fármacia Clínica, Farmacoterapia e Atenção Farmacêutica na Prática Clínica II',
+			ementa: 'Aplicar os conhecimentos adquiridos na prática clínica.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:1, C:4},
+			requisitos: ['FR029'],
+			color: '#489C8D',
+			obligatory: false
+		},
+		'FR032': {
+			code: 'FR032',
+			name: 'Toxicologia de Sistemas',
+			ementa: 'Apresentar ao aluno as principais alterações funcionais e morfológicas decorrentes das reações tóxicas nos principais sistemas funcionais. As aulas abordarão as reações tóxicas aos entoxicantes e toxinas mais comuns, enfatizando os mecanismos envolvidos nestas alterações. Também serão abordados as repercussões patológicas destas respostas com ênfase nos aspectos morfo-funcionais.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200', 'FR603'],
+			color: '#489C8D',
+			obligatory: false
+		},
+		'FR033': {
+			code: 'FR033',
+			name: 'Tecnologia Fitofarmacêutica na Produção de Fitoterápicos',
+			ementa: 'Transmitir e discutir os últimos avanços e procedimentos relacionados a tecnologia farmacêutica na produção de fitoterápicos e produtos famacêuticos contendo insumos de origem vegetal. Serão abordados aspectos relacionados ao desenvolvimento e análise de diversas formas farmacêuticas contendo fitoterápicos e insumos de origem vegetal visando o desenvolvimento e/ou otimização de novos produtos farmacêuticos derivados de plantas. Fitomedicamentos na atenção farmacêutica.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*FR415', '*FR508', '*FR602'],
+			color: '#9D51C9',
+			obligatory: false
+		},
+		'FR034': {
+			code: 'FR034',
+			name: 'Gestão de Qualidade - Boas Práticas em Laboratório (BPL)',
+			ementa: 'Concento de qualidade (confiabilidade, rastreabilidade e efetividade); conceito de boas práticas de laboratório (BPL) voltado aos processos analíticos de fármacos; exercício prático de estudo analítico de fármaco segundo a norma de BPL.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D95640',
+			obligatory: false
+		},
+		'FR035': {
+			code: 'FR035',
+			name: 'Farmácia Homeopática',
+			ementa: 'A disciplina Farmácia Homeopática visa transmitir aos alunos os fundamentos que alicerçam a terapêutica homeopática e as técnicas a serem aplicadas no desempenho das atividades na Farmácia Homeopática.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['FR602'],
+			color: '#A840D9',
+			obligatory: false
+		},
+		'FR036': {
+			code: 'FR036',
+			name: 'Processos Industriais Farmacêuticos e Biotecnológicos',
+			ementa: 'A disciplina Processos Industriais Farmacêuticos e Biotecnológicos visa transmitir aos alunos conhecimentos relacionados a aspectos fundamentais e aplicados das operações empregadas nos processos Industriais Farmacêuticos e Biotecnológicos.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['FR602', 'FR725'],
+			color: '#B54CB3',
+			obligatory: false
+		},
+		'FR037': {
+			code: 'FR037',
+			name: 'Planejamento Estratégico de Carreira',
+			ementa: 'Elementos para currículos, carta de apresentação, pesquisa sobre empresa, marketing pessoal, entrevistas, dinâmicas de grupo, gerenciamento de carreira, novo emprego e progresso na carreira.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:2, HS:4, SL:2, C:2},
+			requisitos: '',
+			color: '#7B40D9',
+			obligatory: false
+		},
+		'FR038': {
+			code: 'FR038',
+			name: 'Radiofarmácia',
+			ementa: 'A disciplina Radiofarmácia visa transmitir aos alunos os fundamentos e as técnicas envolvidas na produção e aplicação clínica e diagnóstica de radiofármacos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D94083',
+			obligatory: false
+		},
+		'FR039': {
+			code: 'FR039',
+			name: 'Tópicos Especiais em Ciências Farmacêuticas I',
+			ementa: 'Estudos em temas/conteúdos em Ciências Farmacêuticas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D99940',
+			obligatory: false
+		},
+		'FR040': {
+			code: 'FR040',
+			name: 'Tópicos Especiais em Ciências Farmacêuticas II',
+			ementa: 'Estudos em temas/conteúdos em Ciências Farmacêuticas.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D947',
+			obligatory: false
+		},
+		'FR041': {
+			code: 'FR041',
+			name: 'Tópicos Especiais em Ciências Farmacêuticas III',
+			ementa: 'Estudos em temas/conteúdos em Ciências Farmacêuticas.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:0, C:2},
+			requisitos: ['AA200'],
+			color: '#40CED9',
+			obligatory: false
+		},
+		'FR042': {
+			code: 'FR042',
+			name: 'Tópicos Especiais em Ciências Farmacêuticas IV',
+			ementa: 'Estudos em temas/conteúdos em Ciências Farmacêuticas.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['AA200'],
+			color: '#40D9A1',
+			obligatory: false
+		},
+		'FR043': {
+			code: 'FR043',
+			name: 'Tópicos Especiais em Ciências Farmacêuticas V',
+			ementa: 'Estudos em temas/conteúdos em Ciências Farmacêuticas.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['AA200'],
+			color: '#6540D9',
+			obligatory: false
+		},
+		'FR325': {
+			code: 'FR325',
+			name: 'Iniciação Científica em Ciências Farmacêuticas I',
+			ementa: 'Estágio supervisionado a ser cumprido por aluno do curso de Farmácia em laboratório de pesquisa biológica, química ou médica da Unicamp.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: '',
+			color: '#408AD9',
+			obligatory: false
+		},
+		'FR326': {
+			code: 'FR326',
+			name: 'Iniciação Científica em Ciências Farmacêuticas II',
+			ementa: 'Estágio supervisionado a ser cumprido por alunos do curso de Farmácia em laboratórios de pesquisa biológica, química ou médica da Unicamp.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: '',
+			color: '#D9406D',
+			obligatory: false
+		},
+		'MD182': {
+			code: 'MD182',
+			name: 'Líquidos Biológicos',
+			ementa: 'Coleta de espécimes clínicos, realização e interpretação de exames em urinálise, derrames cavitários, líquido cefaloraquidiano, sinovial e seminal. Rotinas de pequena, média e alta complexidade. Cumprimento das normas de controle de qualidade e as normas da ANVISA.',
+			semestre: 1,
+			vector: {T:1, P:1, L:2, O:0, D:0, HS:4, SL:3, C:4},
+			requisitos: ['AA200', 'BB315', '*FR407', 'FR505', 'FR506', 'FR507'],
+			color: '#A7659C',
+			obligatory: false
+		},
+		'MD183': {
+			code: 'MD183',
+			name: 'Bioquímica Clínica',
+			ementa: 'Coleta de espécimes clínicos, realização e interpretação de exames em bioquímica clínica e toxicologia. Rotinas de pequena, média e alta complexidade. Cumprimento das normas de controle de qualidade e as normas da ANVISA.',
+			semestre: 1,
+			vector: {T:1, P:1, L:2, O:0, D:0, HS:4, SL:3, C:4},
+			requisitos: ['AA200', 'BB315'],
+			color: '#A840D9',
+			obligatory: false
+		},
+		'MD187': {
+			code: 'MD187',
+			name: 'Fisiologia Clínica',
+			ementa: 'Coleta de espécimes clínicos, realização e interpretação de exames para avaliação funcional de glândulas endócrinas e para determinação de marcadores tumoriais séricos. Rotinas de pequena, média e alta complexidade. Cumprimento das normas de controle de qualidade e as normas da ANVISA.',
+			semestre: 1,
+			vector: {T:1, P:1, L:2, O:0, D:0, HS:4, SL:3, C:4},
+			requisitos: ['AA200', 'BB315', '*FR407', 'FR505', 'FR506', 'FR507'],
+			color: '#A7659C',
+			obligatory: false
+		},
+		'MD188': {
+			code: 'MD188',
+			name: 'Hematologia Clínica',
+			ementa: 'Coleta de espécimes clínicos, realização e interpretação de exames em hematologia clínica. Rotinas de pequena, média e alta complexidade. Cumprimento das normas de controle de qualidade e as normas da ANVISA.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200', 'BS215', '*FR407', 'FR505', 'FR506', 'FR507'],
+			color: '#B16E7D',
+			obligatory: false
+		},
+		'MD189': {
+			code: 'MD189',
+			name: 'Microbiologia Clínica',
+			ementa: 'Preparação de meios de cultura e reagentes. Coleta de espécimes clínicos para exames microbiológicos. Avaliação pré-analítica, realização e interpretação de exames de rotina de pequena, média e alta complexidades em Microbiologia Clínica, cumpridas as normas setoriais de controle de qualidade e as normas da ANVISA.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200', 'BM415', '*FR407', 'BP515', 'FR505', 'FR506', 'FR507'],
+			color: '#B76E73',
+			obligatory: false
+		},
+		'MD190': {
+			code: 'MD190',
+			name: 'Imunologia e Parasitologia Clínicas',
+			ementa: 'Coleta de espécimes clínicos, realização e interpretação de exames em imunologia e parasitologia clínicas. Rotinas de pequena, média e alta complexidade. Cumprimento das normas de controle de qualidade e as normas da ANVISA.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200', 'BI315', '*FR407', 'BM415', 'BP515', 'FR505', 'FR506', 'FR507'],
+			color: '#BC6E6C',
+			obligatory: false
+		},
+		'QG863': {
+			code: 'QG863',
+			name: 'Projetos de Pesquisa em Ciências Farmacêuticas',
+			ementa: 'Desenvolvimento de projetos científicos de interesse das Ciências Farmacêuticas sob a supervisão de membros do corpo docente do Instituto de Química. O docente responsável pela disciplina será o representante do Instituto de Química na Comissão de Graduação do curso de Farmácia.',
+			semestre: 1,
+			vector: {T:0, P:8, L:0, O:0, D:0, HS:8, SL:8, C:8},
+			requisitos: ['AA200'],
+			color: '#BFD940',
+			obligatory: false
+		},
+		'QI445': {
+			code: 'QI445',
+			name: 'Introdução à Espectroscopia Vibracional',
+			ementa: 'Fundamentos de espectroscopia vibracional e interpretação de espectros.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['QI246'],
+			color: '#9D8D8D',
+			obligatory: false
+		},
+		'QO423': {
+			code: 'QO423',
+			name: 'Fundamentos da Espectrometria de Massas',
+			ementa: 'Fundamentos experimentais, interpretação de dados e aplicações de espectrometria de massas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['QO421'],
+			color: '#A840D9',
+			obligatory: false
+		},
+		'QO424': {
+			code: 'QO424',
+			name: 'Fundamentos em Espectroscopia e Ressonância Magnética Nuclear',
+			ementa: 'Fundamentos experimentais, interpretação de dados e aplicações da Espectroscopia de Ressonância Magnética Nuclear.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['QO421'],
+			color: '#A840D9',
+			obligatory: false
 		}
 	}
 };

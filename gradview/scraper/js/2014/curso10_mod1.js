@@ -43,6 +43,14 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['GT001', 'HG023', 'HZ291', 'HZ292', 'HZ293'],
+		},
+	},
+
 	subjects: {
 		'EM102': {
 			code: 'EM102',
@@ -51,7 +59,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940AC'
+			color: '#B0D940',
+			obligatory: true
 		},
 		'EM110': {
 			code: 'EM110',
@@ -60,7 +69,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4052D9'
+			color: '#D940A0',
+			obligatory: true
 		},
 		'F_128': {
 			code: 'F_128',
@@ -69,7 +79,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#64D940'
+			color: '#8040D9',
+			obligatory: true
 		},
 		'MA111': {
 			code: 'MA111',
@@ -78,7 +89,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D040D9'
+			color: '#40D960',
+			obligatory: true
 		},
 		'MA141': {
 			code: 'MA141',
@@ -87,7 +99,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9BE'
+			color: '#D94040',
+			obligatory: true
 		},
 		'QG100': {
 			code: 'QG100',
@@ -96,7 +109,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D0D940'
+			color: '#B040D9',
+			obligatory: true
 		},
 		'EM103': {
 			code: 'EM103',
@@ -105,7 +119,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#9A40D9'
+			color: '#D9D140',
+			obligatory: true
 		},
 		'EM200': {
 			code: 'EM200',
@@ -114,7 +129,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM102'],
-			color: ''
+			color: '#B0D940',
+			obligatory: true
 		},
 		'EM240': {
 			code: 'EM240',
@@ -123,7 +139,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QG100'],
-			color: ''
+			color: '#B040D9',
+			obligatory: true
 		},
 		'EM306': {
 			code: 'EM306',
@@ -132,7 +149,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MA141'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'F_129': {
 			code: 'F_129',
@@ -141,7 +159,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94076'
+			color: '#4090D9',
+			obligatory: true
 		},
 		'F_328': {
 			code: 'F_328',
@@ -150,7 +169,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA111', 'MA141'],
-			color: ''
+			color: '#88737E',
+			obligatory: true
 		},
 		'MA211': {
 			code: 'MA211',
@@ -159,7 +179,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', '*MA141'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'ME414': {
 			code: 'ME414',
@@ -168,7 +189,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111'],
-			color: ''
+			color: '#40D960',
+			obligatory: true
 		},
 		'EM330': {
 			code: 'EM330',
@@ -177,7 +199,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#6440D9'
+			color: '#40D990',
+			obligatory: true
 		},
 		'EM335': {
 			code: 'EM335',
@@ -186,7 +209,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM102'],
-			color: ''
+			color: '#B0D940',
+			obligatory: true
 		},
 		'EM360': {
 			code: 'EM360',
@@ -195,7 +219,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA211'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'F_329': {
 			code: 'F_329',
@@ -204,7 +229,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_129', 'MA111'],
-			color: ''
+			color: '#40B59D',
+			obligatory: true
 		},
 		'F_428': {
 			code: 'F_428',
@@ -213,7 +239,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_328'],
-			color: ''
+			color: '#88737E',
+			obligatory: true
 		},
 		'MA311': {
 			code: 'MA311',
@@ -222,7 +249,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['*MA211'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'MC102': {
 			code: 'MC102',
@@ -231,7 +259,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D97640'
+			color: '#40C1D9',
+			obligatory: true
 		},
 		'EM404': {
 			code: 'EM404',
@@ -240,7 +269,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM306', 'MA211'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'EM406': {
 			code: 'EM406',
@@ -249,7 +279,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM306', 'MA211'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'EM460': {
 			code: 'EM460',
@@ -258,7 +289,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM360'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'EM461': {
 			code: 'EM461',
@@ -267,7 +299,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA311'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'EM641': {
 			code: 'EM641',
@@ -276,7 +309,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM240'],
-			color: ''
+			color: '#B040D9',
+			obligatory: true
 		},
 		'F_429': {
 			code: 'F_429',
@@ -285,7 +319,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_329'],
-			color: ''
+			color: '#40B59D',
+			obligatory: true
 		},
 		'MA327': {
 			code: 'MA327',
@@ -294,7 +329,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*MA141'],
-			color: ''
+			color: '#D94040',
+			obligatory: true
 		},
 		'MS211': {
 			code: 'MS211',
@@ -303,7 +339,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MA141', 'MC102'],
-			color: ''
+			color: '#739E7E',
+			obligatory: true
 		},
 		'EM014': {
 			code: 'EM014',
@@ -312,7 +349,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM240'],
-			color: ''
+			color: '#B040D9',
+			obligatory: true
 		},
 		'EM503': {
 			code: 'EM503',
@@ -321,7 +359,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM102', 'MS211', 'EM406', 'EM461', 'MA327'],
-			color: ''
+			color: '#9E9053',
+			obligatory: true
 		},
 		'EM504': {
 			code: 'EM504',
@@ -330,7 +369,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM404'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'EM506': {
 			code: 'EM506',
@@ -339,7 +379,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM406'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'EM561': {
 			code: 'EM561',
@@ -348,7 +389,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM461'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'EM570': {
 			code: 'EM570',
@@ -357,7 +399,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM360', 'MA311'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'EM638': {
 			code: 'EM638',
@@ -366,7 +409,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM240', 'EM406'],
-			color: ''
+			color: '#9F6795',
+			obligatory: true
 		},
 		'EM737': {
 			code: 'EM737',
@@ -375,7 +419,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM240'],
-			color: ''
+			color: '#B040D9',
+			obligatory: true
 		},
 		'EM535': {
 			code: 'EM535',
@@ -384,7 +429,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM335'],
-			color: ''
+			color: '#B0D940',
+			obligatory: true
 		},
 		'EM607': {
 			code: 'EM607',
@@ -393,7 +439,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM404', 'MA327'],
-			color: ''
+			color: '#B36748',
+			obligatory: true
 		},
 		'EM665': {
 			code: 'EM665',
@@ -402,7 +449,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM240'],
-			color: ''
+			color: '#B040D9',
+			obligatory: true
 		},
 		'EM670': {
 			code: 'EM670',
@@ -411,7 +459,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM561', 'EM570'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'EM733': {
 			code: 'EM733',
@@ -420,7 +469,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM335'],
-			color: ''
+			color: '#B0D940',
+			obligatory: true
 		},
 		'EM909': {
 			code: 'EM909',
@@ -429,7 +479,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM200'],
-			color: ''
+			color: '#B0D940',
+			obligatory: true
 		},
 		'ET017': {
 			code: 'ET017',
@@ -438,7 +489,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_328', 'F_329'],
-			color: ''
+			color: '#64948E',
+			obligatory: true
 		},
 		'EM608': {
 			code: 'EM608',
@@ -447,7 +499,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM506', 'EM638', '*EM504', '*EM909'],
-			color: ''
+			color: '#9A975D',
+			obligatory: true
 		},
 		'EM703': {
 			code: 'EM703',
@@ -456,7 +509,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM461', 'EM570', 'EM607'],
-			color: ''
+			color: '#9A804D',
+			obligatory: true
 		},
 		'EM707': {
 			code: 'EM707',
@@ -465,7 +519,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM607'],
-			color: ''
+			color: '#B36748',
+			obligatory: true
 		},
 		'EM730': {
 			code: 'EM730',
@@ -474,7 +529,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM240', 'EM335'],
-			color: ''
+			color: '#B08D8D',
+			obligatory: true
 		},
 		'EM783': {
 			code: 'EM783',
@@ -483,7 +539,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM561', 'EM570'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'EM833': {
 			code: 'EM833',
@@ -492,7 +549,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM240'],
-			color: ''
+			color: '#B040D9',
+			obligatory: true
 		},
 		'EM853': {
 			code: 'EM853',
@@ -501,7 +559,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA450', 'MA311'],
-			color: '#D9AC40'
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'EM884': {
 			code: 'EM884',
@@ -510,7 +569,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM460', 'EM461'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'BE310': {
 			code: 'BE310',
@@ -519,7 +579,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA430'],
-			color: '#4088D9'
+			color: '#80D940',
+			obligatory: true
 		},
 		'CE738': {
 			code: 'CE738',
@@ -528,7 +589,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#9AD940'
+			color: '#D94070',
+			obligatory: true
 		},
 		'EM740': {
 			code: 'EM740',
@@ -537,7 +599,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM641'],
-			color: ''
+			color: '#B040D9',
+			obligatory: true
 		},
 		'EM790': {
 			code: 'EM790',
@@ -546,7 +609,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM200', 'EM503', '*EM608'],
-			color: ''
+			color: '#A3AB50',
+			obligatory: true
 		},
 		'EM807': {
 			code: 'EM807',
@@ -555,7 +619,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM703'],
-			color: ''
+			color: '#9A804D',
+			obligatory: true
 		},
 		'EM984': {
 			code: 'EM984',
@@ -564,7 +629,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM884'],
-			color: ''
+			color: '#8D8D50',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -573,7 +639,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'CE304': {
 			code: 'CE304',
@@ -582,7 +649,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D952'
+			color: '#40D9C1',
+			obligatory: true
 		},
 		'EM914': {
 			code: 'EM914',
@@ -591,7 +659,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200', 'AA475', 'EM103'],
-			color: '#40D988'
+			color: '#D9D140',
+			obligatory: true
 		},
 		'EM926': {
 			code: 'EM926',
@@ -600,7 +669,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM608', 'EM790', 'EM909'],
-			color: ''
+			color: '#A4B44F',
+			obligatory: true
 		},
 		'EM928': {
 			code: 'EM928',
@@ -609,7 +679,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM733'],
-			color: ''
+			color: '#B0D940',
+			obligatory: true
 		},
 		'EM916': {
 			code: 'EM916',
@@ -618,7 +689,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:10, D:0, HS:12, SL:0, C:12},
 			requisitos: ['AA200', 'AA475'],
-			color: '#40BED9'
+			color: '#D97040',
+			obligatory: true
 		},
 		'EM919': {
 			code: 'EM919',
@@ -627,7 +699,58 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'EM914'],
-			color: '#D94040'
+			color: '#D9D140',
+			obligatory: true
+		},
+		'GT001': {
+			code: 'GT001',
+			name: 'Ciência, Tecnologia e Sociedade',
+			ementa: 'A disciplina visa contribuir para a formação básica dos alunos de graduação dos vários cursos da Unicamp, através da análise das implicações sociais e políticas do desenvolvimento tecnológico nas sociedades contemporâneas, bem como seus determinantes econômicos gerais, com ênfase nas especificidades estruturais do Brasil.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: '',
+			color: '#5040D9',
+			obligatory: false
+		},
+		'HG023': {
+			code: 'HG023',
+			name: 'Introdução à Filosofia da Ciência',
+			ementa: 'Discussão dos problemas e conceitos fundamentais da filosofia contemporânea da ciência. O conceito de cientificidade. A ciência experimental e o método hipotético-dedutivo. Explicações causais, teleológicas, histórico-genéticas, probabilísticas, estruturais, funcionais.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
+			requisitos: '',
+			color: '#4060D9',
+			obligatory: false
+		},
+		'HZ291': {
+			code: 'HZ291',
+			name: 'Tópicos Especiais de Humanidades I',
+			ementa: 'O curso é dedicado a uma introdução das relações entre ciência, tecnologia e a sociedade contemporânea. Será dada ênfase especial ao caso brasileiro, tentando mostrar como se concretizam essas relações num contexto específico. A abordagem será interdisciplinar, através de uma contribuição da Antropologia, da Ciência Política, da História e da Sociologia. Obs.: Sendo uma disciplina reservada aos cursos de Engenharia, nos quais consta como eletiva em seus currículos, os alunos de Humanidades, Artes e do Curso de Filosofia não poderão cursar esta disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D940D1',
+			obligatory: false
+		},
+		'HZ292': {
+			code: 'HZ292',
+			name: 'Tópicos Especiais de Humanidades II',
+			ementa: 'Filosofia da ciência. Elementos de sociologia. Sociologia rural. Antropologia. Deontologia.Obs.: Sendo uma disciplina reservada aos cursos de engenharia, nos quais consta como eletiva em seus currículos, os alunos das Áreas de Humanidades, Artes e do curso de Filosofia não poderão cursar esta disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9A040',
+			obligatory: false
+		},
+		'HZ293': {
+			code: 'HZ293',
+			name: 'Tópicos Especiais de Humanidades III',
+			ementa: 'O curso abordará a análise dos aspectos sociais das inovações tecnológicas e da pesquisa científica. No decorrer das exposições e seminários, serão desenvolvidas análises de casos precisos, tentando incorporar um quadro de referência comparativo entre a sociedade brasileira e o contexto internacional.Obs.: Sendo uma disciplina reservada aos cursos de Engenharia, nos quais consta como eletiva em seus currículos, os alunos das Áreas de Humanidades, Artes e do curso de Filosofia não poderão cursar esta disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#50D940',
+			obligatory: false
 		}
 	}
 };

@@ -35,6 +35,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 16,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-2': {
+			credits: 10,
+			hasRestrictions: true,
+			subjects: ['EF428', 'EF441', 'EF442', 'EF443', 'EF444', 'EF445', 'EF446', 'EF447', 'EF449', 'EF450', 'EF451'],
+		},
+	},
+
 	subjects: {
 		'BA110': {
 			code: 'BA110',
@@ -43,7 +56,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#407DD9'
+			color: '#40ACD9',
+			obligatory: true
 		},
 		'EF109': {
 			code: 'EF109',
@@ -52,7 +66,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D98540'
+			color: '#9AD940',
+			obligatory: true
 		},
 		'EF112': {
 			code: 'EF112',
@@ -61,7 +76,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4740D9'
+			color: '#D9D040',
+			obligatory: true
 		},
 		'EF113': {
 			code: 'EF113',
@@ -70,7 +86,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9409C'
+			color: '#D040D9',
+			obligatory: true
 		},
 		'EF114': {
 			code: 'EF114',
@@ -79,7 +96,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D94F'
+			color: '#4040D9',
+			obligatory: true
 		},
 		'EF115': {
 			code: 'EF115',
@@ -88,7 +106,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D95740'
+			color: '#4052D9',
+			obligatory: true
 		},
 		'EF116': {
 			code: 'EF116',
@@ -97,7 +116,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94040'
+			color: '#D940AC',
+			obligatory: true
 		},
 		'BA210': {
 			code: 'BA210',
@@ -106,7 +126,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BA110'],
-			color: ''
+			color: '#40ACD9',
+			obligatory: true
 		},
 		'BB110': {
 			code: 'BB110',
@@ -115,7 +136,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#A340D9'
+			color: '#D94052',
+			obligatory: true
 		},
 		'EF209': {
 			code: 'EF209',
@@ -124,7 +146,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9406E'
+			color: '#6440D9',
+			obligatory: true
 		},
 		'EF212': {
 			code: 'EF212',
@@ -133,7 +156,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#BA40D9'
+			color: '#4064D9',
+			obligatory: true
 		},
 		'EF213': {
 			code: 'EF213',
@@ -142,7 +166,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D97D'
+			color: '#D9409A',
+			obligatory: true
 		},
 		'EF214': {
 			code: 'EF214',
@@ -151,7 +176,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4066D9'
+			color: '#ACD940',
+			obligatory: true
 		},
 		'EF215': {
 			code: 'EF215',
@@ -160,7 +186,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40ABD9'
+			color: '#D0D940',
+			obligatory: true
 		},
 		'EL683': {
 			code: 'EL683',
@@ -169,7 +196,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D1D940'
+			color: '#40D940',
+			obligatory: true
 		},
 		'BF310': {
 			code: 'BF310',
@@ -178,7 +206,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['BA210', 'BB110'],
-			color: ''
+			color: '#8D7696',
+			obligatory: true
 		},
 		'EF309': {
 			code: 'EF309',
@@ -187,7 +216,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BA210'],
-			color: ''
+			color: '#40ACD9',
+			obligatory: true
 		},
 		'EF312': {
 			code: 'EF312',
@@ -196,7 +226,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#404FD9'
+			color: '#5240D9',
+			obligatory: true
 		},
 		'EF313': {
 			code: 'EF313',
@@ -205,7 +236,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94057'
+			color: '#88D940',
+			obligatory: true
 		},
 		'EF314': {
 			code: 'EF314',
@@ -214,7 +246,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#40D964',
+			obligatory: true
 		},
 		'EF315': {
 			code: 'EF315',
@@ -223,7 +256,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D994'
+			color: '#8840D9',
+			obligatory: true
 		},
 		'EF316': {
 			code: 'EF316',
@@ -232,7 +266,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#BAD940'
+			color: '#D940BE',
+			obligatory: true
 		},
 		'BF410': {
 			code: 'BF410',
@@ -241,7 +276,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['*BF310'],
-			color: ''
+			color: '#8D7696',
+			obligatory: true
 		},
 		'EF411': {
 			code: 'EF411',
@@ -250,7 +286,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#8CD940'
+			color: '#D940D0',
+			obligatory: true
 		},
 		'EF412': {
 			code: 'EF412',
@@ -259,7 +296,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D96E40'
+			color: '#409AD9',
+			obligatory: true
 		},
 		'EF413': {
 			code: 'EF413',
@@ -268,7 +306,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40C2D9'
+			color: '#D98840',
+			obligatory: true
 		},
 		'EF414': {
 			code: 'EF414',
@@ -277,7 +316,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D9AB'
+			color: '#40D9D0',
+			obligatory: true
 		},
 		'EF415': {
 			code: 'EF415',
@@ -286,7 +326,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D940C9'
+			color: '#64D940',
+			obligatory: true
 		},
 		'EF416': {
 			code: 'EF416',
@@ -295,7 +336,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9B340'
+			color: '#BED940',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -304,7 +346,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EF511': {
 			code: 'EF511',
@@ -313,7 +356,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94085'
+			color: '#7640D9',
+			obligatory: true
 		},
 		'EF512': {
 			code: 'EF512',
@@ -322,7 +366,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BF410'],
-			color: ''
+			color: '#8D7696',
+			obligatory: true
 		},
 		'EF513': {
 			code: 'EF513',
@@ -331,7 +376,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EF213', 'EF316'],
-			color: ''
+			color: '#D940AC',
+			obligatory: true
 		},
 		'EF514': {
 			code: 'EF514',
@@ -340,7 +386,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#A3D940'
+			color: '#D94076',
+			obligatory: true
 		},
 		'EF521': {
 			code: 'EF521',
@@ -349,7 +396,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:6, D:0, HS:8, SL:2, C:8},
 			requisitos: ['AA450'],
-			color: '#D140D9'
+			color: '#40D952',
+			obligatory: true
 		},
 		'EL511': {
 			code: 'EL511',
@@ -358,7 +406,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#4094D9'
+			color: '#AC40D9',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -367,7 +416,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EF611': {
 			code: 'EF611',
@@ -376,7 +426,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA450'],
-			color: '#40D9C2'
+			color: '#D9AC40',
+			obligatory: true
 		},
 		'EF612': {
 			code: 'EF612',
@@ -385,7 +436,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#75D940'
+			color: '#D94088',
+			obligatory: true
 		},
 		'EF613': {
 			code: 'EF613',
@@ -394,7 +446,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9C940'
+			color: '#BE40D9',
+			obligatory: true
 		},
 		'EF614': {
 			code: 'EF614',
@@ -403,7 +456,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#40D966'
+			color: '#40D99A',
+			obligatory: true
 		},
 		'EF621': {
 			code: 'EF621',
@@ -412,7 +466,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:6, D:0, HS:8, SL:2, C:8},
 			requisitos: ['EF521'],
-			color: ''
+			color: '#40D952',
+			obligatory: true
 		},
 		'EF622': {
 			code: 'EF622',
@@ -421,7 +476,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940B3'
+			color: '#D9BE40',
+			obligatory: true
 		},
 		'EL212': {
 			code: 'EL212',
@@ -430,7 +486,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#47D940'
+			color: '#D95240',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -439,7 +496,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EF711': {
 			code: 'EF711',
@@ -448,7 +506,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EF313'],
-			color: ''
+			color: '#88D940',
+			obligatory: true
 		},
 		'EF714': {
 			code: 'EF714',
@@ -457,7 +516,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EF614'],
-			color: ''
+			color: '#40D99A',
+			obligatory: true
 		},
 		'EF722': {
 			code: 'EF722',
@@ -466,7 +526,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#7540D9'
+			color: '#40D976',
+			obligatory: true
 		},
 		'EF723': {
 			code: 'EF723',
@@ -475,7 +536,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D99C40'
+			color: '#D99A40',
+			obligatory: true
 		},
 		'EL774': {
 			code: 'EL774',
@@ -484,7 +546,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200', 'AA445'],
-			color: '#5ED940'
+			color: '#40D988',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -493,7 +556,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EF811': {
 			code: 'EF811',
@@ -502,7 +566,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#8C40D9'
+			color: '#9A40D9',
+			obligatory: true
 		},
 		'EF814': {
 			code: 'EF814',
@@ -511,7 +576,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: ['EF714'],
-			color: ''
+			color: '#40D99A',
+			obligatory: true
 		},
 		'EF822': {
 			code: 'EF822',
@@ -520,7 +586,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#5E40D9'
+			color: '#52D940',
+			obligatory: true
 		},
 		'EL874': {
 			code: 'EL874',
@@ -529,7 +596,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['EL774'],
-			color: ''
+			color: '#40D988',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -538,7 +606,118 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'EF428': {
+			code: 'EF428',
+			name: 'Natação',
+			ementa: 'Estudo teórico-prático da Natação. Procedimentos pedagógicos para o seu ensino.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4076D9',
+			obligatory: false
+		},
+		'EF441': {
+			code: 'EF441',
+			name: 'Basquetebol',
+			ementa: 'Estudo teórico-prático do Basquetebol. Procedimentos pedagógicos para o seu ensino.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D94064',
+			obligatory: false
+		},
+		'EF442': {
+			code: 'EF442',
+			name: 'Futebol de Campo',
+			ementa: 'Estudo teórico-prático do Futebol de Campo. Procedimentos pedagógicos para o seu ensino.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#76D940',
+			obligatory: false
+		},
+		'EF443': {
+			code: 'EF443',
+			name: 'Futsal',
+			ementa: 'Estudo teórico-prático do Futsal. Procedimentos pedagógicos para o seu ensino.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40BED9',
+			obligatory: false
+		},
+		'EF444': {
+			code: 'EF444',
+			name: 'Ginástica Geral',
+			ementa: 'Estudo teórico-prático da Ginástica Geral. Procedimentos pedagógicos para o seu ensino.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D96440',
+			obligatory: false
+		},
+		'EF445': {
+			code: 'EF445',
+			name: 'Ginástica Artística',
+			ementa: 'Estudo teórico-prático da Ginástica Artística. Procedimentos pedagógicos para o seu ensino.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D94040',
+			obligatory: false
+		},
+		'EF446': {
+			code: 'EF446',
+			name: 'Ginástica Rítmica',
+			ementa: 'Estudo teórico-prático da Ginástica Rítmica. Procedimentos pedagógicos para o seu ensino.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4088D9',
+			obligatory: false
+		},
+		'EF447': {
+			code: 'EF447',
+			name: 'Handebol',
+			ementa: 'Estudo teórico-prático do Handebol. Procedimentos pedagógicos para o seu ensino.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D97640',
+			obligatory: false
+		},
+		'EF449': {
+			code: 'EF449',
+			name: 'Voleibol',
+			ementa: 'Estudo teórico-prático do Voleibol. Procedimentos pedagógicos para o seu ensino.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D0D9',
+			obligatory: false
+		},
+		'EF450': {
+			code: 'EF450',
+			name: 'Esportes de Raquete',
+			ementa: 'Estudo teórico-prático dos Esportes de Raquete. Procedimentos pedagógicos para o seu ensino.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9BE',
+			obligatory: false
+		},
+		'EF451': {
+			code: 'EF451',
+			name: 'Ginásticas Competitivas',
+			ementa: 'Estudo teórico-prático das Ginásticas Competitivas: Ginástica Rítmica, Ginástica Artística, Ginástica Acrobática, Trampolim Acrobático, entre outras. Procedimentos pedagógicos para o ensino.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9AC',
+			obligatory: false
 		}
 	}
 };

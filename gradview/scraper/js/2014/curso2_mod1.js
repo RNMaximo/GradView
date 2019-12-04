@@ -35,6 +35,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 42,
+			hasRestrictions: true,
+			subjects: ['BB125', 'CE138', 'CE451', 'CE738', 'CE939', 'EU502', 'MA044', 'MA502', 'MA602', 'ME502', 'ME601', 'ME612', 'ME630', 'ME652', 'ME661', 'ME701', 'ME706', 'ME715', 'ME716', 'ME720', 'ME721', 'ME730', 'ME732', 'ME850', 'MS317', 'MS428', 'MS515', 'MS580', 'MS614', 'MS680', 'MS714', 'MS715', 'TA541'],
+		},
+		'elet-2': {
+			credits: 12,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'MA111': {
 			code: 'MA111',
@@ -43,7 +56,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#407DD9'
+			color: '#4085D9',
+			obligatory: true
 		},
 		'MA141': {
 			code: 'MA141',
@@ -52,7 +66,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94040'
+			color: '#4E40D9',
+			obligatory: true
 		},
 		'ME100': {
 			code: 'ME100',
@@ -61,7 +76,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D99C40'
+			color: '#D94069',
+			obligatory: true
 		},
 		'ME110': {
 			code: 'ME110',
@@ -70,7 +86,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9409C'
+			color: '#D94093',
+			obligatory: true
 		},
 		'ME111': {
 			code: 'ME111',
@@ -79,7 +96,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#5ED940'
+			color: '#7740D9',
+			obligatory: true
 		},
 		'LA122': {
 			code: 'LA122',
@@ -88,7 +106,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#D940BD',
+			obligatory: true
 		},
 		'MA211': {
 			code: 'MA211',
@@ -97,7 +116,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', '*MA141'],
-			color: ''
+			color: '#4763D9',
+			obligatory: true
 		},
 		'MA327': {
 			code: 'MA327',
@@ -106,7 +126,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*MA141'],
-			color: ''
+			color: '#4E40D9',
+			obligatory: true
 		},
 		'MC102': {
 			code: 'MC102',
@@ -115,7 +136,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#BA40D9'
+			color: '#40D9AF',
+			obligatory: true
 		},
 		'ME210': {
 			code: 'ME210',
@@ -124,7 +146,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'ME100'],
-			color: ''
+			color: '#8D63A1',
+			obligatory: true
 		},
 		'LA242': {
 			code: 'LA242',
@@ -133,7 +156,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:3, D:3, HS:7, SL:0, C:4},
 			requisitos: ['AA200'],
-			color: '#5E40D9'
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'MA311': {
 			code: 'MA311',
@@ -142,7 +166,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['*MA211'],
-			color: ''
+			color: '#4763D9',
+			obligatory: true
 		},
 		'ME310': {
 			code: 'ME310',
@@ -151,7 +176,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA211', 'ME210'],
-			color: ''
+			color: '#6A63BD',
+			obligatory: true
 		},
 		'ME319': {
 			code: 'ME319',
@@ -160,7 +186,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200', 'MA211', 'ME210'],
-			color: '#BAD940'
+			color: '#6A63BD',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -169,7 +196,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ME419': {
 			code: 'ME419',
@@ -178,7 +206,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ME310', 'ME319'],
-			color: ''
+			color: '#6A63BD',
+			obligatory: true
 		},
 		'ME430': {
 			code: 'ME430',
@@ -187,7 +216,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ME319'],
-			color: ''
+			color: '#6A63BD',
+			obligatory: true
 		},
 		'ME501': {
 			code: 'ME501',
@@ -196,7 +226,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ME310'],
-			color: ''
+			color: '#6A63BD',
+			obligatory: true
 		},
 		'MS211': {
 			code: 'MS211',
@@ -205,7 +236,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MA141', 'MC102'],
-			color: ''
+			color: '#458ACB',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -214,7 +246,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ME524': {
 			code: 'ME524',
@@ -223,7 +256,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:1, O:1, D:0, HS:6, SL:5, C:6},
 			requisitos: ['MC102', 'ME310', 'ME319', 'MS211'],
-			color: ''
+			color: '#568ABD',
+			obligatory: true
 		},
 		'ME613': {
 			code: 'ME613',
@@ -232,7 +266,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['MA327', 'ME419'],
-			color: ''
+			color: '#5C52CB',
+			obligatory: true
 		},
 		'ME623': {
 			code: 'ME623',
@@ -241,7 +276,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['ME419'],
-			color: ''
+			color: '#6A63BD',
+			obligatory: true
 		},
 		'ME639': {
 			code: 'ME639',
@@ -250,7 +286,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D97D'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'MS512': {
 			code: 'MS512',
@@ -259,7 +296,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA327', 'MS211'],
-			color: ''
+			color: '#4A65D2',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -268,7 +306,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ME607': {
 			code: 'ME607',
@@ -277,7 +316,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['ME613'],
-			color: ''
+			color: '#5C52CB',
+			obligatory: true
 		},
 		'ME610': {
 			code: 'ME610',
@@ -286,7 +326,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['ME613', 'ME623'],
-			color: ''
+			color: '#635BC4',
+			obligatory: true
 		},
 		'ME651': {
 			code: 'ME651',
@@ -295,7 +336,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['ME319'],
-			color: ''
+			color: '#6A63BD',
+			obligatory: true
 		},
 		'ME731': {
 			code: 'ME731',
@@ -304,7 +346,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['ME524', 'ME613'],
-			color: ''
+			color: '#596EC4',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -313,7 +356,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ME705': {
 			code: 'ME705',
@@ -322,7 +366,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ME419'],
-			color: ''
+			color: '#6A63BD',
+			obligatory: true
 		},
 		'ME710': {
 			code: 'ME710',
@@ -331,7 +376,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:0, C:8},
 			requisitos: ['ME610'],
-			color: ''
+			color: '#635BC4',
+			obligatory: true
 		},
 		'ME714': {
 			code: 'ME714',
@@ -340,7 +386,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: ['ME613'],
-			color: ''
+			color: '#5C52CB',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -349,7 +396,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ME810': {
 			code: 'ME810',
@@ -358,7 +406,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:10, D:0, HS:12, SL:0, C:12},
 			requisitos: ['ME710'],
-			color: ''
+			color: '#635BC4',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -367,7 +416,338 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'BB125': {
+			code: 'BB125',
+			name: 'Fundamentos de Biologia Molecular',
+			ementa: 'Estrutura do DNA e replicação. Mutações e reparo do DNA. Estrutura do RNA e transcrição. Síntese e endereçamento de proteínas. Regulação da expressão gênica. Uso de técnicas recombinantes no diagnóstico e tratamento de saúde (sequenciamento de DNA, southern/northern/western blotting, clonagem, PCR, e outros).',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D99340',
+			obligatory: false
+		},
+		'CE138': {
+			code: 'CE138',
+			name: 'Estratégias de Empresas para Engenharia',
+			ementa: 'Conceitos básicos de economia. Introdução à macroeconomia. Processo de globalização e de reestruturação produtiva. Estratégias empresariais: inovação, concorrência e estratégias competitivas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['MA311'],
+			color: '#4763D9',
+			obligatory: false
+		},
+		'CE451': {
+			code: 'CE451',
+			name: 'Métodos Quantitativos Aplicados à Economia Financeira',
+			ementa: 'Processo decisório em condições de risco. Risco e retorno de um ativo e de uma carteira. Seleção de carteiras e teoria de Markowitz. Modelo de índice único. Modelo de índice múltiplo. Outros modelos de escolha de carteiras. Análise da utilidade do investidor. Modelo de precificação de ativos. Modelo de formação de preços por arbritagem. Eficiência de mercado. Mercado de opções e métodos de apreçamento. Mercado de renda fixa: formação de preços e administração de carteiras.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D96940',
+			obligatory: false
+		},
+		'CE738': {
+			code: 'CE738',
+			name: 'Economia para Engenharia',
+			ementa: 'O processo de produção visto pelas óticas micro e macroeconômicas. Produção e propriedade. Produção como técnica e como processo social. Agregação da produção. Mercados. Papel do governo.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D985',
+			obligatory: false
+		},
+		'CE939': {
+			code: 'CE939',
+			name: 'Gestão de Marketing',
+			ementa: 'Conceito de Marketing. Mercados e estruturas de mercado. O composto mercadológico. Abordagem a partir da análise, adaptação, ativação e avaliação. Abordagem a partir do produto, preço, promoção, ponto de vista e pós-venda. Mercados específicos: caracterização, análise, tendências. Plano de marketing.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'EU502': {
+			code: 'EU502',
+			name: 'Metrologia Industrial',
+			ementa: 'O sistema brasileiro de normalização. Terminologia normalizada sobre medição, desvios e erros. Sistemas de medição. Erros e incertezas. Calibração de instrumentos. Rastreabilidade.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ME319'],
+			color: '#6A63BD',
+			obligatory: false
+		},
+		'MA044': {
+			code: 'MA044',
+			name: 'Matemática IV',
+			ementa: 'Números complexos. Funções de variável complexa. Equações de Cauchy-Riemann. Integral de linha. Sequências e séries de números complexos. Séries de potências. Teorema dos resíduos. Transformações conformes.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#77D940',
+			obligatory: false
+		},
+		'MA502': {
+			code: 'MA502',
+			name: 'Análise I',
+			ementa: 'Conjuntos finitos e infinitos. Números reais. Sequências e séries numéricas. Funções contínuas. Funções deriváveis.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: ['AA200'],
+			color: '#40D95C',
+			obligatory: false
+		},
+		'MA602': {
+			code: 'MA602',
+			name: 'Análise II',
+			ementa: 'Integral de Riemann. Integral imprópria. Sequências e séries de funções. Convergência uniforme. Teorema de aproximação de Weierstrass. Teorema de Ascoli.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#4ED940',
+			obligatory: false
+		},
+		'ME502': {
+			code: 'ME502',
+			name: 'Processos Estocásticos II',
+			ementa: 'Passeio aleatório simples: leis de arcoseno, recorrência/transiência, funções de Green. Martingais: desigualdades básicas, convergência, teorema de parada opcional. Aplicações. Movimento Browniano. Processos estacionários.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME501'],
+			color: '#6A63BD',
+			obligatory: false
+		},
+		'ME601': {
+			code: 'ME601',
+			name: 'Tópicos Especiais em Estatística Aplicada I',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D9BD40',
+			obligatory: false
+		},
+		'ME612': {
+			code: 'ME612',
+			name: 'Métodos Estatísticos para Ciências Biológicas',
+			ementa: 'Conceitos básicos de epidemiologia. Ensaios clínicos aleatorizados. Função de sobrevivência e função risco. Principais distribuições utilizadas em análise de sobrevivência. Tabelas de vida em análise de sobrevivência. Comparações de curva de sobrevivência. Modelos paramétricos e semi-paramétricos em análise de sobrevivência. Elaboração de um relatório final que inclua análise de dados.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: '#5C52CB',
+			obligatory: false
+		},
+		'ME630': {
+			code: 'ME630',
+			name: 'Iniciação Científica I',
+			ementa: 'Atividades de iniciação científica em estatística e/ou probabilidade supervisionadas por docentes do curso e aprovadas pela comissão de docentes responsáveis pela disciplina, resultando em apresentação de seminário(s) e relatório técnico.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#405CD9',
+			obligatory: false
+		},
+		'ME652': {
+			code: 'ME652',
+			name: 'Controle Estatístico de Qualidade II',
+			ementa: 'Pressupostos e limitações do CEP básico. Técnicas especiais de CEP univariado. CEP para processos multivariados. Controle de engenharia de processos. Experimentos planejados para melhoria de processos. Otimização de processos com experimentos. Amostragem de aceitação.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME623', 'ME651', 'ME731'],
+			color: '#6467BF',
+			obligatory: false
+		},
+		'ME661': {
+			code: 'ME661',
+			name: 'Métodos Não Paramétricos',
+			ementa: 'O histograma. Histograma como um estimador de máxima verossimilhança. Estatísticas do histograma. Estimação de densidades pelo método de Kernel. Estatísticas do estimador por Kernel. A escolha do parâmetro de suavização. Outros estimadores de densidade: séries ortogonais, máxima verossimilhança penalizada. O estimador de Nadaraya-Watson. O método K-nn. Técnicas de regressão não paramétrica para dados correlacionados. Conjunto de dados com outliers: Lowess, L-suavização, R-suavização. Técnicas de regressão não paramétrica por funções de base.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME613'],
+			color: '#5C52CB',
+			obligatory: false
+		},
+		'ME701': {
+			code: 'ME701',
+			name: 'Tópicos Especiais em Estatística Aplicada II',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#A140D9',
+			obligatory: false
+		},
+		'ME706': {
+			code: 'ME706',
+			name: 'Robustez',
+			ementa: 'Modelos normal e de locação-escala. Estimação parâmetros, interesse no outlier e suas causas. Propriedades ótimas de estimadores tradicionais sob hipóteses estritas e impacto dos outliers. Distribuição normal: otimalidade da média amostral sob normalidade. Resistência. Alternativas resistentes aos estimadores tradicionais. Invariância e equivariância dos estimadores de locação e de escala. Curva de sensibilidade e ponto de ruptura. Noção ingênua de robustez qualitativa. Relação entre resistência e robustez qualitativa. Robustez em eficiência.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME613'],
+			color: '#5C52CB',
+			obligatory: false
+		},
+		'ME715': {
+			code: 'ME715',
+			name: 'Econometria',
+			ementa: 'Revisão de técnicas de regressão. Extensões. Equações simultâneas. Mínimos quadrados generalizados. Variáveis instrumentais. Identificação. Estimação em sistemas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME613'],
+			color: '#5C52CB',
+			obligatory: false
+		},
+		'ME716': {
+			code: 'ME716',
+			name: 'Teoria da Informação',
+			ementa: 'Entropia, entropia relativa e informação mútua. Taxas de entropia de um processo estocástico: cadeias de Markov, taxas de entropia de um passeio aleatório. Compressão de dados. Exemplos de códigos. Desigualdade de Kraft. Código de Huffman. Shannon-Fano-Elias coding. Complexidade de Kolmogorov. Modelos de Computação. Complexidade de Kolmogorov e entropia. Algoritmos aleatórios e sequências incompreensíveis. A estatística suficiente de Kolmogorov. Introdução à Channel Capacity. Entropia máxima e estimação espectral. Introdução à teoria da taxa de distorção. Desigualdades em teoria da informação.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME419'],
+			color: '#6A63BD',
+			obligatory: false
+		},
+		'ME720': {
+			code: 'ME720',
+			name: 'Modelos Lineares Generalizados',
+			ementa: 'Revisão de Modelos Lineares. Conceitos básicos, terminologia e notações. Família exponencial de distribuições e Modelos Lineares Generalizados. Estimação e Inferência. Verificação do ajuste do modelo. Modelos para dados binários. Modelos para dados de contagem. Sobredispersão e modelo binomial negativa. Modelos para dados de contagem com excesso de zeros. Modelos não lineares e Modelos lineares mistos. Elaboração de relatórios que inclua análise de dados.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME524', 'ME613'],
+			color: '#596EC4',
+			obligatory: false
+		},
+		'ME721': {
+			code: 'ME721',
+			name: 'Demografia',
+			ementa: 'Estudo de população. Recenseamento: normas, erros, composição por sexo, idade, etc. Natalidade, migrações, mortalidade. Tábuas de mortalidade. Modelos estocásticos de crescimento populacional. Projeções.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME419'],
+			color: '#6A63BD',
+			obligatory: false
+		},
+		'ME730': {
+			code: 'ME730',
+			name: 'Iniciação Científica II',
+			ementa: 'Atividades de iniciação científica em estatística e/ou probabilidade supervisionadas por docentes do curso e aprovadas pela comissão de docentes responsáveis pela disciplina, resultando em apresentação de seminário(s) e relatório técnico.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#CB40D9',
+			obligatory: false
+		},
+		'ME732': {
+			code: 'ME732',
+			name: 'Métodos em Análise Multivariada II',
+			ementa: 'Análise de agrupamentos: tipos de algoritmos, similaridade, \"k-means\", hierárquicos e outros, métodos de validação. Análise de Associação: conjuntos de itens frequentes, regras booleanas, outros tipos de regras, avaliação de padrões de associação. Classificação: árvores de decisão, aprendizado de máquina, vizinho mais próximo, bayesiano, métodos de grupos e avaliação de classificadores. Detecção de anomalias. Elaboração de um relatório final que inclua análise de dados.',
+			semestre: 1,
+			vector: {T:4, P:0, L:1, O:0, D:0, HS:5, SL:5, C:5},
+			requisitos: '',
+			color: '#A1D940',
+			obligatory: false
+		},
+		'ME850': {
+			code: 'ME850',
+			name: 'Seminários de Estatística',
+			ementa: 'Palestras sobre temas em diversas áreas da estatística, apresentados por profissionais internos e externos ao âmbito acadêmico.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ME419'],
+			color: '#6A63BD',
+			obligatory: false
+		},
+		'MS317': {
+			code: 'MS317',
+			name: 'Matemática Financeira',
+			ementa: 'Noção de taxa de juros. Fluxos de caixa. A calculadora financeira. Operações financeiras. Mercado financeiro. Sistemas de amortização e planilhas financeiras. Comparação entre alternativas de investimento. Extensões.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MA111'],
+			color: '#4085D9',
+			obligatory: false
+		},
+		'MS428': {
+			code: 'MS428',
+			name: 'Programação Linear',
+			ementa: 'Formulação de problemas de programação linear. Resolução Gráfica. Método Simplex. Teoria de dualidade. Análise de sensibilidade e análise paramétrica. Algoritmos de pontos interiores.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MA211', 'MA327'],
+			color: '#4B52D9',
+			obligatory: false
+		},
+		'MS515': {
+			code: 'MS515',
+			name: 'Métodos Probabilísticos em Pesquisa Operacional',
+			ementa: 'Programação dinâmica determinística e estocástica. Modelos determinísticos e probabilísticos de estoques.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME210'],
+			color: '#8D63A1',
+			obligatory: false
+		},
+		'MS580': {
+			code: 'MS580',
+			name: 'Introdução à Teoria Fuzzy',
+			ementa: 'O conceito de subjetividade e os conjuntos fuzzy. Álgebra de conjuntos fuzzy. Números fuzzy. Relações binárias fuzzy. Composição. Equações relacionais. Medidas fuzzy. Integrais fuzzy. Esperança fuzzy. Sistemas variacionais fuzzy. Aplicações em biomatemática.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MA311', 'MS211', 'ME210'],
+			color: '#5E70C2',
+			obligatory: false
+		},
+		'MS614': {
+			code: 'MS614',
+			name: 'Simulação de Sistemas',
+			ementa: 'Noções de estruturas de dados, cadeias de Markov, teoria de filas e teoria de estoques. Geração de variáveis aleatórias: números aleatórios, métodos da transformação inversa, da convolução e da rejeição, métodos para distribuições clássicas. Simulação de sistemas discretos com lista de eventos futuros. Simulação de sistemas contínuos.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MC102', 'ME210'],
+			color: '#679EA8',
+			obligatory: false
+		},
+		'MS680': {
+			code: 'MS680',
+			name: 'Modelos Matemáticos para Biologia',
+			ementa: 'Formulação e estudo de modelos matemáticos para dinâmica populacional, processos bioquímicos e fisiologia, por meio de equações recursivas e equações diferenciais ordinárias.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MA211'],
+			color: '#4763D9',
+			obligatory: false
+		},
+		'MS714': {
+			code: 'MS714',
+			name: 'Laboratório de Simulação de Sistemas',
+			ementa: 'Desenvolvimento de projetos computacionais, em temas relacionados com teoria de filas, teoria de estoques, planejamento de produção, etc., utilizando pacotes de simulação de sistemas.',
+			semestre: 1,
+			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['MS614'],
+			color: '#679EA8',
+			obligatory: false
+		},
+		'MS715': {
+			code: 'MS715',
+			name: 'Planejamento e Controle de Produção',
+			ementa: 'A função de produção e seus parâmetros básicos. Custos. Critérios de decisão. Medidas de trabalho. Sistemas de produção. Estoques. Planos e programas integrados. Programação e controle de operações. Será dada ênfase aos modelos matemáticos e aos problemas de planejamento e controle de produção.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MS428'],
+			color: '#4B52D9',
+			obligatory: false
+		},
+		'TA541': {
+			code: 'TA541',
+			name: 'Análise Sensorial de Alimentos',
+			ementa: 'O ambiente dos testes sensoriais e outros fatores que influenciam a avaliação sensorial. Métodos Sensoriais: a) métodos discriminativos, b) métodos descritivos, c) métodos afetivos. Análise estatística univariada (ANOVA). Seleção de provadores. Correlação entre medidas sensoriais e instrumentais. Princípios básicos sobre psicofísica: lei de Stevens e Threshold.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#CBD940',
+			obligatory: false
 		}
 	}
 };

@@ -39,6 +39,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 12,
+			hasRestrictions: true,
+			subjects: ['GE001', 'QA112'],
+		},
+		'elet-2': {
+			credits: 6,
+			hasRestrictions: true,
+			subjects: ['EN303', 'EN304', 'EN902', 'EN903', 'EN904', 'EN905', 'EN906', 'EN907', 'EN908', 'EN909', 'EN910', 'EN911', 'EN912', 'EN913', 'EN914', 'EN915', 'EN916', 'EN917', 'EN918', 'EN919', 'EN920'],
+		},
+	},
+
 	subjects: {
 		'BA133': {
 			code: 'BA133',
@@ -47,7 +60,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D98C40'
+			color: '#C7D940',
+			obligatory: true
 		},
 		'BB123': {
 			code: 'BB123',
@@ -56,7 +70,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:1, O:0, D:0, HS:5, SL:4, C:5},
 			requisitos: '',
-			color: '#8CD940'
+			color: '#D94080',
+			obligatory: true
 		},
 		'BB125': {
 			code: 'BB125',
@@ -65,7 +80,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D9B3'
+			color: '#47D940',
+			obligatory: true
 		},
 		'BH125': {
 			code: 'BH125',
@@ -74,7 +90,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D96640'
+			color: '#D98040',
+			obligatory: true
 		},
 		'BH127': {
 			code: 'BH127',
@@ -83,7 +100,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#8C40D9'
+			color: '#40A3D9',
+			obligatory: true
 		},
 		'EN112': {
 			code: 'EN112',
@@ -92,7 +110,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: '',
-			color: '#D94040'
+			color: '#40D9B9',
+			obligatory: true
 		},
 		'EN280': {
 			code: 'EN280',
@@ -101,7 +120,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#408CD9'
+			color: '#D940AA',
+			obligatory: true
 		},
 		'EN390': {
 			code: 'EN390',
@@ -110,7 +130,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#40D98E',
+			obligatory: true
 		},
 		'BF284': {
 			code: 'BF284',
@@ -119,7 +140,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:4, O:0, D:0, HS:7, SL:7, C:7},
 			requisitos: ['BA133', 'BB123'],
-			color: ''
+			color: '#D08D60',
+			obligatory: true
 		},
 		'BI214': {
 			code: 'BI214',
@@ -128,7 +150,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['BB123', 'BH125'],
-			color: ''
+			color: '#D96060',
+			obligatory: true
 		},
 		'BM215': {
 			code: 'BM215',
@@ -137,7 +160,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['*BB123', '*BH125'],
-			color: ''
+			color: '#D96060',
+			obligatory: true
 		},
 		'EN212': {
 			code: 'EN212',
@@ -146,7 +170,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EN112'],
-			color: ''
+			color: '#40D9B9',
+			obligatory: true
 		},
 		'EN230': {
 			code: 'EN230',
@@ -155,7 +180,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EN112'],
-			color: ''
+			color: '#40D9B9',
+			obligatory: true
 		},
 		'EN242': {
 			code: 'EN242',
@@ -164,7 +190,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D940D9'
+			color: '#4063D9',
+			obligatory: true
 		},
 		'EN490': {
 			code: 'EN490',
@@ -173,7 +200,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EN390'],
-			color: ''
+			color: '#40D98E',
+			obligatory: true
 		},
 		'MD212': {
 			code: 'MD212',
@@ -182,7 +210,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: '',
-			color: '#B340D9'
+			color: '#D9C040',
+			obligatory: true
 		},
 		'MD311': {
 			code: 'MD311',
@@ -191,7 +220,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D940B3'
+			color: '#40D9CE',
+			obligatory: true
 		},
 		'ME176': {
 			code: 'ME176',
@@ -200,7 +230,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#B3D940'
+			color: '#40B9D9',
+			obligatory: true
 		},
 		'BP323': {
 			code: 'BP323',
@@ -209,7 +240,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9B340'
+			color: '#40D963',
+			obligatory: true
 		},
 		'EN312': {
 			code: 'EN312',
@@ -218,7 +250,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['EN212'],
-			color: ''
+			color: '#40D9B9',
+			obligatory: true
 		},
 		'EN321': {
 			code: 'EN321',
@@ -227,7 +260,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['BF284'],
-			color: ''
+			color: '#D08D60',
+			obligatory: true
 		},
 		'EN322': {
 			code: 'EN322',
@@ -236,7 +270,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:5, P:4, L:4, O:0, D:0, HS:13, SL:13, C:13},
 			requisitos: ['BF284', 'BM215'],
-			color: ''
+			color: '#D57760',
+			obligatory: true
 		},
 		'EN470': {
 			code: 'EN470',
@@ -245,7 +280,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#66D940'
+			color: '#7240D9',
+			obligatory: true
 		},
 		'MD231': {
 			code: 'MD231',
@@ -254,7 +290,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['BH125'],
-			color: ''
+			color: '#D98040',
+			obligatory: true
 		},
 		'MD362': {
 			code: 'MD362',
@@ -263,7 +300,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:3, C:4},
 			requisitos: ['BB123', 'BF284'],
-			color: ''
+			color: '#D56770',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -272,7 +310,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:3},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EN412': {
 			code: 'EN412',
@@ -281,7 +320,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EN312'],
-			color: ''
+			color: '#40D9B9',
+			obligatory: true
 		},
 		'EN421': {
 			code: 'EN421',
@@ -290,7 +330,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['EN321', 'MD231'],
-			color: ''
+			color: '#D58750',
+			obligatory: true
 		},
 		'EN430': {
 			code: 'EN430',
@@ -299,7 +340,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EN230'],
-			color: ''
+			color: '#40D9B9',
+			obligatory: true
 		},
 		'EN442': {
 			code: 'EN442',
@@ -308,7 +350,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EN242'],
-			color: ''
+			color: '#4063D9',
+			obligatory: true
 		},
 		'EN465': {
 			code: 'EN465',
@@ -317,7 +360,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:5, L:0, O:0, D:0, HS:8, SL:8, C:8},
 			requisitos: ['EN322'],
-			color: ''
+			color: '#D57760',
+			obligatory: true
 		},
 		'MD214': {
 			code: 'MD214',
@@ -326,7 +370,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94066'
+			color: '#D94055',
+			obligatory: true
 		},
 		'MD232': {
 			code: 'MD232',
@@ -335,7 +380,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D98C'
+			color: '#8740D9',
+			obligatory: true
 		},
 		'MD430': {
 			code: 'MD430',
@@ -344,7 +390,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D966'
+			color: '#D95540',
+			obligatory: true
 		},
 		'MD462': {
 			code: 'MD462',
@@ -353,7 +400,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MD362'],
-			color: ''
+			color: '#D56770',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -362,7 +410,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:3},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EN433': {
 			code: 'EN433',
@@ -371,7 +420,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D940'
+			color: '#D9406A',
+			obligatory: true
 		},
 		'EN504': {
 			code: 'EN504',
@@ -380,7 +430,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:6, L:0, O:0, D:0, HS:10, SL:10, C:10},
 			requisitos: ['EN322', 'EN421', 'EN430', 'EN442', 'MD462'],
-			color: ''
+			color: '#99878A',
+			obligatory: true
 		},
 		'EN532': {
 			code: 'EN532',
@@ -389,7 +440,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:4, L:0, O:0, D:0, HS:7, SL:7, C:7},
 			requisitos: ['EN430'],
-			color: ''
+			color: '#40D9B9',
+			obligatory: true
 		},
 		'EN555': {
 			code: 'EN555',
@@ -398,7 +450,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:5, L:0, O:0, D:0, HS:8, SL:8, C:8},
 			requisitos: ['BP323', 'MD430', 'EN212', 'EN321', 'EN322', 'EN421'],
-			color: ''
+			color: '#A39867',
+			obligatory: true
 		},
 		'MD636': {
 			code: 'MD636',
@@ -407,7 +460,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MD311'],
-			color: ''
+			color: '#40D9CE',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -416,7 +470,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:3},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EN590': {
 			code: 'EN590',
@@ -425,7 +480,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['EN280', 'EN322', 'EN312'],
-			color: ''
+			color: '#A58596',
+			obligatory: true
 		},
 		'EN604': {
 			code: 'EN604',
@@ -434,7 +490,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:5, L:0, O:0, D:0, HS:8, SL:8, C:8},
 			requisitos: ['EN322', 'EN421', 'EN504', 'MD462'],
-			color: ''
+			color: '#C67B6B',
+			obligatory: true
 		},
 		'EN665': {
 			code: 'EN665',
@@ -443,7 +500,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:5, L:0, O:0, D:0, HS:8, SL:8, C:8},
 			requisitos: ['EN504', 'EN555'],
-			color: ''
+			color: '#9E9079',
+			obligatory: true
 		},
 		'EN704': {
 			code: 'EN704',
@@ -452,7 +510,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EN504'],
-			color: ''
+			color: '#99878A',
+			obligatory: true
 		},
 		'EN780': {
 			code: 'EN780',
@@ -461,7 +520,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4066D9'
+			color: '#D96A40',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -470,7 +530,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:3},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EN690': {
 			code: 'EN690',
@@ -479,7 +540,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:8, L:0, O:0, D:0, HS:11, SL:3, C:11},
 			requisitos: ['EN421', 'EN590'],
-			color: ''
+			color: '#BD8673',
+			obligatory: true
 		},
 		'EN720': {
 			code: 'EN720',
@@ -488,7 +550,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9408C'
+			color: '#4740D9',
+			obligatory: true
 		},
 		'EN766': {
 			code: 'EN766',
@@ -497,7 +560,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:5, P:6, L:0, O:0, D:0, HS:11, SL:11, C:11},
 			requisitos: ['EN465'],
-			color: ''
+			color: '#D57760',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -506,7 +570,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:3},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EN790': {
 			code: 'EN790',
@@ -515,7 +580,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EN690'],
-			color: ''
+			color: '#BD8673',
+			obligatory: true
 		},
 		'EN791': {
 			code: 'EN791',
@@ -524,7 +590,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:18, D:0, HS:22, SL:4, C:22},
 			requisitos: ['AA475', 'EN604', 'EN704', 'EN665', 'EN690', 'EN766'],
-			color: '#4040D9'
+			color: '#B68373',
+			obligatory: true
 		},
 		'EN792': {
 			code: 'EN792',
@@ -533,7 +600,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:0, O:0, D:0, HS:1, SL:1, C:1},
 			requisitos: ['AA200'],
-			color: '#40B3D9'
+			color: '#5CD940',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -542,7 +610,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:3},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EN891': {
 			code: 'EN891',
@@ -551,7 +620,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:19, D:0, HS:23, SL:0, C:23},
 			requisitos: ['AA475', 'EN604', 'EN704', 'EN665', 'EN690', 'EN766'],
-			color: '#6640D9'
+			color: '#B68373',
+			obligatory: true
 		},
 		'EN892': {
 			code: 'EN892',
@@ -560,7 +630,238 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#D9D940'
+			color: '#5C40D9',
+			obligatory: true
+		},
+		'EN303': {
+			code: 'EN303',
+			name: 'Diagnóstico de Enfermagem',
+			ementa: 'Classificações diagnósticas. O processo diagnóstico. Elaboração e discussão de estudos de caso.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#9C40D9',
+			obligatory: false
+		},
+		'EN304': {
+			code: 'EN304',
+			name: 'Informática em Saúde',
+			ementa: 'O uso da informática na área de saúde. Aplicações no ensino, pesquisa, assistência e administração em enfermagem.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#87D940',
+			obligatory: false
+		},
+		'EN902': {
+			code: 'EN902',
+			name: 'Família como Unidade de Cuidado',
+			ementa: 'Processo de aproximação do aluno para abordar a família como unidade de cuidado, utilizando ferramentas para avaliar o sistema familiar.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D99540',
+			obligatory: false
+		},
+		'EN903': {
+			code: 'EN903',
+			name: 'Iniciação Científica em Enfermagem I',
+			ementa: 'Levantamento de dados, execução de projetos e técnicas de pesquisa, análise dos resultados, elaboração de relatórios e outras formas de divulgação da produção de conhecimentos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#B240D9',
+			obligatory: false
+		},
+		'EN904': {
+			code: 'EN904',
+			name: 'Iniciação Científica em Enfermagem II',
+			ementa: 'Levantamento de dados, execução de projetos e técnicas de pesquisa, análise dos resultados, elaboração de relatórios e outras formas de divulgação da produção de conhecimentos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40CED9',
+			obligatory: false
+		},
+		'EN905': {
+			code: 'EN905',
+			name: 'Tópicos em Enfermagem I',
+			ementa: 'Abordagem de conteúdos e temas relacionados à assistência a saúde, em particular à assistência de enfermagem.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#D9AA40',
+			obligatory: false
+		},
+		'EN906': {
+			code: 'EN906',
+			name: 'Tópicos em Enfermagem II',
+			ementa: 'Abordagem de conteúdos e temas relacionados à assistência a saúde, em particular à assistência de enfermagem.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#72D940',
+			obligatory: false
+		},
+		'EN907': {
+			code: 'EN907',
+			name: 'Tópicos de Enfermagem III',
+			ementa: 'Abordagem de conteúdos e temas relacionados à assistência a saúde, em particular à assistência de enfermagem.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D94E',
+			obligatory: false
+		},
+		'EN908': {
+			code: 'EN908',
+			name: 'Tópicos de Enfermagem IV',
+			ementa: 'Abordagem de conteúdos e temas relacionados à assistência a saúde, em particular à assistência de enfermagem.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9A3',
+			obligatory: false
+		},
+		'EN909': {
+			code: 'EN909',
+			name: 'Tópicos de Enfermagem V',
+			ementa: 'Abordagem de conteúdos e temas relacionados à assistência a saúde, em particular à assistência de enfermagem.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#404ED9',
+			obligatory: false
+		},
+		'EN910': {
+			code: 'EN910',
+			name: 'Tópicos de Enfermagem VI',
+			ementa: 'Abordagem de conteúdos e temas relacionados à assistência a saúde, em particular à assistência de enfermagem.',
+			semestre: 1,
+			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#B2D940',
+			obligatory: false
+		},
+		'EN911': {
+			code: 'EN911',
+			name: 'Tópicos de Enfermagem VII',
+			ementa: 'Abordagem de conteúdos e temas relacionados à assistência a saúde, em particular à assistência de enfermagem.',
+			semestre: 1,
+			vector: {T:1, P:1, L:1, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#408ED9',
+			obligatory: false
+		},
+		'EN912': {
+			code: 'EN912',
+			name: 'Tópicos de Enfermagem VIII',
+			ementa: 'Abordagem de conteúdos e temas relacionados à assistência a saúde, em particular à assistência de enfermagem.',
+			semestre: 1,
+			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D940C0',
+			obligatory: false
+		},
+		'EN913': {
+			code: 'EN913',
+			name: 'Tópicos de Enfermagem IX',
+			ementa: 'Abordagem de conteúdos e temas relacionados à assistência a saúde, em particular à assistência de enfermagem.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#9CD940',
+			obligatory: false
+		},
+		'EN914': {
+			code: 'EN914',
+			name: 'Preparação Psicológica e Física da Gestante',
+			ementa: 'O estado atual da preparação dos casais grávidos, o pré-natal e as principais modificações físicas e psíquicas da mulher grávida.',
+			semestre: 1,
+			vector: {T:1, P:0, L:0, O:2, D:0, HS:3, SL:1, C:3},
+			requisitos: ['EN465'],
+			color: '#D57760',
+			obligatory: false
+		},
+		'EN915': {
+			code: 'EN915',
+			name: 'Tópicos de Enfermagem em Saúde Coletiva',
+			ementa: 'Teorização da prática de enfermagem em saúde coletiva.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4079D9',
+			obligatory: false
+		},
+		'EN916': {
+			code: 'EN916',
+			name: 'Saúde do Trabalhador: Aspectos Gerais',
+			ementa: 'Aspectos gerais do trabalho no Brasil. Saúde do trabalhador no Brasil: legislação e Normas Regulamentadoras. Saúde do trabalhador de enfermagem no Brasil.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9D540',
+			obligatory: false
+		},
+		'EN917': {
+			code: 'EN917',
+			name: 'Manejo Clínico em Aleitamento Materno',
+			ementa: 'Abordagem das políticas públicas relacionadas ao aleitamento materno. Estudo do manejo clínico do aleitamento materno a mães e crianças no Alojamento Conjunto, em situação de pré-alta da UTI neonatal, nas dificuldades das primeiras semanas após o nascimento e na introdução da alimentação complementar. Aleitamento materno em situações especiais. Desenvolvimento da habilidade de acolhimento nas questões relacionadas ao aleitamento materno.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:1, C:2},
+			requisitos: '',
+			color: '#D94040',
+			obligatory: false
+		},
+		'EN918': {
+			code: 'EN918',
+			name: 'Introdução a Tanatologia',
+			ementa: 'Dignidade Humana e os Direitos Fundamentais. O processo de viver e envelhecer e o sentido da vida. Tanatologia. Perda, Pesar e o Processo de Luto. A morte e o morrer. Ortotanásia. Eutanásia, Distanásia, Suicídio, Cuidados Paliativos. A dor e o sofrimento humano. Angústia. Espiritualidade.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#D94095',
+			obligatory: false
+		},
+		'EN919': {
+			code: 'EN919',
+			name: 'Toxicologia Clínica: Aspectos Básicos',
+			ementa: 'Epidemiologia das exposições tóxicas às substâncias químicas e dos acidentes por animais peçonhentos no Brasil, com maior prevalência e maior gravidade na Região de Campinas - SP. Manifestações clínicas, alterações laboratoriais e principais complicações: 1) das exposições tóxicas (medicamentos, pesticidas inibidores da acetilcolinesterase, drogas de abuso, produtos com ação cáustica e plantas tóxicas) e 2) dos acidentes por animais peçonhentos. Medidas terapêuticas (descontaminação gastrintestinal, aumento da eliminação, antídotos, antagonistas e antivenenos).',
+			semestre: 1,
+			vector: {T:1, P:0, L:0, O:0, D:0, HS:1, SL:1, C:1},
+			requisitos: ['EN322'],
+			color: '#D57760',
+			obligatory: false
+		},
+		'EN920': {
+			code: 'EN920',
+			name: 'Cuidados Paliativos - Noções Básicas',
+			ementa: 'Estudo da História, conceitos, princípios e aspectos ético-legais dos Cuidados Paliativos. Assistência de enfermagem contemplando os aspectos biopsicosocioespirituais da pessoa portadora de enfermidade progressiva, limitante, que evoluirá para a morte, bem como sua família.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#C740D9',
+			obligatory: false
+		},
+		'GE001': {
+			code: 'GE001',
+			name: 'Trabalho de Conclusão de Curso',
+			ementa: 'Treinamento para executar autonomamente projetos geológicos específicos técnicos ou científicos, procurando aplicar os conhecimentos adquiridos em disciplinas do curso, em escala de detalhe ou regional.',
+			semestre: 1,
+			vector: {T:0, P:8, L:0, O:4, D:0, HS:12, SL:0, C:12},
+			requisitos: ['AA480'],
+			color: '#D940D5',
+			obligatory: false
+		},
+		'QA112': {
+			code: 'QA112',
+			name: 'Química Analítica Fundamental I',
+			ementa: 'Introdução à Química Analítica. Estequiometria. Erros e Tratamento estatístico de dados. Amostragem. Equilíbrios químicos de precipitação e ácido-base. Aplicações de reações de precipitação e ácido-base na identificação e determinação de espécies químicas. Gravimetria. Introdução à volumetria. Volumetria de precipitação e neutralização.',
+			semestre: 1,
+			vector: {T:4, P:0, L:4, O:0, D:0, HS:8, SL:8, C:8},
+			requisitos: '',
+			color: '#40D979',
+			obligatory: false
 		}
 	}
 };

@@ -35,6 +35,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['MA453', 'MA456'],
+		},
+		'elet-2': {
+			credits: 16,
+			hasRestrictions: true,
+			subjects: ['F_885', 'F_887', 'F_888', 'MA419', 'MA445', 'MA449', 'MS750', 'MS820'],
+		},
+	},
+
 	subjects: {
 		'F_128': {
 			code: 'F_128',
@@ -43,7 +56,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#CB40D9'
+			color: '#D94040',
+			obligatory: true
 		},
 		'F_129': {
 			code: 'F_129',
@@ -52,7 +66,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#7740D9'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'FM003': {
 			code: 'FM003',
@@ -61,7 +76,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D9AF'
+			color: '#D940D9',
+			obligatory: true
 		},
 		'MA111': {
 			code: 'MA111',
@@ -70,7 +86,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#40AFD9'
+			color: '#D9D940',
+			obligatory: true
 		},
 		'MA141': {
 			code: 'MA141',
@@ -79,7 +96,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D99340'
+			color: '#4040D9',
+			obligatory: true
 		},
 		'MS149': {
 			code: 'MS149',
@@ -88,7 +106,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D95C'
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'F_228': {
 			code: 'F_228',
@@ -97,7 +116,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*F_128'],
-			color: ''
+			color: '#D94040',
+			obligatory: true
 		},
 		'F_229': {
 			code: 'F_229',
@@ -106,7 +126,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_128', 'F_129'],
-			color: ''
+			color: '#8D8D8D',
+			obligatory: true
 		},
 		'MA211': {
 			code: 'MA211',
@@ -115,7 +136,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', '*MA141'],
-			color: ''
+			color: '#8D8D8D',
+			obligatory: true
 		},
 		'MA327': {
 			code: 'MA327',
@@ -124,7 +146,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*MA141'],
-			color: ''
+			color: '#4040D9',
+			obligatory: true
 		},
 		'MC102': {
 			code: 'MC102',
@@ -133,7 +156,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#77D940'
+			color: '#D98C40',
+			obligatory: true
 		},
 		'F_328': {
 			code: 'F_328',
@@ -142,7 +166,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA111', 'MA141'],
-			color: ''
+			color: '#A67373',
+			obligatory: true
 		},
 		'F_329': {
 			code: 'F_329',
@@ -151,7 +176,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_129', 'MA111'],
-			color: ''
+			color: '#8DD98D',
+			obligatory: true
 		},
 		'MA311': {
 			code: 'MA311',
@@ -160,7 +186,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['*MA211'],
-			color: ''
+			color: '#8D8D8D',
+			obligatory: true
 		},
 		'ME210': {
 			code: 'ME210',
@@ -169,7 +196,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MS149'],
-			color: ''
+			color: '#B38D8D',
+			obligatory: true
 		},
 		'MS211': {
 			code: 'MS211',
@@ -178,7 +206,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC102', 'MA141', 'MA111'],
-			color: ''
+			color: '#A68C73',
+			obligatory: true
 		},
 		'F_428': {
 			code: 'F_428',
@@ -187,7 +216,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_328'],
-			color: ''
+			color: '#A67373',
+			obligatory: true
 		},
 		'MA044': {
 			code: 'MA044',
@@ -196,7 +226,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MA141', 'MA211'],
-			color: ''
+			color: '#8D8D8D',
+			obligatory: true
 		},
 		'MA502': {
 			code: 'MA502',
@@ -205,7 +236,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#CBD940'
+			color: '#40D98C',
+			obligatory: true
 		},
 		'MA719': {
 			code: 'MA719',
@@ -214,7 +246,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['MA327'],
-			color: ''
+			color: '#4040D9',
+			obligatory: true
 		},
 		'F_589': {
 			code: 'F_589',
@@ -223,7 +256,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D94040'
+			color: '#408CD9',
+			obligatory: true
 		},
 		'MA446': {
 			code: 'MA446',
@@ -232,7 +266,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['MA719'],
-			color: ''
+			color: '#4040D9',
+			obligatory: true
 		},
 		'MA602': {
 			code: 'MA602',
@@ -241,7 +276,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D94093'
+			color: '#8CD940',
+			obligatory: true
 		},
 		'MS550': {
 			code: 'MS550',
@@ -250,7 +286,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA311', 'MA327'],
-			color: ''
+			color: '#6767B3',
+			obligatory: true
 		},
 		'F_320': {
 			code: 'F_320',
@@ -259,7 +296,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_228', 'MA211'],
-			color: ''
+			color: '#B36767',
+			obligatory: true
 		},
 		'F_689': {
 			code: 'F_689',
@@ -268,7 +306,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_589', 'MA327'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'MA604': {
 			code: 'MA604',
@@ -277,7 +316,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA502'],
-			color: ''
+			color: '#40D98C',
+			obligatory: true
 		},
 		'MS520': {
 			code: 'MS520',
@@ -286,7 +326,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MS550'],
-			color: ''
+			color: '#A0547A',
+			obligatory: true
 		},
 		'MS650': {
 			code: 'MS650',
@@ -295,7 +336,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MS550'],
-			color: ''
+			color: '#6767B3',
+			obligatory: true
 		},
 		'F_604': {
 			code: 'F_604',
@@ -304,7 +346,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#405CD9'
+			color: '#D9408C',
+			obligatory: true
 		},
 		'F_789': {
 			code: 'F_789',
@@ -313,7 +356,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_689'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'MA720': {
 			code: 'MA720',
@@ -322,7 +366,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['MA211', 'MA502', 'MA327'],
-			color: ''
+			color: '#5A8DA6',
+			obligatory: true
 		},
 		'MS620': {
 			code: 'MS620',
@@ -331,7 +376,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_428'],
-			color: ''
+			color: '#A67373',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -340,7 +386,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'MA852': {
 			code: 'MA852',
@@ -349,7 +396,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['MA720'],
-			color: ''
+			color: '#5A8DA6',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -358,7 +406,108 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:16},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'F_885': {
+			code: 'F_885',
+			name: 'Partículas Elementares e Campos',
+			ementa: 'Introdução histórica. Conteúdo de partículas elementares previstos no modelo padrão. Cinemática relativística. Interações fundamentais: bósons intermediários e vértices primitivos da QED, QCD e interações fracas. Teorias de Gauge. Unificação eletrofraca. O mecanismo de Higgs. O modelo padrão.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['F_689'],
+			color: '#4066D9',
+			obligatory: false
+		},
+		'F_887': {
+			code: 'F_887',
+			name: 'Física Nuclear',
+			ementa: 'O átomo nuclear e o núcleo atômico. O modelo de gás de Fermi. O modelo de partícula independente. Aplicações do modelo de partícula independente. Núcleos com mais que um nucleon fora de camadas fechadas. Supercondutividade nuclear. O modelo coletivo. O modelo unificado. Aplicações do modelo unificado: vibrações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['F_689'],
+			color: '#4066D9',
+			obligatory: false
+		},
+		'F_888': {
+			code: 'F_888',
+			name: 'Física do Estado Sólido',
+			ementa: 'O problema geral do sólido e suas aproximações. Movimento de caroços e movimento de elétrons: visão puramente conceitual da aproximação adiabática Born-Oppenheimer. Revisão de estatística quântica: distribuições de Fermi-Dirac, Bose-Einstein e aplicações. Moléculas: ligações e espectros moleculares. Estrutura cristalina e rede recíproca. Condutores, semicondutores, supercondutores. Propriedades magnéticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['F_689'],
+			color: '#4066D9',
+			obligatory: false
+		},
+		'MA419': {
+			code: 'MA419',
+			name: 'Análise Real',
+			ementa: 'Medida e integral. Integral de Lebesgue no Rn. Conjuntos mensuráveis. Teorema de convergência monótona. Teorema da convergência dominada. Convergência em medida. Espaços L(p). Teorema de Egorov. Teorema de Radon-Nikodym. Teorema de Representação de Riesz. Teorema de Fubini.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: ['MA602'],
+			color: '#8CD940',
+			obligatory: false
+		},
+		'MA445': {
+			code: 'MA445',
+			name: 'Anéis e Corpos',
+			ementa: 'Anéis comutativos, ideais e operações com ideais, homomorfismos entre anéis, teoremas do isomorfismo. Polinômios simétricos, fórmulas de Newton e aplicações. Corpos, característica, extensões algébricas, corpos de raízes, normalidade, corpos finitos. Teorema de Galois. Grupo de Galois de uma extensão e de um polinômio. Extensões cíclicas, construções com régua e compasso, solubilidade de equações em radicais e outras aplicações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: ['MA446'],
+			color: '#4040D9',
+			obligatory: false
+		},
+		'MA449': {
+			code: 'MA449',
+			name: 'Introdução às Equações Diferenciais Parciais',
+			ementa: 'Dedução da Equação da Onda e da Equação do Calor. Equação de Laplace e Poisson. Espaço H1 de Sobolev. Séries de Fourier: unicidade, convolução, núcleos, médias de Abel e de Cesàro, O Teorema de Féjer, o núcleo de Poisson, convergência, aplicações. A transformada de Fourier em R: definição, espaços de Schwartz (S), transformada de Fourier em S, fórmula de inversão de Fourier, Fórmula de Plancherel. Aplicações da transformada de Fourier às equações, fórmula do somatório de Poisson, o Princípio da Incerteza. A transformada de Fourier em Rn e aplicações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: ['MA602'],
+			color: '#8CD940',
+			obligatory: false
+		},
+		'MA453': {
+			code: 'MA453',
+			name: 'Topologia Geral',
+			ementa: 'Espaços Métricos. Exemplos. Noções básicas de Topologia. Espaços topológicos. Bases. Funções contínuas, subespaços, espaços, produto e quociente. Convergência de sequências, redes e filtros.Espaços de Hausdorff. Espaços regulares, normais, compactos, localmente compactos. Metrização. Paracompacidade. Espaços conexos e conexos por caminhos. Homotopia e grupo fundamental. Espaços de recobrimento.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: ['MA604'],
+			color: '#40D98C',
+			obligatory: false
+		},
+		'MA456': {
+			code: 'MA456',
+			name: 'Equações Diferenciais Ordinárias',
+			ementa: 'Teoria de Existência e Unicidade. Método das aproximações sucessivas para existência e unicidade de soluções. Teorema de Peano de existência de soluções. Soluções maximais, fluxos. Sistemas lineares e suas soluções maximais. Dependência diferenciável de soluções em relação a parâmetros e a condições iniciais. Diferencial do fluxo. Teoremas de fluxo tubular. Campos completos. Colchetes de Lie de campos de vetores. Espaço de fase. Classificação das órbitas. Teorema de Hartman-Grobmann. Estabilidade de Lyapunov, funções de Lyapunov e expoentes de Lyapunov. Teorema de Poincaré-Bendixon. Campos conservativos. Recorrência e teorema de recorrência de Poincaré.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: ['MA602'],
+			color: '#8CD940',
+			obligatory: false
+		},
+		'MS750': {
+			code: 'MS750',
+			name: 'Métodos de Matemática Aplicada III',
+			ementa: 'Introdução à teoria dos operadores em espaços de Hilbert. Operadores integrais. Equações integrais (Volterra e Fredholm). Introdução à teoria das distribuições. Função delta de Dirac. Derivadas de distribuições. Produto direto e de convolução. Distribuições temperadas e transformadas integrais. Funções de Green: formalismo e aplicações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*MS650'],
+			color: '#6767B3',
+			obligatory: false
+		},
+		'MS820': {
+			code: 'MS820',
+			name: 'Métodos Matemáticos da Relatividade',
+			ementa: 'O espaço-tempo Newtoniano: transformações de Galileu. A experiência de Michelson-Morley. O espaço-tempo de Minkowski: transformações de Lorentz. Cinemática e dinâmica na teoria da relatividade especial. Referenciais arbitrários. Cálculo tensorial. Introdução à relatividade geral. A equação de Einstein e a solução de Schwarzschild.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D940',
+			obligatory: false
 		}
 	}
 };

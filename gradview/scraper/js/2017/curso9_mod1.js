@@ -43,6 +43,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['EQ022', 'EQ023', 'EQ024', 'EQ025', 'EQ026', 'EQ027', 'EQ028', 'EQ029', 'EQ030', 'EQ035', 'EQ036', 'EQ037', 'EQ041', 'EQ042', 'EQ043', 'EQ044', 'EQ045', 'EQ046', 'EQ047', 'EQ048', 'EQ061', 'EQ062', 'EQ081', 'EQ961'],
+		},
+		'elet-2': {
+			credits: 4,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'EQ101': {
 			code: 'EQ101',
@@ -51,7 +64,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9408C'
+			color: '#4066D9',
+			obligatory: true
 		},
 		'F_128': {
 			code: 'F_128',
@@ -60,7 +74,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94040'
+			color: '#D94079',
+			obligatory: true
 		},
 		'F_129': {
 			code: 'F_129',
@@ -69,7 +84,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D940'
+			color: '#53D940',
+			obligatory: true
 		},
 		'MA111': {
 			code: 'MA111',
@@ -78,7 +94,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D9D940'
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'MA141': {
 			code: 'MA141',
@@ -87,7 +104,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#8CD940'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'QG101': {
 			code: 'QG101',
@@ -96,7 +114,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#D97940',
+			obligatory: true
 		},
 		'QG102': {
 			code: 'QG102',
@@ -105,7 +124,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#8C40D9'
+			color: '#C6D940',
+			obligatory: true
 		},
 		'EQ481': {
 			code: 'EQ481',
@@ -114,7 +134,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EQ101'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'MA211': {
 			code: 'MA211',
@@ -123,7 +144,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', '*MA141'],
-			color: ''
+			color: '#668DD9',
+			obligatory: true
 		},
 		'MC102': {
 			code: 'MC102',
@@ -132,7 +154,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#D9B340',
+			obligatory: true
 		},
 		'ME414': {
 			code: 'ME414',
@@ -141,7 +164,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111'],
-			color: ''
+			color: '#8C40D9',
+			obligatory: true
 		},
 		'QI242': {
 			code: 'QI242',
@@ -150,7 +174,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QG101', 'QG102'],
-			color: ''
+			color: '#D0A940',
+			obligatory: true
 		},
 		'QI244': {
 			code: 'QI244',
@@ -159,7 +184,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QG101', 'QG102'],
-			color: ''
+			color: '#D0A940',
+			obligatory: true
 		},
 		'CE304': {
 			code: 'CE304',
@@ -168,7 +194,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D98C'
+			color: '#D94040',
+			obligatory: true
 		},
 		'F_328': {
 			code: 'F_328',
@@ -177,7 +204,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA111', 'MA141'],
-			color: ''
+			color: '#8C73B9',
+			obligatory: true
 		},
 		'F_329': {
 			code: 'F_329',
@@ -186,7 +214,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_129', 'MA111'],
-			color: ''
+			color: '#708D8D',
+			obligatory: true
 		},
 		'GT001': {
 			code: 'GT001',
@@ -195,7 +224,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#D940D9'
+			color: '#C640D9',
+			obligatory: true
 		},
 		'MA311': {
 			code: 'MA311',
@@ -204,7 +234,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['*MA211'],
-			color: ''
+			color: '#668DD9',
+			obligatory: true
 		},
 		'QA313': {
 			code: 'QA313',
@@ -213,7 +244,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:4, O:0, D:0, HS:8, SL:8, C:8},
 			requisitos: ['QG101', 'QG102'],
-			color: ''
+			color: '#D0A940',
+			obligatory: true
 		},
 		'QO323': {
 			code: 'QO323',
@@ -222,7 +254,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QG101'],
-			color: ''
+			color: '#D97940',
+			obligatory: true
 		},
 		'EM312': {
 			code: 'EM312',
@@ -231,7 +264,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#408CD9'
+			color: '#40D966',
+			obligatory: true
 		},
 		'EQ415': {
 			code: 'EQ415',
@@ -240,7 +274,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['EQ481', 'MA211'],
-			color: ''
+			color: '#537AD9',
+			obligatory: true
 		},
 		'EQ531': {
 			code: 'EQ531',
@@ -249,7 +284,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*QI242', '*QI244', '*QO323'],
-			color: ''
+			color: '#D39940',
+			obligatory: true
 		},
 		'F_315': {
 			code: 'F_315',
@@ -258,7 +294,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA211'],
-			color: ''
+			color: '#A067A9',
+			obligatory: true
 		},
 		'MS211': {
 			code: 'MS211',
@@ -267,7 +304,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MC102', 'MA141', 'MA111'],
-			color: ''
+			color: '#8C99A6',
+			obligatory: true
 		},
 		'QO422': {
 			code: 'QO422',
@@ -276,7 +314,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:6, O:0, D:0, HS:8, SL:8, C:8},
 			requisitos: ['QO323'],
-			color: ''
+			color: '#D97940',
+			obligatory: true
 		},
 		'EM423': {
 			code: 'EM423',
@@ -285,7 +324,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['*F_315'],
-			color: ''
+			color: '#A067A9',
+			obligatory: true
 		},
 		'EQ502': {
 			code: 'EQ502',
@@ -294,7 +334,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA311', '*EQ481', '*MS211'],
-			color: ''
+			color: '#6684C8',
+			obligatory: true
 		},
 		'EQ515': {
 			code: 'EQ515',
@@ -303,7 +344,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['EQ415'],
-			color: ''
+			color: '#537AD9',
+			obligatory: true
 		},
 		'EQ541': {
 			code: 'EQ541',
@@ -312,7 +354,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*F_315'],
-			color: ''
+			color: '#A067A9',
+			obligatory: true
 		},
 		'EQ622': {
 			code: 'EQ622',
@@ -321,7 +364,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EQ531'],
-			color: ''
+			color: '#D39940',
+			obligatory: true
 		},
 		'ET016': {
 			code: 'ET016',
@@ -330,7 +374,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_328'],
-			color: ''
+			color: '#8C73B9',
+			obligatory: true
 		},
 		'EQ583': {
 			code: 'EQ583',
@@ -339,7 +384,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*QO323'],
-			color: ''
+			color: '#D97940',
+			obligatory: true
 		},
 		'EQ601': {
 			code: 'EQ601',
@@ -348,7 +394,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ME414', 'MS211', '*EQ541'],
-			color: ''
+			color: '#936BB8',
+			obligatory: true
 		},
 		'EQ641': {
 			code: 'EQ641',
@@ -357,7 +404,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EQ541'],
-			color: ''
+			color: '#A067A9',
+			obligatory: true
 		},
 		'EQ651': {
 			code: 'EQ651',
@@ -366,7 +414,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EQ541'],
-			color: ''
+			color: '#A067A9',
+			obligatory: true
 		},
 		'EQ712': {
 			code: 'EQ712',
@@ -375,7 +424,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EQ515'],
-			color: ''
+			color: '#537AD9',
+			obligatory: true
 		},
 		'EQ771': {
 			code: 'EQ771',
@@ -384,7 +434,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MS211', '*EQ502', '*EQ541'],
-			color: ''
+			color: '#8681B2',
+			obligatory: true
 		},
 		'EQ701': {
 			code: 'EQ701',
@@ -393,7 +444,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ME414', '*EQ651'],
-			color: ''
+			color: '#9654C1',
+			obligatory: true
 		},
 		'EQ741': {
 			code: 'EQ741',
@@ -402,7 +454,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EQ541', '*EQ502', '*EQ641'],
-			color: ''
+			color: '#8D71B3',
+			obligatory: true
 		},
 		'EQ751': {
 			code: 'EQ751',
@@ -411,7 +464,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EQ641'],
-			color: ''
+			color: '#A067A9',
+			obligatory: true
 		},
 		'EQ791': {
 			code: 'EQ791',
@@ -420,7 +474,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EQ481'],
-			color: ''
+			color: '#4066D9',
+			obligatory: true
 		},
 		'EQ812': {
 			code: 'EQ812',
@@ -429,7 +484,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EQ515', '*EQ712'],
-			color: ''
+			color: '#537AD9',
+			obligatory: true
 		},
 		'EQ817': {
 			code: 'EQ817',
@@ -438,7 +494,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EQ502', '*EQ771'],
-			color: ''
+			color: '#7683BD',
+			obligatory: true
 		},
 		'EQ801': {
 			code: 'EQ801',
@@ -447,7 +504,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EQ515', '*EQ601', '*EQ712', 'QA313'],
-			color: ''
+			color: '#8282AB',
+			obligatory: true
 		},
 		'EQ852': {
 			code: 'EQ852',
@@ -456,7 +514,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:3, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['EQ515', '*EQ741', '*EQ751'],
-			color: ''
+			color: '#8071BC',
+			obligatory: true
 		},
 		'EQ861': {
 			code: 'EQ861',
@@ -465,7 +524,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EQ651', '*EQ712', '*EQ741'],
-			color: ''
+			color: '#8071BC',
+			obligatory: true
 		},
 		'EQ883': {
 			code: 'EQ883',
@@ -474,7 +534,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EQ583', '*EQ712'],
-			color: ''
+			color: '#967A8D',
+			obligatory: true
 		},
 		'EQ991': {
 			code: 'EQ991',
@@ -483,7 +544,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EQ502', 'EQ712', '*EQ812'],
-			color: ''
+			color: '#597DD3',
+			obligatory: true
 		},
 		'EQ902': {
 			code: 'EQ902',
@@ -492,7 +554,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['EQ751', '*EQ701', '*EQ812', '*EQ817', '*EQ852', '*EQ883'],
-			color: ''
+			color: '#8471B7',
+			obligatory: true
 		},
 		'EQ922': {
 			code: 'EQ922',
@@ -501,7 +564,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:6, D:0, HS:10, SL:2, C:10},
 			requisitos: ['*EQ791', '*EQ812', '*EQ852', '*EQ817', '*EQ861'],
-			color: ''
+			color: '#6874C8',
+			obligatory: true
 		},
 		'EQ950': {
 			code: 'EQ950',
@@ -510,7 +574,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA472'],
-			color: '#D98C40'
+			color: '#409FD9',
+			obligatory: true
 		},
 		'ELET09': {
 			code: 'ELET09',
@@ -519,7 +584,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EQ004': {
 			code: 'EQ004',
@@ -528,7 +594,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:10, D:0, HS:12, SL:0, C:12},
 			requisitos: ['EQ481', 'EQ515', '*EQ651'],
-			color: ''
+			color: '#666DC9',
+			obligatory: true
 		},
 		'EQ050': {
 			code: 'EQ050',
@@ -537,7 +604,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:7, D:0, HS:9, SL:2, C:9},
 			requisitos: ['EQ950', '*EQ812', '*EQ852', '*EQ861'],
-			color: ''
+			color: '#657FCB',
+			obligatory: true
 		},
 		'ELET10': {
 			code: 'ELET10',
@@ -546,7 +614,248 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'EQ022': {
+			code: 'EQ022',
+			name: 'Tópicos em Processos de Separação',
+			ementa: 'Aprofundamento e desdobramento na área de processos de separação.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ852'],
+			color: '#8071BC',
+			obligatory: false
+		},
+		'EQ023': {
+			code: 'EQ023',
+			name: 'Tópicos em Engenharia das Reações Químicas',
+			ementa: 'Aprofundamento e desdobramento na área de engenharia das reações químicas.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ812'],
+			color: '#537AD9',
+			obligatory: false
+		},
+		'EQ024': {
+			code: 'EQ024',
+			name: 'Tópicos em Fenômenos de Transporte, Sistemas Particulados e Meios Porosos',
+			ementa: 'Aprofundamento e desdobramento na área de fenômenos de transporte, sistemas particulados e meios porosos.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ651'],
+			color: '#A067A9',
+			obligatory: false
+		},
+		'EQ025': {
+			code: 'EQ025',
+			name: 'Tópicos em Tecnologia dos Materiais I',
+			ementa: 'Tendências atuais e aplicações na área de tecnologia dos materiais.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#5340D9',
+			obligatory: false
+		},
+		'EQ026': {
+			code: 'EQ026',
+			name: 'Tópicos em Tecnologia dos Materiais II',
+			ementa: 'Aprofundamento e desdobramento na área de tecnologia de materiais.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ531'],
+			color: '#D39940',
+			obligatory: false
+		},
+		'EQ027': {
+			code: 'EQ027',
+			name: 'Tópicos em Engenharia de Bioprocessos I',
+			ementa: 'Tendências atuais e aplicações na área de engenharia de bioprocessos.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#8CD940',
+			obligatory: false
+		},
+		'EQ028': {
+			code: 'EQ028',
+			name: 'Tópicos em Engenharia de Bioprocessos II',
+			ementa: 'Aprofundamento e desdobramento na área de bioprocessos.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ883'],
+			color: '#967A8D',
+			obligatory: false
+		},
+		'EQ029': {
+			code: 'EQ029',
+			name: 'Tópicos em Engenharia Ambiental I',
+			ementa: 'Tendências atuais e aplicação na área de engenharia ambiental.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D99F',
+			obligatory: false
+		},
+		'EQ030': {
+			code: 'EQ030',
+			name: 'Tópicos em Engenharia Ambiental II',
+			ementa: 'Aprofundamento e desdobramento na área de engenharia ambiental.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ861'],
+			color: '#8071BC',
+			obligatory: false
+		},
+		'EQ035': {
+			code: 'EQ035',
+			name: 'Tópicos em Engenharia de Processos I',
+			ementa: 'Tendências atuais e aplicação na área de engenharia de processos.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['EQ101'],
+			color: '#4066D9',
+			obligatory: false
+		},
+		'EQ036': {
+			code: 'EQ036',
+			name: 'Tópicos em Engenharia de Processos II',
+			ementa: 'Aprofundamento e desdobramento na área de engenharia de processos.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['EQ481'],
+			color: '#4066D9',
+			obligatory: false
+		},
+		'EQ037': {
+			code: 'EQ037',
+			name: 'Tópicos em Engenharia de Processos III',
+			ementa: 'Aplicações avançadas na área de engenharia de processos.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ852'],
+			color: '#8071BC',
+			obligatory: false
+		},
+		'EQ041': {
+			code: 'EQ041',
+			name: 'Tópicos em Projeto Químico',
+			ementa: 'Aprofundamento e desdobramento de matérias na área de projeto químico.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ852'],
+			color: '#8071BC',
+			obligatory: false
+		},
+		'EQ042': {
+			code: 'EQ042',
+			name: 'Qualidade na Engenharia Química',
+			ementa: '1)Evolução da qualidade. Inspeção. Controle de qualidade. Garantia de qualidade. Qualidade integrada. 2)Qualidade total. 3)Controle estatístico de processo. 4)Certificações e entidades certificadoras. 5)Estudo de caso.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA460'],
+			color: '#D940B3',
+			obligatory: false
+		},
+		'EQ043': {
+			code: 'EQ043',
+			name: 'Tópicos em Automação de Processos Químicos I',
+			ementa: 'Tendências atuais e aplicações na área de automação de processos químicos.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['EQ101'],
+			color: '#4066D9',
+			obligatory: false
+		},
+		'EQ044': {
+			code: 'EQ044',
+			name: 'Tópicos em Automação de Processos Químicos II',
+			ementa: 'Aprofundamento e desdobramento na área de automação de processos químicos.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ817'],
+			color: '#7683BD',
+			obligatory: false
+		},
+		'EQ045': {
+			code: 'EQ045',
+			name: 'Tópicos em Processos Químicos I',
+			ementa: 'Tendências atuais e aplicações na área de processos químicos.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ481'],
+			color: '#4066D9',
+			obligatory: false
+		},
+		'EQ046': {
+			code: 'EQ046',
+			name: 'Tópicos em Processos Químicos II',
+			ementa: 'Aprofundamento e desdobramento na área de processos químicos.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ852'],
+			color: '#8071BC',
+			obligatory: false
+		},
+		'EQ047': {
+			code: 'EQ047',
+			name: 'Tópicos em Engenharia de Produtos',
+			ementa: 'Aprofundamento e desdobramento na área de engenharia de produtos.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ481'],
+			color: '#4066D9',
+			obligatory: false
+		},
+		'EQ048': {
+			code: 'EQ048',
+			name: 'Tópicos em Ferramentas Computacionais para Engenharia Química',
+			ementa: 'Aplicação de ferramentas computacionais em processos de engenharia química.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ481'],
+			color: '#4066D9',
+			obligatory: false
+		},
+		'EQ061': {
+			code: 'EQ061',
+			name: 'Tópicos em Análise Técnico-Econômica',
+			ementa: 'Aprofundamento e desdobramento de matérias na área de análise técnico-econômica de projetos da indústria química.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ481', '*EQ791'],
+			color: '#4066D9',
+			obligatory: false
+		},
+		'EQ062': {
+			code: 'EQ062',
+			name: 'Tópicos em Gestão Industrial',
+			ementa: 'Os objetivos da indústria. Organização funcional e operacional. Fornecedor e cliente. Controle orçamentário. Custo específico industrial. Organogramas. Programas de produção. Qualidade e manutençao. Treinamento da mão-de-obra. Auditoria. Banco de dados. Política de meio ambiente. Comunidades.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ812', '*EQ852', '*EQ861'],
+			color: '#7174C6',
+			obligatory: false
+		},
+		'EQ081': {
+			code: 'EQ081',
+			name: 'Tópicos em Engenharia de Segurança',
+			ementa: 'Introdução. Noções Básicas de Engenharia de Segurança. Segurança Industrial. Proteção contra Incêndios. Higiene do Trabalho. Engenharia de Ventilação Industrial. Normalização e Legislação. Engenharia de Sistemas. Análise de Riscos de Processo e Operação.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ751', '*EQ771'],
+			color: '#9374AE',
+			obligatory: false
+		},
+		'EQ961': {
+			code: 'EQ961',
+			name: 'Tópicos em Energia',
+			ementa: 'Aprofundamento e desdobramento de matérias na área de energia na indústria química, com ênfase em energias não convencionais.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EQ712', '*EQ791'],
+			color: '#4A70D9',
+			obligatory: false
 		}
 	}
 };

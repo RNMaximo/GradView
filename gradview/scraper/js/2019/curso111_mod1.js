@@ -47,6 +47,14 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 12,
+			hasRestrictions: true,
+			subjects: ['EB601', 'EB973', 'EB974', 'EB975', 'EB976', 'EB977', 'EB978', 'EB979', 'EB980', 'EB981', 'EB982', 'EB983', 'EB984', 'EB985', 'ST526', 'ST628', 'ST722', 'ST727', 'ST729', 'ST730'],
+		},
+	},
+
 	subjects: {
 		'EB101': {
 			code: 'EB101',
@@ -55,7 +63,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#6640D9'
+			color: '#40D9BA',
+			obligatory: true
 		},
 		'EB102': {
 			code: 'EB102',
@@ -64,7 +73,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#8CD940'
+			color: '#7D40D9',
+			obligatory: true
 		},
 		'EB401': {
 			code: 'EB401',
@@ -73,7 +83,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9D940'
+			color: '#5E40D9',
+			obligatory: true
 		},
 		'EB931': {
 			code: 'EB931',
@@ -82,7 +93,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D9B3'
+			color: '#409CD9',
+			obligatory: true
 		},
 		'EB932': {
 			code: 'EB932',
@@ -91,7 +103,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#8C40D9'
+			color: '#405ED9',
+			obligatory: true
 		},
 		'EB103': {
 			code: 'EB103',
@@ -100,7 +113,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#66D940'
+			color: '#D9D940',
+			obligatory: true
 		},
 		'EB104': {
 			code: 'EB104',
@@ -109,7 +123,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4066D9'
+			color: '#D9405E',
+			obligatory: true
 		},
 		'EB201': {
 			code: 'EB201',
@@ -118,7 +133,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['EB101'],
-			color: ''
+			color: '#40D9BA',
+			obligatory: true
 		},
 		'EB403': {
 			code: 'EB403',
@@ -127,7 +143,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EB101'],
-			color: ''
+			color: '#40D9BA',
+			obligatory: true
 		},
 		'EB933': {
 			code: 'EB933',
@@ -136,7 +153,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:2, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: '',
-			color: '#408CD9'
+			color: '#D97D40',
+			obligatory: true
 		},
 		'EB203': {
 			code: 'EB203',
@@ -145,7 +163,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EB103'],
-			color: ''
+			color: '#D9D940',
+			obligatory: true
 		},
 		'EB204': {
 			code: 'EB204',
@@ -154,7 +173,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EB103', 'EB104'],
-			color: ''
+			color: '#D98D4F',
+			obligatory: true
 		},
 		'EB301': {
 			code: 'EB301',
@@ -163,7 +183,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['EB201'],
-			color: ''
+			color: '#40D9BA',
+			obligatory: true
 		},
 		'EB406': {
 			code: 'EB406',
@@ -172,7 +193,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EB101'],
-			color: ''
+			color: '#40D9BA',
+			obligatory: true
 		},
 		'EB940': {
 			code: 'EB940',
@@ -181,7 +203,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D98C40'
+			color: '#40BAD9',
+			obligatory: true
 		},
 		'EB206': {
 			code: 'EB206',
@@ -190,7 +213,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EB103'],
-			color: ''
+			color: '#D9D940',
+			obligatory: true
 		},
 		'EB402': {
 			code: 'EB402',
@@ -199,7 +223,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EB203', 'EB301'],
-			color: ''
+			color: '#8DD97D',
+			obligatory: true
 		},
 		'EB935': {
 			code: 'EB935',
@@ -208,7 +233,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EB933'],
-			color: ''
+			color: '#D97D40',
+			obligatory: true
 		},
 		'EB936': {
 			code: 'EB936',
@@ -217,7 +243,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:2, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: '',
-			color: '#D96640'
+			color: '#D9409C',
+			obligatory: true
 		},
 		'EB937': {
 			code: 'EB937',
@@ -226,7 +253,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#B340D9'
+			color: '#40D95E',
+			obligatory: true
 		},
 		'ST215': {
 			code: 'ST215',
@@ -235,7 +263,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EB101', '*EB102'],
-			color: ''
+			color: '#5F8DCA',
+			obligatory: true
 		},
 		'ST216': {
 			code: 'ST216',
@@ -244,7 +273,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40B3D9'
+			color: '#40D97D',
+			obligatory: true
 		},
 		'EB205': {
 			code: 'EB205',
@@ -253,7 +283,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D940B3'
+			color: '#D9407D',
+			obligatory: true
 		},
 		'EB501': {
 			code: 'EB501',
@@ -262,7 +293,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EB402'],
-			color: ''
+			color: '#8DD97D',
+			obligatory: true
 		},
 		'EB603': {
 			code: 'EB603',
@@ -271,7 +303,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#9C40D9',
+			obligatory: true
 		},
 		'EB938': {
 			code: 'EB938',
@@ -280,7 +313,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EB935'],
-			color: ''
+			color: '#D97D40',
+			obligatory: true
 		},
 		'EB939': {
 			code: 'EB939',
@@ -289,7 +323,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EB936'],
-			color: ''
+			color: '#D9409C',
+			obligatory: true
 		},
 		'EB955': {
 			code: 'EB955',
@@ -298,7 +333,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D98C'
+			color: '#9CD940',
+			obligatory: true
 		},
 		'ST309': {
 			code: 'ST309',
@@ -307,7 +343,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EB101', '*ST215'],
-			color: ''
+			color: '#50B3C2',
+			obligatory: true
 		},
 		'EB941': {
 			code: 'EB941',
@@ -316,7 +353,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['*EB403', '*EB938'],
-			color: ''
+			color: '#8DAB7D',
+			obligatory: true
 		},
 		'EB942': {
 			code: 'EB942',
@@ -325,7 +363,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['*EB403'],
-			color: ''
+			color: '#40D9BA',
+			obligatory: true
 		},
 		'ST410': {
 			code: 'ST410',
@@ -334,7 +373,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*ST216'],
-			color: ''
+			color: '#40D97D',
+			obligatory: true
 		},
 		'ST423': {
 			code: 'ST423',
@@ -343,7 +383,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*ST309'],
-			color: ''
+			color: '#50B3C2',
+			obligatory: true
 		},
 		'ST540': {
 			code: 'ST540',
@@ -352,7 +393,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EB938'],
-			color: ''
+			color: '#D97D40',
+			obligatory: true
 		},
 		'EB944': {
 			code: 'EB944',
@@ -361,7 +403,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EB603', '*ST423'],
-			color: ''
+			color: '#767ACE',
+			obligatory: true
 		},
 		'EB945': {
 			code: 'EB945',
@@ -370,7 +413,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*EB938'],
-			color: ''
+			color: '#D97D40',
+			obligatory: true
 		},
 		'EB946': {
 			code: 'EB946',
@@ -379,7 +423,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['*EB938'],
-			color: ''
+			color: '#D97D40',
+			obligatory: true
 		},
 		'EB947': {
 			code: 'EB947',
@@ -388,7 +433,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['*EB941'],
-			color: ''
+			color: '#8DAB7D',
+			obligatory: true
 		},
 		'EB948': {
 			code: 'EB948',
@@ -397,7 +443,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['*EB102', '*EB403', '*EB939'],
-			color: ''
+			color: '#8773BA',
+			obligatory: true
 		},
 		'EB949': {
 			code: 'EB949',
@@ -406,7 +453,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*EB941'],
-			color: ''
+			color: '#8DAB7D',
+			obligatory: true
 		},
 		'ST529': {
 			code: 'ST529',
@@ -415,7 +463,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*ST410', '*ST423'],
-			color: ''
+			color: '#48C6A0',
+			obligatory: true
 		},
 		'EB943': {
 			code: 'EB943',
@@ -424,7 +473,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94066'
+			color: '#D940D9',
+			obligatory: true
 		},
 		'EB950': {
 			code: 'EB950',
@@ -433,7 +483,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['*EB941', '*EB949', '*ST529'],
-			color: ''
+			color: '#76B489',
+			obligatory: true
 		},
 		'EB951': {
 			code: 'EB951',
@@ -442,7 +493,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*EB403', '*EB945'],
-			color: ''
+			color: '#8DAB7D',
+			obligatory: true
 		},
 		'EB952': {
 			code: 'EB952',
@@ -451,7 +503,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['AA450'],
-			color: '#D9408C'
+			color: '#BAD940',
+			obligatory: true
 		},
 		'EB953': {
 			code: 'EB953',
@@ -460,7 +513,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['*EB946', '*ST410'],
-			color: ''
+			color: '#8DAB5F',
+			obligatory: true
 		},
 		'EB954': {
 			code: 'EB954',
@@ -469,7 +523,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['*EB946', '*ST423'],
-			color: ''
+			color: '#959881',
+			obligatory: true
 		},
 		'EB956': {
 			code: 'EB956',
@@ -478,7 +533,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*EB938', '*ST423', '*ST529'],
-			color: ''
+			color: '#7BA78B',
+			obligatory: true
 		},
 		'EB957': {
 			code: 'EB957',
@@ -487,7 +543,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*ST410', '*ST529'],
-			color: ''
+			color: '#44D08F',
+			obligatory: true
 		},
 		'EB802': {
 			code: 'EB802',
@@ -496,7 +553,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#7DD940',
+			obligatory: true
 		},
 		'EB958': {
 			code: 'EB958',
@@ -505,7 +563,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['*EB403', '*EB942', '*ST540'],
-			color: ''
+			color: '#73BA91',
+			obligatory: true
 		},
 		'EB959': {
 			code: 'EB959',
@@ -514,7 +573,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['*EB942', '*EB948'],
-			color: ''
+			color: '#64A6BA',
+			obligatory: true
 		},
 		'EB960': {
 			code: 'EB960',
@@ -523,7 +583,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['*EB953'],
-			color: ''
+			color: '#8DAB5F',
+			obligatory: true
 		},
 		'EB961': {
 			code: 'EB961',
@@ -532,7 +593,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: '',
-			color: '#40D940'
+			color: '#D95E40',
+			obligatory: true
 		},
 		'ELET09': {
 			code: 'ELET09',
@@ -541,7 +603,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EB962': {
 			code: 'EB962',
@@ -550,7 +613,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['*EB802', '*EB948', '*EB951'],
-			color: ''
+			color: '#86A87D',
+			obligatory: true
 		},
 		'EB963': {
 			code: 'EB963',
@@ -559,7 +623,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: ['*EB802', '*EB939'],
-			color: ''
+			color: '#AB8D6E',
+			obligatory: true
 		},
 		'EB964': {
 			code: 'EB964',
@@ -568,7 +633,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*EB603', '*EB960'],
-			color: ''
+			color: '#95769C',
+			obligatory: true
 		},
 		'EB965': {
 			code: 'EB965',
@@ -577,7 +643,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA450'],
-			color: '#D94040'
+			color: '#D94040',
+			obligatory: true
 		},
 		'EB966': {
 			code: 'EB966',
@@ -586,7 +653,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA465'],
-			color: '#B3D940'
+			color: '#40D940',
+			obligatory: true
 		},
 		'EB967': {
 			code: 'EB967',
@@ -595,7 +663,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:0, C:2},
 			requisitos: ['AA460'],
-			color: '#D9B340'
+			color: '#4040D9',
+			obligatory: true
 		},
 		'EB968': {
 			code: 'EB968',
@@ -604,7 +673,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*EB960'],
-			color: ''
+			color: '#8DAB5F',
+			obligatory: true
 		},
 		'EB969': {
 			code: 'EB969',
@@ -613,7 +683,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['*EB960'],
-			color: ''
+			color: '#8DAB5F',
+			obligatory: true
 		},
 		'EB970': {
 			code: 'EB970',
@@ -622,7 +693,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA465'],
-			color: '#40D966'
+			color: '#407DD9',
+			obligatory: true
 		},
 		'EB971': {
 			code: 'EB971',
@@ -631,7 +703,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
 			requisitos: ['*EB967'],
-			color: ''
+			color: '#4040D9',
+			obligatory: true
 		},
 		'EB972': {
 			code: 'EB972',
@@ -640,7 +713,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:10, D:0, HS:12, SL:0, C:12},
 			requisitos: '',
-			color: '#D940D9'
+			color: '#5ED940',
+			obligatory: true
 		},
 		'ELET11': {
 			code: 'ELET11',
@@ -649,7 +723,208 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'EB601': {
+			code: 'EB601',
+			name: 'Hidráulica II',
+			ementa: 'Canais. Regimes de escoamento. Movimento uniforme. Movimento gradualmente variado. Ressalto hidráulico. Curvas de remanso. Vertedores. Barragens tomadas d\'água. Ensecadeiras. Reservatórios.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['EB501'],
+			color: '#8DD97D',
+			obligatory: false
+		},
+		'EB973': {
+			code: 'EB973',
+			name: 'Drenagem Urbana',
+			ementa: 'Processos hidrológicos em bacias hidrográficas. Impactos da urbanização no ciclo hidrológico. Análises estatísticas das precipitações e chuvas de projeto. Escoamento superficial e propagação do fluxo. Manejo de águas pluviais em áreas urbanas: sistemas clássicos e técnicas alternativas de drenagem. Planejamento, concepção de projetos de sistemas de drenagens urbanas: obras de microdrenagem, macrodrenagem, estruturas especiais.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['*EB941'],
+			color: '#8DAB7D',
+			obligatory: false
+		},
+		'EB974': {
+			code: 'EB974',
+			name: 'Tópicos Especiais em Engenharia de Transportes I',
+			ementa: 'Estudo de assuntos relevantes em Engenharia de Transportes.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40D9D9',
+			obligatory: false
+		},
+		'EB975': {
+			code: 'EB975',
+			name: 'Tópicos Especiais em Engenharia de Transportes II',
+			ementa: 'Estudo de assuntos relevantes em Engenharia de Transportes.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
+			requisitos: ['AA200'],
+			color: '#BA40D9',
+			obligatory: false
+		},
+		'EB976': {
+			code: 'EB976',
+			name: 'Tópicos Especiais em Engenharia de Transportes III',
+			ementa: 'Estudo de assuntos relevantes em Engenharia de Transportes.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40D99C',
+			obligatory: false
+		},
+		'EB977': {
+			code: 'EB977',
+			name: 'Tópicos Especiais em Engenharia de Transportes IV',
+			ementa: 'Estudo de assuntos relevantes em Engenharia de Transportes.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
+			requisitos: ['AA200'],
+			color: '#D9BA40',
+			obligatory: false
+		},
+		'EB978': {
+			code: 'EB978',
+			name: 'Geodésia',
+			ementa: 'História e classificação da geodésia. Forma matemática da Terra. Elipsóide: tipos, geometria. Datum horizontal, desvio da vertical. Datum vertical. Sistema Geodésico Brasileiro (SGB). Sistemas de referência. Parâmetros de transformação entre sistemas referenciais geodésicos. Transformações de coordenadas entre sistemas geodésicos. Automatização de cálculos geodésicos, Rede Brasileira de Monitoramento Contínuo (RBMC).',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
+			requisitos: ['*EB938'],
+			color: '#D97D40',
+			obligatory: false
+		},
+		'EB979': {
+			code: 'EB979',
+			name: 'GPS e outros Sistemas de Posicionamento',
+			ementa: 'Sistemas terrestres de posicionamento. Sistemas Orbitais de Posicionamento (GNSS). GPS, GLONASS, GALILEO e BEIDOU. Segmentos do Sistema de Posicionamento Global (GPS). Rede Brasileira de Monitoramento Contínuo (RBMC). Métodos de posicionamento: relativo estático, método relativo cinemático.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*EB938'],
+			color: '#D97D40',
+			obligatory: false
+		},
+		'EB980': {
+			code: 'EB980',
+			name: 'Cartografia',
+			ementa: 'Princípios de cartografia. Projeções cartográficas: cilíndricas, cônicas e tangentes. Características da projeção cartográfica UTM. Fusos da projeção cartográfica UTM. Tratamento dos dados topográficos para uso no plano retangular UTM. Transporte de coordenadas no plano retangular UTM. Critérios de criação de um sistema topográfico local: amplitude máxima do plano local, transformação de coordenadas geodésicas em plano retangulares do sistema UTM e vice-versa; transformação de coordenadas plano retangulares UTM para locais e vice-versa; exercícios de aplicação.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
+			requisitos: ['*EB938'],
+			color: '#D97D40',
+			obligatory: false
+		},
+		'EB981': {
+			code: 'EB981',
+			name: 'SIG Aplicado aos Transportes',
+			ementa: 'Noções básicas de geoprocessamento, GPS e Sistemas de Informação Geográfica. Conceitos de SIG aplicados aos transportes. Aplicação do SIG aos transportes. Utilização de software de SIG aplicado aos transportes.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['*ST540'],
+			color: '#D97D40',
+			obligatory: false
+		},
+		'EB982': {
+			code: 'EB982',
+			name: 'Sensoriamento Remoto',
+			ementa: 'Fundamentos aerofotogramétricos e fotointerpretação. Noções básicas de Geoprocessamento. Conceitos de sensoriamento remoto: radiação eletromagnética, comportamento espectral de alvos. Sensores. Fundamentos de processamento digital de imagens: uso conjunto com o SIG, noções de tratamento digital de imagens, análise de imagens. Aplicações.',
+			semestre: 1,
+			vector: {T:2, P:0, L:1, O:1, D:0, HS:4, SL:3, C:4},
+			requisitos: ['*ST540'],
+			color: '#D97D40',
+			obligatory: false
+		},
+		'EB983': {
+			code: 'EB983',
+			name: 'IPD Integrated Project Delivery em Processos Relacionados a Construção e Gestão',
+			ementa: 'Conceitos e princípios de colaboração em projetos - Integrated Project Delivery. Ferramentas de produtividade durante o ciclo de vida da obra, para coordenação de ações, disponibilidade da informação e colaboração dos stakeholders envolvidos.',
+			semestre: 1,
+			vector: {T:0, P:0, L:3, O:1, D:0, HS:4, SL:3, C:4},
+			requisitos: '',
+			color: '#D940BA',
+			obligatory: false
+		},
+		'EB984': {
+			code: 'EB984',
+			name: 'Obras de Arte',
+			ementa: 'Estruturas de concreto armado e protendido. Pontes, viadutos e passarelas.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
+			requisitos: ['*EB944'],
+			color: '#767ACE',
+			obligatory: false
+		},
+		'EB985': {
+			code: 'EB985',
+			name: 'Crítico Aplicado à Engenharia',
+			ementa: 'Noções básicas de argumento (dedução, indução e inferência). A lógica subjacente à argumentação (validade e correção). Tomada de decisão. Falácias. Análise crítica de argumentos.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D99C40',
+			obligatory: false
+		},
+		'ST526': {
+			code: 'ST526',
+			name: 'Estática das Estruturas',
+			ementa: 'Treliças. Processos de equilíbrio dos nós, Ritter e Cremona. Flechas e contra flechas em vigas. Equação da linha elástica. Flambagem. Cisalhamento em rebites e parafusos. Vigas hiperestáticas, resolução pelo processo de Cross. Coeficientes relativos à forma, cargas e condições de extremidades das barras.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*ST423'],
+			color: '#50B3C2',
+			obligatory: false
+		},
+		'ST628': {
+			code: 'ST628',
+			name: 'Concreto Armado II',
+			ementa: 'Fundamentos e princípios do projeto estrutural. Formas de concreto armado. Cargas atuantes nas estruturas. Fundamentos da técnica de armar. Ancoragem. Peças usuais de concreto armado: lajes, vigas e pilares. Dimensionamento e projeto com uso de programas e computação gráfica.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: ['*EB944', '*ST526'],
+			color: '#6397C8',
+			obligatory: false
+		},
+		'ST722': {
+			code: 'ST722',
+			name: 'Estruturas de Aço e Madeira',
+			ementa: 'Estruturas de madeira. Estruturas metálicas. Prática.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: ['*ST526'],
+			color: '#50B3C2',
+			obligatory: false
+		},
+		'ST727': {
+			code: 'ST727',
+			name: 'Concreto Armado III',
+			ementa: 'Fundamentos e princípios do projeto estrutural. Peças usuais de concreto armado. Lajes planas, cogumelo e nervuradas. Punção. Consolos curtos. Vigas parede. Elementos de fundação. Escadas usuais. Reservatórios. Dimensionamento e projeto com uso de programas e computação gráfica.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: ['*EB944'],
+			color: '#767ACE',
+			obligatory: false
+		},
+		'ST729': {
+			code: 'ST729',
+			name: 'Noções de Concreto Protendido',
+			ementa: 'Conceitos de protensão aplicada ao concreto: materiais e sistemas de protensão. Estados limites de serviços e últimos. Aplicações em estruturas de edifícios.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:2, D:0, HS:4, SL:2, C:4},
+			requisitos: ['*EB944'],
+			color: '#767ACE',
+			obligatory: false
+		},
+		'ST730': {
+			code: 'ST730',
+			name: 'Estruturas de Concreto Pré-Moldado',
+			ementa: 'Estruturas pré-moldadas de concreto, sistemas e peças usuais, ligações e elementos de fundação. Concretos de alto desempenho. Concreto com adição de fibras.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: ['*ST628'],
+			color: '#6397C8',
+			obligatory: false
 		}
 	}
 };

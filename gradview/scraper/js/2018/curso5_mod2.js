@@ -35,6 +35,29 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 6,
+			hasRestrictions: true,
+			subjects: ['QL702', 'QL703'],
+		},
+		'elet-2': {
+			credits: 4,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-3': {
+			credits: 2,
+			hasRestrictions: true,
+			subjects: ['QG981', 'QG982', 'QG983', 'QG984'],
+		},
+		'elet-4': {
+			credits: 8,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'MA111': {
 			code: 'MA111',
@@ -43,7 +66,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D94076'
+			color: '#4ED940',
+			obligatory: true
 		},
 		'MA141': {
 			code: 'MA141',
@@ -52,7 +76,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40BED9'
+			color: '#77D940',
+			obligatory: true
 		},
 		'QG005': {
 			code: 'QG005',
@@ -61,7 +86,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:0, O:0, D:0, HS:1, SL:1, C:1},
 			requisitos: '',
-			color: '#D040D9'
+			color: '#CB40D9',
+			obligatory: true
 		},
 		'QG108': {
 			code: 'QG108',
@@ -70,7 +96,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D97640'
+			color: '#4085D9',
+			obligatory: true
 		},
 		'QG109': {
 			code: 'QG109',
@@ -79,7 +106,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D988'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'QG362': {
 			code: 'QG362',
@@ -88,7 +116,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D9BE'
+			color: '#A1D940',
+			obligatory: true
 		},
 		'EL683': {
 			code: 'EL683',
@@ -97,7 +126,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D9AC40'
+			color: '#D9BD40',
+			obligatory: true
 		},
 		'F_128': {
 			code: 'F_128',
@@ -106,7 +136,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940AC'
+			color: '#4E40D9',
+			obligatory: true
 		},
 		'F_129': {
 			code: 'F_129',
@@ -115,7 +146,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#6440D9'
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'MA211': {
 			code: 'MA211',
@@ -124,7 +156,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', '*MA141'],
-			color: ''
+			color: '#63D940',
+			obligatory: true
 		},
 		'QA282': {
 			code: 'QA282',
@@ -133,7 +166,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:4, O:0, D:0, HS:8, SL:8, C:8},
 			requisitos: ['QG108', 'QG109'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'QO321': {
 			code: 'QO321',
@@ -142,7 +176,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QG108'],
-			color: ''
+			color: '#4085D9',
+			obligatory: true
 		},
 		'EL511': {
 			code: 'EL511',
@@ -151,7 +186,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#9AD940'
+			color: '#CBD940',
+			obligatory: true
 		},
 		'MA311': {
 			code: 'MA311',
@@ -160,7 +196,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['*MA211'],
-			color: ''
+			color: '#63D940',
+			obligatory: true
 		},
 		'QF431': {
 			code: 'QF431',
@@ -169,7 +206,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA211', 'QG108'],
-			color: ''
+			color: '#52AF8D',
+			obligatory: true
 		},
 		'QO521': {
 			code: 'QO521',
@@ -178,7 +216,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['QO321'],
-			color: ''
+			color: '#4085D9',
+			obligatory: true
 		},
 		'EL212': {
 			code: 'EL212',
@@ -187,7 +226,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D94040'
+			color: '#D94069',
+			obligatory: true
 		},
 		'F_328': {
 			code: 'F_328',
@@ -196,7 +236,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA111', 'MA141'],
-			color: ''
+			color: '#5CA673',
+			obligatory: true
 		},
 		'QA481': {
 			code: 'QA481',
@@ -205,7 +246,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QA282'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'QA483': {
 			code: 'QA483',
@@ -214,7 +256,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QA282'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'QF531': {
 			code: 'QF531',
@@ -223,7 +266,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QF431'],
-			color: ''
+			color: '#52AF8D',
+			obligatory: true
 		},
 		'QG464': {
 			code: 'QG464',
@@ -232,7 +276,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QG108', 'QG109'],
-			color: ''
+			color: '#40AFD9',
+			obligatory: true
 		},
 		'QI145': {
 			code: 'QI145',
@@ -241,7 +286,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: ['QG108'],
-			color: ''
+			color: '#4085D9',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -250,7 +296,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL774': {
 			code: 'EL774',
@@ -259,7 +306,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['AA200', 'AA445'],
-			color: '#4088D9'
+			color: '#7740D9',
+			obligatory: true
 		},
 		'QG565': {
 			code: 'QG565',
@@ -268,7 +316,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:8, O:2, D:0, HS:12, SL:8, C:12},
 			requisitos: ['QI145', 'QO521'],
-			color: ''
+			color: '#4085D9',
+			obligatory: true
 		},
 		'QO551': {
 			code: 'QO551',
@@ -277,7 +326,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QO521'],
-			color: ''
+			color: '#4085D9',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -286,7 +336,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL485': {
 			code: 'EL485',
@@ -295,7 +346,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#64D940'
+			color: '#A140D9',
+			obligatory: true
 		},
 		'EL874': {
 			code: 'EL874',
@@ -304,7 +356,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['EL774'],
-			color: ''
+			color: '#7740D9',
+			obligatory: true
 		},
 		'QF535': {
 			code: 'QF535',
@@ -313,7 +366,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['F_328', '*MA311'],
-			color: ''
+			color: '#60C05A',
+			obligatory: true
 		},
 		'QF632': {
 			code: 'QF632',
@@ -322,7 +376,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:6, O:2, D:0, HS:8, SL:6, C:8},
 			requisitos: ['QA282', 'QF531'],
-			color: ''
+			color: '#49AFB3',
+			obligatory: true
 		},
 		'QI245': {
 			code: 'QI245',
@@ -331,7 +386,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QI145'],
-			color: ''
+			color: '#4085D9',
+			obligatory: true
 		},
 		'GT001': {
 			code: 'GT001',
@@ -340,7 +396,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#40D952'
+			color: '#D99340',
+			obligatory: true
 		},
 		'QG680': {
 			code: 'QG680',
@@ -349,7 +406,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:0, O:5, D:0, HS:6, SL:1, C:6},
 			requisitos: ['AA460', 'EL874'],
-			color: '#4052D9'
+			color: '#7740D9',
+			obligatory: true
 		},
 		'QG760': {
 			code: 'QG760',
@@ -358,7 +416,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:3, L:0, O:5, D:0, HS:8, SL:3, C:8},
 			requisitos: ['AA470'],
-			color: '#9A40D9'
+			color: '#D96940',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -367,7 +426,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL213': {
 			code: 'EL213',
@@ -376,7 +436,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D0D940'
+			color: '#D94040',
+			obligatory: true
 		},
 		'QA815': {
 			code: 'QA815',
@@ -385,7 +446,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QA282', '*QF531'],
-			color: ''
+			color: '#49AFB3',
+			obligatory: true
 		},
 		'QF661': {
 			code: 'QF661',
@@ -394,7 +456,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*QF531', '*QO521'],
-			color: ''
+			color: '#499AB3',
+			obligatory: true
 		},
 		'QG880': {
 			code: 'QG880',
@@ -403,7 +466,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:6, D:0, HS:8, SL:2, C:8},
 			requisitos: ['EL874', 'QG680'],
-			color: ''
+			color: '#7740D9',
+			obligatory: true
 		},
 		'QL701': {
 			code: 'QL701',
@@ -412,7 +476,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:4, D:0, HS:6, SL:2, C:6},
 			requisitos: ['QG760'],
-			color: ''
+			color: '#D96940',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -421,7 +486,68 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'QG981': {
+			code: 'QG981',
+			name: 'Tópicos Especiais em Ensino de Química I',
+			ementa: 'Abordagem de temas contemporâneos direta ou indiretamente relacionados ao Ensino de Química, com articulação de conhecimento científico, produções bibliográficas e material instrucional. Especificidades serão descritas por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40D95C',
+			obligatory: false
+		},
+		'QG982': {
+			code: 'QG982',
+			name: 'Tópicos Especiais em Ensino de Química II',
+			ementa: 'Abordagem de temas contemporâneos direta ou indiretamente relacionados ao Ensino de Química, com articulação de conhecimento científico, produções bibliográficas e material instrucional. Especificidades serão descritas por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40D985',
+			obligatory: false
+		},
+		'QG983': {
+			code: 'QG983',
+			name: 'Tópicos Especiais em Ensino de Química III',
+			ementa: 'Abordagem de temas contemporâneos direta ou indiretamente relacionados ao Ensino de Química, com articulação de conhecimento científico, produções bibliográficas e material instrucional. Especificidades serão descritas por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D94093',
+			obligatory: false
+		},
+		'QG984': {
+			code: 'QG984',
+			name: 'Tópicos Especiais em Ensino de Química IV',
+			ementa: 'Abordagem de temas contemporâneos direta ou indiretamente relacionados ao Ensino de Química, com articulação de conhecimento científico, produções bibliográficas e material instrucional. Especificidades serão descritas por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D940BD',
+			obligatory: false
+		},
+		'QL702': {
+			code: 'QL702',
+			name: 'Atividades Científico-Culturais I',
+			ementa: 'Contato com a produção e divulgação de conhecimentos da Química, da Educação e de áreas afins em atividades científicas e culturais, a partir da participação em eventos como congressos, seminários, palestras e oficinas.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:2, D:0, HS:2, SL:0, C:2},
+			requisitos: ['AA200'],
+			color: '#405CD9',
+			obligatory: false
+		},
+		'QL703': {
+			code: 'QL703',
+			name: 'Atividades Científico-Culturais II',
+			ementa: 'Interação com a produção e a divulgação de conhecimentos da Química, da Educação e de áreas afins em atividades científicas e culturais, mediante a participação comprovada em congressos, seminários, palestras e oficinas.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:2, D:0, HS:2, SL:0, C:2},
+			requisitos: ['AA200'],
+			color: '#40D9AF',
+			obligatory: false
 		}
 	}
 };

@@ -11,24 +11,28 @@ function curriculostr = curriculo2str(curriculo)
     curriculostr = sprintf('%s\n\t},\n\n',curriculostr);
     
     %% Eletivas
-    eletivas = sprintf('\teletivas: {');
-    for i=1:length(curriculo.eletivas)
-        if isempty(curriculo.eletivas(i).disc)
-            restriction = 'false';
-        else
-            restriction = 'true';
+    if isfield(curriculo,'eletivas')
+        eletivas = sprintf('\teletivas: {');
+        for i=1:length(curriculo.eletivas)
+            if isempty(curriculo.eletivas(i).disc)
+                restriction = 'false';
+            else
+                restriction = 'true';
+            end
+
+            if isempty(curriculo.eletivas(i).disc)
+                lista='';
+            else
+                lista=['''' strjoin(curriculo.eletivas(i).disc,''', ''') ''''];
+            end
+
+            eletivas = sprintf('%s\n\t\t''elet-%d'': {\n\t\t\tcredits: %d,\n\t\t\thasRestrictions: %s,\n\t\t\tsubjects: [%s],',eletivas,i,curriculo.eletivas(i).creditos,restriction,lista);
+            eletivas = sprintf('%s\n\t\t},',eletivas);
         end
-        
-        if isempty(curriculo.eletivas(i).disc)
-            lista='';
-        else
-            lista=['''' strjoin(curriculo.eletivas(i).disc,''', ''') ''''];
-        end
-        
-        eletivas = sprintf('%s\n\t\t''elet-%d'': {\n\t\t\tcredits: %d,\n\t\t\thasRestrictions: %s,\n\t\t\tsubjects: [%s],',eletivas,i,curriculo.eletivas(i).creditos,restriction,lista);
-        eletivas = sprintf('%s\n\t\t},',eletivas);
+        eletivas = sprintf('%s\n\t},\n\n',eletivas);
+    else
+        eletivas = sprintf('\teletivas: {\n\t},\n\n');
     end
-    eletivas = sprintf('%s\n\t},\n\n',eletivas);
 
     
     %% Disciplinas detalhadas
