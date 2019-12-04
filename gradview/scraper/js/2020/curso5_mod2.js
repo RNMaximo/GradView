@@ -35,6 +35,14 @@ const catalogue = {
 		}
 	},
 
+	eletivas: [
+		{
+			credits: 4,
+			hasRestrictions: true,
+			subjects: ['QG981', 'QG982', 'QG983', 'QG984'],
+		},
+	],
+
 	subjects: {
 		'MA111': {
 			code: 'MA111',
@@ -43,7 +51,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#B3D940'
+			color: '#40D976'
 		},
 		'MA141': {
 			code: 'MA141',
@@ -52,7 +60,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D98C40'
+			color: '#D94081'
 		},
 		'QG005': {
 			code: 'QG005',
@@ -61,7 +69,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:0, O:0, D:0, HS:1, SL:1, C:1},
 			requisitos: '',
-			color: '#408CD9'
+			color: '#6BD940'
 		},
 		'QG108': {
 			code: 'QG108',
@@ -70,7 +78,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9D940'
+			color: '#4B40D9'
 		},
 		'QG109': {
 			code: 'QG109',
@@ -79,7 +87,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#66D940'
+			color: '#40D956'
 		},
 		'QG362': {
 			code: 'QG362',
@@ -88,7 +96,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40B3D9'
+			color: '#8CD940'
 		},
 		'EL683': {
 			code: 'EL683',
@@ -97,7 +105,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D9B3'
+			color: '#40B8D9'
 		},
 		'F_128': {
 			code: 'F_128',
@@ -106,7 +114,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D96640'
+			color: '#CE40D9'
 		},
 		'F_129': {
 			code: 'F_129',
@@ -115,7 +123,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9B340'
+			color: '#D96140'
 		},
 		'MA211': {
 			code: 'MA211',
@@ -151,7 +159,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:4, D:0, HS:6, SL:2, C:6},
 			requisitos: '',
-			color: '#B340D9'
+			color: '#4097D9'
 		},
 		'EL511': {
 			code: 'EL511',
@@ -160,7 +168,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D94040'
+			color: '#AD40D9'
 		},
 		'EP152': {
 			code: 'EP152',
@@ -169,7 +177,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D9408C'
+			color: '#D940C3'
 		},
 		'QF431': {
 			code: 'QF431',
@@ -187,7 +195,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#8C40D9'
+			color: '#4076D9'
 		},
 		'QO521': {
 			code: 'QO521',
@@ -205,7 +213,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#D940A2'
 		},
 		'EP372': {
 			code: 'EP372',
@@ -214,7 +222,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#D9C340'
 		},
 		'F_328': {
 			code: 'F_328',
@@ -268,7 +276,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['AA200', 'AA445'],
-			color: '#40D966'
+			color: '#40D997'
 		},
 		'QG551': {
 			code: 'QG551',
@@ -304,7 +312,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D940'
+			color: '#D94061'
 		},
 		'EL874': {
 			code: 'EL874',
@@ -349,7 +357,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:2, C:6},
 			requisitos: '',
-			color: '#6640D9'
+			color: '#8C40D9'
 		},
 		'EL213': {
 			code: 'EL213',
@@ -358,7 +366,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4066D9'
+			color: '#D9A240'
 		},
 		'QG680': {
 			code: 'QG680',
@@ -367,7 +375,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:0, O:5, D:0, HS:6, SL:1, C:6},
 			requisitos: ['AA450', 'EL874'],
-			color: '#40D98C'
+			color: '#ADD940'
 		},
 		'QG760': {
 			code: 'QG760',
@@ -376,7 +384,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:3, L:0, O:5, D:0, HS:8, SL:3, C:8},
 			requisitos: ['AA470'],
-			color: '#8CD940'
+			color: '#40D9D9'
 		},
 		'EP094': {
 			code: 'EP094',
@@ -385,7 +393,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:1, D:0, HS:4, SL:3, C:4},
 			requisitos: '',
-			color: '#D940D9'
+			color: '#CED940'
 		},
 		'EP879': {
 			code: 'EP879',
@@ -394,7 +402,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#D940B3'
+			color: '#D98140'
 		},
 		'QA815': {
 			code: 'QA815',
@@ -412,7 +420,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA450'],
-			color: '#D94066'
+			color: '#6B40D9'
 		},
 		'QG880': {
 			code: 'QG880',
@@ -431,6 +439,42 @@ const catalogue = {
 			vector: {T:2, P:0, L:0, O:4, D:0, HS:6, SL:2, C:6},
 			requisitos: ['QG760'],
 			color: ''
+		},
+		'QG981': {
+			code: 'QG981',
+			name: 'Tópicos Especiais em Ensino de Química I',
+			ementa: 'Abordagem de temas contemporâneos direta ou indiretamente relacionados ao Ensino de Química, com articulação de conhecimento científico, produções bibliográficas e material instrucional. Especificidades serão descritas por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40D9B8'
+		},
+		'QG982': {
+			code: 'QG982',
+			name: 'Tópicos Especiais em Ensino de Química II',
+			ementa: 'Abordagem de temas contemporâneos direta ou indiretamente relacionados ao Ensino de Química, com articulação de conhecimento científico, produções bibliográficas e material instrucional. Especificidades serão descritas por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#4056D9'
+		},
+		'QG983': {
+			code: 'QG983',
+			name: 'Tópicos Especiais em Ensino de Química III',
+			ementa: 'Abordagem de temas contemporâneos direta ou indiretamente relacionados ao Ensino de Química, com articulação de conhecimento científico, produções bibliográficas e material instrucional. Especificidades serão descritas por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D94040'
+		},
+		'QG984': {
+			code: 'QG984',
+			name: 'Tópicos Especiais em Ensino de Química IV',
+			ementa: 'Abordagem de temas contemporâneos direta ou indiretamente relacionados ao Ensino de Química, com articulação de conhecimento científico, produções bibliográficas e material instrucional. Especificidades serão descritas por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#4BD940'
 		}
 	}
 };

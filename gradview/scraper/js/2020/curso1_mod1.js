@@ -35,6 +35,14 @@ const catalogue = {
 		}
 	},
 
+	eletivas: [
+		{
+			credits: 8,
+			hasRestrictions: false,
+			subjects: [''],
+		},
+	],
+
 	subjects: {
 		'F_128': {
 			code: 'F_128',
@@ -43,7 +51,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940A6'
+			color: '#40D940'
 		},
 		'F_129': {
 			code: 'F_129',
@@ -52,7 +60,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D9A6'
+			color: '#D94040'
 		},
 		'FM003': {
 			code: 'FM003',
@@ -61,7 +69,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94040'
+			color: '#A6D940'
 		},
 		'MA111': {
 			code: 'MA111',
@@ -70,7 +78,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D9A640'
+			color: '#4040D9'
 		},
 		'MA141': {
 			code: 'MA141',
@@ -79,7 +87,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#D940A6'
 		},
 		'MS149': {
 			code: 'MS149',
@@ -88,7 +96,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D940'
+			color: '#A640D9'
 		},
 		'F_228': {
 			code: 'F_228',
@@ -133,7 +141,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#40A6D9'
+			color: '#D9A640'
 		},
 		'F_328': {
 			code: 'F_328',
@@ -196,7 +204,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#A6D940'
+			color: '#40A6D9'
 		},
 		'MA553': {
 			code: 'MA553',
@@ -232,7 +240,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#A640D9'
+			color: '#40D9A6'
 		},
 		'ELET05': {
 			code: 'ELET05',

@@ -35,6 +35,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 26,
+			hasRestrictions: true,
+			subjects: ['BB125', 'CE138', 'CE451', 'CE738', 'CE939', 'EU502', 'MA044', 'MA502', 'MA602', 'ME502', 'ME601', 'ME612', 'ME630', 'ME651', 'ME652', 'ME661', 'ME701', 'ME706', 'ME715', 'ME716', 'ME720', 'ME721', 'ME730', 'ME732', 'ME820', 'ME821', 'ME850', 'ME860', 'ME861', 'ME904', 'ME905', 'ME906', 'ME907', 'ME908', 'ME909', 'ME910', 'ME911', 'ME912', 'ME913', 'ME914', 'ME915', 'ME916', 'ME917', 'ME918', 'ME919', 'ME920', 'MS317', 'MS428', 'MS515', 'MS580', 'MS614', 'MS680', 'MS714', 'MS715', 'TA541'],
+		},
+		'elet-2': {
+			credits: 24,
+			hasRestrictions: false,
+			subjects: [''],
+		},
+	},
+
 	subjects: {
 		'MA111': {
 			code: 'MA111',
@@ -43,7 +56,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#40A6D9'
+			color: '#BA40D9'
 		},
 		'MA141': {
 			code: 'MA141',
@@ -52,7 +65,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940A6'
+			color: '#40D97D'
 		},
 		'ME110': {
 			code: 'ME110',
@@ -61,7 +74,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D940'
+			color: '#9540D9'
 		},
 		'ME111': {
 			code: 'ME111',
@@ -70,7 +83,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#A640D9'
+			color: '#D940AE'
 		},
 		'MS149': {
 			code: 'MS149',
@@ -79,7 +92,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#407DD9'
 		},
 		'LA122': {
 			code: 'LA122',
@@ -88,7 +101,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:2, HS:6, SL:2, C:4},
 			requisitos: '',
-			color: '#A6D940'
+			color: '#D98940'
 		},
 		'MA211': {
 			code: 'MA211',
@@ -115,7 +128,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D94040'
+			color: '#40C6D9'
 		},
 		'ME210': {
 			code: 'ME210',
@@ -133,7 +146,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:3, D:3, HS:7, SL:0, C:4},
 			requisitos: ['AA200'],
-			color: '#D9A640'
+			color: '#D94064'
 		},
 		'MA311': {
 			code: 'MA311',
@@ -151,7 +164,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:1, D:0, HS:5, SL:4, C:5},
 			requisitos: '',
-			color: '#40D9A6'
+			color: '#7140D9'
 		},
 		'ME310': {
 			code: 'ME310',
@@ -341,6 +354,501 @@ const catalogue = {
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:5},
 			requisitos: '',
 			color: ''
+		},
+		'BB125': {
+			code: 'BB125',
+			name: 'Fundamentos de Biologia Molecular',
+			ementa: 'Estrutura do DNA e replicação. Mutações e reparo do DNA. Estrutura do RNA e transcrição. Síntese e endereçamento de proteínas. Regulação da expressão gênica. Uso de técnicas recombinantes no diagnóstico e tratamento de saúde (sequenciamento de DNA, southern/northern/western blotting, clonagem, PCR, e outros).',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D94040'
+		},
+		'CE138': {
+			code: 'CE138',
+			name: 'Estratégias de Empresas para Engenharia',
+			ementa: 'Conceitos básicos de economia. Introdução à macroeconomia. Processo de globalização e de reestruturação produtiva. Estratégias empresariais: inovação, concorrência e estratégias competitivas.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['MA211'],
+			color: ''
+		},
+		'CE451': {
+			code: 'CE451',
+			name: 'Métodos Quantitativos Aplicados à Economia Financeira',
+			ementa: 'Processo decisório em condições de risco. Risco e retorno de um ativo e de uma carteira. Seleção de carteiras e teoria de Markowitz. Modelo de índice único. Modelo de índice múltiplo. Outros modelos de escolha de carteiras. Análise da utilidade do investidor. Modelo de precificação de ativos. Modelo de formação de preços por arbritagem. Eficiência de mercado. Mercado de opções e métodos de apreçamento. Mercado de renda fixa: formação de preços e administração de carteiras.',
+			semestre: 1,
+			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D940D3'
+		},
+		'CE738': {
+			code: 'CE738',
+			name: 'Economia para Engenharia',
+			ementa: 'O processo de produção visto pelas óticas micro e macroeconômicas. Produção e propriedade. Produção como técnica e como processo social. Agregação da produção. Mercados. Papel do governo.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D958'
+		},
+		'CE939': {
+			code: 'CE939',
+			name: 'Gestão de Marketing',
+			ementa: 'Conceito de Marketing. Mercados e estruturas de mercado. O composto mercadológico. Abordagem a partir da análise, adaptação, ativação e avaliação. Abordagem a partir do produto, preço, promoção, ponto de vista e pós-venda. Mercados específicos: caracterização, análise, tendências. Plano de marketing.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#95D940'
+		},
+		'EU502': {
+			code: 'EU502',
+			name: 'Metrologia Industrial',
+			ementa: 'O sistema brasileiro de normalização. Terminologia normalizada sobre medição, desvios e erros. Sistemas de medição. Erros e incertezas. Calibração de instrumentos. Rastreabilidade.',
+			semestre: 1,
+			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4C40D9'
+		},
+		'MA044': {
+			code: 'MA044',
+			name: 'Matemática IV',
+			ementa: 'Números complexos. Funções de variável complexa. Equações de Cauchy-Riemann. Integral de linha. Sequências e séries de números complexos. Séries de potências. Teorema dos resíduos. Transformações conformes.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MA141', 'MA211'],
+			color: ''
+		},
+		'MA502': {
+			code: 'MA502',
+			name: 'Análise I',
+			ementa: 'Conjuntos finitos e infinitos. Números reais. Sequências e séries numéricas. Funções contínuas. Funções deriváveis.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: ['AA200'],
+			color: '#40D9C6'
+		},
+		'MA602': {
+			code: 'MA602',
+			name: 'Análise II',
+			ementa: 'Integral de Riemann. Integral imprópria. Sequências e séries de funções. Convergência uniforme. Teorema de aproximação de Weierstrass. Teorema de Ascoli.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#71D940'
+		},
+		'ME502': {
+			code: 'ME502',
+			name: 'Processos Estocásticos II',
+			ementa: 'Passeio aleatório simples: leis de arcoseno, recorrência/transiência, funções de Green. Martingais: desigualdades básicas, convergência, teorema de parada opcional. Aplicações. Movimento Browniano. Processos estacionários.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME501'],
+			color: ''
+		},
+		'ME601': {
+			code: 'ME601',
+			name: 'Tópicos Especiais em Estatística Aplicada I',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#4058D9'
+		},
+		'ME612': {
+			code: 'ME612',
+			name: 'Métodos Estatísticos para Ciências Biológicas',
+			ementa: 'Conceitos básicos de epidemiologia. Ensaios clínicos aleatorizados. Função de sobrevivência e função risco. Principais distribuições utilizadas em análise de sobrevivência. Tabelas de vida em análise de sobrevivência. Comparações de curva de sobrevivência. Modelos paramétricos e semi-paramétricos em análise de sobrevivência. Elaboração de um relatório final que inclua análise de dados.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME630': {
+			code: 'ME630',
+			name: 'Iniciação Científica I',
+			ementa: 'Atividades de iniciação científica em estatística e/ou probabilidade supervisionadas por docentes do curso e aprovadas pela comissão de docentes responsáveis pela disciplina, resultando em apresentação de seminário(s) e relatório técnico.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:5, D:0, HS:5, SL:0, C:5},
+			requisitos: ['AA200'],
+			color: '#D94089'
+		},
+		'ME651': {
+			code: 'ME651',
+			name: 'Controle Estatístico de Qualidade',
+			ementa: 'Ferramentas da Qualidade. Causas de variação. Bases para a construção de Cartas de Controle: Grupos racionais. Cartas de Controle para Variáveis e para Atributos. Análise de padrões em Cartas de Controle. Cartas CUSUM e EWMA. CEP para pequenos lotes. CEP Multivariado. Capacidade de Processo. Análise do Sistema de medição. Planos de aceitação de lotes. Confiabilidade: conceitos, distribuições, tipos de dados e análise não paramétrica. Gestão da Qualidade: Normas e Prêmios. Elaboração de um relatório final que inclua análise de dados.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME322'],
+			color: ''
+		},
+		'ME652': {
+			code: 'ME652',
+			name: 'Controle Estatístico de Qualidade II',
+			ementa: 'Pressupostos e limitações do CEP básico. Técnicas especiais de CEP univariado. CEP para processos multivariados. Controle de engenharia de processos. Experimentos planejados para melhoria de processos. Otimização de processos com experimentos. Amostragem de aceitação.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME661': {
+			code: 'ME661',
+			name: 'Métodos Não Paramétricos',
+			ementa: 'Teoria e aplicação de testes estatísticos não-paramétricos mais comumente usados, tais como testes do sinal e Wilcoxon, e comparação com suas correspondentes versões paramétricas. Testes para locação de uma e duas amostras, medidas de correlação, testes de aderência, testes de independência, testes para igualdade de variâncias, testes de Kruskal-Wallis e Friedman para análise de variância e outros tópicos selecionados. Ferramentas computacionais para realizar tais testes. Elaboração de um relatório final que inclua análise de dados.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME701': {
+			code: 'ME701',
+			name: 'Tópicos Especiais em Estatística Aplicada II',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D9D340'
+		},
+		'ME706': {
+			code: 'ME706',
+			name: 'Robustez',
+			ementa: 'Modelos normal e de locação-escala. Estimação parâmetros, interesse no outlier e suas causas. Propriedades ótimas de estimadores tradicionais sob hipóteses estritas e impacto dos outliers. Distribuição normal: otimalidade da média amostral sob normalidade. Resistência. Alternativas resistentes aos estimadores tradicionais. Invariância e equivariância dos estimadores de locação e de escala. Curva de sensibilidade e ponto de ruptura. Noção ingênua de robustez qualitativa. Relação entre resistência e robustez qualitativa. Robustez em eficiência.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME715': {
+			code: 'ME715',
+			name: 'Econometria',
+			ementa: 'Revisão de técnicas de regressão. Extensões. Equações simultâneas. Mínimos quadrados generalizados. Variáveis instrumentais. Identificação. Estimação em sistemas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME716': {
+			code: 'ME716',
+			name: 'Teoria da Informação',
+			ementa: 'Entropia, entropia relativa e informação mútua. Taxas de entropia de um processo estocástico: cadeias de Markov, taxas de entropia de um passeio aleatório. Compressão de dados. Exemplos de códigos. Desigualdade de Kraft. Código de Huffman. Shannon-Fano-Elias coding. Complexidade de Kolmogorov. Modelos de Computação. Complexidade de Kolmogorov e entropia. Algoritmos aleatórios e sequências incompreensíveis. A estatística suficiente de Kolmogorov. Introdução à Channel Capacity. Entropia máxima e estimação espectral. Introdução à teoria da taxa de distorção. Desigualdades em teoria da informação.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME720': {
+			code: 'ME720',
+			name: 'Modelos Lineares Generalizados',
+			ementa: 'Revisão de Modelos Lineares. Conceitos básicos, terminologia e notações. Família exponencial de distribuições e Modelos Lineares Generalizados. Estimação e Inferência. Verificação do ajuste do modelo. Modelos para dados binários. Modelos para dados de contagem. Sobredispersão e modelo binomial negativa. Modelos para dados de contagem com excesso de zeros. Modelos não lineares e Modelos lineares mistos. Elaboração de relatórios que inclua análise de dados.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME721': {
+			code: 'ME721',
+			name: 'Demografia',
+			ementa: 'Estudo de população. Recenseamento: normas, erros, composição por sexo, idade, etc. Natalidade, migrações, mortalidade. Tábuas de mortalidade. Modelos estocásticos de crescimento populacional. Projeções.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME730': {
+			code: 'ME730',
+			name: 'Iniciação Científica II',
+			ementa: 'Atividades de iniciação científica em estatística e/ou probabilidade supervisionadas por docentes do curso e aprovadas pela comissão de docentes responsáveis pela disciplina, resultando em apresentação de seminário(s) e relatório técnico.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:5, D:0, HS:5, SL:0, C:5},
+			requisitos: ['AA200', 'ME630'],
+			color: '#D9AE40'
+		},
+		'ME732': {
+			code: 'ME732',
+			name: 'Métodos em Análise Multivariada II',
+			ementa: 'Análise de agrupamentos: tipos de algoritmos, similaridade, \"k-means\", hierárquicos e outros, métodos de validação. Análise de Associação: conjuntos de itens frequentes, regras booleanas, outros tipos de regras, avaliação de padrões de associação. Classificação: árvores de decisão, aprendizado de máquina, vizinho mais próximo, bayesiano, métodos de grupos e avaliação de classificadores. Detecção de anomalias. Elaboração de um relatório final que inclua análise de dados.',
+			semestre: 1,
+			vector: {T:4, P:0, L:1, O:0, D:0, HS:5, SL:5, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME820': {
+			code: 'ME820',
+			name: 'Estágio em Empresa I',
+			ementa: 'Estágio que seja válido de acordo com normas internas definidas pela Coordenação de Graduação do Departamento de Estatística.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:4, D:0, HS:5, SL:0, C:5},
+			requisitos: ['AA200'],
+			color: '#D96440'
+		},
+		'ME821': {
+			code: 'ME821',
+			name: 'Estágio em Empresa II',
+			ementa: 'Estágio que seja válido de acordo com normas internas definidas pela Coordenação de Graduação do Departamento de Estatística.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:4, D:0, HS:5, SL:0, C:5},
+			requisitos: ['AA200', 'ME820'],
+			color: '#BAD940'
+		},
+		'ME850': {
+			code: 'ME850',
+			name: 'Seminários de Estatística',
+			ementa: 'Palestras sobre temas em diversas áreas da estatística, apresentados por profissionais internos e externos ao âmbito acadêmico.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME860': {
+			code: 'ME860',
+			name: 'Métodos Computacionais',
+			ementa: 'Criação e manipulação de arquivos de dados. Estudo de erros. Computações numéricas. Modelos lineares e não lineares. Geração de números aleatórios. Princípios de simulação.',
+			semestre: 1,
+			vector: {T:3, P:0, L:1, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['AA200'],
+			color: '#40D9A2'
+		},
+		'ME861': {
+			code: 'ME861',
+			name: 'Análise de Regressão II',
+			ementa: 'Regressão linear simples e múltipla. Diagnóstico e análise de resíduos. Mínimos quadrados ponderados. Transformações de variáveis. Técnicas de seleção de variáveis. Critérios alternativos a mínimos quadrados.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['AA200'],
+			color: '#4CD940'
+		},
+		'ME904': {
+			code: 'ME904',
+			name: 'Inferência Estatística na Era Computacional',
+			ementa: 'Método de Bayes Empírico. Regressão ridge. Modelos lineares generalizados. Árvores de regressão. Análise de sobrevivência. Algoritmo EM. Jacknife. Bootstrap. Validação Cruzada. Erro de predição. Inferência Bayesiana Objetiva.',
+			semestre: 1,
+			vector: {T:3, P:0, L:1, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME905': {
+			code: 'ME905',
+			name: 'Inferência Estatística para Dados de Alta Dimensão',
+			ementa: 'Hipóteses em grande escala. Modelagem de dados esparsos. LASSO. LARS. Florestas aleatórias. Boosting. Redes neurais. Deep learning. SVM. Frameworks de Aprendizado de Máquina.',
+			semestre: 1,
+			vector: {T:3, P:0, L:1, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME906': {
+			code: 'ME906',
+			name: 'Métodos em Aprendizado Supervisionado de Máquina',
+			ementa: 'Estratégias de aprendizado supervisionado de máquina para problemas de regressão e classificação. Métodos de reamostragem, SVM e árvores de decisão. Expor os alunos a estratégias modernas de modelagem, focando em modelos preditivos. Elaboração de um produto de dados empregando ferramentas computacionais.',
+			semestre: 1,
+			vector: {T:3, P:0, L:1, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME907': {
+			code: 'ME907',
+			name: 'Geoestatística',
+			ementa: 'Revisa&#771;o de processos estoca&#769;sticos em tempo conti&#769;nuo, estacionariedade e isotropia, processos Gaussianos. Ana&#769;lise explorato&#769;ria de dados espaciais e espac&#807;o-temporais. Variogramas e covariogramas. Estimac&#807;a&#771;o do variograma. Kriging (ordina&#769;rio, simples, universal). Anisotropia. Kriging com covaria&#769;veis e cokriging. Planejamento de experimentos espaciais. Diagno&#769;sticos. Thin-plate splines e me&#769;todos na&#771;o-parame&#769;tricos. Kriging espaço-temporal, modelos de covariância separa&#769;veis e na&#771;o-separa&#769;veis. Elaboração de um relatório final que inclua análise de dados.',
+			semestre: 1,
+			vector: {T:3, P:0, L:1, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME908': {
+			code: 'ME908',
+			name: 'Análise de Sobrevivência',
+			ementa: 'Situac&#807;o&#771;es de estudo de ana&#769;lise de sobrevive&#770;ncia, notac&#807;o&#771;es e conceitos ba&#769;sicos. Principais distribuições utilizadas em análise de sobrevivência. Tabelas de vida, estimador produto-limite, testes para comparac&#807;o&#771;es de duas ou mais func&#807;o&#771;es de sobrevive&#770;ncia. Modelos paramétricos e semi-paramétricos em análise de sobrevivência. Ana&#769;lise de riscos competitivos. Apresentação de seminários com metodologia e aplicações em análise de sobrevivência.',
+			semestre: 1,
+			vector: {T:3, P:0, L:1, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME909': {
+			code: 'ME909',
+			name: 'Fundamentos de Modelagem via Cópulas',
+			ementa: 'Propriedades básicas das cópulas. Teorema de Sklar. Limitantes de Fréchet-Hoeffding para distribuições conjuntas. Métodos de construção de cópulas. Cópulas Arquimedianas. Geradores de cópulas Arquimedianas e suas propriedades. Medidas de Dependência: noções de concordância e medidas. Cópula empírica e processos empíricos de cópula.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME910': {
+			code: 'ME910',
+			name: 'Teoria de Resposta ao Item',
+			ementa: 'Revisão de modelos de regressão. Conceitos básicos, terminologia e notações. Exemplos de variáveis latentes, construtos e instrumentos de medida. Principais modelos unidimensionais e multidimensionais para respostas dicotômicas e politômicas. Principais métodos de estimação. Principais métodos de equalização. Construção e interpretação de escalas para os traços latentes. Modelos de desdobramento. Distribuições não gaussianas para os traços latentes. Funções de resposta ao item assimétricas e/ou de caudas pesadas. Recursos computacionais. Tópicos adicionais para pesquisa.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME911': {
+			code: 'ME911',
+			name: 'Modelagem de Equações Estruturais',
+			ementa: 'Introdução as variáveis latentes. Análise exploratória envolvendo variáveis latentes. Conceitos básicos, terminologia e notações. Análise de caminho. Modelos de análise fatorial exploratório e confirmatório. Introdução à modelagem de equações estruturais. Modelos de equações estruturais multiníveis, modelos híbridos e efeitos de interação. Estimação, análise de resíduos, comparação de modelos e testes de hipótese sob a ótica clássica. Inferência Bayesiana. Modelos não lineares. Modelos de classes latentes. Inclusão de variáveis qualitativas. Modelos de mistura finita. Modelos de múltiplos grupos.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME912': {
+			code: 'ME912',
+			name: 'Modelagem de Variáveis Latentes',
+			ementa: 'Introdução as variáveis latentes. Análise exploratória envolvendo variáveis latentes. Análise fatorial. Análise de perfis latentes. Análise do traço latente. Teoria da Resposta ao Item. Análise de classes latentes. Estimação, análise de resíduos, comparação de modelos e testes de hipótese sob a ótica frequentista. Inferência Bayesiana. Múltiplos grupos. Modelos multidimensionais e multivariados. Dados longitudinais.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME913': {
+			code: 'ME913',
+			name: 'Análise de Dados Hierárquicos',
+			ementa: 'Introdução aos dados hierárquicos. Análise exploratória de dados hierárquicos. Conceitos básicos, terminologia e notações. Modelos lineares hierárquicos gaussianos de um, dois e vários níveis. Modelos lineares hierárquicos não gaussianos de um, dois e vários níveis. Estimação, análise de resíduos, comparação de modelos e testes de hipótese sob a ótica frequentista. Inferência Bayesiana. Modelos não lineares.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME914': {
+			code: 'ME914',
+			name: 'Introdução à Teoria dos Jogos',
+			ementa: 'Jogo de soma zero para dois jogadores. Teoria da Utilidade. Jogo com soma não-nula para dois jogadores. Jogos para n jogadores.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME915': {
+			code: 'ME915',
+			name: 'Teoria da Decisão',
+			ementa: 'Elementos de teoria princi&#769;pio da perda esperada; informac&#807;a&#771;o perfeita, experimentac&#807;a&#771;o. Elementos de teoria de decisa&#771;o cla&#769;ssica: func&#807;a&#771;o de risco, estati&#769;sticas suficientes, admissibilidade, princi&#769;pio minimax. Derivac&#807;a&#771;o axioma&#769;tica da teoria de decisa&#771;o: func&#807;a&#771;o de utilidade, loteria de von Neumann- Morgenstern; prefere&#770;ncia e indiferenc&#807;a; princi&#769;pios do resultado certo, da continuidade, da domina&#770;ncia, da prefere&#770;ncia condicional. Coeficiente de aversa&#771;o ao risco; valor da experimentac&#807;a&#771;o com utilidade; loteria conti&#769;nuas. Aplicac&#807;o&#771;es: problema do seguro; divisa&#771;o do risco.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME916': {
+			code: 'ME916',
+			name: 'Regressão Quantílica',
+			ementa: 'Revisão de Modelos Lineares. Conceitos básicos, terminologia e notações. Definição geral de quantil. Modelo de regressão quantílica linear simples. Modelo de regressão quantílica linear múltiplo. Modelos de regressão quantílica não lineares. Regressão quantílica com censura. Estimação, análise de resíduos, comparação de modelos e testes de hipótese sob as óticas clássica e bayesiana.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME917': {
+			code: 'ME917',
+			name: 'Introdução a Métodos Não Paramétricos para Estimação de Curvas',
+			ementa: 'O histograma. Histograma como um estimador de máxima verossimilhança. Estatísticas do histograma. Estimação de densidades pelo método de Kernel. Estatísticas do estimador por Kernel. A escolha do parâmetro de suavização. Outros estimadores de densidade: séries ortogonais, máxima verossimilhança penalizada. O estimador de Nadaraya-Watson. O método K-nn. Técnicas de regressão não paramétrica para dados correlacionados. Conjunto de dados com outliers: Lowess, L-suavização, R-suavização. Técnicas de regressão não paramétrica por funções de base. Elaboração de um relatório final que inclua análise de dados.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME918': {
+			code: 'ME918',
+			name: 'Produtos de Dados',
+			ementa: 'Importação de dados. Formatação e representação de dados.Dados relacionais. Fluxos de trabalho. Desenvolvimento de produtos utilizando Shiny. Distribuição de produtos Shiny. Criação e distribuição de pacotes R.',
+			semestre: 1,
+			vector: {T:3, P:0, L:1, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME919': {
+			code: 'ME919',
+			name: 'Introdução a Modelos Lineares',
+			ementa: 'Revisa&#771;o de a&#769;lgebra de matrizes; generalizada; tipos de modelos lineares; modelos classificato&#769;rios e modelos funcionais; estimac&#807;a&#771;o por mi&#769;nimos quadrados: equac&#807;o&#771;es normais; valor esperado e varia&#770;ncia dos estimadores; identificabilidade e estimabilidade; teorema de Gauss-Markov e teorema de Gauss-Markov-Aitken; reparametrizac&#807;a&#771;o; forma cano&#770;nica do modelo linear; modelos lineares com restric&#807;o&#771;es nos para&#770;metros; relac&#807;a&#771;o entre OLS e BLUE; distribuic&#807;a&#771;o normal multivariada; distribuic&#807;o&#771;es T, qui- quadrado e F na&#771;o-centrais; distribuic&#807;o&#771;es de formas quadra&#769;ticas; teorema de Cochran; teste de hipo&#769;teses e intervalos de confianc&#807;a para func&#807;o&#771;es estima&#769;veis; aplicac&#807;o&#771;es do modelo linear geral: modelos com n crite&#769;rios de classificac&#807;a&#771;o (efeitos fixos, efeitos aleato&#769;rios e modelo misto), componentes da varia&#770;ncia, modelo de regressa&#771;o; as somas de quadrados tipo I, tipo II, tipo III e tipo IV.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'ME920': {
+			code: 'ME920',
+			name: 'Introdução à Inferência Causal',
+			ementa: 'Conceitos basais; Definic&#807;a&#771;o de Causalidade; Infere&#770;ncia de Causalidade; Equac&#807;o&#771;es estruturais; Grafos e Intervenc&#807;o&#771;es; Teoria de Decisa&#771;o e Infere&#770;ncia Causal; Infere&#770;ncia Causal como um Problema de Predic&#807;a&#771;o; Estrate&#769;gias de tratamento dina&#770;micas; Classificac&#807;a&#771;o cruzada; Estimac&#807;a&#771;o de efeitos diretos e indiretos; Caminhos causais em modelos. na&#771;o lineares; Infere&#770;ncia causal em Se&#769;ries Temporais.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:1, D:0, HS:5, SL:4, C:5},
+			requisitos: ['ME613'],
+			color: ''
+		},
+		'MS317': {
+			code: 'MS317',
+			name: 'Matemática Financeira',
+			ementa: 'Noção de taxa de juros. Fluxos de caixa. A calculadora financeira. Operações financeiras. Mercado financeiro. Sistemas de amortização e planilhas financeiras. Comparação entre alternativas de investimento. Extensões.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MA111'],
+			color: ''
+		},
+		'MS428': {
+			code: 'MS428',
+			name: 'Programação Linear',
+			ementa: 'Formulação de problemas de programação linear. Resolução Gráfica. Método Simplex. Teoria de dualidade. Análise de sensibilidade e análise paramétrica. Algoritmos de pontos interiores.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MA211', 'MA327', 'MS211'],
+			color: ''
+		},
+		'MS515': {
+			code: 'MS515',
+			name: 'Métodos Probabilísticos em Pesquisa Operacional',
+			ementa: 'Programação dinâmica determinística e estocástica. Modelos determinísticos e probabilísticos de estoques.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME210'],
+			color: ''
+		},
+		'MS580': {
+			code: 'MS580',
+			name: 'Introdução à Teoria Fuzzy',
+			ementa: 'Reticulados completos. Conjuntos fuzzy e extensões. Álgebra de conjuntos fuzzy. Números fuzzy. Relações fuzzy. Equações relacionais. Sistemas baseados em regras. Medidas fuzzy. Integrais fuzzy. Esperança fuzzy. Aplicações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: ['MS211'],
+			color: ''
+		},
+		'MS614': {
+			code: 'MS614',
+			name: 'Simulação de Sistemas',
+			ementa: 'Técnicas de simulação. Planejamento de experiências de simulação. Técnicas de geração de variáveis aleatórias. Modelos de filas, estoques e programação de sistemas. Simulação versus técnicas Analíticas. Simulação de sistemas econômicos. Linguagens de simulação.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: ['MC102', 'ME210'],
+			color: ''
+		},
+		'MS680': {
+			code: 'MS680',
+			name: 'Modelos Matemáticos para Biologia',
+			ementa: 'Modelos de dinâmica de populações homogêneas: ecologia de presa-predador. Exploração e otimização de recursos. Modelos clássicos de Epidemiologia. Modelos em Fisiologia e reações enzimáticas. Equações de diferenças, diferenciais ordinárias e com retardamento. Análise de estabilidade, bifurcação e soluções periódicas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: ['MA211'],
+			color: ''
+		},
+		'MS714': {
+			code: 'MS714',
+			name: 'Laboratório de Simulação de Sistemas',
+			ementa: 'Desenvolvimento de projetos computacionais, em temas relacionados com teoria de filas, teoria de estoques, planejamento de produção, etc., utilizando pacotes de simulação de sistemas.',
+			semestre: 1,
+			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['MS614'],
+			color: ''
+		},
+		'MS715': {
+			code: 'MS715',
+			name: 'Planejamento e Controle de Produção',
+			ementa: 'A função de produção e seus parâmetros básicos. Custos. Critérios de decisão. Medidas de trabalho. Sistemas de produção. Estoques. Planos e programas integrados. Programação e controle de operações. Será dada ênfase aos modelos matemáticos e aos problemas de planejamento e controle de produção.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MS428'],
+			color: ''
+		},
+		'TA541': {
+			code: 'TA541',
+			name: 'Análise Sensorial de Alimentos',
+			ementa: 'O ambiente dos testes sensoriais e outros fatores que influenciam a avaliação sensorial. Métodos Sensoriais: a) métodos discriminativos, b) métodos descritivos, c) métodos afetivos. Análise estatística univariada (ANOVA). Seleção de provadores. Correlação entre medidas sensoriais e instrumentais. Princípios básicos sobre psicofísica: lei de Stevens e Threshold.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40A2D9'
 		}
 	}
 };

@@ -1,10 +1,10 @@
 slCharacterEncoding('UTF-8');
 load('disciplinas.mat');
 catlist = sprintf('const catalogueOptions = {');
-for ano=2013:2013
+for ano=2020:2020
     catlist = sprintf('%s\n\t"%d": {',catlist,ano);
     create(['js/' num2str(ano)]);
-    for i=[1:50]
+    for i=[34:34]
         disp(['Obtendo curso ' num2str(i)]);
         try
             curriculos = getcurriculo(ano,i,disciplinas{ano});

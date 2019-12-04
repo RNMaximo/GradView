@@ -9,9 +9,7 @@ function curriculo_cores = colore_curriculos(curriculo)
             if isempty(discs(j).prereqs)
                 ncores = ncores+1;
             else
-                if ~isempty(strfind(discs(j).codigo,'ELET'))
-                    
-                elseif (length(strfind(discs(j).prereqs{1},'AA'))==length(strfind(discs(j).prereqs{1},','))+1)
+                if (length(strfind(discs(j).prereqs{1},'AA'))==length(strfind(discs(j).prereqs{1},','))+1)
                     ncores = ncores+1;
                 end
             end
@@ -31,9 +29,7 @@ function curriculo_cores = colore_curriculos(curriculo)
                 ncores = ncores+1;
                 discs(j).color = cores(ncores,:);
             else
-                if ~isempty(strfind(discs(j).codigo,'ELET'))
-                    discs(j).color = [0 0 0];
-                elseif (length(strfind(discs(j).prereqs{1},'AA'))==length(strfind(discs(j).prereqs{1},','))+1)
+                if (length(strfind(discs(j).prereqs{1},'AA'))==length(strfind(discs(j).prereqs{1},','))+1)
                     ncores = ncores+1;
                     discs(j).color = cores(ncores,:);
                 end
@@ -51,29 +47,18 @@ function curriculo_cores = colore_curriculos(curriculo)
             modificado=false;
             for j=1:length(discs)
                 if isempty(discs(j).color)
-                    prereqs = strrep(strrep(strrep(strrep(strrep(discs(j).prereqs,'''',''),'[',''),']',''),'*',''),' ','');
-                    prereqs = strsplit(prereqs{1},',');
-                    nvalid=0;
-                    nok=0;
-                    cor=[0 0 0];
+                    prereqs = strrep(strrep(strrep(strrep(discs(j).prereqs,'''',''),'[',''),']',''),'*','');
+                    prereqs = strsplit(prereqs,',');
+                    count=0;
                     for k=1:length(prereqs)
-                        if isempty(strfind(prereqs{k},'AA'))
-                            nvalid=nvalid+1;
-                            ind=strcmp(codigos,prereqs{k});
-                            corpre = discs(ind).color;
-                            if ~isempty(corpre)
-                                nok=nok+1;
-                                cor = cor+corpre;
-                            end
-                        end
+                        if contains(prereqs);
                     end
+                    strcmp(codigos,discs(j).codigo)
                     
-                    if nvalid==nok
-                        discs(j).color=round(cor/nok);
-                        modificado=true;
-                    end
                 end
             end
+            
+            
         end
         
         for j=1:length(discs)

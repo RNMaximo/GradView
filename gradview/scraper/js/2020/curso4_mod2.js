@@ -35,6 +35,34 @@ const catalogue = {
 		}
 	},
 
+	eletivas: [
+		{
+			credits: 12,
+			hasRestrictions: false,
+			subjects: [''],
+		},
+		{
+			credits: 4,
+			hasRestrictions: true,
+			subjects: ['F_540', 'F_541', 'F_839'],
+		},
+		{
+			credits: 12,
+			hasRestrictions: false,
+			subjects: [''],
+		},
+		{
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['F_530', 'F_630', 'F_709', 'F_730', 'F_809', 'FL702', 'FL801'],
+		},
+		{
+			credits: 12,
+			hasRestrictions: true,
+			subjects: ['F_590', 'F_690', 'FL110', 'FL210', 'FL310'],
+		},
+	],
+
 	subjects: {
 		'F_128': {
 			code: 'F_128',
@@ -43,7 +71,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#6BD940'
+			color: '#D940CB'
 		},
 		'F_129': {
 			code: 'F_129',
@@ -52,7 +80,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4097D9'
+			color: '#40D9AF'
 		},
 		'FM003': {
 			code: 'FM003',
@@ -61,7 +89,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9406B'
+			color: '#D9CB40'
 		},
 		'MA111': {
 			code: 'MA111',
@@ -70,7 +98,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#97D940'
+			color: '#D99340'
 		},
 		'MA141': {
 			code: 'MA141',
@@ -79,7 +107,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94040'
+			color: '#D94093'
 		},
 		'MS149': {
 			code: 'MS149',
@@ -88,7 +116,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#C3D940'
+			color: '#9340D9'
 		},
 		'F_228': {
 			code: 'F_228',
@@ -133,7 +161,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D940C3'
+			color: '#40D993'
 		},
 		'EL285': {
 			code: 'EL285',
@@ -142,7 +170,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D940'
+			color: '#AF40D9'
 		},
 		'EL683': {
 			code: 'EL683',
@@ -151,7 +179,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D997'
+			color: '#D94040'
 		},
 		'F_328': {
 			code: 'F_328',
@@ -205,7 +233,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D94097'
+			color: '#40D95C'
 		},
 		'EL511': {
 			code: 'EL511',
@@ -214,7 +242,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D96B40'
+			color: '#D95C40'
 		},
 		'EL685': {
 			code: 'EL685',
@@ -268,7 +296,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['AA200', 'AA445'],
-			color: '#40D9C3'
+			color: '#40AFD9'
 		},
 		'F_502': {
 			code: 'F_502',
@@ -277,7 +305,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#6B40D9'
+			color: '#D940AF'
 		},
 		'F_589': {
 			code: 'F_589',
@@ -286,7 +314,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#406BD9'
+			color: '#AFD940'
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -349,7 +377,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D99740'
+			color: '#40CBD9'
 		},
 		'F_901': {
 			code: 'F_901',
@@ -358,7 +386,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:8, D:0, HS:10, SL:2, C:10},
 			requisitos: ['AA200'],
-			color: '#4040D9'
+			color: '#7740D9'
 		},
 		'FL701': {
 			code: 'FL701',
@@ -367,7 +395,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:4, D:0, HS:8, SL:2, C:8},
 			requisitos: ['AA200'],
-			color: '#40D96B'
+			color: '#4077D9'
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -385,7 +413,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#C340D9'
+			color: '#405CD9'
 		},
 		'EL884': {
 			code: 'EL884',
@@ -394,7 +422,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9C340'
+			color: '#CBD940'
 		},
 		'F_897': {
 			code: 'F_897',
@@ -403,7 +431,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:0, C:8},
 			requisitos: ['AA480'],
-			color: '#40C3D9'
+			color: '#D97740'
 		},
 		'F_902': {
 			code: 'F_902',
@@ -412,7 +440,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:8, D:0, HS:10, SL:2, C:10},
 			requisitos: ['AA200'],
-			color: '#9740D9'
+			color: '#40D977'
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -422,6 +450,141 @@ const catalogue = {
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
 			color: ''
+		},
+		'FL110': {
+			code: 'FL110',
+			name: 'Iniciação à Prática de Ensino I',
+			ementa: 'Iniciação a atividades docentes, em projetos de iniciação científica, iniciação à docência, monitoria e/ou práticas articuladas entre os sistemas de ensino e instituições educativas.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#D9405C'
+		},
+		'FL210': {
+			code: 'FL210',
+			name: 'Iniciação à Prática de Ensino II',
+			ementa: 'Iniciação a atividades docentes, em projetos de iniciação científica, iniciação à docência, monitoria e/ou práticas articuladas entre os sistemas de ensino e instituições educativas.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#77D940'
+		},
+		'FL310': {
+			code: 'FL310',
+			name: 'Iniciação à Prática de Ensino III',
+			ementa: 'Iniciação a atividades docentes, em projetos de iniciação científica, iniciação à docência, monitoria e/ou práticas articuladas entre os sistemas de ensino e instituições educativas.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#D9AF40'
+		},
+		'FL702': {
+			code: 'FL702',
+			name: 'Projetos Integrados do Ensino de Física II',
+			ementa: 'Desenvolvimento de projetos educacionais que poderão ser aplicados em sala de aula e/ou ambientes de ensino não formal, como museu de ciências, voltadas para o ensino médio em Física. Os projetos deverão refletir sobre diferentes metodologias de ensino que podem ser utilizadas em aula.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:4, D:0, HS:8, SL:2, C:8},
+			requisitos: ['AA200'],
+			color: '#40D9CB'
+		},
+		'FL801': {
+			code: 'FL801',
+			name: 'Práticas de Ensino de Física',
+			ementa: 'Iniciação a atividades docentes, em forma de tutorias e plantão de dúvidas, supervisionadas por um docente do Instituto de Física.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: ['F_589'],
+			color: ''
+		},
+		'F_530': {
+			code: 'F_530',
+			name: 'Instrumentação I',
+			ementa: 'Projeto individual de sistemas de medição e controle de experiências e processos físicos.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#93D940'
+		},
+		'F_540': {
+			code: 'F_540',
+			name: 'Métodos da Física Experimental I',
+			ementa: 'Circuitos básicos DC-AC. Componentes passivos. Instrumentos de medida. Diodos. Transistores. Amplificação. Amplificadores operacionais. Realimentação. Osciladores. Circuitos digitais básicos. Textos de laboratório.Obs.: A autorização AA200 não será aplicada aos alunos dos cursos de Física.',
+			semestre: 1,
+			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#5C40D9'
+		},
+		'F_541': {
+			code: 'F_541',
+			name: 'Métodos da Física Experimental V',
+			ementa: 'Técnicas avançadas em eletrônica.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['F_540'],
+			color: ''
+		},
+		'F_590': {
+			code: 'F_590',
+			name: 'Iniciação Científica I',
+			ementa: 'Iniciação a um projeto de pesquisa sob orientação individual de um professor.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:0, C:2},
+			requisitos: ['AA200'],
+			color: '#4040D9'
+		},
+		'F_630': {
+			code: 'F_630',
+			name: 'Instrumentação II',
+			ementa: 'Projeto individual de sistemas de medição e controle de experiências e processos físicos.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#CB40D9'
+		},
+		'F_690': {
+			code: 'F_690',
+			name: 'Iniciação Científica II',
+			ementa: 'Iniciação a um projeto de pesquisa sob orientação individual de um professor.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:0, C:2},
+			requisitos: ['AA200'],
+			color: '#40D940'
+		},
+		'F_709': {
+			code: 'F_709',
+			name: 'Tópicos de Ensino de Física II',
+			ementa: 'Esta disciplina pretende fornecer ao licenciado uma discussão sobre a inserção dos conceitos de Física diante dos problemas de ensino de Física nas escolas de ensino médio. Deverá ser enfatizado o projeto, a confecção e o uso das demonstrações sobre Física no ensino médio.',
+			semestre: 1,
+			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:2, C:6},
+			requisitos: ['F_609'],
+			color: ''
+		},
+		'F_730': {
+			code: 'F_730',
+			name: 'Instrumentação III',
+			ementa: 'Projeto individual de sistemas de medição e controle de experiências e processos físicos.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#5CD940'
+		},
+		'F_809': {
+			code: 'F_809',
+			name: 'Instrumentação para Ensino',
+			ementa: 'Desenvolvimento de projeto de instrumentação sob orientação individual de um professor.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#4093D9'
+		},
+		'F_839': {
+			code: 'F_839',
+			name: 'Métodos da Física Experimental VI',
+			ementa: 'Ótica geométrica, Propagação, Natureza vetorial (relações vetoriais, vetor de Poynting, polarização, reflexão e refração, ondas evanescentes), Interferência e coerência (interferômetros, coerência, autocorrelação, espectro de potência, pulsos), Difração, Holografia (elementos, materiais, reconstrução de uma onda, capacidade e conteúdo de informação). Óptica de sólidos (dielétricos isotrópicos, condutores, interfaces com índices de refração complexos, meios anisotrópicos, cristais eletro-ópticos, óptica não linear.Obs.: A autorização AA200 não será aplicada aos alunos dos cursos de Física.',
+			semestre: 1,
+			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D94077'
 		}
 	}
 };

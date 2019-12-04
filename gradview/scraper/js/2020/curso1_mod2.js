@@ -35,6 +35,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: [
+		{
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['MA453', 'MA456'],
+		},
+		{
+			credits: 16,
+			hasRestrictions: true,
+			subjects: ['F_011', 'F_012', 'F_041', 'F_042', 'F_590', 'F_602', 'F_625', 'F_690', 'F_885', 'F_887', 'F_888', 'MA419', 'MA445', 'MA449', 'MA553', 'MA711', 'MA712', 'MA724', 'MA725', 'MA903', 'MA904', 'MS720', 'MS750', 'MS820'],
+		},
+	],
+
 	subjects: {
 		'F_128': {
 			code: 'F_128',
@@ -43,7 +56,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#405CD9'
+			color: '#404CD9'
 		},
 		'F_129': {
 			code: 'F_129',
@@ -52,7 +65,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94040'
+			color: '#D94063'
 		},
 		'FM003': {
 			code: 'FM003',
@@ -61,7 +74,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40AFD9'
+			color: '#7BD940'
 		},
 		'MA111': {
 			code: 'MA111',
@@ -70,7 +83,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#40D9AF'
+			color: '#40D9D9'
 		},
 		'MA141': {
 			code: 'MA141',
@@ -79,7 +92,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D95C'
+			color: '#C1D940'
 		},
 		'MS149': {
 			code: 'MS149',
@@ -88,7 +101,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#7740D9'
+			color: '#D94040'
 		},
 		'F_228': {
 			code: 'F_228',
@@ -133,7 +146,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#CBD940'
+			color: '#D94086'
 		},
 		'F_328': {
 			code: 'F_328',
@@ -205,7 +218,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#77D940'
+			color: '#9ED940'
 		},
 		'MA719': {
 			code: 'MA719',
@@ -223,7 +236,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D94093'
+			color: '#57D940'
 		},
 		'MA446': {
 			code: 'MA446',
@@ -241,7 +254,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#CB40D9'
+			color: '#D9AA40'
 		},
 		'MS550': {
 			code: 'MS550',
@@ -304,7 +317,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D99340'
+			color: '#5740D9'
 		},
 		'F_789': {
 			code: 'F_789',
@@ -359,6 +372,240 @@ const catalogue = {
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:16},
 			requisitos: '',
 			color: ''
+		},
+		'F_011': {
+			code: 'F_011',
+			name: 'Tópicos de Física Aplicada I',
+			ementa: 'Tópicos atuais de Física Aplicada I',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#C140D9'
+		},
+		'F_012': {
+			code: 'F_012',
+			name: 'Tópicos de Física Aplicada II',
+			ementa: 'Tópicos atuais de Física Aplicada II',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D96340'
+		},
+		'F_041': {
+			code: 'F_041',
+			name: 'Tópicos de Física Matemática I',
+			ementa: 'Tópicos atuais de Física Matemática I.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40D96F'
+		},
+		'F_042': {
+			code: 'F_042',
+			name: 'Tópicos de Física Matemática II',
+			ementa: 'Tópicos atuais de Física Matemática II.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#7B40D9'
+		},
+		'F_590': {
+			code: 'F_590',
+			name: 'Iniciação Científica I',
+			ementa: 'Iniciação a um projeto de pesquisa sob orientação individual de um professor.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:0, C:2},
+			requisitos: ['AA200'],
+			color: '#40D9B5'
+		},
+		'F_602': {
+			code: 'F_602',
+			name: 'Eletromagnetismo II',
+			ementa: 'Equações de Maxwell. Propagação de ondas eletromagnéticas. Reflexão. Refração. Guias de onda. Radiação. Antenas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D94C'
+		},
+		'F_625': {
+			code: 'F_625',
+			name: 'Métodos de Computação Científica I',
+			ementa: 'Elementos de programação em python. Parte gráfica: visualização e animação. Integração e diferenciação numérica. Transformadas de Fourier e aplicações. Equações diferenciais ordinárias de primeira e segunda ordem. Equações diferenciais parciais. Problemas de valores de contorno e iniciais. Processos estocásticos e método Monte Carlo. Integração e simulação por métodos Monte Carlo. Método Monte Carlo de Cadeia de Markov.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MA311', 'MS211'],
+			color: ''
+		},
+		'F_690': {
+			code: 'F_690',
+			name: 'Iniciação Científica II',
+			ementa: 'Iniciação a um projeto de pesquisa sob orientação individual de um professor.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:0, C:2},
+			requisitos: ['AA200'],
+			color: '#406FD9'
+		},
+		'F_885': {
+			code: 'F_885',
+			name: 'Partículas Elementares e Campos',
+			ementa: 'Introdução histórica. Conteúdo de partículas elementares previstos no modelo padrão. Cinemática relativística. Interações fundamentais: bósons intermediários e vértices primitivos da QED, QCD e interações fracas. Teorias de Gauge. Unificação eletrofraca. O mecanismo de Higgs. O modelo padrão.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['F_689'],
+			color: ''
+		},
+		'F_887': {
+			code: 'F_887',
+			name: 'Física Nuclear',
+			ementa: 'O átomo nuclear e o núcleo atômico. O modelo de gás de Fermi. O modelo de partícula independente. Aplicações do modelo de partícula independente. Núcleos com mais que um nucleon fora de camadas fechadas. Supercondutividade nuclear. O modelo coletivo. O modelo unificado. Aplicações do modelo unificado: vibrações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['F_689'],
+			color: ''
+		},
+		'F_888': {
+			code: 'F_888',
+			name: 'Física do Estado Sólido',
+			ementa: 'O problema geral do sólido e suas aproximações. Movimento de caroços e movimento de elétrons: visão puramente conceitual da aproximação adiabática Born-Oppenheimer. Revisão de estatística quântica: distribuições de Fermi-Dirac, Bose-Einstein e aplicações. Moléculas: ligações e espectros moleculares. Estrutura cristalina e rede recíproca. Condutores, semicondutores, supercondutores. Propriedades magnéticas.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['F_689'],
+			color: ''
+		},
+		'MA419': {
+			code: 'MA419',
+			name: 'Análise Real',
+			ementa: 'Medida e integral. Integral de Lebesgue no Rn. Conjuntos mensuráveis. Teorema de convergência monótona. Teorema da convergência dominada. Convergência em medida. Espaços L(p). Teorema de Egorov. Teorema de Radon-Nikodym. Teorema de Representação de Riesz. Teorema de Fubini.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: ['MA602'],
+			color: ''
+		},
+		'MA445': {
+			code: 'MA445',
+			name: 'Anéis e Corpos',
+			ementa: 'Anéis comutativos, ideais e operações com ideais, homomorfismos entre anéis, teoremas do isomorfismo. Polinômios simétricos, fórmulas de Newton e aplicações. Corpos, característica, extensões algébricas, corpos de raízes, normalidade, corpos finitos. Teorema de Galois. Grupo de Galois de uma extensão e de um polinômio. Extensões cíclicas, construções com régua e compasso, solubilidade de equações em radicais e outras aplicações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: ['MA446'],
+			color: ''
+		},
+		'MA449': {
+			code: 'MA449',
+			name: 'Introdução às Equações Diferenciais Parciais',
+			ementa: 'Dedução da Equação da Onda e da Equação do Calor. Equação de Laplace e Poisson. Espaço H1 de Sobolev. Séries de Fourier: unicidade, convolução, núcleos, médias de Abel e de Cesàro, O Teorema de Féjer, o núcleo de Poisson, convergência, aplicações. A transformada de Fourier em R: definição, espaços de Schwartz (S), transformada de Fourier em S, fórmula de inversão de Fourier, Fórmula de Plancherel. Aplicações da transformada de Fourier às equações, fórmula do somatório de Poisson, o Princípio da Incerteza. A transformada de Fourier em Rn e aplicações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: ['MA602'],
+			color: ''
+		},
+		'MA453': {
+			code: 'MA453',
+			name: 'Topologia Geral',
+			ementa: 'Espaços Métricos. Exemplos. Noções básicas de Topologia. Espaços topológicos. Bases. Funções contínuas, subespaços, espaços, produto e quociente. Convergência de sequências, redes e filtros.Espaços de Hausdorff. Espaços regulares, normais, compactos, localmente compactos. Metrização. Paracompacidade. Espaços conexos e conexos por caminhos. Homotopia e grupo fundamental. Espaços de recobrimento.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: ['MA604'],
+			color: ''
+		},
+		'MA456': {
+			code: 'MA456',
+			name: 'Equações Diferenciais Ordinárias',
+			ementa: 'Teoria de Existência e Unicidade. Método das aproximações sucessivas para existência e unicidade de soluções. Teorema de Peano de existência de soluções. Soluções maximais, fluxos. Sistemas lineares e suas soluções maximais. Dependência diferenciável de soluções em relação a parâmetros e a condições iniciais. Diferencial do fluxo. Teoremas de fluxo tubular. Campos completos. Colchetes de Lie de campos de vetores. Espaço de fase. Classificação das órbitas. Teorema de Hartman-Grobmann. Estabilidade de Lyapunov, funções de Lyapunov e expoentes de Lyapunov. Teorema de Poincaré-Bendixon. Campos conservativos. Recorrência e teorema de recorrência de Poincaré.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: ['MA602'],
+			color: ''
+		},
+		'MA553': {
+			code: 'MA553',
+			name: 'Teoria Aritmética dos Números',
+			ementa: 'Estruturas algébricas (operações binárias, grupos, anéis e corpos). Axiomas de Peano e construção do anel dos números inteiros e racionais. Outros exemplos de anéis e corpos (polinômios, corpos quadráticos, inteiros de Gauss, Zm). Domínios euclideanos. Representação de números inteiros em bases diversas. Máximo divisor comum, mínimo múltiplo comum e o Algoritmo de Euclides. Elementos irredutíveis e primos e critérios de divisibilidade. Domínios principais, fatoriais e o teorema fundamental da aritmética. Equações diofantinas de grau um. Sistemas residuais, congruências lineares e o teorema chinês do resto. Os teoremas de Euler e Wilson. Congruências de grau dois, símbolos de Legendre e Jacobi e Lei da Reciprocidade Quadrática. Ternas pitagóricas e números que podem ser escritos como soma de dois quadrados. Equações diofantinas notáveis. Ordem multiplicativa e raízes primitivas. Noções de criptografia.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MA327'],
+			color: ''
+		},
+		'MA711': {
+			code: 'MA711',
+			name: 'Tópicos Especiais de Matemática I',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D98640'
+		},
+		'MA712': {
+			code: 'MA712',
+			name: 'Tópicos Especiais de Matemática II',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#9E40D9'
+		},
+		'MA724': {
+			code: 'MA724',
+			name: 'Tópicos Distinguidos de Matemática I',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D940CD'
+		},
+		'MA725': {
+			code: 'MA725',
+			name: 'Tópicos Distinguidos de Matemática II',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D940AA'
+		},
+		'MA903': {
+			code: 'MA903',
+			name: 'Iniciação Científica I',
+			ementa: 'Iniciação a um projeto de pesquisa sob orientação individual de um professor.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#D9CD40'
+		},
+		'MA904': {
+			code: 'MA904',
+			name: 'Iniciação Científica II',
+			ementa: 'Iniciação a um projeto de pesquisa sob orientação individual de um professor.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#40B5D9'
+		},
+		'MS720': {
+			code: 'MS720',
+			name: 'Métodos Matemáticos da Mecânica Quântica',
+			ementa: 'O conceito de estado em mecânica quântica. Grandezas físicas observáveis e operadores em espaços de Hilbert. Formalismos de Schrodinger e Heisenberg. O oscilador harmônico unidimensional. O átomo de hidrogênio. Spin 1/2 e sistemas de dois níveis. Momento angular.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#40D992'
+		},
+		'MS750': {
+			code: 'MS750',
+			name: 'Métodos de Matemática Aplicada III',
+			ementa: 'Introdução à teoria dos operadores em espaços de Hilbert. Operadores integrais. Equações integrais (Volterra e Fredholm). Introdução à teoria das distribuições. Função delta de Dirac. Derivadas de distribuições. Produto direto e de convolução. Distribuições temperadas e transformadas integrais. Funções de Green: formalismo e aplicações.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['*MS650'],
+			color: ''
+		},
+		'MS820': {
+			code: 'MS820',
+			name: 'Métodos Matemáticos da Relatividade',
+			ementa: 'O espaço-tempo Newtoniano: transformações de Galileu. A experiência de Michelson-Morley. O espaço-tempo de Minkowski: transformações de Lorentz. Cinemática e dinâmica na teoria da relatividade especial. Referenciais arbitrários. Cálculo tensorial. Introdução à relatividade geral. A equação de Einstein e a solução de Schwarzschild.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#4092D9'
 		}
 	}
 };

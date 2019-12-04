@@ -35,6 +35,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: [
+		{
+			credits: 8,
+			hasRestrictions: false,
+			subjects: [''],
+		},
+		{
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['F_541', 'F_625', 'F_640', 'F_838', 'F_839'],
+		},
+	],
+
 	subjects: {
 		'F_128': {
 			code: 'F_128',
@@ -43,7 +56,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#64D940'
+			color: '#8C40D9'
 		},
 		'F_129': {
 			code: 'F_129',
@@ -52,7 +65,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40BED9'
+			color: '#D9406E'
 		},
 		'FM003': {
 			code: 'FM003',
@@ -61,7 +74,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4088D9'
+			color: '#40D97D'
 		},
 		'MA111': {
 			code: 'MA111',
@@ -70,7 +83,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D040D9'
+			color: '#D9C940'
 		},
 		'MA141': {
 			code: 'MA141',
@@ -79,7 +92,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D97640'
+			color: '#404FD9'
 		},
 		'MS149': {
 			code: 'MS149',
@@ -88,7 +101,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#9AD940'
+			color: '#407DD9'
 		},
 		'F_228': {
 			code: 'F_228',
@@ -133,7 +146,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#40D952'
+			color: '#BAD940'
 		},
 		'F_328': {
 			code: 'F_328',
@@ -223,7 +236,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#6440D9'
+			color: '#D96E40'
 		},
 		'QG102': {
 			code: 'QG102',
@@ -232,7 +245,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940AC'
+			color: '#40D9AB'
 		},
 		'F_415': {
 			code: 'F_415',
@@ -241,7 +254,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#40D988'
+			color: '#40D94F'
 		},
 		'F_502': {
 			code: 'F_502',
@@ -250,7 +263,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D0D940'
+			color: '#5ED940'
 		},
 		'F_520': {
 			code: 'F_520',
@@ -259,7 +272,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#40D9BE'
+			color: '#D99C40'
 		},
 		'F_540': {
 			code: 'F_540',
@@ -268,7 +281,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D9AC40'
+			color: '#40D9D9'
 		},
 		'F_589': {
 			code: 'F_589',
@@ -277,7 +290,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#D94076'
+			color: '#40ABD9'
 		},
 		'F_320': {
 			code: 'F_320',
@@ -340,7 +353,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['AA200'],
-			color: '#9A40D9'
+			color: '#D9409C'
 		},
 		'F_789': {
 			code: 'F_789',
@@ -385,7 +398,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:0, C:8},
 			requisitos: ['AA480'],
-			color: '#4052D9'
+			color: '#BA40D9'
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -395,6 +408,51 @@ const catalogue = {
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
 			color: ''
+		},
+		'F_541': {
+			code: 'F_541',
+			name: 'Métodos da Física Experimental V',
+			ementa: 'Técnicas avançadas em eletrônica.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['F_540'],
+			color: ''
+		},
+		'F_625': {
+			code: 'F_625',
+			name: 'Métodos de Computação Científica I',
+			ementa: 'Elementos de programação em python. Parte gráfica: visualização e animação. Integração e diferenciação numérica. Transformadas de Fourier e aplicações. Equações diferenciais ordinárias de primeira e segunda ordem. Equações diferenciais parciais. Problemas de valores de contorno e iniciais. Processos estocásticos e método Monte Carlo. Integração e simulação por métodos Monte Carlo. Método Monte Carlo de Cadeia de Markov.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['MA311', 'MS211'],
+			color: ''
+		},
+		'F_640': {
+			code: 'F_640',
+			name: 'Métodos da Física Experimental II',
+			ementa: 'Introdução: teoria dos gases rarefeitos. Escoamento de gases. Bombas de vácuo. Descrição quantitativa do bombeamento de sistemas de vácuo. Adsorção, dessorção e evaporação de moléculas em vácuo. Medidores de pressão. Acessórios: armadilhas, anteparos, válvulas, etc. Detecção de vazamennto. Vedação. Soldagem. Limpeza. Métodos e máquinas produtoras de baixa temperatura. Liquefação de gases. Medição de temperatura. Componentes criogênicos.Obs.: A autorização AA200 não será aplicada aos alunos dos cursos de Física.',
+			semestre: 1,
+			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#D940C9'
+		},
+		'F_838': {
+			code: 'F_838',
+			name: 'Métodos de Física Experimental VII',
+			ementa: 'Simetria das redes cristalinas, produção de raios-X, difração por redes de átomos, difração por sólidos cristalinos, determinação de estruturas cristalinas, espalhamento difuso de raios-X; estrutura da matéria desordenada, polímeros e sistemas biológicos.Obs.: A autorização AA200 não será aplicada aos alunos dos cursos de Física.',
+			semestre: 1,
+			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#8CD940'
+		},
+		'F_839': {
+			code: 'F_839',
+			name: 'Métodos da Física Experimental VI',
+			ementa: 'Ótica geométrica, Propagação, Natureza vetorial (relações vetoriais, vetor de Poynting, polarização, reflexão e refração, ondas evanescentes), Interferência e coerência (interferômetros, coerência, autocorrelação, espectro de potência, pulsos), Difração, Holografia (elementos, materiais, reconstrução de uma onda, capacidade e conteúdo de informação). Óptica de sólidos (dielétricos isotrópicos, condutores, interfaces com índices de refração complexos, meios anisotrópicos, cristais eletro-ópticos, óptica não linear.Obs.: A autorização AA200 não será aplicada aos alunos dos cursos de Física.',
+			semestre: 1,
+			vector: {T:0, P:0, L:4, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA200'],
+			color: '#5E40D9'
 		}
 	}
 };

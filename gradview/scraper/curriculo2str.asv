@@ -11,24 +11,17 @@ function curriculostr = curriculo2str(curriculo)
     curriculostr = sprintf('%s\n\t},\n\n',curriculostr);
     
     %% Eletivas
-    eletivas = sprintf('\teletivas: {');
+    eletivas = sprintf('\teletivas: [');
     for i=1:length(curriculo.eletivas)
         if isempty(curriculo.eletivas(i).disc)
-            restriction = 'false';
+            
         else
-            restriction = 'true';
+            
         end
-        
-        if isempty(curriculo.eletivas(i).disc)
-            lista='';
-        else
-            lista=['''' strjoin(curriculo.eletivas(i).disc,''', ''') ''''];
-        end
-        
-        eletivas = sprintf('%s\n\t\t''elet-%d'': {\n\t\t\tcredits: %d,\n\t\t\thasRestrictions: %s,\n\t\t\tsubjects: [%s],',eletivas,i,curriculo.eletivas(i).creditos,restriction,lista);
+        eletivas = sprintf('%s\n\t\t{\n\t\t\tcredits: %d,\n\t\t\thasRestrictions: %s,\n\t\t\tsubjects: [''%s''],',eletivas,curriculo.eletivas(i).creditos,restriction,strjoin(curriculo.eletivas(i).disc,''', '''));
         eletivas = sprintf('%s\n\t\t},',eletivas);
     end
-    eletivas = sprintf('%s\n\t},\n\n',eletivas);
+    eletivas = sprintf('%s\n\t],\n\n',eletivas);
 
     
     %% Disciplinas detalhadas
@@ -39,5 +32,5 @@ function curriculostr = curriculo2str(curriculo)
     end
     subjects(end)=[]; % remove virgula a mais
 
-    curriculostr = sprintf('%s%s%s\n\t}\n};\n\nexport default catalogue;',curriculostr,eletivas,subjects);
+    curriculostr = sprintf('%s%s\n\t}%s\n\t}\n};\n\nexport default catalogue;',curriculostr,eletivas,subjects);
 end
