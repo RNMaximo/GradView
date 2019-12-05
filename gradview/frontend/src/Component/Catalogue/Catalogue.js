@@ -232,16 +232,21 @@ class Catalogue extends React.Component {
         if (! eletivasData[eletivaId].hasRestrictions) {
           return (
             <div className={"eletivas "+ eletivaId}>
-              <p className={"info"}><strong>{eletivasData[eletivaId].credits}º</strong> créditos dentre:</p>
+              <p className={"info"}><strong>{eletivasData[eletivaId].credits}</strong> créditos dentre:</p>
               <p className={"subjects"}>Qualquer disciplina da UNICAMP</p>
             </div>
           )
         }
 
+
+        let creditsCounter = 0;
         const subjectsOptions = subjects.map((subject, index) => {
           let opacity = 1;
           if (subject.opacity) {
             opacity = subject.opacity;
+          }
+          if (subject.planned) {
+            creditsCounter = creditsCounter + subject.vector.C;
           }
           return (
             <Subject
@@ -267,7 +272,7 @@ class Catalogue extends React.Component {
         });
         return (
           <div className={"eletivas "+ eletivaId}>
-            <p className={"info"}><strong>0/{eletivasData[eletivaId].credits}</strong> créditos dentre:</p>
+            <p className={"info"}><strong>{creditsCounter}/{eletivasData[eletivaId].credits}</strong> créditos dentre:</p>
             <Droppable
               key={"Eletivas "+eletivaId}
               droppableId={eletivaId}
