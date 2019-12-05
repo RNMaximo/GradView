@@ -1,5 +1,6 @@
 const catalogue = {
 	totalCredits: 206,
+	maxCreditsSem: 33,
 	semesters: {
 		'sem-1': {
 			id: '1',
@@ -43,8 +44,8 @@ const catalogue = {
 		},
 		'elet-2': {
 			credits: 36,
-			hasRestrictions: false,
-			subjects: [],
+			hasRestrictions: true,
+			subjects: ['HG---'],
 		},
 		'elet-3': {
 			credits: 28,
@@ -53,8 +54,8 @@ const catalogue = {
 		},
 		'elet-4': {
 			credits: 8,
-			hasRestrictions: false,
-			subjects: [],
+			hasRestrictions: true,
+			subjects: ['CE---', 'HH---', 'HZ---'],
 		},
 	},
 
@@ -66,7 +67,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#7340D9',
+			color: '#40BAD9',
 			obligatory: true
 		},
 		'HG108': {
@@ -76,7 +77,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#A6D940',
+			color: '#7D40D9',
 			obligatory: true
 		},
 		'ELET01': {
@@ -86,7 +87,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: '#000000',
+			color: '#D940D9',
 			obligatory: true
 		},
 		'HG207': {
@@ -96,7 +97,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#40D973',
+			color: '#BA40D9',
 			obligatory: true
 		},
 		'HG208': {
@@ -106,7 +107,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D940D9',
+			color: '#D94040',
 			obligatory: true
 		},
 		'ELET02': {
@@ -116,7 +117,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: '#000000',
+			color: '#40D95E',
 			obligatory: true
 		},
 		'HG301': {
@@ -126,7 +127,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#73D940',
+			color: '#5E40D9',
 			obligatory: true
 		},
 		'HG302': {
@@ -136,7 +137,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#40D9A6',
+			color: '#D95E40',
 			obligatory: true
 		},
 		'HG304': {
@@ -146,7 +147,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D94073',
+			color: '#D9BA40',
 			obligatory: true
 		},
 		'ELET03': {
@@ -156,7 +157,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: '#000000',
+			color: '#D940BA',
 			obligatory: true
 		},
 		'HG401': {
@@ -166,7 +167,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#4073D9',
+			color: '#40D9BA',
 			obligatory: true
 		},
 		'HG402': {
@@ -176,7 +177,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D94040',
+			color: '#4040D9',
 			obligatory: true
 		},
 		'HG404': {
@@ -186,7 +187,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#40A6D9',
+			color: '#409CD9',
 			obligatory: true
 		},
 		'ELET04': {
@@ -196,7 +197,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: '#000000',
+			color: '#405ED9',
 			obligatory: true
 		},
 		'HG303': {
@@ -206,7 +207,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D97340',
+			color: '#40D940',
 			obligatory: true
 		},
 		'HG861': {
@@ -216,7 +217,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:4, D:0, HS:6, SL:2, C:6},
 			requisitos: ['AA430', 'HG207', 'HG208'],
-			color: '#8D8DA6',
+			color: '#CA408D',
 			obligatory: true
 		},
 		'ELET05': {
@@ -226,7 +227,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:18},
 			requisitos: '',
-			color: '#000000',
+			color: '#D99C40',
 			obligatory: true
 		},
 		'EL774': {
@@ -236,7 +237,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200', 'AA445'],
-			color: '#D9A640',
+			color: '#D9409C',
 			obligatory: true
 		},
 		'HG403': {
@@ -246,7 +247,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D9D940',
+			color: '#D9405E',
 			obligatory: true
 		},
 		'ELET06': {
@@ -256,7 +257,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:20},
 			requisitos: '',
-			color: '#000000',
+			color: '#BAD940',
 			obligatory: true
 		},
 		'HG862': {
@@ -266,7 +267,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:6, D:0, HS:8, SL:1, C:8},
 			requisitos: ['HG861'],
-			color: '#8D8DA6',
+			color: '#CA408D',
 			obligatory: true
 		},
 		'ELET07': {
@@ -276,7 +277,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:20},
 			requisitos: '',
-			color: '#000000',
+			color: '#D97D40',
 			obligatory: true
 		},
 		'EL874': {
@@ -286,7 +287,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['EL774'],
-			color: '#D9A640',
+			color: '#D9409C',
 			obligatory: true
 		},
 		'ELET08': {
@@ -296,8 +297,18 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:20},
 			requisitos: '',
-			color: '#000000',
+			color: '#5ED940',
 			obligatory: true
+		},
+		'CE---': {
+			code: 'CE---',
+			name: 'Qualquer Disciplina com codigo CE---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo CE---, onde o - indica um caracter ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#9C40D9',
+			obligatory: false
 		},
 		'EL142': {
 			code: 'EL142',
@@ -306,7 +317,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#A640D9',
+			color: '#40D97D',
 			obligatory: false
 		},
 		'EL211': {
@@ -316,7 +327,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D9D9',
+			color: '#9CD940',
 			obligatory: false
 		},
 		'EL485': {
@@ -326,7 +337,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D940',
+			color: '#40D99C',
 			obligatory: false
 		},
 		'EL511': {
@@ -336,7 +347,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D940A6',
+			color: '#7DD940',
 			obligatory: false
 		},
 		'EL683': {
@@ -346,7 +357,37 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#4040D9',
+			color: '#40D9D9',
+			obligatory: false
+		},
+		'HG---': {
+			code: 'HG---',
+			name: 'Qualquer Disciplina com codigo HG---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo HG---, onde o - indica um caracter ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#407DD9',
+			obligatory: false
+		},
+		'HH---': {
+			code: 'HH---',
+			name: 'Qualquer Disciplina com codigo HH---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo HH---, onde o - indica um caracter ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#D9407D',
+			obligatory: false
+		},
+		'HZ---': {
+			code: 'HZ---',
+			name: 'Qualquer Disciplina com codigo HZ---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo HZ---, onde o - indica um caracter ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#D9D940',
 			obligatory: false
 		}
 	}

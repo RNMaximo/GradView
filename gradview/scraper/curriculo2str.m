@@ -1,6 +1,10 @@
 function curriculostr = curriculo2str(curriculo)
-    curriculostr = sprintf('const catalogue = {\n\ttotalCredits: %d,\n\tsemesters: {',curriculo.creditos);
+    curriculostr = sprintf('const catalogue = {\n\ttotalCredits: %d,\n\tmaxCreditsSem: %d,\n\tsemesters: {',curriculo.creditos,curriculo.maxcreditossem);
     
+    if ~isfield(curriculo,'semestre')
+        curriculostr = sprintf('%s\n\t}\n};\n\nexport default catalogue;',curriculostr);
+        return;
+    end
     %% Semestres
     for i=1:length(curriculo.semestre)
         %curriculostr = [curriculostr '''sem-' num2str(i) ''': {id: ''' num2str(i) ''', subjects: ' '[''' strjoin(curriculo.semestre{i},''', ''') ''']}, '];

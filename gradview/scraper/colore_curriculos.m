@@ -44,6 +44,10 @@ function curriculo_cores = colore_curriculos(curriculo)
         % Iterativamente colore as disciplinas que estão sem cores, com
         % base nos pré-reqs
         
+        if isempty(discs)
+            curriculo_cores.modalidade(i).disciplinas = discs;
+            return;
+        end
         codigos = {discs(:).codigo};
         
         modificado=true;
@@ -60,6 +64,7 @@ function curriculo_cores = colore_curriculos(curriculo)
                         if isempty(strfind(prereqs{k},'AA'))
                             nvalid=nvalid+1;
                             ind=strcmp(codigos,prereqs{k});
+                            
                             corpre = discs(ind).color;
                             if ~isempty(corpre)
                                 nok=nok+1;

@@ -13,7 +13,7 @@ for ano=2012:2020
             
             curso = strsplit(curriculos.curso,' - ');
             curso = strjoin(curso(2:end),' - ');
-            catlist = sprintf('%s\n\t\t''%d'': {\n\t\t\tname: "%s",\n\t\t\tmodality: [\n',catlist,i,curso);
+            catlist = sprintf('%s\n\t\t''%d'': {\n\t\t\tname: "%s - %s",\n\t\t\tmodality: [\n',catlist,i,curso,curriculos.modalidade(1).turno);
             
             for j=1:length(curriculos.modalidade)
                 filename = [num2str(ano) '/curso' num2str(i) '_mod' num2str(j) '.js'];

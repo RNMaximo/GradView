@@ -23,8 +23,14 @@ function curriculo = getcurriculo(ano,curso,todas_disciplinas)
     clear mod modalidade sugestao
     % Obtendo eletivas
     eletivas_enfase = geteletivas(ano,curso);
+    
+    % Obtendo turno e máximos créditos semestrais
+    [turno,maxcreditos] = getturnocreditos(ano,curso);
+    
     if length(dados)==1
         curriculo.modalidade(1).nome='';
+        curriculo.modalidade(1).turno=turno;
+        curriculo.modalidade(1).maxcreditossem=maxcreditos;
         disciplinasusadas=[];
         inddisc=1;
         blocos_semestre=strsplit(dados{1},'Semestre :');
@@ -58,7 +64,8 @@ function curriculo = getcurriculo(ano,curso,todas_disciplinas)
                 inddisc = inddisc+1;
             end
             if cred_semestre ~= creditos_sum
-                error('Os creditos dos semestres não bateram com os creditos das disciplinas indicadas.');
+                fprintf(2,'Os creditos dos semestres nao bateram com os creditos das disciplinas indicadas.\n');
+                fprintf(2,[num2str(cred_semestre) ' (curriculo) vs ' num2str(creditos_sum) ' (somando creditos)\n']);
             end
             creditos = creditos+cred_semestre;
 
@@ -88,13 +95,19 @@ function curriculo = getcurriculo(ano,curso,todas_disciplinas)
                 end
             end
         end
-        curriculo.modalidade(1).disciplinas=horzcat(disciplinasusadas{:});
+        if ~isempty(disciplinasusadas)
+            curriculo.modalidade(1).disciplinas=horzcat(disciplinasusadas{:});
+        else
+            curriculo.modalidade(1).disciplinas={};
+        end
     else
         for i=2:length(dados)
             creditos = 0;
             blocos_semestre=strsplit(dados{i},'Semestre :');
             nome=strsplit(blocos_semestre{1},'</h1>');
             curriculo.modalidade(i-1).nome=nome{1};
+            curriculo.modalidade(i-1).turno=turno;
+            curriculo.modalidade(i-1).maxcreditossem=maxcreditos;
             disciplinasusadas=[];
             inddisc=1;
             for j=2:length(blocos_semestre)

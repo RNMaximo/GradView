@@ -4,11 +4,11 @@ url = ['https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo' num2str(ano
 dados = webread(url,'ContentType','text/html','CharacterEncoding','utf-8');
 dados=htmlEntities('entities.mat',dados,0);
 
-dadosparts=split(dados,["<h1>","</h1>"]);
+dadosparts=split(dados,["\n<h1>","</h1>"]);
 cursostr = strsplit(dadosparts{2},' - ');cursostr=cursostr{2};
 
-dadosparts=split(dadosparts{3},["<p><strong>","</strong></p>"]);
-dadosparts=split(dadosparts{3},"<br><strong>");
+dadosparts=split(dadosparts{end},["<p><strong>","</strong></p>"]);
+dadosparts=split(dadosparts{end},"<br><strong>");
 for i=1:length(dadosparts)
     enfaseparts = split(dadosparts{i},"<strong>Disciplinas Eletivas</strong><br>");
     enfase = split(enfaseparts{1},"</strong><br>");
@@ -27,10 +27,12 @@ for i=1:length(dadosparts)
             bloco = strsplit(credparts{k},' cr');
             
             if length(bloco)>1
+                bloco{1}=strrep(bloco{1},'<br>','');
                 eletivas_enfase(i).blocos(cont).creditos = str2num(bloco{1});
-                disc = regexp(bloco{2},'html#[a-zA-Z][ a-zA-Z][\d][\d][\d]','match');
+                disc = regexp(bloco{2},'>[a-zA-Z][ a-zA-Z][\d-][\d-][\d-]<','match');
                 for l=1:length(disc)
-                    disc{l}(1:5)=[];
+                    disc{l}(1)=[];
+                    disc{l}(end)=[];
                 end
                 disc = strrep(disc,' ','_');
                 eletivas_enfase(i).blocos(cont).disc=disc;

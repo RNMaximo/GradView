@@ -1,5 +1,6 @@
 const catalogue = {
 	totalCredits: 206,
+	maxCreditsSem: 30,
 	semesters: {
 		'sem-1': {
 			id: '1',
@@ -57,7 +58,7 @@ const catalogue = {
 		'elet-3': {
 			credits: 8,
 			hasRestrictions: true,
-			subjects: ['QA910', 'QA920', 'QF573', 'QF930', 'QF940', 'QF953', 'QG960', 'QG970', 'QI940', 'QI950', 'QO920', 'QO930'],
+			subjects: ['QA91-', 'QA92-', 'QF573', 'QF93-', 'QF94-', 'QF953', 'QG96-', 'QG97-', 'QI94-', 'QI95-', 'QO92-', 'QO93-'],
 		},
 	},
 
@@ -69,7 +70,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D2D940',
+			color: '#D96440',
 			obligatory: true
 		},
 		'MA111': {
@@ -79,7 +80,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#40D99D',
+			color: '#95D940',
 			obligatory: true
 		},
 		'MA141': {
@@ -89,7 +90,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D94D',
+			color: '#7140D9',
 			obligatory: true
 		},
 		'QG108': {
@@ -99,7 +100,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'QG362': {
@@ -109,7 +110,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#5A40D9',
+			color: '#4CD940',
 			obligatory: true
 		},
 		'F_128': {
@@ -119,7 +120,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#404DD9',
+			color: '#9540D9',
 			obligatory: true
 		},
 		'F_129': {
@@ -129,7 +130,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D940B7',
+			color: '#BA40D9',
 			obligatory: true
 		},
 		'LA122': {
@@ -139,7 +140,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9C5',
+			color: '#D94089',
 			obligatory: true
 		},
 		'MA211': {
@@ -149,7 +150,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', '*MA141'],
-			color: '#40D975',
+			color: '#838D8D',
 			obligatory: true
 		},
 		'QG109': {
@@ -159,7 +160,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#5AD940',
+			color: '#4C40D9',
 			obligatory: true
 		},
 		'MA311': {
@@ -169,7 +170,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['*MA211'],
-			color: '#40D975',
+			color: '#838D8D',
 			obligatory: true
 		},
 		'QA282': {
@@ -179,7 +180,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:4, O:0, D:0, HS:8, SL:8, C:8},
 			requisitos: ['QG109'],
-			color: '#5AD940',
+			color: '#4C40D9',
 			obligatory: true
 		},
 		'QI145': {
@@ -189,7 +190,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QG108'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'QO321': {
@@ -199,7 +200,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QG108'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'F_328': {
@@ -209,7 +210,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA111', 'MA141'],
-			color: '#40AA96',
+			color: '#8973A6',
 			obligatory: true
 		},
 		'F_329': {
@@ -219,7 +220,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_129', 'MA111'],
-			color: '#8D8DAA',
+			color: '#A88D8D',
 			obligatory: true
 		},
 		'QA582': {
@@ -229,7 +230,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:3, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['QA282'],
-			color: '#5AD940',
+			color: '#4C40D9',
 			obligatory: true
 		},
 		'QI245': {
@@ -239,7 +240,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QI145'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'QO521': {
@@ -249,7 +250,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['QO321'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'F_428': {
@@ -259,7 +260,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_328'],
-			color: '#40AA96',
+			color: '#8973A6',
 			obligatory: true
 		},
 		'QA682': {
@@ -269,7 +270,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:3, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['QA582'],
-			color: '#5AD940',
+			color: '#4C40D9',
 			obligatory: true
 		},
 		'QF431': {
@@ -279,7 +280,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA211', 'QG108'],
-			color: '#8DA15B',
+			color: '#62AAB3',
 			obligatory: true
 		},
 		'QI345': {
@@ -289,7 +290,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QI145'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'QO423': {
@@ -299,7 +300,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QO521'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'QO424': {
@@ -309,7 +310,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QO521'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'ME414': {
@@ -319,7 +320,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111'],
-			color: '#40D99D',
+			color: '#95D940',
 			obligatory: true
 		},
 		'QF531': {
@@ -329,7 +330,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QF431'],
-			color: '#8DA15B',
+			color: '#62AAB3',
 			obligatory: true
 		},
 		'QG650': {
@@ -339,7 +340,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:6, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['QI145', 'QI245', 'QO521'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'QI445': {
@@ -349,7 +350,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QI245'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'ELET06': {
@@ -359,7 +360,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:2},
 			requisitos: '',
-			color: '#000000',
+			color: '#D9AE40',
 			obligatory: true
 		},
 		'EM312': {
@@ -369,7 +370,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94068',
+			color: '#D940AE',
 			obligatory: true
 		},
 		'EQ481': {
@@ -379,7 +380,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*QF531'],
-			color: '#8DA15B',
+			color: '#62AAB3',
 			obligatory: true
 		},
 		'GM861': {
@@ -389,7 +390,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QI145', 'QI245'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'QI545': {
@@ -399,7 +400,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QI345'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'QO620': {
@@ -409,7 +410,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:6, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['QG650', 'QO423', 'QO424'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'EQ582': {
@@ -419,7 +420,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EQ481'],
-			color: '#8DA15B',
+			color: '#62AAB3',
 			obligatory: true
 		},
 		'QF530': {
@@ -429,7 +430,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA311', '*F_428', 'QI145'],
-			color: '#73A46E',
+			color: '#6F97AF',
 			obligatory: true
 		},
 		'QF952': {
@@ -439,7 +440,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:6, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['*QF531'],
-			color: '#8DA15B',
+			color: '#62AAB3',
 			obligatory: true
 		},
 		'QG636': {
@@ -449,7 +450,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QG108', '*ME414'],
-			color: '#8DA16F',
+			color: '#6BD08D',
 			obligatory: true
 		},
 		'QO551': {
@@ -459,7 +460,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QO521'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'CE738': {
@@ -469,7 +470,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4075D9',
+			color: '#D94064',
 			obligatory: true
 		},
 		'QA815': {
@@ -479,7 +480,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA475'],
-			color: '#AAD940',
+			color: '#D98940',
 			obligatory: true
 		},
 		'QF661': {
@@ -489,7 +490,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*QF531', '*QO521'],
-			color: '#B3854E',
+			color: '#51B8C6',
 			obligatory: true
 		},
 		'QG835': {
@@ -499,7 +500,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EQ582'],
-			color: '#8DA15B',
+			color: '#62AAB3',
 			obligatory: true
 		},
 		'QI543': {
@@ -509,7 +510,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:6, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['QG650', 'QI445', 'QI545'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'TA918': {
@@ -519,7 +520,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QO551'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: true
 		},
 		'QF053': {
@@ -529,7 +530,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EQ481'],
-			color: '#8DA15B',
+			color: '#62AAB3',
 			obligatory: true
 		},
 		'QG080': {
@@ -539,7 +540,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:8, L:0, O:0, D:0, HS:8, SL:0, C:8},
 			requisitos: ['AA475'],
-			color: '#D94040',
+			color: '#40D958',
 			obligatory: true
 		},
 		'ELET10': {
@@ -549,27 +550,27 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: '#000000',
+			color: '#40D97D',
 			obligatory: true
 		},
-		'QA910': {
-			code: 'QA910',
-			name: 'Tópicos Especiais em Química Analítica I',
-			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+		'QA91-': {
+			code: 'QA91-',
+			name: 'Qualquer Disciplina com codigo QA91-',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo QA91-, onde o - indica um caracter ou numero.',
 			semestre: 1,
-			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
-			requisitos: ['AA200'],
-			color: '#82D940',
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#BAD940',
 			obligatory: false
 		},
-		'QA920': {
-			code: 'QA920',
-			name: 'Tópicos Especiais em Química Analítica XI',
-			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+		'QA92-': {
+			code: 'QA92-',
+			name: 'Qualquer Disciplina com codigo QA92-',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo QA92-, onde o - indica um caracter ou numero.',
 			semestre: 1,
-			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
-			requisitos: ['AA200'],
-			color: '#D94090',
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#40A2D9',
 			obligatory: false
 		},
 		'QF573': {
@@ -579,27 +580,27 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QG108', '*QF431'],
-			color: '#B3854E',
+			color: '#51B8C6',
 			obligatory: false
 		},
-		'QF930': {
-			code: 'QF930',
-			name: 'Tópicos Especiais em Físico-Química I',
-			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+		'QF93-': {
+			code: 'QF93-',
+			name: 'Qualquer Disciplina com codigo QF93-',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo QF93-, onde o - indica um caracter ou numero.',
 			semestre: 1,
-			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
-			requisitos: ['AA200'],
-			color: '#40D975',
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#71D940',
 			obligatory: false
 		},
-		'QF940': {
-			code: 'QF940',
-			name: 'Tópicos Especiais em Físico-Química XI',
-			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+		'QF94-': {
+			code: 'QF94-',
+			name: 'Qualquer Disciplina com codigo QF94-',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo QF94-, onde o - indica um caracter ou numero.',
 			semestre: 1,
-			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
-			requisitos: ['AA200'],
-			color: '#8240D9',
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#D9D340',
 			obligatory: false
 		},
 		'QF953': {
@@ -609,7 +610,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['QF661'],
-			color: '#B3854E',
+			color: '#51B8C6',
 			obligatory: false
 		},
 		'QG091': {
@@ -619,7 +620,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QI245', 'QO521'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: false
 		},
 		'QG092': {
@@ -629,67 +630,67 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QO321'],
-			color: '#D96840',
+			color: '#40C6D9',
 			obligatory: false
 		},
-		'QG960': {
-			code: 'QG960',
-			name: 'Tópicos Especiais em Química Geral I',
-			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+		'QG96-': {
+			code: 'QG96-',
+			name: 'Qualquer Disciplina com codigo QG96-',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo QG96-, onde o - indica um caracter ou numero.',
 			semestre: 1,
-			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
-			requisitos: ['AA200'],
-			color: '#D99040',
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#40D9A2',
 			obligatory: false
 		},
-		'QG970': {
-			code: 'QG970',
-			name: 'Tópicos Especiais em Química Geral XI',
-			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+		'QG97-': {
+			code: 'QG97-',
+			name: 'Qualquer Disciplina com codigo QG97-',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo QG97-, onde o - indica um caracter ou numero.',
 			semestre: 1,
-			vector: {T:1, P:0, L:0, O:1, D:0, HS:2, SL:1, C:2},
-			requisitos: ['AA200'],
-			color: '#40C5D9',
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#40D9C6',
 			obligatory: false
 		},
-		'QI940': {
-			code: 'QI940',
-			name: 'Tópicos Especiais em Química Inorgânica I',
-			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+		'QI94-': {
+			code: 'QI94-',
+			name: 'Qualquer Disciplina com codigo QI94-',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo QI94-, onde o - indica um caracter ou numero.',
 			semestre: 1,
-			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
-			requisitos: ['AA200'],
-			color: '#D9B740',
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#407DD9',
 			obligatory: false
 		},
-		'QI950': {
-			code: 'QI950',
-			name: 'Tópicos Especiais em Química Inorgânica XI',
-			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+		'QI95-': {
+			code: 'QI95-',
+			name: 'Qualquer Disciplina com codigo QI95-',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo QI95-, onde o - indica um caracter ou numero.',
 			semestre: 1,
-			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
-			requisitos: ['AA200'],
-			color: '#409DD9',
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#D940D3',
 			obligatory: false
 		},
-		'QO920': {
-			code: 'QO920',
-			name: 'Tópicos Especiais em Química Orgânica I',
-			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+		'QO92-': {
+			code: 'QO92-',
+			name: 'Qualquer Disciplina com codigo QO92-',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo QO92-, onde o - indica um caracter ou numero.',
 			semestre: 1,
-			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
-			requisitos: ['AA200'],
-			color: '#D240D9',
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#4058D9',
 			obligatory: false
 		},
-		'QO930': {
-			code: 'QO930',
-			name: 'Tópicos Especiais em Química Orgânica XI',
-			ementa: 'Será fornecida por ocasião do oferecimento da disciplina.',
+		'QO93-': {
+			code: 'QO93-',
+			name: 'Qualquer Disciplina com codigo QO93-',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo QO93-, onde o - indica um caracter ou numero.',
 			semestre: 1,
-			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
-			requisitos: ['AA200'],
-			color: '#AA40D9',
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#D94040',
 			obligatory: false
 		}
 	}
