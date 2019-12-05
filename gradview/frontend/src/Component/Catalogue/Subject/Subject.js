@@ -78,8 +78,6 @@ class Subject extends React.Component {
       divStyle =
         {
           background: "-webkit-linear-gradient(left, "+ linearGradColors + ")",
-          borderColor: "transparent",
-          borderWidth: "1px",
           opacity: opacity
         }
     }
@@ -88,9 +86,17 @@ class Subject extends React.Component {
         {
           backgroundColor: "white",
           borderColor: color,
-          borderWidth: "3px",
+          borderWidth: "4px",
           opacity: opacity
         };
+    }
+    if (subject.planned && ! this.props.isNotDraggable) {
+      divStyle =
+        {
+          ...divStyle,
+          borderColor: "#000",
+          borderWidth: "4px",
+        }
     }
 
     const sizeStyle = this.props.sizedByCredits ?
