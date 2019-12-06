@@ -1,3636 +1,7984 @@
-catalogos = {
-	'2012': {
-		'Curso 1 - Matem�tica': {
-			'AA - Bacharelado em Matem�tica': {
-				arquivo: 'ano2012/curso1_mod1.js'
-			},
-			'AB - Licenciatura em Matem�tica': {
-				arquivo: 'ano2012/curso1_mod2.js'
-			},
-			'EF - �nfase em F�sica Matem�tica': {
-				arquivo: 'ano2012/curso1_mod3.js'
-			}
+const catalogueOptions = {
+	"2012": {
+		'1': {
+			name: "Matemática - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Matemática',
+					file: '2012/curso1_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Matemática',
+					file: '2012/curso1_mod2.js'
+				},
+				{
+					name: 'EF - Ênfase em Física Matemática',
+					file: '2012/curso1_mod3.js'
+				},
+			]
 		},
-		'Curso 2 - Estat�stica': {
-			'': {
-				arquivo: 'ano2012/curso2_mod1.js'
-			}
+		'2': {
+			name: "Estatística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso2_mod1.js'
+				},
+			]
 		},
-		'Curso 4 - F�sica': {
-			'AA - Bacharelado em F�sica': {
-				arquivo: 'ano2012/curso4_mod1.js'
-			},
-			'AB - Licenciatura em F�sica': {
-				arquivo: 'ano2012/curso4_mod2.js'
-			},
-			'AD - Bacharelado em F�sica Aplicada': {
-				arquivo: 'ano2012/curso4_mod3.js'
-			},
-			'AF - Bacharelado em F�sica M�dica': {
-				arquivo: 'ano2012/curso4_mod4.js'
-			},
-			'EB - Bacharelado em F�sica com �nfase em F�sica Biom�dica': {
-				arquivo: 'ano2012/curso4_mod5.js'
-			}
+		'4': {
+			name: "Física - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Física',
+					file: '2012/curso4_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2012/curso4_mod2.js'
+				},
+				{
+					name: 'AD - Bacharelado em Física Aplicada',
+					file: '2012/curso4_mod3.js'
+				},
+				{
+					name: 'AF - Bacharelado em Física Médica',
+					file: '2012/curso4_mod4.js'
+				},
+				{
+					name: 'EB - Bacharelado em Física com Ênfase em Física Biomédica',
+					file: '2012/curso4_mod5.js'
+				},
+			]
 		},
-		'Curso 5 - Qu�mica': {
-			'AA - Bacharelado em Qu�mica': {
-				arquivo: 'ano2012/curso5_mod1.js'
-			},
-			'AB - Licenciatura em Qu�mica': {
-				arquivo: 'ano2012/curso5_mod2.js'
-			},
-			'AD - Bacharelado em Qu�mica Tecnol�gica': {
-				arquivo: 'ano2012/curso5_mod3.js'
-			}
+		'5': {
+			name: "Química - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Química',
+					file: '2012/curso5_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Química',
+					file: '2012/curso5_mod2.js'
+				},
+				{
+					name: 'AD - Bacharelado em Química Tecnológica',
+					file: '2012/curso5_mod3.js'
+				},
+			]
 		},
-		'Curso 6 - Ci�ncias Biol�gicas': {
-			'AH - Bacharelado em Ci�ncias Biol�gicas - �rea Ambiental': {
-				arquivo: 'ano2012/curso6_mod1.js'
-			},
-			'AI - Bacharelado em Ci�ncias Biol�gicas - �rea Molecular': {
-				arquivo: 'ano2012/curso6_mod2.js'
-			},
-			'AJ - Licenciatura Plena em Ci�ncias Biol�gicas': {
-				arquivo: 'ano2012/curso6_mod3.js'
-			}
+		'6': {
+			name: "Ciências Biológicas - Integral",
+			modality: [
+				{
+					name: 'AH - Bacharelado em Ciências Biológicas - Área Ambiental',
+					file: '2012/curso6_mod1.js'
+				},
+				{
+					name: 'AI - Bacharelado em Ciências Biológicas - Área Molecular',
+					file: '2012/curso6_mod2.js'
+				},
+				{
+					name: 'AJ - Licenciatura Plena em Ciências Biológicas',
+					file: '2012/curso6_mod3.js'
+				},
+			]
 		},
-		'Curso 8 - Engenharia Agr�cola': {
-			'': {
-				arquivo: 'ano2012/curso8_mod1.js'
-			}
+		'7': {
+			name: "Letras - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso7_mod1.js'
+				},
+			]
 		},
-		'Curso 9 - Engenharia Qu�mica': {
-			'': {
-				arquivo: 'ano2012/curso9_mod1.js'
-			}
+		'8': {
+			name: "Engenharia Agrícola - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso8_mod1.js'
+				},
+			]
 		},
-		'Curso 10 - Engenharia Mec�nica': {
-			'AC - Materiais e Processos': {
-				arquivo: 'ano2012/curso10_mod1.js'
-			},
-			'AM - Petr�leo': {
-				arquivo: 'ano2012/curso10_mod2.js'
-			},
-			'AN - Automobil�stica': {
-				arquivo: 'ano2012/curso10_mod3.js'
-			},
-			'AO - Aeron�utica': {
-				arquivo: 'ano2012/curso10_mod4.js'
-			},
-			'AP - Energia e Meio Ambiente': {
-				arquivo: 'ano2012/curso10_mod5.js'
-			},
-			'AQ - Mec�nica Computacional': {
-				arquivo: 'ano2012/curso10_mod6.js'
-			},
-			'AR - Manufatura': {
-				arquivo: 'ano2012/curso10_mod7.js'
-			},
-			'AS - Engenharia Mec�nica Geral': {
-				arquivo: 'ano2012/curso10_mod8.js'
-			}
+		'9': {
+			name: "Engenharia Química - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso9_mod1.js'
+				},
+			]
 		},
-		'Curso 11 - Engenharia El�trica': {
-			'': {
-				arquivo: 'ano2012/curso11_mod1.js'
-			}
+		'10': {
+			name: "Engenharia Mecânica - Integral",
+			modality: [
+				{
+					name: 'AC - Materiais e Processos',
+					file: '2012/curso10_mod1.js'
+				},
+				{
+					name: 'AM - Petróleo',
+					file: '2012/curso10_mod2.js'
+				},
+				{
+					name: 'AN - Automobilística',
+					file: '2012/curso10_mod3.js'
+				},
+				{
+					name: 'AO - Aeronáutica',
+					file: '2012/curso10_mod4.js'
+				},
+				{
+					name: 'AP - Energia e Meio Ambiente',
+					file: '2012/curso10_mod5.js'
+				},
+				{
+					name: 'AQ - Mecânica Computacional',
+					file: '2012/curso10_mod6.js'
+				},
+				{
+					name: 'AR - Manufatura',
+					file: '2012/curso10_mod7.js'
+				},
+				{
+					name: 'AS - Engenharia Mecânica Geral',
+					file: '2012/curso10_mod8.js'
+				},
+			]
 		},
-		'Curso 12 - Engenharia Civil': {
-			'EA - �nfase em Recursos H�dricos, Energ�ticos e Ambientais': {
-				arquivo: 'ano2012/curso12_mod1.js'
-			},
-			'EE - �nfase em Estruturas': {
-				arquivo: 'ano2012/curso12_mod2.js'
-			},
-			'EP - �nfase em Gest�o do Projeto e da Constru��o': {
-				arquivo: 'ano2012/curso12_mod3.js'
-			},
-			'ES - �nfase em Saneamento e Ambiente': {
-				arquivo: 'ano2012/curso12_mod4.js'
-			},
-			'ET - �nfase em Transportes e Geotecnia': {
-				arquivo: 'ano2012/curso12_mod5.js'
-			}
+		'11': {
+			name: "Engenharia Elétrica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso11_mod1.js'
+				},
+			]
 		},
-		'Curso 13 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2012/curso13_mod1.js'
-			}
+		'12': {
+			name: "Engenharia Civil - Integral",
+			modality: [
+				{
+					name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
+					file: '2012/curso12_mod1.js'
+				},
+				{
+					name: 'EE - Ênfase em Estruturas',
+					file: '2012/curso12_mod2.js'
+				},
+				{
+					name: 'EP - Ênfase em Gestão do Projeto e da Construção',
+					file: '2012/curso12_mod3.js'
+				},
+				{
+					name: 'ES - Ênfase em Saneamento e Ambiente',
+					file: '2012/curso12_mod4.js'
+				},
+				{
+					name: 'ET - Ênfase em Transportes e Geotecnia',
+					file: '2012/curso12_mod5.js'
+				},
+			]
 		},
-		'Curso 14 - Odontologia': {
-			'': {
-				arquivo: 'ano2012/curso14_mod1.js'
-			}
+		'13': {
+			name: "Engenharia de Alimentos - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso13_mod1.js'
+				},
+			]
 		},
-		'Curso 15 - Medicina': {
-			'': {
-				arquivo: 'ano2012/curso15_mod1.js'
-			}
+		'14': {
+			name: "Odontologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso14_mod1.js'
+				},
+			]
 		},
-		'Curso 16 - Ci�ncias Sociais': {
-			'AA - Bacharelado em Ci�ncias Sociais - Antropologia': {
-				arquivo: 'ano2012/curso16_mod1.js'
-			},
-			'AB - Bacharelado em Ci�ncias Sociais - Pol�tica': {
-				arquivo: 'ano2012/curso16_mod2.js'
-			},
-			'AC - Bacharelado em Ci�ncias Sociais - Sociologia': {
-				arquivo: 'ano2012/curso16_mod3.js'
-			},
-			'AD - Bacharelado em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2012/curso16_mod4.js'
-			},
-			'AH - Licenciatura em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2012/curso16_mod5.js'
-			}
+		'15': {
+			name: "Medicina - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso15_mod1.js'
+				},
+			]
 		},
-		'Curso 17 - Ci�ncias Econ�micas': {
-			'': {
-				arquivo: 'ano2012/curso17_mod1.js'
-			}
+		'16': {
+			name: "Ciências Sociais - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2012/curso16_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2012/curso16_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2012/curso16_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2012/curso16_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2012/curso16_mod5.js'
+				},
+			]
 		},
-		'Curso 20 - Pedagogia': {
-			'': {
-				arquivo: 'ano2012/curso20_mod1.js'
-			}
+		'17': {
+			name: "Ciências Econômicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso17_mod1.js'
+				},
+			]
 		},
-		'Curso 21 - Enfermagem': {
-			'AA - Bacharelado em Enfermagem': {
-				arquivo: 'ano2012/curso21_mod1.js'
-			},
-			'AB - Licenciatura em Enfermagem': {
-				arquivo: 'ano2012/curso21_mod2.js'
-			}
+		'18': {
+			name: "Linguística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso18_mod1.js'
+				},
+			]
 		},
-		'Curso 23 - Dan�a': {
-			'AA - Bacharelado em Dan�a': {
-				arquivo: 'ano2012/curso23_mod1.js'
-			},
-			'AB - Licenciatura em Artes - Dan�a': {
-				arquivo: 'ano2012/curso23_mod2.js'
-			}
+		'19': {
+			name: "História - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em História',
+					file: '2012/curso19_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em História',
+					file: '2012/curso19_mod2.js'
+				},
+			]
 		},
-		'Curso 25 - Artes Visuais': {
-			'AF - Bacharelado em Artes Visuais': {
-				arquivo: 'ano2012/curso25_mod1.js'
-			},
-			'AG - Licenciatura em Artes - Artes Visuais': {
-				arquivo: 'ano2012/curso25_mod2.js'
-			}
+		'20': {
+			name: "Pedagogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso20_mod1.js'
+				},
+			]
 		},
-		'Curso 26 - Artes C�nicas': {
-			'': {
-				arquivo: 'ano2012/curso26_mod1.js'
-			}
+		'21': {
+			name: "Enfermagem - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Enfermagem',
+					file: '2012/curso21_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Enfermagem',
+					file: '2012/curso21_mod2.js'
+				},
+			]
 		},
-		'Curso 27 - Educa��o F�sica': {
-			'AB - Licenciatura em Educa��o F�sica': {
-				arquivo: 'ano2012/curso27_mod1.js'
-			},
-			'AF - Bacharelado em Educa��o F�sica': {
-				arquivo: 'ano2012/curso27_mod2.js'
-			}
+		'22': {
+			name: "Música - Integral",
+			modality: [
+				{
+					name: 'CB - Contrabaixo',
+					file: '2012/curso22_mod1.js'
+				},
+				{
+					name: 'CL - Clarineta',
+					file: '2012/curso22_mod2.js'
+				},
+				{
+					name: 'CO - Composição',
+					file: '2012/curso22_mod3.js'
+				},
+				{
+					name: 'CP - Cordas - Música Popular',
+					file: '2012/curso22_mod4.js'
+				},
+				{
+					name: 'CR - Cravo',
+					file: '2012/curso22_mod5.js'
+				},
+				{
+					name: 'FL - Flauta',
+					file: '2012/curso22_mod6.js'
+				},
+				{
+					name: 'LI - Licenciatura em Artes - Música',
+					file: '2012/curso22_mod7.js'
+				},
+				{
+					name: 'OB - Oboé',
+					file: '2012/curso22_mod8.js'
+				},
+				{
+					name: 'PC - Percussão',
+					file: '2012/curso22_mod9.js'
+				},
+				{
+					name: 'PN - Piano',
+					file: '2012/curso22_mod10.js'
+				},
+				{
+					name: 'PP - Percussão - Música Popular',
+					file: '2012/curso22_mod11.js'
+				},
+				{
+					name: 'RC - Regência Coral',
+					file: '2012/curso22_mod12.js'
+				},
+				{
+					name: 'RP - Regência Plena',
+					file: '2012/curso22_mod13.js'
+				},
+				{
+					name: 'SP - Sopros - Música Popular',
+					file: '2012/curso22_mod14.js'
+				},
+				{
+					name: 'TB - Trombone',
+					file: '2012/curso22_mod15.js'
+				},
+				{
+					name: 'TC - Teclados - Música Popular',
+					file: '2012/curso22_mod16.js'
+				},
+				{
+					name: 'TP - Trompete',
+					file: '2012/curso22_mod17.js'
+				},
+				{
+					name: 'VA - Viola',
+					file: '2012/curso22_mod18.js'
+				},
+				{
+					name: 'VC - Violoncelo',
+					file: '2012/curso22_mod19.js'
+				},
+				{
+					name: 'VL - Violino',
+					file: '2012/curso22_mod20.js'
+				},
+				{
+					name: 'VO - Violão',
+					file: '2012/curso22_mod21.js'
+				},
+				{
+					name: 'VP - Voz - Música Popular',
+					file: '2012/curso22_mod22.js'
+				},
+				{
+					name: 'VZ - Voz',
+					file: '2012/curso22_mod23.js'
+				},
+			]
 		},
-		'Curso 28 - Matem�tica Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2012/curso28_mod1.js'
-			}
+		'23': {
+			name: "Dança - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Dança',
+					file: '2012/curso23_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Artes - Dança',
+					file: '2012/curso23_mod2.js'
+				},
+			]
 		},
-		'Curso 29 - Licenciatura em Matem�tica': {
-			'': {
-				arquivo: 'ano2012/curso29_mod1.js'
-			}
+		'25': {
+			name: "Artes Visuais - Integral",
+			modality: [
+				{
+					name: 'AF - Bacharelado em Artes Visuais',
+					file: '2012/curso25_mod1.js'
+				},
+				{
+					name: 'AG - Licenciatura em Artes - Artes Visuais',
+					file: '2012/curso25_mod2.js'
+				},
+			]
 		},
-		'Curso 34 - Engenharia de Computação': {
-			'AA - Sistemas de Computação': {
-				arquivo: 'ano2012/curso34_mod1.js'
-			},
-			'AB - Sistemas e Processos Industriais': {
-				arquivo: 'ano2012/curso34_mod2.js'
-			},
-			'AX - Para Matrícula Antes da Opção': {
-				arquivo: 'ano2012/curso34_mod3.js'
-			}
+		'26': {
+			name: "Artes Cênicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso26_mod1.js'
+				},
+			]
 		},
-		'Curso 36 - Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas': {
-			'': {
-				arquivo: 'ano2012/curso36_mod1.js'
-			}
+		'27': {
+			name: "Educação Física - Integral",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2012/curso27_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2012/curso27_mod2.js'
+				},
+			]
 		},
-		'Curso 38 - Pedagogia': {
-			'': {
-				arquivo: 'ano2012/curso38_mod1.js'
-			}
+		'28': {
+			name: "Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso28_mod1.js'
+				},
+			]
 		},
-		'Curso 39 - Engenharia Qu�mica': {
-			'': {
-				arquivo: 'ano2012/curso39_mod1.js'
-			}
+		'29': {
+			name: "Licenciatura em Matemática - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso29_mod1.js'
+				},
+			]
 		},
-		'Curso 40 - Licenciatura em F�sica': {
-			'': {
-				arquivo: 'ano2012/curso40_mod1.js'
-			}
+		'30': {
+			name: "Filosofia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Filosofia',
+					file: '2012/curso30_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Filosofia',
+					file: '2012/curso30_mod2.js'
+				},
+			]
 		},
-		'Curso 41 - Engenharia El�trica': {
-			'': {
-				arquivo: 'ano2012/curso41_mod1.js'
-			}
+		'34': {
+			name: "Engenharia de Computação - Integral",
+			modality: [
+				{
+					name: 'AA - Sistemas de Computação',
+					file: '2012/curso34_mod1.js'
+				},
+				{
+					name: 'AB - Sistemas e Processos Industriais',
+					file: '2012/curso34_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2012/curso34_mod3.js'
+				},
+			]
 		},
-		'Curso 42 - Ciência da Computação': {
-			'': {
-				arquivo: 'ano2012/curso42_mod1.js'
-			}
+		'36': {
+			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso36_mod1.js'
+				},
+			]
 		},
-		'Curso 43 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2012/curso43_mod1.js'
-			}
+		'38': {
+			name: "Pedagogia - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso38_mod1.js'
+				},
+			]
 		},
-		'Curso 44 - Ci�ncias Sociais': {
-			'AA - Bacharelado em Ci�ncias Sociais - Antropologia': {
-				arquivo: 'ano2012/curso44_mod1.js'
-			},
-			'AB - Bacharelado em Ci�ncias Sociais - Pol�tica': {
-				arquivo: 'ano2012/curso44_mod2.js'
-			},
-			'AC - Bacharelado em Ci�ncias Sociais - Sociologia': {
-				arquivo: 'ano2012/curso44_mod3.js'
-			},
-			'AD - Bacharelado em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2012/curso44_mod4.js'
-			},
-			'AH - Licenciatura em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2012/curso44_mod5.js'
-			}
+		'39': {
+			name: "Engenharia Química - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso39_mod1.js'
+				},
+			]
 		},
-		'Curso 45 - Educa��o F�sica': {
-			'AB - Licenciatura em Educa��o F�sica': {
-				arquivo: 'ano2012/curso45_mod1.js'
-			},
-			'AF - Bacharelado em Educa��o F�sica': {
-				arquivo: 'ano2012/curso45_mod2.js'
-			}
+		'40': {
+			name: "Licenciatura em Física - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso40_mod1.js'
+				},
+			]
 		},
-		'Curso 46 - Licenciatura em Ci�ncias Biol�gicas': {
-			'': {
-				arquivo: 'ano2012/curso46_mod1.js'
-			}
+		'41': {
+			name: "Engenharia Elétrica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso41_mod1.js'
+				},
+			]
 		},
-		'Curso 47 - Ci�ncias Econ�micas': {
-			'': {
-				arquivo: 'ano2012/curso47_mod1.js'
-			}
+		'42': {
+			name: "Ciência da Computação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso42_mod1.js'
+				},
+			]
 		},
-		'Curso 48 - Arquitetura e Urbanismo': {
-			'': {
-				arquivo: 'ano2012/curso48_mod1.js'
-			}
+		'43': {
+			name: "Engenharia de Alimentos - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso43_mod1.js'
+				},
+			]
 		},
-		'Curso 49 - Engenharia de Controle e Automa��o': {
-			'': {
-				arquivo: 'ano2012/curso49_mod1.js'
-			}
+		'44': {
+			name: "Ciências Sociais - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2012/curso44_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2012/curso44_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2012/curso44_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2012/curso44_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2012/curso44_mod5.js'
+				},
+			]
 		},
-		'Curso 50 - Qu�mica Tecnol�gica': {
-			'': {
-				arquivo: 'ano2012/curso50_mod1.js'
-			}
+		'45': {
+			name: "Educação Física - Noturno",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2012/curso45_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2012/curso45_mod2.js'
+				},
+			]
 		},
-		'Curso 51 - Matem�tica/F�sica/Matem�tica Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2012/curso51_mod1.js'
-			}
+		'46': {
+			name: "Licenciatura em Ciências Biológicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso46_mod1.js'
+				},
+			]
 		},
-		'Curso 53 - Geologia': {
-			'': {
-				arquivo: 'ano2012/curso53_mod1.js'
-			}
+		'47': {
+			name: "Ciências Econômicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso47_mod1.js'
+				},
+			]
 		},
-		'Curso 54 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2012/curso54_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2012/curso54_mod2.js'
-			}
+		'48': {
+			name: "Arquitetura e Urbanismo - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso48_mod1.js'
+				},
+			]
 		},
-		'Curso 55 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2012/curso55_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2012/curso55_mod2.js'
-			}
+		'49': {
+			name: "Engenharia de Controle e Automação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso49_mod1.js'
+				},
+			]
 		},
-		'Curso 56 - Licenciatura Integrada Qu�mica/F�sica': {
-			'AA - Licenciatura em Qu�mica': {
-				arquivo: 'ano2012/curso56_mod1.js'
-			},
-			'AB - Licenciatura em F�sica': {
-				arquivo: 'ano2012/curso56_mod2.js'
-			},
-			'AX - Para Matr�cula Antes da Op��o': {
-				arquivo: 'ano2012/curso56_mod3.js'
-			}
+		'50': {
+			name: "Química Tecnológica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso50_mod1.js'
+				},
+			]
 		},
-		'Curso 58 - Fonoaudiologia': {
-			'': {
-				arquivo: 'ano2012/curso58_mod1.js'
-			}
+		'51': {
+			name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso51_mod1.js'
+				},
+			]
 		},
-		'Curso 60 - Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas': {
-			'': {
-				arquivo: 'ano2012/curso60_mod1.js'
-			}
+		'52': {
+			name: "Ciências da Terra - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso52_mod1.js'
+				},
+			]
 		},
-		'Curso 63 - Farm�cia': {
-			'': {
-				arquivo: 'ano2012/curso63_mod1.js'
-			}
+		'53': {
+			name: "Geologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso53_mod1.js'
+				},
+			]
 		},
-		'Curso 64 - Comunica��o Social - Midialogia': {
-			'': {
-				arquivo: 'ano2012/curso64_mod1.js'
-			}
+		'54': {
+			name: "Geografia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2012/curso54_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2012/curso54_mod2.js'
+				},
+			]
 		},
-		'Curso 73 - Curso Superior de Tecnologia em Controle Ambiental': {
-			'': {
-				arquivo: 'ano2012/curso73_mod1.js'
-			}
+		'55': {
+			name: "Geografia - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2012/curso55_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2012/curso55_mod2.js'
+				},
+			]
 		},
-		'Curso 74 - Curso Superior de Tecnologia em Sistemas de Telecomunica��es': {
-			'': {
-				arquivo: 'ano2012/curso74_mod1.js'
-			}
+		'56': {
+			name: "Licenciatura Integrada Química/Física - Noturno",
+			modality: [
+				{
+					name: 'AA - Licenciatura em Química',
+					file: '2012/curso56_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2012/curso56_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2012/curso56_mod3.js'
+				},
+			]
 		},
-		'Curso 82 - Curso Superior de Tecnologia da Construção Civil': {
-			'': {
-				arquivo: 'ano2012/curso82_mod1.js'
-			}
+		'57': {
+			name: "Licenciatura em Letras - Português - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso57_mod1.js'
+				},
+			]
 		},
-		'Curso 83 - Curso Superior de Tecnologia em Constru��o de Edif�cios': {
-			'': {
-				arquivo: 'ano2012/curso83_mod1.js'
-			}
+		'58': {
+			name: "Fonoaudiologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso58_mod1.js'
+				},
+			]
 		},
-		'Curso 84 - Curso Superior de Tecnologia em Estradas': {
-			'': {
-				arquivo: 'ano2012/curso84_mod1.js'
-			}
+		'60': {
+			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso60_mod1.js'
+				},
+			]
 		},
-		'Curso 85 - Curso Superior de Tecnologia Ambiental': {
-			'': {
-				arquivo: 'ano2012/curso85_mod1.js'
-			}
+		'63': {
+			name: "Farmácia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso63_mod1.js'
+				},
+			]
 		},
-		'Curso 86 - Curso Superior de Tecnologia em Saneamento Ambiental': {
-			'': {
-				arquivo: 'ano2012/curso86_mod1.js'
-			}
+		'64': {
+			name: "Comunicação Social - Midialogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso64_mod1.js'
+				},
+			]
 		},
-		'Curso 87 - Curso Superior de Tecnologia em Controle Ambiental': {
-			'': {
-				arquivo: 'ano2012/curso87_mod1.js'
-			}
+		'73': {
+			name: "Curso Superior de Tecnologia em Controle Ambiental - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso73_mod1.js'
+				},
+			]
 		},
-		'Curso 100 - Ci�ncias do Esporte': {
-			'': {
-				arquivo: 'ano2012/curso100_mod1.js'
-			}
+		'74': {
+			name: "Curso Superior de Tecnologia em Sistemas de Telecomunicações - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso74_mod1.js'
+				},
+			]
 		},
-		'Curso 101 - Engenharia de Manufatura': {
-			'': {
-				arquivo: 'ano2012/curso101_mod1.js'
-			}
+		'75': {
+			name: "Estudos Literários - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso75_mod1.js'
+				},
+			]
 		},
-		'Curso 102 - Engenharia de Produ��o': {
-			'': {
-				arquivo: 'ano2012/curso102_mod1.js'
-			}
+		'82': {
+			name: "Curso Superior de Tecnologia da Construção Civil - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso82_mod1.js'
+				},
+			]
 		},
-		'Curso 103 - Gest�o do Agroneg�cio': {
-			'': {
-				arquivo: 'ano2012/curso103_mod1.js'
-			}
+		'83': {
+			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso83_mod1.js'
+				},
+			]
 		},
-		'Curso 104 - Gest�o de Com�rcio Internacional': {
-			'': {
-				arquivo: 'ano2012/curso104_mod1.js'
-			}
+		'84': {
+			name: "Curso Superior de Tecnologia em Estradas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso84_mod1.js'
+				},
+			]
 		},
-		'Curso 105 - Gest�o de Empresas': {
-			'': {
-				arquivo: 'ano2012/curso105_mod1.js'
-			}
+		'85': {
+			name: "Curso Superior de Tecnologia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso85_mod1.js'
+				},
+			]
 		},
-		'Curso 106 - Gest�o de Pol�ticas P�blicas': {
-			'': {
-				arquivo: 'ano2012/curso106_mod1.js'
-			}
+		'86': {
+			name: "Curso Superior de Tecnologia em Saneamento Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso86_mod1.js'
+				},
+			]
 		},
-		'Curso 107 - Nutri��o': {
-			'': {
-				arquivo: 'ano2012/curso107_mod1.js'
-			}
+		'87': {
+			name: "Curso Superior de Tecnologia em Controle Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso87_mod1.js'
+				},
+			]
 		},
-		'Curso 200 - Programa de Forma��o Interdisciplinar Superior - ProFIS': {
-			'': {
-				arquivo: 'ano2012/curso200_mod1.js'
-			}
+		'100': {
+			name: "Ciências do Esporte - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso100_mod1.js'
+				},
+			]
+		},
+		'101': {
+			name: "Engenharia de Manufatura - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso101_mod1.js'
+				},
+			]
+		},
+		'102': {
+			name: "Engenharia de Produção - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso102_mod1.js'
+				},
+			]
+		},
+		'103': {
+			name: "Gestão do Agronegócio - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso103_mod1.js'
+				},
+			]
+		},
+		'104': {
+			name: "Gestão de Comércio Internacional - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso104_mod1.js'
+				},
+			]
+		},
+		'105': {
+			name: "Gestão de Empresas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso105_mod1.js'
+				},
+			]
+		},
+		'106': {
+			name: "Gestão de Políticas Públicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso106_mod1.js'
+				},
+			]
+		},
+		'107': {
+			name: "Nutrição - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso107_mod1.js'
+				},
+			]
+		},
+		'200': {
+			name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2012/curso200_mod1.js'
+				},
+			]
 		}
 	},
-	'2013': {
-		'Curso 1 - Matem�tica': {
-			'AA - Bacharelado em Matem�tica': {
-				arquivo: 'ano2013/curso1_mod1.js'
-			},
-			'AB - Licenciatura em Matem�tica': {
-				arquivo: 'ano2013/curso1_mod2.js'
-			},
-			'EF - �nfase em F�sica Matem�tica': {
-				arquivo: 'ano2013/curso1_mod3.js'
-			}
+	"2013": {
+		'1': {
+			name: "Matemática - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Matemática',
+					file: '2013/curso1_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Matemática',
+					file: '2013/curso1_mod2.js'
+				},
+				{
+					name: 'EF - Ênfase em Física Matemática',
+					file: '2013/curso1_mod3.js'
+				},
+			]
 		},
-		'Curso 2 - Estat�stica': {
-			'': {
-				arquivo: 'ano2013/curso2_mod1.js'
-			}
+		'2': {
+			name: "Estatística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso2_mod1.js'
+				},
+			]
 		},
-		'Curso 4 - F�sica': {
-			'AA - Bacharelado em F�sica': {
-				arquivo: 'ano2013/curso4_mod1.js'
-			},
-			'AB - Licenciatura em F�sica': {
-				arquivo: 'ano2013/curso4_mod2.js'
-			},
-			'AF - Bacharelado em F�sica M�dica': {
-				arquivo: 'ano2013/curso4_mod3.js'
-			},
-			'EB - Bacharelado em F�sica com �nfase em F�sica Biom�dica': {
-				arquivo: 'ano2013/curso4_mod4.js'
-			}
+		'4': {
+			name: "Física - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Física',
+					file: '2013/curso4_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2013/curso4_mod2.js'
+				},
+				{
+					name: 'AF - Bacharelado em Física Médica',
+					file: '2013/curso4_mod3.js'
+				},
+				{
+					name: 'EB - Bacharelado em Física com Ênfase em Física Biomédica',
+					file: '2013/curso4_mod4.js'
+				},
+			]
 		},
-		'Curso 5 - Qu�mica': {
-			'AA - Bacharelado em Qu�mica': {
-				arquivo: 'ano2013/curso5_mod1.js'
-			},
-			'AB - Licenciatura em Qu�mica': {
-				arquivo: 'ano2013/curso5_mod2.js'
-			},
-			'AD - Bacharelado em Qu�mica Tecnol�gica': {
-				arquivo: 'ano2013/curso5_mod3.js'
-			}
+		'5': {
+			name: "Química - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Química',
+					file: '2013/curso5_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Química',
+					file: '2013/curso5_mod2.js'
+				},
+				{
+					name: 'AD - Bacharelado em Química Tecnológica',
+					file: '2013/curso5_mod3.js'
+				},
+			]
 		},
-		'Curso 6 - Ci�ncias Biol�gicas': {
-			'AJ - Licenciatura Plena em Ci�ncias Biol�gicas': {
-				arquivo: 'ano2013/curso6_mod1.js'
-			},
-			'AL - Bacharelado em Ci�ncias Biol�gicas': {
-				arquivo: 'ano2013/curso6_mod2.js'
-			}
+		'6': {
+			name: "Ciências Biológicas - Integral",
+			modality: [
+				{
+					name: 'AJ - Licenciatura Plena em Ciências Biológicas',
+					file: '2013/curso6_mod1.js'
+				},
+				{
+					name: 'AL - Bacharelado em Ciências Biológicas',
+					file: '2013/curso6_mod2.js'
+				},
+			]
 		},
-		'Curso 8 - Engenharia Agr�cola': {
-			'': {
-				arquivo: 'ano2013/curso8_mod1.js'
-			}
+		'7': {
+			name: "Letras - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso7_mod1.js'
+				},
+			]
 		},
-		'Curso 9 - Engenharia Qu�mica': {
-			'': {
-				arquivo: 'ano2013/curso9_mod1.js'
-			}
+		'8': {
+			name: "Engenharia Agrícola - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso8_mod1.js'
+				},
+			]
 		},
-		'Curso 10 - Engenharia Mec�nica': {
-			'': {
-				arquivo: 'ano2013/curso10_mod1.js'
-			}
+		'9': {
+			name: "Engenharia Química - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso9_mod1.js'
+				},
+			]
 		},
-		'Curso 11 - Engenharia El�trica': {
-			'': {
-				arquivo: 'ano2013/curso11_mod1.js'
-			}
+		'10': {
+			name: "Engenharia Mecânica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso10_mod1.js'
+				},
+			]
 		},
-		'Curso 12 - Engenharia Civil': {
-			'EA - �nfase em Recursos H�dricos, Energ�ticos e Ambientais': {
-				arquivo: 'ano2013/curso12_mod1.js'
-			},
-			'EE - �nfase em Estruturas': {
-				arquivo: 'ano2013/curso12_mod2.js'
-			},
-			'EP - �nfase em Gest�o do Projeto e da Constru��o': {
-				arquivo: 'ano2013/curso12_mod3.js'
-			},
-			'ES - �nfase em Saneamento e Ambiente': {
-				arquivo: 'ano2013/curso12_mod4.js'
-			},
-			'ET - �nfase em Transportes e Geotecnia': {
-				arquivo: 'ano2013/curso12_mod5.js'
-			}
+		'11': {
+			name: "Engenharia Elétrica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso11_mod1.js'
+				},
+			]
 		},
-		'Curso 13 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2013/curso13_mod1.js'
-			}
+		'12': {
+			name: "Engenharia Civil - Integral",
+			modality: [
+				{
+					name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
+					file: '2013/curso12_mod1.js'
+				},
+				{
+					name: 'EE - Ênfase em Estruturas',
+					file: '2013/curso12_mod2.js'
+				},
+				{
+					name: 'EP - Ênfase em Gestão do Projeto e da Construção',
+					file: '2013/curso12_mod3.js'
+				},
+				{
+					name: 'ES - Ênfase em Saneamento e Ambiente',
+					file: '2013/curso12_mod4.js'
+				},
+				{
+					name: 'ET - Ênfase em Transportes e Geotecnia',
+					file: '2013/curso12_mod5.js'
+				},
+			]
 		},
-		'Curso 14 - Odontologia': {
-			'': {
-				arquivo: 'ano2013/curso14_mod1.js'
-			}
+		'13': {
+			name: "Engenharia de Alimentos - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso13_mod1.js'
+				},
+			]
 		},
-		'Curso 15 - Medicina': {
-			'': {
-				arquivo: 'ano2013/curso15_mod1.js'
-			}
+		'14': {
+			name: "Odontologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso14_mod1.js'
+				},
+			]
 		},
-		'Curso 16 - Ci�ncias Sociais': {
-			'AA - Bacharelado em Ci�ncias Sociais - Antropologia': {
-				arquivo: 'ano2013/curso16_mod1.js'
-			},
-			'AB - Bacharelado em Ci�ncias Sociais - Pol�tica': {
-				arquivo: 'ano2013/curso16_mod2.js'
-			},
-			'AC - Bacharelado em Ci�ncias Sociais - Sociologia': {
-				arquivo: 'ano2013/curso16_mod3.js'
-			},
-			'AD - Bacharelado em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2013/curso16_mod4.js'
-			},
-			'AH - Licenciatura em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2013/curso16_mod5.js'
-			}
+		'15': {
+			name: "Medicina - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso15_mod1.js'
+				},
+			]
 		},
-		'Curso 17 - Ci�ncias Econ�micas': {
-			'': {
-				arquivo: 'ano2013/curso17_mod1.js'
-			}
+		'16': {
+			name: "Ciências Sociais - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2013/curso16_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2013/curso16_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2013/curso16_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2013/curso16_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2013/curso16_mod5.js'
+				},
+			]
 		},
-		'Curso 20 - Pedagogia': {
-			'': {
-				arquivo: 'ano2013/curso20_mod1.js'
-			}
+		'17': {
+			name: "Ciências Econômicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso17_mod1.js'
+				},
+			]
 		},
-		'Curso 21 - Enfermagem': {
-			'AA - Bacharelado em Enfermagem': {
-				arquivo: 'ano2013/curso21_mod1.js'
-			},
-			'AB - Licenciatura em Enfermagem': {
-				arquivo: 'ano2013/curso21_mod2.js'
-			}
+		'18': {
+			name: "Linguística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso18_mod1.js'
+				},
+			]
 		},
-		'Curso 23 - Dan�a': {
-			'AA - Bacharelado em Dan�a': {
-				arquivo: 'ano2013/curso23_mod1.js'
-			},
-			'AB - Licenciatura em Artes - Dan�a': {
-				arquivo: 'ano2013/curso23_mod2.js'
-			}
+		'20': {
+			name: "Pedagogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso20_mod1.js'
+				},
+			]
 		},
-		'Curso 25 - Artes Visuais': {
-			'AF - Bacharelado em Artes Visuais': {
-				arquivo: 'ano2013/curso25_mod1.js'
-			},
-			'AG - Licenciatura em Artes - Artes Visuais': {
-				arquivo: 'ano2013/curso25_mod2.js'
-			}
+		'21': {
+			name: "Enfermagem - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Enfermagem',
+					file: '2013/curso21_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Enfermagem',
+					file: '2013/curso21_mod2.js'
+				},
+			]
 		},
-		'Curso 26 - Artes C�nicas': {
-			'': {
-				arquivo: 'ano2013/curso26_mod1.js'
-			}
+		'23': {
+			name: "Dança - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Dança',
+					file: '2013/curso23_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Artes - Dança',
+					file: '2013/curso23_mod2.js'
+				},
+			]
 		},
-		'Curso 27 - Educa��o F�sica': {
-			'AB - Licenciatura em Educa��o F�sica': {
-				arquivo: 'ano2013/curso27_mod1.js'
-			},
-			'AF - Bacharelado em Educa��o F�sica': {
-				arquivo: 'ano2013/curso27_mod2.js'
-			}
+		'25': {
+			name: "Artes Visuais - Integral",
+			modality: [
+				{
+					name: 'AF - Bacharelado em Artes Visuais',
+					file: '2013/curso25_mod1.js'
+				},
+				{
+					name: 'AG - Licenciatura em Artes - Artes Visuais',
+					file: '2013/curso25_mod2.js'
+				},
+			]
 		},
-		'Curso 28 - Matem�tica Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2013/curso28_mod1.js'
-			}
+		'26': {
+			name: "Artes Cênicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso26_mod1.js'
+				},
+			]
 		},
-		'Curso 29 - Licenciatura em Matem�tica': {
-			'': {
-				arquivo: 'ano2013/curso29_mod1.js'
-			}
+		'27': {
+			name: "Educação Física - Integral",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2013/curso27_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2013/curso27_mod2.js'
+				},
+			]
 		},
-		'Curso 34 - Engenharia de Computação': {
-			'AA - Sistemas de Computação': {
-				arquivo: 'ano2013/curso34_mod1.js'
-			},
-			'AB - Sistemas e Processos Industriais': {
-				arquivo: 'ano2013/curso34_mod2.js'
-			},
-			'AX - Para Matrícula Antes da Opção': {
-				arquivo: 'ano2013/curso34_mod3.js'
-			}
+		'28': {
+			name: "Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso28_mod1.js'
+				},
+			]
 		},
-		'Curso 36 - Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas': {
-			'': {
-				arquivo: 'ano2013/curso36_mod1.js'
-			}
+		'29': {
+			name: "Licenciatura em Matemática - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso29_mod1.js'
+				},
+			]
 		},
-		'Curso 38 - Pedagogia': {
-			'': {
-				arquivo: 'ano2013/curso38_mod1.js'
-			}
+		'34': {
+			name: "Engenharia de Computação - Integral",
+			modality: [
+				{
+					name: 'AA - Sistemas de Computação',
+					file: '2013/curso34_mod1.js'
+				},
+				{
+					name: 'AB - Sistemas e Processos Industriais',
+					file: '2013/curso34_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2013/curso34_mod3.js'
+				},
+			]
 		},
-		'Curso 39 - Engenharia Qu�mica': {
-			'': {
-				arquivo: 'ano2013/curso39_mod1.js'
-			}
+		'36': {
+			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso36_mod1.js'
+				},
+			]
 		},
-		'Curso 40 - Licenciatura em F�sica': {
-			'': {
-				arquivo: 'ano2013/curso40_mod1.js'
-			}
+		'38': {
+			name: "Pedagogia - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso38_mod1.js'
+				},
+			]
 		},
-		'Curso 41 - Engenharia El�trica': {
-			'': {
-				arquivo: 'ano2013/curso41_mod1.js'
-			}
+		'39': {
+			name: "Engenharia Química - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso39_mod1.js'
+				},
+			]
 		},
-		'Curso 42 - Ciência da Computação': {
-			'': {
-				arquivo: 'ano2013/curso42_mod1.js'
-			}
+		'40': {
+			name: "Licenciatura em Física - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso40_mod1.js'
+				},
+			]
 		},
-		'Curso 43 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2013/curso43_mod1.js'
-			}
+		'41': {
+			name: "Engenharia Elétrica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso41_mod1.js'
+				},
+			]
 		},
-		'Curso 44 - Ci�ncias Sociais': {
-			'AA - Bacharelado em Ci�ncias Sociais - Antropologia': {
-				arquivo: 'ano2013/curso44_mod1.js'
-			},
-			'AB - Bacharelado em Ci�ncias Sociais - Pol�tica': {
-				arquivo: 'ano2013/curso44_mod2.js'
-			},
-			'AC - Bacharelado em Ci�ncias Sociais - Sociologia': {
-				arquivo: 'ano2013/curso44_mod3.js'
-			},
-			'AD - Bacharelado em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2013/curso44_mod4.js'
-			},
-			'AH - Licenciatura em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2013/curso44_mod5.js'
-			}
+		'42': {
+			name: "Ciência da Computação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso42_mod1.js'
+				},
+			]
 		},
-		'Curso 45 - Educa��o F�sica': {
-			'AB - Licenciatura em Educa��o F�sica': {
-				arquivo: 'ano2013/curso45_mod1.js'
-			},
-			'AF - Bacharelado em Educa��o F�sica': {
-				arquivo: 'ano2013/curso45_mod2.js'
-			}
+		'43': {
+			name: "Engenharia de Alimentos - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso43_mod1.js'
+				},
+			]
 		},
-		'Curso 46 - Licenciatura em Ci�ncias Biol�gicas': {
-			'': {
-				arquivo: 'ano2013/curso46_mod1.js'
-			}
+		'44': {
+			name: "Ciências Sociais - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2013/curso44_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2013/curso44_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2013/curso44_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2013/curso44_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2013/curso44_mod5.js'
+				},
+			]
 		},
-		'Curso 47 - Ci�ncias Econ�micas': {
-			'': {
-				arquivo: 'ano2013/curso47_mod1.js'
-			}
+		'45': {
+			name: "Educação Física - Noturno",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2013/curso45_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2013/curso45_mod2.js'
+				},
+			]
 		},
-		'Curso 48 - Arquitetura e Urbanismo': {
-			'': {
-				arquivo: 'ano2013/curso48_mod1.js'
-			}
+		'46': {
+			name: "Licenciatura em Ciências Biológicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso46_mod1.js'
+				},
+			]
 		},
-		'Curso 49 - Engenharia de Controle e Automa��o': {
-			'': {
-				arquivo: 'ano2013/curso49_mod1.js'
-			}
+		'47': {
+			name: "Ciências Econômicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso47_mod1.js'
+				},
+			]
 		},
-		'Curso 50 - Qu�mica Tecnol�gica': {
-			'': {
-				arquivo: 'ano2013/curso50_mod1.js'
-			}
+		'48': {
+			name: "Arquitetura e Urbanismo - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso48_mod1.js'
+				},
+			]
 		},
-		'Curso 51 - Matem�tica/F�sica/Matem�tica Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2013/curso51_mod1.js'
-			}
+		'49': {
+			name: "Engenharia de Controle e Automação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso49_mod1.js'
+				},
+			]
 		},
-		'Curso 53 - Geologia': {
-			'': {
-				arquivo: 'ano2013/curso53_mod1.js'
-			}
+		'50': {
+			name: "Química Tecnológica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso50_mod1.js'
+				},
+			]
 		},
-		'Curso 54 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2013/curso54_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2013/curso54_mod2.js'
-			}
+		'51': {
+			name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso51_mod1.js'
+				},
+			]
 		},
-		'Curso 55 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2013/curso55_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2013/curso55_mod2.js'
-			}
+		'52': {
+			name: "Ciências da Terra - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso52_mod1.js'
+				},
+			]
 		},
-		'Curso 56 - Licenciatura Integrada Qu�mica/F�sica': {
-			'AA - Licenciatura em Qu�mica': {
-				arquivo: 'ano2013/curso56_mod1.js'
-			},
-			'AB - Licenciatura em F�sica': {
-				arquivo: 'ano2013/curso56_mod2.js'
-			},
-			'AX - Para Matr�cula Antes da Op��o': {
-				arquivo: 'ano2013/curso56_mod3.js'
-			}
+		'53': {
+			name: "Geologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso53_mod1.js'
+				},
+			]
 		},
-		'Curso 58 - Fonoaudiologia': {
-			'': {
-				arquivo: 'ano2013/curso58_mod1.js'
-			}
+		'54': {
+			name: "Geografia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2013/curso54_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2013/curso54_mod2.js'
+				},
+			]
 		},
-		'Curso 63 - Farm�cia': {
-			'': {
-				arquivo: 'ano2013/curso63_mod1.js'
-			}
+		'55': {
+			name: "Geografia - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2013/curso55_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2013/curso55_mod2.js'
+				},
+			]
 		},
-		'Curso 64 - Comunica��o Social - Midialogia': {
-			'': {
-				arquivo: 'ano2013/curso64_mod1.js'
-			}
+		'56': {
+			name: "Licenciatura Integrada Química/Física - Noturno",
+			modality: [
+				{
+					name: 'AA - Licenciatura em Química',
+					file: '2013/curso56_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2013/curso56_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2013/curso56_mod3.js'
+				},
+			]
 		},
-		'Curso 73 - Curso Superior de Tecnologia em Controle Ambiental': {
-			'': {
-				arquivo: 'ano2013/curso73_mod1.js'
-			}
+		'57': {
+			name: "Licenciatura em Letras - Português - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso57_mod1.js'
+				},
+			]
 		},
-		'Curso 83 - Curso Superior de Tecnologia em Constru��o de Edif�cios': {
-			'': {
-				arquivo: 'ano2013/curso83_mod1.js'
-			}
+		'58': {
+			name: "Fonoaudiologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso58_mod1.js'
+				},
+			]
 		},
-		'Curso 87 - Curso Superior de Tecnologia em Controle Ambiental': {
-			'': {
-				arquivo: 'ano2013/curso87_mod1.js'
-			}
+		'60': {
+			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso60_mod1.js'
+				},
+			]
 		},
-		'Curso 88 - Engenharia de Telecomunica��es': {
-			'': {
-				arquivo: 'ano2013/curso88_mod1.js'
-			}
+		'63': {
+			name: "Farmácia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso63_mod1.js'
+				},
+			]
 		},
-		'Curso 89 - Engenharia Ambiental': {
-			'': {
-				arquivo: 'ano2013/curso89_mod1.js'
-			}
+		'64': {
+			name: "Comunicação Social - Midialogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso64_mod1.js'
+				},
+			]
 		},
-		'Curso 94 - Sistemas de Informa��o': {
-			'': {
-				arquivo: 'ano2013/curso94_mod1.js'
-			}
+		'73': {
+			name: "Curso Superior de Tecnologia em Controle Ambiental - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso73_mod1.js'
+				},
+			]
 		},
-		'Curso 100 - Ci�ncias do Esporte': {
-			'': {
-				arquivo: 'ano2013/curso100_mod1.js'
-			}
+		'74': {
+			name: "Curso Superior de Tecnologia em Sistemas de Telecomunicações - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso74_mod1.js'
+				},
+			]
 		},
-		'Curso 101 - Engenharia de Manufatura': {
-			'': {
-				arquivo: 'ano2013/curso101_mod1.js'
-			}
+		'75': {
+			name: "Estudos Literários - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso75_mod1.js'
+				},
+			]
 		},
-		'Curso 102 - Engenharia de Produ��o': {
-			'': {
-				arquivo: 'ano2013/curso102_mod1.js'
-			}
+		'82': {
+			name: "Curso Superior de Tecnologia da Construção Civil - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso82_mod1.js'
+				},
+			]
 		},
-		'Curso 103 - Gest�o do Agroneg�cio': {
-			'': {
-				arquivo: 'ano2013/curso103_mod1.js'
-			}
+		'83': {
+			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso83_mod1.js'
+				},
+			]
 		},
-		'Curso 104 - Gest�o de Com�rcio Internacional': {
-			'': {
-				arquivo: 'ano2013/curso104_mod1.js'
-			}
+		'84': {
+			name: "Curso Superior de Tecnologia em Estradas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso84_mod1.js'
+				},
+			]
 		},
-		'Curso 105 - Gest�o de Empresas': {
-			'': {
-				arquivo: 'ano2013/curso105_mod1.js'
-			}
+		'85': {
+			name: "Curso Superior de Tecnologia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso85_mod1.js'
+				},
+			]
 		},
-		'Curso 106 - Gest�o de Pol�ticas P�blicas': {
-			'': {
-				arquivo: 'ano2013/curso106_mod1.js'
-			}
+		'86': {
+			name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso86_mod1.js'
+				},
+			]
 		},
-		'Curso 107 - Nutri��o': {
-			'': {
-				arquivo: 'ano2013/curso107_mod1.js'
-			}
+		'87': {
+			name: "Curso Superior de Tecnologia em Controle Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso87_mod1.js'
+				},
+			]
 		},
-		'Curso 108 - Engenharia F�sica': {
-			'AA - �nfase em Optoeletr�nica': {
-				arquivo: 'ano2013/curso108_mod1.js'
-			},
-			'AB - �nfase em Produ��o Tecnol�gica': {
-				arquivo: 'ano2013/curso108_mod2.js'
-			}
+		'88': {
+			name: "Engenharia de Telecomunicações - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso88_mod1.js'
+				},
+			]
 		},
-		'Curso 200 - Programa de Forma��o Interdisciplinar Superior - ProFIS': {
-			'': {
-				arquivo: 'ano2013/curso200_mod1.js'
-			}
+		'89': {
+			name: "Engenharia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso89_mod1.js'
+				},
+			]
+		},
+		'94': {
+			name: "Sistemas de Informação - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso94_mod1.js'
+				},
+			]
+		},
+		'100': {
+			name: "Ciências do Esporte - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso100_mod1.js'
+				},
+			]
+		},
+		'101': {
+			name: "Engenharia de Manufatura - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso101_mod1.js'
+				},
+			]
+		},
+		'102': {
+			name: "Engenharia de Produção - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso102_mod1.js'
+				},
+			]
+		},
+		'103': {
+			name: "Gestão do Agronegócio - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso103_mod1.js'
+				},
+			]
+		},
+		'104': {
+			name: "Gestão de Comércio Internacional - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso104_mod1.js'
+				},
+			]
+		},
+		'105': {
+			name: "Gestão de Empresas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso105_mod1.js'
+				},
+			]
+		},
+		'106': {
+			name: "Gestão de Políticas Públicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso106_mod1.js'
+				},
+			]
+		},
+		'107': {
+			name: "Nutrição - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso107_mod1.js'
+				},
+			]
+		},
+		'108': {
+			name: "Engenharia Física - Integral",
+			modality: [
+				{
+					name: 'AA - Ênfase em Optoeletrônica',
+					file: '2013/curso108_mod1.js'
+				},
+				{
+					name: 'AB - Ênfase em Produção Tecnológica',
+					file: '2013/curso108_mod2.js'
+				},
+			]
+		},
+		'200': {
+			name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2013/curso200_mod1.js'
+				},
+			]
 		}
 	},
-	'2014': {
-		'Curso 1 - Matem�tica': {
-			'AA - Bacharelado em Matem�tica': {
-				arquivo: 'ano2014/curso1_mod1.js'
-			},
-			'AB - Licenciatura em Matem�tica': {
-				arquivo: 'ano2014/curso1_mod2.js'
-			},
-			'EF - �nfase em F�sica Matem�tica': {
-				arquivo: 'ano2014/curso1_mod3.js'
-			}
+	"2014": {
+		'1': {
+			name: "Matemática - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Matemática',
+					file: '2014/curso1_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Matemática',
+					file: '2014/curso1_mod2.js'
+				},
+				{
+					name: 'EF - Ênfase em Física Matemática',
+					file: '2014/curso1_mod3.js'
+				},
+			]
 		},
-		'Curso 2 - Estat�stica': {
-			'': {
-				arquivo: 'ano2014/curso2_mod1.js'
-			}
+		'2': {
+			name: "Estatística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso2_mod1.js'
+				},
+			]
 		},
-		'Curso 4 - F�sica': {
-			'AA - Bacharelado em F�sica': {
-				arquivo: 'ano2014/curso4_mod1.js'
-			},
-			'AB - Licenciatura em F�sica': {
-				arquivo: 'ano2014/curso4_mod2.js'
-			},
-			'AF - Bacharelado em F�sica M�dica': {
-				arquivo: 'ano2014/curso4_mod3.js'
-			},
-			'EB - Bacharelado em F�sica com �nfase em F�sica Biom�dica': {
-				arquivo: 'ano2014/curso4_mod4.js'
-			}
+		'4': {
+			name: "Física - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Física',
+					file: '2014/curso4_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2014/curso4_mod2.js'
+				},
+				{
+					name: 'AF - Bacharelado em Física Médica',
+					file: '2014/curso4_mod3.js'
+				},
+				{
+					name: 'EB - Bacharelado em Física com Ênfase em Física Biomédica',
+					file: '2014/curso4_mod4.js'
+				},
+			]
 		},
-		'Curso 5 - Qu�mica': {
-			'AA - Bacharelado em Qu�mica': {
-				arquivo: 'ano2014/curso5_mod1.js'
-			},
-			'AB - Licenciatura em Qu�mica': {
-				arquivo: 'ano2014/curso5_mod2.js'
-			},
-			'AD - Bacharelado em Qu�mica Tecnol�gica': {
-				arquivo: 'ano2014/curso5_mod3.js'
-			}
+		'5': {
+			name: "Química - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Química',
+					file: '2014/curso5_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Química',
+					file: '2014/curso5_mod2.js'
+				},
+				{
+					name: 'AD - Bacharelado em Química Tecnológica',
+					file: '2014/curso5_mod3.js'
+				},
+			]
 		},
-		'Curso 6 - Ci�ncias Biol�gicas': {
-			'AJ - Licenciatura Plena em Ci�ncias Biol�gicas': {
-				arquivo: 'ano2014/curso6_mod1.js'
-			},
-			'AL - Bacharelado em Ci�ncias Biol�gicas': {
-				arquivo: 'ano2014/curso6_mod2.js'
-			}
+		'6': {
+			name: "Ciências Biológicas - Integral",
+			modality: [
+				{
+					name: 'AJ - Licenciatura Plena em Ciências Biológicas',
+					file: '2014/curso6_mod1.js'
+				},
+				{
+					name: 'AL - Bacharelado em Ciências Biológicas',
+					file: '2014/curso6_mod2.js'
+				},
+			]
 		},
-		'Curso 8 - Engenharia Agr�cola': {
-			'': {
-				arquivo: 'ano2014/curso8_mod1.js'
-			}
+		'7': {
+			name: "Letras - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso7_mod1.js'
+				},
+			]
 		},
-		'Curso 9 - Engenharia Qu�mica': {
-			'': {
-				arquivo: 'ano2014/curso9_mod1.js'
-			}
+		'8': {
+			name: "Engenharia Agrícola - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso8_mod1.js'
+				},
+			]
 		},
-		'Curso 10 - Engenharia Mec�nica': {
-			'': {
-				arquivo: 'ano2014/curso10_mod1.js'
-			}
+		'9': {
+			name: "Engenharia Química - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso9_mod1.js'
+				},
+			]
 		},
-		'Curso 11 - Engenharia Elétrica': {
-			'': {
-				arquivo: 'ano2014/curso11_mod1.js'
-			}
+		'10': {
+			name: "Engenharia Mecânica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso10_mod1.js'
+				},
+			]
 		},
-		'Curso 12 - Engenharia Civil': {
-			'EA - �nfase em Recursos H�dricos, Energ�ticos e Ambientais': {
-				arquivo: 'ano2014/curso12_mod1.js'
-			},
-			'EE - �nfase em Estruturas': {
-				arquivo: 'ano2014/curso12_mod2.js'
-			},
-			'EP - �nfase em Gest�o do Projeto e da Constru��o': {
-				arquivo: 'ano2014/curso12_mod3.js'
-			},
-			'ES - �nfase em Saneamento e Ambiente': {
-				arquivo: 'ano2014/curso12_mod4.js'
-			},
-			'ET - �nfase em Transportes e Geotecnia': {
-				arquivo: 'ano2014/curso12_mod5.js'
-			}
+		'11': {
+			name: "Engenharia Elétrica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso11_mod1.js'
+				},
+			]
 		},
-		'Curso 13 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2014/curso13_mod1.js'
-			}
+		'12': {
+			name: "Engenharia Civil - Integral",
+			modality: [
+				{
+					name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
+					file: '2014/curso12_mod1.js'
+				},
+				{
+					name: 'EE - Ênfase em Estruturas',
+					file: '2014/curso12_mod2.js'
+				},
+				{
+					name: 'EP - Ênfase em Gestão do Projeto e da Construção',
+					file: '2014/curso12_mod3.js'
+				},
+				{
+					name: 'ES - Ênfase em Saneamento e Ambiente',
+					file: '2014/curso12_mod4.js'
+				},
+				{
+					name: 'ET - Ênfase em Transportes e Geotecnia',
+					file: '2014/curso12_mod5.js'
+				},
+			]
 		},
-		'Curso 14 - Odontologia': {
-			'': {
-				arquivo: 'ano2014/curso14_mod1.js'
-			}
+		'13': {
+			name: "Engenharia de Alimentos - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso13_mod1.js'
+				},
+			]
 		},
-		'Curso 15 - Medicina': {
-			'': {
-				arquivo: 'ano2014/curso15_mod1.js'
-			}
+		'14': {
+			name: "Odontologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso14_mod1.js'
+				},
+			]
 		},
-		'Curso 16 - Ciências Sociais': {
-			'AA - Bacharelado em Ciências Sociais - Antropologia': {
-				arquivo: 'ano2014/curso16_mod1.js'
-			},
-			'AB - Bacharelado em Ciências Sociais - Política': {
-				arquivo: 'ano2014/curso16_mod2.js'
-			},
-			'AC - Bacharelado em Ciências Sociais - Sociologia': {
-				arquivo: 'ano2014/curso16_mod3.js'
-			},
-			'AD - Bacharelado em Ciências Sociais - Geral': {
-				arquivo: 'ano2014/curso16_mod4.js'
-			},
-			'AH - Licenciatura em Ciências Sociais - Geral': {
-				arquivo: 'ano2014/curso16_mod5.js'
-			}
+		'15': {
+			name: "Medicina - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso15_mod1.js'
+				},
+			]
 		},
-		'Curso 17 - Ci�ncias Econ�micas': {
-			'': {
-				arquivo: 'ano2014/curso17_mod1.js'
-			}
+		'16': {
+			name: "Ciências Sociais - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2014/curso16_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2014/curso16_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2014/curso16_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2014/curso16_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2014/curso16_mod5.js'
+				},
+			]
 		},
-		'Curso 20 - Pedagogia': {
-			'': {
-				arquivo: 'ano2014/curso20_mod1.js'
-			}
+		'17': {
+			name: "Ciências Econômicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso17_mod1.js'
+				},
+			]
 		},
-		'Curso 21 - Enfermagem': {
-			'AA - Bacharelado em Enfermagem': {
-				arquivo: 'ano2014/curso21_mod1.js'
-			},
-			'AB - Licenciatura em Enfermagem': {
-				arquivo: 'ano2014/curso21_mod2.js'
-			}
+		'18': {
+			name: "Linguística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso18_mod1.js'
+				},
+			]
 		},
-		'Curso 23 - Dan�a': {
-			'AA - Bacharelado em Dan�a': {
-				arquivo: 'ano2014/curso23_mod1.js'
-			},
-			'AB - Licenciatura em Artes - Dan�a': {
-				arquivo: 'ano2014/curso23_mod2.js'
-			}
+		'20': {
+			name: "Pedagogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso20_mod1.js'
+				},
+			]
 		},
-		'Curso 25 - Artes Visuais': {
-			'AF - Bacharelado em Artes Visuais': {
-				arquivo: 'ano2014/curso25_mod1.js'
-			},
-			'AG - Licenciatura em Artes - Artes Visuais': {
-				arquivo: 'ano2014/curso25_mod2.js'
-			}
+		'21': {
+			name: "Enfermagem - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Enfermagem',
+					file: '2014/curso21_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Enfermagem',
+					file: '2014/curso21_mod2.js'
+				},
+			]
 		},
-		'Curso 26 - Artes C�nicas': {
-			'': {
-				arquivo: 'ano2014/curso26_mod1.js'
-			}
+		'23': {
+			name: "Dança - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Dança',
+					file: '2014/curso23_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Artes - Dança',
+					file: '2014/curso23_mod2.js'
+				},
+			]
 		},
-		'Curso 27 - Educa��o F�sica': {
-			'AB - Licenciatura em Educa��o F�sica': {
-				arquivo: 'ano2014/curso27_mod1.js'
-			},
-			'AF - Bacharelado em Educa��o F�sica': {
-				arquivo: 'ano2014/curso27_mod2.js'
-			}
+		'25': {
+			name: "Artes Visuais - Integral",
+			modality: [
+				{
+					name: 'AF - Bacharelado em Artes Visuais',
+					file: '2014/curso25_mod1.js'
+				},
+				{
+					name: 'AG - Licenciatura em Artes - Artes Visuais',
+					file: '2014/curso25_mod2.js'
+				},
+			]
 		},
-		'Curso 28 - Matem�tica Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2014/curso28_mod1.js'
-			}
+		'26': {
+			name: "Artes Cênicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso26_mod1.js'
+				},
+			]
 		},
-		'Curso 29 - Licenciatura em Matem�tica': {
-			'': {
-				arquivo: 'ano2014/curso29_mod1.js'
-			}
+		'27': {
+			name: "Educação Física - Integral",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2014/curso27_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2014/curso27_mod2.js'
+				},
+			]
 		},
-		'Curso 34 - Engenharia de Computação': {
-			'AA - Sistemas de Computação': {
-				arquivo: 'ano2014/curso34_mod1.js'
-			},
-			'AB - Sistemas e Processos Industriais': {
-				arquivo: 'ano2014/curso34_mod2.js'
-			},
-			'AX - Para Matrícula Antes da Opção': {
-				arquivo: 'ano2014/curso34_mod3.js'
-			}
+		'28': {
+			name: "Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso28_mod1.js'
+				},
+			]
 		},
-		'Curso 36 - Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas': {
-			'': {
-				arquivo: 'ano2014/curso36_mod1.js'
-			}
+		'29': {
+			name: "Licenciatura em Matemática - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso29_mod1.js'
+				},
+			]
 		},
-		'Curso 38 - Pedagogia': {
-			'': {
-				arquivo: 'ano2014/curso38_mod1.js'
-			}
+		'34': {
+			name: "Engenharia de Computação - Integral",
+			modality: [
+				{
+					name: 'AA - Sistemas de Computação',
+					file: '2014/curso34_mod1.js'
+				},
+				{
+					name: 'AB - Sistemas e Processos Industriais',
+					file: '2014/curso34_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2014/curso34_mod3.js'
+				},
+			]
 		},
-		'Curso 39 - Engenharia Qu�mica': {
-			'': {
-				arquivo: 'ano2014/curso39_mod1.js'
-			}
+		'36': {
+			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso36_mod1.js'
+				},
+			]
 		},
-		'Curso 40 - Licenciatura em F�sica': {
-			'': {
-				arquivo: 'ano2014/curso40_mod1.js'
-			}
+		'38': {
+			name: "Pedagogia - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso38_mod1.js'
+				},
+			]
 		},
-		'Curso 41 - Engenharia Elétrica': {
-			'': {
-				arquivo: 'ano2014/curso41_mod1.js'
-			}
+		'39': {
+			name: "Engenharia Química - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso39_mod1.js'
+				},
+			]
 		},
-		'Curso 42 - Ciência da Computação': {
-			'': {
-				arquivo: 'ano2014/curso42_mod1.js'
-			}
+		'40': {
+			name: "Licenciatura em Física - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso40_mod1.js'
+				},
+			]
 		},
-		'Curso 43 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2014/curso43_mod1.js'
-			}
+		'41': {
+			name: "Engenharia Elétrica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso41_mod1.js'
+				},
+			]
 		},
-		'Curso 44 - Ciências Sociais': {
-			'AA - Bacharelado em Ciências Sociais - Antropologia': {
-				arquivo: 'ano2014/curso44_mod1.js'
-			},
-			'AB - Bacharelado em Ciências Sociais - Política': {
-				arquivo: 'ano2014/curso44_mod2.js'
-			},
-			'AC - Bacharelado em Ciências Sociais - Sociologia': {
-				arquivo: 'ano2014/curso44_mod3.js'
-			},
-			'AD - Bacharelado em Ciências Sociais - Geral': {
-				arquivo: 'ano2014/curso44_mod4.js'
-			},
-			'AH - Licenciatura em Ciências Sociais - Geral': {
-				arquivo: 'ano2014/curso44_mod5.js'
-			}
+		'42': {
+			name: "Ciência da Computação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso42_mod1.js'
+				},
+			]
 		},
-		'Curso 45 - Educa��o F�sica': {
-			'AB - Licenciatura em Educa��o F�sica': {
-				arquivo: 'ano2014/curso45_mod1.js'
-			},
-			'AF - Bacharelado em Educa��o F�sica': {
-				arquivo: 'ano2014/curso45_mod2.js'
-			}
+		'43': {
+			name: "Engenharia de Alimentos - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso43_mod1.js'
+				},
+			]
 		},
-		'Curso 46 - Licenciatura em Ci�ncias Biol�gicas': {
-			'': {
-				arquivo: 'ano2014/curso46_mod1.js'
-			}
+		'44': {
+			name: "Ciências Sociais - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2014/curso44_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2014/curso44_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2014/curso44_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2014/curso44_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2014/curso44_mod5.js'
+				},
+			]
 		},
-		'Curso 47 - Ci�ncias Econ�micas': {
-			'': {
-				arquivo: 'ano2014/curso47_mod1.js'
-			}
+		'45': {
+			name: "Educação Física - Noturno",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2014/curso45_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2014/curso45_mod2.js'
+				},
+			]
 		},
-		'Curso 48 - Arquitetura e Urbanismo': {
-			'': {
-				arquivo: 'ano2014/curso48_mod1.js'
-			}
+		'46': {
+			name: "Licenciatura em Ciências Biológicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso46_mod1.js'
+				},
+			]
 		},
-		'Curso 49 - Engenharia de Controle e Automa��o': {
-			'': {
-				arquivo: 'ano2014/curso49_mod1.js'
-			}
+		'47': {
+			name: "Ciências Econômicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso47_mod1.js'
+				},
+			]
 		},
-		'Curso 50 - Qu�mica Tecnol�gica': {
-			'': {
-				arquivo: 'ano2014/curso50_mod1.js'
-			}
+		'48': {
+			name: "Arquitetura e Urbanismo - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso48_mod1.js'
+				},
+			]
 		},
-		'Curso 51 - Matem�tica/F�sica/Matem�tica Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2014/curso51_mod1.js'
-			}
+		'49': {
+			name: "Engenharia de Controle e Automação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso49_mod1.js'
+				},
+			]
 		},
-		'Curso 53 - Geologia': {
-			'': {
-				arquivo: 'ano2014/curso53_mod1.js'
-			}
+		'50': {
+			name: "Química Tecnológica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso50_mod1.js'
+				},
+			]
 		},
-		'Curso 54 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2014/curso54_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2014/curso54_mod2.js'
-			}
+		'51': {
+			name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso51_mod1.js'
+				},
+			]
 		},
-		'Curso 55 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2014/curso55_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2014/curso55_mod2.js'
-			}
+		'52': {
+			name: "Ciências da Terra - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso52_mod1.js'
+				},
+			]
 		},
-		'Curso 56 - Licenciatura Integrada Qu�mica/F�sica': {
-			'AA - Licenciatura em Qu�mica': {
-				arquivo: 'ano2014/curso56_mod1.js'
-			},
-			'AB - Licenciatura em F�sica': {
-				arquivo: 'ano2014/curso56_mod2.js'
-			},
-			'AX - Para Matr�cula Antes da Op��o': {
-				arquivo: 'ano2014/curso56_mod3.js'
-			}
+		'53': {
+			name: "Geologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso53_mod1.js'
+				},
+			]
 		},
-		'Curso 58 - Fonoaudiologia': {
-			'': {
-				arquivo: 'ano2014/curso58_mod1.js'
-			}
+		'54': {
+			name: "Geografia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2014/curso54_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2014/curso54_mod2.js'
+				},
+			]
 		},
-		'Curso 63 - Farm�cia': {
-			'': {
-				arquivo: 'ano2014/curso63_mod1.js'
-			}
+		'55': {
+			name: "Geografia - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2014/curso55_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2014/curso55_mod2.js'
+				},
+			]
 		},
-		'Curso 64 - Comunicação Social - Midialogia': {
-			'': {
-				arquivo: 'ano2014/curso64_mod1.js'
-			}
+		'56': {
+			name: "Licenciatura Integrada Química/Física - Noturno",
+			modality: [
+				{
+					name: 'AA - Licenciatura em Química',
+					file: '2014/curso56_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2014/curso56_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2014/curso56_mod3.js'
+				},
+			]
 		},
-		'Curso 73 - Curso Superior de Tecnologia em Controle Ambiental': {
-			'': {
-				arquivo: 'ano2014/curso73_mod1.js'
-			}
+		'57': {
+			name: "Licenciatura em Letras - Português - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso57_mod1.js'
+				},
+			]
 		},
-		'Curso 83 - Curso Superior de Tecnologia em Constru��o de Edif�cios': {
-			'': {
-				arquivo: 'ano2014/curso83_mod1.js'
-			}
+		'58': {
+			name: "Fonoaudiologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso58_mod1.js'
+				},
+			]
 		},
-		'Curso 87 - Curso Superior de Tecnologia em Controle Ambiental': {
-			'': {
-				arquivo: 'ano2014/curso87_mod1.js'
-			}
+		'60': {
+			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso60_mod1.js'
+				},
+			]
 		},
-		'Curso 88 - Engenharia de Telecomunica��es': {
-			'': {
-				arquivo: 'ano2014/curso88_mod1.js'
-			}
+		'63': {
+			name: "Farmácia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso63_mod1.js'
+				},
+			]
 		},
-		'Curso 89 - Engenharia Ambiental': {
-			'': {
-				arquivo: 'ano2014/curso89_mod1.js'
-			}
+		'64': {
+			name: "Comunicação Social - Midialogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso64_mod1.js'
+				},
+			]
 		},
-		'Curso 94 - Sistemas de Informa��o': {
-			'': {
-				arquivo: 'ano2014/curso94_mod1.js'
-			}
+		'73': {
+			name: "Curso Superior de Tecnologia em Controle Ambiental - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso73_mod1.js'
+				},
+			]
 		},
-		'Curso 100 - Ci�ncias do Esporte': {
-			'': {
-				arquivo: 'ano2014/curso100_mod1.js'
-			}
+		'74': {
+			name: "Curso Superior de Tecnologia em Sistemas de Telecomunicações - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso74_mod1.js'
+				},
+			]
 		},
-		'Curso 101 - Engenharia de Manufatura': {
-			'': {
-				arquivo: 'ano2014/curso101_mod1.js'
-			}
+		'75': {
+			name: "Estudos Literários - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso75_mod1.js'
+				},
+			]
 		},
-		'Curso 102 - Engenharia de Produ��o': {
-			'': {
-				arquivo: 'ano2014/curso102_mod1.js'
-			}
+		'82': {
+			name: "Curso Superior de Tecnologia da Construção Civil - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso82_mod1.js'
+				},
+			]
 		},
-		'Curso 107 - Nutri��o': {
-			'': {
-				arquivo: 'ano2014/curso107_mod1.js'
-			}
+		'83': {
+			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso83_mod1.js'
+				},
+			]
 		},
-		'Curso 108 - Engenharia F�sica': {
-			'AA - �nfase em Optoeletr�nica': {
-				arquivo: 'ano2014/curso108_mod1.js'
-			},
-			'AB - �nfase em Produ��o Tecnol�gica': {
-				arquivo: 'ano2014/curso108_mod2.js'
-			}
+		'84': {
+			name: "Curso Superior de Tecnologia em Estradas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso84_mod1.js'
+				},
+			]
 		},
-		'Curso 109 - Administra��o': {
-			'': {
-				arquivo: 'ano2014/curso109_mod1.js'
-			}
+		'85': {
+			name: "Curso Superior de Tecnologia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso85_mod1.js'
+				},
+			]
 		},
-		'Curso 110 - Administra��o P�blica': {
-			'': {
-				arquivo: 'ano2014/curso110_mod1.js'
-			}
+		'86': {
+			name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso86_mod1.js'
+				},
+			]
 		},
-		'Curso 200 - Programa de Forma��o Interdisciplinar Superior - ProFIS': {
-			'': {
-				arquivo: 'ano2014/curso200_mod1.js'
-			}
+		'87': {
+			name: "Curso Superior de Tecnologia em Controle Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso87_mod1.js'
+				},
+			]
+		},
+		'88': {
+			name: "Engenharia de Telecomunicações - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso88_mod1.js'
+				},
+			]
+		},
+		'89': {
+			name: "Engenharia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso89_mod1.js'
+				},
+			]
+		},
+		'94': {
+			name: "Sistemas de Informação - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso94_mod1.js'
+				},
+			]
+		},
+		'100': {
+			name: "Ciências do Esporte - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso100_mod1.js'
+				},
+			]
+		},
+		'101': {
+			name: "Engenharia de Manufatura - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso101_mod1.js'
+				},
+			]
+		},
+		'102': {
+			name: "Engenharia de Produção - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso102_mod1.js'
+				},
+			]
+		},
+		'103': {
+			name: "Gestão do Agronegócio - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso103_mod1.js'
+				},
+			]
+		},
+		'104': {
+			name: "Gestão de Comércio Internacional - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso104_mod1.js'
+				},
+			]
+		},
+		'105': {
+			name: "Gestão de Empresas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso105_mod1.js'
+				},
+			]
+		},
+		'106': {
+			name: "Gestão de Políticas Públicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso106_mod1.js'
+				},
+			]
+		},
+		'107': {
+			name: "Nutrição - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso107_mod1.js'
+				},
+			]
+		},
+		'108': {
+			name: "Engenharia Física - Integral",
+			modality: [
+				{
+					name: 'AA - Ênfase em Optoeletrônica',
+					file: '2014/curso108_mod1.js'
+				},
+				{
+					name: 'AB - Ênfase em Produção Tecnológica',
+					file: '2014/curso108_mod2.js'
+				},
+			]
+		},
+		'109': {
+			name: "Administração - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso109_mod1.js'
+				},
+			]
+		},
+		'110': {
+			name: "Administração Pública - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso110_mod1.js'
+				},
+			]
+		},
+		'200': {
+			name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2014/curso200_mod1.js'
+				},
+			]
 		}
 	},
-	'2015': {
-		'Curso 1 - Matem�tica': {
-			'AA - Bacharelado em Matem�tica': {
-				arquivo: 'ano2015/curso1_mod1.js'
-			},
-			'AB - Licenciatura em Matem�tica': {
-				arquivo: 'ano2015/curso1_mod2.js'
-			},
-			'EF - �nfase em F�sica Matem�tica': {
-				arquivo: 'ano2015/curso1_mod3.js'
-			}
+	"2015": {
+		'1': {
+			name: "Matemática - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Matemática',
+					file: '2015/curso1_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Matemática',
+					file: '2015/curso1_mod2.js'
+				},
+				{
+					name: 'EF - Ênfase em Física Matemática',
+					file: '2015/curso1_mod3.js'
+				},
+			]
 		},
-		'Curso 2 - Estat�stica': {
-			'': {
-				arquivo: 'ano2015/curso2_mod1.js'
-			}
+		'2': {
+			name: "Estatística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso2_mod1.js'
+				},
+			]
 		},
-		'Curso 4 - F�sica': {
-			'AA - Bacharelado em F�sica': {
-				arquivo: 'ano2015/curso4_mod1.js'
-			},
-			'AB - Licenciatura em F�sica': {
-				arquivo: 'ano2015/curso4_mod2.js'
-			},
-			'AF - Bacharelado em F�sica M�dica': {
-				arquivo: 'ano2015/curso4_mod3.js'
-			},
-			'EB - Bacharelado em F�sica com �nfase em F�sica Biom�dica': {
-				arquivo: 'ano2015/curso4_mod4.js'
-			}
+		'4': {
+			name: "Física - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Física',
+					file: '2015/curso4_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2015/curso4_mod2.js'
+				},
+				{
+					name: 'AF - Bacharelado em Física Médica',
+					file: '2015/curso4_mod3.js'
+				},
+				{
+					name: 'EB - Bacharelado em Física com Ênfase em Física Biomédica',
+					file: '2015/curso4_mod4.js'
+				},
+			]
 		},
-		'Curso 5 - Qu�mica': {
-			'AA - Bacharelado em Qu�mica': {
-				arquivo: 'ano2015/curso5_mod1.js'
-			},
-			'AB - Licenciatura em Qu�mica': {
-				arquivo: 'ano2015/curso5_mod2.js'
-			},
-			'AD - Bacharelado em Qu�mica Tecnol�gica': {
-				arquivo: 'ano2015/curso5_mod3.js'
-			}
+		'5': {
+			name: "Química - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Química',
+					file: '2015/curso5_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Química',
+					file: '2015/curso5_mod2.js'
+				},
+				{
+					name: 'AD - Bacharelado em Química Tecnológica',
+					file: '2015/curso5_mod3.js'
+				},
+			]
 		},
-		'Curso 6 - Ci�ncias Biol�gicas': {
-			'AJ - Licenciatura Plena em Ci�ncias Biol�gicas': {
-				arquivo: 'ano2015/curso6_mod1.js'
-			},
-			'AL - Bacharelado em Ci�ncias Biol�gicas': {
-				arquivo: 'ano2015/curso6_mod2.js'
-			}
+		'6': {
+			name: "Ciências Biológicas - Integral",
+			modality: [
+				{
+					name: 'AJ - Licenciatura Plena em Ciências Biológicas',
+					file: '2015/curso6_mod1.js'
+				},
+				{
+					name: 'AL - Bacharelado em Ciências Biológicas',
+					file: '2015/curso6_mod2.js'
+				},
+			]
 		},
-		'Curso 8 - Engenharia Agr�cola': {
-			'': {
-				arquivo: 'ano2015/curso8_mod1.js'
-			}
+		'7': {
+			name: "Letras - Integral",
+			modality: [
+				{
+					name: 'AE - Licenciatura em Letras',
+					file: '2015/curso7_mod1.js'
+				},
+				{
+					name: 'AF - Licenciatura em Letras - Português como Segunda Língua / Língua Estrangeira',
+					file: '2015/curso7_mod2.js'
+				},
+			]
 		},
-		'Curso 9 - Engenharia Qu�mica': {
-			'': {
-				arquivo: 'ano2015/curso9_mod1.js'
-			}
+		'8': {
+			name: "Engenharia Agrícola - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso8_mod1.js'
+				},
+			]
 		},
-		'Curso 10 - Engenharia Mec�nica': {
-			'': {
-				arquivo: 'ano2015/curso10_mod1.js'
-			}
+		'9': {
+			name: "Engenharia Química - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso9_mod1.js'
+				},
+			]
 		},
-		'Curso 11 - Engenharia El�trica': {
-			'': {
-				arquivo: 'ano2015/curso11_mod1.js'
-			}
+		'10': {
+			name: "Engenharia Mecânica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso10_mod1.js'
+				},
+			]
 		},
-		'Curso 12 - Engenharia Civil': {
-			'EA - �nfase em Recursos H�dricos, Energ�ticos e Ambientais': {
-				arquivo: 'ano2015/curso12_mod1.js'
-			},
-			'EE - �nfase em Estruturas': {
-				arquivo: 'ano2015/curso12_mod2.js'
-			},
-			'EP - �nfase em Gest�o do Projeto e da Constru��o': {
-				arquivo: 'ano2015/curso12_mod3.js'
-			},
-			'ES - �nfase em Saneamento e Ambiente': {
-				arquivo: 'ano2015/curso12_mod4.js'
-			},
-			'ET - �nfase em Transportes e Geotecnia': {
-				arquivo: 'ano2015/curso12_mod5.js'
-			}
+		'11': {
+			name: "Engenharia Elétrica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso11_mod1.js'
+				},
+			]
 		},
-		'Curso 13 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2015/curso13_mod1.js'
-			}
+		'12': {
+			name: "Engenharia Civil - Integral",
+			modality: [
+				{
+					name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
+					file: '2015/curso12_mod1.js'
+				},
+				{
+					name: 'EE - Ênfase em Estruturas',
+					file: '2015/curso12_mod2.js'
+				},
+				{
+					name: 'EP - Ênfase em Gestão do Projeto e da Construção',
+					file: '2015/curso12_mod3.js'
+				},
+				{
+					name: 'ES - Ênfase em Saneamento e Ambiente',
+					file: '2015/curso12_mod4.js'
+				},
+				{
+					name: 'ET - Ênfase em Transportes e Geotecnia',
+					file: '2015/curso12_mod5.js'
+				},
+			]
 		},
-		'Curso 14 - Odontologia': {
-			'': {
-				arquivo: 'ano2015/curso14_mod1.js'
-			}
+		'13': {
+			name: "Engenharia de Alimentos - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso13_mod1.js'
+				},
+			]
 		},
-		'Curso 15 - Medicina': {
-			'': {
-				arquivo: 'ano2015/curso15_mod1.js'
-			}
+		'14': {
+			name: "Odontologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso14_mod1.js'
+				},
+			]
 		},
-		'Curso 16 - Ci�ncias Sociais': {
-			'AA - Bacharelado em Ci�ncias Sociais - Antropologia': {
-				arquivo: 'ano2015/curso16_mod1.js'
-			},
-			'AB - Bacharelado em Ci�ncias Sociais - Pol�tica': {
-				arquivo: 'ano2015/curso16_mod2.js'
-			},
-			'AC - Bacharelado em Ci�ncias Sociais - Sociologia': {
-				arquivo: 'ano2015/curso16_mod3.js'
-			},
-			'AD - Bacharelado em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2015/curso16_mod4.js'
-			},
-			'AH - Licenciatura em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2015/curso16_mod5.js'
-			}
+		'15': {
+			name: "Medicina - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso15_mod1.js'
+				},
+			]
 		},
-		'Curso 17 - Ci�ncias Econ�micas': {
-			'': {
-				arquivo: 'ano2015/curso17_mod1.js'
-			}
+		'16': {
+			name: "Ciências Sociais - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2015/curso16_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2015/curso16_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2015/curso16_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2015/curso16_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2015/curso16_mod5.js'
+				},
+			]
 		},
-		'Curso 20 - Pedagogia': {
-			'': {
-				arquivo: 'ano2015/curso20_mod1.js'
-			}
+		'17': {
+			name: "Ciências Econômicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso17_mod1.js'
+				},
+			]
 		},
-		'Curso 21 - Enfermagem': {
-			'AA - Bacharelado em Enfermagem': {
-				arquivo: 'ano2015/curso21_mod1.js'
-			},
-			'AB - Licenciatura em Enfermagem': {
-				arquivo: 'ano2015/curso21_mod2.js'
-			}
+		'18': {
+			name: "Linguística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso18_mod1.js'
+				},
+			]
 		},
-		'Curso 23 - Dan�a': {
-			'AA - Bacharelado em Dan�a': {
-				arquivo: 'ano2015/curso23_mod1.js'
-			},
-			'AB - Licenciatura em Artes - Dan�a': {
-				arquivo: 'ano2015/curso23_mod2.js'
-			}
+		'19': {
+			name: "História - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em História',
+					file: '2015/curso19_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em História',
+					file: '2015/curso19_mod2.js'
+				},
+			]
 		},
-		'Curso 25 - Artes Visuais': {
-			'AF - Bacharelado em Artes Visuais': {
-				arquivo: 'ano2015/curso25_mod1.js'
-			},
-			'AG - Licenciatura em Artes - Artes Visuais': {
-				arquivo: 'ano2015/curso25_mod2.js'
-			}
+		'20': {
+			name: "Pedagogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso20_mod1.js'
+				},
+			]
 		},
-		'Curso 26 - Artes C�nicas': {
-			'': {
-				arquivo: 'ano2015/curso26_mod1.js'
-			}
+		'21': {
+			name: "Enfermagem - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Enfermagem',
+					file: '2015/curso21_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Enfermagem',
+					file: '2015/curso21_mod2.js'
+				},
+			]
 		},
-		'Curso 27 - Educa��o F�sica': {
-			'AB - Licenciatura em Educa��o F�sica': {
-				arquivo: 'ano2015/curso27_mod1.js'
-			},
-			'AF - Bacharelado em Educa��o F�sica': {
-				arquivo: 'ano2015/curso27_mod2.js'
-			}
+		'22': {
+			name: "Música - Integral",
+			modality: [
+				{
+					name: 'CB - Contrabaixo',
+					file: '2015/curso22_mod1.js'
+				},
+				{
+					name: 'CL - Clarineta',
+					file: '2015/curso22_mod2.js'
+				},
+				{
+					name: 'CO - Composição',
+					file: '2015/curso22_mod3.js'
+				},
+				{
+					name: 'CP - Cordas - Música Popular',
+					file: '2015/curso22_mod4.js'
+				},
+				{
+					name: 'CR - Cravo',
+					file: '2015/curso22_mod5.js'
+				},
+				{
+					name: 'FL - Flauta',
+					file: '2015/curso22_mod6.js'
+				},
+				{
+					name: 'LI - Licenciatura em Artes - Música',
+					file: '2015/curso22_mod7.js'
+				},
+				{
+					name: 'OB - Oboé',
+					file: '2015/curso22_mod8.js'
+				},
+				{
+					name: 'PC - Percussão',
+					file: '2015/curso22_mod9.js'
+				},
+				{
+					name: 'PN - Piano',
+					file: '2015/curso22_mod10.js'
+				},
+				{
+					name: 'PP - Percussão - Música Popular',
+					file: '2015/curso22_mod11.js'
+				},
+				{
+					name: 'RG - Regência',
+					file: '2015/curso22_mod12.js'
+				},
+				{
+					name: 'SP - Sopros - Música Popular',
+					file: '2015/curso22_mod13.js'
+				},
+				{
+					name: 'TB - Trombone',
+					file: '2015/curso22_mod14.js'
+				},
+				{
+					name: 'TC - Teclados - Música Popular',
+					file: '2015/curso22_mod15.js'
+				},
+				{
+					name: 'TP - Trompete',
+					file: '2015/curso22_mod16.js'
+				},
+				{
+					name: 'VA - Viola',
+					file: '2015/curso22_mod17.js'
+				},
+				{
+					name: 'VC - Violoncelo',
+					file: '2015/curso22_mod18.js'
+				},
+				{
+					name: 'VL - Violino',
+					file: '2015/curso22_mod19.js'
+				},
+				{
+					name: 'VO - Violão',
+					file: '2015/curso22_mod20.js'
+				},
+				{
+					name: 'VP - Voz - Música Popular',
+					file: '2015/curso22_mod21.js'
+				},
+				{
+					name: 'VZ - Voz',
+					file: '2015/curso22_mod22.js'
+				},
+			]
 		},
-		'Curso 28 - Matem�tica Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2015/curso28_mod1.js'
-			}
+		'23': {
+			name: "Dança - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Dança',
+					file: '2015/curso23_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Artes - Dança',
+					file: '2015/curso23_mod2.js'
+				},
+			]
 		},
-		'Curso 29 - Licenciatura em Matem�tica': {
-			'': {
-				arquivo: 'ano2015/curso29_mod1.js'
-			}
+		'25': {
+			name: "Artes Visuais - Integral",
+			modality: [
+				{
+					name: 'AF - Bacharelado em Artes Visuais',
+					file: '2015/curso25_mod1.js'
+				},
+				{
+					name: 'AG - Licenciatura em Artes - Artes Visuais',
+					file: '2015/curso25_mod2.js'
+				},
+			]
 		},
-		'Curso 34 - Engenharia de Computação': {
-			'AA - Sistemas de Computação': {
-				arquivo: 'ano2015/curso34_mod1.js'
-			},
-			'AB - Sistemas e Processos Industriais': {
-				arquivo: 'ano2015/curso34_mod2.js'
-			},
-			'AX - Para Matrícula Antes da Opção': {
-				arquivo: 'ano2015/curso34_mod3.js'
-			}
+		'26': {
+			name: "Artes Cênicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso26_mod1.js'
+				},
+			]
 		},
-		'Curso 36 - Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas': {
-			'': {
-				arquivo: 'ano2015/curso36_mod1.js'
-			}
+		'27': {
+			name: "Educação Física - Integral",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2015/curso27_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2015/curso27_mod2.js'
+				},
+			]
 		},
-		'Curso 38 - Pedagogia': {
-			'': {
-				arquivo: 'ano2015/curso38_mod1.js'
-			}
+		'28': {
+			name: "Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso28_mod1.js'
+				},
+			]
 		},
-		'Curso 39 - Engenharia Qu�mica': {
-			'': {
-				arquivo: 'ano2015/curso39_mod1.js'
-			}
+		'29': {
+			name: "Licenciatura em Matemática - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso29_mod1.js'
+				},
+			]
 		},
-		'Curso 40 - Licenciatura em F�sica': {
-			'': {
-				arquivo: 'ano2015/curso40_mod1.js'
-			}
+		'30': {
+			name: "Filosofia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Filosofia',
+					file: '2015/curso30_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Filosofia',
+					file: '2015/curso30_mod2.js'
+				},
+			]
 		},
-		'Curso 41 - Engenharia El�trica': {
-			'': {
-				arquivo: 'ano2015/curso41_mod1.js'
-			}
+		'34': {
+			name: "Engenharia de Computação - Integral",
+			modality: [
+				{
+					name: 'AA - Sistemas de Computação',
+					file: '2015/curso34_mod1.js'
+				},
+				{
+					name: 'AB - Sistemas e Processos Industriais',
+					file: '2015/curso34_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2015/curso34_mod3.js'
+				},
+			]
 		},
-		'Curso 42 - Ciência da Computação': {
-			'': {
-				arquivo: 'ano2015/curso42_mod1.js'
-			}
+		'36': {
+			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso36_mod1.js'
+				},
+			]
 		},
-		'Curso 43 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2015/curso43_mod1.js'
-			}
+		'38': {
+			name: "Pedagogia - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso38_mod1.js'
+				},
+			]
 		},
-		'Curso 44 - Ci�ncias Sociais': {
-			'AA - Bacharelado em Ci�ncias Sociais - Antropologia': {
-				arquivo: 'ano2015/curso44_mod1.js'
-			},
-			'AB - Bacharelado em Ci�ncias Sociais - Pol�tica': {
-				arquivo: 'ano2015/curso44_mod2.js'
-			},
-			'AC - Bacharelado em Ci�ncias Sociais - Sociologia': {
-				arquivo: 'ano2015/curso44_mod3.js'
-			},
-			'AD - Bacharelado em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2015/curso44_mod4.js'
-			},
-			'AH - Licenciatura em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2015/curso44_mod5.js'
-			}
+		'39': {
+			name: "Engenharia Química - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso39_mod1.js'
+				},
+			]
 		},
-		'Curso 45 - Educa��o F�sica': {
-			'AB - Licenciatura em Educa��o F�sica': {
-				arquivo: 'ano2015/curso45_mod1.js'
-			},
-			'AF - Bacharelado em Educa��o F�sica': {
-				arquivo: 'ano2015/curso45_mod2.js'
-			}
+		'40': {
+			name: "Licenciatura em Física - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso40_mod1.js'
+				},
+			]
 		},
-		'Curso 46 - Licenciatura em Ci�ncias Biol�gicas': {
-			'': {
-				arquivo: 'ano2015/curso46_mod1.js'
-			}
+		'41': {
+			name: "Engenharia Elétrica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso41_mod1.js'
+				},
+			]
 		},
-		'Curso 47 - Ci�ncias Econ�micas': {
-			'': {
-				arquivo: 'ano2015/curso47_mod1.js'
-			}
+		'42': {
+			name: "Ciência da Computação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso42_mod1.js'
+				},
+			]
 		},
-		'Curso 48 - Arquitetura e Urbanismo': {
-			'': {
-				arquivo: 'ano2015/curso48_mod1.js'
-			}
+		'43': {
+			name: "Engenharia de Alimentos - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso43_mod1.js'
+				},
+			]
 		},
-		'Curso 49 - Engenharia de Controle e Automa��o': {
-			'': {
-				arquivo: 'ano2015/curso49_mod1.js'
-			}
+		'44': {
+			name: "Ciências Sociais - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2015/curso44_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2015/curso44_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2015/curso44_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2015/curso44_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2015/curso44_mod5.js'
+				},
+			]
 		},
-		'Curso 50 - Qu�mica Tecnol�gica': {
-			'': {
-				arquivo: 'ano2015/curso50_mod1.js'
-			}
+		'45': {
+			name: "Educação Física - Noturno",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2015/curso45_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2015/curso45_mod2.js'
+				},
+			]
 		},
-		'Curso 51 - Matem�tica/F�sica/Matem�tica Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2015/curso51_mod1.js'
-			}
+		'46': {
+			name: "Licenciatura em Ciências Biológicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso46_mod1.js'
+				},
+			]
 		},
-		'Curso 53 - Geologia': {
-			'': {
-				arquivo: 'ano2015/curso53_mod1.js'
-			}
+		'47': {
+			name: "Ciências Econômicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso47_mod1.js'
+				},
+			]
 		},
-		'Curso 54 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2015/curso54_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2015/curso54_mod2.js'
-			}
+		'48': {
+			name: "Arquitetura e Urbanismo - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso48_mod1.js'
+				},
+			]
 		},
-		'Curso 55 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2015/curso55_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2015/curso55_mod2.js'
-			}
+		'49': {
+			name: "Engenharia de Controle e Automação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso49_mod1.js'
+				},
+			]
 		},
-		'Curso 56 - Licenciatura Integrada Qu�mica/F�sica': {
-			'AA - Licenciatura em Qu�mica': {
-				arquivo: 'ano2015/curso56_mod1.js'
-			},
-			'AB - Licenciatura em F�sica': {
-				arquivo: 'ano2015/curso56_mod2.js'
-			},
-			'AX - Para Matr�cula Antes da Op��o': {
-				arquivo: 'ano2015/curso56_mod3.js'
-			}
+		'50': {
+			name: "Química Tecnológica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso50_mod1.js'
+				},
+			]
 		},
-		'Curso 58 - Fonoaudiologia': {
-			'': {
-				arquivo: 'ano2015/curso58_mod1.js'
-			}
+		'51': {
+			name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso51_mod1.js'
+				},
+			]
 		},
-		'Curso 63 - Farm�cia': {
-			'': {
-				arquivo: 'ano2015/curso63_mod1.js'
-			}
+		'52': {
+			name: "Ciências da Terra - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso52_mod1.js'
+				},
+			]
 		},
-		'Curso 64 - Comunica��o Social - Midialogia': {
-			'': {
-				arquivo: 'ano2015/curso64_mod1.js'
-			}
+		'53': {
+			name: "Geologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso53_mod1.js'
+				},
+			]
 		},
-		'Curso 73 - Curso Superior de Tecnologia em Controle Ambiental': {
-			'': {
-				arquivo: 'ano2015/curso73_mod1.js'
-			}
+		'54': {
+			name: "Geografia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2015/curso54_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2015/curso54_mod2.js'
+				},
+			]
 		},
-		'Curso 83 - Curso Superior de Tecnologia em Constru��o de Edif�cios': {
-			'': {
-				arquivo: 'ano2015/curso83_mod1.js'
-			}
+		'55': {
+			name: "Geografia - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2015/curso55_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2015/curso55_mod2.js'
+				},
+			]
 		},
-		'Curso 87 - Curso Superior de Tecnologia em Controle Ambiental': {
-			'': {
-				arquivo: 'ano2015/curso87_mod1.js'
-			}
+		'56': {
+			name: "Licenciatura Integrada Química/Física - Noturno",
+			modality: [
+				{
+					name: 'AA - Licenciatura em Química',
+					file: '2015/curso56_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2015/curso56_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2015/curso56_mod3.js'
+				},
+			]
 		},
-		'Curso 88 - Engenharia de Telecomunica��es': {
-			'': {
-				arquivo: 'ano2015/curso88_mod1.js'
-			}
+		'57': {
+			name: "Licenciatura em Letras - Português - Noturno",
+			modality: [
+				{
+					name: 'AA - Licenciatura em Letras - Português',
+					file: '2015/curso57_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Letras - Português como Segunda Língua / Língua Estrangeira',
+					file: '2015/curso57_mod2.js'
+				},
+			]
 		},
-		'Curso 89 - Engenharia Ambiental': {
-			'': {
-				arquivo: 'ano2015/curso89_mod1.js'
-			}
+		'58': {
+			name: "Fonoaudiologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso58_mod1.js'
+				},
+			]
 		},
-		'Curso 94 - Sistemas de Informa��o': {
-			'': {
-				arquivo: 'ano2015/curso94_mod1.js'
-			}
+		'60': {
+			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso60_mod1.js'
+				},
+			]
 		},
-		'Curso 100 - Ci�ncias do Esporte': {
-			'': {
-				arquivo: 'ano2015/curso100_mod1.js'
-			}
+		'63': {
+			name: "Farmácia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso63_mod1.js'
+				},
+			]
 		},
-		'Curso 101 - Engenharia de Manufatura': {
-			'': {
-				arquivo: 'ano2015/curso101_mod1.js'
-			}
+		'64': {
+			name: "Comunicação Social - Midialogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso64_mod1.js'
+				},
+			]
 		},
-		'Curso 102 - Engenharia de Produ��o': {
-			'': {
-				arquivo: 'ano2015/curso102_mod1.js'
-			}
+		'73': {
+			name: "Curso Superior de Tecnologia em Controle Ambiental - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso73_mod1.js'
+				},
+			]
 		},
-		'Curso 107 - Nutri��o': {
-			'': {
-				arquivo: 'ano2015/curso107_mod1.js'
-			}
+		'74': {
+			name: "Curso Superior de Tecnologia em Sistemas de Telecomunicações - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso74_mod1.js'
+				},
+			]
 		},
-		'Curso 108 - Engenharia F�sica': {
-			'AA - �nfase em Optoeletr�nica': {
-				arquivo: 'ano2015/curso108_mod1.js'
-			},
-			'AB - �nfase em Produ��o Tecnol�gica': {
-				arquivo: 'ano2015/curso108_mod2.js'
-			}
+		'75': {
+			name: "Estudos Literários - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso75_mod1.js'
+				},
+			]
 		},
-		'Curso 109 - Administra��o': {
-			'': {
-				arquivo: 'ano2015/curso109_mod1.js'
-			}
+		'82': {
+			name: "Curso Superior de Tecnologia da Construção Civil - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso82_mod1.js'
+				},
+			]
 		},
-		'Curso 110 - Administra��o P�blica': {
-			'': {
-				arquivo: 'ano2015/curso110_mod1.js'
-			}
+		'83': {
+			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso83_mod1.js'
+				},
+			]
 		},
-		'Curso 200 - Programa de Forma��o Interdisciplinar Superior - ProFIS': {
-			'': {
-				arquivo: 'ano2015/curso200_mod1.js'
-			}
+		'84': {
+			name: "Curso Superior de Tecnologia em Estradas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso84_mod1.js'
+				},
+			]
+		},
+		'85': {
+			name: "Curso Superior de Tecnologia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso85_mod1.js'
+				},
+			]
+		},
+		'86': {
+			name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso86_mod1.js'
+				},
+			]
+		},
+		'87': {
+			name: "Curso Superior de Tecnologia em Controle Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso87_mod1.js'
+				},
+			]
+		},
+		'88': {
+			name: "Engenharia de Telecomunicações - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso88_mod1.js'
+				},
+			]
+		},
+		'89': {
+			name: "Engenharia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso89_mod1.js'
+				},
+			]
+		},
+		'94': {
+			name: "Sistemas de Informação - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso94_mod1.js'
+				},
+			]
+		},
+		'100': {
+			name: "Ciências do Esporte - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso100_mod1.js'
+				},
+			]
+		},
+		'101': {
+			name: "Engenharia de Manufatura - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso101_mod1.js'
+				},
+			]
+		},
+		'102': {
+			name: "Engenharia de Produção - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso102_mod1.js'
+				},
+			]
+		},
+		'103': {
+			name: "Gestão do Agronegócio - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso103_mod1.js'
+				},
+			]
+		},
+		'104': {
+			name: "Gestão de Comércio Internacional - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso104_mod1.js'
+				},
+			]
+		},
+		'105': {
+			name: "Gestão de Empresas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso105_mod1.js'
+				},
+			]
+		},
+		'106': {
+			name: "Gestão de Políticas Públicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso106_mod1.js'
+				},
+			]
+		},
+		'107': {
+			name: "Nutrição - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso107_mod1.js'
+				},
+			]
+		},
+		'108': {
+			name: "Engenharia Física - Integral",
+			modality: [
+				{
+					name: 'AA - Ênfase em Optoeletrônica',
+					file: '2015/curso108_mod1.js'
+				},
+				{
+					name: 'AB - Ênfase em Produção Tecnológica',
+					file: '2015/curso108_mod2.js'
+				},
+			]
+		},
+		'109': {
+			name: "Administração - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso109_mod1.js'
+				},
+			]
+		},
+		'110': {
+			name: "Administração Pública - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso110_mod1.js'
+				},
+			]
+		},
+		'200': {
+			name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2015/curso200_mod1.js'
+				},
+			]
 		}
 	},
-	'2016': {
-		'Curso 1 - Matem�tica': {
-			'AA - Bacharelado em Matem�tica': {
-				arquivo: 'ano2016/curso1_mod1.js'
-			},
-			'AB - Licenciatura em Matem�tica': {
-				arquivo: 'ano2016/curso1_mod2.js'
-			},
-			'EF - �nfase em F�sica Matem�tica': {
-				arquivo: 'ano2016/curso1_mod3.js'
-			}
+	"2016": {
+		'1': {
+			name: "Matemática - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Matemática',
+					file: '2016/curso1_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Matemática',
+					file: '2016/curso1_mod2.js'
+				},
+				{
+					name: 'EF - Ênfase em Física Matemática',
+					file: '2016/curso1_mod3.js'
+				},
+			]
 		},
-		'Curso 2 - Estat�stica': {
-			'': {
-				arquivo: 'ano2016/curso2_mod1.js'
-			}
+		'2': {
+			name: "Estatística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso2_mod1.js'
+				},
+			]
 		},
-		'Curso 4 - F�sica': {
-			'AA - Bacharelado em F�sica': {
-				arquivo: 'ano2016/curso4_mod1.js'
-			},
-			'AB - Licenciatura em F�sica': {
-				arquivo: 'ano2016/curso4_mod2.js'
-			},
-			'AF - Bacharelado em F�sica M�dica': {
-				arquivo: 'ano2016/curso4_mod3.js'
-			},
-			'EB - Bacharelado em F�sica com �nfase em F�sica Biom�dica': {
-				arquivo: 'ano2016/curso4_mod4.js'
-			}
+		'4': {
+			name: "Física - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Física',
+					file: '2016/curso4_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2016/curso4_mod2.js'
+				},
+				{
+					name: 'AF - Bacharelado em Física Médica',
+					file: '2016/curso4_mod3.js'
+				},
+				{
+					name: 'EB - Bacharelado em Física com Ênfase em Física Biomédica',
+					file: '2016/curso4_mod4.js'
+				},
+			]
 		},
-		'Curso 5 - Qu�mica': {
-			'AA - Bacharelado em Qu�mica': {
-				arquivo: 'ano2016/curso5_mod1.js'
-			},
-			'AB - Licenciatura em Qu�mica': {
-				arquivo: 'ano2016/curso5_mod2.js'
-			},
-			'AD - Bacharelado em Qu�mica Tecnol�gica': {
-				arquivo: 'ano2016/curso5_mod3.js'
-			}
+		'5': {
+			name: "Química - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Química',
+					file: '2016/curso5_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Química',
+					file: '2016/curso5_mod2.js'
+				},
+				{
+					name: 'AD - Bacharelado em Química Tecnológica',
+					file: '2016/curso5_mod3.js'
+				},
+			]
 		},
-		'Curso 6 - Ci�ncias Biol�gicas': {
-			'AJ - Licenciatura Plena em Ci�ncias Biol�gicas': {
-				arquivo: 'ano2016/curso6_mod1.js'
-			},
-			'AL - Bacharelado em Ci�ncias Biol�gicas': {
-				arquivo: 'ano2016/curso6_mod2.js'
-			}
+		'6': {
+			name: "Ciências Biológicas - Integral",
+			modality: [
+				{
+					name: 'AJ - Licenciatura Plena em Ciências Biológicas',
+					file: '2016/curso6_mod1.js'
+				},
+				{
+					name: 'AL - Bacharelado em Ciências Biológicas',
+					file: '2016/curso6_mod2.js'
+				},
+			]
 		},
-		'Curso 8 - Engenharia Agr�cola': {
-			'': {
-				arquivo: 'ano2016/curso8_mod1.js'
-			}
+		'7': {
+			name: "Licenciatura em Letras - Português - Integral",
+			modality: [
+				{
+					name: 'AE - Licenciatura em Letras - Português',
+					file: '2016/curso7_mod1.js'
+				},
+				{
+					name: 'AF - Licenciatura em Letras - Português como Segunda Língua / Língua Estrangeira',
+					file: '2016/curso7_mod2.js'
+				},
+			]
 		},
-		'Curso 9 - Engenharia Qu�mica': {
-			'': {
-				arquivo: 'ano2016/curso9_mod1.js'
-			}
+		'8': {
+			name: "Engenharia Agrícola - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso8_mod1.js'
+				},
+			]
 		},
-		'Curso 10 - Engenharia Mec�nica': {
-			'': {
-				arquivo: 'ano2016/curso10_mod1.js'
-			}
+		'9': {
+			name: "Engenharia Química - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso9_mod1.js'
+				},
+			]
 		},
-		'Curso 11 - Engenharia Elétrica': {
-			'': {
-				arquivo: 'ano2016/curso11_mod1.js'
-			}
+		'10': {
+			name: "Engenharia Mecânica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso10_mod1.js'
+				},
+			]
 		},
-		'Curso 12 - Engenharia Civil': {
-			'EA - �nfase em Recursos H�dricos, Energ�ticos e Ambientais': {
-				arquivo: 'ano2016/curso12_mod1.js'
-			},
-			'EE - �nfase em Estruturas': {
-				arquivo: 'ano2016/curso12_mod2.js'
-			},
-			'EP - �nfase em Gest�o do Projeto e da Constru��o': {
-				arquivo: 'ano2016/curso12_mod3.js'
-			},
-			'ES - �nfase em Saneamento e Ambiente': {
-				arquivo: 'ano2016/curso12_mod4.js'
-			},
-			'ET - �nfase em Transportes e Geotecnia': {
-				arquivo: 'ano2016/curso12_mod5.js'
-			}
+		'11': {
+			name: "Engenharia Elétrica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso11_mod1.js'
+				},
+			]
 		},
-		'Curso 13 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2016/curso13_mod1.js'
-			}
+		'12': {
+			name: "Engenharia Civil - Integral",
+			modality: [
+				{
+					name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
+					file: '2016/curso12_mod1.js'
+				},
+				{
+					name: 'EE - Ênfase em Estruturas',
+					file: '2016/curso12_mod2.js'
+				},
+				{
+					name: 'EP - Ênfase em Gestão do Projeto e da Construção',
+					file: '2016/curso12_mod3.js'
+				},
+				{
+					name: 'ES - Ênfase em Saneamento e Ambiente',
+					file: '2016/curso12_mod4.js'
+				},
+				{
+					name: 'ET - Ênfase em Transportes e Geotecnia',
+					file: '2016/curso12_mod5.js'
+				},
+			]
 		},
-		'Curso 14 - Odontologia': {
-			'': {
-				arquivo: 'ano2016/curso14_mod1.js'
-			}
+		'13': {
+			name: "Engenharia de Alimentos - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso13_mod1.js'
+				},
+			]
 		},
-		'Curso 15 - Medicina': {
-			'': {
-				arquivo: 'ano2016/curso15_mod1.js'
-			}
+		'14': {
+			name: "Odontologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso14_mod1.js'
+				},
+			]
 		},
-		'Curso 16 - Ci�ncias Sociais': {
-			'AA - Bacharelado em Ci�ncias Sociais - Antropologia': {
-				arquivo: 'ano2016/curso16_mod1.js'
-			},
-			'AB - Bacharelado em Ci�ncias Sociais - Pol�tica': {
-				arquivo: 'ano2016/curso16_mod2.js'
-			},
-			'AC - Bacharelado em Ci�ncias Sociais - Sociologia': {
-				arquivo: 'ano2016/curso16_mod3.js'
-			},
-			'AD - Bacharelado em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2016/curso16_mod4.js'
-			},
-			'AH - Licenciatura em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2016/curso16_mod5.js'
-			}
+		'15': {
+			name: "Medicina - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso15_mod1.js'
+				},
+			]
 		},
-		'Curso 17 - Ci�ncias Econ�micas': {
-			'': {
-				arquivo: 'ano2016/curso17_mod1.js'
-			}
+		'16': {
+			name: "Ciências Sociais - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2016/curso16_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2016/curso16_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2016/curso16_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2016/curso16_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2016/curso16_mod5.js'
+				},
+			]
 		},
-		'Curso 20 - Pedagogia': {
-			'': {
-				arquivo: 'ano2016/curso20_mod1.js'
-			}
+		'17': {
+			name: "Ciências Econômicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso17_mod1.js'
+				},
+			]
 		},
-		'Curso 21 - Enfermagem': {
-			'AA - Bacharelado em Enfermagem': {
-				arquivo: 'ano2016/curso21_mod1.js'
-			},
-			'AB - Licenciatura em Enfermagem': {
-				arquivo: 'ano2016/curso21_mod2.js'
-			}
+		'18': {
+			name: "Linguística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso18_mod1.js'
+				},
+			]
 		},
-		'Curso 23 - Dan�a': {
-			'AA - Bacharelado em Dan�a': {
-				arquivo: 'ano2016/curso23_mod1.js'
-			},
-			'AB - Licenciatura em Artes - Dan�a': {
-				arquivo: 'ano2016/curso23_mod2.js'
-			}
+		'19': {
+			name: "História - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em História',
+					file: '2016/curso19_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em História',
+					file: '2016/curso19_mod2.js'
+				},
+			]
 		},
-		'Curso 25 - Artes Visuais': {
-			'AF - Bacharelado em Artes Visuais': {
-				arquivo: 'ano2016/curso25_mod1.js'
-			},
-			'AG - Licenciatura em Artes - Artes Visuais': {
-				arquivo: 'ano2016/curso25_mod2.js'
-			}
+		'20': {
+			name: "Pedagogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso20_mod1.js'
+				},
+			]
 		},
-		'Curso 26 - Artes C�nicas': {
-			'': {
-				arquivo: 'ano2016/curso26_mod1.js'
-			}
+		'21': {
+			name: "Enfermagem - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Enfermagem',
+					file: '2016/curso21_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Enfermagem',
+					file: '2016/curso21_mod2.js'
+				},
+			]
 		},
-		'Curso 27 - Educa��o F�sica': {
-			'AB - Licenciatura em Educa��o F�sica': {
-				arquivo: 'ano2016/curso27_mod1.js'
-			},
-			'AF - Bacharelado em Educa��o F�sica': {
-				arquivo: 'ano2016/curso27_mod2.js'
-			}
+		'22': {
+			name: "Música - Integral",
+			modality: [
+				{
+					name: 'CB - Contrabaixo',
+					file: '2016/curso22_mod1.js'
+				},
+				{
+					name: 'CL - Clarineta',
+					file: '2016/curso22_mod2.js'
+				},
+				{
+					name: 'CO - Composição',
+					file: '2016/curso22_mod3.js'
+				},
+				{
+					name: 'CP - Cordas - Música Popular',
+					file: '2016/curso22_mod4.js'
+				},
+				{
+					name: 'CR - Cravo',
+					file: '2016/curso22_mod5.js'
+				},
+				{
+					name: 'FL - Flauta',
+					file: '2016/curso22_mod6.js'
+				},
+				{
+					name: 'LI - Licenciatura em Artes - Música',
+					file: '2016/curso22_mod7.js'
+				},
+				{
+					name: 'OB - Oboé',
+					file: '2016/curso22_mod8.js'
+				},
+				{
+					name: 'PC - Percussão',
+					file: '2016/curso22_mod9.js'
+				},
+				{
+					name: 'PN - Piano',
+					file: '2016/curso22_mod10.js'
+				},
+				{
+					name: 'PP - Percussão - Música Popular',
+					file: '2016/curso22_mod11.js'
+				},
+				{
+					name: 'RG - Regência',
+					file: '2016/curso22_mod12.js'
+				},
+				{
+					name: 'SP - Sopros - Música Popular',
+					file: '2016/curso22_mod13.js'
+				},
+				{
+					name: 'TB - Trombone',
+					file: '2016/curso22_mod14.js'
+				},
+				{
+					name: 'TC - Teclados - Música Popular',
+					file: '2016/curso22_mod15.js'
+				},
+				{
+					name: 'TP - Trompete',
+					file: '2016/curso22_mod16.js'
+				},
+				{
+					name: 'VA - Viola',
+					file: '2016/curso22_mod17.js'
+				},
+				{
+					name: 'VC - Violoncelo',
+					file: '2016/curso22_mod18.js'
+				},
+				{
+					name: 'VL - Violino',
+					file: '2016/curso22_mod19.js'
+				},
+				{
+					name: 'VO - Violão',
+					file: '2016/curso22_mod20.js'
+				},
+				{
+					name: 'VP - Voz - Música Popular',
+					file: '2016/curso22_mod21.js'
+				},
+				{
+					name: 'VZ - Voz',
+					file: '2016/curso22_mod22.js'
+				},
+			]
 		},
-		'Curso 28 - Matem�tica Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2016/curso28_mod1.js'
-			}
+		'23': {
+			name: "Dança - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Dança',
+					file: '2016/curso23_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Artes - Dança',
+					file: '2016/curso23_mod2.js'
+				},
+			]
 		},
-		'Curso 29 - Licenciatura em Matem�tica': {
-			'': {
-				arquivo: 'ano2016/curso29_mod1.js'
-			}
+		'25': {
+			name: "Artes Visuais - Integral",
+			modality: [
+				{
+					name: 'AF - Bacharelado em Artes Visuais',
+					file: '2016/curso25_mod1.js'
+				},
+				{
+					name: 'AG - Licenciatura em Artes - Artes Visuais',
+					file: '2016/curso25_mod2.js'
+				},
+			]
 		},
-		'Curso 34 - Engenharia de Computa��o': {
-			'AA - Sistemas de Computa��o': {
-				arquivo: 'ano2016/curso34_mod1.js'
-			},
-			'AB - Sistemas e Processos Industriais': {
-				arquivo: 'ano2016/curso34_mod2.js'
-			},
-			'AX - Para Matr�cula Antes da Op��o': {
-				arquivo: 'ano2016/curso34_mod3.js'
-			}
+		'26': {
+			name: "Artes Cênicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso26_mod1.js'
+				},
+			]
 		},
-		'Curso 36 - Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas': {
-			'': {
-				arquivo: 'ano2016/curso36_mod1.js'
-			}
+		'27': {
+			name: "Educação Física - Integral",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2016/curso27_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2016/curso27_mod2.js'
+				},
+			]
 		},
-		'Curso 38 - Pedagogia': {
-			'': {
-				arquivo: 'ano2016/curso38_mod1.js'
-			}
+		'28': {
+			name: "Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso28_mod1.js'
+				},
+			]
 		},
-		'Curso 39 - Engenharia Qu�mica': {
-			'': {
-				arquivo: 'ano2016/curso39_mod1.js'
-			}
+		'29': {
+			name: "Licenciatura em Matemática - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso29_mod1.js'
+				},
+			]
 		},
-		'Curso 40 - Licenciatura em F�sica': {
-			'': {
-				arquivo: 'ano2016/curso40_mod1.js'
-			}
+		'30': {
+			name: "Filosofia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Filosofia',
+					file: '2016/curso30_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Filosofia',
+					file: '2016/curso30_mod2.js'
+				},
+			]
 		},
-		'Curso 41 - Engenharia Elétrica': {
-			'': {
-				arquivo: 'ano2016/curso41_mod1.js'
-			}
+		'34': {
+			name: "Engenharia de Computação - Integral",
+			modality: [
+				{
+					name: 'AA - Sistemas de Computação',
+					file: '2016/curso34_mod1.js'
+				},
+				{
+					name: 'AB - Sistemas e Processos Industriais',
+					file: '2016/curso34_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2016/curso34_mod3.js'
+				},
+			]
 		},
-		'Curso 42 - Ci�ncia da Computa��o': {
-			'': {
-				arquivo: 'ano2016/curso42_mod1.js'
-			}
+		'36': {
+			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso36_mod1.js'
+				},
+			]
 		},
-		'Curso 43 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2016/curso43_mod1.js'
-			}
+		'38': {
+			name: "Pedagogia - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso38_mod1.js'
+				},
+			]
 		},
-		'Curso 44 - Ci�ncias Sociais': {
-			'AA - Bacharelado em Ci�ncias Sociais - Antropologia': {
-				arquivo: 'ano2016/curso44_mod1.js'
-			},
-			'AB - Bacharelado em Ci�ncias Sociais - Pol�tica': {
-				arquivo: 'ano2016/curso44_mod2.js'
-			},
-			'AC - Bacharelado em Ci�ncias Sociais - Sociologia': {
-				arquivo: 'ano2016/curso44_mod3.js'
-			},
-			'AD - Bacharelado em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2016/curso44_mod4.js'
-			},
-			'AH - Licenciatura em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2016/curso44_mod5.js'
-			}
+		'39': {
+			name: "Engenharia Química - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso39_mod1.js'
+				},
+			]
 		},
-		'Curso 45 - Educa��o F�sica': {
-			'AB - Licenciatura em Educa��o F�sica': {
-				arquivo: 'ano2016/curso45_mod1.js'
-			},
-			'AF - Bacharelado em Educa��o F�sica': {
-				arquivo: 'ano2016/curso45_mod2.js'
-			}
+		'40': {
+			name: "Licenciatura em Física - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso40_mod1.js'
+				},
+			]
 		},
-		'Curso 46 - Licenciatura em Ci�ncias Biol�gicas': {
-			'': {
-				arquivo: 'ano2016/curso46_mod1.js'
-			}
+		'41': {
+			name: "Engenharia Elétrica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso41_mod1.js'
+				},
+			]
 		},
-		'Curso 47 - Ci�ncias Econ�micas': {
-			'': {
-				arquivo: 'ano2016/curso47_mod1.js'
-			}
+		'42': {
+			name: "Ciência da Computação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso42_mod1.js'
+				},
+			]
 		},
-		'Curso 48 - Arquitetura e Urbanismo': {
-			'': {
-				arquivo: 'ano2016/curso48_mod1.js'
-			}
+		'43': {
+			name: "Engenharia de Alimentos - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso43_mod1.js'
+				},
+			]
 		},
-		'Curso 49 - Engenharia de Controle e Automa��o': {
-			'': {
-				arquivo: 'ano2016/curso49_mod1.js'
-			}
+		'44': {
+			name: "Ciências Sociais - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2016/curso44_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2016/curso44_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2016/curso44_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2016/curso44_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2016/curso44_mod5.js'
+				},
+			]
 		},
-		'Curso 50 - Qu�mica Tecnol�gica': {
-			'': {
-				arquivo: 'ano2016/curso50_mod1.js'
-			}
+		'45': {
+			name: "Educação Física - Noturno",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2016/curso45_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2016/curso45_mod2.js'
+				},
+			]
 		},
-		'Curso 51 - Matem�tica/F�sica/Matem�tica Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2016/curso51_mod1.js'
-			}
+		'46': {
+			name: "Licenciatura em Ciências Biológicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso46_mod1.js'
+				},
+			]
 		},
-		'Curso 53 - Geologia': {
-			'': {
-				arquivo: 'ano2016/curso53_mod1.js'
-			}
+		'47': {
+			name: "Ciências Econômicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso47_mod1.js'
+				},
+			]
 		},
-		'Curso 54 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2016/curso54_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2016/curso54_mod2.js'
-			}
+		'48': {
+			name: "Arquitetura e Urbanismo - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso48_mod1.js'
+				},
+			]
 		},
-		'Curso 55 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2016/curso55_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2016/curso55_mod2.js'
-			}
+		'49': {
+			name: "Engenharia de Controle e Automação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso49_mod1.js'
+				},
+			]
 		},
-		'Curso 56 - Licenciatura Integrada Qu�mica/F�sica': {
-			'AA - Licenciatura em Qu�mica': {
-				arquivo: 'ano2016/curso56_mod1.js'
-			},
-			'AB - Licenciatura em F�sica': {
-				arquivo: 'ano2016/curso56_mod2.js'
-			},
-			'AX - Para Matr�cula Antes da Op��o': {
-				arquivo: 'ano2016/curso56_mod3.js'
-			}
+		'50': {
+			name: "Química Tecnológica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso50_mod1.js'
+				},
+			]
 		},
-		'Curso 58 - Fonoaudiologia': {
-			'': {
-				arquivo: 'ano2016/curso58_mod1.js'
-			}
+		'51': {
+			name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso51_mod1.js'
+				},
+			]
 		},
-		'Curso 63 - Farm�cia': {
-			'': {
-				arquivo: 'ano2016/curso63_mod1.js'
-			}
+		'52': {
+			name: "Ciências da Terra - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso52_mod1.js'
+				},
+			]
 		},
-		'Curso 64 - Comunica��o Social - Midialogia': {
-			'': {
-				arquivo: 'ano2016/curso64_mod1.js'
-			}
+		'53': {
+			name: "Geologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso53_mod1.js'
+				},
+			]
 		},
-		'Curso 73 - Curso Superior de Tecnologia em Saneamento Ambiental': {
-			'': {
-				arquivo: 'ano2016/curso73_mod1.js'
-			}
+		'54': {
+			name: "Geografia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2016/curso54_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2016/curso54_mod2.js'
+				},
+			]
 		},
-		'Curso 83 - Curso Superior de Tecnologia em Constru��o de Edif�cios': {
-			'': {
-				arquivo: 'ano2016/curso83_mod1.js'
-			}
+		'55': {
+			name: "Geografia - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2016/curso55_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2016/curso55_mod2.js'
+				},
+			]
 		},
-		'Curso 87 - Curso Superior de Tecnologia em Saneamento Ambiental': {
-			'': {
-				arquivo: 'ano2016/curso87_mod1.js'
-			}
+		'56': {
+			name: "Licenciatura Integrada Química/Física - Noturno",
+			modality: [
+				{
+					name: 'AA - Licenciatura em Química',
+					file: '2016/curso56_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2016/curso56_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2016/curso56_mod3.js'
+				},
+			]
 		},
-		'Curso 88 - Engenharia de Telecomunica��es': {
-			'': {
-				arquivo: 'ano2016/curso88_mod1.js'
-			}
+		'57': {
+			name: "Licenciatura em Letras - Português - Noturno",
+			modality: [
+				{
+					name: 'AA - Licenciatura em Letras - Português',
+					file: '2016/curso57_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Letras - Português como Segunda Língua / Língua Estrangeira',
+					file: '2016/curso57_mod2.js'
+				},
+			]
 		},
-		'Curso 89 - Engenharia Ambiental': {
-			'': {
-				arquivo: 'ano2016/curso89_mod1.js'
-			}
+		'58': {
+			name: "Fonoaudiologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso58_mod1.js'
+				},
+			]
 		},
-		'Curso 94 - Sistemas de Informa��o': {
-			'': {
-				arquivo: 'ano2016/curso94_mod1.js'
-			}
+		'60': {
+			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso60_mod1.js'
+				},
+			]
 		},
-		'Curso 100 - Ci�ncias do Esporte': {
-			'': {
-				arquivo: 'ano2016/curso100_mod1.js'
-			}
+		'63': {
+			name: "Farmácia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso63_mod1.js'
+				},
+			]
 		},
-		'Curso 101 - Engenharia de Manufatura': {
-			'': {
-				arquivo: 'ano2016/curso101_mod1.js'
-			}
+		'64': {
+			name: "Comunicação Social - Midialogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso64_mod1.js'
+				},
+			]
 		},
-		'Curso 102 - Engenharia de Produ��o': {
-			'': {
-				arquivo: 'ano2016/curso102_mod1.js'
-			}
+		'73': {
+			name: "Curso Superior de Tecnologia em Saneamento Ambiental - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso73_mod1.js'
+				},
+			]
 		},
-		'Curso 107 - Nutri��o': {
-			'': {
-				arquivo: 'ano2016/curso107_mod1.js'
-			}
+		'74': {
+			name: "Curso Superior de Tecnologia em Sistemas de Telecomunicações - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso74_mod1.js'
+				},
+			]
 		},
-		'Curso 108 - Engenharia F�sica': {
-			'AA - �nfase em Optoeletr�nica': {
-				arquivo: 'ano2016/curso108_mod1.js'
-			},
-			'AB - �nfase em Produ��o Tecnol�gica': {
-				arquivo: 'ano2016/curso108_mod2.js'
-			}
+		'75': {
+			name: "Estudos Literários - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso75_mod1.js'
+				},
+			]
 		},
-		'Curso 109 - Administra��o': {
-			'': {
-				arquivo: 'ano2016/curso109_mod1.js'
-			}
+		'82': {
+			name: "Curso Superior de Tecnologia da Construção Civil - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso82_mod1.js'
+				},
+			]
 		},
-		'Curso 110 - Administra��o P�blica': {
-			'': {
-				arquivo: 'ano2016/curso110_mod1.js'
-			}
+		'83': {
+			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso83_mod1.js'
+				},
+			]
 		},
-		'Curso 200 - Programa de Forma��o Interdisciplinar Superior - ProFIS': {
-			'': {
-				arquivo: 'ano2016/curso200_mod1.js'
-			}
+		'84': {
+			name: "Curso Superior de Tecnologia em Estradas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso84_mod1.js'
+				},
+			]
+		},
+		'85': {
+			name: "Curso Superior de Tecnologia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso85_mod1.js'
+				},
+			]
+		},
+		'86': {
+			name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso86_mod1.js'
+				},
+			]
+		},
+		'87': {
+			name: "Curso Superior de Tecnologia em Saneamento Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso87_mod1.js'
+				},
+			]
+		},
+		'88': {
+			name: "Engenharia de Telecomunicações - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso88_mod1.js'
+				},
+			]
+		},
+		'89': {
+			name: "Engenharia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso89_mod1.js'
+				},
+			]
+		},
+		'94': {
+			name: "Sistemas de Informação - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso94_mod1.js'
+				},
+			]
+		},
+		'100': {
+			name: "Ciências do Esporte - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso100_mod1.js'
+				},
+			]
+		},
+		'101': {
+			name: "Engenharia de Manufatura - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso101_mod1.js'
+				},
+			]
+		},
+		'102': {
+			name: "Engenharia de Produção - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso102_mod1.js'
+				},
+			]
+		},
+		'103': {
+			name: "Gestão do Agronegócio - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso103_mod1.js'
+				},
+			]
+		},
+		'104': {
+			name: "Gestão de Comércio Internacional - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso104_mod1.js'
+				},
+			]
+		},
+		'105': {
+			name: "Gestão de Empresas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso105_mod1.js'
+				},
+			]
+		},
+		'106': {
+			name: "Gestão de Políticas Públicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso106_mod1.js'
+				},
+			]
+		},
+		'107': {
+			name: "Nutrição - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso107_mod1.js'
+				},
+			]
+		},
+		'108': {
+			name: "Engenharia Física - Integral",
+			modality: [
+				{
+					name: 'AA - Ênfase em Optoeletrônica',
+					file: '2016/curso108_mod1.js'
+				},
+				{
+					name: 'AB - Ênfase em Produção Tecnológica',
+					file: '2016/curso108_mod2.js'
+				},
+			]
+		},
+		'109': {
+			name: "Administração - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso109_mod1.js'
+				},
+			]
+		},
+		'110': {
+			name: "Administração Pública - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso110_mod1.js'
+				},
+			]
+		},
+		'200': {
+			name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2016/curso200_mod1.js'
+				},
+			]
 		}
 	},
-	'2017': {
-		'Curso 1 - Matemática': {
-			'AA - Bacharelado em Matemática': {
-				arquivo: 'ano2017/curso1_mod1.js'
-			},
-			'EF - Ênfase em Física Matemática': {
-				arquivo: 'ano2017/curso1_mod2.js'
-			}
+	"2017": {
+		'1': {
+			name: "Matemática - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Matemática',
+					file: '2017/curso1_mod1.js'
+				},
+				{
+					name: 'EF - Ênfase em Física Matemática',
+					file: '2017/curso1_mod2.js'
+				},
+			]
 		},
-		'Curso 2 - Estat�stica': {
-			'': {
-				arquivo: 'ano2017/curso2_mod1.js'
-			}
+		'2': {
+			name: "Estatística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso2_mod1.js'
+				},
+			]
 		},
-		'Curso 4 - Física': {
-			'AA - Bacharelado em Física': {
-				arquivo: 'ano2017/curso4_mod1.js'
-			},
-			'AB - Licenciatura em Física': {
-				arquivo: 'ano2017/curso4_mod2.js'
-			},
-			'AF - Bacharelado em Física Médica': {
-				arquivo: 'ano2017/curso4_mod3.js'
-			},
-			'EB - Bacharelado em Física com Ênfase em Física Biomédica': {
-				arquivo: 'ano2017/curso4_mod4.js'
-			}
+		'4': {
+			name: "Física - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Física',
+					file: '2017/curso4_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2017/curso4_mod2.js'
+				},
+				{
+					name: 'AF - Bacharelado em Física Médica',
+					file: '2017/curso4_mod3.js'
+				},
+				{
+					name: 'EB - Bacharelado em Física com Ênfase em Física Biomédica',
+					file: '2017/curso4_mod4.js'
+				},
+			]
 		},
-		'Curso 5 - Qu�mica': {
-			'AA - Bacharelado em Qu�mica': {
-				arquivo: 'ano2017/curso5_mod1.js'
-			},
-			'AB - Licenciatura em Qu�mica': {
-				arquivo: 'ano2017/curso5_mod2.js'
-			},
-			'AD - Bacharelado em Qu�mica Tecnol�gica': {
-				arquivo: 'ano2017/curso5_mod3.js'
-			}
+		'5': {
+			name: "Química - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Química',
+					file: '2017/curso5_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Química',
+					file: '2017/curso5_mod2.js'
+				},
+				{
+					name: 'AD - Bacharelado em Química Tecnológica',
+					file: '2017/curso5_mod3.js'
+				},
+			]
 		},
-		'Curso 6 - Ci�ncias Biol�gicas': {
-			'AJ - Licenciatura Plena em Ci�ncias Biol�gicas': {
-				arquivo: 'ano2017/curso6_mod1.js'
-			},
-			'AL - Bacharelado em Ci�ncias Biol�gicas': {
-				arquivo: 'ano2017/curso6_mod2.js'
-			}
+		'6': {
+			name: "Ciências Biológicas - Integral",
+			modality: [
+				{
+					name: 'AJ - Licenciatura Plena em Ciências Biológicas',
+					file: '2017/curso6_mod1.js'
+				},
+				{
+					name: 'AL - Bacharelado em Ciências Biológicas',
+					file: '2017/curso6_mod2.js'
+				},
+			]
 		},
-		'Curso 8 - Engenharia Agr�cola': {
-			'': {
-				arquivo: 'ano2017/curso8_mod1.js'
-			}
+		'7': {
+			name: "Licenciatura em Letras - Português - Integral",
+			modality: [
+				{
+					name: 'AE - Licenciatura em Letras - Português',
+					file: '2017/curso7_mod1.js'
+				},
+				{
+					name: 'AF - Licenciatura em Letras - Português como Segunda Língua /Língua Estrangeira',
+					file: '2017/curso7_mod2.js'
+				},
+			]
 		},
-		'Curso 9 - Engenharia Qu�mica': {
-			'': {
-				arquivo: 'ano2017/curso9_mod1.js'
-			}
+		'8': {
+			name: "Engenharia Agrícola - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso8_mod1.js'
+				},
+			]
 		},
-		'Curso 10 - Engenharia Mec�nica': {
-			'': {
-				arquivo: 'ano2017/curso10_mod1.js'
-			}
+		'9': {
+			name: "Engenharia Química - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso9_mod1.js'
+				},
+			]
 		},
-		'Curso 11 - Engenharia El�trica': {
-			'': {
-				arquivo: 'ano2017/curso11_mod1.js'
-			}
+		'10': {
+			name: "Engenharia Mecânica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso10_mod1.js'
+				},
+			]
 		},
-		'Curso 12 - Engenharia Civil': {
-			'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais': {
-				arquivo: 'ano2017/curso12_mod1.js'
-			},
-			'EE - Ênfase em Estruturas': {
-				arquivo: 'ano2017/curso12_mod2.js'
-			},
-			'EP - Ênfase em Gestão do Projeto e da Construção': {
-				arquivo: 'ano2017/curso12_mod3.js'
-			},
-			'ES - Ênfase em Saneamento e Ambiente': {
-				arquivo: 'ano2017/curso12_mod4.js'
-			},
-			'ET - Ênfase em Transportes e Geotecnia': {
-				arquivo: 'ano2017/curso12_mod5.js'
-			}
+		'11': {
+			name: "Engenharia Elétrica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso11_mod1.js'
+				},
+			]
 		},
-		'Curso 13 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2017/curso13_mod1.js'
-			}
+		'12': {
+			name: "Engenharia Civil - Integral",
+			modality: [
+				{
+					name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
+					file: '2017/curso12_mod1.js'
+				},
+				{
+					name: 'EE - Ênfase em Estruturas',
+					file: '2017/curso12_mod2.js'
+				},
+				{
+					name: 'EP - Ênfase em Gestão do Projeto e da Construção',
+					file: '2017/curso12_mod3.js'
+				},
+				{
+					name: 'ES - Ênfase em Saneamento e Ambiente',
+					file: '2017/curso12_mod4.js'
+				},
+				{
+					name: 'ET - Ênfase em Transportes e Geotecnia',
+					file: '2017/curso12_mod5.js'
+				},
+			]
 		},
-		'Curso 14 - Odontologia': {
-			'': {
-				arquivo: 'ano2017/curso14_mod1.js'
-			}
+		'13': {
+			name: "Engenharia de Alimentos - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso13_mod1.js'
+				},
+			]
 		},
-		'Curso 15 - Medicina': {
-			'': {
-				arquivo: 'ano2017/curso15_mod1.js'
-			}
+		'14': {
+			name: "Odontologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso14_mod1.js'
+				},
+			]
 		},
-		'Curso 16 - Ciências Sociais': {
-			'AA - Bacharelado em Ciências Sociais - Antropologia': {
-				arquivo: 'ano2017/curso16_mod1.js'
-			},
-			'AB - Bacharelado em Ciências Sociais - Política': {
-				arquivo: 'ano2017/curso16_mod2.js'
-			},
-			'AC - Bacharelado em Ciências Sociais - Sociologia': {
-				arquivo: 'ano2017/curso16_mod3.js'
-			},
-			'AD - Bacharelado em Ciências Sociais - Geral': {
-				arquivo: 'ano2017/curso16_mod4.js'
-			},
-			'AH - Licenciatura em Ciências Sociais - Geral': {
-				arquivo: 'ano2017/curso16_mod5.js'
-			}
+		'15': {
+			name: "Medicina - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso15_mod1.js'
+				},
+			]
 		},
-		'Curso 17 - Ci�ncias Econ�micas': {
-			'': {
-				arquivo: 'ano2017/curso17_mod1.js'
-			}
+		'16': {
+			name: "Ciências Sociais - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2017/curso16_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2017/curso16_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2017/curso16_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2017/curso16_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2017/curso16_mod5.js'
+				},
+			]
 		},
-		'Curso 20 - Pedagogia': {
-			'': {
-				arquivo: 'ano2017/curso20_mod1.js'
-			}
+		'17': {
+			name: "Ciências Econômicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso17_mod1.js'
+				},
+			]
 		},
-		'Curso 21 - Enfermagem': {
-			'AA - Bacharelado em Enfermagem': {
-				arquivo: 'ano2017/curso21_mod1.js'
-			},
-			'AB - Licenciatura em Enfermagem': {
-				arquivo: 'ano2017/curso21_mod2.js'
-			}
+		'18': {
+			name: "Linguística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso18_mod1.js'
+				},
+			]
 		},
-		'Curso 23 - Dan�a': {
-			'AA - Bacharelado em Dan�a': {
-				arquivo: 'ano2017/curso23_mod1.js'
-			},
-			'AB - Licenciatura em Artes - Dan�a': {
-				arquivo: 'ano2017/curso23_mod2.js'
-			}
+		'19': {
+			name: "História - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em História',
+					file: '2017/curso19_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em História',
+					file: '2017/curso19_mod2.js'
+				},
+			]
 		},
-		'Curso 25 - Artes Visuais': {
-			'AF - Bacharelado em Artes Visuais': {
-				arquivo: 'ano2017/curso25_mod1.js'
-			},
-			'AG - Licenciatura em Artes - Artes Visuais': {
-				arquivo: 'ano2017/curso25_mod2.js'
-			}
+		'20': {
+			name: "Pedagogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso20_mod1.js'
+				},
+			]
 		},
-		'Curso 26 - Artes C�nicas': {
-			'': {
-				arquivo: 'ano2017/curso26_mod1.js'
-			}
+		'21': {
+			name: "Enfermagem - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Enfermagem',
+					file: '2017/curso21_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Enfermagem',
+					file: '2017/curso21_mod2.js'
+				},
+			]
 		},
-		'Curso 27 - Educa��o F�sica': {
-			'AB - Licenciatura em Educa��o F�sica': {
-				arquivo: 'ano2017/curso27_mod1.js'
-			},
-			'AF - Bacharelado em Educa��o F�sica': {
-				arquivo: 'ano2017/curso27_mod2.js'
-			}
+		'22': {
+			name: "Música - Integral",
+			modality: [
+				{
+					name: 'CB - Contrabaixo',
+					file: '2017/curso22_mod1.js'
+				},
+				{
+					name: 'CL - Clarineta',
+					file: '2017/curso22_mod2.js'
+				},
+				{
+					name: 'CO - Composição',
+					file: '2017/curso22_mod3.js'
+				},
+				{
+					name: 'CP - Cordas - Música Popular',
+					file: '2017/curso22_mod4.js'
+				},
+				{
+					name: 'CR - Cravo',
+					file: '2017/curso22_mod5.js'
+				},
+				{
+					name: 'FL - Flauta',
+					file: '2017/curso22_mod6.js'
+				},
+				{
+					name: 'LI - Licenciatura em Artes - Música',
+					file: '2017/curso22_mod7.js'
+				},
+				{
+					name: 'OB - Oboé',
+					file: '2017/curso22_mod8.js'
+				},
+				{
+					name: 'PC - Percussão',
+					file: '2017/curso22_mod9.js'
+				},
+				{
+					name: 'PN - Piano',
+					file: '2017/curso22_mod10.js'
+				},
+				{
+					name: 'PP - Percussão - Música Popular',
+					file: '2017/curso22_mod11.js'
+				},
+				{
+					name: 'RG - Regência',
+					file: '2017/curso22_mod12.js'
+				},
+				{
+					name: 'SP - Sopros - Música Popular',
+					file: '2017/curso22_mod13.js'
+				},
+				{
+					name: 'TB - Trombone',
+					file: '2017/curso22_mod14.js'
+				},
+				{
+					name: 'TC - Teclados - Música Popular',
+					file: '2017/curso22_mod15.js'
+				},
+				{
+					name: 'TP - Trompete',
+					file: '2017/curso22_mod16.js'
+				},
+				{
+					name: 'VA - Viola',
+					file: '2017/curso22_mod17.js'
+				},
+				{
+					name: 'VC - Violoncelo',
+					file: '2017/curso22_mod18.js'
+				},
+				{
+					name: 'VL - Violino',
+					file: '2017/curso22_mod19.js'
+				},
+				{
+					name: 'VO - Violão',
+					file: '2017/curso22_mod20.js'
+				},
+				{
+					name: 'VP - Voz - Música Popular',
+					file: '2017/curso22_mod21.js'
+				},
+				{
+					name: 'VZ - Voz',
+					file: '2017/curso22_mod22.js'
+				},
+			]
 		},
-		'Curso 28 - Matemática Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2017/curso28_mod1.js'
-			}
+		'23': {
+			name: "Dança - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Dança',
+					file: '2017/curso23_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Artes - Dança',
+					file: '2017/curso23_mod2.js'
+				},
+			]
 		},
-		'Curso 29 - Licenciatura em Matem�tica': {
-			'': {
-				arquivo: 'ano2017/curso29_mod1.js'
-			}
+		'25': {
+			name: "Artes Visuais - Integral",
+			modality: [
+				{
+					name: 'AF - Bacharelado em Artes Visuais',
+					file: '2017/curso25_mod1.js'
+				},
+				{
+					name: 'AG - Licenciatura em Artes - Artes Visuais',
+					file: '2017/curso25_mod2.js'
+				},
+			]
 		},
-		'Curso 34 - Engenharia de Computação': {
-			'AA - Sistemas de Computação': {
-				arquivo: 'ano2017/curso34_mod1.js'
-			},
-			'AB - Sistemas e Processos Industriais': {
-				arquivo: 'ano2017/curso34_mod2.js'
-			},
-			'AX - Para Matrícula Antes da Opção': {
-				arquivo: 'ano2017/curso34_mod3.js'
-			}
+		'26': {
+			name: "Artes Cênicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso26_mod1.js'
+				},
+			]
 		},
-		'Curso 36 - Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas': {
-			'': {
-				arquivo: 'ano2017/curso36_mod1.js'
-			}
+		'27': {
+			name: "Educação Física - Integral",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2017/curso27_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2017/curso27_mod2.js'
+				},
+			]
 		},
-		'Curso 38 - Pedagogia': {
-			'': {
-				arquivo: 'ano2017/curso38_mod1.js'
-			}
+		'28': {
+			name: "Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso28_mod1.js'
+				},
+			]
 		},
-		'Curso 39 - Engenharia Qu�mica': {
-			'': {
-				arquivo: 'ano2017/curso39_mod1.js'
-			}
+		'29': {
+			name: "Licenciatura em Matemática - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso29_mod1.js'
+				},
+			]
 		},
-		'Curso 40 - Licenciatura em F�sica': {
-			'': {
-				arquivo: 'ano2017/curso40_mod1.js'
-			}
+		'30': {
+			name: "Filosofia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Filosofia',
+					file: '2017/curso30_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Filosofia',
+					file: '2017/curso30_mod2.js'
+				},
+			]
 		},
-		'Curso 41 - Engenharia El�trica': {
-			'': {
-				arquivo: 'ano2017/curso41_mod1.js'
-			}
+		'34': {
+			name: "Engenharia de Computação - Integral",
+			modality: [
+				{
+					name: 'AA - Sistemas de Computação',
+					file: '2017/curso34_mod1.js'
+				},
+				{
+					name: 'AB - Sistemas e Processos Industriais',
+					file: '2017/curso34_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2017/curso34_mod3.js'
+				},
+			]
 		},
-		'Curso 42 - Ciência da Computação': {
-			'': {
-				arquivo: 'ano2017/curso42_mod1.js'
-			}
+		'36': {
+			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso36_mod1.js'
+				},
+			]
 		},
-		'Curso 43 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2017/curso43_mod1.js'
-			}
+		'38': {
+			name: "Pedagogia - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso38_mod1.js'
+				},
+			]
 		},
-		'Curso 44 - Ci�ncias Sociais': {
-			'AA - Bacharelado em Ci�ncias Sociais - Antropologia': {
-				arquivo: 'ano2017/curso44_mod1.js'
-			},
-			'AB - Bacharelado em Ci�ncias Sociais - Pol�tica': {
-				arquivo: 'ano2017/curso44_mod2.js'
-			},
-			'AC - Bacharelado em Ci�ncias Sociais - Sociologia': {
-				arquivo: 'ano2017/curso44_mod3.js'
-			},
-			'AD - Bacharelado em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2017/curso44_mod4.js'
-			},
-			'AH - Licenciatura em Ci�ncias Sociais - Geral': {
-				arquivo: 'ano2017/curso44_mod5.js'
-			}
+		'39': {
+			name: "Engenharia Química - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso39_mod1.js'
+				},
+			]
 		},
-		'Curso 45 - Educação Física': {
-			'AB - Licenciatura em Educação Física': {
-				arquivo: 'ano2017/curso45_mod1.js'
-			},
-			'AF - Bacharelado em Educação Física': {
-				arquivo: 'ano2017/curso45_mod2.js'
-			}
+		'40': {
+			name: "Licenciatura em Física - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso40_mod1.js'
+				},
+			]
 		},
-		'Curso 46 - Licenciatura em Ci�ncias Biol�gicas': {
-			'': {
-				arquivo: 'ano2017/curso46_mod1.js'
-			}
+		'41': {
+			name: "Engenharia Elétrica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso41_mod1.js'
+				},
+			]
 		},
-		'Curso 47 - Ci�ncias Econ�micas': {
-			'': {
-				arquivo: 'ano2017/curso47_mod1.js'
-			}
+		'42': {
+			name: "Ciência da Computação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso42_mod1.js'
+				},
+			]
 		},
-		'Curso 48 - Arquitetura e Urbanismo': {
-			'': {
-				arquivo: 'ano2017/curso48_mod1.js'
-			}
+		'43': {
+			name: "Engenharia de Alimentos - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso43_mod1.js'
+				},
+			]
 		},
-		'Curso 49 - Engenharia de Controle e Automa��o': {
-			'': {
-				arquivo: 'ano2017/curso49_mod1.js'
-			}
+		'44': {
+			name: "Ciências Sociais - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2017/curso44_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2017/curso44_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2017/curso44_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2017/curso44_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2017/curso44_mod5.js'
+				},
+			]
 		},
-		'Curso 50 - Qu�mica Tecnol�gica': {
-			'': {
-				arquivo: 'ano2017/curso50_mod1.js'
-			}
+		'45': {
+			name: "Educação Física - Noturno",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2017/curso45_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2017/curso45_mod2.js'
+				},
+			]
 		},
-		'Curso 51 - Matemática/Física/Matemática Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2017/curso51_mod1.js'
-			}
+		'46': {
+			name: "Licenciatura em Ciências Biológicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso46_mod1.js'
+				},
+			]
 		},
-		'Curso 53 - Geologia': {
-			'': {
-				arquivo: 'ano2017/curso53_mod1.js'
-			}
+		'47': {
+			name: "Ciências Econômicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso47_mod1.js'
+				},
+			]
 		},
-		'Curso 54 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2017/curso54_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2017/curso54_mod2.js'
-			}
+		'48': {
+			name: "Arquitetura e Urbanismo - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso48_mod1.js'
+				},
+			]
 		},
-		'Curso 55 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2017/curso55_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2017/curso55_mod2.js'
-			}
+		'49': {
+			name: "Engenharia de Controle e Automação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso49_mod1.js'
+				},
+			]
 		},
-		'Curso 56 - Licenciatura Integrada Química/Física': {
-			'AA - Licenciatura em Química': {
-				arquivo: 'ano2017/curso56_mod1.js'
-			},
-			'AB - Licenciatura em Física': {
-				arquivo: 'ano2017/curso56_mod2.js'
-			},
-			'AX - Para Matrícula Antes da Opção': {
-				arquivo: 'ano2017/curso56_mod3.js'
-			}
+		'50': {
+			name: "Química Tecnológica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso50_mod1.js'
+				},
+			]
 		},
-		'Curso 58 - Fonoaudiologia': {
-			'': {
-				arquivo: 'ano2017/curso58_mod1.js'
-			}
+		'51': {
+			name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso51_mod1.js'
+				},
+			]
 		},
-		'Curso 63 - Farm�cia': {
-			'': {
-				arquivo: 'ano2017/curso63_mod1.js'
-			}
+		'53': {
+			name: "Geologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso53_mod1.js'
+				},
+			]
 		},
-		'Curso 64 - Comunica��o Social - Midialogia': {
-			'': {
-				arquivo: 'ano2017/curso64_mod1.js'
-			}
+		'54': {
+			name: "Geografia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2017/curso54_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2017/curso54_mod2.js'
+				},
+			]
 		},
-		'Curso 73 - Curso Superior de Tecnologia em Saneamento Ambiental': {
-			'': {
-				arquivo: 'ano2017/curso73_mod1.js'
-			}
+		'55': {
+			name: "Geografia - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2017/curso55_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2017/curso55_mod2.js'
+				},
+			]
 		},
-		'Curso 83 - Curso Superior de Tecnologia em Constru��o de Edif�cios': {
-			'': {
-				arquivo: 'ano2017/curso83_mod1.js'
-			}
+		'56': {
+			name: "Licenciatura Integrada Química/Física - Noturno",
+			modality: [
+				{
+					name: 'AA - Licenciatura em Química',
+					file: '2017/curso56_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2017/curso56_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2017/curso56_mod3.js'
+				},
+			]
 		},
-		'Curso 87 - Curso Superior de Tecnologia em Saneamento Ambiental': {
-			'': {
-				arquivo: 'ano2017/curso87_mod1.js'
-			}
+		'57': {
+			name: "Licenciatura em Letras - Português - Noturno",
+			modality: [
+				{
+					name: 'AA - Licenciatura em Letras - Português',
+					file: '2017/curso57_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Letras - Português como Segunda Língua /Língua Estrangeira',
+					file: '2017/curso57_mod2.js'
+				},
+			]
 		},
-		'Curso 88 - Engenharia de Telecomunica��es': {
-			'': {
-				arquivo: 'ano2017/curso88_mod1.js'
-			}
+		'58': {
+			name: "Fonoaudiologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso58_mod1.js'
+				},
+			]
 		},
-		'Curso 89 - Engenharia Ambiental': {
-			'': {
-				arquivo: 'ano2017/curso89_mod1.js'
-			}
+		'63': {
+			name: "Farmácia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso63_mod1.js'
+				},
+			]
 		},
-		'Curso 94 - Sistemas de Informa��o': {
-			'': {
-				arquivo: 'ano2017/curso94_mod1.js'
-			}
+		'64': {
+			name: "Comunicação Social - Midialogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso64_mod1.js'
+				},
+			]
 		},
-		'Curso 100 - Ciências do Esporte': {
-			'': {
-				arquivo: 'ano2017/curso100_mod1.js'
-			}
+		'73': {
+			name: "Curso Superior de Tecnologia em Saneamento Ambiental - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso73_mod1.js'
+				},
+			]
 		},
-		'Curso 101 - Engenharia de Manufatura': {
-			'': {
-				arquivo: 'ano2017/curso101_mod1.js'
-			}
+		'75': {
+			name: "Estudos Literários - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso75_mod1.js'
+				},
+			]
 		},
-		'Curso 102 - Engenharia de Produção': {
-			'': {
-				arquivo: 'ano2017/curso102_mod1.js'
-			}
+		'83': {
+			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso83_mod1.js'
+				},
+			]
 		},
-		'Curso 107 - Nutrição': {
-			'': {
-				arquivo: 'ano2017/curso107_mod1.js'
-			}
+		'87': {
+			name: "Curso Superior de Tecnologia em Saneamento Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso87_mod1.js'
+				},
+			]
 		},
-		'Curso 108 - Engenharia F�sica': {
-			'AA - �nfase em Optoeletr�nica': {
-				arquivo: 'ano2017/curso108_mod1.js'
-			},
-			'AB - �nfase em Produ��o Tecnol�gica': {
-				arquivo: 'ano2017/curso108_mod2.js'
-			}
+		'88': {
+			name: "Engenharia de Telecomunicações - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso88_mod1.js'
+				},
+			]
 		},
-		'Curso 109 - Administração': {
-			'': {
-				arquivo: 'ano2017/curso109_mod1.js'
-			}
+		'89': {
+			name: "Engenharia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso89_mod1.js'
+				},
+			]
 		},
-		'Curso 110 - Administração Pública': {
-			'': {
-				arquivo: 'ano2017/curso110_mod1.js'
-			}
+		'94': {
+			name: "Sistemas de Informação - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso94_mod1.js'
+				},
+			]
 		},
-		'Curso 200 - Programa de Forma��o Interdisciplinar Superior - ProFIS': {
-			'': {
-				arquivo: 'ano2017/curso200_mod1.js'
-			}
+		'100': {
+			name: "Ciências do Esporte - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso100_mod1.js'
+				},
+			]
+		},
+		'101': {
+			name: "Engenharia de Manufatura - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso101_mod1.js'
+				},
+			]
+		},
+		'102': {
+			name: "Engenharia de Produção - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso102_mod1.js'
+				},
+			]
+		},
+		'107': {
+			name: "Nutrição - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso107_mod1.js'
+				},
+			]
+		},
+		'108': {
+			name: "Engenharia Física - Integral",
+			modality: [
+				{
+					name: 'AA - Ênfase em Optoeletrônica',
+					file: '2017/curso108_mod1.js'
+				},
+				{
+					name: 'AB - Ênfase em Produção Tecnológica',
+					file: '2017/curso108_mod2.js'
+				},
+			]
+		},
+		'109': {
+			name: "Administração - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso109_mod1.js'
+				},
+			]
+		},
+		'110': {
+			name: "Administração Pública - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso110_mod1.js'
+				},
+			]
+		},
+		'200': {
+			name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2017/curso200_mod1.js'
+				},
+			]
 		}
 	},
-	'2018': {
-		'Curso 1 - Matemática': {
-			'AA - Bacharelado em Matemática': {
-				arquivo: 'ano2018/curso1_mod1.js'
-			},
-			'EF - Ênfase em Física Matemática': {
-				arquivo: 'ano2018/curso1_mod2.js'
-			}
+	"2018": {
+		'1': {
+			name: "Matemática - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Matemática',
+					file: '2018/curso1_mod1.js'
+				},
+				{
+					name: 'EF - Ênfase em Física Matemática',
+					file: '2018/curso1_mod2.js'
+				},
+			]
 		},
-		'Curso 2 - Estatística': {
-			'': {
-				arquivo: 'ano2018/curso2_mod1.js'
-			}
+		'2': {
+			name: "Estatística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso2_mod1.js'
+				},
+			]
 		},
-		'Curso 4 - Física': {
-			'AA - Bacharelado em Física': {
-				arquivo: 'ano2018/curso4_mod1.js'
-			},
-			'AB - Licenciatura em Física': {
-				arquivo: 'ano2018/curso4_mod2.js'
-			},
-			'AF - Bacharelado em Física Médica': {
-				arquivo: 'ano2018/curso4_mod3.js'
-			},
-			'EB - Bacharelado em Física com Ênfase em Física Biomédica': {
-				arquivo: 'ano2018/curso4_mod4.js'
-			}
+		'4': {
+			name: "Física - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Física',
+					file: '2018/curso4_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2018/curso4_mod2.js'
+				},
+				{
+					name: 'AF - Bacharelado em Física Médica',
+					file: '2018/curso4_mod3.js'
+				},
+				{
+					name: 'EB - Bacharelado em Física com Ênfase em Física Biomédica',
+					file: '2018/curso4_mod4.js'
+				},
+			]
 		},
-		'Curso 5 - Química': {
-			'AA - Bacharelado em Química': {
-				arquivo: 'ano2018/curso5_mod1.js'
-			},
-			'AB - Licenciatura em Química': {
-				arquivo: 'ano2018/curso5_mod2.js'
-			},
-			'AD - Bacharelado em Química Tecnológica': {
-				arquivo: 'ano2018/curso5_mod3.js'
-			}
+		'5': {
+			name: "Química - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Química',
+					file: '2018/curso5_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Química',
+					file: '2018/curso5_mod2.js'
+				},
+				{
+					name: 'AD - Bacharelado em Química Tecnológica',
+					file: '2018/curso5_mod3.js'
+				},
+			]
 		},
-		'Curso 6 - Ciências Biológicas': {
-			'AJ - Licenciatura Plena em Ciências Biológicas': {
-				arquivo: 'ano2018/curso6_mod1.js'
-			},
-			'AL - Bacharelado em Ciências Biológicas': {
-				arquivo: 'ano2018/curso6_mod2.js'
-			}
+		'6': {
+			name: "Ciências Biológicas - Integral",
+			modality: [
+				{
+					name: 'AJ - Licenciatura Plena em Ciências Biológicas',
+					file: '2018/curso6_mod1.js'
+				},
+				{
+					name: 'AL - Bacharelado em Ciências Biológicas',
+					file: '2018/curso6_mod2.js'
+				},
+			]
 		},
-		'Curso 8 - Engenharia Agrícola': {
-			'': {
-				arquivo: 'ano2018/curso8_mod1.js'
-			}
+		'7': {
+			name: "Licenciatura em Letras - Português - Integral",
+			modality: [
+				{
+					name: 'AE - Licenciatura em Letras - Português',
+					file: '2018/curso7_mod1.js'
+				},
+				{
+					name: 'AF - Licenciatura em Letras - Português como Segunda Língua /Língua Estrangeira',
+					file: '2018/curso7_mod2.js'
+				},
+			]
 		},
-		'Curso 9 - Engenharia Química': {
-			'': {
-				arquivo: 'ano2018/curso9_mod1.js'
-			}
+		'8': {
+			name: "Engenharia Agrícola - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso8_mod1.js'
+				},
+			]
 		},
-		'Curso 10 - Engenharia Mecânica': {
-			'': {
-				arquivo: 'ano2018/curso10_mod1.js'
-			}
+		'9': {
+			name: "Engenharia Química - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso9_mod1.js'
+				},
+			]
 		},
-		'Curso 11 - Engenharia Elétrica': {
-			'': {
-				arquivo: 'ano2018/curso11_mod1.js'
-			}
+		'10': {
+			name: "Engenharia Mecânica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso10_mod1.js'
+				},
+			]
 		},
-		'Curso 12 - Engenharia Civil': {
-			'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais': {
-				arquivo: 'ano2018/curso12_mod1.js'
-			},
-			'EE - Ênfase em Estruturas': {
-				arquivo: 'ano2018/curso12_mod2.js'
-			},
-			'EP - Ênfase em Gestão do Projeto e da Construção': {
-				arquivo: 'ano2018/curso12_mod3.js'
-			},
-			'ES - Ênfase em Saneamento e Ambiente': {
-				arquivo: 'ano2018/curso12_mod4.js'
-			},
-			'ET - Ênfase em Transportes e Geotecnia': {
-				arquivo: 'ano2018/curso12_mod5.js'
-			}
+		'11': {
+			name: "Engenharia Elétrica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso11_mod1.js'
+				},
+			]
 		},
-		'Curso 13 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2018/curso13_mod1.js'
-			}
+		'12': {
+			name: "Engenharia Civil - Integral",
+			modality: [
+				{
+					name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
+					file: '2018/curso12_mod1.js'
+				},
+				{
+					name: 'EE - Ênfase em Estruturas',
+					file: '2018/curso12_mod2.js'
+				},
+				{
+					name: 'EP - Ênfase em Gestão do Projeto e da Construção',
+					file: '2018/curso12_mod3.js'
+				},
+				{
+					name: 'ES - Ênfase em Saneamento e Ambiente',
+					file: '2018/curso12_mod4.js'
+				},
+				{
+					name: 'ET - Ênfase em Transportes e Geotecnia',
+					file: '2018/curso12_mod5.js'
+				},
+			]
 		},
-		'Curso 14 - Odontologia': {
-			'': {
-				arquivo: 'ano2018/curso14_mod1.js'
-			}
+		'13': {
+			name: "Engenharia de Alimentos - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso13_mod1.js'
+				},
+			]
 		},
-		'Curso 15 - Medicina': {
-			'': {
-				arquivo: 'ano2018/curso15_mod1.js'
-			}
+		'14': {
+			name: "Odontologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso14_mod1.js'
+				},
+			]
 		},
-		'Curso 16 - Ciências Sociais': {
-			'AA - Bacharelado em Ciências Sociais - Antropologia': {
-				arquivo: 'ano2018/curso16_mod1.js'
-			},
-			'AB - Bacharelado em Ciências Sociais - Política': {
-				arquivo: 'ano2018/curso16_mod2.js'
-			},
-			'AC - Bacharelado em Ciências Sociais - Sociologia': {
-				arquivo: 'ano2018/curso16_mod3.js'
-			},
-			'AD - Bacharelado em Ciências Sociais - Geral': {
-				arquivo: 'ano2018/curso16_mod4.js'
-			},
-			'AH - Licenciatura em Ciências Sociais - Geral': {
-				arquivo: 'ano2018/curso16_mod5.js'
-			}
+		'15': {
+			name: "Medicina - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso15_mod1.js'
+				},
+			]
 		},
-		'Curso 17 - Ciências Econômicas': {
-			'': {
-				arquivo: 'ano2018/curso17_mod1.js'
-			}
+		'16': {
+			name: "Ciências Sociais - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2018/curso16_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2018/curso16_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2018/curso16_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2018/curso16_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2018/curso16_mod5.js'
+				},
+			]
 		},
-		'Curso 20 - Pedagogia': {
-			'': {
-				arquivo: 'ano2018/curso20_mod1.js'
-			}
+		'17': {
+			name: "Ciências Econômicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso17_mod1.js'
+				},
+			]
 		},
-		'Curso 21 - Enfermagem': {
-			'AA - Bacharelado em Enfermagem': {
-				arquivo: 'ano2018/curso21_mod1.js'
-			},
-			'AB - Licenciatura em Enfermagem': {
-				arquivo: 'ano2018/curso21_mod2.js'
-			}
+		'18': {
+			name: "Linguística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso18_mod1.js'
+				},
+			]
 		},
-		'Curso 23 - Dança': {
-			'AA - Bacharelado em Dança': {
-				arquivo: 'ano2018/curso23_mod1.js'
-			},
-			'AB - Licenciatura em Artes - Dança': {
-				arquivo: 'ano2018/curso23_mod2.js'
-			}
+		'19': {
+			name: "História - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em História',
+					file: '2018/curso19_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em História',
+					file: '2018/curso19_mod2.js'
+				},
+			]
 		},
-		'Curso 25 - Artes Visuais': {
-			'AF - Bacharelado em Artes Visuais': {
-				arquivo: 'ano2018/curso25_mod1.js'
-			},
-			'AG - Licenciatura em Artes - Artes Visuais': {
-				arquivo: 'ano2018/curso25_mod2.js'
-			}
+		'20': {
+			name: "Pedagogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso20_mod1.js'
+				},
+			]
 		},
-		'Curso 26 - Artes Cênicas': {
-			'': {
-				arquivo: 'ano2018/curso26_mod1.js'
-			}
+		'21': {
+			name: "Enfermagem - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Enfermagem',
+					file: '2018/curso21_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Enfermagem',
+					file: '2018/curso21_mod2.js'
+				},
+			]
 		},
-		'Curso 27 - Educação Física': {
-			'AB - Licenciatura em Educação Física': {
-				arquivo: 'ano2018/curso27_mod1.js'
-			},
-			'AF - Bacharelado em Educação Física': {
-				arquivo: 'ano2018/curso27_mod2.js'
-			}
+		'22': {
+			name: "Música - Integral",
+			modality: [
+				{
+					name: 'CB - Contrabaixo',
+					file: '2018/curso22_mod1.js'
+				},
+				{
+					name: 'CL - Clarineta',
+					file: '2018/curso22_mod2.js'
+				},
+				{
+					name: 'CO - Composição',
+					file: '2018/curso22_mod3.js'
+				},
+				{
+					name: 'CP - Cordas - Música Popular',
+					file: '2018/curso22_mod4.js'
+				},
+				{
+					name: 'CR - Cravo',
+					file: '2018/curso22_mod5.js'
+				},
+				{
+					name: 'FL - Flauta',
+					file: '2018/curso22_mod6.js'
+				},
+				{
+					name: 'LI - Licenciatura em Artes - Música',
+					file: '2018/curso22_mod7.js'
+				},
+				{
+					name: 'PC - Percussão',
+					file: '2018/curso22_mod8.js'
+				},
+				{
+					name: 'PN - Piano',
+					file: '2018/curso22_mod9.js'
+				},
+				{
+					name: 'PP - Percussão - Música Popular',
+					file: '2018/curso22_mod10.js'
+				},
+				{
+					name: 'RG - Regência',
+					file: '2018/curso22_mod11.js'
+				},
+				{
+					name: 'SP - Sopros - Música Popular',
+					file: '2018/curso22_mod12.js'
+				},
+				{
+					name: 'TB - Trombone',
+					file: '2018/curso22_mod13.js'
+				},
+				{
+					name: 'TC - Teclados - Música Popular',
+					file: '2018/curso22_mod14.js'
+				},
+				{
+					name: 'TP - Trompete',
+					file: '2018/curso22_mod15.js'
+				},
+				{
+					name: 'VA - Viola',
+					file: '2018/curso22_mod16.js'
+				},
+				{
+					name: 'VC - Violoncelo',
+					file: '2018/curso22_mod17.js'
+				},
+				{
+					name: 'VL - Violino',
+					file: '2018/curso22_mod18.js'
+				},
+				{
+					name: 'VO - Violão',
+					file: '2018/curso22_mod19.js'
+				},
+				{
+					name: 'VP - Voz - Música Popular',
+					file: '2018/curso22_mod20.js'
+				},
+				{
+					name: 'VZ - Voz',
+					file: '2018/curso22_mod21.js'
+				},
+			]
 		},
-		'Curso 28 - Matemática Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2018/curso28_mod1.js'
-			}
+		'23': {
+			name: "Dança - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Dança',
+					file: '2018/curso23_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Artes - Dança',
+					file: '2018/curso23_mod2.js'
+				},
+			]
 		},
-		'Curso 29 - Licenciatura em Matemática': {
-			'': {
-				arquivo: 'ano2018/curso29_mod1.js'
-			}
+		'25': {
+			name: "Artes Visuais - Integral",
+			modality: [
+				{
+					name: 'AF - Bacharelado em Artes Visuais',
+					file: '2018/curso25_mod1.js'
+				},
+				{
+					name: 'AG - Licenciatura em Artes - Artes Visuais',
+					file: '2018/curso25_mod2.js'
+				},
+			]
 		},
-		'Curso 34 - Engenharia de Computação': {
-			'AA - Sistemas de Computação': {
-				arquivo: 'ano2018/curso34_mod1.js'
-			},
-			'AB - Sistemas e Processos Industriais': {
-				arquivo: 'ano2018/curso34_mod2.js'
-			},
-			'AX - Para Matrícula Antes da Opção': {
-				arquivo: 'ano2018/curso34_mod3.js'
-			}
+		'26': {
+			name: "Artes Cênicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso26_mod1.js'
+				},
+			]
 		},
-		'Curso 36 - Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas': {
-			'': {
-				arquivo: 'ano2018/curso36_mod1.js'
-			}
+		'27': {
+			name: "Educação Física - Integral",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2018/curso27_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2018/curso27_mod2.js'
+				},
+			]
 		},
-		'Curso 38 - Pedagogia': {
-			'': {
-				arquivo: 'ano2018/curso38_mod1.js'
-			}
+		'28': {
+			name: "Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso28_mod1.js'
+				},
+			]
 		},
-		'Curso 39 - Engenharia Química': {
-			'': {
-				arquivo: 'ano2018/curso39_mod1.js'
-			}
+		'29': {
+			name: "Licenciatura em Matemática - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso29_mod1.js'
+				},
+			]
 		},
-		'Curso 40 - Licenciatura em Física': {
-			'': {
-				arquivo: 'ano2018/curso40_mod1.js'
-			}
+		'30': {
+			name: "Filosofia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Filosofia',
+					file: '2018/curso30_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Filosofia',
+					file: '2018/curso30_mod2.js'
+				},
+			]
 		},
-		'Curso 41 - Engenharia Elétrica': {
-			'': {
-				arquivo: 'ano2018/curso41_mod1.js'
-			}
+		'34': {
+			name: "Engenharia de Computação - Integral",
+			modality: [
+				{
+					name: 'AA - Sistemas de Computação',
+					file: '2018/curso34_mod1.js'
+				},
+				{
+					name: 'AB - Sistemas e Processos Industriais',
+					file: '2018/curso34_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2018/curso34_mod3.js'
+				},
+			]
 		},
-		'Curso 42 - Ciência da Computação': {
-			'': {
-				arquivo: 'ano2018/curso42_mod1.js'
-			}
+		'36': {
+			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso36_mod1.js'
+				},
+			]
 		},
-		'Curso 43 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2018/curso43_mod1.js'
-			}
+		'38': {
+			name: "Pedagogia - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso38_mod1.js'
+				},
+			]
 		},
-		'Curso 44 - Ciências Sociais': {
-			'AA - Bacharelado em Ciências Sociais - Antropologia': {
-				arquivo: 'ano2018/curso44_mod1.js'
-			},
-			'AB - Bacharelado em Ciências Sociais - Política': {
-				arquivo: 'ano2018/curso44_mod2.js'
-			},
-			'AC - Bacharelado em Ciências Sociais - Sociologia': {
-				arquivo: 'ano2018/curso44_mod3.js'
-			},
-			'AD - Bacharelado em Ciências Sociais - Geral': {
-				arquivo: 'ano2018/curso44_mod4.js'
-			},
-			'AH - Licenciatura em Ciências Sociais - Geral': {
-				arquivo: 'ano2018/curso44_mod5.js'
-			}
+		'39': {
+			name: "Engenharia Química - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso39_mod1.js'
+				},
+			]
 		},
-		'Curso 45 - Educação Física': {
-			'AB - Licenciatura em Educação Física': {
-				arquivo: 'ano2018/curso45_mod1.js'
-			},
-			'AF - Bacharelado em Educação Física': {
-				arquivo: 'ano2018/curso45_mod2.js'
-			}
+		'40': {
+			name: "Licenciatura em Física - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso40_mod1.js'
+				},
+			]
 		},
-		'Curso 46 - Licenciatura em Ciências Biológicas': {
-			'': {
-				arquivo: 'ano2018/curso46_mod1.js'
-			}
+		'41': {
+			name: "Engenharia Elétrica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso41_mod1.js'
+				},
+			]
 		},
-		'Curso 47 - Ciências Econômicas': {
-			'': {
-				arquivo: 'ano2018/curso47_mod1.js'
-			}
+		'42': {
+			name: "Ciência da Computação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso42_mod1.js'
+				},
+			]
 		},
-		'Curso 48 - Arquitetura e Urbanismo': {
-			'': {
-				arquivo: 'ano2018/curso48_mod1.js'
-			}
+		'43': {
+			name: "Engenharia de Alimentos - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso43_mod1.js'
+				},
+			]
 		},
-		'Curso 49 - Engenharia de Controle e Automação': {
-			'': {
-				arquivo: 'ano2018/curso49_mod1.js'
-			}
+		'44': {
+			name: "Ciências Sociais - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2018/curso44_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2018/curso44_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2018/curso44_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2018/curso44_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2018/curso44_mod5.js'
+				},
+			]
 		},
-		'Curso 50 - Química Tecnológica': {
-			'': {
-				arquivo: 'ano2018/curso50_mod1.js'
-			}
+		'45': {
+			name: "Educação Física - Noturno",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2018/curso45_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2018/curso45_mod2.js'
+				},
+			]
 		},
-		'Curso 51 - Matemática/Física/Matemática Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2018/curso51_mod1.js'
-			}
+		'46': {
+			name: "Licenciatura em Ciências Biológicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso46_mod1.js'
+				},
+			]
 		},
-		'Curso 53 - Geologia': {
-			'': {
-				arquivo: 'ano2018/curso53_mod1.js'
-			}
+		'47': {
+			name: "Ciências Econômicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso47_mod1.js'
+				},
+			]
 		},
-		'Curso 54 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2018/curso54_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2018/curso54_mod2.js'
-			}
+		'48': {
+			name: "Arquitetura e Urbanismo - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso48_mod1.js'
+				},
+			]
 		},
-		'Curso 55 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2018/curso55_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2018/curso55_mod2.js'
-			}
+		'49': {
+			name: "Engenharia de Controle e Automação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso49_mod1.js'
+				},
+			]
 		},
-		'Curso 56 - Licenciatura Integrada Química/Física': {
-			'AA - Licenciatura em Química': {
-				arquivo: 'ano2018/curso56_mod1.js'
-			},
-			'AB - Licenciatura em Física': {
-				arquivo: 'ano2018/curso56_mod2.js'
-			},
-			'AX - Para Matrícula Antes da Opção': {
-				arquivo: 'ano2018/curso56_mod3.js'
-			}
+		'50': {
+			name: "Química Tecnológica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso50_mod1.js'
+				},
+			]
 		},
-		'Curso 58 - Fonoaudiologia': {
-			'': {
-				arquivo: 'ano2018/curso58_mod1.js'
-			}
+		'51': {
+			name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso51_mod1.js'
+				},
+			]
 		},
-		'Curso 63 - Farmácia': {
-			'': {
-				arquivo: 'ano2018/curso63_mod1.js'
-			}
+		'52': {
+			name: "Ci�ncias da Terra - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso52_mod1.js'
+				},
+			]
 		},
-		'Curso 64 - Comunicação Social - Midialogia': {
-			'': {
-				arquivo: 'ano2018/curso64_mod1.js'
-			}
+		'53': {
+			name: "Geologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso53_mod1.js'
+				},
+			]
 		},
-		'Curso 73 - Curso Superior de Tecnologia em Saneamento Ambiental': {
-			'': {
-				arquivo: 'ano2018/curso73_mod1.js'
-			}
+		'54': {
+			name: "Geografia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2018/curso54_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2018/curso54_mod2.js'
+				},
+			]
 		},
-		'Curso 83 - Curso Superior de Tecnologia em Construção de Edifícios': {
-			'': {
-				arquivo: 'ano2018/curso83_mod1.js'
-			}
+		'55': {
+			name: "Geografia - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2018/curso55_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2018/curso55_mod2.js'
+				},
+			]
 		},
-		'Curso 87 - Curso Superior de Tecnologia em Saneamento Ambiental': {
-			'': {
-				arquivo: 'ano2018/curso87_mod1.js'
-			}
+		'56': {
+			name: "Licenciatura Integrada Química/Física - Noturno",
+			modality: [
+				{
+					name: 'AA - Licenciatura em Química',
+					file: '2018/curso56_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2018/curso56_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2018/curso56_mod3.js'
+				},
+			]
 		},
-		'Curso 88 - Engenharia de Telecomunicações': {
-			'': {
-				arquivo: 'ano2018/curso88_mod1.js'
-			}
+		'57': {
+			name: "Licenciatura em Letras - Português - Noturno",
+			modality: [
+				{
+					name: 'AA - Licenciatura em Letras - Português',
+					file: '2018/curso57_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Letras - Português como Segunda Língua /Língua Estrangeira',
+					file: '2018/curso57_mod2.js'
+				},
+			]
 		},
-		'Curso 89 - Engenharia Ambiental': {
-			'': {
-				arquivo: 'ano2018/curso89_mod1.js'
-			}
+		'58': {
+			name: "Fonoaudiologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso58_mod1.js'
+				},
+			]
 		},
-		'Curso 94 - Sistemas de Informação': {
-			'': {
-				arquivo: 'ano2018/curso94_mod1.js'
-			}
+		'60': {
+			name: "Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso60_mod1.js'
+				},
+			]
 		},
-		'Curso 100 - Ciências do Esporte': {
-			'': {
-				arquivo: 'ano2018/curso100_mod1.js'
-			}
+		'63': {
+			name: "Farmácia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso63_mod1.js'
+				},
+			]
 		},
-		'Curso 101 - Engenharia de Manufatura': {
-			'': {
-				arquivo: 'ano2018/curso101_mod1.js'
-			}
+		'64': {
+			name: "Comunicação Social - Midialogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso64_mod1.js'
+				},
+			]
 		},
-		'Curso 102 - Engenharia de Produção': {
-			'': {
-				arquivo: 'ano2018/curso102_mod1.js'
-			}
+		'73': {
+			name: "Curso Superior de Tecnologia em Saneamento Ambiental - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso73_mod1.js'
+				},
+			]
 		},
-		'Curso 107 - Nutrição': {
-			'': {
-				arquivo: 'ano2018/curso107_mod1.js'
-			}
+		'74': {
+			name: "Curso Superior de Tecnologia em Sistemas de Telecomunica��es - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso74_mod1.js'
+				},
+			]
 		},
-		'Curso 108 - Engenharia Física': {
-			'AA - Ênfase em Optoeletrônica': {
-				arquivo: 'ano2018/curso108_mod1.js'
-			},
-			'AB - Ênfase em Produção Tecnológica': {
-				arquivo: 'ano2018/curso108_mod2.js'
-			}
+		'75': {
+			name: "Estudos Literários - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso75_mod1.js'
+				},
+			]
 		},
-		'Curso 109 - Administração': {
-			'': {
-				arquivo: 'ano2018/curso109_mod1.js'
-			}
+		'82': {
+			name: "Curso Superior de Tecnologia da Constru��o Civil - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso82_mod1.js'
+				},
+			]
 		},
-		'Curso 110 - Administração Pública': {
-			'': {
-				arquivo: 'ano2018/curso110_mod1.js'
-			}
+		'83': {
+			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso83_mod1.js'
+				},
+			]
 		},
-		'Curso 200 - Programa de Formação Interdisciplinar Superior - ProFIS': {
-			'': {
-				arquivo: 'ano2018/curso200_mod1.js'
-			}
+		'84': {
+			name: "Curso Superior de Tecnologia em Estradas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso84_mod1.js'
+				},
+			]
+		},
+		'85': {
+			name: "Curso Superior de Tecnologia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso85_mod1.js'
+				},
+			]
+		},
+		'86': {
+			name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso86_mod1.js'
+				},
+			]
+		},
+		'87': {
+			name: "Curso Superior de Tecnologia em Saneamento Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso87_mod1.js'
+				},
+			]
+		},
+		'88': {
+			name: "Engenharia de Telecomunicações - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso88_mod1.js'
+				},
+			]
+		},
+		'89': {
+			name: "Engenharia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso89_mod1.js'
+				},
+			]
+		},
+		'94': {
+			name: "Sistemas de Informação - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso94_mod1.js'
+				},
+			]
+		},
+		'100': {
+			name: "Ciências do Esporte - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso100_mod1.js'
+				},
+			]
+		},
+		'101': {
+			name: "Engenharia de Manufatura - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso101_mod1.js'
+				},
+			]
+		},
+		'102': {
+			name: "Engenharia de Produção - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso102_mod1.js'
+				},
+			]
+		},
+		'103': {
+			name: "Gest�o do Agroneg�cio - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso103_mod1.js'
+				},
+			]
+		},
+		'104': {
+			name: "Gest�o de Com�rcio Internacional - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso104_mod1.js'
+				},
+			]
+		},
+		'105': {
+			name: "Gest�o de Empresas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso105_mod1.js'
+				},
+			]
+		},
+		'106': {
+			name: "Gest�o de Pol�ticas P�blicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso106_mod1.js'
+				},
+			]
+		},
+		'107': {
+			name: "Nutrição - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso107_mod1.js'
+				},
+			]
+		},
+		'108': {
+			name: "Engenharia Física - Integral",
+			modality: [
+				{
+					name: 'AA - Ênfase em Optoeletrônica',
+					file: '2018/curso108_mod1.js'
+				},
+				{
+					name: 'AB - Ênfase em Produção Tecnológica',
+					file: '2018/curso108_mod2.js'
+				},
+			]
+		},
+		'109': {
+			name: "Administração - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso109_mod1.js'
+				},
+			]
+		},
+		'110': {
+			name: "Administração Pública - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso110_mod1.js'
+				},
+			]
+		},
+		'200': {
+			name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2018/curso200_mod1.js'
+				},
+			]
 		}
 	},
-	'2019': {
-		'Curso 1 - Matemática': {
-			'AA - Bacharelado em Matemática': {
-				arquivo: 'ano2019/curso1_mod1.js'
-			},
-			'EF - Ênfase em Física Matemática': {
-				arquivo: 'ano2019/curso1_mod2.js'
-			}
+	"2019": {
+		'1': {
+			name: "Matemática - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Matemática',
+					file: '2019/curso1_mod1.js'
+				},
+				{
+					name: 'EF - Ênfase em Física Matemática',
+					file: '2019/curso1_mod2.js'
+				},
+			]
 		},
-		'Curso 2 - Estatística': {
-			'': {
-				arquivo: 'ano2019/curso2_mod1.js'
-			}
+		'2': {
+			name: "Estatística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso2_mod1.js'
+				},
+			]
 		},
-		'Curso 4 - Física': {
-			'AA - Bacharelado em Física': {
-				arquivo: 'ano2019/curso4_mod1.js'
-			},
-			'AB - Licenciatura em Física': {
-				arquivo: 'ano2019/curso4_mod2.js'
-			},
-			'AF - Bacharelado em Física Médica': {
-				arquivo: 'ano2019/curso4_mod3.js'
-			},
-			'EB - Bacharelado em Física com Ênfase em Física Biomédica': {
-				arquivo: 'ano2019/curso4_mod4.js'
-			}
+		'4': {
+			name: "Física - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Física',
+					file: '2019/curso4_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2019/curso4_mod2.js'
+				},
+				{
+					name: 'AF - Bacharelado em Física Médica',
+					file: '2019/curso4_mod3.js'
+				},
+				{
+					name: 'EB - Bacharelado em Física com Ênfase em Física Biomédica',
+					file: '2019/curso4_mod4.js'
+				},
+			]
 		},
-		'Curso 5 - Química': {
-			'AA - Bacharelado em Química': {
-				arquivo: 'ano2019/curso5_mod1.js'
-			},
-			'AB - Licenciatura em Química': {
-				arquivo: 'ano2019/curso5_mod2.js'
-			},
-			'AD - Bacharelado em Química Tecnológica': {
-				arquivo: 'ano2019/curso5_mod3.js'
-			}
+		'5': {
+			name: "Química - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Química',
+					file: '2019/curso5_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Química',
+					file: '2019/curso5_mod2.js'
+				},
+				{
+					name: 'AD - Bacharelado em Química Tecnológica',
+					file: '2019/curso5_mod3.js'
+				},
+			]
 		},
-		'Curso 6 - Ciências Biológicas': {
-			'AJ - Licenciatura Plena em Ciências Biológicas': {
-				arquivo: 'ano2019/curso6_mod1.js'
-			},
-			'AL - Bacharelado em Ciências Biológicas': {
-				arquivo: 'ano2019/curso6_mod2.js'
-			}
+		'6': {
+			name: "Ciências Biológicas - Integral",
+			modality: [
+				{
+					name: 'AJ - Licenciatura Plena em Ciências Biológicas',
+					file: '2019/curso6_mod1.js'
+				},
+				{
+					name: 'AL - Bacharelado em Ciências Biológicas',
+					file: '2019/curso6_mod2.js'
+				},
+			]
 		},
-		'Curso 8 - Engenharia Agrícola': {
-			'': {
-				arquivo: 'ano2019/curso8_mod1.js'
-			}
+		'7': {
+			name: "Licenciatura em Letras - Português - Integral",
+			modality: [
+				{
+					name: 'AE - Licenciatura em Letras - Português',
+					file: '2019/curso7_mod1.js'
+				},
+				{
+					name: 'AF - Licenciatura em Letras - Português como Segunda Língua /Língua Estrangeira',
+					file: '2019/curso7_mod2.js'
+				},
+			]
 		},
-		'Curso 9 - Engenharia Química': {
-			'': {
-				arquivo: 'ano2019/curso9_mod1.js'
-			}
+		'8': {
+			name: "Engenharia Agrícola - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso8_mod1.js'
+				},
+			]
 		},
-		'Curso 10 - Engenharia Mecânica': {
-			'': {
-				arquivo: 'ano2019/curso10_mod1.js'
-			}
+		'9': {
+			name: "Engenharia Química - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso9_mod1.js'
+				},
+			]
 		},
-		'Curso 11 - Engenharia Elétrica': {
-			'': {
-				arquivo: 'ano2019/curso11_mod1.js'
-			}
+		'10': {
+			name: "Engenharia Mecânica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso10_mod1.js'
+				},
+			]
 		},
-		'Curso 12 - Engenharia Civil': {
-			'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais': {
-				arquivo: 'ano2019/curso12_mod1.js'
-			},
-			'EE - Ênfase em Estruturas': {
-				arquivo: 'ano2019/curso12_mod2.js'
-			},
-			'EP - Ênfase em Gestão do Projeto e da Construção': {
-				arquivo: 'ano2019/curso12_mod3.js'
-			},
-			'ES - Ênfase em Saneamento e Ambiente': {
-				arquivo: 'ano2019/curso12_mod4.js'
-			},
-			'ET - Ênfase em Transportes e Geotecnia': {
-				arquivo: 'ano2019/curso12_mod5.js'
-			}
+		'11': {
+			name: "Engenharia Elétrica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso11_mod1.js'
+				},
+			]
 		},
-		'Curso 13 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2019/curso13_mod1.js'
-			}
+		'12': {
+			name: "Engenharia Civil - Integral",
+			modality: [
+				{
+					name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
+					file: '2019/curso12_mod1.js'
+				},
+				{
+					name: 'EE - Ênfase em Estruturas',
+					file: '2019/curso12_mod2.js'
+				},
+				{
+					name: 'EP - Ênfase em Gestão do Projeto e da Construção',
+					file: '2019/curso12_mod3.js'
+				},
+				{
+					name: 'ES - Ênfase em Saneamento e Ambiente',
+					file: '2019/curso12_mod4.js'
+				},
+				{
+					name: 'ET - Ênfase em Transportes e Geotecnia',
+					file: '2019/curso12_mod5.js'
+				},
+			]
 		},
-		'Curso 14 - Odontologia': {
-			'': {
-				arquivo: 'ano2019/curso14_mod1.js'
-			}
+		'13': {
+			name: "Engenharia de Alimentos - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso13_mod1.js'
+				},
+			]
 		},
-		'Curso 15 - Medicina': {
-			'': {
-				arquivo: 'ano2019/curso15_mod1.js'
-			}
+		'14': {
+			name: "Odontologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso14_mod1.js'
+				},
+			]
 		},
-		'Curso 16 - Ciências Sociais': {
-			'AA - Bacharelado em Ciências Sociais - Antropologia': {
-				arquivo: 'ano2019/curso16_mod1.js'
-			},
-			'AB - Bacharelado em Ciências Sociais - Política': {
-				arquivo: 'ano2019/curso16_mod2.js'
-			},
-			'AC - Bacharelado em Ciências Sociais - Sociologia': {
-				arquivo: 'ano2019/curso16_mod3.js'
-			},
-			'AD - Bacharelado em Ciências Sociais - Geral': {
-				arquivo: 'ano2019/curso16_mod4.js'
-			},
-			'AH - Licenciatura em Ciências Sociais - Geral': {
-				arquivo: 'ano2019/curso16_mod5.js'
-			}
+		'15': {
+			name: "Medicina - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso15_mod1.js'
+				},
+			]
 		},
-		'Curso 17 - Ciências Econômicas': {
-			'': {
-				arquivo: 'ano2019/curso17_mod1.js'
-			}
+		'16': {
+			name: "Ciências Sociais - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2019/curso16_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2019/curso16_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2019/curso16_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2019/curso16_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2019/curso16_mod5.js'
+				},
+			]
 		},
-		'Curso 20 - Pedagogia': {
-			'': {
-				arquivo: 'ano2019/curso20_mod1.js'
-			}
+		'17': {
+			name: "Ciências Econômicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso17_mod1.js'
+				},
+			]
 		},
-		'Curso 21 - Enfermagem': {
-			'AA - Bacharelado em Enfermagem': {
-				arquivo: 'ano2019/curso21_mod1.js'
-			},
-			'AB - Licenciatura em Enfermagem': {
-				arquivo: 'ano2019/curso21_mod2.js'
-			}
+		'18': {
+			name: "Linguística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso18_mod1.js'
+				},
+			]
 		},
-		'Curso 23 - Dança': {
-			'AA - Bacharelado em Dança': {
-				arquivo: 'ano2019/curso23_mod1.js'
-			},
-			'AB - Licenciatura em Artes - Dança': {
-				arquivo: 'ano2019/curso23_mod2.js'
-			}
+		'19': {
+			name: "História - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em História',
+					file: '2019/curso19_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em História',
+					file: '2019/curso19_mod2.js'
+				},
+			]
 		},
-		'Curso 25 - Artes Visuais': {
-			'AF - Bacharelado em Artes Visuais': {
-				arquivo: 'ano2019/curso25_mod1.js'
-			},
-			'AG - Licenciatura em Artes - Artes Visuais': {
-				arquivo: 'ano2019/curso25_mod2.js'
-			}
+		'20': {
+			name: "Pedagogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso20_mod1.js'
+				},
+			]
 		},
-		'Curso 26 - Artes Cênicas': {
-			'': {
-				arquivo: 'ano2019/curso26_mod1.js'
-			}
+		'21': {
+			name: "Enfermagem - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Enfermagem',
+					file: '2019/curso21_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Enfermagem',
+					file: '2019/curso21_mod2.js'
+				},
+			]
 		},
-		'Curso 27 - Educação Física': {
-			'AB - Licenciatura em Educação Física': {
-				arquivo: 'ano2019/curso27_mod1.js'
-			},
-			'AF - Bacharelado em Educação Física': {
-				arquivo: 'ano2019/curso27_mod2.js'
-			}
+		'22': {
+			name: "Música - Integral",
+			modality: [
+				{
+					name: 'CB - Contrabaixo',
+					file: '2019/curso22_mod1.js'
+				},
+				{
+					name: 'CL - Clarineta',
+					file: '2019/curso22_mod2.js'
+				},
+				{
+					name: 'CO - Composição',
+					file: '2019/curso22_mod3.js'
+				},
+				{
+					name: 'CP - Cordas - Música Popular',
+					file: '2019/curso22_mod4.js'
+				},
+				{
+					name: 'CR - Cravo',
+					file: '2019/curso22_mod5.js'
+				},
+				{
+					name: 'FL - Flauta',
+					file: '2019/curso22_mod6.js'
+				},
+				{
+					name: 'LI - Licenciatura em Artes - Música',
+					file: '2019/curso22_mod7.js'
+				},
+				{
+					name: 'PC - Percussão',
+					file: '2019/curso22_mod8.js'
+				},
+				{
+					name: 'PN - Piano',
+					file: '2019/curso22_mod9.js'
+				},
+				{
+					name: 'PP - Percussão - Música Popular',
+					file: '2019/curso22_mod10.js'
+				},
+				{
+					name: 'RG - Regência',
+					file: '2019/curso22_mod11.js'
+				},
+				{
+					name: 'SP - Sopros - Música Popular',
+					file: '2019/curso22_mod12.js'
+				},
+				{
+					name: 'TB - Trombone',
+					file: '2019/curso22_mod13.js'
+				},
+				{
+					name: 'TC - Teclados - Música Popular',
+					file: '2019/curso22_mod14.js'
+				},
+				{
+					name: 'TP - Trompete',
+					file: '2019/curso22_mod15.js'
+				},
+				{
+					name: 'VA - Viola',
+					file: '2019/curso22_mod16.js'
+				},
+				{
+					name: 'VC - Violoncelo',
+					file: '2019/curso22_mod17.js'
+				},
+				{
+					name: 'VL - Violino',
+					file: '2019/curso22_mod18.js'
+				},
+				{
+					name: 'VO - Violão',
+					file: '2019/curso22_mod19.js'
+				},
+				{
+					name: 'VP - Voz - Música Popular',
+					file: '2019/curso22_mod20.js'
+				},
+				{
+					name: 'VZ - Voz',
+					file: '2019/curso22_mod21.js'
+				},
+			]
 		},
-		'Curso 28 - Matemática Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2019/curso28_mod1.js'
-			}
+		'23': {
+			name: "Dança - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Dança',
+					file: '2019/curso23_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Artes - Dança',
+					file: '2019/curso23_mod2.js'
+				},
+			]
 		},
-		'Curso 29 - Licenciatura em Matemática': {
-			'': {
-				arquivo: 'ano2019/curso29_mod1.js'
-			}
+		'25': {
+			name: "Artes Visuais - Integral",
+			modality: [
+				{
+					name: 'AF - Bacharelado em Artes Visuais',
+					file: '2019/curso25_mod1.js'
+				},
+				{
+					name: 'AG - Licenciatura em Artes - Artes Visuais',
+					file: '2019/curso25_mod2.js'
+				},
+			]
 		},
-		'Curso 34 - Engenharia de Computação': {
-			'AA - Sistemas de Computação': {
-				arquivo: 'ano2019/curso34_mod1.js'
-			},
-			'AB - Sistemas e Processos Industriais': {
-				arquivo: 'ano2019/curso34_mod2.js'
-			},
-			'AX - Para Matrícula Antes da Opção': {
-				arquivo: 'ano2019/curso34_mod3.js'
-			}
+		'26': {
+			name: "Artes Cênicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso26_mod1.js'
+				},
+			]
 		},
-		'Curso 36 - Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas': {
-			'': {
-				arquivo: 'ano2019/curso36_mod1.js'
-			}
+		'27': {
+			name: "Educação Física - Integral",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2019/curso27_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2019/curso27_mod2.js'
+				},
+			]
 		},
-		'Curso 38 - Pedagogia': {
-			'': {
-				arquivo: 'ano2019/curso38_mod1.js'
-			}
+		'28': {
+			name: "Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso28_mod1.js'
+				},
+			]
 		},
-		'Curso 39 - Engenharia Química': {
-			'': {
-				arquivo: 'ano2019/curso39_mod1.js'
-			}
+		'29': {
+			name: "Licenciatura em Matemática - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso29_mod1.js'
+				},
+			]
 		},
-		'Curso 40 - Licenciatura em Física': {
-			'': {
-				arquivo: 'ano2019/curso40_mod1.js'
-			}
+		'30': {
+			name: "Filosofia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Filosofia',
+					file: '2019/curso30_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Filosofia',
+					file: '2019/curso30_mod2.js'
+				},
+			]
 		},
-		'Curso 41 - Engenharia Elétrica': {
-			'': {
-				arquivo: 'ano2019/curso41_mod1.js'
-			}
+		'34': {
+			name: "Engenharia de Computação - Integral",
+			modality: [
+				{
+					name: 'AA - Sistemas de Computação',
+					file: '2019/curso34_mod1.js'
+				},
+				{
+					name: 'AB - Sistemas e Processos Industriais',
+					file: '2019/curso34_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2019/curso34_mod3.js'
+				},
+			]
 		},
-		'Curso 42 - Ciência da Computação': {
-			'': {
-				arquivo: 'ano2019/curso42_mod1.js'
-			}
+		'36': {
+			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso36_mod1.js'
+				},
+			]
 		},
-		'Curso 43 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2019/curso43_mod1.js'
-			}
+		'38': {
+			name: "Pedagogia - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso38_mod1.js'
+				},
+			]
 		},
-		'Curso 44 - Ciências Sociais': {
-			'AA - Bacharelado em Ciências Sociais - Antropologia': {
-				arquivo: 'ano2019/curso44_mod1.js'
-			},
-			'AB - Bacharelado em Ciências Sociais - Política': {
-				arquivo: 'ano2019/curso44_mod2.js'
-			},
-			'AC - Bacharelado em Ciências Sociais - Sociologia': {
-				arquivo: 'ano2019/curso44_mod3.js'
-			},
-			'AD - Bacharelado em Ciências Sociais - Geral': {
-				arquivo: 'ano2019/curso44_mod4.js'
-			},
-			'AH - Licenciatura em Ciências Sociais - Geral': {
-				arquivo: 'ano2019/curso44_mod5.js'
-			}
+		'39': {
+			name: "Engenharia Química - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso39_mod1.js'
+				},
+			]
 		},
-		'Curso 45 - Educação Física': {
-			'AB - Licenciatura em Educação Física': {
-				arquivo: 'ano2019/curso45_mod1.js'
-			},
-			'AF - Bacharelado em Educação Física': {
-				arquivo: 'ano2019/curso45_mod2.js'
-			}
+		'40': {
+			name: "Licenciatura em Física - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso40_mod1.js'
+				},
+			]
 		},
-		'Curso 46 - Licenciatura em Ciências Biológicas': {
-			'': {
-				arquivo: 'ano2019/curso46_mod1.js'
-			}
+		'41': {
+			name: "Engenharia Elétrica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso41_mod1.js'
+				},
+			]
 		},
-		'Curso 47 - Ciências Econômicas': {
-			'': {
-				arquivo: 'ano2019/curso47_mod1.js'
-			}
+		'42': {
+			name: "Ciência da Computação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso42_mod1.js'
+				},
+			]
 		},
-		'Curso 48 - Arquitetura e Urbanismo': {
-			'': {
-				arquivo: 'ano2019/curso48_mod1.js'
-			}
+		'43': {
+			name: "Engenharia de Alimentos - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso43_mod1.js'
+				},
+			]
 		},
-		'Curso 49 - Engenharia de Controle e Automação': {
-			'': {
-				arquivo: 'ano2019/curso49_mod1.js'
-			}
+		'44': {
+			name: "Ciências Sociais - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2019/curso44_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2019/curso44_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2019/curso44_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2019/curso44_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2019/curso44_mod5.js'
+				},
+			]
 		},
-		'Curso 50 - Química Tecnológica': {
-			'': {
-				arquivo: 'ano2019/curso50_mod1.js'
-			}
+		'45': {
+			name: "Educação Física - Noturno",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2019/curso45_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2019/curso45_mod2.js'
+				},
+			]
 		},
-		'Curso 51 - Matemática/Física/Matemática Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2019/curso51_mod1.js'
-			}
+		'46': {
+			name: "Licenciatura em Ciências Biológicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso46_mod1.js'
+				},
+			]
 		},
-		'Curso 53 - Geologia': {
-			'': {
-				arquivo: 'ano2019/curso53_mod1.js'
-			}
+		'47': {
+			name: "Ciências Econômicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso47_mod1.js'
+				},
+			]
 		},
-		'Curso 54 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2019/curso54_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2019/curso54_mod2.js'
-			}
+		'48': {
+			name: "Arquitetura e Urbanismo - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso48_mod1.js'
+				},
+			]
 		},
-		'Curso 55 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2019/curso55_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2019/curso55_mod2.js'
-			}
+		'49': {
+			name: "Engenharia de Controle e Automação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso49_mod1.js'
+				},
+			]
 		},
-		'Curso 56 - Licenciatura Integrada Química/Física': {
-			'AA - Licenciatura em Química': {
-				arquivo: 'ano2019/curso56_mod1.js'
-			},
-			'AB - Licenciatura em Física': {
-				arquivo: 'ano2019/curso56_mod2.js'
-			},
-			'AX - Para Matrícula Antes da Opção': {
-				arquivo: 'ano2019/curso56_mod3.js'
-			}
+		'50': {
+			name: "Química Tecnológica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso50_mod1.js'
+				},
+			]
 		},
-		'Curso 58 - Fonoaudiologia': {
-			'': {
-				arquivo: 'ano2019/curso58_mod1.js'
-			}
+		'51': {
+			name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso51_mod1.js'
+				},
+			]
 		},
-		'Curso 63 - Farmácia': {
-			'': {
-				arquivo: 'ano2019/curso63_mod1.js'
-			}
+		'52': {
+			name: "Ci�ncias da Terra - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso52_mod1.js'
+				},
+			]
 		},
-		'Curso 64 - Comunicação Social - Midialogia': {
-			'': {
-				arquivo: 'ano2019/curso64_mod1.js'
-			}
+		'53': {
+			name: "Geologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso53_mod1.js'
+				},
+			]
 		},
-		'Curso 73 - Curso Superior de Tecnologia em Saneamento Ambiental': {
-			'': {
-				arquivo: 'ano2019/curso73_mod1.js'
-			}
+		'54': {
+			name: "Geografia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2019/curso54_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2019/curso54_mod2.js'
+				},
+			]
 		},
-		'Curso 83 - Curso Superior de Tecnologia em Construção de Edifícios': {
-			'': {
-				arquivo: 'ano2019/curso83_mod1.js'
-			}
+		'55': {
+			name: "Geografia - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2019/curso55_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2019/curso55_mod2.js'
+				},
+			]
 		},
-		'Curso 87 - Curso Superior de Tecnologia em Saneamento Ambiental': {
-			'': {
-				arquivo: 'ano2019/curso87_mod1.js'
-			}
+		'56': {
+			name: "Licenciatura Integrada Química/Física - Noturno",
+			modality: [
+				{
+					name: 'AA - Licenciatura em Química',
+					file: '2019/curso56_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2019/curso56_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2019/curso56_mod3.js'
+				},
+			]
 		},
-		'Curso 88 - Engenharia de Telecomunicações': {
-			'': {
-				arquivo: 'ano2019/curso88_mod1.js'
-			}
+		'57': {
+			name: "Licenciatura em Letras - Português - Noturno",
+			modality: [
+				{
+					name: 'AA - Licenciatura em Letras - Português',
+					file: '2019/curso57_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Letras - Português como Segunda Língua /Língua Estrangeira',
+					file: '2019/curso57_mod2.js'
+				},
+			]
 		},
-		'Curso 89 - Engenharia Ambiental': {
-			'': {
-				arquivo: 'ano2019/curso89_mod1.js'
-			}
+		'58': {
+			name: "Fonoaudiologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso58_mod1.js'
+				},
+			]
 		},
-		'Curso 94 - Sistemas de Informação': {
-			'': {
-				arquivo: 'ano2019/curso94_mod1.js'
-			}
+		'60': {
+			name: "Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso60_mod1.js'
+				},
+			]
 		},
-		'Curso 100 - Ciências do Esporte': {
-			'': {
-				arquivo: 'ano2019/curso100_mod1.js'
-			}
+		'63': {
+			name: "Farmácia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso63_mod1.js'
+				},
+			]
 		},
-		'Curso 101 - Engenharia de Manufatura': {
-			'': {
-				arquivo: 'ano2019/curso101_mod1.js'
-			}
+		'64': {
+			name: "Comunicação Social - Midialogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso64_mod1.js'
+				},
+			]
 		},
-		'Curso 102 - Engenharia de Produção': {
-			'': {
-				arquivo: 'ano2019/curso102_mod1.js'
-			}
+		'73': {
+			name: "Curso Superior de Tecnologia em Saneamento Ambiental - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso73_mod1.js'
+				},
+			]
 		},
-		'Curso 107 - Nutrição': {
-			'': {
-				arquivo: 'ano2019/curso107_mod1.js'
-			}
+		'74': {
+			name: "Curso Superior de Tecnologia em Sistemas de Telecomunica��es - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso74_mod1.js'
+				},
+			]
 		},
-		'Curso 108 - Engenharia Física': {
-			'AA - Ênfase em Optoeletrônica': {
-				arquivo: 'ano2019/curso108_mod1.js'
-			},
-			'AB - Ênfase em Produção Tecnológica': {
-				arquivo: 'ano2019/curso108_mod2.js'
-			}
+		'75': {
+			name: "Estudos Literários - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso75_mod1.js'
+				},
+			]
 		},
-		'Curso 109 - Administração': {
-			'': {
-				arquivo: 'ano2019/curso109_mod1.js'
-			}
+		'82': {
+			name: "Curso Superior de Tecnologia da Constru��o Civil - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso82_mod1.js'
+				},
+			]
 		},
-		'Curso 110 - Administração Pública': {
-			'': {
-				arquivo: 'ano2019/curso110_mod1.js'
-			}
+		'83': {
+			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso83_mod1.js'
+				},
+			]
 		},
-		'Curso 111 - Engenharia de Transportes': {
-			'': {
-				arquivo: 'ano2019/curso111_mod1.js'
-			}
+		'84': {
+			name: "Curso Superior de Tecnologia em Estradas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso84_mod1.js'
+				},
+			]
 		},
-		'Curso 200 - Programa de Formação Interdisciplinar Superior - ProFIS': {
-			'': {
-				arquivo: 'ano2019/curso200_mod1.js'
-			}
+		'85': {
+			name: "Curso Superior de Tecnologia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso85_mod1.js'
+				},
+			]
+		},
+		'86': {
+			name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso86_mod1.js'
+				},
+			]
+		},
+		'87': {
+			name: "Curso Superior de Tecnologia em Saneamento Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso87_mod1.js'
+				},
+			]
+		},
+		'88': {
+			name: "Engenharia de Telecomunicações - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso88_mod1.js'
+				},
+			]
+		},
+		'89': {
+			name: "Engenharia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso89_mod1.js'
+				},
+			]
+		},
+		'94': {
+			name: "Sistemas de Informação - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso94_mod1.js'
+				},
+			]
+		},
+		'100': {
+			name: "Ciências do Esporte - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso100_mod1.js'
+				},
+			]
+		},
+		'101': {
+			name: "Engenharia de Manufatura - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso101_mod1.js'
+				},
+			]
+		},
+		'102': {
+			name: "Engenharia de Produção - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso102_mod1.js'
+				},
+			]
+		},
+		'103': {
+			name: "Gest�o do Agroneg�cio - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso103_mod1.js'
+				},
+			]
+		},
+		'104': {
+			name: "Gest�o de Com�rcio Internacional - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso104_mod1.js'
+				},
+			]
+		},
+		'105': {
+			name: "Gest�o de Empresas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso105_mod1.js'
+				},
+			]
+		},
+		'106': {
+			name: "Gest�o de Pol�ticas P�blicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso106_mod1.js'
+				},
+			]
+		},
+		'107': {
+			name: "Nutrição - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso107_mod1.js'
+				},
+			]
+		},
+		'108': {
+			name: "Engenharia Física - Integral",
+			modality: [
+				{
+					name: 'AA - Ênfase em Optoeletrônica',
+					file: '2019/curso108_mod1.js'
+				},
+				{
+					name: 'AB - Ênfase em Produção Tecnológica',
+					file: '2019/curso108_mod2.js'
+				},
+			]
+		},
+		'109': {
+			name: "Administração - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso109_mod1.js'
+				},
+			]
+		},
+		'110': {
+			name: "Administração Pública - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso110_mod1.js'
+				},
+			]
+		},
+		'111': {
+			name: "Engenharia de Transportes - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso111_mod1.js'
+				},
+			]
+		},
+		'200': {
+			name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2019/curso200_mod1.js'
+				},
+			]
 		}
 	},
-	'2020': {
-		'Curso 1 - Matemática': {
-			'AA - Bacharelado em Matemática': {
-				arquivo: 'ano2020/curso1_mod1.js'
-			},
-			'EF - Ênfase em Física Matemática': {
-				arquivo: 'ano2020/curso1_mod2.js'
-			}
+	"2020": {
+		'1': {
+			name: "Matemática - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Matemática',
+					file: '2020/curso1_mod1.js'
+				},
+				{
+					name: 'EF - Ênfase em Física Matemática',
+					file: '2020/curso1_mod2.js'
+				},
+			]
 		},
-		'Curso 2 - Estatística': {
-			'': {
-				arquivo: 'ano2020/curso2_mod1.js'
-			}
+		'2': {
+			name: "Estatística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso2_mod1.js'
+				},
+			]
 		},
-		'Curso 4 - Física': {
-			'AA - Bacharelado em Física': {
-				arquivo: 'ano2020/curso4_mod1.js'
-			},
-			'AB - Licenciatura em Física': {
-				arquivo: 'ano2020/curso4_mod2.js'
-			},
-			'AF - Bacharelado em Física Médica': {
-				arquivo: 'ano2020/curso4_mod3.js'
-			},
-			'EB - Bacharelado em Física com Ênfase em Física Biomédica': {
-				arquivo: 'ano2020/curso4_mod4.js'
-			}
+		'4': {
+			name: "Física - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Física',
+					file: '2020/curso4_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2020/curso4_mod2.js'
+				},
+				{
+					name: 'AF - Bacharelado em Física Médica',
+					file: '2020/curso4_mod3.js'
+				},
+				{
+					name: 'EB - Bacharelado em Física com Ênfase em Física Biomédica',
+					file: '2020/curso4_mod4.js'
+				},
+			]
 		},
-		'Curso 5 - Química': {
-			'AA - Bacharelado em Química': {
-				arquivo: 'ano2020/curso5_mod1.js'
-			},
-			'AB - Licenciatura em Química': {
-				arquivo: 'ano2020/curso5_mod2.js'
-			},
-			'AD - Bacharelado em Química Tecnológica': {
-				arquivo: 'ano2020/curso5_mod3.js'
-			}
+		'5': {
+			name: "Química - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Química',
+					file: '2020/curso5_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Química',
+					file: '2020/curso5_mod2.js'
+				},
+				{
+					name: 'AD - Bacharelado em Química Tecnológica',
+					file: '2020/curso5_mod3.js'
+				},
+			]
 		},
-		'Curso 6 - Ciências Biológicas': {
-			'AJ - Licenciatura Plena em Ciências Biológicas': {
-				arquivo: 'ano2020/curso6_mod1.js'
-			},
-			'AL - Bacharelado em Ciências Biológicas': {
-				arquivo: 'ano2020/curso6_mod2.js'
-			}
+		'6': {
+			name: "Ciências Biológicas - Integral",
+			modality: [
+				{
+					name: 'AJ - Licenciatura Plena em Ciências Biológicas',
+					file: '2020/curso6_mod1.js'
+				},
+				{
+					name: 'AL - Bacharelado em Ciências Biológicas',
+					file: '2020/curso6_mod2.js'
+				},
+			]
 		},
-		'Curso 8 - Engenharia Agrícola': {
-			'': {
-				arquivo: 'ano2020/curso8_mod1.js'
-			}
+		'7': {
+			name: "Licenciatura em Letras - Português - Integral",
+			modality: [
+				{
+					name: 'AE - Licenciatura em Letras - Português',
+					file: '2020/curso7_mod1.js'
+				},
+				{
+					name: 'AF - Licenciatura em Letras - Português como Segunda Língua /Língua Estrangeira',
+					file: '2020/curso7_mod2.js'
+				},
+			]
 		},
-		'Curso 9 - Engenharia Química': {
-			'': {
-				arquivo: 'ano2020/curso9_mod1.js'
-			}
+		'8': {
+			name: "Engenharia Agrícola - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso8_mod1.js'
+				},
+			]
 		},
-		'Curso 10 - Engenharia Mecânica': {
-			'': {
-				arquivo: 'ano2020/curso10_mod1.js'
-			}
+		'9': {
+			name: "Engenharia Química - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso9_mod1.js'
+				},
+			]
 		},
-		'Curso 11 - Engenharia Elétrica': {
-			'': {
-				arquivo: 'ano2020/curso11_mod1.js'
-			}
+		'10': {
+			name: "Engenharia Mecânica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso10_mod1.js'
+				},
+			]
 		},
-		'Curso 12 - Engenharia Civil': {
-			'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais': {
-				arquivo: 'ano2020/curso12_mod1.js'
-			},
-			'EE - Ênfase em Estruturas': {
-				arquivo: 'ano2020/curso12_mod2.js'
-			},
-			'EP - Ênfase em Gestão do Projeto e da Construção': {
-				arquivo: 'ano2020/curso12_mod3.js'
-			},
-			'ES - Ênfase em Saneamento e Ambiente': {
-				arquivo: 'ano2020/curso12_mod4.js'
-			},
-			'ET - Ênfase em Transportes e Geotecnia': {
-				arquivo: 'ano2020/curso12_mod5.js'
-			}
+		'11': {
+			name: "Engenharia Elétrica - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso11_mod1.js'
+				},
+			]
 		},
-		'Curso 13 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2020/curso13_mod1.js'
-			}
+		'12': {
+			name: "Engenharia Civil - Integral",
+			modality: [
+				{
+					name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
+					file: '2020/curso12_mod1.js'
+				},
+				{
+					name: 'EE - Ênfase em Estruturas',
+					file: '2020/curso12_mod2.js'
+				},
+				{
+					name: 'EP - Ênfase em Gestão do Projeto e da Construção',
+					file: '2020/curso12_mod3.js'
+				},
+				{
+					name: 'ES - Ênfase em Saneamento e Ambiente',
+					file: '2020/curso12_mod4.js'
+				},
+				{
+					name: 'ET - Ênfase em Transportes e Geotecnia',
+					file: '2020/curso12_mod5.js'
+				},
+			]
 		},
-		'Curso 14 - Odontologia': {
-			'': {
-				arquivo: 'ano2020/curso14_mod1.js'
-			}
+		'13': {
+			name: "Engenharia de Alimentos - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso13_mod1.js'
+				},
+			]
 		},
-		'Curso 15 - Medicina': {
-			'': {
-				arquivo: 'ano2020/curso15_mod1.js'
-			}
+		'14': {
+			name: "Odontologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso14_mod1.js'
+				},
+			]
 		},
-		'Curso 16 - Ciências Sociais': {
-			'AA - Bacharelado em Ciências Sociais - Antropologia': {
-				arquivo: 'ano2020/curso16_mod1.js'
-			},
-			'AB - Bacharelado em Ciências Sociais - Política': {
-				arquivo: 'ano2020/curso16_mod2.js'
-			},
-			'AC - Bacharelado em Ciências Sociais - Sociologia': {
-				arquivo: 'ano2020/curso16_mod3.js'
-			},
-			'AD - Bacharelado em Ciências Sociais - Geral': {
-				arquivo: 'ano2020/curso16_mod4.js'
-			},
-			'AH - Licenciatura em Ciências Sociais - Geral': {
-				arquivo: 'ano2020/curso16_mod5.js'
-			}
+		'15': {
+			name: "Medicina - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso15_mod1.js'
+				},
+			]
 		},
-		'Curso 17 - Ciências Econômicas': {
-			'': {
-				arquivo: 'ano2020/curso17_mod1.js'
-			}
+		'16': {
+			name: "Ciências Sociais - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2020/curso16_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2020/curso16_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2020/curso16_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2020/curso16_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2020/curso16_mod5.js'
+				},
+			]
 		},
-		'Curso 20 - Pedagogia': {
-			'': {
-				arquivo: 'ano2020/curso20_mod1.js'
-			}
+		'17': {
+			name: "Ciências Econômicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso17_mod1.js'
+				},
+			]
 		},
-		'Curso 21 - Enfermagem': {
-			'AA - Bacharelado em Enfermagem': {
-				arquivo: 'ano2020/curso21_mod1.js'
-			},
-			'AB - Licenciatura em Enfermagem': {
-				arquivo: 'ano2020/curso21_mod2.js'
-			}
+		'18': {
+			name: "Linguística - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso18_mod1.js'
+				},
+			]
 		},
-		'Curso 23 - Dança': {
-			'AA - Bacharelado em Dança': {
-				arquivo: 'ano2020/curso23_mod1.js'
-			},
-			'AB - Licenciatura em Artes - Dança': {
-				arquivo: 'ano2020/curso23_mod2.js'
-			}
+		'19': {
+			name: "História - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em História',
+					file: '2020/curso19_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em História',
+					file: '2020/curso19_mod2.js'
+				},
+			]
 		},
-		'Curso 25 - Artes Visuais': {
-			'AF - Bacharelado em Artes Visuais': {
-				arquivo: 'ano2020/curso25_mod1.js'
-			},
-			'AG - Licenciatura em Artes - Artes Visuais': {
-				arquivo: 'ano2020/curso25_mod2.js'
-			}
+		'20': {
+			name: "Pedagogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso20_mod1.js'
+				},
+			]
 		},
-		'Curso 26 - Artes Cênicas': {
-			'': {
-				arquivo: 'ano2020/curso26_mod1.js'
-			}
+		'21': {
+			name: "Enfermagem - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Enfermagem',
+					file: '2020/curso21_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Enfermagem',
+					file: '2020/curso21_mod2.js'
+				},
+			]
 		},
-		'Curso 27 - Educação Física': {
-			'AB - Licenciatura em Educação Física': {
-				arquivo: 'ano2020/curso27_mod1.js'
-			},
-			'AF - Bacharelado em Educação Física': {
-				arquivo: 'ano2020/curso27_mod2.js'
-			}
+		'22': {
+			name: "Música - Integral",
+			modality: [
+				{
+					name: 'CB - Contrabaixo',
+					file: '2020/curso22_mod1.js'
+				},
+				{
+					name: 'CL - Clarineta',
+					file: '2020/curso22_mod2.js'
+				},
+				{
+					name: 'CO - Composição',
+					file: '2020/curso22_mod3.js'
+				},
+				{
+					name: 'CP - Cordas - Música Popular',
+					file: '2020/curso22_mod4.js'
+				},
+				{
+					name: 'CR - Cravo',
+					file: '2020/curso22_mod5.js'
+				},
+				{
+					name: 'FL - Flauta',
+					file: '2020/curso22_mod6.js'
+				},
+				{
+					name: 'LI - Licenciatura em Artes - Música',
+					file: '2020/curso22_mod7.js'
+				},
+				{
+					name: 'PC - Percussão',
+					file: '2020/curso22_mod8.js'
+				},
+				{
+					name: 'PN - Piano',
+					file: '2020/curso22_mod9.js'
+				},
+				{
+					name: 'PP - Percussão - Música Popular',
+					file: '2020/curso22_mod10.js'
+				},
+				{
+					name: 'RG - Regência',
+					file: '2020/curso22_mod11.js'
+				},
+				{
+					name: 'SP - Sopros - Música Popular',
+					file: '2020/curso22_mod12.js'
+				},
+				{
+					name: 'TB - Trombone',
+					file: '2020/curso22_mod13.js'
+				},
+				{
+					name: 'TC - Teclados - Música Popular',
+					file: '2020/curso22_mod14.js'
+				},
+				{
+					name: 'TP - Trompete',
+					file: '2020/curso22_mod15.js'
+				},
+				{
+					name: 'VA - Viola',
+					file: '2020/curso22_mod16.js'
+				},
+				{
+					name: 'VC - Violoncelo',
+					file: '2020/curso22_mod17.js'
+				},
+				{
+					name: 'VL - Violino',
+					file: '2020/curso22_mod18.js'
+				},
+				{
+					name: 'VO - Violão',
+					file: '2020/curso22_mod19.js'
+				},
+				{
+					name: 'VP - Voz - Música Popular',
+					file: '2020/curso22_mod20.js'
+				},
+				{
+					name: 'VZ - Voz',
+					file: '2020/curso22_mod21.js'
+				},
+			]
 		},
-		'Curso 28 - Matemática Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2020/curso28_mod1.js'
-			}
+		'23': {
+			name: "Dança - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Dança',
+					file: '2020/curso23_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Artes - Dança',
+					file: '2020/curso23_mod2.js'
+				},
+			]
 		},
-		'Curso 29 - Licenciatura em Matemática': {
-			'': {
-				arquivo: 'ano2020/curso29_mod1.js'
-			}
+		'25': {
+			name: "Artes Visuais - Integral",
+			modality: [
+				{
+					name: 'AF - Bacharelado em Artes Visuais',
+					file: '2020/curso25_mod1.js'
+				},
+				{
+					name: 'AG - Licenciatura em Artes - Artes Visuais',
+					file: '2020/curso25_mod2.js'
+				},
+			]
 		},
-		'Curso 34 - Engenharia de Computação': {
-			'AA - Sistemas de Computação': {
-				arquivo: 'ano2020/curso34_mod1.js'
-			},
-			'AB - Sistemas e Processos Industriais': {
-				arquivo: 'ano2020/curso34_mod2.js'
-			},
-			'AX - Para Matrícula Antes da Opção': {
-				arquivo: 'ano2020/curso34_mod3.js'
-			}
+		'26': {
+			name: "Artes Cênicas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso26_mod1.js'
+				},
+			]
 		},
-		'Curso 36 - Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas': {
-			'': {
-				arquivo: 'ano2020/curso36_mod1.js'
-			}
+		'27': {
+			name: "Educação Física - Integral",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2020/curso27_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2020/curso27_mod2.js'
+				},
+			]
 		},
-		'Curso 38 - Pedagogia': {
-			'': {
-				arquivo: 'ano2020/curso38_mod1.js'
-			}
+		'28': {
+			name: "Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso28_mod1.js'
+				},
+			]
 		},
-		'Curso 39 - Engenharia Química': {
-			'': {
-				arquivo: 'ano2020/curso39_mod1.js'
-			}
+		'29': {
+			name: "Licenciatura em Matemática - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso29_mod1.js'
+				},
+			]
 		},
-		'Curso 40 - Licenciatura em Física': {
-			'': {
-				arquivo: 'ano2020/curso40_mod1.js'
-			}
+		'30': {
+			name: "Filosofia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Filosofia',
+					file: '2020/curso30_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Filosofia',
+					file: '2020/curso30_mod2.js'
+				},
+			]
 		},
-		'Curso 41 - Engenharia Elétrica': {
-			'': {
-				arquivo: 'ano2020/curso41_mod1.js'
-			}
+		'34': {
+			name: "Engenharia de Computação - Integral",
+			modality: [
+				{
+					name: 'AA - Sistemas de Computação',
+					file: '2020/curso34_mod1.js'
+				},
+				{
+					name: 'AB - Sistemas e Processos Industriais',
+					file: '2020/curso34_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2020/curso34_mod3.js'
+				},
+			]
 		},
-		'Curso 42 - Ciência da Computação': {
-			'': {
-				arquivo: 'ano2020/curso42_mod1.js'
-			}
+		'36': {
+			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso36_mod1.js'
+				},
+			]
 		},
-		'Curso 43 - Engenharia de Alimentos': {
-			'': {
-				arquivo: 'ano2020/curso43_mod1.js'
-			}
+		'38': {
+			name: "Pedagogia - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso38_mod1.js'
+				},
+			]
 		},
-		'Curso 44 - Ciências Sociais': {
-			'AA - Bacharelado em Ciências Sociais - Antropologia': {
-				arquivo: 'ano2020/curso44_mod1.js'
-			},
-			'AB - Bacharelado em Ciências Sociais - Política': {
-				arquivo: 'ano2020/curso44_mod2.js'
-			},
-			'AC - Bacharelado em Ciências Sociais - Sociologia': {
-				arquivo: 'ano2020/curso44_mod3.js'
-			},
-			'AD - Bacharelado em Ciências Sociais - Geral': {
-				arquivo: 'ano2020/curso44_mod4.js'
-			},
-			'AH - Licenciatura em Ciências Sociais - Geral': {
-				arquivo: 'ano2020/curso44_mod5.js'
-			}
+		'39': {
+			name: "Engenharia Química - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso39_mod1.js'
+				},
+			]
 		},
-		'Curso 45 - Educação Física': {
-			'AB - Licenciatura em Educação Física': {
-				arquivo: 'ano2020/curso45_mod1.js'
-			},
-			'AF - Bacharelado em Educação Física': {
-				arquivo: 'ano2020/curso45_mod2.js'
-			}
+		'40': {
+			name: "Licenciatura em Física - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso40_mod1.js'
+				},
+			]
 		},
-		'Curso 46 - Licenciatura em Ciências Biológicas': {
-			'': {
-				arquivo: 'ano2020/curso46_mod1.js'
-			}
+		'41': {
+			name: "Engenharia Elétrica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso41_mod1.js'
+				},
+			]
 		},
-		'Curso 47 - Ciências Econômicas': {
-			'': {
-				arquivo: 'ano2020/curso47_mod1.js'
-			}
+		'42': {
+			name: "Ciência da Computação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso42_mod1.js'
+				},
+			]
 		},
-		'Curso 48 - Arquitetura e Urbanismo': {
-			'': {
-				arquivo: 'ano2020/curso48_mod1.js'
-			}
+		'43': {
+			name: "Engenharia de Alimentos - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso43_mod1.js'
+				},
+			]
 		},
-		'Curso 49 - Engenharia de Controle e Automação': {
-			'': {
-				arquivo: 'ano2020/curso49_mod1.js'
-			}
+		'44': {
+			name: "Ciências Sociais - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
+					file: '2020/curso44_mod1.js'
+				},
+				{
+					name: 'AB - Bacharelado em Ciências Sociais - Política',
+					file: '2020/curso44_mod2.js'
+				},
+				{
+					name: 'AC - Bacharelado em Ciências Sociais - Sociologia',
+					file: '2020/curso44_mod3.js'
+				},
+				{
+					name: 'AD - Bacharelado em Ciências Sociais - Geral',
+					file: '2020/curso44_mod4.js'
+				},
+				{
+					name: 'AH - Licenciatura em Ciências Sociais - Geral',
+					file: '2020/curso44_mod5.js'
+				},
+			]
 		},
-		'Curso 50 - Química Tecnológica': {
-			'': {
-				arquivo: 'ano2020/curso50_mod1.js'
-			}
+		'45': {
+			name: "Educação Física - Noturno",
+			modality: [
+				{
+					name: 'AB - Licenciatura em Educação Física',
+					file: '2020/curso45_mod1.js'
+				},
+				{
+					name: 'AF - Bacharelado em Educação Física',
+					file: '2020/curso45_mod2.js'
+				},
+			]
 		},
-		'Curso 51 - Matemática/Física/Matemática Aplicada e Computacional': {
-			'': {
-				arquivo: 'ano2020/curso51_mod1.js'
-			}
+		'46': {
+			name: "Licenciatura em Ciências Biológicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso46_mod1.js'
+				},
+			]
 		},
-		'Curso 53 - Geologia': {
-			'': {
-				arquivo: 'ano2020/curso53_mod1.js'
-			}
+		'47': {
+			name: "Ciências Econômicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso47_mod1.js'
+				},
+			]
 		},
-		'Curso 54 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2020/curso54_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2020/curso54_mod2.js'
-			}
+		'48': {
+			name: "Arquitetura e Urbanismo - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso48_mod1.js'
+				},
+			]
 		},
-		'Curso 55 - Geografia': {
-			'AA - Bacharelado em Geografia': {
-				arquivo: 'ano2020/curso55_mod1.js'
-			},
-			'AB - Licenciatura em Geografia': {
-				arquivo: 'ano2020/curso55_mod2.js'
-			}
+		'49': {
+			name: "Engenharia de Controle e Automação - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso49_mod1.js'
+				},
+			]
 		},
-		'Curso 56 - Licenciatura Integrada Química/Física': {
-			'AA - Licenciatura em Química': {
-				arquivo: 'ano2020/curso56_mod1.js'
-			},
-			'AB - Licenciatura em Física': {
-				arquivo: 'ano2020/curso56_mod2.js'
-			},
-			'AX - Para Matrícula Antes da Opção': {
-				arquivo: 'ano2020/curso56_mod3.js'
-			}
+		'50': {
+			name: "Química Tecnológica - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso50_mod1.js'
+				},
+			]
 		},
-		'Curso 58 - Fonoaudiologia': {
-			'': {
-				arquivo: 'ano2020/curso58_mod1.js'
-			}
+		'51': {
+			name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso51_mod1.js'
+				},
+			]
 		},
-		'Curso 63 - Farmácia': {
-			'': {
-				arquivo: 'ano2020/curso63_mod1.js'
-			}
+		'52': {
+			name: "Ci�ncias da Terra - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso52_mod1.js'
+				},
+			]
 		},
-		'Curso 64 - Comunicação Social - Midialogia': {
-			'': {
-				arquivo: 'ano2020/curso64_mod1.js'
-			}
+		'53': {
+			name: "Geologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso53_mod1.js'
+				},
+			]
 		},
-		'Curso 73 - Curso Superior de Tecnologia em Saneamento Ambiental': {
-			'': {
-				arquivo: 'ano2020/curso73_mod1.js'
-			}
+		'54': {
+			name: "Geografia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2020/curso54_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2020/curso54_mod2.js'
+				},
+			]
 		},
-		'Curso 83 - Curso Superior de Tecnologia em Construção de Edifícios': {
-			'': {
-				arquivo: 'ano2020/curso83_mod1.js'
-			}
+		'55': {
+			name: "Geografia - Noturno",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Geografia',
+					file: '2020/curso55_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Geografia',
+					file: '2020/curso55_mod2.js'
+				},
+			]
 		},
-		'Curso 87 - Curso Superior de Tecnologia em Saneamento Ambiental': {
-			'': {
-				arquivo: 'ano2020/curso87_mod1.js'
-			}
+		'56': {
+			name: "Licenciatura Integrada Química/Física - Noturno",
+			modality: [
+				{
+					name: 'AA - Licenciatura em Química',
+					file: '2020/curso56_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Física',
+					file: '2020/curso56_mod2.js'
+				},
+				{
+					name: 'AX - Para Matrícula Antes da Opção',
+					file: '2020/curso56_mod3.js'
+				},
+			]
 		},
-		'Curso 88 - Engenharia de Telecomunicações': {
-			'': {
-				arquivo: 'ano2020/curso88_mod1.js'
-			}
+		'57': {
+			name: "Licenciatura em Letras - Português - Noturno",
+			modality: [
+				{
+					name: 'AA - Licenciatura em Letras - Português',
+					file: '2020/curso57_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Letras - Português como Segunda Língua /Língua Estrangeira',
+					file: '2020/curso57_mod2.js'
+				},
+			]
 		},
-		'Curso 89 - Engenharia Ambiental': {
-			'': {
-				arquivo: 'ano2020/curso89_mod1.js'
-			}
+		'58': {
+			name: "Fonoaudiologia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso58_mod1.js'
+				},
+			]
 		},
-		'Curso 94 - Sistemas de Informação': {
-			'': {
-				arquivo: 'ano2020/curso94_mod1.js'
-			}
+		'60': {
+			name: "Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso60_mod1.js'
+				},
+			]
 		},
-		'Curso 100 - Ciências do Esporte': {
-			'': {
-				arquivo: 'ano2020/curso100_mod1.js'
-			}
+		'63': {
+			name: "Farmácia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso63_mod1.js'
+				},
+			]
 		},
-		'Curso 101 - Engenharia de Manufatura': {
-			'': {
-				arquivo: 'ano2020/curso101_mod1.js'
-			}
+		'64': {
+			name: "Comunicação Social - Midialogia - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso64_mod1.js'
+				},
+			]
 		},
-		'Curso 102 - Engenharia de Produção': {
-			'': {
-				arquivo: 'ano2020/curso102_mod1.js'
-			}
+		'73': {
+			name: "Curso Superior de Tecnologia em Saneamento Ambiental - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso73_mod1.js'
+				},
+			]
 		},
-		'Curso 107 - Nutrição': {
-			'': {
-				arquivo: 'ano2020/curso107_mod1.js'
-			}
+		'74': {
+			name: "Curso Superior de Tecnologia em Sistemas de Telecomunica��es - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso74_mod1.js'
+				},
+			]
 		},
-		'Curso 108 - Engenharia Física': {
-			'AA - Ênfase em Optoeletrônica': {
-				arquivo: 'ano2020/curso108_mod1.js'
-			},
-			'AB - Ênfase em Produção Tecnológica': {
-				arquivo: 'ano2020/curso108_mod2.js'
-			}
+		'75': {
+			name: "Estudos Literários - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso75_mod1.js'
+				},
+			]
 		},
-		'Curso 109 - Administração': {
-			'': {
-				arquivo: 'ano2020/curso109_mod1.js'
-			}
+		'82': {
+			name: "Curso Superior de Tecnologia da Constru��o Civil - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso82_mod1.js'
+				},
+			]
 		},
-		'Curso 110 - Administração Pública': {
-			'': {
-				arquivo: 'ano2020/curso110_mod1.js'
-			}
+		'83': {
+			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso83_mod1.js'
+				},
+			]
 		},
-		'Curso 111 - Engenharia de Transportes': {
-			'': {
-				arquivo: 'ano2020/curso111_mod1.js'
-			}
+		'84': {
+			name: "Curso Superior de Tecnologia em Estradas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso84_mod1.js'
+				},
+			]
 		},
-		'Curso 200 - Programa de Formação Interdisciplinar Superior - ProFIS': {
-			'': {
-				arquivo: 'ano2020/curso200_mod1.js'
-			}
+		'85': {
+			name: "Curso Superior de Tecnologia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso85_mod1.js'
+				},
+			]
+		},
+		'86': {
+			name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso86_mod1.js'
+				},
+			]
+		},
+		'87': {
+			name: "Curso Superior de Tecnologia em Saneamento Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso87_mod1.js'
+				},
+			]
+		},
+		'88': {
+			name: "Engenharia de Telecomunicações - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso88_mod1.js'
+				},
+			]
+		},
+		'89': {
+			name: "Engenharia Ambiental - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso89_mod1.js'
+				},
+			]
+		},
+		'94': {
+			name: "Sistemas de Informação - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso94_mod1.js'
+				},
+			]
+		},
+		'100': {
+			name: "Ciências do Esporte - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso100_mod1.js'
+				},
+			]
+		},
+		'101': {
+			name: "Engenharia de Manufatura - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso101_mod1.js'
+				},
+			]
+		},
+		'102': {
+			name: "Engenharia de Produção - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso102_mod1.js'
+				},
+			]
+		},
+		'103': {
+			name: "Gest�o do Agroneg�cio - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso103_mod1.js'
+				},
+			]
+		},
+		'104': {
+			name: "Gest�o de Com�rcio Internacional - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso104_mod1.js'
+				},
+			]
+		},
+		'105': {
+			name: "Gest�o de Empresas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso105_mod1.js'
+				},
+			]
+		},
+		'106': {
+			name: "Gest�o de Pol�ticas P�blicas - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso106_mod1.js'
+				},
+			]
+		},
+		'107': {
+			name: "Nutrição - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso107_mod1.js'
+				},
+			]
+		},
+		'108': {
+			name: "Engenharia Física - Integral",
+			modality: [
+				{
+					name: 'AA - Ênfase em Optoeletrônica',
+					file: '2020/curso108_mod1.js'
+				},
+				{
+					name: 'AB - Ênfase em Produção Tecnológica',
+					file: '2020/curso108_mod2.js'
+				},
+			]
+		},
+		'109': {
+			name: "Administração - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso109_mod1.js'
+				},
+			]
+		},
+		'110': {
+			name: "Administração Pública - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso110_mod1.js'
+				},
+			]
+		},
+		'111': {
+			name: "Engenharia de Transportes - Noturno",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso111_mod1.js'
+				},
+			]
+		},
+		'200': {
+			name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
+			modality: [
+				{
+					name: '',
+					file: '2020/curso200_mod1.js'
+				},
+			]
 		}
 	}
-}
+};
+export default catalogueOptions;
