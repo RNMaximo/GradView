@@ -1,5 +1,6 @@
 const catalogue = {
 	totalCredits: 253,
+	maxCreditsSem: 30,
 	semesters: {
 		'sem-1': {
 			id: '1',
@@ -43,6 +44,14 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 24,
+			hasRestrictions: true,
+			subjects: ['AM030', 'EI001', 'EI002', 'EI003', 'EI004', 'FA001', 'FA002', 'FA006', 'FA016', 'FA017', 'FA018', 'FA019', 'FA020', 'FA021', 'FA024', 'FA026', 'FA028', 'FA030', 'FA031', 'FA032', 'FA033', 'FA041', 'FA042', 'FA043', 'FA044', 'FA048', 'FA050', 'FA051', 'FA052', 'FA054', 'FA055', 'FA056', 'FA057', 'FA058', 'FA059', 'FA060', 'FA061', 'FA062', 'FA063', 'FA066', 'FA067', 'FA068', 'FA069', 'FA073', 'FA074', 'FA075', 'FA076', 'FA080', 'FA081', 'FA082', 'FA083', 'FA084', 'FA085', 'FA088', 'FA090', 'FA091', 'FA093', 'FA094', 'FA095', 'FA097', 'FA099', 'FA102', 'FA103', 'FA104', 'FA105', 'FA106', 'FA107', 'FA108', 'FA109', 'FA110'],
+		},
+	},
+
 	subjects: {
 		'FA100': {
 			code: 'FA100',
@@ -51,7 +60,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D940D9'
+			color: '#D9C740',
+			obligatory: true
 		},
 		'FA173': {
 			code: 'FA173',
@@ -60,7 +70,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D973'
+			color: '#D9405B',
+			obligatory: true
 		},
 		'MA111': {
 			code: 'MA111',
@@ -69,7 +80,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#40D9A6'
+			color: '#D94076',
+			obligatory: true
 		},
 		'MA141': {
 			code: 'MA141',
@@ -78,7 +90,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#73D940'
+			color: '#406DD9',
+			obligatory: true
 		},
 		'MC102': {
 			code: 'MC102',
@@ -87,7 +100,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D9A640'
+			color: '#40BED9',
+			obligatory: true
 		},
 		'QG101': {
 			code: 'QG101',
@@ -96,7 +110,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9D940'
+			color: '#D940C7',
+			obligatory: true
 		},
 		'QG102': {
 			code: 'QG102',
@@ -105,7 +120,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#A6D940'
+			color: '#D99140',
+			obligatory: true
 		},
 		'BT330': {
 			code: 'BT330',
@@ -114,7 +130,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4040D9'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'F_128': {
 			code: 'F_128',
@@ -123,7 +140,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40A6D9'
+			color: '#49D940',
+			obligatory: true
 		},
 		'F_129': {
 			code: 'F_129',
@@ -132,7 +150,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D940'
+			color: '#64D940',
+			obligatory: true
 		},
 		'FA270': {
 			code: 'FA270',
@@ -141,7 +160,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94040'
+			color: '#7F40D9',
+			obligatory: true
 		},
 		'FA273': {
 			code: 'FA273',
@@ -150,7 +170,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['FA173'],
-			color: ''
+			color: '#D9405B',
+			obligatory: true
 		},
 		'MA211': {
 			code: 'MA211',
@@ -159,7 +180,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', 'MA141'],
-			color: ''
+			color: '#8D57A8',
+			obligatory: true
 		},
 		'ME414': {
 			code: 'ME414',
@@ -168,7 +190,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111'],
-			color: ''
+			color: '#D94076',
+			obligatory: true
 		},
 		'EM306': {
 			code: 'EM306',
@@ -177,7 +200,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MA141'],
-			color: ''
+			color: '#8D57A8',
+			obligatory: true
 		},
 		'F_328': {
 			code: 'F_328',
@@ -186,7 +210,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA111', 'MA141'],
-			color: ''
+			color: '#768285',
+			obligatory: true
 		},
 		'F_329': {
 			code: 'F_329',
@@ -195,7 +220,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_129', 'MA111'],
-			color: ''
+			color: '#9F8D5B',
+			obligatory: true
 		},
 		'FA370': {
 			code: 'FA370',
@@ -204,7 +230,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['F_128', 'F_129'],
-			color: ''
+			color: '#57D940',
+			obligatory: true
 		},
 		'FA373': {
 			code: 'FA373',
@@ -213,7 +240,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['QG101'],
-			color: ''
+			color: '#D940C7',
+			obligatory: true
 		},
 		'FA374': {
 			code: 'FA374',
@@ -222,7 +250,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA141', 'MA211', 'MC102'],
-			color: ''
+			color: '#5A81C9',
+			obligatory: true
 		},
 		'FA379': {
 			code: 'FA379',
@@ -231,7 +260,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_128'],
-			color: ''
+			color: '#49D940',
+			obligatory: true
 		},
 		'MA311': {
 			code: 'MA311',
@@ -240,7 +270,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA211'],
-			color: ''
+			color: '#8D57A8',
+			obligatory: true
 		},
 		'CV323': {
 			code: 'CV323',
@@ -249,7 +280,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:2, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['FA173'],
-			color: ''
+			color: '#D9405B',
+			obligatory: true
 		},
 		'EM406': {
 			code: 'EM406',
@@ -258,7 +290,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM306', 'MA211'],
-			color: ''
+			color: '#8D57A8',
+			obligatory: true
 		},
 		'FA425': {
 			code: 'FA425',
@@ -267,7 +300,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_329', 'FA370'],
-			color: ''
+			color: '#7BB34E',
+			obligatory: true
 		},
 		'FA470': {
 			code: 'FA470',
@@ -276,7 +310,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['EM306', 'F_128', 'FA374'],
-			color: ''
+			color: '#659090',
+			obligatory: true
 		},
 		'FA473': {
 			code: 'FA473',
@@ -285,7 +320,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:1, L:0, O:0, D:0, HS:5, SL:5, C:5},
 			requisitos: ['BT330'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'FA474': {
 			code: 'FA474',
@@ -294,7 +330,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_329', 'MA311'],
-			color: ''
+			color: '#967282',
+			obligatory: true
 		},
 		'FA479': {
 			code: 'FA479',
@@ -303,7 +340,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['FA379', 'QG101'],
-			color: ''
+			color: '#918D84',
+			obligatory: true
 		},
 		'FA481': {
 			code: 'FA481',
@@ -312,7 +350,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['FA373'],
-			color: ''
+			color: '#D940C7',
+			obligatory: true
 		},
 		'EM506': {
 			code: 'EM506',
@@ -321,7 +360,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EM406'],
-			color: ''
+			color: '#8D57A8',
+			obligatory: true
 		},
 		'FA503': {
 			code: 'FA503',
@@ -330,7 +370,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['BT330'],
-			color: ''
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'FA520': {
 			code: 'FA520',
@@ -339,7 +380,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940A6'
+			color: '#D94040',
+			obligatory: true
 		},
 		'FA564': {
 			code: 'FA564',
@@ -348,7 +390,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['FA481'],
-			color: ''
+			color: '#D940C7',
+			obligatory: true
 		},
 		'FA573': {
 			code: 'FA573',
@@ -357,7 +400,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['FA425'],
-			color: ''
+			color: '#7BB34E',
+			obligatory: true
 		},
 		'FA576': {
 			code: 'FA576',
@@ -366,7 +410,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM406'],
-			color: ''
+			color: '#8D57A8',
+			obligatory: true
 		},
 		'FA577': {
 			code: 'FA577',
@@ -375,7 +420,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['FA425'],
-			color: ''
+			color: '#7BB34E',
+			obligatory: true
 		},
 		'FA585': {
 			code: 'FA585',
@@ -384,7 +430,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM406'],
-			color: ''
+			color: '#8D57A8',
+			obligatory: true
 		},
 		'FA586': {
 			code: 'FA586',
@@ -393,7 +440,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#7340D9'
+			color: '#9AD940',
+			obligatory: true
 		},
 		'FA983': {
 			code: 'FA983',
@@ -402,7 +450,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['FA481'],
-			color: ''
+			color: '#D940C7',
+			obligatory: true
 		},
 		'ET016': {
 			code: 'ET016',
@@ -411,7 +460,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_328'],
-			color: ''
+			color: '#768285',
+			obligatory: true
 		},
 		'FA622': {
 			code: 'FA622',
@@ -420,7 +470,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['FA481', 'FA503'],
-			color: ''
+			color: '#8D8DD0',
+			obligatory: true
 		},
 		'FA665': {
 			code: 'FA665',
@@ -429,7 +480,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['CV323', 'FA481'],
-			color: ''
+			color: '#D94091',
+			obligatory: true
 		},
 		'FA670': {
 			code: 'FA670',
@@ -438,7 +490,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM506', 'FA173', 'FA585'],
-			color: ''
+			color: '#A64F8E',
+			obligatory: true
 		},
 		'FA673': {
 			code: 'FA673',
@@ -447,7 +500,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['FA370', 'FA374', 'FA479'],
-			color: ''
+			color: '#6BA284',
+			obligatory: true
 		},
 		'FA676': {
 			code: 'FA676',
@@ -456,7 +510,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:1, O:0, D:0, HS:5, SL:5, C:5},
 			requisitos: ['FA370'],
-			color: ''
+			color: '#57D940',
+			obligatory: true
 		},
 		'FA679': {
 			code: 'FA679',
@@ -465,7 +520,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['FA577'],
-			color: ''
+			color: '#7BB34E',
+			obligatory: true
 		},
 		'FA680': {
 			code: 'FA680',
@@ -474,7 +530,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['FA564', 'FA573'],
-			color: ''
+			color: '#AA7A8B',
+			obligatory: true
 		},
 		'FA682': {
 			code: 'FA682',
@@ -483,7 +540,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EM506', 'FA273', 'FA585', 'FA586'],
-			color: ''
+			color: '#A3727B',
+			obligatory: true
 		},
 		'FA720': {
 			code: 'FA720',
@@ -492,7 +550,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['FA520'],
-			color: ''
+			color: '#D94040',
+			obligatory: true
 		},
 		'FA721': {
 			code: 'FA721',
@@ -501,7 +560,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA450'],
-			color: '#4073D9'
+			color: '#4940D9',
+			obligatory: true
 		},
 		'FA733': {
 			code: 'FA733',
@@ -510,7 +570,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['QG101'],
-			color: ''
+			color: '#D940C7',
+			obligatory: true
 		},
 		'FA770': {
 			code: 'FA770',
@@ -519,7 +580,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['FA670'],
-			color: ''
+			color: '#A64F8E',
+			obligatory: true
 		},
 		'FA778': {
 			code: 'FA778',
@@ -528,7 +590,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['FA473', 'FA586'],
-			color: ''
+			color: '#6DD98D',
+			obligatory: true
 		},
 		'FA779': {
 			code: 'FA779',
@@ -537,7 +600,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['FA673', 'FA679'],
-			color: ''
+			color: '#73AB69',
+			obligatory: true
 		},
 		'FA780': {
 			code: 'FA780',
@@ -546,7 +610,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ET016'],
-			color: ''
+			color: '#768285',
+			obligatory: true
 		},
 		'FA782': {
 			code: 'FA782',
@@ -555,7 +620,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['FA682'],
-			color: ''
+			color: '#A3727B',
+			obligatory: true
 		},
 		'FA786': {
 			code: 'FA786',
@@ -564,7 +630,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['FA622', 'FA676'],
-			color: ''
+			color: '#72B388',
+			obligatory: true
 		},
 		'FA870': {
 			code: 'FA870',
@@ -573,7 +640,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['FA682'],
-			color: ''
+			color: '#A3727B',
+			obligatory: true
 		},
 		'FA873': {
 			code: 'FA873',
@@ -582,7 +650,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['FA673', 'FA778'],
-			color: ''
+			color: '#6CBE89',
+			obligatory: true
 		},
 		'FA874': {
 			code: 'FA874',
@@ -591,7 +660,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['FA733'],
-			color: ''
+			color: '#D940C7',
+			obligatory: true
 		},
 		'FA876': {
 			code: 'FA876',
@@ -600,7 +670,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['FA676'],
-			color: ''
+			color: '#57D940',
+			obligatory: true
 		},
 		'FA877': {
 			code: 'FA877',
@@ -609,7 +680,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['FA665'],
-			color: ''
+			color: '#D94091',
+			obligatory: true
 		},
 		'FA878': {
 			code: 'FA878',
@@ -618,7 +690,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:2, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['AA460'],
-			color: '#40D9D9'
+			color: '#B540D9',
+			obligatory: true
 		},
 		'FA879': {
 			code: 'FA879',
@@ -627,7 +700,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['FA577', 'FA673'],
-			color: ''
+			color: '#73AB69',
+			obligatory: true
 		},
 		'FA880': {
 			code: 'FA880',
@@ -636,7 +710,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:1, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['FA470', 'FA573', 'FA576', 'FA577', 'FA770'],
-			color: ''
+			color: '#83867A',
+			obligatory: true
 		},
 		'FA070': {
 			code: 'FA070',
@@ -645,7 +720,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:10, D:0, HS:12, SL:0, C:12},
 			requisitos: ['AA200'],
-			color: '#A640D9'
+			color: '#D95B40',
+			obligatory: true
 		},
 		'FA972': {
 			code: 'FA972',
@@ -654,7 +730,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['FA676', 'FA786'],
-			color: ''
+			color: '#65C664',
+			obligatory: true
 		},
 		'FA979': {
 			code: 'FA979',
@@ -663,7 +740,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['FA879'],
-			color: ''
+			color: '#73AB69',
+			obligatory: true
 		},
 		'FA984': {
 			code: 'FA984',
@@ -672,7 +750,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
 			requisitos: ['AA200'],
-			color: '#D97340'
+			color: '#7FD940',
+			obligatory: true
 		},
 		'ELET09': {
 			code: 'ELET09',
@@ -681,7 +760,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'FA071': {
 			code: 'FA071',
@@ -690,7 +770,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['AA475'],
-			color: '#D94073'
+			color: '#40A3D9',
+			obligatory: true
 		},
 		'FA985': {
 			code: 'FA985',
@@ -699,7 +780,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:1, D:0, HS:2, SL:1, C:2},
 			requisitos: ['FA984'],
-			color: ''
+			color: '#7FD940',
+			obligatory: true
 		},
 		'ELET10': {
 			code: 'ELET10',
@@ -708,7 +790,708 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'AM030': {
+			code: 'AM030',
+			name: 'Técnicas e Organização de Apresentações em Público',
+			ementa: 'Técnicas de comunicação. Postura de voz e postura corporal na apresentação em público. Estruturação do discurso. Espaço e equipamentos auxiliares. Preparação de material auxiliar.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9BE',
+			obligatory: false
+		},
+		'EI001': {
+			code: 'EI001',
+			name: 'Integralização de Estudos',
+			ementa: 'Integralização de atividades curriculares desenvolvidas em outra Instituição de Ensino Superior, cujo aproveitamento deverá ser aprovado pela Comissão de Graduação da Unidade do aluno e o número de créditos XX definido pela Diretoria Acadêmica da Unicamp em função da documentação apresentada, podendo variar de XX=01 até XX=20.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:0, D:0, HS:1, SL:0, C:1},
+			requisitos: ['AA200'],
+			color: '#40D9A3',
+			obligatory: false
+		},
+		'EI002': {
+			code: 'EI002',
+			name: 'Integralização de Estudos',
+			ementa: 'Integralização de atividades curriculares desenvolvidas em outra Instituição de Ensino Superior, cujo aproveitamento deverá ser aprovado pela Comissão de Graduação da Unidade do aluno e o número de créditos XX definido pela Diretoria Acadêmica da Unicamp em função da documentação apresentada, podendo variar de XX=01 até XX=20.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:0, C:2},
+			requisitos: ['AA200'],
+			color: '#40D988',
+			obligatory: false
+		},
+		'EI003': {
+			code: 'EI003',
+			name: 'Integralização de Estudos',
+			ementa: 'Integralização de atividades curriculares desenvolvidas em outra Instituição de Ensino Superior, cujo aproveitamento deverá ser aprovado pela Comissão de Graduação da Unidade do aluno e o número de créditos XX definido pela Diretoria Acadêmica da Unicamp em função da documentação apresentada, podendo variar de XX=01 até XX=20.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['AA200'],
+			color: '#D9AC40',
+			obligatory: false
+		},
+		'EI004': {
+			code: 'EI004',
+			name: 'Integralização de Estudos',
+			ementa: 'Integralização de atividades curriculares desenvolvidas em outra Instituição de Ensino Superior, cujo aproveitamento deverá ser aprovado pela Comissão de Graduação da Unidade do aluno e o número de créditos XX definido pela Diretoria Acadêmica da Unicamp em função da documentação apresentada, podendo variar de XX=01 até XX=20.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#D040D9',
+			obligatory: false
+		},
+		'FA001': {
+			code: 'FA001',
+			name: 'Saneamento Rural',
+			ementa: 'Apresentação de fundamentos e tecnologias adequadas de tratamento de água para abastecimento e águas residuárias.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA874'],
+			color: '#D940C7',
+			obligatory: false
+		},
+		'FA002': {
+			code: 'FA002',
+			name: 'Engenharia de Irrigação',
+			ementa: 'Sistemas de irrigação pressurizados: caracterização de materiais e equipamentos. Planejamento e dimensionamento de sistemas e métodos de avaliação de campo.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: ['FA876'],
+			color: '#57D940',
+			obligatory: false
+		},
+		'FA006': {
+			code: 'FA006',
+			name: 'Projetos Especiais de Ambientes Controlados',
+			ementa: 'Determinação da carga térmica de estruturas para produção vegetal. Parâmetros e sistemas de condicionamento de ar. Ambientes totalmente controlados para a produção vegetal. Sistemas. Modelagem. Instrumentação. Sistemas Construtivos. Equipamentos. Viveiros e mudas. Olerícolas. Frutas. Flores e Plantas Ornamentais. Reflorestamento.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: ['FA873'],
+			color: '#6CBE89',
+			obligatory: false
+		},
+		'FA016': {
+			code: 'FA016',
+			name: 'Tecnologia de Produção de Rações',
+			ementa: 'Redução de tamanho. Métodos de classificação de partícula reduzida. Mistura: sólido-sólido e líquido-sólido. Extrusão. Peletização. Resfriamento. Armazenagem. Qualidade da matéria-prima e da ração.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA577'],
+			color: '#7BB34E',
+			obligatory: false
+		},
+		'FA017': {
+			code: 'FA017',
+			name: 'Tópicos Especiais em Tecnologia Pós-Colheita',
+			ementa: 'Estudo de alguns produtos agrícolas que apresentam especificidades na fase de pós-colheita. Aspectos da produção e da colheita que interferem na qualidade final. Características das operações de pós-colheita.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA577'],
+			color: '#7BB34E',
+			obligatory: false
+		},
+		'FA018': {
+			code: 'FA018',
+			name: 'Tecnologia de Sementes',
+			ementa: 'Importância da semente. Características gerais das sementes. Fatores que afetam a produção e o desempenho das sementes. Secagem. Beneficiamento. Armazenamento.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA879'],
+			color: '#73AB69',
+			obligatory: false
+		},
+		'FA019': {
+			code: 'FA019',
+			name: 'Teorias Avançadas do Processo de Secagem',
+			ementa: 'Relacionamento sólido-umidade. Estrutura sólida. Teorias de secagem. Equações fundamentais. Tratamento de dados.Métodos de secagem.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA879'],
+			color: '#73AB69',
+			obligatory: false
+		},
+		'FA020': {
+			code: 'FA020',
+			name: 'Propriedades de Transferência',
+			ementa: 'Importância dos mecanismos de transporte. Métodos de determinação. Equações empregadas. Interpretação dos valores obtidos.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA577', 'FA673'],
+			color: '#73AB69',
+			obligatory: false
+		},
+		'FA021': {
+			code: 'FA021',
+			name: 'Gerenciamento de Recursos Hídricos',
+			ementa: 'Caracterização geral dos problemas de recursos hídricos. Diagnósticos da disponibilidade de recursos hídricos. Diagnóstico de necessidades de recursos hídricos, caracterização socioeconômica. Balanço de recursos hídricos e política de desenvolvimento socioeconômico. Gestão de recursos hídricos em outros países e no Brasil.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA786'],
+			color: '#72B388',
+			obligatory: false
+		},
+		'FA024': {
+			code: 'FA024',
+			name: 'Projeto Estrutural de Máquinas Agrícolas',
+			ementa: 'Revisão da teoria da elasticidade. Introdução ao método dos elementos finitos. Programas computacionais de elementos finitos.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA682'],
+			color: '#A3727B',
+			obligatory: false
+		},
+		'FA026': {
+			code: 'FA026',
+			name: 'Ergonomia Aplicada à Engenharia Agrícola',
+			ementa: 'Introdução à Ergonomia. Aspectos históricos e metodológicos. Fatores Laborais Ambientais: avaliação, mensuração, normas. Antropometria. Biomecânica. Dimensionamento do espaço de trabalho. Ruído e Vibrações. Temperatura. Iluminação. Cognição: Informação e Controle.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA440'],
+			color: '#40D952',
+			obligatory: false
+		},
+		'FA028': {
+			code: 'FA028',
+			name: 'Avaliação do Desempenho de Máquinas Agrícolas e Qualidade de Operação',
+			ementa: 'Metodologia de ensaio de máquinas agrícolas: tratores, máquinas de preparo do solo, plantio, adubação, pulverização e colheita. Dimensionamento e controle operacional de máquinas agrícolas.',
+			semestre: 1,
+			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['FA880'],
+			color: '#83867A',
+			obligatory: false
+		},
+		'FA030': {
+			code: 'FA030',
+			name: 'Estradas Vicinais',
+			ementa: 'Escolha do traçado de uma estrada vicinal. Projeto geométrico. Drenagem de Estradas. Pavimentos econômicos.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA564'],
+			color: '#D940C7',
+			obligatory: false
+		},
+		'FA031': {
+			code: 'FA031',
+			name: 'Fontes Alternativas de Energia',
+			ementa: 'Conceitos de geração. Distribuição e utilização de fontes alternativas de energia para processos e sistemas no meio rural. Avaliação termoeconômica de energia solar, eólica, hídrica e de biomassa.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: ['FA673', 'FA780'],
+			color: '#719285',
+			obligatory: false
+		},
+		'FA032': {
+			code: 'FA032',
+			name: 'Estruturas Metálicas',
+			ementa: 'Dimensionamento de peças metálicas tracionadas e comprimidas. Ligações de peças metálicas. Vigas metálicas. Projeto de uma estrutura metálica de cobertura.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA586', 'FA682'],
+			color: '#9FA65E',
+			obligatory: false
+		},
+		'FA033': {
+			code: 'FA033',
+			name: 'Pesquisa Operacional Aplicada à Agricultura',
+			ementa: 'Programação linear, otimização em redes e simulação. Estudo das técnicas e estudos de casos aplicados à agricultura.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA374'],
+			color: '#5A81C9',
+			obligatory: false
+		},
+		'FA041': {
+			code: 'FA041',
+			name: 'Aproveitamentos Hidroenergéticos no Meio Rural: Micro, Mini e Pequenas Usinas',
+			ementa: 'Introdução. Classificação dos aproveitamentos hidroenergéticos. Fluxograma de atividades para estudos e projetos. Estudos topográficos, hidrográficos, socioeconômicos e hidroenergéticos. Projeto, aspectos construtivos, desenhos do arranjo geral e detalhes. Custos: metodologia, composição e cálculos. Avaliação socioeconômica. Legislação.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA564', 'FA676', 'FA780'],
+			color: '#8D8984',
+			obligatory: false
+		},
+		'FA042': {
+			code: 'FA042',
+			name: 'Hidráulica Básica Aplicada à Máquinas Agrícolas',
+			ementa: 'Teoria básica em hidráulica aplicada à máquinas agrícolas. Teoria essencial para executar ou analisar projetos e operar, realizar manutenção e diagnosticar comportamentos de circuitos hidráulicos utilizados em máquinas agrícolas. Projeto de circuitos hidráulicos com dimensionamento e seleção de seus componentes.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200', 'FA370', 'FA573'],
+			color: '#69C647',
+			obligatory: false
+		},
+		'FA043': {
+			code: 'FA043',
+			name: 'Qualidade e Segurança de Frutas e Hortaliças Frescas',
+			ementa: 'Fundamentos de gestão de qualidade e segurança para frutas e hortaliças frescas. Selos e certificados. Cadeia de suprimentos para a obtenção de alimentos seguros. Conceitos de sistema de análise de perigos e de pontos de controle críticos. Guia de gestão para preparação e apresentação de frutas e hortaliças ao mercado. Legislação pertinente a produtos vegetais alimentícios.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA679'],
+			color: '#7BB34E',
+			obligatory: false
+		},
+		'FA044': {
+			code: 'FA044',
+			name: 'Processamento Mínimo de Frutas e Hortaliças',
+			ementa: 'Operações de processamento mínimo de frutas e hortaliças. Fatores de qualidade para produtos minimamente processados. Biologia e fisiologia do produto minimamente processado. Alterações decorrentes do processamento mínimo. Controle de temperatura. Microbiologia. Sanitização e desinfecção. Atmosfera modificada e embalagem. Considerações sobre projeto para unidade processadora.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA679'],
+			color: '#7BB34E',
+			obligatory: false
+		},
+		'FA048': {
+			code: 'FA048',
+			name: 'Qualidade do Ar em Ambientes para Produção Intensiva de Animais',
+			ementa: 'Introdução e formas de alojamento para animais (avicultura, suinocultura e bovinocultura de leite em tropical). Introdução à microbiologia. Fungos toxicogênicos. Micotoxinas. Doenças relacionadas à presença de microrganismos no ar. Análise e avaliação de poluentes aéreos. Instrumentação para medidas e análise de gases e microrganismos.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA778'],
+			color: '#6DD98D',
+			obligatory: false
+		},
+		'FA050': {
+			code: 'FA050',
+			name: 'Introdução à Administração de Empresas do Agronegócio',
+			ementa: 'Administração, organização e administrador. Breve história da administração. As funções administrativas: planejamento, organização, controle e direção. Planejamento: tipos, etapas e níveis. Organização: tipos de estrutura organizacional, hierarquia e coordenação. Direção: sistemas administrativos. Controle: tipos de controle, avaliação de desempenho. Estudo de casos de empresas ligadas ao agronegócio.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA520'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'FA051': {
+			code: 'FA051',
+			name: 'Gestão Ambiental no Agronegócio',
+			ementa: 'Agronegócio e meio ambiente: Sistemas de gestão ambiental públicos e privados. Legislação ambiental. Código Florestal. Licenciamento ambiental: EIA/RIMA, Marketing ambiental. Certificação ambiental.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA520'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'FA052': {
+			code: 'FA052',
+			name: 'Projeto e Desenvolvimento de Embalagens para Produtos Agrícolas',
+			ementa: 'Embalagens para produtos hortícolas. Mercado. Normas vigentes. Metodologia do projeto de embalagens. Custo. Materiais. Dimensionamento geométrico, estrutural e ergonômico. Avaliação do desempenho. Embalagens e a cadeia do frio. Critérios de desempenho térmico. Projeto de embalagens.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA173', 'FA673', 'FA679', 'FA576', 'FA577'],
+			color: '#8E866D',
+			obligatory: false
+		},
+		'FA054': {
+			code: 'FA054',
+			name: 'Geotecnologias II',
+			ementa: 'Aplicações avançadas de sensoriamento remoto e sistemas de informações geográficas. Monitoramento de áreas agrícolas. Aplicações ambientais. Integração e disponibilização de dados.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA665'],
+			color: '#D94091',
+			obligatory: false
+		},
+		'FA055': {
+			code: 'FA055',
+			name: 'Qualidade da Água em Bacias Hidrográficas',
+			ementa: 'A ocorrência da água na natureza. Usos da água. Características físicas, químicas e biológicas. Principais alterações antropogênicas da qualidade da água. Movimento dos contaminantes no meio ambiente. Poluição por cargas difusas. Qualidade da água em rios: o processo de autodepuração. Monitoramento da qualidade da água.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA786'],
+			color: '#72B388',
+			obligatory: false
+		},
+		'FA056': {
+			code: 'FA056',
+			name: 'Modelagem Hidrológica',
+			ementa: 'Simulação no gerenciamento de recursos hídricos. Simulação dos processos físicos do ciclo hidrológico. Modelos chuva-vazão. Estudo de casos.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA786'],
+			color: '#72B388',
+			obligatory: false
+		},
+		'FA057': {
+			code: 'FA057',
+			name: 'Limnologia - Dinâmica da Água em Reservatórios',
+			ementa: 'Dispersão de poluentes em reservatórios. Dinâmica de reservatórios. Processo de eutrofização dos lagos e sua avaliação. Dinâmica da qualidade de água reservatórios. Poluição por cargas difusas. Influência dos defensivos agrícolas nos lagos. Monitoramento da qualidade da água.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA786'],
+			color: '#72B388',
+			obligatory: false
+		},
+		'FA058': {
+			code: 'FA058',
+			name: 'Instalações Hidráulicas em Edificações Rurais',
+			ementa: 'Instalação de água fria. Instalação de água quente. Tipos de aquecedores. Instalação de águas pluviais. Aproveitamento de águas pluviais. Instalação de esgoto sanitário. Introdução ao reuso de esgoto. Projetos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA676'],
+			color: '#57D940',
+			obligatory: false
+		},
+		'FA059': {
+			code: 'FA059',
+			name: 'Práticas de Hidráulica Aplicadas à Engenharia',
+			ementa: 'Introdução aos princípios básicos de medidas. Medidores de pressão. Medidores de vazão. Experiência de Reynolds. Demonstração do Teorema de Bernoulli. Perda de carga distribuída e localizada. Curva característica de bombas. Escoamento em superfície livre. Determinação de energia específica em canais. Cálculo de ressalto hidráulico. Curva de remanso. Métodos de injeção de produtos químicos.',
+			semestre: 1,
+			vector: {T:0, P:1, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA676'],
+			color: '#57D940',
+			obligatory: false
+		},
+		'FA060': {
+			code: 'FA060',
+			name: 'Desenvolvimento Rural Sustentável',
+			ementa: 'Conceitos e teorias de desenvolvimento. O desenvolvimento brasileiro e suas implicações socioambientais. O desafio do desenvolvimento autossustentado. Agricultura sustentada.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA520'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'FA061': {
+			code: 'FA061',
+			name: 'Agroecologia e Extensão Rural',
+			ementa: 'Conceitos em agroecologia. Processos de transição agroecológica. Implantação e manejo agroecológico. Manejo vegetal e animal de bens ecológicos. Extensão rural no Brasil. Tecnologia social. Métodos participativos para transição agroecológica.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA520'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'FA062': {
+			code: 'FA062',
+			name: 'Sistemas de Produção na Agricultura Familiar',
+			ementa: 'Campesinato e agricultura familiar. A discussão atual sobre a agricultura familiar. A abordagem sistêmica e sua aplicação na agricultura familiar. Políticas públicas para agricultura familiar.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA520', 'FA720'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'FA063': {
+			code: 'FA063',
+			name: 'Técnicas Construtivas',
+			ementa: 'Introdução e organização do canteiro. Equipamentos. Fundações. Alvenarias. Concretagem. Revestimentos de paredes e pisos. Esquadrias. Coberturas. Vidros. Pintura. Limpeza e Manutenção. Patologia das construções.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA586'],
+			color: '#9AD940',
+			obligatory: false
+		},
+		'FA066': {
+			code: 'FA066',
+			name: 'Avaliação de Terras para Fins Agrícolas',
+			ementa: 'Planejamento do uso das terras para fins agrícolas. Levantamento e Interpretação de levantamento de solos para fins agrícolas. Conceitos básicos em avaliação de terras. Necessidades de dados em avaliação de terras. Metodologia FAO de avaliação da aptidão agrícola. Sistema de avaliação da aptidão agrícola das terras (Brasil). Classificação da capacidade da terra. Aplicações. Estudos de caso.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA665'],
+			color: '#D94091',
+			obligatory: false
+		},
+		'FA067': {
+			code: 'FA067',
+			name: 'Fertilidade do Solo e Adubação',
+			ementa: 'Fertilidade de solos no Brasil. Princípios e conceitos de fertilidade do solo. Avaliação da fertilidade do solo. Amostragem do solo para fins de recomendação de adubação e calagem. Análises de solos e sua interpretação. Acidez e calagem. Macro e micronutrientes. Matéria orgânica. Recomendações de adubação e calagem. Adubação foliar.',
+			semestre: 1,
+			vector: {T:0, P:1, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA481'],
+			color: '#D940C7',
+			obligatory: false
+		},
+		'FA068': {
+			code: 'FA068',
+			name: 'Erosão Acelerada do Solo e seu Controle',
+			ementa: 'Erosão geológica e erosão acelerada do solo. Agentes e tipos de erosão. Erosão hídrica. Métodos de estimativa de erosão hídrica. Equação universal de perdas de solo. Tolerância de perdas de solo. Práticas de controle da erosão do solo. Aspectos da legislação em conservação do solo e da água.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA665', 'FA983'],
+			color: '#D940AC',
+			obligatory: false
+		},
+		'FA069': {
+			code: 'FA069',
+			name: 'Organização e Análise Ergonômica do Trabalho',
+			ementa: 'Trabalho e Organizações. Funções Administrativas. Organização do Trabalho. Administração Científica do Trabalho. Organizações no Mundo Contemporâneo. Balanced Theory of Job Design. Sistemas de Trabalho. Ergonomia: Método e Técnica. Demanda, Tarefa e Atividade. Análise Ergonômica do Trabalho.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA440'],
+			color: '#B5D940',
+			obligatory: false
+		},
+		'FA073': {
+			code: 'FA073',
+			name: 'Interação Mecânica Máquina-Planta',
+			ementa: 'Estrutura do material vegetal. Ensaios mecânicos em órgãos vegetais. Desempenho de qualidade no corte. Cilindros destacadores. Ruptura e danos causados por vibração. Efeitos viscoelásticos. Deformação específica limite. Avaliação temporal de firmeza. Força de destacamento. Medidas de qualidade através de recuperação elástica.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA880'],
+			color: '#83867A',
+			obligatory: false
+		},
+		'FA074': {
+			code: 'FA074',
+			name: 'Tecnologia em Agricultura de Precisão',
+			ementa: 'O conceito da agricultura de precisão. Estado da arte das tecnologias em agricultura de precisão. Monitoramento da produtividade das culturas e da variabilidade espacial de atributos de solo e planta. Sistemas de posicionamento global por satélites e sistemas de direcionamento de máquinas agrícolas. Aplicação localizada de insumos em taxas variáveis e tomada de decisões gerenciais.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA473'],
+			color: '#40D9D9',
+			obligatory: false
+		},
+		'FA075': {
+			code: 'FA075',
+			name: 'Teoria de Controle Aplicada',
+			ementa: 'Revisão de modelos matemáticos de sistemas físicos, utilizando Transformadas de Laplace e Funções de transferência, tempo morto e linearização. Projeto e análise de sistemas de controle, controlador tipo Liga/Desliga, controlador tipo PID. Implementação de sistemas de controle em bancadas didáticas.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA474'],
+			color: '#967282',
+			obligatory: false
+		},
+		'FA076': {
+			code: 'FA076',
+			name: 'Automação de Processos',
+			ementa: 'Automação de processos contínuos e discretos. Conceito de sistemas digitais; Sistemas numéricos; Álgebra booleana; Funções e portas lógicas; Circuitos combinacionais; Circuitos sequenciais; Operações e circuitos aritméticos; Lógica programável; dispositivos de lógica programável; Simulação de sistemas de automação utilizando ferramentas de software.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA474'],
+			color: '#967282',
+			obligatory: false
+		},
+		'FA080': {
+			code: 'FA080',
+			name: 'Desenho Aplicado a Projeto de Máquinas Agrícolas',
+			ementa: 'Desenhos de elementos de máquinas (sistemas de transmissão, mancais, conexões, etc.) parametrizados utilizando recursos assistidos por computador. Desenho em conjunto, detalhamento de conjunto. Montagem e animação.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA173'],
+			color: '#D9405B',
+			obligatory: false
+		},
+		'FA081': {
+			code: 'FA081',
+			name: 'Mecanização Agrícola Aplicada a Culturas Comerciais',
+			ementa: 'Tratores agrícolas. Máquinas e implementos para preparo de solo. Pulverizadores: máquinas para semeadura, adubação, cultivo e colheita para as culturas do amendoim, arroz, café, cana-de-açúcar, feijão, laranja, milho e soja.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA983'],
+			color: '#D940C7',
+			obligatory: false
+		},
+		'FA082': {
+			code: 'FA082',
+			name: 'Estratégia e Gestão de Empresas Agropecuárias',
+			ementa: 'O atual contexto das empresas agropecuárias. Estruturação do planejamento estratégico nas empresas agropecuárias. Aspectos organizacionais das empresas agropecuárias. Processo gerencial nas empresas agropecuárias. Controle e avaliação de desempenho nas empresas agropecuárias.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA720', 'FA721'],
+			color: '#91408D',
+			obligatory: false
+		},
+		'FA083': {
+			code: 'FA083',
+			name: 'Gestão de Processos no Agronegócio',
+			ementa: 'Gestão por processos. Processos. Ferramentas para gestão de processos (IDEFO, PDCA, QFD, BSC, ABC).',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4052D9',
+			obligatory: false
+		},
+		'FA084': {
+			code: 'FA084',
+			name: 'Introdução à Mineração de Dados: Conceitos e Aplicações na Agricultura',
+			ementa: 'Processo de Descoberta de Conhecimento em Banco de Dados (KDD): Pré-Processamento (Preparação) dos Dados, Mineração (Técnicas) dos Dados e Pós-Processamento (Avaliação) do Conhecimento.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['ME414'],
+			color: '#D94076',
+			obligatory: false
+		},
+		'FA085': {
+			code: 'FA085',
+			name: 'Zootecnia de Precisão',
+			ementa: 'Introdução ao uso de processos eletrônicos de coleta e administração de informações relativas a produção animal (avicultura, suinocultura de leite em clima tropical). Uso de identificação eletrônica para rastreabilidade e estudo do comportamento do animal. Uso de modelagens para extração de conhecimento, modelos preditivos e simulações de sistemas de climatização na produção animal. Aplicações nas diversas cadeias de produção de carne, leite e ovos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA473'],
+			color: '#40D9D9',
+			obligatory: false
+		},
+		'FA088': {
+			code: 'FA088',
+			name: 'Gestão de Responsabilidade Social e Sustentabilidade no Agronegócio',
+			ementa: 'Responsabilidade social e sustentabilidade. Gestão de RSC. Estudos de caso de RSC no agronegócio.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4088D9',
+			obligatory: false
+		},
+		'FA090': {
+			code: 'FA090',
+			name: 'Comunicação e Tecnologia Rural',
+			ementa: 'Comunicação e desenvolvimento rural. Meios de comunicação e barreiras. Comunicação no meio rural. Mudança tecnológica. Canais e agentes da mudança tecnológica. Inovador e Inovação. Inovação na produção agropecuária e na unidade produtiva rural. Tecnologia Social, Comunicação de inovações e publicações.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA071'],
+			color: '#40A3D9',
+			obligatory: false
+		},
+		'FA091': {
+			code: 'FA091',
+			name: 'Marketing Rural',
+			ementa: 'Conceitos básicos de gestão de marketing. Estudos e Análise de mercados. Segmentação e mercado alvo. Diferenciação e posicionamento. Análise da concorrência. Canais de marketing. Previsão e Dimensionamento da Demanda. Planejamento estratégico de marketing. Marketing de produtos agropecuários e agroindustriais. Marketing e responsabilidade social.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA520', 'FA720'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'FA093': {
+			code: 'FA093',
+			name: 'Introdução ao Mercado de Capitais e de Commodities Agrícolas',
+			ementa: 'Noções de mercado de ações, a termo, de opções, futuro, de ouro, de derivativos, de opções e mercado de commodities agrícolas. Funções e estruturas. Aspectos positivos e negativos para o <em>hedger</em> e para o especulador, do ponto de vista do mercado e da política econômica do Governo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA720'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'FA094': {
+			code: 'FA094',
+			name: 'Segurança do Trabalho Rural',
+			ementa: 'Introdução à engenharia de segurança do trabalho. Higiene do trabalho. Fatores de risco: tipificação e avaliação. Normas. Saúde ocupacional rural. Acidentes de trabalho no meio rural. Riscos no emprego de máquinas, veículos, implementos, ferramentas agrícola e na aplicação de agrotóxicos. NR 31: aplicação e fiscalização. Prevenção de incêndios florestais.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA440'],
+			color: '#D0D940',
+			obligatory: false
+		},
+		'FA095': {
+			code: 'FA095',
+			name: 'Gestão de Sistemas Integrados na Agropecuária',
+			ementa: 'Caraterização dos sistemas integrados na agropecuária. Bases tecnológicas para implantação de sistemas integrados. Planejamento de sistemas integrados. Métodos de gestão aplicados aos sistemas integrados. Aspectos econômicos dos sistemas integrados. Avaliação de impacto ambiental e social nos sistemas integrados. Controles e sustentabilidade nos sistemas integrados. Estudos de caso Integração Lavoura-Pecuária-Floresta (ILPF).',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA721', 'FA877'],
+			color: '#9140B5',
+			obligatory: false
+		},
+		'FA097': {
+			code: 'FA097',
+			name: 'Biotecnologia I: Fundamentos',
+			ementa: 'Introdução. Biomoléculas. Metabolismo. Microrganismos e meios de cultura. Fundamentos de cinética enzimática e de processos fermentativos. Modelagem matemática. Biorreatores.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#40D96D',
+			obligatory: false
+		},
+		'FA099': {
+			code: 'FA099',
+			name: 'Internet das Coisas na Agricultura',
+			ementa: 'Introdução aos elementos básicos de aplicações de Internet das Coisas: sensores, meios de comunicação, atuadores, acesso à Internet e tecnologias auxiliares (nuvem, ciência dos dados, big data, etc.). Aplicações na produção agroindustrial.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA440'],
+			color: '#D97640',
+			obligatory: false
+		},
+		'FA102': {
+			code: 'FA102',
+			name: 'Laboratório de Agricultura de Precisão',
+			ementa: 'Análise e tratamento de dados georreferenciados. Interpolação de dados e construção de mapas temáticos. Sistema de Informação Geográfica. Geração de recomendações de intervenções localizadas e em taxas variáveis.',
+			semestre: 1,
+			vector: {T:0, P:1, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#D94091',
+			obligatory: false
+		},
+		'FA103': {
+			code: 'FA103',
+			name: 'Análise de Imagens Aplicada a Produtos Agrícolas e Alimentos',
+			ementa: 'Princípios de pré-processamento e análise de imagens digitais e hiperespectrais, métodos de segmentação binária e morfológica, possibilitando a caracterização de parâmetros geométricos; introdução à espectroscopia no infravermelho próximo, métodos de análise multivariada aplicados. Processamento de imagens coloridas. Biospeckle: princípios físicos, equipamentos e processamento de imagens.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['MC102'],
+			color: '#40BED9',
+			obligatory: false
+		},
+		'FA104': {
+			code: 'FA104',
+			name: 'Cartografia e Sistemas de Informações Geográficas Aplicadas',
+			ementa: 'Conceitos de cartografia digital. Projeções cartográficas. Introdução ao GNSS (Global Navigation Satellite System). Espacialização de dados. Interpolação digital. Geoestatística. Aplicações em agricultura.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA665'],
+			color: '#D94091',
+			obligatory: false
+		},
+		'FA105': {
+			code: 'FA105',
+			name: 'Patologias e Proteção da Madeira',
+			ementa: 'Aspectos históricos da conservação da madeira; Definição e conceitos básicos; Durabilidade; Madeira e umidade; Agentes destrutivos abióticos e bióticos; Inspeção; Diagnóstico; Características da madeira em relação a sua proteção; Preservativos: composição, eficácia e classificação dos produtos preservativos; Sistemas e procedimentos de conservação; Escolha de proteção preventiva; Tratamentos curativos; Controle de qualidade dos preservativos e sistemas de tratamento da madeira; Problemática ambiental.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D940AC',
+			obligatory: false
+		},
+		'FA106': {
+			code: 'FA106',
+			name: 'Práticas Laboratoriais para Pesquisa Ambiental',
+			ementa: 'Introdução. Boas práticas e segurança em laboratório. Amostragem. Noções de química analítica qualitativa. Noções de química analítica quantitativa. Princípios de técnicas analíticas instrumentais. Ensaios físicos. Técnicas analíticas aplicadas em águas residuárias e de abastecimento. Análise de resíduos sólidos. Análise de gases. Validação de métodos analíticos.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['AA430'],
+			color: '#9A40D9',
+			obligatory: false
+		},
+		'FA107': {
+			code: 'FA107',
+			name: 'Comercialização Agrícola',
+			ementa: 'Introdução à comercialização de produtos agrícolas e agroindustriais. Aspectos de oferta e demanda. Funções de comercialização Métodos de análise de comercialização. Mecanismos de comercialização: transações em mercados spot, a termos, contratos futuros, contratos de longo prazo e integração vertical. Custos e margens de comercialização. Direcionadores de competitividade.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA520'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'FA108': {
+			code: 'FA108',
+			name: 'Logística Agroindustrial',
+			ementa: 'Introdução à logística agrícola e agroindustrial e conceitos relacionados. Nível de serviço. Caracterização dos sistemas de transporte: rodoviário, ferroviário, aquaviário e sistema portuário. Intermodalidade. Roteirização. Armazenagem, manuseio e acondicionamento de produtos. Estoques. Gestão, estratégia e planejamento logístico. Logística reversa aplicada ao segmento agroindustrial.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['FA473'],
+			color: '#40D9D9',
+			obligatory: false
+		},
+		'FA109': {
+			code: 'FA109',
+			name: 'Tópicos especiais em biotecnologia, agricultura e meio ambiente I',
+			ementa: 'Estudos de temas propostos sobre a aplicação da biotecnologia na agricultura e no meio ambiente. Processos anaeróbios. Compostagem Biofertirrigação. Nexo água-alimento-energia. Uso de biotecnologia com foco em práticas agrícolas sustentáveis em um contexto urbano e periurbano.',
+			semestre: 1,
+			vector: {T:1, P:0, L:0, O:1, D:0, HS:2, SL:1, C:2},
+			requisitos: ['AA200', 'AA430'],
+			color: '#6440D9',
+			obligatory: false
+		},
+		'FA110': {
+			code: 'FA110',
+			name: 'Tópicos especiais em biotecnologia, agricultura e meio ambiente II',
+			ementa: 'Estudos de temas propostos sobre a aplicação da biotecnologia na agricultura e no meio ambiente. Processos anaeróbios. Compostagem Biofertirrigação. Nexo água-alimento-energia. Uso de biotecnologia com foco em práticas agrícolas sustentáveis em um contexto urbano e periurbano.',
+			semestre: 1,
+			vector: {T:1, P:0, L:0, O:1, D:0, HS:2, SL:1, C:2},
+			requisitos: ['FA109'],
+			color: '#6440D9',
+			obligatory: false
 		}
 	}
 };

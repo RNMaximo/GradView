@@ -1,5 +1,6 @@
 const catalogue = {
 	totalCredits: 150,
+	maxCreditsSem: 32,
 	semesters: {
 		'sem-1': {
 			id: '1',
@@ -31,6 +32,24 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 20,
+			hasRestrictions: true,
+			subjects: ['EI---', 'SI901', 'SI902', 'SI903', 'SI904', 'SI905', 'SI906', 'SI909'],
+		},
+		'elet-2': {
+			credits: 6,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-3': {
+			credits: 12,
+			hasRestrictions: true,
+			subjects: ['SI912', 'SI913', 'SI917'],
+		},
+	},
+
 	subjects: {
 		'EB101': {
 			code: 'EB101',
@@ -39,7 +58,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D99C40'
+			color: '#D9D140',
+			obligatory: true
 		},
 		'SI100': {
 			code: 'SI100',
@@ -48,7 +68,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#BAD940'
+			color: '#D97040',
+			obligatory: true
 		},
 		'SI102': {
 			code: 'SI102',
@@ -57,7 +78,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9409C'
+			color: '#40D9C1',
+			obligatory: true
 		},
 		'TT106': {
 			code: 'TT106',
@@ -66,7 +88,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#5E40D9'
+			color: '#80D940',
+			obligatory: true
 		},
 		'TT350': {
 			code: 'TT350',
@@ -75,7 +98,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#407DD9'
+			color: '#B0D940',
+			obligatory: true
 		},
 		'SI200': {
 			code: 'SI200',
@@ -84,7 +108,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI100'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'SI202': {
 			code: 'SI202',
@@ -93,7 +118,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: ['SI100'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'SI305': {
 			code: 'SI305',
@@ -102,7 +128,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI100'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'ST008': {
 			code: 'ST008',
@@ -111,7 +138,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D97D'
+			color: '#B040D9',
+			obligatory: true
 		},
 		'ST266': {
 			code: 'ST266',
@@ -120,7 +148,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['SI100'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'TT304': {
 			code: 'TT304',
@@ -129,7 +158,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['TT106'],
-			color: ''
+			color: '#80D940',
+			obligatory: true
 		},
 		'EB102': {
 			code: 'EB102',
@@ -138,7 +168,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D94040'
+			color: '#8040D9',
+			obligatory: true
 		},
 		'SI300': {
 			code: 'SI300',
@@ -147,7 +178,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI100'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'SI304': {
 			code: 'SI304',
@@ -156,7 +188,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST266'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'SI404': {
 			code: 'SI404',
@@ -165,7 +198,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['ST266'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'ST567': {
 			code: 'ST567',
@@ -174,7 +208,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI100'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'SI201': {
 			code: 'SI201',
@@ -183,7 +218,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI100'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'SI400': {
 			code: 'SI400',
@@ -192,7 +228,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: ['SI300'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'SI401': {
 			code: 'SI401',
@@ -201,7 +238,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI300'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'ST096': {
 			code: 'ST096',
@@ -210,7 +248,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA435'],
-			color: '#BA40D9'
+			color: '#D94070',
+			obligatory: true
 		},
 		'ST767': {
 			code: 'ST767',
@@ -219,7 +258,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST567'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -228,7 +268,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'SI405': {
 			code: 'SI405',
@@ -237,7 +278,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI305'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'SI703': {
 			code: 'SI703',
@@ -246,7 +288,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['TT350'],
-			color: ''
+			color: '#B0D940',
+			obligatory: true
 		},
 		'SI704': {
 			code: 'SI704',
@@ -255,7 +298,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA450'],
-			color: '#40D9D9'
+			color: '#4090D9',
+			obligatory: true
 		},
 		'ST568': {
 			code: 'ST568',
@@ -264,7 +308,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['TT106'],
-			color: ''
+			color: '#80D940',
+			obligatory: true
 		},
 		'ST765': {
 			code: 'ST765',
@@ -273,7 +318,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EB102', 'SI201'],
-			color: ''
+			color: '#AD588D',
+			obligatory: true
 		},
 		'TT060': {
 			code: 'TT060',
@@ -282,7 +328,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST266'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -291,7 +338,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'SI010': {
 			code: 'SI010',
@@ -300,7 +348,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: ['SI201'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'SI700': {
 			code: 'SI700',
@@ -309,7 +358,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*SI201', 'SI400'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'SI800': {
 			code: 'SI800',
@@ -318,7 +368,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA450'],
-			color: '#5ED940'
+			color: '#40D990',
+			obligatory: true
 		},
 		'ST562': {
 			code: 'ST562',
@@ -327,7 +378,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['SI201'],
-			color: ''
+			color: '#D97040',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -336,7 +388,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -345,7 +398,118 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'EI---': {
+			code: 'EI---',
+			name: 'Qualquer Disciplina com codigo EI---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo EI---, onde o - indica uma letra ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#50D940',
+			obligatory: false
+		},
+		'SI901': {
+			code: 'SI901',
+			name: 'Iniciação Científica I',
+			ementa: 'Atividades de Iniciação Científica, desenvolvidas sob orientação de docente da Unicamp.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:9, D:0, HS:10, SL:0, C:10},
+			requisitos: ['AA200'],
+			color: '#40C1D9',
+			obligatory: false
+		},
+		'SI902': {
+			code: 'SI902',
+			name: 'Iniciação Científica II',
+			ementa: 'Atividades de Iniciação Científica, desenvolvidas sob orientação de docente da Unicamp.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:9, D:0, HS:10, SL:0, C:10},
+			requisitos: ['AA200'],
+			color: '#5040D9',
+			obligatory: false
+		},
+		'SI903': {
+			code: 'SI903',
+			name: 'Iniciação Tecnológica I',
+			ementa: 'Atividades de Iniciação Tecnológica, desenvolvidas sob orientação de docente da Unicamp.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:9, D:0, HS:10, SL:0, C:10},
+			requisitos: ['AA200'],
+			color: '#D940A0',
+			obligatory: false
+		},
+		'SI904': {
+			code: 'SI904',
+			name: 'Iniciação Tecnológica II',
+			ementa: 'Atividades de Iniciação Tecnológica, desenvolvidas sob orientação de docente da Unicamp.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:9, D:0, HS:10, SL:0, C:10},
+			requisitos: ['AA200'],
+			color: '#4060D9',
+			obligatory: false
+		},
+		'SI905': {
+			code: 'SI905',
+			name: 'Monitoria I',
+			ementa: 'Participação em atividades de monitoria, sob orientação de docente responsável pela disciplina em que o discente irá atuar.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:4, D:0, HS:5, SL:0, C:5},
+			requisitos: ['AA200', 'AA410'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'SI906': {
+			code: 'SI906',
+			name: 'Monitoria II',
+			ementa: 'Participação em atividades de monitoria, sob orientação de docente responsável pela disciplina em que o discente irá atuar.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:4, D:0, HS:5, SL:0, C:5},
+			requisitos: ['AA200', 'AA410', 'SI905'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'SI909': {
+			code: 'SI909',
+			name: 'Atividades Complementares',
+			ementa: 'Participação em Atividades Complementares. A matrícula nesta disciplina será autorizada pela Coordenação do Curso mediante apresentação de documentos comprobatórios da execução de atividades complementares por parte do aluno, de acordo com regras internas do curso, visando a contabilização, em créditos, das atividades efetuadas.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:8, D:0, HS:10, SL:0, C:10},
+			requisitos: ['AA200'],
+			color: '#D940D1',
+			obligatory: false
+		},
+		'SI912': {
+			code: 'SI912',
+			name: 'Trabalho de Conclusão de Curso I',
+			ementa: 'Definição de projeto e levantamento de revisão bibliográfica sobre o tema da monografia do trabalho de conclusão de curso, necessariamente relacionado a Computação.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:5, D:0, HS:6, SL:0, C:6},
+			requisitos: ['AA465'],
+			color: '#40D960',
+			obligatory: false
+		},
+		'SI913': {
+			code: 'SI913',
+			name: 'Trabalho de Conclusão de Curso II',
+			ementa: 'Desenvolvimento e apresentação de monografia referente ao trabalho de conclusão de curso, na área de Computação.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:5, D:0, HS:6, SL:0, C:6},
+			requisitos: ['SI912'],
+			color: '#40D960',
+			obligatory: false
+		},
+		'SI917': {
+			code: 'SI917',
+			name: 'Estágio em Computação',
+			ementa: 'Estágio desenvolvido de acordo com as regras inernas da Faculdade de Tecnologia.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:12, D:0, HS:12, SL:0, C:12},
+			requisitos: '',
+			color: '#D9A040',
+			obligatory: false
 		}
 	}
 };

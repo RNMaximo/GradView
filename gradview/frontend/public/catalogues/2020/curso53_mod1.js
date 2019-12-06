@@ -1,5 +1,6 @@
 const catalogue = {
 	totalCredits: 279,
+	maxCreditsSem: 40,
 	semesters: {
 		'sem-1': {
 			id: '1',
@@ -43,6 +44,19 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['BT201', 'GE002', 'GE003', 'GE005', 'GE006', 'GE100', 'GE101', 'GE102', 'GE104', 'GE106', 'GE107', 'GE108', 'GE109', 'GE110', 'GE111', 'GE112', 'GE113', 'GE114', 'GE115', 'GE116', 'GE118', 'GE119', 'GE120', 'GE121', 'GE122', 'GE123', 'GE124', 'GE125', 'GE126', 'GE127', 'GE128', 'GE403', 'GE405', 'GE702', 'GE801', 'GE902', 'GE911', 'GE912', 'GE913', 'GE914', 'GE915', 'GE916', 'GF135', 'GF136', 'GF605', 'GM201', 'GM222', 'GM290', 'GN207', 'GN301', 'GT105'],
+		},
+		'elet-2': {
+			credits: 4,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'GE300': {
 			code: 'GE300',
@@ -51,7 +65,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9AB'
+			color: '#D940A9',
+			obligatory: true
 		},
 		'GN101': {
 			code: 'GN101',
@@ -60,7 +75,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#D9409C'
+			color: '#408AD9',
+			obligatory: true
 		},
 		'GN107': {
 			code: 'GN107',
@@ -69,7 +85,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#8CD940'
+			color: '#40D97D',
+			obligatory: true
 		},
 		'GN111': {
 			code: 'GN111',
@@ -78,7 +95,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40ABD9'
+			color: '#79D940',
+			obligatory: true
 		},
 		'MA111': {
 			code: 'MA111',
@@ -87,7 +105,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#BA40D9'
+			color: '#D440D9',
+			obligatory: true
 		},
 		'MA141': {
 			code: 'MA141',
@@ -96,7 +115,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#407DD9'
+			color: '#D94067',
+			obligatory: true
 		},
 		'QG104': {
 			code: 'QG104',
@@ -105,7 +125,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#BAD940'
+			color: '#40D948',
+			obligatory: true
 		},
 		'F_128': {
 			code: 'F_128',
@@ -114,7 +135,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#5ED940'
+			color: '#40D9B1',
+			obligatory: true
 		},
 		'F_129': {
 			code: 'F_129',
@@ -123,7 +145,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#5E40D9'
+			color: '#D94040',
+			obligatory: true
 		},
 		'GE207': {
 			code: 'GE207',
@@ -132,7 +155,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['GN111'],
-			color: ''
+			color: '#79D940',
+			obligatory: true
 		},
 		'GE406': {
 			code: 'GE406',
@@ -141,7 +165,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['GE300'],
-			color: ''
+			color: '#D940A9',
+			obligatory: true
 		},
 		'LA122': {
 			code: 'LA122',
@@ -150,7 +175,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:2, HS:6, SL:2, C:4},
 			requisitos: '',
-			color: '#D94040'
+			color: '#4063D9',
+			obligatory: true
 		},
 		'QF331': {
 			code: 'QF331',
@@ -159,7 +185,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'QG104'],
-			color: ''
+			color: '#8A8D91',
+			obligatory: true
 		},
 		'BD101': {
 			code: 'BD101',
@@ -168,7 +195,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D99C40'
+			color: '#4070D9',
+			obligatory: true
 		},
 		'F_228': {
 			code: 'F_228',
@@ -177,7 +205,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*F_128'],
-			color: ''
+			color: '#40D9B1',
+			obligatory: true
 		},
 		'GE502': {
 			code: 'GE502',
@@ -186,7 +215,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['GE406'],
-			color: ''
+			color: '#D940A9',
+			obligatory: true
 		},
 		'GE601': {
 			code: 'GE601',
@@ -195,7 +225,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:2, C:6},
 			requisitos: ['GN111'],
-			color: ''
+			color: '#79D940',
+			obligatory: true
 		},
 		'GF303': {
 			code: 'GF303',
@@ -204,7 +235,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['GN111'],
-			color: ''
+			color: '#79D940',
+			obligatory: true
 		},
 		'GF508': {
 			code: 'GF508',
@@ -213,7 +245,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#D4D940',
+			obligatory: true
 		},
 		'LA242': {
 			code: 'LA242',
@@ -222,7 +255,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:1, L:0, O:3, D:3, HS:7, SL:0, C:4},
 			requisitos: ['AA200'],
-			color: '#D940C9'
+			color: '#40CCD9',
+			obligatory: true
 		},
 		'MA211': {
 			code: 'MA211',
@@ -231,7 +265,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', 'MA141'],
-			color: ''
+			color: '#D740A0',
+			obligatory: true
 		},
 		'F_328': {
 			code: 'F_328',
@@ -240,7 +275,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA111', 'MA141'],
-			color: ''
+			color: '#A473A6',
+			obligatory: true
 		},
 		'GE402': {
 			code: 'GE402',
@@ -249,7 +285,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['GE601'],
-			color: ''
+			color: '#79D940',
+			obligatory: true
 		},
 		'GE407': {
 			code: 'GE407',
@@ -258,7 +295,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['GE207'],
-			color: ''
+			color: '#79D940',
+			obligatory: true
 		},
 		'GF503': {
 			code: 'GF503',
@@ -267,7 +305,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#D9406E'
+			color: '#86D940',
+			obligatory: true
 		},
 		'GN105': {
 			code: 'GN105',
@@ -276,7 +315,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#D9C940'
+			color: '#D94074',
+			obligatory: true
 		},
 		'GN304': {
 			code: 'GN304',
@@ -285,7 +325,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:2, C:6},
 			requisitos: ['GN107', 'GN111'],
-			color: ''
+			color: '#5DD95F',
+			obligatory: true
 		},
 		'ME414': {
 			code: 'ME414',
@@ -294,7 +335,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111'],
-			color: ''
+			color: '#D440D9',
+			obligatory: true
 		},
 		'CV323': {
 			code: 'CV323',
@@ -303,7 +345,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:2, O:0, D:0, HS:3, SL:3, C:3},
 			requisitos: ['GE207'],
-			color: ''
+			color: '#79D940',
+			obligatory: true
 		},
 		'GE503': {
 			code: 'GE503',
@@ -312,7 +355,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['GE406', 'QF331'],
-			color: ''
+			color: '#B2679D',
+			obligatory: true
 		},
 		'GE506': {
 			code: 'GE506',
@@ -321,7 +365,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:2, O:0, D:0, HS:6, SL:4, C:6},
 			requisitos: ['GE406'],
-			color: ''
+			color: '#D940A9',
+			obligatory: true
 		},
 		'GE507': {
 			code: 'GE507',
@@ -330,7 +375,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:2, O:0, D:0, HS:6, SL:4, C:6},
 			requisitos: ['GE207'],
-			color: ''
+			color: '#79D940',
+			obligatory: true
 		},
 		'GE512': {
 			code: 'GE512',
@@ -339,7 +385,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D96E40'
+			color: '#4440D9',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -348,7 +395,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'GE117': {
 			code: 'GE117',
@@ -357,7 +405,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['GE503'],
-			color: ''
+			color: '#B2679D',
+			obligatory: true
 		},
 		'GE511': {
 			code: 'GE511',
@@ -366,7 +415,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:10, L:1, O:0, D:0, HS:12, SL:2, C:12},
 			requisitos: ['GE601', 'GN304'],
-			color: ''
+			color: '#6BD950',
+			obligatory: true
 		},
 		'GE603': {
 			code: 'GE603',
@@ -375,7 +425,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:4, C:6},
 			requisitos: ['GE407'],
-			color: ''
+			color: '#79D940',
+			obligatory: true
 		},
 		'GE606': {
 			code: 'GE606',
@@ -384,7 +435,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:2, O:0, D:0, HS:6, SL:4, C:6},
 			requisitos: ['GE406'],
-			color: ''
+			color: '#D940A9',
+			obligatory: true
 		},
 		'GE804': {
 			code: 'GE804',
@@ -393,7 +445,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['GE507'],
-			color: ''
+			color: '#79D940',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -402,7 +455,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:2},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'GE703': {
 			code: 'GE703',
@@ -411,7 +465,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_328'],
-			color: ''
+			color: '#A473A6',
+			obligatory: true
 		},
 		'GE704': {
 			code: 'GE704',
@@ -420,7 +475,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:4, C:6},
 			requisitos: ['GE601', 'GE603'],
-			color: ''
+			color: '#79D940',
+			obligatory: true
 		},
 		'GE708': {
 			code: 'GE708',
@@ -429,7 +485,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:10, L:1, O:0, D:0, HS:12, SL:2, C:12},
 			requisitos: ['GE506', 'GE511', 'GE603', 'GE606'],
-			color: ''
+			color: '#A68D79',
+			obligatory: true
 		},
 		'GE802': {
 			code: 'GE802',
@@ -438,7 +495,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:4, C:6},
 			requisitos: ['GE603', 'GE606'],
-			color: ''
+			color: '#A98D75',
+			obligatory: true
 		},
 		'GE903': {
 			code: 'GE903',
@@ -447,7 +505,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#404FD9'
+			color: '#40D9A4',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -456,7 +515,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'GE706': {
 			code: 'GE706',
@@ -465,7 +525,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:4, C:6},
 			requisitos: ['GE402', 'GE802'],
-			color: ''
+			color: '#91B35B',
+			obligatory: true
 		},
 		'GE711': {
 			code: 'GE711',
@@ -474,7 +535,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['GE603', 'GE704'],
-			color: ''
+			color: '#79D940',
+			obligatory: true
 		},
 		'GE803': {
 			code: 'GE803',
@@ -483,7 +545,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['GE503', 'GE603', 'GE606'],
-			color: ''
+			color: '#AC8082',
+			obligatory: true
 		},
 		'GE805': {
 			code: 'GE805',
@@ -492,7 +555,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['GE601'],
-			color: ''
+			color: '#79D940',
+			obligatory: true
 		},
 		'GE806': {
 			code: 'GE806',
@@ -501,7 +565,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['GE601'],
-			color: ''
+			color: '#79D940',
+			obligatory: true
 		},
 		'GE910': {
 			code: 'GE910',
@@ -510,7 +575,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:10, L:1, O:0, D:0, HS:12, SL:2, C:12},
 			requisitos: ['GE708'],
-			color: ''
+			color: '#A68D79',
+			obligatory: true
 		},
 		'GE007': {
 			code: 'GE007',
@@ -519,7 +585,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:0, C:8},
 			requisitos: ['AA200', 'AA440'],
-			color: '#40D97D'
+			color: '#D97440',
+			obligatory: true
 		},
 		'GE602': {
 			code: 'GE602',
@@ -528,7 +595,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#8C40D9'
+			color: '#D940B6',
+			obligatory: true
 		},
 		'GE901': {
 			code: 'GE901',
@@ -537,7 +605,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:4, L:0, O:0, D:0, HS:6, SL:4, C:6},
 			requisitos: ['GE503', 'GE603', 'GE803'],
-			color: ''
+			color: '#9D9575',
+			obligatory: true
 		},
 		'GE904': {
 			code: 'GE904',
@@ -546,7 +615,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:3, C:4},
 			requisitos: ['GE806'],
-			color: ''
+			color: '#79D940',
+			obligatory: true
 		},
 		'ELET09': {
 			code: 'ELET09',
@@ -555,7 +625,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:2},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'GE001': {
 			code: 'GE001',
@@ -564,7 +635,518 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:8, L:0, O:4, D:0, HS:12, SL:0, C:12},
 			requisitos: ['AA480'],
-			color: '#40D94F'
+			color: '#40D970',
+			obligatory: true
+		},
+		'BT201': {
+			code: 'BT201',
+			name: 'Biogeografia',
+			ementa: 'Biogeografia: conceito, bases teóricas, a perspectiva ecológica e a histórica. A Ecologia na interpretação biogeográfica: variação geográfica no ambiente físico; os limites da distribuição das espécies. Biosfera, fluxo de energia e ciclos biogeoquímicos. Métodos e ferramentas para estudos biogeográficos. Fitogeografia do Brasil. Biomas do mundo. Elaboração de projetos de pesquisa em Biogeografia. Elaboração de relatórios e seminários em Biogeografia. Produção e análise de textos em língua portuguesa. Utilização de tecnologia da informação e comunicação.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#D940C3',
+			obligatory: false
+		},
+		'GE002': {
+			code: 'GE002',
+			name: 'Estágio Supervisionado I',
+			ementa: 'Atividades de estágio que propiciem ao profissional em formação o contato com experiências, práticas e conhecimentos próprios ao campo profissional.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#6B40D9',
+			obligatory: false
+		},
+		'GE003': {
+			code: 'GE003',
+			name: 'Estágio Supervisionado II',
+			ementa: 'Atividades de estágio que propiciem ao profissional em formação o contato com experiências, práticas e conhecimentos próprios ao campo profissional.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#8640D9',
+			obligatory: false
+		},
+		'GE005': {
+			code: 'GE005',
+			name: 'Iniciação Científica I',
+			ementa: 'Introdução à abordagem científica relacionada à pesquisa de Geologia. Teorias e hipóteses. Levantamentos de dados. Aplicação de técnicas de pesquisa. Análise de resultados. Elaboração de relatórios de pesquisa e outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#4097D9',
+			obligatory: false
+		},
+		'GE006': {
+			code: 'GE006',
+			name: 'Iniciação Científica II',
+			ementa: 'Introdução à abordagem científica relacionada à pesquisa de Geologia. Teorias e hipóteses. Levantamentos de dados. Aplicação de técnicas de pesquisa. Análise de resultados. Elaboração de relatórios de pesquisa e outras formas de divulgação.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#40B1D9',
+			obligatory: false
+		},
+		'GE100': {
+			code: 'GE100',
+			name: 'Estratégia e Gestão Organizacional',
+			ementa: 'Discussão das teorias emergentes e de construção de um novo paradigma de gestão organizacional que suportam o debate atual sobre a reestruturação estratégica, cultura e mudança organizacional.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: '',
+			color: '#40D997',
+			obligatory: false
+		},
+		'GE101': {
+			code: 'GE101',
+			name: 'Geoestatística',
+			ementa: 'Conceito de variáveis espaciais (regionalizadas). Aplicação da geoestatística em geociências. Análise variográfica: modelos de anisotropia, estruturas imbricadas, efeito pepita e modelagem global de variogramas. Estimativa de recursos: krigagem simples, ordinária, com deriva. Modelo linear multivariado e cokrigagem.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9404D',
+			obligatory: false
+		},
+		'GE102': {
+			code: 'GE102',
+			name: 'Análise Estatística de Dados Geológicos',
+			ementa: 'Aplicação de métodos estatísticos univariantes e multivariantes a problemas geológicos, com distribuição aleatória e regionalizada. Estudos de variabilidade. Análise de regressão e correlação linear. Introdução à Geoestatística.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#40D963',
+			obligatory: false
+		},
+		'GE104': {
+			code: 'GE104',
+			name: 'Metamorfismo de Alto Grau e Evolução Crustal',
+			ementa: 'Características do metamorfismo de alto grau: paragêneses mineralógicas, reações metamórficas e condições físico-químicas atuantes. Exemplos de terrenos típicos de alto grau e sua formação. O papel do metamorfismo na evolução crustal através de processos tectono-metamórficos, magmáticos e ultrametamorfismo.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9D040',
+			obligatory: false
+		},
+		'GE106': {
+			code: 'GE106',
+			name: 'Evolução Metalogenética',
+			ementa: 'Conceitos básicos em metalogênese. Evolução das teorias metalogenéticas. Metais através da história geológica. Contextos geológicos nas principais épocas e províncias metalogenéticas. Cartografia metalogenética. Metalogênese exploração mineral.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#7940D9',
+			obligatory: false
+		},
+		'GE107': {
+			code: 'GE107',
+			name: 'Petrografia de Minérios',
+			ementa: 'Prática de laboratório incluindo a observação das propriedades dos minerais de minérios à luz refletida e transmitida. Preparação de amostras. Identificação de fases e texturas minerais mais comuns. Estudo de paragêneses e condições de formação de minérios. Aplicação da petrografia de minérios em tecnologia mineral e ambiental.',
+			semestre: 1,
+			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#BAD940',
+			obligatory: false
+		},
+		'GE108': {
+			code: 'GE108',
+			name: 'Geoquímica Ambiental',
+			ementa: 'Objeto da geoquímica ambiental. Anomalia geoquímica, background natural e ação antrópica. Fontes de elementos tóxicos. Geoquímica de águas, solos e sedimentos. Elementos de biogeoquímica. Monitoramento ambiental e recuperação de áreas degradadas. Técnicas de amostragem.',
+			semestre: 1,
+			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#5E40D9',
+			obligatory: false
+		},
+		'GE109': {
+			code: 'GE109',
+			name: 'Inclusões Fluidas',
+			ementa: 'Petrografia de inclusões fluidas: tipos e cronologias. Microtermometria, espectroscopia Raman e fundamentos teóricos de mudanças de fase no sistema C-O-H-N-S-sais. Interpretação dos dados microtermométricos: composição química, salinidade, densidade, pressão, temperatura e evolução de fluidos em ambientes geológicos. Aplicação das inclusões fluidas em modelos genéticos de mineralizações e na exploração mineral.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9CC',
+			obligatory: false
+		},
+		'GE110': {
+			code: 'GE110',
+			name: 'Indústria dos Minerais Não Metálicos',
+			ementa: 'Análise dos principais minerais não-metálicos. Ocorrência, extração, processamento e mercadologia. Organização industrial. Mercados nacional e internacional.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#D9408E',
+			obligatory: false
+		},
+		'GE111': {
+			code: 'GE111',
+			name: 'Depósitos Lateríticos',
+			ementa: 'Laterização e formação de perfis lateríticos. Depósitos minerais formados por laterização: Al, Fe, Mi, Mn, Au, fosfatos, outros: caracterização, gênese, distribuição no Brasil e no mundo, principais depósitos brasileiros.',
+			semestre: 1,
+			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D99C40',
+			obligatory: false
+		},
+		'GE112': {
+			code: 'GE112',
+			name: 'Geocronologia e Geologia Isotópica',
+			ementa: 'Os métodos de datação radiométrica principais e aplicações da geologia isotópica em petrogênese, jazidas minerais e ciências ambientais.',
+			semestre: 1,
+			vector: {T:3, P:0, L:1, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9B640',
+			obligatory: false
+		},
+		'GE113': {
+			code: 'GE113',
+			name: 'Engenharia Econômica de Recursos Minerais',
+			ementa: 'Noções básicas sobre a indústria mineral. Métodos de avaliação econômica de jazidas minerais. Dinâmica de negócios na indústria mineral. Escolha da estratégia competitiva. Noções básicas sobre a atividade empreendedora e organização empresarial. Avaliação global de um projeto de mineração.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#40D956',
+			obligatory: false
+		},
+		'GE114': {
+			code: 'GE114',
+			name: 'Indústria dos Minerais Metálicos',
+			ementa: 'Análise dos principais minerais metálicos. Ocorrência, extração, processamento e mercadologia. Organização industrial. Mercados nacional e internacional.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#40D9BF',
+			obligatory: false
+		},
+		'GE115': {
+			code: 'GE115',
+			name: 'Técnicas de Microanálise Eletrônica',
+			ementa: 'Princípios básicos das técnicas de microanálise eletrônica e suas aplicações em geologia. Microscopia eletrônica de varredura, microssonda eletrônica e iônica. Preparação de amostras, práticas de laboratório e apresentação dos resultados.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D96740',
+			obligatory: false
+		},
+		'GE116': {
+			code: 'GE116',
+			name: 'Política e Administração de Recursos Petrolíferos',
+			ementa: 'Evolução da indústria de petróleo mundial. Política de petróleo no Brasil. Modalidades de acordos de exploração e produção de petróleo. Acordo de petróleo e meio ambiente. Legislação e regulamentação do setor de petróleo e meio ambiente. Legislação e regulamentação do setor de petróleo do Brasil. Recursos petrolíferos do Brasil.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#AD40D9',
+			obligatory: false
+		},
+		'GE118': {
+			code: 'GE118',
+			name: 'Planejamento de Recursos Minerais',
+			ementa: 'Critérios geológicos, econômicos, políticos e jurídicos para o planejamento sobre o uso dos recursos minerais. Importância dos recursos minerais para a sociedade. Instrumentos de planejamento e os recursos minerais. Planos diretores de mineração.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D98140',
+			obligatory: false
+		},
+		'GE119': {
+			code: 'GE119',
+			name: 'Greenstone Belts',
+			ementa: 'Definições básicas. Características petrográficas, petrológicas, geoquímicas e estruturais de seus contribuintes. Estratigrafia e evolução dos terrenos granito-greenstone do Canadá, Austrália, África, Índia e Brasil. Importância metalogenética dos greenstone belts.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#40A4D9',
+			obligatory: false
+		},
+		'GE120': {
+			code: 'GE120',
+			name: 'Geofísica-Sísmica',
+			ementa: 'Fundamentos do método sísmico. Elasticidade. Equação da onda. Reflexão e transmissão de ondas em interfaces. Aquisição, processamento e interpretação de dados sísmicos. Aplicações à indústria de petróleo e geotecnia.',
+			semestre: 1,
+			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#93D940',
+			obligatory: false
+		},
+		'GE121': {
+			code: 'GE121',
+			name: 'Mineração e Meio Ambiente',
+			ementa: 'A mineração como atividade de aproveitamento de recursos ambientais. Consumo de produtos minerais. Princípios de conservação e gestão ambiental. Referencial teórico. Impactos ambientais da mineração. Ferramentas de gestão ambiental.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#4048D9',
+			obligatory: false
+		},
+		'GE122': {
+			code: 'GE122',
+			name: 'Tópicos Especiais em Geologia',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: ['AA200'],
+			color: '#C740D9',
+			obligatory: false
+		},
+		'GE123': {
+			code: 'GE123',
+			name: 'Tópicos Avançados em Geologia',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:3, D:0, HS:5, SL:2, C:5},
+			requisitos: ['AA200'],
+			color: '#C7D940',
+			obligatory: false
+		},
+		'GE124': {
+			code: 'GE124',
+			name: 'Tópicos Especiais em Geologia I',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9405A',
+			obligatory: false
+		},
+		'GE125': {
+			code: 'GE125',
+			name: 'Tópicos Especiais em Geologia II',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#5ED940',
+			obligatory: false
+		},
+		'GE126': {
+			code: 'GE126',
+			name: 'Tópicos Avançados em Geologia I',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9C340',
+			obligatory: false
+		},
+		'GE127': {
+			code: 'GE127',
+			name: 'Tópicos Avançados em Geologia II',
+			ementa: 'A ementa desta disciplina será definida por ocasião de seu oferecimento.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#51D940',
+			obligatory: false
+		},
+		'GE128': {
+			code: 'GE128',
+			name: 'Remediação de Áreas Contaminadas',
+			ementa: 'Conceitos básicos relacionados com a remediação de áreas contaminadas. Tecnologias de remediação de solos e águas subterrâneas contaminadas. Modelagem hidrogeoquímica. Aspectos legais relacionados a áreas contaminadas.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#44D940',
+			obligatory: false
+		},
+		'GE403': {
+			code: 'GE403',
+			name: 'Micropalentologia e Palinologia',
+			ementa: 'Conceitos básicos de sistemática de microfósseis e palinomorfos (polens, esporos e dinoflagelados) e suas aplicações para bioestratigrafia, paleoclimatologia e paleoecologia. Treinamento no reconhecimento de microfósseis e nas técnicas de preparação para estudo.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D9409C',
+			obligatory: false
+		},
+		'GE405': {
+			code: 'GE405',
+			name: 'Direito dos Recursos Naturais',
+			ementa: 'Conceitos básicos sobre direito e recursos naturais. Código de Mineração, Código Florestal, Código das Águas. Legislações mineral, paramineral e ambiental e os impactos nas políticas públicas setoriais. Administração pública, recursos naturais e a compatibilização com o meio ambiente. Atuação profissional e legislação.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#ADD940',
+			obligatory: false
+		},
+		'GE702': {
+			code: 'GE702',
+			name: 'História e Teoria das Organizações',
+			ementa: 'Abordagem histórica e comparativa da evolução das principais teorias de administração e gestão organizacional e suas relações com o pensamento econômico e sociológico.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: '',
+			color: '#D9A940',
+			obligatory: false
+		},
+		'GE801': {
+			code: 'GE801',
+			name: 'História das Ciências Naturais',
+			ementa: 'O Renascimento e seu impacto na cosmovisão: a releitura do mundo natural. A Revolução Científica e o nascimento da ciência moderna: a Filosofia Natural, a História Natural e a especialização das disciplinas científicas. A 1a. Revolução Industrial, o Naturalismo científico e os viajantes. Colecionismo, Gabinetes e Museus. O processo de institucionalização e profissionalização das ciências naturais com ênfase no Brasil e América Latina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#407DD9',
+			obligatory: false
+		},
+		'GE902': {
+			code: 'GE902',
+			name: 'Geologia de Minas, Lavra e Tratamento de Minério',
+			ementa: 'Conhecimentos técnicos geológicos utilizados no acompanhamento das operações de desenvolvimento das minas, técnicas de lavra e tratamento de minérios. Planejamento e gerenciamento ambiental relacionado à lavra e beneficiamento de minérios.',
+			semestre: 1,
+			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: ['GE511', 'GE601', 'GE603', 'GE806'],
+			color: '#76D944',
+			obligatory: false
+		},
+		'GE911': {
+			code: 'GE911',
+			name: 'Comunicação Científica em Ciências da Terra',
+			ementa: 'Fundamentos de editoração de artigos científicos. Regras básicas de redação e ilustração. Padronização técnica de artigos, relatórios e textos de divulgação. Noções básicas de operação de programas de ilustração técnica. Internet e Ciências da Terra. Evolução histórica dos recursos didáticos em Geociências. Intercâmbio de formatos de arquivo e utilização de ilustrações, diagramas e mapas no ensino. Exercícios de laboratório e gabinete.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:1, HS:3, SL:2, C:2},
+			requisitos: '',
+			color: '#A040D9',
+			obligatory: false
+		},
+		'GE912': {
+			code: 'GE912',
+			name: 'Mapas e Linguagem Visual no Ensino de Ciências Naturais',
+			ementa: 'Mapas e linguagem visual como ferramentas das ciências naturais. Emergência das representações cartográficas e evolução histórica da representação espacial. Princípios metodológicos da elaboração de mapas geológicos e mapas temáticos. Aquisição de dados espaciais no campo e representação da informação científica por meio de geoinformática. Problemas de escala e técnicas de representação. Questões interdisciplinares de educação em ciências relacionadas a mapas. Exercícios de laboratório e gabinete.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: '',
+			color: '#9340D9',
+			obligatory: false
+		},
+		'GE913': {
+			code: 'GE913',
+			name: 'Ciências Naturais e Ambiente',
+			ementa: 'Abordagem epistemológica que busca a construção do entendimento de como as ciências naturais integram-se do ponto de vista de seus objetos de estudo e métodos quando se estuda o ambiente, seja em suas inter-relações no presente - processos e fenômenos atuais, seja em sua evolução ao longo da história da Terra. Natureza do conhecimento geocientífico.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:1, HS:4, SL:2, C:3},
+			requisitos: ['AA200'],
+			color: '#BA40D9',
+			obligatory: false
+		},
+		'GE914': {
+			code: 'GE914',
+			name: 'Ciência e Linguagens',
+			ementa: 'Relações entre linguagem / retórica / discurso e a produção e circulação de conhecimentos científico-tecnológicos; interações discursivas e enunciativas em sala de aula; linguagem e cognição; linguagem e epistemologia; leituras da ciência na escola; linguagens e geociências.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:1, HS:4, SL:2, C:3},
+			requisitos: '',
+			color: '#D94081',
+			obligatory: false
+		},
+		'GE915': {
+			code: 'GE915',
+			name: 'Educação, Ciência, Tecnologia e Sociedade',
+			ementa: 'Abordagem CTSA (Ciência, Tecnologia, Sociedade e Ambiente) na Educação básica: princípios pressupostos e elaboração de estratégias de ensino. O papel das Geociências em processos de tomada de decisão e posicionamentos em questões sócio-político-ambientais: impacto ambiental, saúde, riscos naturais e tecnologia para enfrentar esses problemas. Estudos de caso de questões socioambientais envolvendo conhecimentos estudos da Terra.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: '',
+			color: '#40BFD9',
+			obligatory: false
+		},
+		'GE916': {
+			code: 'GE916',
+			name: 'Ensino de Ciências da Terra e do Ambiente',
+			ementa: 'Importância do ensino de Ciências da Terra para o ensino básico. Modelos e dificuldades comuns de ensino e aprendizagem. Importância e perspectiva cognitiva, ambiental e política do ensino de ciclo da água. Papel estratégico do ciclo da água entre temas ensinados em ciências naturais, experimentais e tecnológicas. Inclui levantamentos das condições de ensino de problemas ambientais relativos à circulação da água.',
+			semestre: 1,
+			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
+			requisitos: '',
+			color: '#A0D940',
+			obligatory: false
+		},
+		'GF135': {
+			code: 'GF135',
+			name: 'Antropologia da Moral e da Ética',
+			ementa: 'Economia moral e ética em processos sociais contemporâneos. Antropologia da moral e da ética. Dimensões morais do estado, da ética, da ciência e da tecnologia. Processos de estruturação e de subjetivação do e no Estado, suas variações tecnológicas e formas de vida social.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: '',
+			color: '#6BD940',
+			obligatory: false
+		},
+		'GF136': {
+			code: 'GF136',
+			name: 'Cartografia Sistemática',
+			ementa: 'Introdução à Cartografia. Princípios de Geodésia. Escalas. Sistemas de Coordenadas.Projeções Cartográficas. Sistema Cartográfico Nacional (SCN). Uso de Cartas, Mapas ePlantas em Ciências da Terra. Sistema de Posicionamento Global (GPS). Elementos deTopografia. Cartografia Digital. Trabalhos de campo e elaboração de relatório.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D940D0',
+			obligatory: false
+		},
+		'GF605': {
+			code: 'GF605',
+			name: 'Geomorfologia do Brasil',
+			ementa: 'O relevo brasileiro: os grandes conjuntos geomorfológicos brasileiro. Influências das oscilações climáticas no quaternário. O modelado do Estado de São Paulo: compartimentos geomorfológicos paulistas.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
+			requisitos: '',
+			color: '#D98E40',
+			obligatory: false
+		},
+		'GM201': {
+			code: 'GM201',
+			name: 'Geologia e Recursos Minerais',
+			ementa: 'A Geologia aplicada à produção mineral. Minerais, rochas e solos. Recursos e reservas minerais. Exploração, produção e consumo de bens minerais. Aspectos políticos, econômicos, sociais e ambientais da mineração. Geologia e recursos minerais do Brasil.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: ['AA200'],
+			color: '#40D98A',
+			obligatory: false
+		},
+		'GM222': {
+			code: 'GM222',
+			name: 'Direito Ambiental',
+			ementa: 'Conceitos básicos sobre direito e ciências ambientais. Legislação ambiental e seus impactos sobre as políticas públicas setoriais. Direito ambiental comparado. A administração pública e o meio ambiente. Crimes contra a natureza e sua previsão legal no direito brasileiro.',
+			semestre: 1,
+			vector: {T:3, P:0, L:0, O:0, D:0, HS:3, SL:3, C:3},
+			requisitos: '',
+			color: '#5140D9',
+			obligatory: false
+		},
+		'GM290': {
+			code: 'GM290',
+			name: 'Elementos de Geofísica',
+			ementa: 'Introdução. A gravidade da Terra. O magnetismo terrestre. Geofísica nuclear. Calor terrestre. Sismologia. Geodinâmica.',
+			semestre: 1,
+			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
+			requisitos: '',
+			color: '#D95A40',
+			obligatory: false
+		},
+		'GN207': {
+			code: 'GN207',
+			name: 'Introdução ao Sensoriamento Remoto',
+			ementa: 'Definição, histórico e evolução do sensoriamento remoto. Princípios físicos do sensoriamento remoto. O espectro eletromagnético. Características espectrais de materiais naturais e artificiais. Introdução à espectroscopia de reflectância e interpretação de curvas de reflectância espectral. Sistemas sensores. Camêras aerofotogramétricas e fotografias aéreas. Princípios de estereoscopia e interpretação estereoscópica. Princípios de interpretação de fotografias aéreas.',
+			semestre: 1,
+			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4056D9',
+			obligatory: false
+		},
+		'GN301': {
+			code: 'GN301',
+			name: 'História das Teorias Econômicas',
+			ementa: 'Elementos de economia. Análise do surgimento e da evolução da Economia Política como ramo do conhecimento científico. As principais escolas do pensamento econômico e suas respectivas contribuições ao entendimento do mundo em que vivemos. Disciplinas propedêuticas para o estudo da Economia dos Recursos Naturais.',
+			semestre: 1,
+			vector: {T:2, P:1, L:0, O:0, D:0, HS:3, SL:2, C:3},
+			requisitos: '',
+			color: '#D94D40',
+			obligatory: false
+		},
+		'GT105': {
+			code: 'GT105',
+			name: 'Teorias e Métodos da Ciência',
+			ementa: 'A emergência da ciência moderna e seu processo de institucionalização. As características da prática científica e do conhecimento produzido pelas ciências. A disputa pela demarcação de fronteiras entre conhecimento científico e outros modos de conhecer e explicar o mundo. Relações e dissensões entre saberes tradicionais e saberes científicos.',
+			semestre: 1,
+			vector: {T:1, P:2, L:0, O:0, D:0, HS:3, SL:2, C:3},
+			requisitos: '',
+			color: '#40D9D9',
+			obligatory: false
 		}
 	}
 };

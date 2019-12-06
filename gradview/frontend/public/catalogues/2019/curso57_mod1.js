@@ -1,5 +1,6 @@
 const catalogue = {
 	totalCredits: 232,
+	maxCreditsSem: 38,
 	semesters: {
 		'sem-1': {
 			id: '1',
@@ -43,6 +44,44 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['TL129', 'TL139', 'TL144', 'TL145', 'TL146', 'TL149', 'TL151', 'TL152', 'TL153', 'TL154', 'TL156', 'TL159', 'TL161', 'TL169', 'TL173', 'TL190', 'TL191', 'TL192', 'TL193', 'TL194', 'TL195', 'TL196', 'TL197', 'TL198', 'TL199', 'TL206', 'TL210', 'TL226', 'TL264', 'TL265'],
+		},
+		'elet-2': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['TL162', 'TL163', 'TL164', 'TL165', 'TL166', 'TL170', 'TL171', 'TL172', 'TL223', 'TL224', 'TL225', 'TL229', 'TL230', 'TL231', 'TL232', 'TL233', 'TL234', 'TL235', 'TL236', 'TL237', 'TL239', 'TL240', 'TL241', 'TL242', 'TL243', 'TL244', 'TL245', 'TL246', 'TL247', 'TL248', 'TL249', 'TL250', 'TL251', 'TL252', 'TL253', 'TL254', 'TL256', 'TL257'],
+		},
+		'elet-3': {
+			credits: 34,
+			hasRestrictions: true,
+			subjects: ['HL904', 'HL905', 'HL906', 'HL907', 'LA904', 'LA905', 'LA906', 'LA907', 'TL904', 'TL905', 'TL906', 'TL907'],
+		},
+		'elet-4': {
+			credits: 18,
+			hasRestrictions: true,
+			subjects: ['EL142', 'EL212', 'EL485', 'EL511', 'EL683'],
+		},
+		'elet-5': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['HL---', 'LA---', 'TL---'],
+		},
+		'elet-6': {
+			credits: 16,
+			hasRestrictions: true,
+			subjects: ['HL071', 'LA071', 'TL071'],
+		},
+		'elet-7': {
+			credits: 4,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'HL121': {
 			code: 'HL121',
@@ -51,7 +90,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#55D940'
+			color: '#D96640',
+			obligatory: true
 		},
 		'HL127': {
 			code: 'HL127',
@@ -60,7 +100,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D96A'
+			color: '#D140D9',
+			obligatory: true
 		},
 		'HL143': {
 			code: 'HL143',
@@ -69,7 +110,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#B440D9'
+			color: '#40D95E',
+			obligatory: true
 		},
 		'LA104': {
 			code: 'LA104',
@@ -78,7 +120,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D340D9'
+			color: '#D9C940',
+			obligatory: true
 		},
 		'LA405': {
 			code: 'LA405',
@@ -87,7 +130,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D3D940'
+			color: '#B340D9',
+			obligatory: true
 		},
 		'LG028': {
 			code: 'LG028',
@@ -96,7 +140,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:2, D:0, HS:2, SL:0, C:2},
 			requisitos: '',
-			color: '#D99F40'
+			color: '#8540D9',
+			obligatory: true
 		},
 		'TL108': {
 			code: 'TL108',
@@ -105,7 +150,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#D9409F'
+			color: '#D94740',
+			obligatory: true
 		},
 		'HL220': {
 			code: 'HL220',
@@ -114,7 +160,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40C9D9'
+			color: '#D9408C',
+			obligatory: true
 		},
 		'HL236': {
 			code: 'HL236',
@@ -123,7 +170,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D97F40'
+			color: '#407DD9',
+			obligatory: true
 		},
 		'HL337': {
 			code: 'HL337',
@@ -132,7 +180,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: '',
-			color: '#B4D940'
+			color: '#A340D9',
+			obligatory: true
 		},
 		'LA204': {
 			code: 'LA204',
@@ -141,7 +190,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D95F40'
+			color: '#D940BA',
+			obligatory: true
 		},
 		'LA404': {
 			code: 'LA404',
@@ -150,7 +200,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#94D940'
+			color: '#D9407D',
+			obligatory: true
 		},
 		'TL404': {
 			code: 'TL404',
@@ -159,7 +210,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#75D940'
+			color: '#D9A340',
+			obligatory: true
 		},
 		'HL324': {
 			code: 'HL324',
@@ -168,7 +220,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#7540D9'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'HL325': {
 			code: 'HL325',
@@ -177,7 +230,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9BE40'
+			color: '#408CD9',
+			obligatory: true
 		},
 		'HL804': {
 			code: 'HL804',
@@ -186,7 +240,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#404AD9'
+			color: '#4057D9',
+			obligatory: true
 		},
 		'LA303': {
 			code: 'LA303',
@@ -195,7 +250,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94040'
+			color: '#D95740',
+			obligatory: true
 		},
 		'TL405': {
 			code: 'TL405',
@@ -204,7 +260,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#406AD9'
+			color: '#40D96E',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -213,7 +270,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HL423': {
 			code: 'HL423',
@@ -222,7 +280,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D94A'
+			color: '#4075D9',
+			obligatory: true
 		},
 		'HL424': {
 			code: 'HL424',
@@ -231,7 +290,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#5540D9'
+			color: '#40D947',
+			obligatory: true
 		},
 		'LA403': {
 			code: 'LA403',
@@ -240,7 +300,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D98A'
+			color: '#4066D9',
+			obligatory: true
 		},
 		'LA406': {
 			code: 'LA406',
@@ -249,7 +310,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: '',
-			color: '#40D9A9'
+			color: '#47D940',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -258,7 +320,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HL135': {
 			code: 'HL135',
@@ -267,7 +330,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9407F'
+			color: '#D94F40',
+			obligatory: true
 		},
 		'LA504': {
 			code: 'LA504',
@@ -276,7 +340,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D9405F'
+			color: '#BAD940',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -285,7 +350,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:14},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'TL406': {
 			code: 'TL406',
@@ -294,7 +360,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:4, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: '',
-			color: '#D940BE'
+			color: '#40D9BA',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -303,7 +370,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:14},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -312,7 +380,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:24},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HL245': {
 			code: 'HL245',
@@ -321,7 +390,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#9440D9'
+			color: '#C9D940',
+			obligatory: true
 		},
 		'LA712': {
 			code: 'LA712',
@@ -330,7 +400,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#408AD9'
+			color: '#4740D9',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -339,7 +410,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:20},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL774': {
 			code: 'EL774',
@@ -348,7 +420,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['AA200', 'AA445'],
-			color: '#40D9C9'
+			color: '#D940D1',
+			obligatory: true
 		},
 		'LA001': {
 			code: 'LA001',
@@ -357,7 +430,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40A9D9'
+			color: '#40BAD9',
+			obligatory: true
 		},
 		'ELET09': {
 			code: 'ELET09',
@@ -366,7 +440,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL874': {
 			code: 'EL874',
@@ -375,7 +450,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['EL774'],
-			color: ''
+			color: '#D940D1',
+			obligatory: true
 		},
 		'ELET10': {
 			code: 'ELET10',
@@ -384,7 +460,918 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:14},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'EL142': {
+			code: 'EL142',
+			name: 'Tópicos Especiais em Ciências Sociais Aplicadas à Educação',
+			ementa: 'A disciplina aborda temas fundamentais da Educação a partir de aportes teóricos metodológicos das Ciências Sociais numa perspectiva interdisciplinar.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#C240D9',
+			obligatory: false
+		},
+		'EL212': {
+			code: 'EL212',
+			name: 'Política Educacional: Organização da Educação Brasileira',
+			ementa: 'Estudo analítico das políticas educacionais no Brasil com destaque para: a política educacional no contexto das políticas públicas; organização dos sistemas de ensino considerando as peculiaridades nacionais e os contextos e legislação de ensino; organização da educação básica e do ensino superior.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#D940C2',
+			obligatory: false
+		},
+		'EL485': {
+			code: 'EL485',
+			name: 'Filosofia e História da Educação',
+			ementa: 'Introdução à Filosofia e História da Educação, consideradas à luz de suas diferenças frente à Ciência e à Pedagogia: estudo e discussões das origens históricas da Filosofia e dos processos, narrativas e ideias que se relacionam com as configurações assumidas pela Educação no Brasil, principalmente em seu período de formação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#D97540',
+			obligatory: false
+		},
+		'EL511': {
+			code: 'EL511',
+			name: 'Psicologia e Educação',
+			ementa: 'Fundamentos teóricos e contribuições da psicologia para o estudo e compreensão de questões relacionadas à Educação, considerando as possibilidades de atuação docente. Inserção em contextos educativos e análise do cotidiano escolar.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#4F40D9',
+			obligatory: false
+		},
+		'EL683': {
+			code: 'EL683',
+			name: 'Escola e Cultura',
+			ementa: 'Dimensões da escola e da cultura na Pesquisa e no Conhecimento em Educação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#406ED9',
+			obligatory: false
+		},
+		'HL---': {
+			code: 'HL---',
+			name: 'Qualquer Disciplina com codigo HL---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo HL---, onde o - indica uma letra ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#9C40D9',
+			obligatory: false
+		},
+		'HL071': {
+			code: 'HL071',
+			name: 'Estágio Supervisionado',
+			ementa: 'Estágio supervisionado a ser cumprido em uma das áreas de atuação previstas pelo curso.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: '',
+			color: '#D98540',
+			obligatory: false
+		},
+		'HL904': {
+			code: 'HL904',
+			name: 'Investigação Científica I',
+			ementa: 'Tema de pesquisa a ser desenvolvido individualmente pelo aluno, sob orientação de um professor.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:6, D:0, HS:8, SL:2, C:8},
+			requisitos: ['AA200'],
+			color: '#D9B340',
+			obligatory: false
+		},
+		'HL905': {
+			code: 'HL905',
+			name: 'Investigação Científica II',
+			ementa: 'Tema de pesquisa a ser desenvolvido individualmente pelo aluno, sob orientação de um professor.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:6, D:0, HS:8, SL:2, C:8},
+			requisitos: ['AA200'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'HL906': {
+			code: 'HL906',
+			name: 'Investigação Científica III',
+			ementa: 'Tema de pesquisa a ser desenvolvido individualmente pelo aluno, sob orientação de um professor.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:6, D:0, HS:8, SL:2, C:8},
+			requisitos: ['AA200'],
+			color: '#40D9C2',
+			obligatory: false
+		},
+		'HL907': {
+			code: 'HL907',
+			name: 'Monografia',
+			ementa: 'Trabalho final de curso envolvendo tema de pesquisa em Linguística, desenvolvido individualmente pelo aluno sob orientação de um professor. A disciplina prevê defesa pública do trabalho perante banca constituída pelo professor orientador e mais dois membros.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:8, D:0, HS:10, SL:2, C:10},
+			requisitos: ['AA200'],
+			color: '#6640D9',
+			obligatory: false
+		},
+		'LA---': {
+			code: 'LA---',
+			name: 'Qualquer Disciplina com codigo LA---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo LA---, onde o - indica uma letra ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#40D966',
+			obligatory: false
+		},
+		'LA071': {
+			code: 'LA071',
+			name: 'Estágio Supervisionado',
+			ementa: 'Estágio supervisionado a ser cumprido em uma das áreas de atuação previstas pelo curso.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: '',
+			color: '#4085D9',
+			obligatory: false
+		},
+		'LA904': {
+			code: 'LA904',
+			name: 'Investigação Científica I',
+			ementa: 'Tema de pesquisa a ser desenvolvido individualmente pelo aluno, sob orientação de um professor.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:6, D:0, HS:8, SL:2, C:8},
+			requisitos: ['AA200'],
+			color: '#D94075',
+			obligatory: false
+		},
+		'LA905': {
+			code: 'LA905',
+			name: 'Investigação Científica II',
+			ementa: 'Tema de pesquisa a ser desenvolvido individualmente pelo aluno, sob orientação de um professor.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:6, D:0, HS:8, SL:2, C:8},
+			requisitos: ['AA200'],
+			color: '#4094D9',
+			obligatory: false
+		},
+		'LA906': {
+			code: 'LA906',
+			name: 'Investigação Científica III',
+			ementa: 'Tema de pesquisa a ser desenvolvido individualmente pelo aluno, sob orientação de um professor.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:6, D:0, HS:8, SL:2, C:8},
+			requisitos: ['AA200'],
+			color: '#8CD940',
+			obligatory: false
+		},
+		'LA907': {
+			code: 'LA907',
+			name: 'Monografia',
+			ementa: 'Trabalho final de curso envolvendo tema de pesquisa em Linguística Aplicada desenvolvido individualmente pelo aluno, sob orientação de um professor. A disciplina prevê defesa pública do trabalho perante banca constituída pelo professor orientador e mais dois membros.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:8, D:0, HS:10, SL:2, C:10},
+			requisitos: ['AA200'],
+			color: '#94D940',
+			obligatory: false
+		},
+		'TL---': {
+			code: 'TL---',
+			name: 'Qualquer Disciplina com codigo TL---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo TL---, onde o - indica uma letra ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#D99440',
+			obligatory: false
+		},
+		'TL071': {
+			code: 'TL071',
+			name: 'Estágio Supervisionado',
+			ementa: 'Estágio supervisionado a ser cumprido em atividade relativa ao ensino de literatura.',
+			semestre: 1,
+			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
+			requisitos: '',
+			color: '#6ED940',
+			obligatory: false
+		},
+		'TL129': {
+			code: 'TL129',
+			name: 'Tópicos Especiais em Teatro I',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40C2D9',
+			obligatory: false
+		},
+		'TL139': {
+			code: 'TL139',
+			name: 'Tópicos Especiais em Teatro II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#B3D940',
+			obligatory: false
+		},
+		'TL144': {
+			code: 'TL144',
+			name: 'Tópicos Especiais em Prosa Não-Ficcional I',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D94094',
+			obligatory: false
+		},
+		'TL145': {
+			code: 'TL145',
+			name: 'Tópicos X: Textos em Teatro III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9D1',
+			obligatory: false
+		},
+		'TL146': {
+			code: 'TL146',
+			name: 'Tópicos XI: Textos em Teatro IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D94066',
+			obligatory: false
+		},
+		'TL149': {
+			code: 'TL149',
+			name: 'Tópicos XII: Textos em Poesia III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#5E40D9',
+			obligatory: false
+		},
+		'TL151': {
+			code: 'TL151',
+			name: 'Tópicos XIII: Textos em Poesia IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D940B3',
+			obligatory: false
+		},
+		'TL152': {
+			code: 'TL152',
+			name: 'Tópicos XIV: Textos em Prosa de Ficção III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D1D940',
+			obligatory: false
+		},
+		'TL153': {
+			code: 'TL153',
+			name: 'Tópicos XV: Textos em Prosa de Ficção IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#5ED940',
+			obligatory: false
+		},
+		'TL154': {
+			code: 'TL154',
+			name: 'Tópicos XVI: Textos em Prosa Não-Ficcional III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4040D9',
+			obligatory: false
+		},
+		'TL156': {
+			code: 'TL156',
+			name: 'Tópicos XVII: Textos em Prosa Não-Ficcional IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9AB',
+			obligatory: false
+		},
+		'TL159': {
+			code: 'TL159',
+			name: 'Tópicos XVIII: Textos em Teoria, Crítica e História Literária III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40ABD9',
+			obligatory: false
+		},
+		'TL161': {
+			code: 'TL161',
+			name: 'Tópicos XIX: Textos em Teoria, Crítica e História Literária IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40C9D9',
+			obligatory: false
+		},
+		'TL162': {
+			code: 'TL162',
+			name: 'Tópicos em Pesquisa XIII: Literatura e Imprensa II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D99C',
+			obligatory: false
+		},
+		'TL163': {
+			code: 'TL163',
+			name: 'Tópicos em Pesquisa XIV: Literatura e Imprensa III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9404F',
+			obligatory: false
+		},
+		'TL164': {
+			code: 'TL164',
+			name: 'Tópicos em Pesquisa XIV: Literatura e Imprensa IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#9CD940',
+			obligatory: false
+		},
+		'TL165': {
+			code: 'TL165',
+			name: 'Tópicos em Pesquisa I: Teoria Literária I',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40A3D9',
+			obligatory: false
+		},
+		'TL166': {
+			code: 'TL166',
+			name: 'Tópicos em Pesquisa II: Crítica Literária I',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#409CD9',
+			obligatory: false
+		},
+		'TL169': {
+			code: 'TL169',
+			name: 'Tópicos Especiais em Prosa Não-Ficcional II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#BA40D9',
+			obligatory: false
+		},
+		'TL170': {
+			code: 'TL170',
+			name: 'Tópicos em Pesquisa XV: Literatura e Outras Artes II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9A3',
+			obligatory: false
+		},
+		'TL171': {
+			code: 'TL171',
+			name: 'Tópicos em Pesquisa XV: Literatura e Outras Artes III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9C9',
+			obligatory: false
+		},
+		'TL172': {
+			code: 'TL172',
+			name: 'Tópicos em Pesquisa XV: Literatura e Outras Artes IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40B3D9',
+			obligatory: false
+		},
+		'TL173': {
+			code: 'TL173',
+			name: 'Tópicos Especiais em Prosa Não-Ficcional III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D975',
+			obligatory: false
+		},
+		'TL190': {
+			code: 'TL190',
+			name: 'Tópicos Especiais em Poesia I',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D940AB',
+			obligatory: false
+		},
+		'TL191': {
+			code: 'TL191',
+			name: 'Tópicos Especiais em Poesia II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#AB40D9',
+			obligatory: false
+		},
+		'TL192': {
+			code: 'TL192',
+			name: 'Tópicos Especiais em Poesia III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9406E',
+			obligatory: false
+		},
+		'TL193': {
+			code: 'TL193',
+			name: 'Tópicos Especiais em Poesia IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D97D',
+			obligatory: false
+		},
+		'TL194': {
+			code: 'TL194',
+			name: 'Tópicos Especiais em Poesia V',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D94085',
+			obligatory: false
+		},
+		'TL195': {
+			code: 'TL195',
+			name: 'Tópicos Especiais em Prosa de Ficção I',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D957',
+			obligatory: false
+		},
+		'TL196': {
+			code: 'TL196',
+			name: 'Tópicos Especiais em Prosa de Ficção II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9D140',
+			obligatory: false
+		},
+		'TL197': {
+			code: 'TL197',
+			name: 'Tópicos Especiais em Prosa de Ficção III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D940',
+			obligatory: false
+		},
+		'TL198': {
+			code: 'TL198',
+			name: 'Tópicos Especiais em Prosa de Ficção IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9AB40',
+			obligatory: false
+		},
+		'TL199': {
+			code: 'TL199',
+			name: 'Tópicos Especiais em Prosa de Ficção V',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D94F',
+			obligatory: false
+		},
+		'TL206': {
+			code: 'TL206',
+			name: 'Tópicos Especiais em Prosa Não-Ficcional IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#C940D9',
+			obligatory: false
+		},
+		'TL210': {
+			code: 'TL210',
+			name: 'Tópicos Especiais em Teoria, Crítica e História Literária I',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9409C',
+			obligatory: false
+		},
+		'TL223': {
+			code: 'TL223',
+			name: 'Tópicos em Pesquisa XVIII: Literatura e Suportes Materiais II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#8C40D9',
+			obligatory: false
+		},
+		'TL224': {
+			code: 'TL224',
+			name: 'Tópicos em Pesquisa XX: Literatura e Suportes Materiais III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D9B3',
+			obligatory: false
+		},
+		'TL225': {
+			code: 'TL225',
+			name: 'Tópicos em Pesquisa XXI: Literatura e Suportes Materiais IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D95E40',
+			obligatory: false
+		},
+		'TL226': {
+			code: 'TL226',
+			name: 'Tópicos Especiais em Teoria, Crítica e História Literária II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#57D940',
+			obligatory: false
+		},
+		'TL229': {
+			code: 'TL229',
+			name: 'Tópicos em Pesquisa XXI: Literatura e Ensino II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D98C',
+			obligatory: false
+		},
+		'TL230': {
+			code: 'TL230',
+			name: 'Tópicos em Pesquisa XXII: Literatura e Ensino III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9D940',
+			obligatory: false
+		},
+		'TL231': {
+			code: 'TL231',
+			name: 'Tópicos em Pesquisa XXIII: Literatura e Ensino IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4FD940',
+			obligatory: false
+		},
+		'TL232': {
+			code: 'TL232',
+			name: 'Tópicos em Pesquisa XXIV: Literatura e suas Fontes Históricas II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#66D940',
+			obligatory: false
+		},
+		'TL233': {
+			code: 'TL233',
+			name: 'Tópicos em Pesquisa XXV: Literatura e suas Fontes Históricas III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D940C9',
+			obligatory: false
+		},
+		'TL234': {
+			code: 'TL234',
+			name: 'Tópicos em Pesquisa XXVI: Literatura e suas Fontes Históricas IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#C2D940',
+			obligatory: false
+		},
+		'TL235': {
+			code: 'TL235',
+			name: 'Tópicos em Pesquisa XXVII: Literatura e Práticas de Leitura II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#85D940',
+			obligatory: false
+		},
+		'TL236': {
+			code: 'TL236',
+			name: 'Tópicos em Pesquisa XXVIII: Literatura e Práticas de Leitura III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D985',
+			obligatory: false
+		},
+		'TL237': {
+			code: 'TL237',
+			name: 'Tópicos em Pesquisa XXIX: Literatura e Práticas de Leitura IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D99C40',
+			obligatory: false
+		},
+		'TL239': {
+			code: 'TL239',
+			name: 'Tópicos em Pesquisa XXX: Tradução Literária II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D96E40',
+			obligatory: false
+		},
+		'TL240': {
+			code: 'TL240',
+			name: 'Tópicos em Pesquisa XXXI: Tradução Literária III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9BA40',
+			obligatory: false
+		},
+		'TL241': {
+			code: 'TL241',
+			name: 'Tópicos em Pesquisa XXXII: Tradução Literária IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#7D40D9',
+			obligatory: false
+		},
+		'TL242': {
+			code: 'TL242',
+			name: 'Tópicos em Pesquisa XXXIII: Temas e Questões de Literatura Brasileira II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#5740D9',
+			obligatory: false
+		},
+		'TL243': {
+			code: 'TL243',
+			name: 'Tópicos em Pesquisa XXXIV: Temas e Questões de Literatura Brasileira III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#9440D9',
+			obligatory: false
+		},
+		'TL244': {
+			code: 'TL244',
+			name: 'Tópicos em Pesquisa XXXV: Temas e Questões de Literatura Brasileira V',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#4047D9',
+			obligatory: false
+		},
+		'TL245': {
+			code: 'TL245',
+			name: 'Tópicos em Pesquisa XXXVI: Literatura e Arquivos II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D940D9',
+			obligatory: false
+		},
+		'TL246': {
+			code: 'TL246',
+			name: 'Tópicos em Pesquisa XXXVII: Literatura e Arquivos III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D1D9',
+			obligatory: false
+		},
+		'TL247': {
+			code: 'TL247',
+			name: 'Tópicos em Pesquisa XXXVIII: Literatura e Arquivos IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#7540D9',
+			obligatory: false
+		},
+		'TL248': {
+			code: 'TL248',
+			name: 'Tópicos em Pesquisa XXXIX: Teoria Literária II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#ABD940',
+			obligatory: false
+		},
+		'TL249': {
+			code: 'TL249',
+			name: 'Tópicos em Pesquisa XL: Teoria Literária III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#6E40D9',
+			obligatory: false
+		},
+		'TL250': {
+			code: 'TL250',
+			name: 'Tópicos em Pesquisa XL: Teoria Literária IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#405ED9',
+			obligatory: false
+		},
+		'TL251': {
+			code: 'TL251',
+			name: 'Tópicos em Pesquisa XLII: Crítica Literária II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9C240',
+			obligatory: false
+		},
+		'TL252': {
+			code: 'TL252',
+			name: 'Tópicos em Pesquisa XLIII: Crítica Literária III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#A3D940',
+			obligatory: false
+		},
+		'TL253': {
+			code: 'TL253',
+			name: 'Tópicos em Pesquisa XLIV: Crítica Literária IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#75D940',
+			obligatory: false
+		},
+		'TL254': {
+			code: 'TL254',
+			name: 'Tópicos em Pesquisa XLV: Historiografia Literária II',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D97D40',
+			obligatory: false
+		},
+		'TL256': {
+			code: 'TL256',
+			name: 'Tópicos em Pesquisa XLVI: Historiografia Literária III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#7DD940',
+			obligatory: false
+		},
+		'TL257': {
+			code: 'TL257',
+			name: 'Tópicos em Pesquisa XLVII: Historiografia Literária IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#404FD9',
+			obligatory: false
+		},
+		'TL264': {
+			code: 'TL264',
+			name: 'Tópicos Especiais em Teoria, Crítica e História Literária III',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#D9405E',
+			obligatory: false
+		},
+		'TL265': {
+			code: 'TL265',
+			name: 'Tópicos Especiais em Teoria, Crítica e História Literária IV',
+			ementa: 'Será divulgada por ocasião do oferecimento da disciplina.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
+			requisitos: '',
+			color: '#40D994',
+			obligatory: false
+		},
+		'TL904': {
+			code: 'TL904',
+			name: 'Investigação Científica I',
+			ementa: 'Elaboração de projeto de pesquisa no campo dos Estudos Literários.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:6, D:0, HS:8, SL:2, C:8},
+			requisitos: ['AA200'],
+			color: '#D98C40',
+			obligatory: false
+		},
+		'TL905': {
+			code: 'TL905',
+			name: 'Investigação Científica II',
+			ementa: 'Elaboração de projeto de pesquisa no campo dos Estudos Literários.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:6, D:0, HS:8, SL:2, C:8},
+			requisitos: ['AA200'],
+			color: '#D94047',
+			obligatory: false
+		},
+		'TL906': {
+			code: 'TL906',
+			name: 'Investigação Científica III',
+			ementa: 'Elaboração de projeto de pesquisa no campo dos Estudos Literários.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:6, D:0, HS:8, SL:2, C:8},
+			requisitos: ['AA200'],
+			color: '#D94057',
+			obligatory: false
+		},
+		'TL907': {
+			code: 'TL907',
+			name: 'Monografia',
+			ementa: 'Trabalho final de curso envolvendo tema de pesquisa no campo dos Estudos Literários, desenvolvido individualmente pelo aluno sob orientação de um professor. A disciplina prevê defesa pública do trabalho perante banca constituída pelo professor orientador e mais dois membros.',
+			semestre: 1,
+			vector: {T:2, P:0, L:0, O:8, D:0, HS:10, SL:2, C:10},
+			requisitos: ['AA200'],
+			color: '#D940A3',
+			obligatory: false
 		}
 	}
 };

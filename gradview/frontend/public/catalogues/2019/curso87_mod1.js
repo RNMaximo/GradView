@@ -1,5 +1,6 @@
 const catalogue = {
 	totalCredits: 160,
+	maxCreditsSem: 32,
 	semesters: {
 		'sem-1': {
 			id: '1',
@@ -27,6 +28,24 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 8,
+			hasRestrictions: true,
+			subjects: ['EI---', 'ST801', 'ST802', 'ST902', 'ST903', 'ST904', 'ST905'],
+		},
+		'elet-2': {
+			credits: 6,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-3': {
+			credits: 12,
+			hasRestrictions: true,
+			subjects: ['ST752', 'ST753'],
+		},
+	},
+
 	subjects: {
 		'EB101': {
 			code: 'EB101',
@@ -35,7 +54,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:6, P:0, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#9ED940'
+			color: '#D9D140',
+			obligatory: true
 		},
 		'EB105': {
 			code: 'EB105',
@@ -44,7 +64,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#406FD9'
+			color: '#4090D9',
+			obligatory: true
 		},
 		'EB205': {
 			code: 'EB205',
@@ -53,7 +74,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D96F'
+			color: '#B0D940',
+			obligatory: true
 		},
 		'EB303': {
 			code: 'EB303',
@@ -62,7 +84,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D98640'
+			color: '#8040D9',
+			obligatory: true
 		},
 		'ST108': {
 			code: 'ST108',
@@ -71,7 +94,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#5740D9'
+			color: '#40D9C1',
+			obligatory: true
 		},
 		'ST117': {
 			code: 'ST117',
@@ -80,7 +104,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94040'
+			color: '#40C1D9',
+			obligatory: true
 		},
 		'EB103': {
 			code: 'EB103',
@@ -89,7 +114,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40B5D9'
+			color: '#40D960',
+			obligatory: true
 		},
 		'EB207': {
 			code: 'EB207',
@@ -98,7 +124,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EB105'],
-			color: ''
+			color: '#4090D9',
+			obligatory: true
 		},
 		'EB305': {
 			code: 'EB305',
@@ -107,7 +134,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST108'],
-			color: ''
+			color: '#40D9C1',
+			obligatory: true
 		},
 		'EB306': {
 			code: 'EB306',
@@ -116,7 +144,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940CD'
+			color: '#D94070',
+			obligatory: true
 		},
 		'EB502': {
 			code: 'EB502',
@@ -125,7 +154,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EB303'],
-			color: ''
+			color: '#8040D9',
+			obligatory: true
 		},
 		'ST305': {
 			code: 'ST305',
@@ -134,7 +164,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST108'],
-			color: ''
+			color: '#40D9C1',
+			obligatory: true
 		},
 		'EB203': {
 			code: 'EB203',
@@ -143,7 +174,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EB103'],
-			color: ''
+			color: '#40D960',
+			obligatory: true
 		},
 		'EB403': {
 			code: 'EB403',
@@ -152,7 +184,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EB101'],
-			color: ''
+			color: '#D9D140',
+			obligatory: true
 		},
 		'EB705': {
 			code: 'EB705',
@@ -161,7 +194,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA430'],
-			color: '#D94086'
+			color: '#D940A0',
+			obligatory: true
 		},
 		'ST303': {
 			code: 'ST303',
@@ -170,7 +204,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*EB101', '*EB103'],
-			color: ''
+			color: '#8DD550',
+			obligatory: true
 		},
 		'ST310': {
 			code: 'ST310',
@@ -179,7 +214,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST108'],
-			color: ''
+			color: '#40D9C1',
+			obligatory: true
 		},
 		'ST314': {
 			code: 'ST314',
@@ -188,7 +224,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#9E40D9'
+			color: '#50D940',
+			obligatory: true
 		},
 		'ST405': {
 			code: 'ST405',
@@ -197,7 +234,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST305'],
-			color: ''
+			color: '#40D9C1',
+			obligatory: true
 		},
 		'EB606': {
 			code: 'EB606',
@@ -206,7 +244,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST405'],
-			color: ''
+			color: '#40D9C1',
+			obligatory: true
 		},
 		'EB701': {
 			code: 'EB701',
@@ -215,7 +254,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EB403', 'EB502'],
-			color: ''
+			color: '#AD898D',
+			obligatory: true
 		},
 		'EB706': {
 			code: 'EB706',
@@ -224,7 +264,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA440'],
-			color: '#D9CD40'
+			color: '#D940D1',
+			obligatory: true
 		},
 		'ST403': {
 			code: 'ST403',
@@ -233,7 +274,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*ST303'],
-			color: ''
+			color: '#8DD550',
+			obligatory: true
 		},
 		'ST411': {
 			code: 'ST411',
@@ -242,7 +284,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST303', 'ST405'],
-			color: ''
+			color: '#67D789',
+			obligatory: true
 		},
 		'ST571': {
 			code: 'ST571',
@@ -251,7 +294,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#57D940'
+			color: '#40D990',
+			obligatory: true
 		},
 		'ST676': {
 			code: 'ST676',
@@ -260,7 +304,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EB207'],
-			color: ''
+			color: '#4090D9',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -269,7 +314,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EB604': {
 			code: 'EB604',
@@ -278,7 +324,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST405'],
-			color: ''
+			color: '#40D9C1',
+			obligatory: true
 		},
 		'EB904': {
 			code: 'EB904',
@@ -287,7 +334,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST310', 'ST411'],
-			color: ''
+			color: '#54D8A5',
+			obligatory: true
 		},
 		'EB907': {
 			code: 'EB907',
@@ -296,7 +344,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST310'],
-			color: ''
+			color: '#40D9C1',
+			obligatory: true
 		},
 		'ST516': {
 			code: 'ST516',
@@ -305,7 +354,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST405'],
-			color: ''
+			color: '#40D9C1',
+			obligatory: true
 		},
 		'ST517': {
 			code: 'ST517',
@@ -314,7 +364,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST411'],
-			color: ''
+			color: '#67D789',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -323,7 +374,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EB506': {
 			code: 'EB506',
@@ -332,7 +384,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EB207'],
-			color: ''
+			color: '#4090D9',
+			obligatory: true
 		},
 		'EB803': {
 			code: 'EB803',
@@ -341,7 +394,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST310'],
-			color: ''
+			color: '#40D9C1',
+			obligatory: true
 		},
 		'EB903': {
 			code: 'EB903',
@@ -350,7 +404,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['EB606', 'ST310'],
-			color: ''
+			color: '#40D9C1',
+			obligatory: true
 		},
 		'ST616': {
 			code: 'ST616',
@@ -359,7 +414,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['ST516'],
-			color: ''
+			color: '#40D9C1',
+			obligatory: true
 		},
 		'ST620': {
 			code: 'ST620',
@@ -368,7 +424,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['EB207'],
-			color: ''
+			color: '#4090D9',
+			obligatory: true
 		},
 		'ST777': {
 			code: 'ST777',
@@ -377,7 +434,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA460'],
-			color: '#40D9B5'
+			color: '#B040D9',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -386,7 +444,98 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'EI---': {
+			code: 'EI---',
+			name: 'Qualquer Disciplina com codigo EI---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo EI---, onde o - indica uma letra ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#D97040',
+			obligatory: false
+		},
+		'ST752': {
+			code: 'ST752',
+			name: 'Trabalho de Conclusão de Curso',
+			ementa: 'Realização do Trabalho de Conclusão de Curso de Tecnologia em Saneamento Ambiental, com objetivo de aprofundar e aplicar os conhecimentos específicos das disciplinas, sob orientação de um professor.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:10, D:0, HS:12, SL:0, C:12},
+			requisitos: ['AA475'],
+			color: '#5040D9',
+			obligatory: false
+		},
+		'ST753': {
+			code: 'ST753',
+			name: 'Estágio Supervisionado',
+			ementa: 'Realização do Estágio Supervisionado do Curso de Tecnologia em Saneamento Ambiental, sob orientação de um professor. Obs.: Não é responsabilidade da UNICAMP providenciar o estágio para os alunos.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:10, D:0, HS:12, SL:0, C:12},
+			requisitos: ['AA430'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'ST801': {
+			code: 'ST801',
+			name: 'Atividades Complementares I',
+			ementa: 'Participação em Atividades Complementares. A matrícula nesta disciplina será autorizada pela Coordenação do Curso mediante apresentação de documentos comprobatórios da execução de atividades complementares por parte do aluno, de acordo com regras internas do curso, visando a contabilização, em créditos, das atividades efetuadas.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:0, C:8},
+			requisitos: ['AA200'],
+			color: '#80D940',
+			obligatory: false
+		},
+		'ST802': {
+			code: 'ST802',
+			name: 'Atividades Complementares II',
+			ementa: 'Participação em Atividades Complementares. A matrícula nesta disciplina será autorizada pela Coordenação do Curso mediante apresentação de documentos comprobatórios da execução de atividades complementares por parte do aluno, de acordo com regras internas do curso, visando a contabilização, em créditos, das atividades efetuadas.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:6, D:0, HS:8, SL:0, C:8},
+			requisitos: ['AA200', 'ST801'],
+			color: '#80D940',
+			obligatory: false
+		},
+		'ST902': {
+			code: 'ST902',
+			name: 'Iniciação Científica I',
+			ementa: 'Atividades de Iniciação Científica, desenvolvidas sob orientação de docente da Unicamp.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:3, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#4060D9',
+			obligatory: false
+		},
+		'ST903': {
+			code: 'ST903',
+			name: 'Iniciação Científica II',
+			ementa: 'Atividades de Iniciação Científica, desenvolvidas sob orientação de docente da Unicamp.',
+			semestre: 1,
+			vector: {T:0, P:1, L:0, O:3, D:0, HS:4, SL:0, C:4},
+			requisitos: ['ST902'],
+			color: '#4060D9',
+			obligatory: false
+		},
+		'ST904': {
+			code: 'ST904',
+			name: 'Projetos de Extensão I',
+			ementa: 'Atividades de extensão desenvolvidas sob orientação de docente da Unicamp.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
+			requisitos: ['AA200'],
+			color: '#D9A040',
+			obligatory: false
+		},
+		'ST905': {
+			code: 'ST905',
+			name: 'Projetos de Extensão II',
+			ementa: 'Atividades de extensão desenvolvidas sob orientação de docente da Unicamp.',
+			semestre: 1,
+			vector: {T:0, P:2, L:0, O:2, D:0, HS:4, SL:0, C:4},
+			requisitos: ['ST904'],
+			color: '#D9A040',
+			obligatory: false
 		}
 	}
 };

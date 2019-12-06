@@ -1,5 +1,6 @@
 const catalogue = {
 	totalCredits: 230,
+	maxCreditsSem: 36,
 	semesters: {
 		'sem-1': {
 			id: '1',
@@ -43,6 +44,29 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 10,
+			hasRestrictions: true,
+			subjects: ['AC---', 'AD---', 'AP---', 'AR---', 'CS---', 'MP---', 'MU---'],
+		},
+		'elet-2': {
+			credits: 6,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-3': {
+			credits: 2,
+			hasRestrictions: true,
+			subjects: ['AC---', 'AD---', 'AP---', 'AR---', 'CS---'],
+		},
+		'elet-4': {
+			credits: 12,
+			hasRestrictions: true,
+			subjects: ['MP101', 'MP102', 'MP103', 'MP104', 'MP105', 'MP201', 'MP202', 'MP203', 'MP204', 'MP205', 'MP301', 'MP302', 'MP303', 'MP304', 'MP305', 'MP401', 'MP402', 'MP403', 'MP404', 'MP405', 'MU102', 'MU103', 'MU104', 'MU106', 'MU109', 'MU121', 'MU123', 'MU124', 'MU126', 'MU127', 'MU184', 'MU186', 'MU192', 'MU194', 'MU196', 'MU202', 'MU203', 'MU204', 'MU206', 'MU209', 'MU221', 'MU223', 'MU224', 'MU226', 'MU227', 'MU284', 'MU286', 'MU292', 'MU294', 'MU296', 'MU302', 'MU303', 'MU304', 'MU306', 'MU309', 'MU321', 'MU323', 'MU324', 'MU326', 'MU327', 'MU384', 'MU386', 'MU392', 'MU394', 'MU396', 'MU402', 'MU403', 'MU404', 'MU406', 'MU409', 'MU421', 'MU423', 'MU424', 'MU426', 'MU427', 'MU484', 'MU486', 'MU492', 'MU494', 'MU496'],
+		},
+	},
+
 	subjects: {
 		'MU058': {
 			code: 'MU058',
@@ -51,7 +75,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: '',
-			color: '#BAD940'
+			color: '#4082D9',
+			obligatory: true
 		},
 		'MU105': {
 			code: 'MU105',
@@ -60,7 +85,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#5ED940'
+			color: '#D97140',
+			obligatory: true
 		},
 		'MU120': {
 			code: 'MU120',
@@ -69,7 +95,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9409C'
+			color: '#D940A3',
+			obligatory: true
 		},
 		'MU143': {
 			code: 'MU143',
@@ -78,7 +105,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#5E40D9'
+			color: '#40D982',
+			obligatory: true
 		},
 		'MU193': {
 			code: 'MU193',
@@ -87,7 +115,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: '',
-			color: '#BA40D9'
+			color: '#40D9CC',
+			obligatory: true
 		},
 		'MU360': {
 			code: 'MU360',
@@ -96,7 +125,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#407DD9'
+			color: '#C4D940',
+			obligatory: true
 		},
 		'MU049': {
 			code: 'MU049',
@@ -105,7 +135,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU105'],
-			color: ''
+			color: '#D97140',
+			obligatory: true
 		},
 		'MU059': {
 			code: 'MU059',
@@ -114,7 +145,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: ['MU058'],
-			color: ''
+			color: '#4082D9',
+			obligatory: true
 		},
 		'MU205': {
 			code: 'MU205',
@@ -123,7 +155,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU105'],
-			color: ''
+			color: '#D97140',
+			obligatory: true
 		},
 		'MU220': {
 			code: 'MU220',
@@ -132,7 +165,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU120'],
-			color: ''
+			color: '#D940A3',
+			obligatory: true
 		},
 		'MU243': {
 			code: 'MU243',
@@ -141,7 +175,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:0, C:2},
 			requisitos: ['MU143'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'MU293': {
 			code: 'MU293',
@@ -150,7 +185,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: ['MU193'],
-			color: ''
+			color: '#40D9CC',
+			obligatory: true
 		},
 		'MU460': {
 			code: 'MU460',
@@ -159,7 +195,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU360'],
-			color: ''
+			color: '#C4D940',
+			obligatory: true
 		},
 		'MU035': {
 			code: 'MU035',
@@ -168,7 +205,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D9D9'
+			color: '#D9BC40',
+			obligatory: true
 		},
 		'MU060': {
 			code: 'MU060',
@@ -177,7 +215,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: ['MU059'],
-			color: ''
+			color: '#4082D9',
+			obligatory: true
 		},
 		'MU114': {
 			code: 'MU114',
@@ -186,7 +225,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU205'],
-			color: ''
+			color: '#D97140',
+			obligatory: true
 		},
 		'MU146': {
 			code: 'MU146',
@@ -195,7 +235,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#D94040'
+			color: '#D9D540',
+			obligatory: true
 		},
 		'MU171': {
 			code: 'MU171',
@@ -204,7 +245,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['MU243'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'MU393': {
 			code: 'MU393',
@@ -213,7 +255,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: ['MU293'],
-			color: ''
+			color: '#40D9CC',
+			obligatory: true
 		},
 		'MU560': {
 			code: 'MU560',
@@ -222,7 +265,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU460'],
-			color: ''
+			color: '#C4D940',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -231,7 +275,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:2},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'MU036': {
 			code: 'MU036',
@@ -240,7 +285,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU035'],
-			color: ''
+			color: '#D9BC40',
+			obligatory: true
 		},
 		'MU061': {
 			code: 'MU061',
@@ -249,7 +295,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: ['MU060'],
-			color: ''
+			color: '#4082D9',
+			obligatory: true
 		},
 		'MU214': {
 			code: 'MU214',
@@ -258,7 +305,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU114'],
-			color: ''
+			color: '#D97140',
+			obligatory: true
 		},
 		'MU246': {
 			code: 'MU246',
@@ -267,7 +315,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU146'],
-			color: ''
+			color: '#D9D540',
+			obligatory: true
 		},
 		'MU271': {
 			code: 'MU271',
@@ -276,7 +325,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['MU171'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'MU493': {
 			code: 'MU493',
@@ -285,7 +335,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:0, D:0, HS:5, SL:2, C:5},
 			requisitos: ['MU393'],
-			color: ''
+			color: '#40D9CC',
+			obligatory: true
 		},
 		'MU660': {
 			code: 'MU660',
@@ -294,7 +345,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU560'],
-			color: ''
+			color: '#C4D940',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -303,7 +355,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:2},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'MU140': {
 			code: 'MU140',
@@ -312,7 +365,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40D97D'
+			color: '#D9A340',
+			obligatory: true
 		},
 		'MU155': {
 			code: 'MU155',
@@ -321,7 +375,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#D99C40'
+			color: '#7AD940',
+			obligatory: true
 		},
 		'MU189': {
 			code: 'MU189',
@@ -330,7 +385,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['MU036'],
-			color: ''
+			color: '#D9BC40',
+			obligatory: true
 		},
 		'MU190': {
 			code: 'MU190',
@@ -339,7 +395,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU560'],
-			color: ''
+			color: '#C4D940',
+			obligatory: true
 		},
 		'MU314': {
 			code: 'MU314',
@@ -348,7 +405,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU214'],
-			color: ''
+			color: '#D97140',
+			obligatory: true
 		},
 		'MU346': {
 			code: 'MU346',
@@ -357,7 +415,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU246'],
-			color: ''
+			color: '#D9D540',
+			obligatory: true
 		},
 		'MU371': {
 			code: 'MU371',
@@ -366,7 +425,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['MU271'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'MU372': {
 			code: 'MU372',
@@ -375,7 +435,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:0, C:6},
 			requisitos: ['MU271'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'MU240': {
 			code: 'MU240',
@@ -384,7 +445,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU140'],
-			color: ''
+			color: '#D9A340',
+			obligatory: true
 		},
 		'MU255': {
 			code: 'MU255',
@@ -393,7 +455,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU155'],
-			color: ''
+			color: '#7AD940',
+			obligatory: true
 		},
 		'MU289': {
 			code: 'MU289',
@@ -402,7 +465,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['MU189'],
-			color: ''
+			color: '#D9BC40',
+			obligatory: true
 		},
 		'MU290': {
 			code: 'MU290',
@@ -411,7 +475,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU190'],
-			color: ''
+			color: '#C4D940',
+			obligatory: true
 		},
 		'MU414': {
 			code: 'MU414',
@@ -420,7 +485,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU314'],
-			color: ''
+			color: '#D97140',
+			obligatory: true
 		},
 		'MU446': {
 			code: 'MU446',
@@ -429,7 +495,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU346'],
-			color: ''
+			color: '#D9D540',
+			obligatory: true
 		},
 		'MU471': {
 			code: 'MU471',
@@ -438,7 +505,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['MU371'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'MU472': {
 			code: 'MU472',
@@ -447,7 +515,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:0, C:6},
 			requisitos: ['MU372'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -456,7 +525,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'MU165': {
 			code: 'MU165',
@@ -465,7 +535,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU240'],
-			color: ''
+			color: '#D9A340',
+			obligatory: true
 		},
 		'MU355': {
 			code: 'MU355',
@@ -474,7 +545,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU255'],
-			color: ''
+			color: '#7AD940',
+			obligatory: true
 		},
 		'MU389': {
 			code: 'MU389',
@@ -483,7 +555,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['MU289'],
-			color: ''
+			color: '#D9BC40',
+			obligatory: true
 		},
 		'MU571': {
 			code: 'MU571',
@@ -492,7 +565,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['MU471'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'MU572': {
 			code: 'MU572',
@@ -501,7 +575,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:0, C:6},
 			requisitos: ['MU472'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -510,7 +585,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'MU265': {
 			code: 'MU265',
@@ -519,7 +595,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU165'],
-			color: ''
+			color: '#D9A340',
+			obligatory: true
 		},
 		'MU455': {
 			code: 'MU455',
@@ -528,7 +605,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['MU355'],
-			color: ''
+			color: '#7AD940',
+			obligatory: true
 		},
 		'MU489': {
 			code: 'MU489',
@@ -537,7 +615,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['MU389'],
-			color: ''
+			color: '#D9BC40',
+			obligatory: true
 		},
 		'MU671': {
 			code: 'MU671',
@@ -546,7 +625,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['MU571'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'MU672': {
 			code: 'MU672',
@@ -555,7 +635,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:0, C:6},
 			requisitos: ['MU572'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -564,7 +645,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:8},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'MU771': {
 			code: 'MU771',
@@ -573,7 +655,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['MU671'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'MU772': {
 			code: 'MU772',
@@ -582,7 +665,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:0, C:6},
 			requisitos: ['MU672'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'ELET09': {
 			code: 'ELET09',
@@ -591,7 +675,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:6},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'MU871': {
 			code: 'MU871',
@@ -600,7 +685,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:2, C:4},
 			requisitos: ['MU771'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'MU872': {
 			code: 'MU872',
@@ -609,7 +695,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:2, D:0, HS:6, SL:0, C:6},
 			requisitos: ['MU772'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'MU999': {
 			code: 'MU999',
@@ -618,7 +705,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:6, D:0, HS:6, SL:0, C:6},
 			requisitos: ['MU671'],
-			color: ''
+			color: '#40D982',
+			obligatory: true
 		},
 		'ELET10': {
 			code: 'ELET10',
@@ -627,7 +715,878 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:4},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'AC---': {
+			code: 'AC---',
+			name: 'Qualquer Disciplina com codigo AC---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo AC---, onde o - indica uma letra ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#D9408A',
+			obligatory: false
+		},
+		'AD---': {
+			code: 'AD---',
+			name: 'Qualquer Disciplina com codigo AD---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo AD---, onde o - indica uma letra ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#9240D9',
+			obligatory: false
+		},
+		'AP---': {
+			code: 'AP---',
+			name: 'Qualquer Disciplina com codigo AP---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo AP---, onde o - indica uma letra ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#4840D9',
+			obligatory: false
+		},
+		'AR---': {
+			code: 'AR---',
+			name: 'Qualquer Disciplina com codigo AR---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo AR---, onde o - indica uma letra ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#409BD9',
+			obligatory: false
+		},
+		'CS---': {
+			code: 'CS---',
+			name: 'Qualquer Disciplina com codigo CS---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo CS---, onde o - indica uma letra ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#48D940',
+			obligatory: false
+		},
+		'MP---': {
+			code: 'MP---',
+			name: 'Qualquer Disciplina com codigo MP---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo MP---, onde o - indica uma letra ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#ABD940',
+			obligatory: false
+		},
+		'MP101': {
+			code: 'MP101',
+			name: 'Cordas I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#D98A40',
+			obligatory: false
+		},
+		'MP102': {
+			code: 'MP102',
+			name: 'Percussão I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#40D99B',
+			obligatory: false
+		},
+		'MP103': {
+			code: 'MP103',
+			name: 'Sopros I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#61D940',
+			obligatory: false
+		},
+		'MP104': {
+			code: 'MP104',
+			name: 'Teclados I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#D94059',
+			obligatory: false
+		},
+		'MP105': {
+			code: 'MP105',
+			name: 'Voz I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#D94040',
+			obligatory: false
+		},
+		'MP201': {
+			code: 'MP201',
+			name: 'Cordas II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MP101'],
+			color: '#D98A40',
+			obligatory: false
+		},
+		'MP202': {
+			code: 'MP202',
+			name: 'Percussão II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MP102'],
+			color: '#40D99B',
+			obligatory: false
+		},
+		'MP203': {
+			code: 'MP203',
+			name: 'Sopros II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MP103'],
+			color: '#61D940',
+			obligatory: false
+		},
+		'MP204': {
+			code: 'MP204',
+			name: 'Teclados II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MP104'],
+			color: '#D94059',
+			obligatory: false
+		},
+		'MP205': {
+			code: 'MP205',
+			name: 'Voz II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MP105'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'MP301': {
+			code: 'MP301',
+			name: 'Cordas III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MP201'],
+			color: '#D98A40',
+			obligatory: false
+		},
+		'MP302': {
+			code: 'MP302',
+			name: 'Percussão III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MP202'],
+			color: '#40D99B',
+			obligatory: false
+		},
+		'MP303': {
+			code: 'MP303',
+			name: 'Sopros III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MP203'],
+			color: '#61D940',
+			obligatory: false
+		},
+		'MP304': {
+			code: 'MP304',
+			name: 'Teclados III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MP204'],
+			color: '#D94059',
+			obligatory: false
+		},
+		'MP305': {
+			code: 'MP305',
+			name: 'Voz III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MP205'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'MP401': {
+			code: 'MP401',
+			name: 'Cordas IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MP301'],
+			color: '#D98A40',
+			obligatory: false
+		},
+		'MP402': {
+			code: 'MP402',
+			name: 'Percussão IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MP302'],
+			color: '#40D99B',
+			obligatory: false
+		},
+		'MP403': {
+			code: 'MP403',
+			name: 'Sopros IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MP303'],
+			color: '#61D940',
+			obligatory: false
+		},
+		'MP404': {
+			code: 'MP404',
+			name: 'Teclados IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MP304'],
+			color: '#D94059',
+			obligatory: false
+		},
+		'MP405': {
+			code: 'MP405',
+			name: 'Voz IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MP305'],
+			color: '#D94040',
+			obligatory: false
+		},
+		'MU---': {
+			code: 'MU---',
+			name: 'Qualquer Disciplina com codigo MU---',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo MU---, onde o - indica uma letra ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#AB40D9',
+			obligatory: false
+		},
+		'MU102': {
+			code: 'MU102',
+			name: 'Instrumento I',
+			ementa: 'Estudo ordenado e progressivo em Instrumento de escolha do aluno.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#7A40D9',
+			obligatory: false
+		},
+		'MU103': {
+			code: 'MU103',
+			name: 'Flauta I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#6140D9',
+			obligatory: false
+		},
+		'MU104': {
+			code: 'MU104',
+			name: 'Oboé I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#4050D9',
+			obligatory: false
+		},
+		'MU106': {
+			code: 'MU106',
+			name: 'Clarineta I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#92D940',
+			obligatory: false
+		},
+		'MU109': {
+			code: 'MU109',
+			name: 'Violino I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#C440D9',
+			obligatory: false
+		},
+		'MU121': {
+			code: 'MU121',
+			name: 'Contrabaixo I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#40D969',
+			obligatory: false
+		},
+		'MU123': {
+			code: 'MU123',
+			name: 'Piano I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#D940BC',
+			obligatory: false
+		},
+		'MU124': {
+			code: 'MU124',
+			name: 'Cravo I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#40B4D9',
+			obligatory: false
+		},
+		'MU126': {
+			code: 'MU126',
+			name: 'Viola I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#40D950',
+			obligatory: false
+		},
+		'MU127': {
+			code: 'MU127',
+			name: 'Violoncelo I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#40D9B4',
+			obligatory: false
+		},
+		'MU184': {
+			code: 'MU184',
+			name: 'Trompete I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#D95940',
+			obligatory: false
+		},
+		'MU186': {
+			code: 'MU186',
+			name: 'Trombone I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#40CCD9',
+			obligatory: false
+		},
+		'MU192': {
+			code: 'MU192',
+			name: 'Percussão I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#D940D5',
+			obligatory: false
+		},
+		'MU194': {
+			code: 'MU194',
+			name: 'Violão I',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#D94071',
+			obligatory: false
+		},
+		'MU196': {
+			code: 'MU196',
+			name: 'Canto I',
+			ementa: 'Estudo ordenado e progressivo do instrumento. Estudo dos autores, estiloterpretação e repertório.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: '',
+			color: '#4069D9',
+			obligatory: false
+		},
+		'MU202': {
+			code: 'MU202',
+			name: 'Instrumento II',
+			ementa: 'Estudo ordenado e progressivo em Instrumento de escolha do aluno.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU102'],
+			color: '#7A40D9',
+			obligatory: false
+		},
+		'MU203': {
+			code: 'MU203',
+			name: 'Flauta II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU103'],
+			color: '#6140D9',
+			obligatory: false
+		},
+		'MU204': {
+			code: 'MU204',
+			name: 'Oboé II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU104'],
+			color: '#4050D9',
+			obligatory: false
+		},
+		'MU206': {
+			code: 'MU206',
+			name: 'Clarineta II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU106'],
+			color: '#92D940',
+			obligatory: false
+		},
+		'MU209': {
+			code: 'MU209',
+			name: 'Violino II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU109'],
+			color: '#C440D9',
+			obligatory: false
+		},
+		'MU221': {
+			code: 'MU221',
+			name: 'Contrabaixo II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU121'],
+			color: '#40D969',
+			obligatory: false
+		},
+		'MU223': {
+			code: 'MU223',
+			name: 'Piano II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU123'],
+			color: '#D940BC',
+			obligatory: false
+		},
+		'MU224': {
+			code: 'MU224',
+			name: 'Cravo II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU124'],
+			color: '#40B4D9',
+			obligatory: false
+		},
+		'MU226': {
+			code: 'MU226',
+			name: 'Viola II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU126'],
+			color: '#40D950',
+			obligatory: false
+		},
+		'MU227': {
+			code: 'MU227',
+			name: 'Violoncelo II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU127'],
+			color: '#40D9B4',
+			obligatory: false
+		},
+		'MU284': {
+			code: 'MU284',
+			name: 'Trompete II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU184'],
+			color: '#D95940',
+			obligatory: false
+		},
+		'MU286': {
+			code: 'MU286',
+			name: 'Trombone II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU186'],
+			color: '#40CCD9',
+			obligatory: false
+		},
+		'MU292': {
+			code: 'MU292',
+			name: 'Percussão II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU192'],
+			color: '#D940D5',
+			obligatory: false
+		},
+		'MU294': {
+			code: 'MU294',
+			name: 'Violão II',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU194'],
+			color: '#D94071',
+			obligatory: false
+		},
+		'MU296': {
+			code: 'MU296',
+			name: 'Canto II',
+			ementa: 'Estudo ordenado e progressivo do instrumento. Estudo dos autores, estilo, interpretação e repertório.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU196'],
+			color: '#4069D9',
+			obligatory: false
+		},
+		'MU302': {
+			code: 'MU302',
+			name: 'Instrumento III',
+			ementa: 'Estudo ordenado e progressivo em instrumento de escolha do aluno.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU202'],
+			color: '#7A40D9',
+			obligatory: false
+		},
+		'MU303': {
+			code: 'MU303',
+			name: 'Flauta III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU203'],
+			color: '#6140D9',
+			obligatory: false
+		},
+		'MU304': {
+			code: 'MU304',
+			name: 'Oboé III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU204'],
+			color: '#4050D9',
+			obligatory: false
+		},
+		'MU306': {
+			code: 'MU306',
+			name: 'Clarineta III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU206'],
+			color: '#92D940',
+			obligatory: false
+		},
+		'MU309': {
+			code: 'MU309',
+			name: 'Violino III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU209'],
+			color: '#C440D9',
+			obligatory: false
+		},
+		'MU321': {
+			code: 'MU321',
+			name: 'Contrabaixo III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU221'],
+			color: '#40D969',
+			obligatory: false
+		},
+		'MU323': {
+			code: 'MU323',
+			name: 'Piano III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU223'],
+			color: '#D940BC',
+			obligatory: false
+		},
+		'MU324': {
+			code: 'MU324',
+			name: 'Cravo III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU224'],
+			color: '#40B4D9',
+			obligatory: false
+		},
+		'MU326': {
+			code: 'MU326',
+			name: 'Viola III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU226'],
+			color: '#40D950',
+			obligatory: false
+		},
+		'MU327': {
+			code: 'MU327',
+			name: 'Violoncelo III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU227'],
+			color: '#40D9B4',
+			obligatory: false
+		},
+		'MU384': {
+			code: 'MU384',
+			name: 'Trompete III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU284'],
+			color: '#D95940',
+			obligatory: false
+		},
+		'MU386': {
+			code: 'MU386',
+			name: 'Trombone III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU286'],
+			color: '#40CCD9',
+			obligatory: false
+		},
+		'MU392': {
+			code: 'MU392',
+			name: 'Percussão III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU292'],
+			color: '#D940D5',
+			obligatory: false
+		},
+		'MU394': {
+			code: 'MU394',
+			name: 'Violão III',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU294'],
+			color: '#D94071',
+			obligatory: false
+		},
+		'MU396': {
+			code: 'MU396',
+			name: 'Canto III',
+			ementa: 'Estudo ordenado e progressivo do instrumento. Estudo dos autores, estilo, interpretação e repertório.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU296'],
+			color: '#4069D9',
+			obligatory: false
+		},
+		'MU402': {
+			code: 'MU402',
+			name: 'Instrumento IV',
+			ementa: 'Estudo ordenado e progressivo em Instrumento de escolha do aluno.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU302'],
+			color: '#7A40D9',
+			obligatory: false
+		},
+		'MU403': {
+			code: 'MU403',
+			name: 'Flauta IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU303'],
+			color: '#6140D9',
+			obligatory: false
+		},
+		'MU404': {
+			code: 'MU404',
+			name: 'Oboé IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU304'],
+			color: '#4050D9',
+			obligatory: false
+		},
+		'MU406': {
+			code: 'MU406',
+			name: 'Clarineta IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU306'],
+			color: '#92D940',
+			obligatory: false
+		},
+		'MU409': {
+			code: 'MU409',
+			name: 'Violino IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU309'],
+			color: '#C440D9',
+			obligatory: false
+		},
+		'MU421': {
+			code: 'MU421',
+			name: 'Contrabaixo IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU321'],
+			color: '#40D969',
+			obligatory: false
+		},
+		'MU423': {
+			code: 'MU423',
+			name: 'Piano IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU323'],
+			color: '#D940BC',
+			obligatory: false
+		},
+		'MU424': {
+			code: 'MU424',
+			name: 'Cravo IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU324'],
+			color: '#40B4D9',
+			obligatory: false
+		},
+		'MU426': {
+			code: 'MU426',
+			name: 'Viola IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU326'],
+			color: '#40D950',
+			obligatory: false
+		},
+		'MU427': {
+			code: 'MU427',
+			name: 'Violoncelo IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU327'],
+			color: '#40D9B4',
+			obligatory: false
+		},
+		'MU484': {
+			code: 'MU484',
+			name: 'Trompete IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU384'],
+			color: '#D95940',
+			obligatory: false
+		},
+		'MU486': {
+			code: 'MU486',
+			name: 'Trombone IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU386'],
+			color: '#40CCD9',
+			obligatory: false
+		},
+		'MU492': {
+			code: 'MU492',
+			name: 'Percussão IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU392'],
+			color: '#D940D5',
+			obligatory: false
+		},
+		'MU494': {
+			code: 'MU494',
+			name: 'Violão IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU394'],
+			color: '#D94071',
+			obligatory: false
+		},
+		'MU496': {
+			code: 'MU496',
+			name: 'Canto IV',
+			ementa: 'Estudo ordenado e progressivo do instrumento. Estudo dos autores, estilo, interpretação e repertório.',
+			semestre: 1,
+			vector: {T:0, P:3, L:0, O:0, D:0, HS:3, SL:0, C:3},
+			requisitos: ['MU396'],
+			color: '#4069D9',
+			obligatory: false
 		}
 	}
 };

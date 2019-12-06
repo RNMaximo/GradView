@@ -1,5 +1,6 @@
 const catalogue = {
 	totalCredits: 240,
+	maxCreditsSem: 36,
 	semesters: {
 		'sem-1': {
 			id: '1',
@@ -35,6 +36,34 @@ const catalogue = {
 		}
 	},
 
+	eletivas: {
+		'elet-1': {
+			credits: 36,
+			hasRestrictions: true,
+			subjects: ['HH7--'],
+		},
+		'elet-2': {
+			credits: 18,
+			hasRestrictions: true,
+			subjects: ['EL142', 'EL212', 'EL485', 'EL511', 'EL683'],
+		},
+		'elet-3': {
+			credits: 16,
+			hasRestrictions: true,
+			subjects: ['HH93-', 'HH94-'],
+		},
+		'elet-4': {
+			credits: 24,
+			hasRestrictions: false,
+			subjects: [],
+		},
+		'elet-5': {
+			credits: 12,
+			hasRestrictions: false,
+			subjects: [],
+		},
+	},
+
 	subjects: {
 		'HH183': {
 			code: 'HH183',
@@ -43,7 +72,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: '',
-			color: '#D94040'
+			color: '#D940AA',
+			obligatory: true
 		},
 		'HH185': {
 			code: 'HH185',
@@ -52,7 +82,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D9D940'
+			color: '#4092D9',
+			obligatory: true
 		},
 		'HH186': {
 			code: 'HH186',
@@ -61,7 +92,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: '',
-			color: '#A640D9'
+			color: '#40D9B5',
+			obligatory: true
 		},
 		'HH188': {
 			code: 'HH188',
@@ -70,7 +102,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#73D940'
+			color: '#9ED940',
+			obligatory: true
 		},
 		'HH285': {
 			code: 'HH285',
@@ -79,7 +112,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#7340D9'
+			color: '#7BD940',
+			obligatory: true
 		},
 		'ELET02': {
 			code: 'ELET02',
@@ -88,7 +122,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:22},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HH381': {
 			code: 'HH381',
@@ -97,7 +132,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D940D9'
+			color: '#5740D9',
+			obligatory: true
 		},
 		'HH384': {
 			code: 'HH384',
@@ -106,7 +142,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D9A640'
+			color: '#9E40D9',
+			obligatory: true
 		},
 		'HH386': {
 			code: 'HH386',
@@ -115,7 +152,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#A6D940'
+			color: '#40D992',
+			obligatory: true
 		},
 		'ELET03': {
 			code: 'ELET03',
@@ -124,7 +162,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:10},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HH482': {
 			code: 'HH482',
@@ -133,7 +172,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#40D9D9'
+			color: '#404CD9',
+			obligatory: true
 		},
 		'HH483': {
 			code: 'HH483',
@@ -142,7 +182,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#40D940'
+			color: '#40D9D9',
+			obligatory: true
 		},
 		'HH484': {
 			code: 'HH484',
@@ -151,7 +192,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#D97340'
+			color: '#57D940',
+			obligatory: true
 		},
 		'ELET04': {
 			code: 'ELET04',
@@ -160,7 +202,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HH584': {
 			code: 'HH584',
@@ -169,7 +212,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#40D973'
+			color: '#40B5D9',
+			obligatory: true
 		},
 		'HH587': {
 			code: 'HH587',
@@ -178,7 +222,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#40A6D9'
+			color: '#D9CD40',
+			obligatory: true
 		},
 		'ELET05': {
 			code: 'ELET05',
@@ -187,7 +232,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:16},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'HH682': {
 			code: 'HH682',
@@ -196,7 +242,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#4073D9'
+			color: '#D94063',
+			obligatory: true
 		},
 		'HH685': {
 			code: 'HH685',
@@ -205,7 +252,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: ['AA200'],
-			color: '#40D9A6'
+			color: '#D94040',
+			obligatory: true
 		},
 		'HH690': {
 			code: 'HH690',
@@ -214,7 +262,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:10, D:0, HS:12, SL:2, C:12},
 			requisitos: ['AA200'],
-			color: '#D940A6'
+			color: '#C1D940',
+			obligatory: true
 		},
 		'ELET06': {
 			code: 'ELET06',
@@ -223,7 +272,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:12},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL774': {
 			code: 'EL774',
@@ -232,7 +282,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['AA200', 'AA445'],
-			color: '#4040D9'
+			color: '#D96340',
+			obligatory: true
 		},
 		'ELET07': {
 			code: 'ELET07',
@@ -241,7 +292,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:24},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
 		},
 		'EL874': {
 			code: 'EL874',
@@ -250,7 +302,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['EL774'],
-			color: ''
+			color: '#D96340',
+			obligatory: true
 		},
 		'LA001': {
 			code: 'LA001',
@@ -259,7 +312,8 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94073'
+			color: '#7B40D9',
+			obligatory: true
 		},
 		'ELET08': {
 			code: 'ELET08',
@@ -268,7 +322,88 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:18},
 			requisitos: '',
-			color: ''
+			color: '#000000',
+			obligatory: true
+		},
+		'EL142': {
+			code: 'EL142',
+			name: 'Tópicos Especiais em Ciências Sociais Aplicadas à Educação',
+			ementa: 'A disciplina aborda temas fundamentais da Educação a partir de aportes teóricos metodológicos das Ciências Sociais numa perspectiva interdisciplinar.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#406FD9',
+			obligatory: false
+		},
+		'EL212': {
+			code: 'EL212',
+			name: 'Política Educacional: Organização da Educação Brasileira',
+			ementa: 'Estudo analítico das políticas educacionais no Brasil com destaque para: a política educacional no contexto das políticas públicas; organização dos sistemas de ensino considerando as peculiaridades nacionais e os contextos e legislação de ensino; organização da educação básica e do ensino superior.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#40D94C',
+			obligatory: false
+		},
+		'EL485': {
+			code: 'EL485',
+			name: 'Filosofia e História da Educação',
+			ementa: 'Introdução à Filosofia e História da Educação, consideradas à luz de suas diferenças frente à Ciência e à Pedagogia: estudo e discussões das origens históricas da Filosofia e dos processos, narrativas e ideias que se relacionam com as configurações assumidas pela Educação no Brasil, principalmente em seu período de formação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#40D96F',
+			obligatory: false
+		},
+		'EL511': {
+			code: 'EL511',
+			name: 'Psicologia e Educação',
+			ementa: 'Fundamentos teóricos e contribuições da psicologia para o estudo e compreensão de questões relacionadas à Educação, considerando as possibilidades de atuação docente. Inserção em contextos educativos e análise do cotidiano escolar.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#D98640',
+			obligatory: false
+		},
+		'EL683': {
+			code: 'EL683',
+			name: 'Escola e Cultura',
+			ementa: 'Dimensões da escola e da cultura na Pesquisa e no Conhecimento em Educação.',
+			semestre: 1,
+			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
+			requisitos: '',
+			color: '#D940CD',
+			obligatory: false
+		},
+		'HH7--': {
+			code: 'HH7--',
+			name: 'Qualquer Disciplina com codigo HH7--',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo HH7--, onde o - indica uma letra ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#D94086',
+			obligatory: false
+		},
+		'HH93-': {
+			code: 'HH93-',
+			name: 'Qualquer Disciplina com codigo HH93-',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo HH93-, onde o - indica uma letra ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#D9AA40',
+			obligatory: false
+		},
+		'HH94-': {
+			code: 'HH94-',
+			name: 'Qualquer Disciplina com codigo HH94-',
+			ementa: 'Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo HH94-, onde o - indica uma letra ou numero.',
+			semestre: 1,
+			vector: {T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1},
+			requisitos: '',
+			color: '#C140D9',
+			obligatory: false
 		}
 	}
 };
