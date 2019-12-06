@@ -54,7 +54,14 @@
     box-sizing: border-box;
     cursor: pointer;
 }
-
+.scale {
+    width: calc(100% - 2px);
+    position: absolute;
+    bottom: -20px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
 .margin1 {
     margin: 1px;
 }

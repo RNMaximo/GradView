@@ -97,6 +97,11 @@ class Subject extends React.Component {
 
     const visibleClass = this.state.visible ? "" : " lessVisible ";
 
+    const creditsScale = this.state.onHover && this.props.sizedByCredits ?
+      <div className={"scale"}>
+        <p style={{margin: '0', padding: '0'}}>{subject.vector.C}</p>
+      </div> : null;
+
     return (
       <React.Fragment>
         <div className={"subject-container " + (this.props.sizedByCredits ? " margin1" : "")}>
@@ -128,6 +133,8 @@ class Subject extends React.Component {
                   {...provided.draggableProps}
                   {...provided.dragHandleProps}
                   ref={provided.innerRef}
+                  onMouseEnter={() => this.setState({onHover: true})}
+                  onMouseLeave={() => this.setState({onHover: false})}
                 >
                   <div
                     title={subject.name}
@@ -136,6 +143,7 @@ class Subject extends React.Component {
                     onMouseEnter={this.props.onMouseEnter}
                     onMouseLeave={this.props.onMouseLeave}
                   >
+                    {creditsScale}
                     <Alert
                       show={this.props.alert}
                       onClick={this.openAlertModal}
