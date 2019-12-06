@@ -9,8 +9,8 @@ import PopupSubject from "./PopupSubject/PopupSubject";
 import PopupAlert from "./PopupAlert/PopupAlert";
 
 import {getVisualCode, isEletiva} from "../../../Functions/SubjectCode/SubjectCode";
-import * as colorConstans from "../colorConstants";
 import Check from "./Check/Check";
+import {getLinearGradColors} from "../colorConstants";
 
 
 class Subject extends React.Component {
@@ -54,26 +54,7 @@ class Subject extends React.Component {
         }
     }
     else if (! this.props.borderColored && this.props.coloredByVector) {
-      const TColor = colorConstans.TColor;
-      const PColor = colorConstans.PColor;
-      const LColor = colorConstans.LColor;
-      const OColor = colorConstans.OColor;
-      const DColor = colorConstans.DColor;
-      const RestColor = colorConstans.RestColor;
-
-      const TPercent = subject.vector.T/subject.vector.C*100;
-      const PPercent = TPercent + subject.vector.P/subject.vector.C*100;
-      const LPercent = PPercent + subject.vector.L/subject.vector.C*100;
-      const OPercent = LPercent + subject.vector.O/subject.vector.C*100;
-      const DPercent = OPercent + subject.vector.D/subject.vector.C*100;
-
-      const T = TColor +", " + TColor+" "+TPercent +"%, ";
-      const P = PColor +" "+ TPercent +"%, " + PColor +", " + PColor +" "+ PPercent +"%, ";
-      const L = LColor +" "+ PPercent +"%, " + LColor +", " + LColor +" "+ LPercent +"%, ";
-      const O = OColor +" "+ LPercent +"%, " + OColor +", " + OColor +" "+ OPercent +"%, ";
-      const D = DColor +" "+ OPercent +"%, " + DColor +", " + DColor +" "+ DPercent +"%, ";
-      const Rest = RestColor + DPercent +"%, " + RestColor;
-      const linearGradColors = T + P + L + O + D + Rest;
+      const linearGradColors = getLinearGradColors(subject.vector);
 
       divStyle =
         {
@@ -115,7 +96,6 @@ class Subject extends React.Component {
     const subjectCode = isEletiva(subject.code) ? "ELE("+subject.vector.C+")": getVisualCode(subject.code);
 
     const visibleClass = this.state.visible ? "" : " lessVisible ";
-
 
     return (
       <React.Fragment>
