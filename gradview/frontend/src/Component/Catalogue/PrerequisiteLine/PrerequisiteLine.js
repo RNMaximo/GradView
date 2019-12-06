@@ -56,7 +56,7 @@ class PrerequisiteLine extends React.Component {
         fromAnchor="top"
         curveFrom={[0, 0]}
         curveTo={[0, 5]}
-        delay={50}
+        delay={500}
         borderStyle={borderStyle}
       />
     )

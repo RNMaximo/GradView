@@ -267,7 +267,7 @@ class Catalogue extends React.Component {
               isNotDraggable={subject.planned}
 
               coloredByVector={this.props.coloredByVector}
-              sizedByCredits={this.props.sizedByCredits}
+              sizedByCredits={false}
               alert={false}
               reason={[]}
 

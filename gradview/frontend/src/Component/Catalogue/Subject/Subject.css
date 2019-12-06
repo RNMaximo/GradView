@@ -25,6 +25,9 @@
     -o-user-select: none;
 
     position :relative;
+
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s ease-in-out;
 }
 .subject.planned {
     background: #aaa !important;
