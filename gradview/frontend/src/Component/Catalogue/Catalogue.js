@@ -4,6 +4,8 @@ import Subject from './Subject/Subject';
 import PrerequisiteLine from './PrerequisiteLine/PrerequisiteLine';
 import {DragDropContext, Droppable} from "react-beautiful-dnd";
 import {getCleanCode, isPartialRequisite} from "../../Functions/SubjectCode/SubjectCode";
+import VectorLegend from "./VectorLegend/VectorLegend";
+
 
 class Catalogue extends React.Component {
   state={
@@ -161,10 +163,10 @@ class Catalogue extends React.Component {
 
         const className = this.props.editing ? " editing " : "";
         return (
-            <div
-              key={"semester "+ semester.id}
-              className={"semester"}
-            >
+          <div
+            key={"semester "+ semester.id}
+            className={"semester"}
+          >
             <p className={"info"}><strong>{semester.id}º</strong> sem.</p>
             <Droppable
               key={"Semestre "+semester.id}
@@ -332,29 +334,34 @@ class Catalogue extends React.Component {
     );
 
     return (
-      <DragDropContext
-        onDragEnd={this.props.onDragEnd}
-        onDragStart={this.props.onDragStart}
-      >
-        {this.props.showeletivas ?
-          <div>
-            <strong>Eletivas:</strong>
-            {eletivas}
-            {eletivasRemover}
-          </div>
-          :
-          <div style={{display: 'none'}}>
-            <strong>Eletivas:</strong>
-            {eletivas}
-          </div>}
-        <div className="Catalogue">
-          {semesters}
-          <div className={"PrereqLines"}>
-            {prereqLines}
-          </div>
+      <React.Fragment>
+        <div style={{height: '40px'}}>
+          {this.props.coloredByVector ? <VectorLegend/> : null}
         </div>
+        <DragDropContext
+          onDragEnd={this.props.onDragEnd}
+          onDragStart={this.props.onDragStart}
+        >
+          {this.props.showeletivas ?
+            <div>
+              <strong>Eletivas:</strong>
+              {eletivas}
+              {eletivasRemover}
+            </div>
+            :
+            <div style={{display: 'none'}}>
+              <strong>Eletivas:</strong>
+              {eletivas}
+            </div>}
+          <div className="Catalogue">
+            {semesters}
+            <div className={"PrereqLines"}>
+              {prereqLines}
+            </div>
+          </div>
 
-      </DragDropContext>
+        </DragDropContext>
+      </React.Fragment>
     )
   }
 }
