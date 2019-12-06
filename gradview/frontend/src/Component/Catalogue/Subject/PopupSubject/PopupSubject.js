@@ -1,6 +1,6 @@
 import React from 'react';
 import './PopupSubject.css';
-import {getVisualCode} from "../../../../Functions/SubjectCode/SubjectCode";
+import {getVisualCode, isEletiva} from "../../../../Functions/SubjectCode/SubjectCode";
 import Popup from "reactjs-popup";
 
 class PopupSubject extends React.Component {
@@ -8,6 +8,12 @@ class PopupSubject extends React.Component {
     const subject = this.props.subject;
     const requisitesCodes = subject.requisitos ? subject.requisitos.map((r) => {return getVisualCode(r)}) : null;
     const requisites = subject.requisitos ? requisitesCodes.join(', ') : "Nenhum";
+    let code =  subject.code;
+    if (isEletiva(subject.code)) {
+      code = ""
+    } else {
+      code = getVisualCode(subject.code)
+    }
 
     return (
       <Popup
@@ -20,7 +26,7 @@ class PopupSubject extends React.Component {
             &times;
           </div>
           <p><strong>Nome:</strong> {subject.name}</p>
-          <p><strong>Código:</strong> {getVisualCode(subject.code)}</p>
+          <p><strong>Código:</strong> {code}</p>
           <p><strong>Créditos:</strong> {subject.vector.C}</p>
           <p><strong>Ementa:</strong> {subject.ementa}</p>
           <p><strong>Requisitos:</strong> {requisites}</p>
