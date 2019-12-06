@@ -24,7 +24,7 @@ function disciplina = getdisciplina(tudo,codigo,discusadas,semestre)
     if contains(codigo,'-')
         disciplina.codigo=codigo;
         disciplina.nome=['Qualquer Disciplina com codigo ' codigo];
-        disciplina.ementa=['Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo ' codigo ', onde o - indica um caracter ou numero.'];
+        disciplina.ementa=['Esta disciplina representa qualquer disciplina oferecida pela Unicamp com codigo ' codigo ', onde o - indica uma letra ou numero.'];
         disciplina.vetor='T:0, P:0, L:0, O:0, D:0, HS:0, SL:0, C:1';
         disciplina.prereqs={};
         disciplina.oferecimento='';

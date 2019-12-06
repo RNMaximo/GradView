@@ -1,0 +1,16 @@
+function [linhas,semestres] = randpermlines(lines,semestres)
+    lengthlines = totallength(lines);
+    lines2 = lines;
+    semestres2=semestres;
+    indsem = randi(length(semestres));
+    
+    inds = randperm(length(semestres{indsem}));
+    
+    for i=1:length(semestres{indsem})
+        if lines2{i}(2,1)==indsem
+        lines2{i}(2,1) = inds(lines2{i}(2,1));
+        semestres2{indsem}{i}
+    end
+    
+    
+    

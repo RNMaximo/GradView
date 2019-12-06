@@ -1,21 +1,17 @@
 function curriculo_cores = colore_curriculos(curriculo)
     curriculo_cores = curriculo;
     for i=1:length(curriculo.modalidade)
-        
         % Conta quantas cores novas deve usar
         ncores = 0;
         discs=curriculo.modalidade(i).disciplinas;
         for j=1:length(discs)
-            if isempty(discs(j).prereqs)
+            if contains(discs(j).codigo,'ELET')
+                % NAO FAZ NADA
+            elseif isempty(discs(j).prereqs)
                 ncores = ncores+1;
-            else
-                if ~isempty(strfind(discs(j).codigo,'ELET'))
-                    
-                elseif (length(strfind(discs(j).prereqs{1},'AA'))==length(strfind(discs(j).prereqs{1},','))+1)
-                    ncores = ncores+1;
-                end
+            elseif (length(strfind(discs(j).prereqs{1},'AA'))==length(strfind(discs(j).prereqs{1},','))+1)
+                ncores = ncores+1;
             end
-
         end
         
         cores = getcolors(ncores);
@@ -27,16 +23,14 @@ function curriculo_cores = colore_curriculos(curriculo)
         ncores = 0;
         for j=1:length(discs)
             discs(j).color='';
-            if isempty(discs(j).prereqs)
+            if contains(discs(j).codigo,'ELET')
+                discs(j).color = [0 0 0];
+            elseif isempty(discs(j).prereqs)
                 ncores = ncores+1;
                 discs(j).color = cores(ncores,:);
-            else
-                if ~isempty(strfind(discs(j).codigo,'ELET'))
-                    discs(j).color = [0 0 0];
-                elseif (length(strfind(discs(j).prereqs{1},'AA'))==length(strfind(discs(j).prereqs{1},','))+1)
-                    ncores = ncores+1;
-                    discs(j).color = cores(ncores,:);
-                end
+            elseif (length(strfind(discs(j).prereqs{1},'AA'))==length(strfind(discs(j).prereqs{1},','))+1)
+                ncores = ncores+1;
+                discs(j).color = cores(ncores,:);
             end
         end
         

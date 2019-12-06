@@ -3,13 +3,15 @@ load('disciplinas.mat');
 catlist = sprintf('const catalogueOptions = {');
 for ano=2012:2020
     catlist = sprintf('%s\n\t"%d": {',catlist,ano);
-    create(['js/' num2str(ano)]);
+    create(['jsv2/' num2str(ano)]);
     for i=[1:200]
         disp(['Obtendo curso ' num2str(i)]);
         try
             curriculos = getcurriculo(ano,i,disciplinas{ano});
             
             curriculos = colore_curriculos(curriculos);
+            
+            curriculos = minimal_lines(curriculos);
             
             curso = strsplit(curriculos.curso,' - ');
             curso = strjoin(curso(2:end),' - ');
@@ -18,7 +20,7 @@ for ano=2012:2020
             for j=1:length(curriculos.modalidade)
                 filename = [num2str(ano) '/curso' num2str(i) '_mod' num2str(j) '.js'];
                 catlist = sprintf('%s\t\t\t\t{\n\t\t\t\t\tname: ''%s'',\n\t\t\t\t\tfile: ''%s''\n\t\t\t\t},\n',catlist,curriculos.modalidade(j).nome,filename);
-                fid = fopen(['js/' filename],'w');
+                fid = fopen(['jsv2/' filename],'w');
                 curriculostr = curriculo2str(curriculos.modalidade(j));
                 curriculostr=strrep(curriculostr,'\\','\');
                 fprintf(fid,'%s\n',curriculostr);
