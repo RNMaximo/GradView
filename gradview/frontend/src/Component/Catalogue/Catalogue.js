@@ -161,7 +161,10 @@ class Catalogue extends React.Component {
 
         const className = this.props.editing ? " editing " : "";
         return (
-          <div className={"semester "+semester.id}>
+            <div
+              key={"semester "+ semester.id}
+              className={"semester"}
+            >
             <p className={"info"}><strong>{semester.id}º</strong> sem.</p>
             <Droppable
               key={"Semestre "+semester.id}
@@ -231,7 +234,10 @@ class Catalogue extends React.Component {
         const subjects = eletivasData[eletivaId].subjects.map(subjectsId => catalogueProps.subjects[subjectsId]);
         if (! eletivasData[eletivaId].hasRestrictions) {
           return (
-            <div className={"eletivas "+ eletivaId}>
+            <div
+              key={"eletivas "+ eletivaId}
+              className={"eletivas"}
+            >
               <p className={"info"}><strong>{eletivasData[eletivaId].credits}</strong> créditos dentre:</p>
               <p className={"subjects"}>Qualquer disciplina da UNICAMP</p>
             </div>
@@ -271,12 +277,17 @@ class Catalogue extends React.Component {
           )
         });
         return (
-          <div className={"eletivas "+ eletivaId}>
+          <div
+            key={"eletivas "+ eletivaId}
+            className={"eletivas"}
+          >
             <p className={"info"}><strong>{creditsCounter}/{eletivasData[eletivaId].credits}</strong> créditos dentre:</p>
             <Droppable
               key={"Eletivas "+eletivaId}
               droppableId={eletivaId}
               direction={"horizontal"}
+              isDropDisabled
+              renderClone
             >
               {(provided, snapshot) => (
                 <div
@@ -295,6 +306,30 @@ class Catalogue extends React.Component {
         );
       })
     );
+    const removerClass = this.props.isRemoverDisable ? " disable " : "";
+    const eletivasRemover = (
+      <div className={"eletivas eletivas-remover " + removerClass}>
+        <p><strong>REMOVER</strong></p>
+        <Droppable
+          key={"droppableRemover"}
+          droppableId={"remover"}
+          direction={"horizontal"}
+          isDropDisabled={this.props.isRemoverDisable}
+        >
+          {(provided, snapshot) => (
+            <div
+              key={"eletivasRemover"}
+              className={"droppable"}
+              ref={provided.innerRef}
+              {...provided.droppableProps}
+            >
+              {provided.placeholder}
+              <br/>
+            </div>
+          )}
+        </Droppable>
+      </div>
+    );
 
     return (
       <DragDropContext
@@ -305,6 +340,7 @@ class Catalogue extends React.Component {
           <div>
             <strong>Eletivas:</strong>
             {eletivas}
+            {eletivasRemover}
           </div>
           :
           <div style={{display: 'none'}}>

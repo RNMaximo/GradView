@@ -15,8 +15,6 @@ import {
   getCatalogueCourseOptionsByYear, getCourseName
 } from "./Component/Catalogue/Catalogues/cataloguesFunctions";
 
-var randomColor = require('randomcolor');
-
 class App extends React.Component {
   state = {
     catalogueYear: null,
@@ -30,7 +28,8 @@ class App extends React.Component {
 
     isColoredByTPChecked: false,
     isSizedByCreditsChecked: false,
-    showEletivasChecked: true,
+    showEletivasChecked: false,
+    isRemoverDisable: true,
 
     isEditing: false,
     onSearch: false,
@@ -98,69 +97,87 @@ class App extends React.Component {
     return prereq.map((r) => {return r.color})
   };
 
-  onDragStart = () => {
-    this.setState({isEditing: true})
+  onDragStart = (info) => {
+    const catalogue = this.state.catalogue;
+    const { source, draggableId } = info;
+    const isFromEletivas = source.droppableId.startsWith("elet");
+
+    let isRemoverDisable = true;
+    if (!isFromEletivas && !catalogue.subjects[draggableId].obligatory) {
+      isRemoverDisable = false;
+    }
+    this.setState({isEditing: true, isRemoverDisable: isRemoverDisable})
   };
 
   onDragEnd = (result) => {
     const catalogue = this.state.catalogue;
     const { destination, source, draggableId } = result;
 
-    //TODO: se não tiver destino e for eletiva, remove do catalogo = volta pra lista?
     if (!destination) {
-      this.setState({isEditing: false});
+      this.setState({isEditing: false, isRemoverDisable: true});
+      return;
+    }
+    // Nada mudou
+    if (destination.droppableId === source.droppableId && destination.index === source.index) {
+      this.setState({isEditing: false, isRemoverDisable: true});
       return;
     }
 
     const isFromEletivas = source.droppableId.startsWith("elet");
     const isToEletivas = destination.droppableId.startsWith("elet");
-    // Nada mudou
-    if (destination.droppableId === source.droppableId && destination.index === source.index) {
-      this.setState({isEditing: false});
-      return;
-    }
+    const isRemove = destination.droppableId ==="remover";
 
     // Eletiva -> Eletiva
-    else if (isFromEletivas && isToEletivas) {
+    if (isFromEletivas && isToEletivas) {
       if (destination.droppableId !== source.droppableId) {
         // TODO: POPUP instruindo
         console.log("Não é possível mover disciplinas entre os blocos de eletivas");
       }
-      this.setState({ isEditing: false });
+      this.setState({ isEditing: false, isRemoverDisable: true });
       return;
     }
 
-    // Semestre -> Eletiva
-    else if (isToEletivas && !isFromEletivas) {
-      const start = catalogue.semesters[source.droppableId];
-      const startTaskIds = Array.from(start.subjects);
-      startTaskIds.splice(source.index, 1);
-
-      const newStart = {
-        ...start,
-        subjects: startTaskIds,
-      };
-
-      if (catalogue.subjects[draggableId].obligatory) {
+    // _ -> Remove
+    else if (isRemove) {
+      // Eletiva -> Remover
+      if (isFromEletivas) {
+        // TODO: POPUP instruindo
+        console.log("Não é possível remover disciplinas de um bloco de eletivas");
+        this.setState({isEditing: false, isRemoverDisable: true});
+        return;
+      }
+      // Semestre Obrigatoria -> Remover
+      else if (catalogue.subjects[draggableId].obligatory) {
         // TODO: POPUP instruindo
         console.log("Não é possível remover disciplinas obrigatórias");
-        this.setState({ isEditing: false });
+        this.setState({isEditing: false, isRemoverDisable: true});
         return
       }
+      // Semestre Opcional -> Remover
+      else {
+        const start = catalogue.semesters[source.droppableId];
+        const startTaskIds = Array.from(start.subjects);
+        startTaskIds.splice(source.index, 1);
 
-      const newState = {
-        ...catalogue,
-        semesters: {
-          ...catalogue.semesters,
-          ["sem-" + newStart.id]: newStart,
-        },
-        subjects: {
-          ...catalogue.subjects,
-          [draggableId]: {...catalogue.subjects[draggableId], planned: false}
-        }
-      };
-      this.setState({catalogue: newState, isEditing: false});
-      return;
+        const newStart = {
+          ...start,
+          subjects: startTaskIds,
+        };
+
+        const newState = {
+          ...catalogue,
+          semesters: {
+            ...catalogue.semesters,
+            ["sem-" + newStart.id]: newStart,
+          },
+          subjects: {
+            ...catalogue.subjects,
+            [draggableId]: {...catalogue.subjects[draggableId], planned: false}
+          }
+        };
+        this.setState({catalogue: newState, isEditing: false, isRemoverDisable: true});
+        return;
+      }
     }
 
     // Semestre -> Semestre
@@ -185,7 +202,7 @@ class App extends React.Component {
             ["sem-" + newColumn.id]: newColumn,
           }
         };
-        this.setState({catalogue: newState, isEditing: false})
+        this.setState({catalogue: newState, isEditing: false, isRemoverDisable: true})
       } else {
         const startTaskIds = Array.from(start.subjects);
         startTaskIds.splice(source.index, 1);
@@ -211,7 +228,7 @@ class App extends React.Component {
             ["sem-" + newFinish.id]: newFinish,
           }
         };
-        this.setState({catalogue: newState, isEditing: false})
+        this.setState({catalogue: newState, isEditing: false, isRemoverDisable: true})
       }
     }
 
@@ -245,7 +262,7 @@ class App extends React.Component {
         };
 
 
-        this.setState({catalogue: newState, isEditing: false})
+        this.setState({catalogue: newState, isEditing: false, isRemoverDisable: true})
       }
     }
 
@@ -407,6 +424,7 @@ class App extends React.Component {
             coloredByVector={this.state.isColoredByTPChecked}
             sizedByCredits={this.state.isSizedByCreditsChecked}
             showeletivas={this.state.showEletivasChecked}
+            isRemoverDisable={this.state.isRemoverDisable}
 
             onSearch={this.state.onSearch}
             editing={this.state.isEditing}

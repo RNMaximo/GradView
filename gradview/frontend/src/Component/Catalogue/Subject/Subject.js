@@ -122,6 +122,7 @@ class Subject extends React.Component {
         <div className={"subject-container " + (this.props.sizedByCredits ? " margin1" : "")}>
           {this.props.isNotDraggable ?
             <div
+              title={subject.name}
               className={"subject " + visibleClass + " planned"}
               style={{...divStyle, ...sizeStyle}}
             >
@@ -132,7 +133,8 @@ class Subject extends React.Component {
                 style={textStyle}
                 onClick={this.openModal}
               >{subjectCode}</span>
-            </div> :
+            </div>
+            :
             <Draggable
               key={subject.code}
               draggableId={subject.code}
@@ -148,6 +150,7 @@ class Subject extends React.Component {
                   ref={provided.innerRef}
                 >
                   <div
+                    title={subject.name}
                     className={"subject " + subject.code + visibleClass}
                     style={{...divStyle, ...sizeStyle}}
                     onMouseEnter={this.props.onMouseEnter}
@@ -183,8 +186,6 @@ class Subject extends React.Component {
               reason={this.props.reason}
             /> : null }
         </div>
-
-
       </React.Fragment>
     )
   }

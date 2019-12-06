@@ -1,7 +1,7 @@
 const catalogueOptions = {
   "2013": {
     '1': {
-      name: "Matemática",
+      name: "Matemática - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Matemática',
@@ -18,7 +18,7 @@ const catalogueOptions = {
       ]
     },
     '2': {
-      name: "Estatística",
+      name: "Estatística - Integral",
       modality: [
         {
           name: '',
@@ -27,7 +27,7 @@ const catalogueOptions = {
       ]
     },
     '4': {
-      name: "Física",
+      name: "Física - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Física',
@@ -48,7 +48,7 @@ const catalogueOptions = {
       ]
     },
     '5': {
-      name: "Química",
+      name: "Química - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Química',
@@ -65,7 +65,7 @@ const catalogueOptions = {
       ]
     },
     '6': {
-      name: "Ciências Biológicas",
+      name: "Ciências Biológicas - Integral",
       modality: [
         {
           name: 'AJ - Licenciatura Plena em Ciências Biológicas',
@@ -77,8 +77,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '7': {
+      name: "Letras - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2013/curso7_mod1.js'
+        },
+      ]
+    },
     '8': {
-      name: "Engenharia Agrícola",
+      name: "Engenharia Agrícola - Integral",
       modality: [
         {
           name: '',
@@ -87,7 +96,7 @@ const catalogueOptions = {
       ]
     },
     '9': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Integral",
       modality: [
         {
           name: '',
@@ -96,7 +105,7 @@ const catalogueOptions = {
       ]
     },
     '10': {
-      name: "Engenharia Mecânica",
+      name: "Engenharia Mecânica - Integral",
       modality: [
         {
           name: '',
@@ -105,7 +114,7 @@ const catalogueOptions = {
       ]
     },
     '11': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Integral",
       modality: [
         {
           name: '',
@@ -114,7 +123,7 @@ const catalogueOptions = {
       ]
     },
     '12': {
-      name: "Engenharia Civil",
+      name: "Engenharia Civil - Integral",
       modality: [
         {
           name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
@@ -139,7 +148,7 @@ const catalogueOptions = {
       ]
     },
     '13': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Integral",
       modality: [
         {
           name: '',
@@ -148,7 +157,7 @@ const catalogueOptions = {
       ]
     },
     '14': {
-      name: "Odontologia",
+      name: "Odontologia - Integral",
       modality: [
         {
           name: '',
@@ -157,7 +166,7 @@ const catalogueOptions = {
       ]
     },
     '15': {
-      name: "Medicina",
+      name: "Medicina - Integral",
       modality: [
         {
           name: '',
@@ -166,7 +175,7 @@ const catalogueOptions = {
       ]
     },
     '16': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -191,7 +200,7 @@ const catalogueOptions = {
       ]
     },
     '17': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Integral",
       modality: [
         {
           name: '',
@@ -199,8 +208,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '18': {
+      name: "Linguística - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2013/curso18_mod1.js'
+        },
+      ]
+    },
     '20': {
-      name: "Pedagogia",
+      name: "Pedagogia - Integral",
       modality: [
         {
           name: '',
@@ -209,7 +227,7 @@ const catalogueOptions = {
       ]
     },
     '21': {
-      name: "Enfermagem",
+      name: "Enfermagem - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Enfermagem',
@@ -222,7 +240,7 @@ const catalogueOptions = {
       ]
     },
     '23': {
-      name: "Dança",
+      name: "Dança - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Dança',
@@ -235,7 +253,7 @@ const catalogueOptions = {
       ]
     },
     '25': {
-      name: "Artes Visuais",
+      name: "Artes Visuais - Integral",
       modality: [
         {
           name: 'AF - Bacharelado em Artes Visuais',
@@ -248,7 +266,7 @@ const catalogueOptions = {
       ]
     },
     '26': {
-      name: "Artes Cênicas",
+      name: "Artes Cênicas - Integral",
       modality: [
         {
           name: '',
@@ -257,7 +275,7 @@ const catalogueOptions = {
       ]
     },
     '27': {
-      name: "Educação Física",
+      name: "Educação Física - Integral",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -270,7 +288,7 @@ const catalogueOptions = {
       ]
     },
     '28': {
-      name: "Matemática Aplicada e Computacional",
+      name: "Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -279,7 +297,7 @@ const catalogueOptions = {
       ]
     },
     '29': {
-      name: "Licenciatura em Matemática",
+      name: "Licenciatura em Matemática - Noturno",
       modality: [
         {
           name: '',
@@ -288,7 +306,7 @@ const catalogueOptions = {
       ]
     },
     '34': {
-      name: "Engenharia de Computação",
+      name: "Engenharia de Computação - Integral",
       modality: [
         {
           name: 'AA - Sistemas de Computação',
@@ -305,7 +323,7 @@ const catalogueOptions = {
       ]
     },
     '36': {
-      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
       modality: [
         {
           name: '',
@@ -314,7 +332,7 @@ const catalogueOptions = {
       ]
     },
     '38': {
-      name: "Pedagogia",
+      name: "Pedagogia - Noturno",
       modality: [
         {
           name: '',
@@ -323,7 +341,7 @@ const catalogueOptions = {
       ]
     },
     '39': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Noturno",
       modality: [
         {
           name: '',
@@ -332,7 +350,7 @@ const catalogueOptions = {
       ]
     },
     '40': {
-      name: "Licenciatura em Física",
+      name: "Licenciatura em Física - Noturno",
       modality: [
         {
           name: '',
@@ -341,7 +359,7 @@ const catalogueOptions = {
       ]
     },
     '41': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Noturno",
       modality: [
         {
           name: '',
@@ -350,7 +368,7 @@ const catalogueOptions = {
       ]
     },
     '42': {
-      name: "Ciência da Computação",
+      name: "Ciência da Computação - Noturno",
       modality: [
         {
           name: '',
@@ -359,7 +377,7 @@ const catalogueOptions = {
       ]
     },
     '43': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Noturno",
       modality: [
         {
           name: '',
@@ -368,7 +386,7 @@ const catalogueOptions = {
       ]
     },
     '44': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -393,7 +411,7 @@ const catalogueOptions = {
       ]
     },
     '45': {
-      name: "Educação Física",
+      name: "Educação Física - Noturno",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -406,7 +424,7 @@ const catalogueOptions = {
       ]
     },
     '46': {
-      name: "Licenciatura em Ciências Biológicas",
+      name: "Licenciatura em Ciências Biológicas - Noturno",
       modality: [
         {
           name: '',
@@ -415,7 +433,7 @@ const catalogueOptions = {
       ]
     },
     '47': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Noturno",
       modality: [
         {
           name: '',
@@ -424,7 +442,7 @@ const catalogueOptions = {
       ]
     },
     '48': {
-      name: "Arquitetura e Urbanismo",
+      name: "Arquitetura e Urbanismo - Noturno",
       modality: [
         {
           name: '',
@@ -433,7 +451,7 @@ const catalogueOptions = {
       ]
     },
     '49': {
-      name: "Engenharia de Controle e Automação",
+      name: "Engenharia de Controle e Automação - Noturno",
       modality: [
         {
           name: '',
@@ -442,7 +460,7 @@ const catalogueOptions = {
       ]
     },
     '50': {
-      name: "Química Tecnológica",
+      name: "Química Tecnológica - Noturno",
       modality: [
         {
           name: '',
@@ -451,7 +469,7 @@ const catalogueOptions = {
       ]
     },
     '51': {
-      name: "Matemática/Física/Matemática Aplicada e Computacional",
+      name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -459,8 +477,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '52': {
+      name: "Ciências da Terra - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2013/curso52_mod1.js'
+        },
+      ]
+    },
     '53': {
-      name: "Geologia",
+      name: "Geologia - Integral",
       modality: [
         {
           name: '',
@@ -469,7 +496,7 @@ const catalogueOptions = {
       ]
     },
     '54': {
-      name: "Geografia",
+      name: "Geografia - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -482,7 +509,7 @@ const catalogueOptions = {
       ]
     },
     '55': {
-      name: "Geografia",
+      name: "Geografia - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -495,7 +522,7 @@ const catalogueOptions = {
       ]
     },
     '56': {
-      name: "Licenciatura Integrada Química/Física",
+      name: "Licenciatura Integrada Química/Física - Noturno",
       modality: [
         {
           name: 'AA - Licenciatura em Química',
@@ -511,8 +538,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '57': {
+      name: "Licenciatura em Letras - Português - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2013/curso57_mod1.js'
+        },
+      ]
+    },
     '58': {
-      name: "Fonoaudiologia",
+      name: "Fonoaudiologia - Integral",
       modality: [
         {
           name: '',
@@ -520,8 +556,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '60': {
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2013/curso60_mod1.js'
+        },
+      ]
+    },
     '63': {
-      name: "Farmácia",
+      name: "Farmácia - Integral",
       modality: [
         {
           name: '',
@@ -530,7 +575,7 @@ const catalogueOptions = {
       ]
     },
     '64': {
-      name: "Comunicação Social - Midialogia",
+      name: "Comunicação Social - Midialogia - Integral",
       modality: [
         {
           name: '',
@@ -539,7 +584,7 @@ const catalogueOptions = {
       ]
     },
     '73': {
-      name: "Curso Superior de Tecnologia em Controle Ambiental",
+      name: "Curso Superior de Tecnologia em Controle Ambiental - Integral",
       modality: [
         {
           name: '',
@@ -547,8 +592,35 @@ const catalogueOptions = {
         },
       ]
     },
+    '74': {
+      name: "Curso Superior de Tecnologia em Sistemas de Telecomunicações - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2013/curso74_mod1.js'
+        },
+      ]
+    },
+    '75': {
+      name: "Estudos Literários - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2013/curso75_mod1.js'
+        },
+      ]
+    },
+    '82': {
+      name: "Curso Superior de Tecnologia da Construção Civil - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2013/curso82_mod1.js'
+        },
+      ]
+    },
     '83': {
-      name: "Curso Superior de Tecnologia em Construção de Edifícios",
+      name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
       modality: [
         {
           name: '',
@@ -556,8 +628,35 @@ const catalogueOptions = {
         },
       ]
     },
+    '84': {
+      name: "Curso Superior de Tecnologia em Estradas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2013/curso84_mod1.js'
+        },
+      ]
+    },
+    '85': {
+      name: "Curso Superior de Tecnologia Ambiental - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2013/curso85_mod1.js'
+        },
+      ]
+    },
+    '86': {
+      name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2013/curso86_mod1.js'
+        },
+      ]
+    },
     '87': {
-      name: "Curso Superior de Tecnologia em Controle Ambiental",
+      name: "Curso Superior de Tecnologia em Controle Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -566,7 +665,7 @@ const catalogueOptions = {
       ]
     },
     '88': {
-      name: "Engenharia de Telecomunicações",
+      name: "Engenharia de Telecomunicações - Integral",
       modality: [
         {
           name: '',
@@ -575,7 +674,7 @@ const catalogueOptions = {
       ]
     },
     '89': {
-      name: "Engenharia Ambiental",
+      name: "Engenharia Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -584,7 +683,7 @@ const catalogueOptions = {
       ]
     },
     '94': {
-      name: "Sistemas de Informação",
+      name: "Sistemas de Informação - Integral",
       modality: [
         {
           name: '',
@@ -593,7 +692,7 @@ const catalogueOptions = {
       ]
     },
     '100': {
-      name: "Ciências do Esporte",
+      name: "Ciências do Esporte - Integral",
       modality: [
         {
           name: '',
@@ -602,7 +701,7 @@ const catalogueOptions = {
       ]
     },
     '101': {
-      name: "Engenharia de Manufatura",
+      name: "Engenharia de Manufatura - Integral",
       modality: [
         {
           name: '',
@@ -611,7 +710,7 @@ const catalogueOptions = {
       ]
     },
     '102': {
-      name: "Engenharia de Produção",
+      name: "Engenharia de Produção - Integral",
       modality: [
         {
           name: '',
@@ -620,7 +719,7 @@ const catalogueOptions = {
       ]
     },
     '103': {
-      name: "Gestão do Agronegócio",
+      name: "Gestão do Agronegócio - Noturno",
       modality: [
         {
           name: '',
@@ -629,7 +728,7 @@ const catalogueOptions = {
       ]
     },
     '104': {
-      name: "Gestão de Comércio Internacional",
+      name: "Gestão de Comércio Internacional - Noturno",
       modality: [
         {
           name: '',
@@ -638,7 +737,7 @@ const catalogueOptions = {
       ]
     },
     '105': {
-      name: "Gestão de Empresas",
+      name: "Gestão de Empresas - Noturno",
       modality: [
         {
           name: '',
@@ -647,7 +746,7 @@ const catalogueOptions = {
       ]
     },
     '106': {
-      name: "Gestão de Políticas Públicas",
+      name: "Gestão de Políticas Públicas - Noturno",
       modality: [
         {
           name: '',
@@ -656,7 +755,7 @@ const catalogueOptions = {
       ]
     },
     '107': {
-      name: "Nutrição",
+      name: "Nutrição - Integral",
       modality: [
         {
           name: '',
@@ -665,7 +764,7 @@ const catalogueOptions = {
       ]
     },
     '108': {
-      name: "Engenharia Física",
+      name: "Engenharia Física - Integral",
       modality: [
         {
           name: 'AA - Ênfase em Optoeletrônica',
@@ -678,7 +777,7 @@ const catalogueOptions = {
       ]
     },
     '200': {
-      name: "Programa de Formação Interdisciplinar Superior - ProFIS",
+      name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
       modality: [
         {
           name: '',
@@ -689,7 +788,7 @@ const catalogueOptions = {
   },
   "2014": {
     '1': {
-      name: "Matemática",
+      name: "Matemática - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Matemática',
@@ -706,7 +805,7 @@ const catalogueOptions = {
       ]
     },
     '2': {
-      name: "Estatística",
+      name: "Estatística - Integral",
       modality: [
         {
           name: '',
@@ -715,7 +814,7 @@ const catalogueOptions = {
       ]
     },
     '4': {
-      name: "Física",
+      name: "Física - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Física',
@@ -736,7 +835,7 @@ const catalogueOptions = {
       ]
     },
     '5': {
-      name: "Química",
+      name: "Química - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Química',
@@ -753,7 +852,7 @@ const catalogueOptions = {
       ]
     },
     '6': {
-      name: "Ciências Biológicas",
+      name: "Ciências Biológicas - Integral",
       modality: [
         {
           name: 'AJ - Licenciatura Plena em Ciências Biológicas',
@@ -765,8 +864,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '7': {
+      name: "Letras - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2014/curso7_mod1.js'
+        },
+      ]
+    },
     '8': {
-      name: "Engenharia Agrícola",
+      name: "Engenharia Agrícola - Integral",
       modality: [
         {
           name: '',
@@ -775,7 +883,7 @@ const catalogueOptions = {
       ]
     },
     '9': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Integral",
       modality: [
         {
           name: '',
@@ -784,7 +892,7 @@ const catalogueOptions = {
       ]
     },
     '10': {
-      name: "Engenharia Mecânica",
+      name: "Engenharia Mecânica - Integral",
       modality: [
         {
           name: '',
@@ -793,7 +901,7 @@ const catalogueOptions = {
       ]
     },
     '11': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Integral",
       modality: [
         {
           name: '',
@@ -802,7 +910,7 @@ const catalogueOptions = {
       ]
     },
     '12': {
-      name: "Engenharia Civil",
+      name: "Engenharia Civil - Integral",
       modality: [
         {
           name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
@@ -827,7 +935,7 @@ const catalogueOptions = {
       ]
     },
     '13': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Integral",
       modality: [
         {
           name: '',
@@ -836,7 +944,7 @@ const catalogueOptions = {
       ]
     },
     '14': {
-      name: "Odontologia",
+      name: "Odontologia - Integral",
       modality: [
         {
           name: '',
@@ -845,7 +953,7 @@ const catalogueOptions = {
       ]
     },
     '15': {
-      name: "Medicina",
+      name: "Medicina - Integral",
       modality: [
         {
           name: '',
@@ -854,7 +962,7 @@ const catalogueOptions = {
       ]
     },
     '16': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -879,7 +987,7 @@ const catalogueOptions = {
       ]
     },
     '17': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Integral",
       modality: [
         {
           name: '',
@@ -887,8 +995,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '18': {
+      name: "Linguística - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2014/curso18_mod1.js'
+        },
+      ]
+    },
     '20': {
-      name: "Pedagogia",
+      name: "Pedagogia - Integral",
       modality: [
         {
           name: '',
@@ -897,7 +1014,7 @@ const catalogueOptions = {
       ]
     },
     '21': {
-      name: "Enfermagem",
+      name: "Enfermagem - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Enfermagem',
@@ -910,7 +1027,7 @@ const catalogueOptions = {
       ]
     },
     '23': {
-      name: "Dança",
+      name: "Dança - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Dança',
@@ -923,7 +1040,7 @@ const catalogueOptions = {
       ]
     },
     '25': {
-      name: "Artes Visuais",
+      name: "Artes Visuais - Integral",
       modality: [
         {
           name: 'AF - Bacharelado em Artes Visuais',
@@ -936,7 +1053,7 @@ const catalogueOptions = {
       ]
     },
     '26': {
-      name: "Artes Cênicas",
+      name: "Artes Cênicas - Integral",
       modality: [
         {
           name: '',
@@ -945,7 +1062,7 @@ const catalogueOptions = {
       ]
     },
     '27': {
-      name: "Educação Física",
+      name: "Educação Física - Integral",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -958,7 +1075,7 @@ const catalogueOptions = {
       ]
     },
     '28': {
-      name: "Matemática Aplicada e Computacional",
+      name: "Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -967,7 +1084,7 @@ const catalogueOptions = {
       ]
     },
     '29': {
-      name: "Licenciatura em Matemática",
+      name: "Licenciatura em Matemática - Noturno",
       modality: [
         {
           name: '',
@@ -976,7 +1093,7 @@ const catalogueOptions = {
       ]
     },
     '34': {
-      name: "Engenharia de Computação",
+      name: "Engenharia de Computação - Integral",
       modality: [
         {
           name: 'AA - Sistemas de Computação',
@@ -993,7 +1110,7 @@ const catalogueOptions = {
       ]
     },
     '36': {
-      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
       modality: [
         {
           name: '',
@@ -1002,7 +1119,7 @@ const catalogueOptions = {
       ]
     },
     '38': {
-      name: "Pedagogia",
+      name: "Pedagogia - Noturno",
       modality: [
         {
           name: '',
@@ -1011,7 +1128,7 @@ const catalogueOptions = {
       ]
     },
     '39': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Noturno",
       modality: [
         {
           name: '',
@@ -1020,7 +1137,7 @@ const catalogueOptions = {
       ]
     },
     '40': {
-      name: "Licenciatura em Física",
+      name: "Licenciatura em Física - Noturno",
       modality: [
         {
           name: '',
@@ -1029,7 +1146,7 @@ const catalogueOptions = {
       ]
     },
     '41': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Noturno",
       modality: [
         {
           name: '',
@@ -1038,7 +1155,7 @@ const catalogueOptions = {
       ]
     },
     '42': {
-      name: "Ciência da Computação",
+      name: "Ciência da Computação - Noturno",
       modality: [
         {
           name: '',
@@ -1047,7 +1164,7 @@ const catalogueOptions = {
       ]
     },
     '43': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Noturno",
       modality: [
         {
           name: '',
@@ -1056,7 +1173,7 @@ const catalogueOptions = {
       ]
     },
     '44': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -1081,7 +1198,7 @@ const catalogueOptions = {
       ]
     },
     '45': {
-      name: "Educação Física",
+      name: "Educação Física - Noturno",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -1094,7 +1211,7 @@ const catalogueOptions = {
       ]
     },
     '46': {
-      name: "Licenciatura em Ciências Biológicas",
+      name: "Licenciatura em Ciências Biológicas - Noturno",
       modality: [
         {
           name: '',
@@ -1103,7 +1220,7 @@ const catalogueOptions = {
       ]
     },
     '47': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Noturno",
       modality: [
         {
           name: '',
@@ -1112,7 +1229,7 @@ const catalogueOptions = {
       ]
     },
     '48': {
-      name: "Arquitetura e Urbanismo",
+      name: "Arquitetura e Urbanismo - Noturno",
       modality: [
         {
           name: '',
@@ -1121,7 +1238,7 @@ const catalogueOptions = {
       ]
     },
     '49': {
-      name: "Engenharia de Controle e Automação",
+      name: "Engenharia de Controle e Automação - Noturno",
       modality: [
         {
           name: '',
@@ -1130,7 +1247,7 @@ const catalogueOptions = {
       ]
     },
     '50': {
-      name: "Química Tecnológica",
+      name: "Química Tecnológica - Noturno",
       modality: [
         {
           name: '',
@@ -1139,7 +1256,7 @@ const catalogueOptions = {
       ]
     },
     '51': {
-      name: "Matemática/Física/Matemática Aplicada e Computacional",
+      name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -1147,8 +1264,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '52': {
+      name: "Ciências da Terra - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2014/curso52_mod1.js'
+        },
+      ]
+    },
     '53': {
-      name: "Geologia",
+      name: "Geologia - Integral",
       modality: [
         {
           name: '',
@@ -1157,7 +1283,7 @@ const catalogueOptions = {
       ]
     },
     '54': {
-      name: "Geografia",
+      name: "Geografia - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -1170,7 +1296,7 @@ const catalogueOptions = {
       ]
     },
     '55': {
-      name: "Geografia",
+      name: "Geografia - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -1183,7 +1309,7 @@ const catalogueOptions = {
       ]
     },
     '56': {
-      name: "Licenciatura Integrada Química/Física",
+      name: "Licenciatura Integrada Química/Física - Noturno",
       modality: [
         {
           name: 'AA - Licenciatura em Química',
@@ -1199,8 +1325,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '57': {
+      name: "Licenciatura em Letras - Português - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2014/curso57_mod1.js'
+        },
+      ]
+    },
     '58': {
-      name: "Fonoaudiologia",
+      name: "Fonoaudiologia - Integral",
       modality: [
         {
           name: '',
@@ -1208,8 +1343,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '60': {
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2014/curso60_mod1.js'
+        },
+      ]
+    },
     '63': {
-      name: "Farmácia",
+      name: "Farmácia - Integral",
       modality: [
         {
           name: '',
@@ -1218,7 +1362,7 @@ const catalogueOptions = {
       ]
     },
     '64': {
-      name: "Comunicação Social - Midialogia",
+      name: "Comunicação Social - Midialogia - Integral",
       modality: [
         {
           name: '',
@@ -1227,7 +1371,7 @@ const catalogueOptions = {
       ]
     },
     '73': {
-      name: "Curso Superior de Tecnologia em Controle Ambiental",
+      name: "Curso Superior de Tecnologia em Controle Ambiental - Integral",
       modality: [
         {
           name: '',
@@ -1235,8 +1379,35 @@ const catalogueOptions = {
         },
       ]
     },
+    '74': {
+      name: "Curso Superior de Tecnologia em Sistemas de Telecomunicações - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2014/curso74_mod1.js'
+        },
+      ]
+    },
+    '75': {
+      name: "Estudos Literários - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2014/curso75_mod1.js'
+        },
+      ]
+    },
+    '82': {
+      name: "Curso Superior de Tecnologia da Construção Civil - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2014/curso82_mod1.js'
+        },
+      ]
+    },
     '83': {
-      name: "Curso Superior de Tecnologia em Construção de Edifícios",
+      name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
       modality: [
         {
           name: '',
@@ -1244,8 +1415,35 @@ const catalogueOptions = {
         },
       ]
     },
+    '84': {
+      name: "Curso Superior de Tecnologia em Estradas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2014/curso84_mod1.js'
+        },
+      ]
+    },
+    '85': {
+      name: "Curso Superior de Tecnologia Ambiental - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2014/curso85_mod1.js'
+        },
+      ]
+    },
+    '86': {
+      name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2014/curso86_mod1.js'
+        },
+      ]
+    },
     '87': {
-      name: "Curso Superior de Tecnologia em Controle Ambiental",
+      name: "Curso Superior de Tecnologia em Controle Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -1254,7 +1452,7 @@ const catalogueOptions = {
       ]
     },
     '88': {
-      name: "Engenharia de Telecomunicações",
+      name: "Engenharia de Telecomunicações - Integral",
       modality: [
         {
           name: '',
@@ -1263,7 +1461,7 @@ const catalogueOptions = {
       ]
     },
     '89': {
-      name: "Engenharia Ambiental",
+      name: "Engenharia Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -1272,7 +1470,7 @@ const catalogueOptions = {
       ]
     },
     '94': {
-      name: "Sistemas de Informação",
+      name: "Sistemas de Informação - Integral",
       modality: [
         {
           name: '',
@@ -1281,7 +1479,7 @@ const catalogueOptions = {
       ]
     },
     '100': {
-      name: "Ciências do Esporte",
+      name: "Ciências do Esporte - Integral",
       modality: [
         {
           name: '',
@@ -1290,7 +1488,7 @@ const catalogueOptions = {
       ]
     },
     '101': {
-      name: "Engenharia de Manufatura",
+      name: "Engenharia de Manufatura - Integral",
       modality: [
         {
           name: '',
@@ -1299,7 +1497,7 @@ const catalogueOptions = {
       ]
     },
     '102': {
-      name: "Engenharia de Produção",
+      name: "Engenharia de Produção - Integral",
       modality: [
         {
           name: '',
@@ -1307,8 +1505,44 @@ const catalogueOptions = {
         },
       ]
     },
+    '103': {
+      name: "Gestão do Agronegócio - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2014/curso103_mod1.js'
+        },
+      ]
+    },
+    '104': {
+      name: "Gestão de Comércio Internacional - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2014/curso104_mod1.js'
+        },
+      ]
+    },
+    '105': {
+      name: "Gestão de Empresas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2014/curso105_mod1.js'
+        },
+      ]
+    },
+    '106': {
+      name: "Gestão de Políticas Públicas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2014/curso106_mod1.js'
+        },
+      ]
+    },
     '107': {
-      name: "Nutrição",
+      name: "Nutrição - Integral",
       modality: [
         {
           name: '',
@@ -1317,7 +1551,7 @@ const catalogueOptions = {
       ]
     },
     '108': {
-      name: "Engenharia Física",
+      name: "Engenharia Física - Integral",
       modality: [
         {
           name: 'AA - Ênfase em Optoeletrônica',
@@ -1330,7 +1564,7 @@ const catalogueOptions = {
       ]
     },
     '109': {
-      name: "Administração",
+      name: "Administração - Noturno",
       modality: [
         {
           name: '',
@@ -1339,7 +1573,7 @@ const catalogueOptions = {
       ]
     },
     '110': {
-      name: "Administração Pública",
+      name: "Administração Pública - Noturno",
       modality: [
         {
           name: '',
@@ -1348,7 +1582,7 @@ const catalogueOptions = {
       ]
     },
     '200': {
-      name: "Programa de Formação Interdisciplinar Superior - ProFIS",
+      name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
       modality: [
         {
           name: '',
@@ -1359,7 +1593,7 @@ const catalogueOptions = {
   },
   "2015": {
     '1': {
-      name: "Matemática",
+      name: "Matemática - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Matemática',
@@ -1376,7 +1610,7 @@ const catalogueOptions = {
       ]
     },
     '2': {
-      name: "Estatística",
+      name: "Estatística - Integral",
       modality: [
         {
           name: '',
@@ -1385,7 +1619,7 @@ const catalogueOptions = {
       ]
     },
     '4': {
-      name: "Física",
+      name: "Física - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Física',
@@ -1406,7 +1640,7 @@ const catalogueOptions = {
       ]
     },
     '5': {
-      name: "Química",
+      name: "Química - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Química',
@@ -1423,7 +1657,7 @@ const catalogueOptions = {
       ]
     },
     '6': {
-      name: "Ciências Biológicas",
+      name: "Ciências Biológicas - Integral",
       modality: [
         {
           name: 'AJ - Licenciatura Plena em Ciências Biológicas',
@@ -1436,7 +1670,7 @@ const catalogueOptions = {
       ]
     },
     '7': {
-      name: "Letras",
+      name: "Letras - Integral",
       modality: [
         {
           name: 'AE - Licenciatura em Letras',
@@ -1449,7 +1683,7 @@ const catalogueOptions = {
       ]
     },
     '8': {
-      name: "Engenharia Agrícola",
+      name: "Engenharia Agrícola - Integral",
       modality: [
         {
           name: '',
@@ -1458,7 +1692,7 @@ const catalogueOptions = {
       ]
     },
     '9': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Integral",
       modality: [
         {
           name: '',
@@ -1467,7 +1701,7 @@ const catalogueOptions = {
       ]
     },
     '10': {
-      name: "Engenharia Mecânica",
+      name: "Engenharia Mecânica - Integral",
       modality: [
         {
           name: '',
@@ -1476,7 +1710,7 @@ const catalogueOptions = {
       ]
     },
     '11': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Integral",
       modality: [
         {
           name: '',
@@ -1485,7 +1719,7 @@ const catalogueOptions = {
       ]
     },
     '12': {
-      name: "Engenharia Civil",
+      name: "Engenharia Civil - Integral",
       modality: [
         {
           name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
@@ -1510,7 +1744,7 @@ const catalogueOptions = {
       ]
     },
     '13': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Integral",
       modality: [
         {
           name: '',
@@ -1519,7 +1753,7 @@ const catalogueOptions = {
       ]
     },
     '14': {
-      name: "Odontologia",
+      name: "Odontologia - Integral",
       modality: [
         {
           name: '',
@@ -1528,7 +1762,7 @@ const catalogueOptions = {
       ]
     },
     '15': {
-      name: "Medicina",
+      name: "Medicina - Integral",
       modality: [
         {
           name: '',
@@ -1537,7 +1771,7 @@ const catalogueOptions = {
       ]
     },
     '16': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -1562,7 +1796,7 @@ const catalogueOptions = {
       ]
     },
     '17': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Integral",
       modality: [
         {
           name: '',
@@ -1571,7 +1805,7 @@ const catalogueOptions = {
       ]
     },
     '18': {
-      name: "Linguística",
+      name: "Linguística - Integral",
       modality: [
         {
           name: '',
@@ -1580,7 +1814,7 @@ const catalogueOptions = {
       ]
     },
     '19': {
-      name: "História",
+      name: "História - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em História',
@@ -1593,7 +1827,7 @@ const catalogueOptions = {
       ]
     },
     '20': {
-      name: "Pedagogia",
+      name: "Pedagogia - Integral",
       modality: [
         {
           name: '',
@@ -1602,7 +1836,7 @@ const catalogueOptions = {
       ]
     },
     '21': {
-      name: "Enfermagem",
+      name: "Enfermagem - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Enfermagem',
@@ -1615,7 +1849,7 @@ const catalogueOptions = {
       ]
     },
     '22': {
-      name: "Música",
+      name: "Música - Integral",
       modality: [
         {
           name: 'CB - Contrabaixo',
@@ -1708,7 +1942,7 @@ const catalogueOptions = {
       ]
     },
     '23': {
-      name: "Dança",
+      name: "Dança - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Dança',
@@ -1721,7 +1955,7 @@ const catalogueOptions = {
       ]
     },
     '25': {
-      name: "Artes Visuais",
+      name: "Artes Visuais - Integral",
       modality: [
         {
           name: 'AF - Bacharelado em Artes Visuais',
@@ -1734,7 +1968,7 @@ const catalogueOptions = {
       ]
     },
     '26': {
-      name: "Artes Cênicas",
+      name: "Artes Cênicas - Integral",
       modality: [
         {
           name: '',
@@ -1743,7 +1977,7 @@ const catalogueOptions = {
       ]
     },
     '27': {
-      name: "Educação Física",
+      name: "Educação Física - Integral",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -1756,7 +1990,7 @@ const catalogueOptions = {
       ]
     },
     '28': {
-      name: "Matemática Aplicada e Computacional",
+      name: "Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -1765,7 +1999,7 @@ const catalogueOptions = {
       ]
     },
     '29': {
-      name: "Licenciatura em Matemática",
+      name: "Licenciatura em Matemática - Noturno",
       modality: [
         {
           name: '',
@@ -1774,7 +2008,7 @@ const catalogueOptions = {
       ]
     },
     '30': {
-      name: "Filosofia",
+      name: "Filosofia - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Filosofia',
@@ -1787,7 +2021,7 @@ const catalogueOptions = {
       ]
     },
     '34': {
-      name: "Engenharia de Computação",
+      name: "Engenharia de Computação - Integral",
       modality: [
         {
           name: 'AA - Sistemas de Computação',
@@ -1804,7 +2038,7 @@ const catalogueOptions = {
       ]
     },
     '36': {
-      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
       modality: [
         {
           name: '',
@@ -1813,7 +2047,7 @@ const catalogueOptions = {
       ]
     },
     '38': {
-      name: "Pedagogia",
+      name: "Pedagogia - Noturno",
       modality: [
         {
           name: '',
@@ -1822,7 +2056,7 @@ const catalogueOptions = {
       ]
     },
     '39': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Noturno",
       modality: [
         {
           name: '',
@@ -1831,7 +2065,7 @@ const catalogueOptions = {
       ]
     },
     '40': {
-      name: "Licenciatura em Física",
+      name: "Licenciatura em Física - Noturno",
       modality: [
         {
           name: '',
@@ -1840,7 +2074,7 @@ const catalogueOptions = {
       ]
     },
     '41': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Noturno",
       modality: [
         {
           name: '',
@@ -1849,7 +2083,7 @@ const catalogueOptions = {
       ]
     },
     '42': {
-      name: "Ciência da Computação",
+      name: "Ciência da Computação - Noturno",
       modality: [
         {
           name: '',
@@ -1858,7 +2092,7 @@ const catalogueOptions = {
       ]
     },
     '43': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Noturno",
       modality: [
         {
           name: '',
@@ -1867,7 +2101,7 @@ const catalogueOptions = {
       ]
     },
     '44': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -1892,7 +2126,7 @@ const catalogueOptions = {
       ]
     },
     '45': {
-      name: "Educação Física",
+      name: "Educação Física - Noturno",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -1905,7 +2139,7 @@ const catalogueOptions = {
       ]
     },
     '46': {
-      name: "Licenciatura em Ciências Biológicas",
+      name: "Licenciatura em Ciências Biológicas - Noturno",
       modality: [
         {
           name: '',
@@ -1914,7 +2148,7 @@ const catalogueOptions = {
       ]
     },
     '47': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Noturno",
       modality: [
         {
           name: '',
@@ -1923,7 +2157,7 @@ const catalogueOptions = {
       ]
     },
     '48': {
-      name: "Arquitetura e Urbanismo",
+      name: "Arquitetura e Urbanismo - Noturno",
       modality: [
         {
           name: '',
@@ -1932,7 +2166,7 @@ const catalogueOptions = {
       ]
     },
     '49': {
-      name: "Engenharia de Controle e Automação",
+      name: "Engenharia de Controle e Automação - Noturno",
       modality: [
         {
           name: '',
@@ -1941,7 +2175,7 @@ const catalogueOptions = {
       ]
     },
     '50': {
-      name: "Química Tecnológica",
+      name: "Química Tecnológica - Noturno",
       modality: [
         {
           name: '',
@@ -1950,7 +2184,7 @@ const catalogueOptions = {
       ]
     },
     '51': {
-      name: "Matemática/Física/Matemática Aplicada e Computacional",
+      name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -1958,8 +2192,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '52': {
+      name: "Ciências da Terra - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso52_mod1.js'
+        },
+      ]
+    },
     '53': {
-      name: "Geologia",
+      name: "Geologia - Integral",
       modality: [
         {
           name: '',
@@ -1968,7 +2211,7 @@ const catalogueOptions = {
       ]
     },
     '54': {
-      name: "Geografia",
+      name: "Geografia - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -1981,7 +2224,7 @@ const catalogueOptions = {
       ]
     },
     '55': {
-      name: "Geografia",
+      name: "Geografia - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -1994,7 +2237,7 @@ const catalogueOptions = {
       ]
     },
     '56': {
-      name: "Licenciatura Integrada Química/Física",
+      name: "Licenciatura Integrada Química/Física - Noturno",
       modality: [
         {
           name: 'AA - Licenciatura em Química',
@@ -2011,7 +2254,7 @@ const catalogueOptions = {
       ]
     },
     '57': {
-      name: "Licenciatura em Letras - Português",
+      name: "Licenciatura em Letras - Português - Noturno",
       modality: [
         {
           name: 'AA - Licenciatura em Letras - Português',
@@ -2024,7 +2267,7 @@ const catalogueOptions = {
       ]
     },
     '58': {
-      name: "Fonoaudiologia",
+      name: "Fonoaudiologia - Integral",
       modality: [
         {
           name: '',
@@ -2032,8 +2275,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '60': {
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso60_mod1.js'
+        },
+      ]
+    },
     '63': {
-      name: "Farmácia",
+      name: "Farmácia - Integral",
       modality: [
         {
           name: '',
@@ -2042,7 +2294,7 @@ const catalogueOptions = {
       ]
     },
     '64': {
-      name: "Comunicação Social - Midialogia",
+      name: "Comunicação Social - Midialogia - Integral",
       modality: [
         {
           name: '',
@@ -2051,7 +2303,7 @@ const catalogueOptions = {
       ]
     },
     '73': {
-      name: "Curso Superior de Tecnologia em Controle Ambiental",
+      name: "Curso Superior de Tecnologia em Controle Ambiental - Integral",
       modality: [
         {
           name: '',
@@ -2059,8 +2311,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '74': {
+      name: "Curso Superior de Tecnologia em Sistemas de Telecomunicações - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso74_mod1.js'
+        },
+      ]
+    },
     '75': {
-      name: "Estudos Literários",
+      name: "Estudos Literários - Integral",
       modality: [
         {
           name: '',
@@ -2068,8 +2329,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '82': {
+      name: "Curso Superior de Tecnologia da Construção Civil - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso82_mod1.js'
+        },
+      ]
+    },
     '83': {
-      name: "Curso Superior de Tecnologia em Construção de Edifícios",
+      name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
       modality: [
         {
           name: '',
@@ -2077,8 +2347,35 @@ const catalogueOptions = {
         },
       ]
     },
+    '84': {
+      name: "Curso Superior de Tecnologia em Estradas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso84_mod1.js'
+        },
+      ]
+    },
+    '85': {
+      name: "Curso Superior de Tecnologia Ambiental - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso85_mod1.js'
+        },
+      ]
+    },
+    '86': {
+      name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso86_mod1.js'
+        },
+      ]
+    },
     '87': {
-      name: "Curso Superior de Tecnologia em Controle Ambiental",
+      name: "Curso Superior de Tecnologia em Controle Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -2087,7 +2384,7 @@ const catalogueOptions = {
       ]
     },
     '88': {
-      name: "Engenharia de Telecomunicações",
+      name: "Engenharia de Telecomunicações - Integral",
       modality: [
         {
           name: '',
@@ -2096,7 +2393,7 @@ const catalogueOptions = {
       ]
     },
     '89': {
-      name: "Engenharia Ambiental",
+      name: "Engenharia Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -2105,7 +2402,7 @@ const catalogueOptions = {
       ]
     },
     '94': {
-      name: "Sistemas de Informação",
+      name: "Sistemas de Informação - Integral",
       modality: [
         {
           name: '',
@@ -2114,7 +2411,7 @@ const catalogueOptions = {
       ]
     },
     '100': {
-      name: "Ciências do Esporte",
+      name: "Ciências do Esporte - Integral",
       modality: [
         {
           name: '',
@@ -2123,7 +2420,7 @@ const catalogueOptions = {
       ]
     },
     '101': {
-      name: "Engenharia de Manufatura",
+      name: "Engenharia de Manufatura - Integral",
       modality: [
         {
           name: '',
@@ -2132,7 +2429,7 @@ const catalogueOptions = {
       ]
     },
     '102': {
-      name: "Engenharia de Produção",
+      name: "Engenharia de Produção - Integral",
       modality: [
         {
           name: '',
@@ -2140,8 +2437,44 @@ const catalogueOptions = {
         },
       ]
     },
+    '103': {
+      name: "Gestão do Agronegócio - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso103_mod1.js'
+        },
+      ]
+    },
+    '104': {
+      name: "Gestão de Comércio Internacional - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso104_mod1.js'
+        },
+      ]
+    },
+    '105': {
+      name: "Gestão de Empresas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso105_mod1.js'
+        },
+      ]
+    },
+    '106': {
+      name: "Gestão de Políticas Públicas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso106_mod1.js'
+        },
+      ]
+    },
     '107': {
-      name: "Nutrição",
+      name: "Nutrição - Integral",
       modality: [
         {
           name: '',
@@ -2150,7 +2483,7 @@ const catalogueOptions = {
       ]
     },
     '108': {
-      name: "Engenharia Física",
+      name: "Engenharia Física - Integral",
       modality: [
         {
           name: 'AA - Ênfase em Optoeletrônica',
@@ -2163,7 +2496,7 @@ const catalogueOptions = {
       ]
     },
     '109': {
-      name: "Administração",
+      name: "Administração - Noturno",
       modality: [
         {
           name: '',
@@ -2172,7 +2505,7 @@ const catalogueOptions = {
       ]
     },
     '110': {
-      name: "Administração Pública",
+      name: "Administração Pública - Noturno",
       modality: [
         {
           name: '',
@@ -2181,7 +2514,7 @@ const catalogueOptions = {
       ]
     },
     '200': {
-      name: "Programa de Formação Interdisciplinar Superior - ProFIS",
+      name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
       modality: [
         {
           name: '',
@@ -2192,7 +2525,7 @@ const catalogueOptions = {
   },
   "2016": {
     '1': {
-      name: "Matemática",
+      name: "Matemática - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Matemática',
@@ -2209,7 +2542,7 @@ const catalogueOptions = {
       ]
     },
     '2': {
-      name: "Estatística",
+      name: "Estatística - Integral",
       modality: [
         {
           name: '',
@@ -2218,7 +2551,7 @@ const catalogueOptions = {
       ]
     },
     '4': {
-      name: "Física",
+      name: "Física - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Física',
@@ -2239,7 +2572,7 @@ const catalogueOptions = {
       ]
     },
     '5': {
-      name: "Química",
+      name: "Química - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Química',
@@ -2256,7 +2589,7 @@ const catalogueOptions = {
       ]
     },
     '6': {
-      name: "Ciências Biológicas",
+      name: "Ciências Biológicas - Integral",
       modality: [
         {
           name: 'AJ - Licenciatura Plena em Ciências Biológicas',
@@ -2269,7 +2602,7 @@ const catalogueOptions = {
       ]
     },
     '7': {
-      name: "Licenciatura em Letras - Português",
+      name: "Licenciatura em Letras - Português - Integral",
       modality: [
         {
           name: 'AE - Licenciatura em Letras - Português',
@@ -2282,7 +2615,7 @@ const catalogueOptions = {
       ]
     },
     '8': {
-      name: "Engenharia Agrícola",
+      name: "Engenharia Agrícola - Integral",
       modality: [
         {
           name: '',
@@ -2291,7 +2624,7 @@ const catalogueOptions = {
       ]
     },
     '9': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Integral",
       modality: [
         {
           name: '',
@@ -2300,7 +2633,7 @@ const catalogueOptions = {
       ]
     },
     '10': {
-      name: "Engenharia Mecânica",
+      name: "Engenharia Mecânica - Integral",
       modality: [
         {
           name: '',
@@ -2309,7 +2642,7 @@ const catalogueOptions = {
       ]
     },
     '11': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Integral",
       modality: [
         {
           name: '',
@@ -2318,7 +2651,7 @@ const catalogueOptions = {
       ]
     },
     '12': {
-      name: "Engenharia Civil",
+      name: "Engenharia Civil - Integral",
       modality: [
         {
           name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
@@ -2343,7 +2676,7 @@ const catalogueOptions = {
       ]
     },
     '13': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Integral",
       modality: [
         {
           name: '',
@@ -2352,7 +2685,7 @@ const catalogueOptions = {
       ]
     },
     '14': {
-      name: "Odontologia",
+      name: "Odontologia - Integral",
       modality: [
         {
           name: '',
@@ -2361,7 +2694,7 @@ const catalogueOptions = {
       ]
     },
     '15': {
-      name: "Medicina",
+      name: "Medicina - Integral",
       modality: [
         {
           name: '',
@@ -2370,7 +2703,7 @@ const catalogueOptions = {
       ]
     },
     '16': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -2395,7 +2728,7 @@ const catalogueOptions = {
       ]
     },
     '17': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Integral",
       modality: [
         {
           name: '',
@@ -2404,7 +2737,7 @@ const catalogueOptions = {
       ]
     },
     '18': {
-      name: "Linguística",
+      name: "Linguística - Integral",
       modality: [
         {
           name: '',
@@ -2413,7 +2746,7 @@ const catalogueOptions = {
       ]
     },
     '19': {
-      name: "História",
+      name: "História - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em História',
@@ -2426,7 +2759,7 @@ const catalogueOptions = {
       ]
     },
     '20': {
-      name: "Pedagogia",
+      name: "Pedagogia - Integral",
       modality: [
         {
           name: '',
@@ -2435,7 +2768,7 @@ const catalogueOptions = {
       ]
     },
     '21': {
-      name: "Enfermagem",
+      name: "Enfermagem - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Enfermagem',
@@ -2448,7 +2781,7 @@ const catalogueOptions = {
       ]
     },
     '22': {
-      name: "Música",
+      name: "Música - Integral",
       modality: [
         {
           name: 'CB - Contrabaixo',
@@ -2541,7 +2874,7 @@ const catalogueOptions = {
       ]
     },
     '23': {
-      name: "Dança",
+      name: "Dança - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Dança',
@@ -2554,7 +2887,7 @@ const catalogueOptions = {
       ]
     },
     '25': {
-      name: "Artes Visuais",
+      name: "Artes Visuais - Integral",
       modality: [
         {
           name: 'AF - Bacharelado em Artes Visuais',
@@ -2567,7 +2900,7 @@ const catalogueOptions = {
       ]
     },
     '26': {
-      name: "Artes Cênicas",
+      name: "Artes Cênicas - Integral",
       modality: [
         {
           name: '',
@@ -2576,7 +2909,7 @@ const catalogueOptions = {
       ]
     },
     '27': {
-      name: "Educação Física",
+      name: "Educação Física - Integral",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -2589,7 +2922,7 @@ const catalogueOptions = {
       ]
     },
     '28': {
-      name: "Matemática Aplicada e Computacional",
+      name: "Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -2598,7 +2931,7 @@ const catalogueOptions = {
       ]
     },
     '29': {
-      name: "Licenciatura em Matemática",
+      name: "Licenciatura em Matemática - Noturno",
       modality: [
         {
           name: '',
@@ -2607,7 +2940,7 @@ const catalogueOptions = {
       ]
     },
     '30': {
-      name: "Filosofia",
+      name: "Filosofia - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Filosofia',
@@ -2620,7 +2953,7 @@ const catalogueOptions = {
       ]
     },
     '34': {
-      name: "Engenharia de Computação",
+      name: "Engenharia de Computação - Integral",
       modality: [
         {
           name: 'AA - Sistemas de Computação',
@@ -2637,7 +2970,7 @@ const catalogueOptions = {
       ]
     },
     '36': {
-      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
       modality: [
         {
           name: '',
@@ -2646,7 +2979,7 @@ const catalogueOptions = {
       ]
     },
     '38': {
-      name: "Pedagogia",
+      name: "Pedagogia - Noturno",
       modality: [
         {
           name: '',
@@ -2655,7 +2988,7 @@ const catalogueOptions = {
       ]
     },
     '39': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Noturno",
       modality: [
         {
           name: '',
@@ -2664,7 +2997,7 @@ const catalogueOptions = {
       ]
     },
     '40': {
-      name: "Licenciatura em Física",
+      name: "Licenciatura em Física - Noturno",
       modality: [
         {
           name: '',
@@ -2673,7 +3006,7 @@ const catalogueOptions = {
       ]
     },
     '41': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Noturno",
       modality: [
         {
           name: '',
@@ -2682,7 +3015,7 @@ const catalogueOptions = {
       ]
     },
     '42': {
-      name: "Ciência da Computação",
+      name: "Ciência da Computação - Noturno",
       modality: [
         {
           name: '',
@@ -2691,7 +3024,7 @@ const catalogueOptions = {
       ]
     },
     '43': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Noturno",
       modality: [
         {
           name: '',
@@ -2700,7 +3033,7 @@ const catalogueOptions = {
       ]
     },
     '44': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -2725,7 +3058,7 @@ const catalogueOptions = {
       ]
     },
     '45': {
-      name: "Educação Física",
+      name: "Educação Física - Noturno",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -2738,7 +3071,7 @@ const catalogueOptions = {
       ]
     },
     '46': {
-      name: "Licenciatura em Ciências Biológicas",
+      name: "Licenciatura em Ciências Biológicas - Noturno",
       modality: [
         {
           name: '',
@@ -2747,7 +3080,7 @@ const catalogueOptions = {
       ]
     },
     '47': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Noturno",
       modality: [
         {
           name: '',
@@ -2756,7 +3089,7 @@ const catalogueOptions = {
       ]
     },
     '48': {
-      name: "Arquitetura e Urbanismo",
+      name: "Arquitetura e Urbanismo - Noturno",
       modality: [
         {
           name: '',
@@ -2765,7 +3098,7 @@ const catalogueOptions = {
       ]
     },
     '49': {
-      name: "Engenharia de Controle e Automação",
+      name: "Engenharia de Controle e Automação - Noturno",
       modality: [
         {
           name: '',
@@ -2774,7 +3107,7 @@ const catalogueOptions = {
       ]
     },
     '50': {
-      name: "Química Tecnológica",
+      name: "Química Tecnológica - Noturno",
       modality: [
         {
           name: '',
@@ -2783,7 +3116,7 @@ const catalogueOptions = {
       ]
     },
     '51': {
-      name: "Matemática/Física/Matemática Aplicada e Computacional",
+      name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -2791,8 +3124,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '52': {
+      name: "Ciências da Terra - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2016/curso52_mod1.js'
+        },
+      ]
+    },
     '53': {
-      name: "Geologia",
+      name: "Geologia - Integral",
       modality: [
         {
           name: '',
@@ -2801,7 +3143,7 @@ const catalogueOptions = {
       ]
     },
     '54': {
-      name: "Geografia",
+      name: "Geografia - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -2814,7 +3156,7 @@ const catalogueOptions = {
       ]
     },
     '55': {
-      name: "Geografia",
+      name: "Geografia - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -2827,7 +3169,7 @@ const catalogueOptions = {
       ]
     },
     '56': {
-      name: "Licenciatura Integrada Química/Física",
+      name: "Licenciatura Integrada Química/Física - Noturno",
       modality: [
         {
           name: 'AA - Licenciatura em Química',
@@ -2844,7 +3186,7 @@ const catalogueOptions = {
       ]
     },
     '57': {
-      name: "Licenciatura em Letras - Português",
+      name: "Licenciatura em Letras - Português - Noturno",
       modality: [
         {
           name: 'AA - Licenciatura em Letras - Português',
@@ -2857,7 +3199,7 @@ const catalogueOptions = {
       ]
     },
     '58': {
-      name: "Fonoaudiologia",
+      name: "Fonoaudiologia - Integral",
       modality: [
         {
           name: '',
@@ -2865,8 +3207,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '60': {
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2016/curso60_mod1.js'
+        },
+      ]
+    },
     '63': {
-      name: "Farmácia",
+      name: "Farmácia - Integral",
       modality: [
         {
           name: '',
@@ -2875,7 +3226,7 @@ const catalogueOptions = {
       ]
     },
     '64': {
-      name: "Comunicação Social - Midialogia",
+      name: "Comunicação Social - Midialogia - Integral",
       modality: [
         {
           name: '',
@@ -2884,7 +3235,7 @@ const catalogueOptions = {
       ]
     },
     '73': {
-      name: "Curso Superior de Tecnologia em Saneamento Ambiental",
+      name: "Curso Superior de Tecnologia em Saneamento Ambiental - Integral",
       modality: [
         {
           name: '',
@@ -2892,8 +3243,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '74': {
+      name: "Curso Superior de Tecnologia em Sistemas de Telecomunicações - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2016/curso74_mod1.js'
+        },
+      ]
+    },
     '75': {
-      name: "Estudos Literários",
+      name: "Estudos Literários - Integral",
       modality: [
         {
           name: '',
@@ -2901,8 +3261,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '82': {
+      name: "Curso Superior de Tecnologia da Construção Civil - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2016/curso82_mod1.js'
+        },
+      ]
+    },
     '83': {
-      name: "Curso Superior de Tecnologia em Construção de Edifícios",
+      name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
       modality: [
         {
           name: '',
@@ -2910,8 +3279,35 @@ const catalogueOptions = {
         },
       ]
     },
+    '84': {
+      name: "Curso Superior de Tecnologia em Estradas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2016/curso84_mod1.js'
+        },
+      ]
+    },
+    '85': {
+      name: "Curso Superior de Tecnologia Ambiental - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2016/curso85_mod1.js'
+        },
+      ]
+    },
+    '86': {
+      name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2016/curso86_mod1.js'
+        },
+      ]
+    },
     '87': {
-      name: "Curso Superior de Tecnologia em Saneamento Ambiental",
+      name: "Curso Superior de Tecnologia em Saneamento Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -2920,7 +3316,7 @@ const catalogueOptions = {
       ]
     },
     '88': {
-      name: "Engenharia de Telecomunicações",
+      name: "Engenharia de Telecomunicações - Integral",
       modality: [
         {
           name: '',
@@ -2929,7 +3325,7 @@ const catalogueOptions = {
       ]
     },
     '89': {
-      name: "Engenharia Ambiental",
+      name: "Engenharia Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -2938,7 +3334,7 @@ const catalogueOptions = {
       ]
     },
     '94': {
-      name: "Sistemas de Informação",
+      name: "Sistemas de Informação - Integral",
       modality: [
         {
           name: '',
@@ -2947,7 +3343,7 @@ const catalogueOptions = {
       ]
     },
     '100': {
-      name: "Ciências do Esporte",
+      name: "Ciências do Esporte - Integral",
       modality: [
         {
           name: '',
@@ -2956,7 +3352,7 @@ const catalogueOptions = {
       ]
     },
     '101': {
-      name: "Engenharia de Manufatura",
+      name: "Engenharia de Manufatura - Integral",
       modality: [
         {
           name: '',
@@ -2965,7 +3361,7 @@ const catalogueOptions = {
       ]
     },
     '102': {
-      name: "Engenharia de Produção",
+      name: "Engenharia de Produção - Integral",
       modality: [
         {
           name: '',
@@ -2973,8 +3369,44 @@ const catalogueOptions = {
         },
       ]
     },
+    '103': {
+      name: "Gestão do Agronegócio - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2016/curso103_mod1.js'
+        },
+      ]
+    },
+    '104': {
+      name: "Gestão de Comércio Internacional - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2016/curso104_mod1.js'
+        },
+      ]
+    },
+    '105': {
+      name: "Gestão de Empresas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2016/curso105_mod1.js'
+        },
+      ]
+    },
+    '106': {
+      name: "Gestão de Políticas Públicas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2016/curso106_mod1.js'
+        },
+      ]
+    },
     '107': {
-      name: "Nutrição",
+      name: "Nutrição - Integral",
       modality: [
         {
           name: '',
@@ -2983,7 +3415,7 @@ const catalogueOptions = {
       ]
     },
     '108': {
-      name: "Engenharia Física",
+      name: "Engenharia Física - Integral",
       modality: [
         {
           name: 'AA - Ênfase em Optoeletrônica',
@@ -2996,7 +3428,7 @@ const catalogueOptions = {
       ]
     },
     '109': {
-      name: "Administração",
+      name: "Administração - Noturno",
       modality: [
         {
           name: '',
@@ -3005,7 +3437,7 @@ const catalogueOptions = {
       ]
     },
     '110': {
-      name: "Administração Pública",
+      name: "Administração Pública - Noturno",
       modality: [
         {
           name: '',
@@ -3014,7 +3446,7 @@ const catalogueOptions = {
       ]
     },
     '200': {
-      name: "Programa de Formação Interdisciplinar Superior - ProFIS",
+      name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
       modality: [
         {
           name: '',
@@ -3025,7 +3457,7 @@ const catalogueOptions = {
   },
   "2017": {
     '1': {
-      name: "Matemática",
+      name: "Matemática - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Matemática',
@@ -3038,7 +3470,7 @@ const catalogueOptions = {
       ]
     },
     '2': {
-      name: "Estatística",
+      name: "Estatística - Integral",
       modality: [
         {
           name: '',
@@ -3047,7 +3479,7 @@ const catalogueOptions = {
       ]
     },
     '4': {
-      name: "Física",
+      name: "Física - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Física',
@@ -3068,7 +3500,7 @@ const catalogueOptions = {
       ]
     },
     '5': {
-      name: "Química",
+      name: "Química - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Química',
@@ -3085,7 +3517,7 @@ const catalogueOptions = {
       ]
     },
     '6': {
-      name: "Ciências Biológicas",
+      name: "Ciências Biológicas - Integral",
       modality: [
         {
           name: 'AJ - Licenciatura Plena em Ciências Biológicas',
@@ -3098,7 +3530,7 @@ const catalogueOptions = {
       ]
     },
     '7': {
-      name: "Licenciatura em Letras - Português",
+      name: "Licenciatura em Letras - Português - Integral",
       modality: [
         {
           name: 'AE - Licenciatura em Letras - Português',
@@ -3111,7 +3543,7 @@ const catalogueOptions = {
       ]
     },
     '8': {
-      name: "Engenharia Agrícola",
+      name: "Engenharia Agrícola - Integral",
       modality: [
         {
           name: '',
@@ -3120,7 +3552,7 @@ const catalogueOptions = {
       ]
     },
     '9': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Integral",
       modality: [
         {
           name: '',
@@ -3129,7 +3561,7 @@ const catalogueOptions = {
       ]
     },
     '10': {
-      name: "Engenharia Mecânica",
+      name: "Engenharia Mecânica - Integral",
       modality: [
         {
           name: '',
@@ -3138,7 +3570,7 @@ const catalogueOptions = {
       ]
     },
     '11': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Integral",
       modality: [
         {
           name: '',
@@ -3147,7 +3579,7 @@ const catalogueOptions = {
       ]
     },
     '12': {
-      name: "Engenharia Civil",
+      name: "Engenharia Civil - Integral",
       modality: [
         {
           name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
@@ -3172,7 +3604,7 @@ const catalogueOptions = {
       ]
     },
     '13': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Integral",
       modality: [
         {
           name: '',
@@ -3181,7 +3613,7 @@ const catalogueOptions = {
       ]
     },
     '14': {
-      name: "Odontologia",
+      name: "Odontologia - Integral",
       modality: [
         {
           name: '',
@@ -3190,7 +3622,7 @@ const catalogueOptions = {
       ]
     },
     '15': {
-      name: "Medicina",
+      name: "Medicina - Integral",
       modality: [
         {
           name: '',
@@ -3199,7 +3631,7 @@ const catalogueOptions = {
       ]
     },
     '16': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -3224,7 +3656,7 @@ const catalogueOptions = {
       ]
     },
     '17': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Integral",
       modality: [
         {
           name: '',
@@ -3233,7 +3665,7 @@ const catalogueOptions = {
       ]
     },
     '18': {
-      name: "Linguística",
+      name: "Linguística - Integral",
       modality: [
         {
           name: '',
@@ -3242,7 +3674,7 @@ const catalogueOptions = {
       ]
     },
     '19': {
-      name: "História",
+      name: "História - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em História',
@@ -3255,7 +3687,7 @@ const catalogueOptions = {
       ]
     },
     '20': {
-      name: "Pedagogia",
+      name: "Pedagogia - Integral",
       modality: [
         {
           name: '',
@@ -3264,7 +3696,7 @@ const catalogueOptions = {
       ]
     },
     '21': {
-      name: "Enfermagem",
+      name: "Enfermagem - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Enfermagem',
@@ -3277,7 +3709,7 @@ const catalogueOptions = {
       ]
     },
     '22': {
-      name: "Música",
+      name: "Música - Integral",
       modality: [
         {
           name: 'CB - Contrabaixo',
@@ -3370,7 +3802,7 @@ const catalogueOptions = {
       ]
     },
     '23': {
-      name: "Dança",
+      name: "Dança - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Dança',
@@ -3383,7 +3815,7 @@ const catalogueOptions = {
       ]
     },
     '25': {
-      name: "Artes Visuais",
+      name: "Artes Visuais - Integral",
       modality: [
         {
           name: 'AF - Bacharelado em Artes Visuais',
@@ -3396,7 +3828,7 @@ const catalogueOptions = {
       ]
     },
     '26': {
-      name: "Artes Cênicas",
+      name: "Artes Cênicas - Integral",
       modality: [
         {
           name: '',
@@ -3405,7 +3837,7 @@ const catalogueOptions = {
       ]
     },
     '27': {
-      name: "Educação Física",
+      name: "Educação Física - Integral",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -3418,7 +3850,7 @@ const catalogueOptions = {
       ]
     },
     '28': {
-      name: "Matemática Aplicada e Computacional",
+      name: "Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -3427,7 +3859,7 @@ const catalogueOptions = {
       ]
     },
     '29': {
-      name: "Licenciatura em Matemática",
+      name: "Licenciatura em Matemática - Noturno",
       modality: [
         {
           name: '',
@@ -3436,7 +3868,7 @@ const catalogueOptions = {
       ]
     },
     '30': {
-      name: "Filosofia",
+      name: "Filosofia - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Filosofia',
@@ -3449,7 +3881,7 @@ const catalogueOptions = {
       ]
     },
     '34': {
-      name: "Engenharia de Computação",
+      name: "Engenharia de Computação - Integral",
       modality: [
         {
           name: 'AA - Sistemas de Computação',
@@ -3466,7 +3898,7 @@ const catalogueOptions = {
       ]
     },
     '36': {
-      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
       modality: [
         {
           name: '',
@@ -3475,7 +3907,7 @@ const catalogueOptions = {
       ]
     },
     '38': {
-      name: "Pedagogia",
+      name: "Pedagogia - Noturno",
       modality: [
         {
           name: '',
@@ -3484,7 +3916,7 @@ const catalogueOptions = {
       ]
     },
     '39': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Noturno",
       modality: [
         {
           name: '',
@@ -3493,7 +3925,7 @@ const catalogueOptions = {
       ]
     },
     '40': {
-      name: "Licenciatura em Física",
+      name: "Licenciatura em Física - Noturno",
       modality: [
         {
           name: '',
@@ -3502,7 +3934,7 @@ const catalogueOptions = {
       ]
     },
     '41': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Noturno",
       modality: [
         {
           name: '',
@@ -3511,7 +3943,7 @@ const catalogueOptions = {
       ]
     },
     '42': {
-      name: "Ciência da Computação",
+      name: "Ciência da Computação - Noturno",
       modality: [
         {
           name: '',
@@ -3520,7 +3952,7 @@ const catalogueOptions = {
       ]
     },
     '43': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Noturno",
       modality: [
         {
           name: '',
@@ -3529,7 +3961,7 @@ const catalogueOptions = {
       ]
     },
     '44': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -3554,7 +3986,7 @@ const catalogueOptions = {
       ]
     },
     '45': {
-      name: "Educação Física",
+      name: "Educação Física - Noturno",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -3567,7 +3999,7 @@ const catalogueOptions = {
       ]
     },
     '46': {
-      name: "Licenciatura em Ciências Biológicas",
+      name: "Licenciatura em Ciências Biológicas - Noturno",
       modality: [
         {
           name: '',
@@ -3576,7 +4008,7 @@ const catalogueOptions = {
       ]
     },
     '47': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Noturno",
       modality: [
         {
           name: '',
@@ -3585,7 +4017,7 @@ const catalogueOptions = {
       ]
     },
     '48': {
-      name: "Arquitetura e Urbanismo",
+      name: "Arquitetura e Urbanismo - Noturno",
       modality: [
         {
           name: '',
@@ -3594,7 +4026,7 @@ const catalogueOptions = {
       ]
     },
     '49': {
-      name: "Engenharia de Controle e Automação",
+      name: "Engenharia de Controle e Automação - Noturno",
       modality: [
         {
           name: '',
@@ -3603,7 +4035,7 @@ const catalogueOptions = {
       ]
     },
     '50': {
-      name: "Química Tecnológica",
+      name: "Química Tecnológica - Noturno",
       modality: [
         {
           name: '',
@@ -3612,7 +4044,7 @@ const catalogueOptions = {
       ]
     },
     '51': {
-      name: "Matemática/Física/Matemática Aplicada e Computacional",
+      name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -3621,7 +4053,7 @@ const catalogueOptions = {
       ]
     },
     '53': {
-      name: "Geologia",
+      name: "Geologia - Integral",
       modality: [
         {
           name: '',
@@ -3630,7 +4062,7 @@ const catalogueOptions = {
       ]
     },
     '54': {
-      name: "Geografia",
+      name: "Geografia - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -3643,7 +4075,7 @@ const catalogueOptions = {
       ]
     },
     '55': {
-      name: "Geografia",
+      name: "Geografia - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -3656,7 +4088,7 @@ const catalogueOptions = {
       ]
     },
     '56': {
-      name: "Licenciatura Integrada Química/Física",
+      name: "Licenciatura Integrada Química/Física - Noturno",
       modality: [
         {
           name: 'AA - Licenciatura em Química',
@@ -3673,7 +4105,7 @@ const catalogueOptions = {
       ]
     },
     '57': {
-      name: "Licenciatura em Letras - Português",
+      name: "Licenciatura em Letras - Português - Noturno",
       modality: [
         {
           name: 'AA - Licenciatura em Letras - Português',
@@ -3686,7 +4118,7 @@ const catalogueOptions = {
       ]
     },
     '58': {
-      name: "Fonoaudiologia",
+      name: "Fonoaudiologia - Integral",
       modality: [
         {
           name: '',
@@ -3695,7 +4127,7 @@ const catalogueOptions = {
       ]
     },
     '63': {
-      name: "Farmácia",
+      name: "Farmácia - Integral",
       modality: [
         {
           name: '',
@@ -3704,7 +4136,7 @@ const catalogueOptions = {
       ]
     },
     '64': {
-      name: "Comunicação Social - Midialogia",
+      name: "Comunicação Social - Midialogia - Integral",
       modality: [
         {
           name: '',
@@ -3713,7 +4145,7 @@ const catalogueOptions = {
       ]
     },
     '73': {
-      name: "Curso Superior de Tecnologia em Saneamento Ambiental",
+      name: "Curso Superior de Tecnologia em Saneamento Ambiental - Integral",
       modality: [
         {
           name: '',
@@ -3722,7 +4154,7 @@ const catalogueOptions = {
       ]
     },
     '75': {
-      name: "Estudos Literários",
+      name: "Estudos Literários - Integral",
       modality: [
         {
           name: '',
@@ -3731,7 +4163,7 @@ const catalogueOptions = {
       ]
     },
     '83': {
-      name: "Curso Superior de Tecnologia em Construção de Edifícios",
+      name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
       modality: [
         {
           name: '',
@@ -3740,7 +4172,7 @@ const catalogueOptions = {
       ]
     },
     '87': {
-      name: "Curso Superior de Tecnologia em Saneamento Ambiental",
+      name: "Curso Superior de Tecnologia em Saneamento Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -3749,7 +4181,7 @@ const catalogueOptions = {
       ]
     },
     '88': {
-      name: "Engenharia de Telecomunicações",
+      name: "Engenharia de Telecomunicações - Integral",
       modality: [
         {
           name: '',
@@ -3758,7 +4190,7 @@ const catalogueOptions = {
       ]
     },
     '89': {
-      name: "Engenharia Ambiental",
+      name: "Engenharia Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -3767,7 +4199,7 @@ const catalogueOptions = {
       ]
     },
     '94': {
-      name: "Sistemas de Informação",
+      name: "Sistemas de Informação - Integral",
       modality: [
         {
           name: '',
@@ -3776,7 +4208,7 @@ const catalogueOptions = {
       ]
     },
     '100': {
-      name: "Ciências do Esporte",
+      name: "Ciências do Esporte - Integral",
       modality: [
         {
           name: '',
@@ -3785,7 +4217,7 @@ const catalogueOptions = {
       ]
     },
     '101': {
-      name: "Engenharia de Manufatura",
+      name: "Engenharia de Manufatura - Integral",
       modality: [
         {
           name: '',
@@ -3794,7 +4226,7 @@ const catalogueOptions = {
       ]
     },
     '102': {
-      name: "Engenharia de Produção",
+      name: "Engenharia de Produção - Integral",
       modality: [
         {
           name: '',
@@ -3803,7 +4235,7 @@ const catalogueOptions = {
       ]
     },
     '107': {
-      name: "Nutrição",
+      name: "Nutrição - Integral",
       modality: [
         {
           name: '',
@@ -3812,7 +4244,7 @@ const catalogueOptions = {
       ]
     },
     '108': {
-      name: "Engenharia Física",
+      name: "Engenharia Física - Integral",
       modality: [
         {
           name: 'AA - Ênfase em Optoeletrônica',
@@ -3825,7 +4257,7 @@ const catalogueOptions = {
       ]
     },
     '109': {
-      name: "Administração",
+      name: "Administração - Noturno",
       modality: [
         {
           name: '',
@@ -3834,7 +4266,7 @@ const catalogueOptions = {
       ]
     },
     '110': {
-      name: "Administração Pública",
+      name: "Administração Pública - Noturno",
       modality: [
         {
           name: '',
@@ -3843,7 +4275,7 @@ const catalogueOptions = {
       ]
     },
     '200': {
-      name: "Programa de Formação Interdisciplinar Superior - ProFIS",
+      name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
       modality: [
         {
           name: '',
@@ -3854,7 +4286,7 @@ const catalogueOptions = {
   },
   "2018": {
     '1': {
-      name: "Matemática",
+      name: "Matemática - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Matemática',
@@ -3867,7 +4299,7 @@ const catalogueOptions = {
       ]
     },
     '2': {
-      name: "Estatística",
+      name: "Estatística - Integral",
       modality: [
         {
           name: '',
@@ -3876,7 +4308,7 @@ const catalogueOptions = {
       ]
     },
     '4': {
-      name: "Física",
+      name: "Física - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Física',
@@ -3897,7 +4329,7 @@ const catalogueOptions = {
       ]
     },
     '5': {
-      name: "Química",
+      name: "Química - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Química',
@@ -3914,7 +4346,7 @@ const catalogueOptions = {
       ]
     },
     '6': {
-      name: "Ciências Biológicas",
+      name: "Ciências Biológicas - Integral",
       modality: [
         {
           name: 'AJ - Licenciatura Plena em Ciências Biológicas',
@@ -3927,7 +4359,7 @@ const catalogueOptions = {
       ]
     },
     '7': {
-      name: "Licenciatura em Letras - Português",
+      name: "Licenciatura em Letras - Português - Integral",
       modality: [
         {
           name: 'AE - Licenciatura em Letras - Português',
@@ -3940,7 +4372,7 @@ const catalogueOptions = {
       ]
     },
     '8': {
-      name: "Engenharia Agrícola",
+      name: "Engenharia Agrícola - Integral",
       modality: [
         {
           name: '',
@@ -3949,7 +4381,7 @@ const catalogueOptions = {
       ]
     },
     '9': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Integral",
       modality: [
         {
           name: '',
@@ -3958,7 +4390,7 @@ const catalogueOptions = {
       ]
     },
     '10': {
-      name: "Engenharia Mecânica",
+      name: "Engenharia Mecânica - Integral",
       modality: [
         {
           name: '',
@@ -3967,7 +4399,7 @@ const catalogueOptions = {
       ]
     },
     '11': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Integral",
       modality: [
         {
           name: '',
@@ -3976,7 +4408,7 @@ const catalogueOptions = {
       ]
     },
     '12': {
-      name: "Engenharia Civil",
+      name: "Engenharia Civil - Integral",
       modality: [
         {
           name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
@@ -4001,7 +4433,7 @@ const catalogueOptions = {
       ]
     },
     '13': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Integral",
       modality: [
         {
           name: '',
@@ -4010,7 +4442,7 @@ const catalogueOptions = {
       ]
     },
     '14': {
-      name: "Odontologia",
+      name: "Odontologia - Integral",
       modality: [
         {
           name: '',
@@ -4019,7 +4451,7 @@ const catalogueOptions = {
       ]
     },
     '15': {
-      name: "Medicina",
+      name: "Medicina - Integral",
       modality: [
         {
           name: '',
@@ -4028,7 +4460,7 @@ const catalogueOptions = {
       ]
     },
     '16': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -4053,7 +4485,7 @@ const catalogueOptions = {
       ]
     },
     '17': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Integral",
       modality: [
         {
           name: '',
@@ -4062,7 +4494,7 @@ const catalogueOptions = {
       ]
     },
     '18': {
-      name: "Linguística",
+      name: "Linguística - Integral",
       modality: [
         {
           name: '',
@@ -4071,7 +4503,7 @@ const catalogueOptions = {
       ]
     },
     '19': {
-      name: "História",
+      name: "História - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em História',
@@ -4084,7 +4516,7 @@ const catalogueOptions = {
       ]
     },
     '20': {
-      name: "Pedagogia",
+      name: "Pedagogia - Integral",
       modality: [
         {
           name: '',
@@ -4093,7 +4525,7 @@ const catalogueOptions = {
       ]
     },
     '21': {
-      name: "Enfermagem",
+      name: "Enfermagem - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Enfermagem',
@@ -4106,7 +4538,7 @@ const catalogueOptions = {
       ]
     },
     '22': {
-      name: "Música",
+      name: "Música - Integral",
       modality: [
         {
           name: 'CB - Contrabaixo',
@@ -4195,7 +4627,7 @@ const catalogueOptions = {
       ]
     },
     '23': {
-      name: "Dança",
+      name: "Dança - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Dança',
@@ -4208,7 +4640,7 @@ const catalogueOptions = {
       ]
     },
     '25': {
-      name: "Artes Visuais",
+      name: "Artes Visuais - Integral",
       modality: [
         {
           name: 'AF - Bacharelado em Artes Visuais',
@@ -4221,7 +4653,7 @@ const catalogueOptions = {
       ]
     },
     '26': {
-      name: "Artes Cênicas",
+      name: "Artes Cênicas - Integral",
       modality: [
         {
           name: '',
@@ -4230,7 +4662,7 @@ const catalogueOptions = {
       ]
     },
     '27': {
-      name: "Educação Física",
+      name: "Educação Física - Integral",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -4243,7 +4675,7 @@ const catalogueOptions = {
       ]
     },
     '28': {
-      name: "Matemática Aplicada e Computacional",
+      name: "Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -4252,7 +4684,7 @@ const catalogueOptions = {
       ]
     },
     '29': {
-      name: "Licenciatura em Matemática",
+      name: "Licenciatura em Matemática - Noturno",
       modality: [
         {
           name: '',
@@ -4261,7 +4693,7 @@ const catalogueOptions = {
       ]
     },
     '30': {
-      name: "Filosofia",
+      name: "Filosofia - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Filosofia',
@@ -4274,7 +4706,7 @@ const catalogueOptions = {
       ]
     },
     '34': {
-      name: "Engenharia de Computação",
+      name: "Engenharia de Computação - Integral",
       modality: [
         {
           name: 'AA - Sistemas de Computação',
@@ -4291,7 +4723,7 @@ const catalogueOptions = {
       ]
     },
     '36': {
-      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
       modality: [
         {
           name: '',
@@ -4300,7 +4732,7 @@ const catalogueOptions = {
       ]
     },
     '38': {
-      name: "Pedagogia",
+      name: "Pedagogia - Noturno",
       modality: [
         {
           name: '',
@@ -4309,7 +4741,7 @@ const catalogueOptions = {
       ]
     },
     '39': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Noturno",
       modality: [
         {
           name: '',
@@ -4318,7 +4750,7 @@ const catalogueOptions = {
       ]
     },
     '40': {
-      name: "Licenciatura em Física",
+      name: "Licenciatura em Física - Noturno",
       modality: [
         {
           name: '',
@@ -4327,7 +4759,7 @@ const catalogueOptions = {
       ]
     },
     '41': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Noturno",
       modality: [
         {
           name: '',
@@ -4336,7 +4768,7 @@ const catalogueOptions = {
       ]
     },
     '42': {
-      name: "Ciência da Computação",
+      name: "Ciência da Computação - Noturno",
       modality: [
         {
           name: '',
@@ -4345,7 +4777,7 @@ const catalogueOptions = {
       ]
     },
     '43': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Noturno",
       modality: [
         {
           name: '',
@@ -4354,7 +4786,7 @@ const catalogueOptions = {
       ]
     },
     '44': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -4379,7 +4811,7 @@ const catalogueOptions = {
       ]
     },
     '45': {
-      name: "Educação Física",
+      name: "Educação Física - Noturno",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -4392,7 +4824,7 @@ const catalogueOptions = {
       ]
     },
     '46': {
-      name: "Licenciatura em Ciências Biológicas",
+      name: "Licenciatura em Ciências Biológicas - Noturno",
       modality: [
         {
           name: '',
@@ -4401,7 +4833,7 @@ const catalogueOptions = {
       ]
     },
     '47': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Noturno",
       modality: [
         {
           name: '',
@@ -4410,7 +4842,7 @@ const catalogueOptions = {
       ]
     },
     '48': {
-      name: "Arquitetura e Urbanismo",
+      name: "Arquitetura e Urbanismo - Noturno",
       modality: [
         {
           name: '',
@@ -4419,7 +4851,7 @@ const catalogueOptions = {
       ]
     },
     '49': {
-      name: "Engenharia de Controle e Automação",
+      name: "Engenharia de Controle e Automação - Noturno",
       modality: [
         {
           name: '',
@@ -4428,7 +4860,7 @@ const catalogueOptions = {
       ]
     },
     '50': {
-      name: "Química Tecnológica",
+      name: "Química Tecnológica - Noturno",
       modality: [
         {
           name: '',
@@ -4437,7 +4869,7 @@ const catalogueOptions = {
       ]
     },
     '51': {
-      name: "Matemática/Física/Matemática Aplicada e Computacional",
+      name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -4445,8 +4877,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '52': {
+      name: "Ci�ncias da Terra - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2018/curso52_mod1.js'
+        },
+      ]
+    },
     '53': {
-      name: "Geologia",
+      name: "Geologia - Integral",
       modality: [
         {
           name: '',
@@ -4455,7 +4896,7 @@ const catalogueOptions = {
       ]
     },
     '54': {
-      name: "Geografia",
+      name: "Geografia - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -4468,7 +4909,7 @@ const catalogueOptions = {
       ]
     },
     '55': {
-      name: "Geografia",
+      name: "Geografia - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -4481,7 +4922,7 @@ const catalogueOptions = {
       ]
     },
     '56': {
-      name: "Licenciatura Integrada Química/Física",
+      name: "Licenciatura Integrada Química/Física - Noturno",
       modality: [
         {
           name: 'AA - Licenciatura em Química',
@@ -4498,7 +4939,7 @@ const catalogueOptions = {
       ]
     },
     '57': {
-      name: "Licenciatura em Letras - Português",
+      name: "Licenciatura em Letras - Português - Noturno",
       modality: [
         {
           name: 'AA - Licenciatura em Letras - Português',
@@ -4511,7 +4952,7 @@ const catalogueOptions = {
       ]
     },
     '58': {
-      name: "Fonoaudiologia",
+      name: "Fonoaudiologia - Integral",
       modality: [
         {
           name: '',
@@ -4519,8 +4960,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '60': {
+      name: "Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2018/curso60_mod1.js'
+        },
+      ]
+    },
     '63': {
-      name: "Farmácia",
+      name: "Farmácia - Integral",
       modality: [
         {
           name: '',
@@ -4529,7 +4979,7 @@ const catalogueOptions = {
       ]
     },
     '64': {
-      name: "Comunicação Social - Midialogia",
+      name: "Comunicação Social - Midialogia - Integral",
       modality: [
         {
           name: '',
@@ -4538,7 +4988,7 @@ const catalogueOptions = {
       ]
     },
     '73': {
-      name: "Curso Superior de Tecnologia em Saneamento Ambiental",
+      name: "Curso Superior de Tecnologia em Saneamento Ambiental - Integral",
       modality: [
         {
           name: '',
@@ -4546,8 +4996,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '74': {
+      name: "Curso Superior de Tecnologia em Sistemas de Telecomunica��es - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2018/curso74_mod1.js'
+        },
+      ]
+    },
     '75': {
-      name: "Estudos Literários",
+      name: "Estudos Literários - Integral",
       modality: [
         {
           name: '',
@@ -4555,8 +5014,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '82': {
+      name: "Curso Superior de Tecnologia da Constru��o Civil - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2018/curso82_mod1.js'
+        },
+      ]
+    },
     '83': {
-      name: "Curso Superior de Tecnologia em Construção de Edifícios",
+      name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
       modality: [
         {
           name: '',
@@ -4564,8 +5032,35 @@ const catalogueOptions = {
         },
       ]
     },
+    '84': {
+      name: "Curso Superior de Tecnologia em Estradas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2018/curso84_mod1.js'
+        },
+      ]
+    },
+    '85': {
+      name: "Curso Superior de Tecnologia Ambiental - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2018/curso85_mod1.js'
+        },
+      ]
+    },
+    '86': {
+      name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2018/curso86_mod1.js'
+        },
+      ]
+    },
     '87': {
-      name: "Curso Superior de Tecnologia em Saneamento Ambiental",
+      name: "Curso Superior de Tecnologia em Saneamento Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -4574,7 +5069,7 @@ const catalogueOptions = {
       ]
     },
     '88': {
-      name: "Engenharia de Telecomunicações",
+      name: "Engenharia de Telecomunicações - Integral",
       modality: [
         {
           name: '',
@@ -4583,7 +5078,7 @@ const catalogueOptions = {
       ]
     },
     '89': {
-      name: "Engenharia Ambiental",
+      name: "Engenharia Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -4592,7 +5087,7 @@ const catalogueOptions = {
       ]
     },
     '94': {
-      name: "Sistemas de Informação",
+      name: "Sistemas de Informação - Integral",
       modality: [
         {
           name: '',
@@ -4601,7 +5096,7 @@ const catalogueOptions = {
       ]
     },
     '100': {
-      name: "Ciências do Esporte",
+      name: "Ciências do Esporte - Integral",
       modality: [
         {
           name: '',
@@ -4610,7 +5105,7 @@ const catalogueOptions = {
       ]
     },
     '101': {
-      name: "Engenharia de Manufatura",
+      name: "Engenharia de Manufatura - Integral",
       modality: [
         {
           name: '',
@@ -4619,7 +5114,7 @@ const catalogueOptions = {
       ]
     },
     '102': {
-      name: "Engenharia de Produção",
+      name: "Engenharia de Produção - Integral",
       modality: [
         {
           name: '',
@@ -4627,8 +5122,44 @@ const catalogueOptions = {
         },
       ]
     },
+    '103': {
+      name: "Gest�o do Agroneg�cio - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2018/curso103_mod1.js'
+        },
+      ]
+    },
+    '104': {
+      name: "Gest�o de Com�rcio Internacional - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2018/curso104_mod1.js'
+        },
+      ]
+    },
+    '105': {
+      name: "Gest�o de Empresas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2018/curso105_mod1.js'
+        },
+      ]
+    },
+    '106': {
+      name: "Gest�o de Pol�ticas P�blicas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2018/curso106_mod1.js'
+        },
+      ]
+    },
     '107': {
-      name: "Nutrição",
+      name: "Nutrição - Integral",
       modality: [
         {
           name: '',
@@ -4637,7 +5168,7 @@ const catalogueOptions = {
       ]
     },
     '108': {
-      name: "Engenharia Física",
+      name: "Engenharia Física - Integral",
       modality: [
         {
           name: 'AA - Ênfase em Optoeletrônica',
@@ -4650,7 +5181,7 @@ const catalogueOptions = {
       ]
     },
     '109': {
-      name: "Administração",
+      name: "Administração - Noturno",
       modality: [
         {
           name: '',
@@ -4659,7 +5190,7 @@ const catalogueOptions = {
       ]
     },
     '110': {
-      name: "Administração Pública",
+      name: "Administração Pública - Noturno",
       modality: [
         {
           name: '',
@@ -4668,7 +5199,7 @@ const catalogueOptions = {
       ]
     },
     '200': {
-      name: "Programa de Formação Interdisciplinar Superior - ProFIS",
+      name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
       modality: [
         {
           name: '',
@@ -4679,7 +5210,7 @@ const catalogueOptions = {
   },
   "2019": {
     '1': {
-      name: "Matemática",
+      name: "Matemática - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Matemática',
@@ -4692,7 +5223,7 @@ const catalogueOptions = {
       ]
     },
     '2': {
-      name: "Estatística",
+      name: "Estatística - Integral",
       modality: [
         {
           name: '',
@@ -4701,7 +5232,7 @@ const catalogueOptions = {
       ]
     },
     '4': {
-      name: "Física",
+      name: "Física - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Física',
@@ -4722,7 +5253,7 @@ const catalogueOptions = {
       ]
     },
     '5': {
-      name: "Química",
+      name: "Química - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Química',
@@ -4739,7 +5270,7 @@ const catalogueOptions = {
       ]
     },
     '6': {
-      name: "Ciências Biológicas",
+      name: "Ciências Biológicas - Integral",
       modality: [
         {
           name: 'AJ - Licenciatura Plena em Ciências Biológicas',
@@ -4752,7 +5283,7 @@ const catalogueOptions = {
       ]
     },
     '7': {
-      name: "Licenciatura em Letras - Português",
+      name: "Licenciatura em Letras - Português - Integral",
       modality: [
         {
           name: 'AE - Licenciatura em Letras - Português',
@@ -4765,7 +5296,7 @@ const catalogueOptions = {
       ]
     },
     '8': {
-      name: "Engenharia Agrícola",
+      name: "Engenharia Agrícola - Integral",
       modality: [
         {
           name: '',
@@ -4774,7 +5305,7 @@ const catalogueOptions = {
       ]
     },
     '9': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Integral",
       modality: [
         {
           name: '',
@@ -4783,7 +5314,7 @@ const catalogueOptions = {
       ]
     },
     '10': {
-      name: "Engenharia Mecânica",
+      name: "Engenharia Mecânica - Integral",
       modality: [
         {
           name: '',
@@ -4792,7 +5323,7 @@ const catalogueOptions = {
       ]
     },
     '11': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Integral",
       modality: [
         {
           name: '',
@@ -4801,7 +5332,7 @@ const catalogueOptions = {
       ]
     },
     '12': {
-      name: "Engenharia Civil",
+      name: "Engenharia Civil - Integral",
       modality: [
         {
           name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
@@ -4826,7 +5357,7 @@ const catalogueOptions = {
       ]
     },
     '13': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Integral",
       modality: [
         {
           name: '',
@@ -4835,7 +5366,7 @@ const catalogueOptions = {
       ]
     },
     '14': {
-      name: "Odontologia",
+      name: "Odontologia - Integral",
       modality: [
         {
           name: '',
@@ -4844,7 +5375,7 @@ const catalogueOptions = {
       ]
     },
     '15': {
-      name: "Medicina",
+      name: "Medicina - Integral",
       modality: [
         {
           name: '',
@@ -4853,7 +5384,7 @@ const catalogueOptions = {
       ]
     },
     '16': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -4878,7 +5409,7 @@ const catalogueOptions = {
       ]
     },
     '17': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Integral",
       modality: [
         {
           name: '',
@@ -4887,7 +5418,7 @@ const catalogueOptions = {
       ]
     },
     '18': {
-      name: "Linguística",
+      name: "Linguística - Integral",
       modality: [
         {
           name: '',
@@ -4896,7 +5427,7 @@ const catalogueOptions = {
       ]
     },
     '19': {
-      name: "História",
+      name: "História - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em História',
@@ -4909,7 +5440,7 @@ const catalogueOptions = {
       ]
     },
     '20': {
-      name: "Pedagogia",
+      name: "Pedagogia - Integral",
       modality: [
         {
           name: '',
@@ -4918,7 +5449,7 @@ const catalogueOptions = {
       ]
     },
     '21': {
-      name: "Enfermagem",
+      name: "Enfermagem - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Enfermagem',
@@ -4931,7 +5462,7 @@ const catalogueOptions = {
       ]
     },
     '22': {
-      name: "Música",
+      name: "Música - Integral",
       modality: [
         {
           name: 'CB - Contrabaixo',
@@ -5020,7 +5551,7 @@ const catalogueOptions = {
       ]
     },
     '23': {
-      name: "Dança",
+      name: "Dança - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Dança',
@@ -5033,7 +5564,7 @@ const catalogueOptions = {
       ]
     },
     '25': {
-      name: "Artes Visuais",
+      name: "Artes Visuais - Integral",
       modality: [
         {
           name: 'AF - Bacharelado em Artes Visuais',
@@ -5046,7 +5577,7 @@ const catalogueOptions = {
       ]
     },
     '26': {
-      name: "Artes Cênicas",
+      name: "Artes Cênicas - Integral",
       modality: [
         {
           name: '',
@@ -5055,7 +5586,7 @@ const catalogueOptions = {
       ]
     },
     '27': {
-      name: "Educação Física",
+      name: "Educação Física - Integral",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -5068,7 +5599,7 @@ const catalogueOptions = {
       ]
     },
     '28': {
-      name: "Matemática Aplicada e Computacional",
+      name: "Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -5077,7 +5608,7 @@ const catalogueOptions = {
       ]
     },
     '29': {
-      name: "Licenciatura em Matemática",
+      name: "Licenciatura em Matemática - Noturno",
       modality: [
         {
           name: '',
@@ -5086,7 +5617,7 @@ const catalogueOptions = {
       ]
     },
     '30': {
-      name: "Filosofia",
+      name: "Filosofia - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Filosofia',
@@ -5099,7 +5630,7 @@ const catalogueOptions = {
       ]
     },
     '34': {
-      name: "Engenharia de Computação",
+      name: "Engenharia de Computação - Integral",
       modality: [
         {
           name: 'AA - Sistemas de Computação',
@@ -5116,7 +5647,7 @@ const catalogueOptions = {
       ]
     },
     '36': {
-      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
       modality: [
         {
           name: '',
@@ -5125,7 +5656,7 @@ const catalogueOptions = {
       ]
     },
     '38': {
-      name: "Pedagogia",
+      name: "Pedagogia - Noturno",
       modality: [
         {
           name: '',
@@ -5134,7 +5665,7 @@ const catalogueOptions = {
       ]
     },
     '39': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Noturno",
       modality: [
         {
           name: '',
@@ -5143,7 +5674,7 @@ const catalogueOptions = {
       ]
     },
     '40': {
-      name: "Licenciatura em Física",
+      name: "Licenciatura em Física - Noturno",
       modality: [
         {
           name: '',
@@ -5152,7 +5683,7 @@ const catalogueOptions = {
       ]
     },
     '41': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Noturno",
       modality: [
         {
           name: '',
@@ -5161,7 +5692,7 @@ const catalogueOptions = {
       ]
     },
     '42': {
-      name: "Ciência da Computação",
+      name: "Ciência da Computação - Noturno",
       modality: [
         {
           name: '',
@@ -5170,7 +5701,7 @@ const catalogueOptions = {
       ]
     },
     '43': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Noturno",
       modality: [
         {
           name: '',
@@ -5179,7 +5710,7 @@ const catalogueOptions = {
       ]
     },
     '44': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -5204,7 +5735,7 @@ const catalogueOptions = {
       ]
     },
     '45': {
-      name: "Educação Física",
+      name: "Educação Física - Noturno",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -5217,7 +5748,7 @@ const catalogueOptions = {
       ]
     },
     '46': {
-      name: "Licenciatura em Ciências Biológicas",
+      name: "Licenciatura em Ciências Biológicas - Noturno",
       modality: [
         {
           name: '',
@@ -5226,7 +5757,7 @@ const catalogueOptions = {
       ]
     },
     '47': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Noturno",
       modality: [
         {
           name: '',
@@ -5235,7 +5766,7 @@ const catalogueOptions = {
       ]
     },
     '48': {
-      name: "Arquitetura e Urbanismo",
+      name: "Arquitetura e Urbanismo - Noturno",
       modality: [
         {
           name: '',
@@ -5244,7 +5775,7 @@ const catalogueOptions = {
       ]
     },
     '49': {
-      name: "Engenharia de Controle e Automação",
+      name: "Engenharia de Controle e Automação - Noturno",
       modality: [
         {
           name: '',
@@ -5253,7 +5784,7 @@ const catalogueOptions = {
       ]
     },
     '50': {
-      name: "Química Tecnológica",
+      name: "Química Tecnológica - Noturno",
       modality: [
         {
           name: '',
@@ -5262,7 +5793,7 @@ const catalogueOptions = {
       ]
     },
     '51': {
-      name: "Matemática/Física/Matemática Aplicada e Computacional",
+      name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -5270,8 +5801,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '52': {
+      name: "Ci�ncias da Terra - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2019/curso52_mod1.js'
+        },
+      ]
+    },
     '53': {
-      name: "Geologia",
+      name: "Geologia - Integral",
       modality: [
         {
           name: '',
@@ -5280,7 +5820,7 @@ const catalogueOptions = {
       ]
     },
     '54': {
-      name: "Geografia",
+      name: "Geografia - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -5293,7 +5833,7 @@ const catalogueOptions = {
       ]
     },
     '55': {
-      name: "Geografia",
+      name: "Geografia - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -5306,7 +5846,7 @@ const catalogueOptions = {
       ]
     },
     '56': {
-      name: "Licenciatura Integrada Química/Física",
+      name: "Licenciatura Integrada Química/Física - Noturno",
       modality: [
         {
           name: 'AA - Licenciatura em Química',
@@ -5323,7 +5863,7 @@ const catalogueOptions = {
       ]
     },
     '57': {
-      name: "Licenciatura em Letras - Português",
+      name: "Licenciatura em Letras - Português - Noturno",
       modality: [
         {
           name: 'AA - Licenciatura em Letras - Português',
@@ -5336,7 +5876,7 @@ const catalogueOptions = {
       ]
     },
     '58': {
-      name: "Fonoaudiologia",
+      name: "Fonoaudiologia - Integral",
       modality: [
         {
           name: '',
@@ -5344,8 +5884,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '60': {
+      name: "Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2019/curso60_mod1.js'
+        },
+      ]
+    },
     '63': {
-      name: "Farmácia",
+      name: "Farmácia - Integral",
       modality: [
         {
           name: '',
@@ -5354,7 +5903,7 @@ const catalogueOptions = {
       ]
     },
     '64': {
-      name: "Comunicação Social - Midialogia",
+      name: "Comunicação Social - Midialogia - Integral",
       modality: [
         {
           name: '',
@@ -5363,7 +5912,7 @@ const catalogueOptions = {
       ]
     },
     '73': {
-      name: "Curso Superior de Tecnologia em Saneamento Ambiental",
+      name: "Curso Superior de Tecnologia em Saneamento Ambiental - Integral",
       modality: [
         {
           name: '',
@@ -5371,8 +5920,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '74': {
+      name: "Curso Superior de Tecnologia em Sistemas de Telecomunica��es - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2019/curso74_mod1.js'
+        },
+      ]
+    },
     '75': {
-      name: "Estudos Literários",
+      name: "Estudos Literários - Integral",
       modality: [
         {
           name: '',
@@ -5380,8 +5938,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '82': {
+      name: "Curso Superior de Tecnologia da Constru��o Civil - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2019/curso82_mod1.js'
+        },
+      ]
+    },
     '83': {
-      name: "Curso Superior de Tecnologia em Construção de Edifícios",
+      name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
       modality: [
         {
           name: '',
@@ -5389,8 +5956,35 @@ const catalogueOptions = {
         },
       ]
     },
+    '84': {
+      name: "Curso Superior de Tecnologia em Estradas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2019/curso84_mod1.js'
+        },
+      ]
+    },
+    '85': {
+      name: "Curso Superior de Tecnologia Ambiental - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2019/curso85_mod1.js'
+        },
+      ]
+    },
+    '86': {
+      name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2019/curso86_mod1.js'
+        },
+      ]
+    },
     '87': {
-      name: "Curso Superior de Tecnologia em Saneamento Ambiental",
+      name: "Curso Superior de Tecnologia em Saneamento Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -5399,7 +5993,7 @@ const catalogueOptions = {
       ]
     },
     '88': {
-      name: "Engenharia de Telecomunicações",
+      name: "Engenharia de Telecomunicações - Integral",
       modality: [
         {
           name: '',
@@ -5408,7 +6002,7 @@ const catalogueOptions = {
       ]
     },
     '89': {
-      name: "Engenharia Ambiental",
+      name: "Engenharia Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -5417,7 +6011,7 @@ const catalogueOptions = {
       ]
     },
     '94': {
-      name: "Sistemas de Informação",
+      name: "Sistemas de Informação - Integral",
       modality: [
         {
           name: '',
@@ -5426,7 +6020,7 @@ const catalogueOptions = {
       ]
     },
     '100': {
-      name: "Ciências do Esporte",
+      name: "Ciências do Esporte - Integral",
       modality: [
         {
           name: '',
@@ -5435,7 +6029,7 @@ const catalogueOptions = {
       ]
     },
     '101': {
-      name: "Engenharia de Manufatura",
+      name: "Engenharia de Manufatura - Integral",
       modality: [
         {
           name: '',
@@ -5444,7 +6038,7 @@ const catalogueOptions = {
       ]
     },
     '102': {
-      name: "Engenharia de Produção",
+      name: "Engenharia de Produção - Integral",
       modality: [
         {
           name: '',
@@ -5452,8 +6046,44 @@ const catalogueOptions = {
         },
       ]
     },
+    '103': {
+      name: "Gest�o do Agroneg�cio - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2019/curso103_mod1.js'
+        },
+      ]
+    },
+    '104': {
+      name: "Gest�o de Com�rcio Internacional - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2019/curso104_mod1.js'
+        },
+      ]
+    },
+    '105': {
+      name: "Gest�o de Empresas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2019/curso105_mod1.js'
+        },
+      ]
+    },
+    '106': {
+      name: "Gest�o de Pol�ticas P�blicas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2019/curso106_mod1.js'
+        },
+      ]
+    },
     '107': {
-      name: "Nutrição",
+      name: "Nutrição - Integral",
       modality: [
         {
           name: '',
@@ -5462,7 +6092,7 @@ const catalogueOptions = {
       ]
     },
     '108': {
-      name: "Engenharia Física",
+      name: "Engenharia Física - Integral",
       modality: [
         {
           name: 'AA - Ênfase em Optoeletrônica',
@@ -5475,7 +6105,7 @@ const catalogueOptions = {
       ]
     },
     '109': {
-      name: "Administração",
+      name: "Administração - Noturno",
       modality: [
         {
           name: '',
@@ -5484,7 +6114,7 @@ const catalogueOptions = {
       ]
     },
     '110': {
-      name: "Administração Pública",
+      name: "Administração Pública - Noturno",
       modality: [
         {
           name: '',
@@ -5493,7 +6123,7 @@ const catalogueOptions = {
       ]
     },
     '111': {
-      name: "Engenharia de Transportes",
+      name: "Engenharia de Transportes - Noturno",
       modality: [
         {
           name: '',
@@ -5502,7 +6132,7 @@ const catalogueOptions = {
       ]
     },
     '200': {
-      name: "Programa de Formação Interdisciplinar Superior - ProFIS",
+      name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
       modality: [
         {
           name: '',
@@ -5513,7 +6143,7 @@ const catalogueOptions = {
   },
   "2020": {
     '1': {
-      name: "Matemática",
+      name: "Matemática - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Matemática',
@@ -5526,7 +6156,7 @@ const catalogueOptions = {
       ]
     },
     '2': {
-      name: "Estatística",
+      name: "Estatística - Integral",
       modality: [
         {
           name: '',
@@ -5535,7 +6165,7 @@ const catalogueOptions = {
       ]
     },
     '4': {
-      name: "Física",
+      name: "Física - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Física',
@@ -5556,7 +6186,7 @@ const catalogueOptions = {
       ]
     },
     '5': {
-      name: "Química",
+      name: "Química - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Química',
@@ -5573,7 +6203,7 @@ const catalogueOptions = {
       ]
     },
     '6': {
-      name: "Ciências Biológicas",
+      name: "Ciências Biológicas - Integral",
       modality: [
         {
           name: 'AJ - Licenciatura Plena em Ciências Biológicas',
@@ -5586,7 +6216,7 @@ const catalogueOptions = {
       ]
     },
     '7': {
-      name: "Licenciatura em Letras - Português",
+      name: "Licenciatura em Letras - Português - Integral",
       modality: [
         {
           name: 'AE - Licenciatura em Letras - Português',
@@ -5599,7 +6229,7 @@ const catalogueOptions = {
       ]
     },
     '8': {
-      name: "Engenharia Agrícola",
+      name: "Engenharia Agrícola - Integral",
       modality: [
         {
           name: '',
@@ -5608,7 +6238,7 @@ const catalogueOptions = {
       ]
     },
     '9': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Integral",
       modality: [
         {
           name: '',
@@ -5617,7 +6247,7 @@ const catalogueOptions = {
       ]
     },
     '10': {
-      name: "Engenharia Mecânica",
+      name: "Engenharia Mecânica - Integral",
       modality: [
         {
           name: '',
@@ -5626,7 +6256,7 @@ const catalogueOptions = {
       ]
     },
     '11': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Integral",
       modality: [
         {
           name: '',
@@ -5635,7 +6265,7 @@ const catalogueOptions = {
       ]
     },
     '12': {
-      name: "Engenharia Civil",
+      name: "Engenharia Civil - Integral",
       modality: [
         {
           name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
@@ -5660,7 +6290,7 @@ const catalogueOptions = {
       ]
     },
     '13': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Integral",
       modality: [
         {
           name: '',
@@ -5669,7 +6299,7 @@ const catalogueOptions = {
       ]
     },
     '14': {
-      name: "Odontologia",
+      name: "Odontologia - Integral",
       modality: [
         {
           name: '',
@@ -5678,7 +6308,7 @@ const catalogueOptions = {
       ]
     },
     '15': {
-      name: "Medicina",
+      name: "Medicina - Integral",
       modality: [
         {
           name: '',
@@ -5687,7 +6317,7 @@ const catalogueOptions = {
       ]
     },
     '16': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -5712,7 +6342,7 @@ const catalogueOptions = {
       ]
     },
     '17': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Integral",
       modality: [
         {
           name: '',
@@ -5721,7 +6351,7 @@ const catalogueOptions = {
       ]
     },
     '18': {
-      name: "Linguística",
+      name: "Linguística - Integral",
       modality: [
         {
           name: '',
@@ -5730,7 +6360,7 @@ const catalogueOptions = {
       ]
     },
     '19': {
-      name: "História",
+      name: "História - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em História',
@@ -5743,7 +6373,7 @@ const catalogueOptions = {
       ]
     },
     '20': {
-      name: "Pedagogia",
+      name: "Pedagogia - Integral",
       modality: [
         {
           name: '',
@@ -5752,7 +6382,7 @@ const catalogueOptions = {
       ]
     },
     '21': {
-      name: "Enfermagem",
+      name: "Enfermagem - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Enfermagem',
@@ -5765,7 +6395,7 @@ const catalogueOptions = {
       ]
     },
     '22': {
-      name: "Música",
+      name: "Música - Integral",
       modality: [
         {
           name: 'CB - Contrabaixo',
@@ -5854,7 +6484,7 @@ const catalogueOptions = {
       ]
     },
     '23': {
-      name: "Dança",
+      name: "Dança - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Dança',
@@ -5867,7 +6497,7 @@ const catalogueOptions = {
       ]
     },
     '25': {
-      name: "Artes Visuais",
+      name: "Artes Visuais - Integral",
       modality: [
         {
           name: 'AF - Bacharelado em Artes Visuais',
@@ -5880,7 +6510,7 @@ const catalogueOptions = {
       ]
     },
     '26': {
-      name: "Artes Cênicas",
+      name: "Artes Cênicas - Integral",
       modality: [
         {
           name: '',
@@ -5889,7 +6519,7 @@ const catalogueOptions = {
       ]
     },
     '27': {
-      name: "Educação Física",
+      name: "Educação Física - Integral",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -5902,7 +6532,7 @@ const catalogueOptions = {
       ]
     },
     '28': {
-      name: "Matemática Aplicada e Computacional",
+      name: "Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -5911,7 +6541,7 @@ const catalogueOptions = {
       ]
     },
     '29': {
-      name: "Licenciatura em Matemática",
+      name: "Licenciatura em Matemática - Noturno",
       modality: [
         {
           name: '',
@@ -5920,7 +6550,7 @@ const catalogueOptions = {
       ]
     },
     '30': {
-      name: "Filosofia",
+      name: "Filosofia - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Filosofia',
@@ -5933,7 +6563,7 @@ const catalogueOptions = {
       ]
     },
     '34': {
-      name: "Engenharia de Computação",
+      name: "Engenharia de Computação - Integral",
       modality: [
         {
           name: 'AA - Sistemas de Computação',
@@ -5950,7 +6580,7 @@ const catalogueOptions = {
       ]
     },
     '36': {
-      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
+      name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Noturno",
       modality: [
         {
           name: '',
@@ -5959,7 +6589,7 @@ const catalogueOptions = {
       ]
     },
     '38': {
-      name: "Pedagogia",
+      name: "Pedagogia - Noturno",
       modality: [
         {
           name: '',
@@ -5968,7 +6598,7 @@ const catalogueOptions = {
       ]
     },
     '39': {
-      name: "Engenharia Química",
+      name: "Engenharia Química - Noturno",
       modality: [
         {
           name: '',
@@ -5977,7 +6607,7 @@ const catalogueOptions = {
       ]
     },
     '40': {
-      name: "Licenciatura em Física",
+      name: "Licenciatura em Física - Noturno",
       modality: [
         {
           name: '',
@@ -5986,7 +6616,7 @@ const catalogueOptions = {
       ]
     },
     '41': {
-      name: "Engenharia Elétrica",
+      name: "Engenharia Elétrica - Noturno",
       modality: [
         {
           name: '',
@@ -5995,7 +6625,7 @@ const catalogueOptions = {
       ]
     },
     '42': {
-      name: "Ciência da Computação",
+      name: "Ciência da Computação - Noturno",
       modality: [
         {
           name: '',
@@ -6004,7 +6634,7 @@ const catalogueOptions = {
       ]
     },
     '43': {
-      name: "Engenharia de Alimentos",
+      name: "Engenharia de Alimentos - Noturno",
       modality: [
         {
           name: '',
@@ -6013,7 +6643,7 @@ const catalogueOptions = {
       ]
     },
     '44': {
-      name: "Ciências Sociais",
+      name: "Ciências Sociais - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Ciências Sociais - Antropologia',
@@ -6038,7 +6668,7 @@ const catalogueOptions = {
       ]
     },
     '45': {
-      name: "Educação Física",
+      name: "Educação Física - Noturno",
       modality: [
         {
           name: 'AB - Licenciatura em Educação Física',
@@ -6051,7 +6681,7 @@ const catalogueOptions = {
       ]
     },
     '46': {
-      name: "Licenciatura em Ciências Biológicas",
+      name: "Licenciatura em Ciências Biológicas - Noturno",
       modality: [
         {
           name: '',
@@ -6060,7 +6690,7 @@ const catalogueOptions = {
       ]
     },
     '47': {
-      name: "Ciências Econômicas",
+      name: "Ciências Econômicas - Noturno",
       modality: [
         {
           name: '',
@@ -6069,7 +6699,7 @@ const catalogueOptions = {
       ]
     },
     '48': {
-      name: "Arquitetura e Urbanismo",
+      name: "Arquitetura e Urbanismo - Noturno",
       modality: [
         {
           name: '',
@@ -6078,7 +6708,7 @@ const catalogueOptions = {
       ]
     },
     '49': {
-      name: "Engenharia de Controle e Automação",
+      name: "Engenharia de Controle e Automação - Noturno",
       modality: [
         {
           name: '',
@@ -6087,7 +6717,7 @@ const catalogueOptions = {
       ]
     },
     '50': {
-      name: "Química Tecnológica",
+      name: "Química Tecnológica - Noturno",
       modality: [
         {
           name: '',
@@ -6096,7 +6726,7 @@ const catalogueOptions = {
       ]
     },
     '51': {
-      name: "Matemática/Física/Matemática Aplicada e Computacional",
+      name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
       modality: [
         {
           name: '',
@@ -6104,8 +6734,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '52': {
+      name: "Ci�ncias da Terra - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2020/curso52_mod1.js'
+        },
+      ]
+    },
     '53': {
-      name: "Geologia",
+      name: "Geologia - Integral",
       modality: [
         {
           name: '',
@@ -6114,7 +6753,7 @@ const catalogueOptions = {
       ]
     },
     '54': {
-      name: "Geografia",
+      name: "Geografia - Integral",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -6127,7 +6766,7 @@ const catalogueOptions = {
       ]
     },
     '55': {
-      name: "Geografia",
+      name: "Geografia - Noturno",
       modality: [
         {
           name: 'AA - Bacharelado em Geografia',
@@ -6140,7 +6779,7 @@ const catalogueOptions = {
       ]
     },
     '56': {
-      name: "Licenciatura Integrada Química/Física",
+      name: "Licenciatura Integrada Química/Física - Noturno",
       modality: [
         {
           name: 'AA - Licenciatura em Química',
@@ -6157,7 +6796,7 @@ const catalogueOptions = {
       ]
     },
     '57': {
-      name: "Licenciatura em Letras - Português",
+      name: "Licenciatura em Letras - Português - Noturno",
       modality: [
         {
           name: 'AA - Licenciatura em Letras - Português',
@@ -6170,7 +6809,7 @@ const catalogueOptions = {
       ]
     },
     '58': {
-      name: "Fonoaudiologia",
+      name: "Fonoaudiologia - Integral",
       modality: [
         {
           name: '',
@@ -6178,8 +6817,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '60': {
+      name: "Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2020/curso60_mod1.js'
+        },
+      ]
+    },
     '63': {
-      name: "Farmácia",
+      name: "Farmácia - Integral",
       modality: [
         {
           name: '',
@@ -6188,7 +6836,7 @@ const catalogueOptions = {
       ]
     },
     '64': {
-      name: "Comunicação Social - Midialogia",
+      name: "Comunicação Social - Midialogia - Integral",
       modality: [
         {
           name: '',
@@ -6197,7 +6845,7 @@ const catalogueOptions = {
       ]
     },
     '73': {
-      name: "Curso Superior de Tecnologia em Saneamento Ambiental",
+      name: "Curso Superior de Tecnologia em Saneamento Ambiental - Integral",
       modality: [
         {
           name: '',
@@ -6205,8 +6853,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '74': {
+      name: "Curso Superior de Tecnologia em Sistemas de Telecomunica��es - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2020/curso74_mod1.js'
+        },
+      ]
+    },
     '75': {
-      name: "Estudos Literários",
+      name: "Estudos Literários - Integral",
       modality: [
         {
           name: '',
@@ -6214,8 +6871,17 @@ const catalogueOptions = {
         },
       ]
     },
+    '82': {
+      name: "Curso Superior de Tecnologia da Constru��o Civil - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2020/curso82_mod1.js'
+        },
+      ]
+    },
     '83': {
-      name: "Curso Superior de Tecnologia em Construção de Edifícios",
+      name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
       modality: [
         {
           name: '',
@@ -6223,8 +6889,35 @@ const catalogueOptions = {
         },
       ]
     },
+    '84': {
+      name: "Curso Superior de Tecnologia em Estradas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2020/curso84_mod1.js'
+        },
+      ]
+    },
+    '85': {
+      name: "Curso Superior de Tecnologia Ambiental - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2020/curso85_mod1.js'
+        },
+      ]
+    },
+    '86': {
+      name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2020/curso86_mod1.js'
+        },
+      ]
+    },
     '87': {
-      name: "Curso Superior de Tecnologia em Saneamento Ambiental",
+      name: "Curso Superior de Tecnologia em Saneamento Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -6233,7 +6926,7 @@ const catalogueOptions = {
       ]
     },
     '88': {
-      name: "Engenharia de Telecomunicações",
+      name: "Engenharia de Telecomunicações - Integral",
       modality: [
         {
           name: '',
@@ -6242,7 +6935,7 @@ const catalogueOptions = {
       ]
     },
     '89': {
-      name: "Engenharia Ambiental",
+      name: "Engenharia Ambiental - Noturno",
       modality: [
         {
           name: '',
@@ -6251,7 +6944,7 @@ const catalogueOptions = {
       ]
     },
     '94': {
-      name: "Sistemas de Informação",
+      name: "Sistemas de Informação - Integral",
       modality: [
         {
           name: '',
@@ -6260,7 +6953,7 @@ const catalogueOptions = {
       ]
     },
     '100': {
-      name: "Ciências do Esporte",
+      name: "Ciências do Esporte - Integral",
       modality: [
         {
           name: '',
@@ -6269,7 +6962,7 @@ const catalogueOptions = {
       ]
     },
     '101': {
-      name: "Engenharia de Manufatura",
+      name: "Engenharia de Manufatura - Integral",
       modality: [
         {
           name: '',
@@ -6278,7 +6971,7 @@ const catalogueOptions = {
       ]
     },
     '102': {
-      name: "Engenharia de Produção",
+      name: "Engenharia de Produção - Integral",
       modality: [
         {
           name: '',
@@ -6286,8 +6979,44 @@ const catalogueOptions = {
         },
       ]
     },
+    '103': {
+      name: "Gest�o do Agroneg�cio - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2020/curso103_mod1.js'
+        },
+      ]
+    },
+    '104': {
+      name: "Gest�o de Com�rcio Internacional - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2020/curso104_mod1.js'
+        },
+      ]
+    },
+    '105': {
+      name: "Gest�o de Empresas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2020/curso105_mod1.js'
+        },
+      ]
+    },
+    '106': {
+      name: "Gest�o de Pol�ticas P�blicas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2020/curso106_mod1.js'
+        },
+      ]
+    },
     '107': {
-      name: "Nutrição",
+      name: "Nutrição - Integral",
       modality: [
         {
           name: '',
@@ -6296,7 +7025,7 @@ const catalogueOptions = {
       ]
     },
     '108': {
-      name: "Engenharia Física",
+      name: "Engenharia Física - Integral",
       modality: [
         {
           name: 'AA - Ênfase em Optoeletrônica',
@@ -6309,7 +7038,7 @@ const catalogueOptions = {
       ]
     },
     '109': {
-      name: "Administração",
+      name: "Administração - Noturno",
       modality: [
         {
           name: '',
@@ -6318,7 +7047,7 @@ const catalogueOptions = {
       ]
     },
     '110': {
-      name: "Administração Pública",
+      name: "Administração Pública - Noturno",
       modality: [
         {
           name: '',
@@ -6327,7 +7056,7 @@ const catalogueOptions = {
       ]
     },
     '111': {
-      name: "Engenharia de Transportes",
+      name: "Engenharia de Transportes - Noturno",
       modality: [
         {
           name: '',
@@ -6336,7 +7065,7 @@ const catalogueOptions = {
       ]
     },
     '200': {
-      name: "Programa de Formação Interdisciplinar Superior - ProFIS",
+      name: "Programa de Formação Interdisciplinar Superior - ProFIS - Integral",
       modality: [
         {
           name: '',
@@ -6346,6 +7075,4 @@ const catalogueOptions = {
     }
   }
 };
-
-
 export default catalogueOptions;

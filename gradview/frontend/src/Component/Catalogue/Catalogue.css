@@ -8,7 +8,7 @@
 }
 
 .semester {
-    margin: 0 auto 20px auto;
+    margin: 0 auto 15px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +34,7 @@
 .semester .editing {
     border-color: #000;
 }
+
 .eletivas {
     margin: 0 auto 20px auto;
     display: flex;
@@ -49,16 +50,46 @@
     padding: 10px;
 
     display: flex;
-    justify-content: center;
     align-items: center;
 
     border: 1px dashed transparent;
     border-radius: 10px;
 
     min-width: 250px;
-    width: 400px;
+    width: 740px;
     flex-wrap: wrap;
 }
 .eletivas .editing {
     border-color: #000;
+}
+
+.eletivas-remover {
+    border: 1px dashed red;
+    background: #ffaaaa;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+}
+.eletivas-remover.disable {
+    border: 1px dashed #666;
+    background: #ddd;
+}
+.eletivas-remover.disable p {
+    color: #666;
+}
+
+.eletivas-remover .droppable {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -25px;
+
+}
+.eletivas-remover p {
+    color: red;
+    height: 20px;
+    margin: 0;
+    padding: 5px 0 0 0;
 }
