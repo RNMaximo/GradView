@@ -334,11 +334,14 @@ class App extends React.Component {
       this.selectedCatalogue = {year: this.currentYear, course: this.currentCourse, catalogue: this.currentCatalogue};
 
       const newValue = selectedCatalogue.value;
-      const catalogue = (require('../public/catalogues/' + newValue)).default;
-      const coloredCatalogue = this.initializeRandomColors(catalogue);
-      const newCatalogue = {...catalogue, subjects: coloredCatalogue};
+      // Code Spliting
+      import('../public/catalogues/' + newValue).then(response => {
+        const catalogue = response.default;
+        const coloredCatalogue = this.initializeRandomColors(catalogue);
+        const newCatalogue = {...catalogue, subjects: coloredCatalogue};
 
-      this.setState({catalogue: newCatalogue, catalogueId: newValue})
+        this.setState({catalogue: newCatalogue, catalogueId: newValue})
+      });
     }
   };
 
