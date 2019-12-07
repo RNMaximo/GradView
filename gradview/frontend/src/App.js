@@ -13,7 +13,7 @@ import {
   getModalitiesOptionsByYearAndCourse,
   getCatalogueYearOptions,
   getCatalogueCourseOptionsByYear,
-  getCourseName, findIndexByValue, findIndexByCatalogueLabel
+  getCourseName, findIndexByValue, findIndexByCatalogueLabel, firstCourseToLoad
 } from "./Component/Catalogue/Catalogues/cataloguesFunctions";
 
 class App extends React.Component {
@@ -321,7 +321,8 @@ class App extends React.Component {
     // Inicia sempre com o último ano cadastrado
     const initialYearOpt = this.yearsOptions[this.yearsOptions.length-1];
     this.currentYear = initialYearOpt.value;
-    const initialCourseOpt = this.cataloguesOptions[this.currentYear][28];
+    const courseIndex = findIndexByValue(this.cataloguesOptions[this.currentYear], firstCourseToLoad);
+    const initialCourseOpt = this.cataloguesOptions[this.currentYear][courseIndex];
     this.currentCourse = initialCourseOpt.value;
     const initialCatalogueOpt = this.optionsByYearAndCourse[this.currentYear][this.currentCourse][0];
 

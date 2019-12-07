@@ -1,5 +1,7 @@
 import catalogueOptions from './allCatalogues';
 
+export const firstCourseToLoad = '34';
+
 export const getCourseName = (year, courseCode) => {
   return catalogueOptions[year][courseCode].name;
 };
