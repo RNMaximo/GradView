@@ -18,3 +18,11 @@
     width: 100px;
     margin: 0 25px 0 0;
 }
+.course-select-bar .white-button {
+    background-color: #fff;
+    box-shadow: none;
+}
+.course-select-bar .white-button:hover {
+    background-color: #ddd;
+    box-shadow: none;
+}

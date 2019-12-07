@@ -1,6 +1,7 @@
 import React from "react";
 import Select from "react-select";
 import './CourseSelectBar.css';
+import Button from "@material-ui/core/Button";
 
 class CourseSelectBar extends React.Component {
 
@@ -52,7 +53,14 @@ class CourseSelectBar extends React.Component {
             noOptionsMessage={this.noOptionsMessage}
             //isClearable={true}
           />
-          <button onClick={this.props.handleSearchCatalogue}>Buscar</button>
+          <Button
+            className={"white-button"}
+            variant="contained"
+            color="default"
+            onClick={this.props.handleSearchCatalogue}
+          >
+            Confirmar
+          </Button>
         </div>
       </div>
     )

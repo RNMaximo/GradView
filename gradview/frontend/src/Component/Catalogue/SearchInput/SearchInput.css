@@ -24,3 +24,12 @@
     margin: 0;
     padding: 0;
 }
+
+.search .white-button {
+    background-color: #fff;
+    box-shadow: none;
+}
+.search .white-button:hover {
+    background-color: #ddd;
+    box-shadow: none;
+}
