@@ -34,6 +34,7 @@ class App extends React.Component {
 
     isEditing: false,
     onSearch: false,
+    searchedValue: "",
     sizedByCredits: false,
     isColored: false,
   };
@@ -270,15 +271,29 @@ class App extends React.Component {
     this.forceUpdate()
   };
 
-  handleSearch = (event) => {
+  handleOnChange = (event) => {
+    const searchedStr = event.target.value
+    this.setState({searchedValue: searchedStr})
+    this.handleSearch(searchedStr);
+  };
+
+  handleSearch = (searchedStr) => {
+    if (!this.state.catalogue) return;
     let subjectsAsObject = this.state.catalogue.subjects;
-    const searchedStr = event.target.value.trim();
+    searchedStr = searchedStr.trim();
+    const normalizedStr = searchedStr.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
     for (let i in subjectsAsObject) {
       let subject = subjectsAsObject[i];
-      if (!(getVisualCode(subject.code)).toUpperCase().includes(searchedStr.toUpperCase()) &&
-        !subject.name.toUpperCase().includes(searchedStr.toUpperCase()) &&
-        !subject.ementa.toUpperCase().includes(searchedStr.toUpperCase())) {
+
+      // Ignora acentuação, ç e maiúsculas/minúsculas
+      const normalizedCode = (getVisualCode(subject.code)).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+      const normalizedName = subject.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+      const normalizedEmenta = subject.ementa.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+
+      if (!normalizedCode.includes(normalizedStr) &&
+        !normalizedName.includes(normalizedStr) &&
+        !normalizedEmenta.includes(normalizedStr)) {
         subject.opacity = Constants.invisibleOpacity;
       } else {
         subject.opacity = 1;
@@ -290,6 +305,12 @@ class App extends React.Component {
     this.setState({catalogue: {...this.state.catalogue, subjects: subjectsAsObject}, onSearch: onSearch})
   };
 
+  clearSearch = () => {
+    const searchedStr = "";
+    this.setState({searchedValue: searchedStr});
+    this.handleSearch(searchedStr);
+
+  };
   createOptions = () => {
     this.yearsOptions = getCatalogueYearOptions();
     this.cataloguesOptions = getCatalogueCourseOptionsByYear();
@@ -348,6 +369,9 @@ class App extends React.Component {
       }).catch(error => {
         console.log(error);
         this.setState({error: true})
+      }).then(response => {
+        const searchedStr = this.state.searchedValue;
+        this.handleSearch(searchedStr);
       });
     }
   };
@@ -421,7 +445,7 @@ class App extends React.Component {
           </div>
         </div>
         <div style={{margin: "auto", alignItems: "center"}}>
-          <SearchInput onChangeHandler = {this.handleSearch}/>
+          <SearchInput value={this.state.searchedValue} onChangeHandler = {this.handleOnChange} clear = {this.clearSearch}/>
         </div>
         {this.state.catalogue && ! this.state.error ?
           <Catalogue
