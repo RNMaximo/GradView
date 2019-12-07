@@ -345,6 +345,9 @@ class App extends React.Component {
         const newCatalogue = {...catalogue, subjects: coloredCatalogue};
 
         this.setState({catalogue: newCatalogue, catalogueId: newValue})
+      }).catch(error => {
+        console.log(error);
+        this.setState({error: true})
       });
     }
   };
@@ -420,7 +423,7 @@ class App extends React.Component {
         <div style={{margin: "auto", alignItems: "center"}}>
           <SearchInput onChangeHandler = {this.handleSearch}/>
         </div>
-        {this.state.catalogue ?
+        {this.state.catalogue && ! this.state.error ?
           <Catalogue
             key={"catalogue"+this.state.catalogueId}
             ref={this.catalogue}
@@ -435,7 +438,7 @@ class App extends React.Component {
 
             onSearch={this.state.onSearch}
             editing={this.state.isEditing}
-          /> : null}
+          /> : <p>O catálogo especificado não foi encontrado.</p>}
       </div>
     );
   }
