@@ -3,9 +3,8 @@ import './App.css';
 import Catalogue from './Component/Catalogue/Catalogue';
 import SearchInput from "./Component/Catalogue/SearchInput/SearchInput";
 
-import rgbMeanColor from './Functions/Colors/rgbMeanColor';
 import * as Constants from "./Component/Catalogue/constants";
-import {getCleanCode, getVisualCode} from "./Functions/SubjectCode/SubjectCode";
+import {getVisualCode} from "./Functions/SubjectCode/SubjectCode";
 
 import Switch from "./UI/SwitchButton/SwitchButton";
 import CourseSelectBar from "./Component/Catalogue/CourseSelectBar/CourseSelectBar";
@@ -43,61 +42,6 @@ class App extends React.Component {
   componentDidMount() {
     this.initializeOptions();
   }
-
-  initializeNoColors = (catalogueSem) => {
-    const borderColored=this.state.borderColored;
-    const catalogue = this.state.catalogue.slice();
-    const color = borderColored ? '#000000' : '#ffffff';
-    const coloredCatalogue = catalogue.map((disc) => {
-      const ret = {...disc, color: color};
-      return (ret)
-    });
-    return coloredCatalogue
-  };
-
-  initializeRandomColors = (catalogue) => {
-    const catalogueSemesters = catalogue.semesters;
-    let coloredSubjects =[];
-    const semesters = Object.keys(catalogueSemesters);
-
-    for (let i in semesters) {
-      const thisSemester = catalogueSemesters[semesters[i]];
-      coloredSubjects = this.colorSemester (catalogue, thisSemester);
-    }
-    return coloredSubjects;
-  };
-
-  colorSemester = (catalogue, sem) => {
-    let subjectsAsObject = catalogue.subjects;
-    const subjectsAsArray = Object.values(subjectsAsObject);
-    let subjectsToColor = sem.subjects.map(subjectsId => catalogue.subjects[subjectsId]);
-
-    for (let i in subjectsToColor) {
-      let subject = subjectsToColor[i];
-
-      let requisite = null;
-      if (subject.color.length === 0) {
-        if (subject.requisitos && subject.requisitos.length > 0) {
-          const cleanCodes = subject.requisitos.map((req) => {
-            return getCleanCode(req);
-          });
-          requisite = subjectsAsArray.filter((req) => {
-            return (cleanCodes.includes(req.code))
-          });
-          if (requisite.length > 0) {
-            subject = {...subject, color: rgbMeanColor(this.getColors(requisite))}
-          }
-        }
-      }
-
-      subjectsAsObject[subject.code] = subject
-    }
-    return subjectsAsObject
-  };
-
-  getColors = (prereq) => {
-    return prereq.map((r) => {return r.color})
-  };
 
   onDragStart = (info) => {
     const catalogue = this.state.catalogue;
@@ -276,7 +220,6 @@ class App extends React.Component {
     this.setState({searchedValue: searchedStr})
     this.handleSearch(searchedStr);
   };
-
   handleSearch = (searchedStr) => {
     if (!this.state.catalogue) return;
     let subjectsAsObject = this.state.catalogue.subjects;
@@ -363,10 +306,7 @@ class App extends React.Component {
       // Code Spliting
       import('../public/catalogues/' + newValue).then(response => {
         const catalogue = response.default;
-        const coloredCatalogue = this.initializeRandomColors(catalogue);
-        const newCatalogue = {...catalogue, subjects: coloredCatalogue};
-
-        this.setState({catalogue: newCatalogue, catalogueId: newValue})
+        this.setState({catalogue: catalogue, catalogueId: newValue})
       }).catch(error => {
         console.log(error);
         this.setState({error: true})
