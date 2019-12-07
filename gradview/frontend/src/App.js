@@ -396,73 +396,74 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <CourseSelectBar
-          yearOpt={this.state.catalogueYear}
-          yearsOptions={this.yearsOptions}
-          courseOpt={this.state.catalogueCourse}
-          coursesOptions={this.cataloguesOptions[currentCataloguesYear]}
-          modalityOpt={this.state.catalogueOpt}
-          modalitiesOptions={modalitiesOpt}
+        <div className={"app-navbar"}>
+          <CourseSelectBar
+            yearOpt={this.state.catalogueYear}
+            yearsOptions={this.yearsOptions}
+            courseOpt={this.state.catalogueCourse}
+            coursesOptions={this.cataloguesOptions[currentCataloguesYear]}
+            modalityOpt={this.state.catalogueOpt}
+            modalitiesOptions={modalitiesOpt}
 
-          handleChangeCatalogueYear={this.handleChangeCatalogueYear}
-          handleChangeCatalogueCourse={this.handleChangeCatalogueCourse}
-          handleChangeCatalogue={this.handleChangeCatalogue}
-          handleSearchCatalogue={() => this.handleSearchCatalogue()}
-        />
-        <br/>
-
-
-        <div className={"catalogue-control"}>
-          {
-            this.selectedCatalogue ?
-              <div className={"selected-catalogue"}>
-                <p className={"year"}>{this.selectedCatalogue.year}</p>
-                <div >
-                  <p className={"course"}>{this.selectedCatalogue.course+' - '+getCourseName(this.selectedCatalogue.year, this.selectedCatalogue.course)}</p>
-                  <p className={"modality"}>{this.selectedCatalogue.catalogue}</p>
+            handleChangeCatalogueYear={this.handleChangeCatalogueYear}
+            handleChangeCatalogueCourse={this.handleChangeCatalogueCourse}
+            handleChangeCatalogue={this.handleChangeCatalogue}
+            handleSearchCatalogue={() => this.handleSearchCatalogue()}
+          />
+          <div className={"catalogue-control"}>
+            {
+              this.selectedCatalogue ?
+                <div className={"selected-catalogue"}>
+                  <p className={"year"}>{this.selectedCatalogue.year}</p>
+                  <div >
+                    <p className={"course"}>{this.selectedCatalogue.course+' - '+getCourseName(this.selectedCatalogue.year, this.selectedCatalogue.course)}</p>
+                    <p className={"modality"}>{this.selectedCatalogue.catalogue}</p>
+                  </div>
                 </div>
-              </div>
-              : null
-          }
-          <div className={"control-buttons"}>
-            <Switch
-              text={"Teoria / Prática"}
-              onChange={this.handleChangeColor}
-              checked={this.state.isColoredByTPChecked}
-            />
+                : null
+            }
+            <div className={"control-buttons"}>
+              <Switch
+                text={"Teoria / Prática"}
+                onChange={this.handleChangeColor}
+                checked={this.state.isColoredByTPChecked}
+              />
 
-            <Switch
-              text={"Tamanho por créditos"}
-              onChange={this.handleChangeSize}
-              checked={this.state.isSizedByCreditsChecked}
-            />
+              <Switch
+                text={"Tamanho por créditos"}
+                onChange={this.handleChangeSize}
+                checked={this.state.isSizedByCreditsChecked}
+              />
 
-            <Switch
-              text={"Mostrar Eletivas"}
-              onChange={this.handleShowEletivas}
-              checked={this.state.showEletivasChecked}
-            />
+              <Switch
+                text={"Mostrar Eletivas"}
+                onChange={this.handleShowEletivas}
+                checked={this.state.showEletivasChecked}
+              />
+            </div>
           </div>
         </div>
-        <div style={{margin: "auto", alignItems: "center"}}>
-          <SearchInput value={this.state.searchedValue} onChangeHandler = {this.handleOnChange} clear = {this.clearSearch}/>
+        <div className={"content-page"}>
+          <div style={{margin: "auto", alignItems: "center"}}>
+            <SearchInput value={this.state.searchedValue} onChangeHandler = {this.handleOnChange} clear = {this.clearSearch}/>
+          </div>
+          {this.state.catalogue && ! this.state.error ?
+            <Catalogue
+              key={"catalogue"+this.state.catalogueId}
+              ref={this.catalogue}
+              onDragEnd={this.onDragEnd}
+              onDragStart={this.onDragStart}
+              catalogueBySemester={this.state.catalogue}
+
+              coloredByVector={this.state.isColoredByTPChecked}
+              sizedByCredits={this.state.isSizedByCreditsChecked}
+              showeletivas={this.state.showEletivasChecked}
+              isRemoverDisable={this.state.isRemoverDisable}
+
+              onSearch={this.state.onSearch}
+              editing={this.state.isEditing}
+            /> : <p>O catálogo especificado não foi encontrado.</p>}
         </div>
-        {this.state.catalogue && ! this.state.error ?
-          <Catalogue
-            key={"catalogue"+this.state.catalogueId}
-            ref={this.catalogue}
-            onDragEnd={this.onDragEnd}
-            onDragStart={this.onDragStart}
-            catalogueBySemester={this.state.catalogue}
-
-            coloredByVector={this.state.isColoredByTPChecked}
-            sizedByCredits={this.state.isSizedByCreditsChecked}
-            showeletivas={this.state.showEletivasChecked}
-            isRemoverDisable={this.state.isRemoverDisable}
-
-            onSearch={this.state.onSearch}
-            editing={this.state.isEditing}
-          /> : <p>O catálogo especificado não foi encontrado.</p>}
       </div>
     );
   }

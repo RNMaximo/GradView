@@ -10,7 +10,7 @@ class CourseSelectBar extends React.Component {
   render() {
     return (
       <div
-        className={"CourseSelectBar content"}
+        className={"course-select-bar content"}
       >
         <div
           style={
