@@ -1,6 +1,6 @@
 function colors = getcolors(number)
     colors=hsv(number);
-
-    colors = colors*0.6+0.25;
-    colors(colors>1)=1;
-    colors(colors<0)=0;
+    
+    peso = 0.45;
+    cinza = 0.5;
+    colors = (peso*colors+(1-peso)*cinza*[1 1 1]);

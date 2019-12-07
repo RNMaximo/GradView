@@ -139,7 +139,8 @@ function curriculo = getcurriculo(ano,curso,todas_disciplinas)
                     inddisc = inddisc+1;
                 end
                 if cred_semestre ~= creditos_sum
-                    error('Os creditos dos semestres não bateram com os creditos das disciplinas indicadas.');
+                    fprintf(2,'Os creditos dos semestres nao bateram com os creditos das disciplinas indicadas.\n');
+                    fprintf(2,[num2str(cred_semestre) ' (curriculo) vs ' num2str(creditos_sum) ' (somando creditos)\n']);
                 end
                 creditos = creditos+cred_semestre;
 

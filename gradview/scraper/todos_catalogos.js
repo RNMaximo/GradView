@@ -266,15 +266,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'20': {
-			name: "Pedagogia - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso20_mod1.js'
-				},
-			]
-		},
 		'21': {
 			name: "Enfermagem - Integral",
 			modality: [
@@ -490,15 +481,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'38': {
-			name: "Pedagogia - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso38_mod1.js'
-				},
-			]
-		},
 		'39': {
 			name: "Engenharia Química - Noturno",
 			modality: [
@@ -569,134 +551,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'45': {
-			name: "Educação Física - Noturno",
-			modality: [
-				{
-					name: 'AB - Licenciatura em Educação Física',
-					file: '2012/curso45_mod1.js'
-				},
-				{
-					name: 'AF - Bacharelado em Educação Física',
-					file: '2012/curso45_mod2.js'
-				},
-			]
-		},
-		'46': {
-			name: "Licenciatura em Ciências Biológicas - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso46_mod1.js'
-				},
-			]
-		},
-		'47': {
-			name: "Ciências Econômicas - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso47_mod1.js'
-				},
-			]
-		},
-		'48': {
-			name: "Arquitetura e Urbanismo - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso48_mod1.js'
-				},
-			]
-		},
-		'49': {
-			name: "Engenharia de Controle e Automação - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso49_mod1.js'
-				},
-			]
-		},
-		'50': {
-			name: "Química Tecnológica - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso50_mod1.js'
-				},
-			]
-		},
-		'51': {
-			name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso51_mod1.js'
-				},
-			]
-		},
-		'52': {
-			name: "Ciências da Terra - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso52_mod1.js'
-				},
-			]
-		},
-		'53': {
-			name: "Geologia - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso53_mod1.js'
-				},
-			]
-		},
-		'54': {
-			name: "Geografia - Integral",
-			modality: [
-				{
-					name: 'AA - Bacharelado em Geografia',
-					file: '2012/curso54_mod1.js'
-				},
-				{
-					name: 'AB - Licenciatura em Geografia',
-					file: '2012/curso54_mod2.js'
-				},
-			]
-		},
-		'55': {
-			name: "Geografia - Noturno",
-			modality: [
-				{
-					name: 'AA - Bacharelado em Geografia',
-					file: '2012/curso55_mod1.js'
-				},
-				{
-					name: 'AB - Licenciatura em Geografia',
-					file: '2012/curso55_mod2.js'
-				},
-			]
-		},
-		'56': {
-			name: "Licenciatura Integrada Química/Física - Noturno",
-			modality: [
-				{
-					name: 'AA - Licenciatura em Química',
-					file: '2012/curso56_mod1.js'
-				},
-				{
-					name: 'AB - Licenciatura em Física',
-					file: '2012/curso56_mod2.js'
-				},
-				{
-					name: 'AX - Para Matrícula Antes da Opção',
-					file: '2012/curso56_mod3.js'
-				},
-			]
-		},
 		'57': {
 			name: "Licenciatura em Letras - Português - Noturno",
 			modality: [
@@ -757,15 +611,6 @@ const catalogueOptions = {
 				{
 					name: '',
 					file: '2012/curso74_mod1.js'
-				},
-			]
-		},
-		'75': {
-			name: "Estudos Literários - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso75_mod1.js'
 				},
 			]
 		},
@@ -847,51 +692,6 @@ const catalogueOptions = {
 				{
 					name: '',
 					file: '2012/curso102_mod1.js'
-				},
-			]
-		},
-		'103': {
-			name: "Gestão do Agronegócio - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso103_mod1.js'
-				},
-			]
-		},
-		'104': {
-			name: "Gestão de Comércio Internacional - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso104_mod1.js'
-				},
-			]
-		},
-		'105': {
-			name: "Gestão de Empresas - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso105_mod1.js'
-				},
-			]
-		},
-		'106': {
-			name: "Gestão de Políticas Públicas - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso106_mod1.js'
-				},
-			]
-		},
-		'107': {
-			name: "Nutrição - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2012/curso107_mod1.js'
 				},
 			]
 		},
@@ -1123,12 +923,16 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'20': {
-			name: "Pedagogia - Integral",
+		'19': {
+			name: "História - Integral",
 			modality: [
 				{
-					name: '',
-					file: '2013/curso20_mod1.js'
+					name: 'AA - Bacharelado em História',
+					file: '2013/curso19_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em História',
+					file: '2013/curso19_mod2.js'
 				},
 			]
 		},
@@ -1142,6 +946,99 @@ const catalogueOptions = {
 				{
 					name: 'AB - Licenciatura em Enfermagem',
 					file: '2013/curso21_mod2.js'
+				},
+			]
+		},
+		'22': {
+			name: "Música - Integral",
+			modality: [
+				{
+					name: 'CB - Contrabaixo',
+					file: '2013/curso22_mod1.js'
+				},
+				{
+					name: 'CL - Clarineta',
+					file: '2013/curso22_mod2.js'
+				},
+				{
+					name: 'CO - Composição',
+					file: '2013/curso22_mod3.js'
+				},
+				{
+					name: 'CP - Cordas - Música Popular',
+					file: '2013/curso22_mod4.js'
+				},
+				{
+					name: 'CR - Cravo',
+					file: '2013/curso22_mod5.js'
+				},
+				{
+					name: 'FL - Flauta',
+					file: '2013/curso22_mod6.js'
+				},
+				{
+					name: 'LI - Licenciatura em Artes - Música',
+					file: '2013/curso22_mod7.js'
+				},
+				{
+					name: 'OB - Oboé',
+					file: '2013/curso22_mod8.js'
+				},
+				{
+					name: 'PC - Percussão',
+					file: '2013/curso22_mod9.js'
+				},
+				{
+					name: 'PN - Piano',
+					file: '2013/curso22_mod10.js'
+				},
+				{
+					name: 'PP - Percussão - Música Popular',
+					file: '2013/curso22_mod11.js'
+				},
+				{
+					name: 'RG - Regência',
+					file: '2013/curso22_mod12.js'
+				},
+				{
+					name: 'SP - Sopros - Música Popular',
+					file: '2013/curso22_mod13.js'
+				},
+				{
+					name: 'TB - Trombone',
+					file: '2013/curso22_mod14.js'
+				},
+				{
+					name: 'TC - Teclados - Música Popular',
+					file: '2013/curso22_mod15.js'
+				},
+				{
+					name: 'TP - Trompete',
+					file: '2013/curso22_mod16.js'
+				},
+				{
+					name: 'VA - Viola',
+					file: '2013/curso22_mod17.js'
+				},
+				{
+					name: 'VC - Violoncelo',
+					file: '2013/curso22_mod18.js'
+				},
+				{
+					name: 'VL - Violino',
+					file: '2013/curso22_mod19.js'
+				},
+				{
+					name: 'VO - Violão',
+					file: '2013/curso22_mod20.js'
+				},
+				{
+					name: 'VP - Voz - Música Popular',
+					file: '2013/curso22_mod21.js'
+				},
+				{
+					name: 'VZ - Voz',
+					file: '2013/curso22_mod22.js'
 				},
 			]
 		},
@@ -1211,6 +1108,19 @@ const catalogueOptions = {
 				},
 			]
 		},
+		'30': {
+			name: "Filosofia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Filosofia',
+					file: '2013/curso30_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Filosofia',
+					file: '2013/curso30_mod2.js'
+				},
+			]
+		},
 		'34': {
 			name: "Engenharia de Computação - Integral",
 			modality: [
@@ -1234,15 +1144,6 @@ const catalogueOptions = {
 				{
 					name: '',
 					file: '2013/curso36_mod1.js'
-				},
-			]
-		},
-		'38': {
-			name: "Pedagogia - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2013/curso38_mod1.js'
 				},
 			]
 		},
@@ -1383,15 +1284,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'52': {
-			name: "Ciências da Terra - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2013/curso52_mod1.js'
-				},
-			]
-		},
 		'53': {
 			name: "Geologia - Integral",
 			modality: [
@@ -1462,15 +1354,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'60': {
-			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2013/curso60_mod1.js'
-				},
-			]
-		},
 		'63': {
 			name: "Farmácia - Integral",
 			modality: [
@@ -1498,66 +1381,12 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'74': {
-			name: "Curso Superior de Tecnologia em Sistemas de Telecomunicações - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2013/curso74_mod1.js'
-				},
-			]
-		},
-		'75': {
-			name: "Estudos Literários - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2013/curso75_mod1.js'
-				},
-			]
-		},
-		'82': {
-			name: "Curso Superior de Tecnologia da Construção Civil - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2013/curso82_mod1.js'
-				},
-			]
-		},
 		'83': {
 			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
 			modality: [
 				{
 					name: '',
 					file: '2013/curso83_mod1.js'
-				},
-			]
-		},
-		'84': {
-			name: "Curso Superior de Tecnologia em Estradas - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2013/curso84_mod1.js'
-				},
-			]
-		},
-		'85': {
-			name: "Curso Superior de Tecnologia Ambiental - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2013/curso85_mod1.js'
-				},
-			]
-		},
-		'86': {
-			name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2013/curso86_mod1.js'
 				},
 			]
 		},
@@ -1910,12 +1739,16 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'20': {
-			name: "Pedagogia - Integral",
+		'19': {
+			name: "História - Integral",
 			modality: [
 				{
-					name: '',
-					file: '2014/curso20_mod1.js'
+					name: 'AA - Bacharelado em História',
+					file: '2014/curso19_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em História',
+					file: '2014/curso19_mod2.js'
 				},
 			]
 		},
@@ -1929,6 +1762,99 @@ const catalogueOptions = {
 				{
 					name: 'AB - Licenciatura em Enfermagem',
 					file: '2014/curso21_mod2.js'
+				},
+			]
+		},
+		'22': {
+			name: "Música - Integral",
+			modality: [
+				{
+					name: 'CB - Contrabaixo',
+					file: '2014/curso22_mod1.js'
+				},
+				{
+					name: 'CL - Clarineta',
+					file: '2014/curso22_mod2.js'
+				},
+				{
+					name: 'CO - Composição',
+					file: '2014/curso22_mod3.js'
+				},
+				{
+					name: 'CP - Cordas - Música Popular',
+					file: '2014/curso22_mod4.js'
+				},
+				{
+					name: 'CR - Cravo',
+					file: '2014/curso22_mod5.js'
+				},
+				{
+					name: 'FL - Flauta',
+					file: '2014/curso22_mod6.js'
+				},
+				{
+					name: 'LI - Licenciatura em Artes - Música',
+					file: '2014/curso22_mod7.js'
+				},
+				{
+					name: 'OB - Oboé',
+					file: '2014/curso22_mod8.js'
+				},
+				{
+					name: 'PC - Percussão',
+					file: '2014/curso22_mod9.js'
+				},
+				{
+					name: 'PN - Piano',
+					file: '2014/curso22_mod10.js'
+				},
+				{
+					name: 'PP - Percussão - Música Popular',
+					file: '2014/curso22_mod11.js'
+				},
+				{
+					name: 'RG - Regência',
+					file: '2014/curso22_mod12.js'
+				},
+				{
+					name: 'SP - Sopros - Música Popular',
+					file: '2014/curso22_mod13.js'
+				},
+				{
+					name: 'TB - Trombone',
+					file: '2014/curso22_mod14.js'
+				},
+				{
+					name: 'TC - Teclados - Música Popular',
+					file: '2014/curso22_mod15.js'
+				},
+				{
+					name: 'TP - Trompete',
+					file: '2014/curso22_mod16.js'
+				},
+				{
+					name: 'VA - Viola',
+					file: '2014/curso22_mod17.js'
+				},
+				{
+					name: 'VC - Violoncelo',
+					file: '2014/curso22_mod18.js'
+				},
+				{
+					name: 'VL - Violino',
+					file: '2014/curso22_mod19.js'
+				},
+				{
+					name: 'VO - Violão',
+					file: '2014/curso22_mod20.js'
+				},
+				{
+					name: 'VP - Voz - Música Popular',
+					file: '2014/curso22_mod21.js'
+				},
+				{
+					name: 'VZ - Voz',
+					file: '2014/curso22_mod22.js'
 				},
 			]
 		},
@@ -1998,6 +1924,19 @@ const catalogueOptions = {
 				},
 			]
 		},
+		'30': {
+			name: "Filosofia - Integral",
+			modality: [
+				{
+					name: 'AA - Bacharelado em Filosofia',
+					file: '2014/curso30_mod1.js'
+				},
+				{
+					name: 'AB - Licenciatura em Filosofia',
+					file: '2014/curso30_mod2.js'
+				},
+			]
+		},
 		'34': {
 			name: "Engenharia de Computação - Integral",
 			modality: [
@@ -2021,15 +1960,6 @@ const catalogueOptions = {
 				{
 					name: '',
 					file: '2014/curso36_mod1.js'
-				},
-			]
-		},
-		'38': {
-			name: "Pedagogia - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2014/curso38_mod1.js'
 				},
 			]
 		},
@@ -2170,15 +2100,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'52': {
-			name: "Ciências da Terra - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2014/curso52_mod1.js'
-				},
-			]
-		},
 		'53': {
 			name: "Geologia - Integral",
 			modality: [
@@ -2249,15 +2170,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'60': {
-			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2014/curso60_mod1.js'
-				},
-			]
-		},
 		'63': {
 			name: "Farmácia - Integral",
 			modality: [
@@ -2285,66 +2197,12 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'74': {
-			name: "Curso Superior de Tecnologia em Sistemas de Telecomunicações - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2014/curso74_mod1.js'
-				},
-			]
-		},
-		'75': {
-			name: "Estudos Literários - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2014/curso75_mod1.js'
-				},
-			]
-		},
-		'82': {
-			name: "Curso Superior de Tecnologia da Construção Civil - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2014/curso82_mod1.js'
-				},
-			]
-		},
 		'83': {
 			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
 			modality: [
 				{
 					name: '',
 					file: '2014/curso83_mod1.js'
-				},
-			]
-		},
-		'84': {
-			name: "Curso Superior de Tecnologia em Estradas - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2014/curso84_mod1.js'
-				},
-			]
-		},
-		'85': {
-			name: "Curso Superior de Tecnologia Ambiental - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2014/curso85_mod1.js'
-				},
-			]
-		},
-		'86': {
-			name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2014/curso86_mod1.js'
 				},
 			]
 		},
@@ -2545,58 +2403,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'5': {
-			name: "Química - Integral",
-			modality: [
-				{
-					name: 'AA - Bacharelado em Química',
-					file: '2015/curso5_mod1.js'
-				},
-				{
-					name: 'AB - Licenciatura em Química',
-					file: '2015/curso5_mod2.js'
-				},
-				{
-					name: 'AD - Bacharelado em Química Tecnológica',
-					file: '2015/curso5_mod3.js'
-				},
-			]
-		},
-		'6': {
-			name: "Ciências Biológicas - Integral",
-			modality: [
-				{
-					name: 'AJ - Licenciatura Plena em Ciências Biológicas',
-					file: '2015/curso6_mod1.js'
-				},
-				{
-					name: 'AL - Bacharelado em Ciências Biológicas',
-					file: '2015/curso6_mod2.js'
-				},
-			]
-		},
-		'7': {
-			name: "Letras - Integral",
-			modality: [
-				{
-					name: 'AE - Licenciatura em Letras',
-					file: '2015/curso7_mod1.js'
-				},
-				{
-					name: 'AF - Licenciatura em Letras - Português como Segunda Língua / Língua Estrangeira',
-					file: '2015/curso7_mod2.js'
-				},
-			]
-		},
-		'8': {
-			name: "Engenharia Agrícola - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2015/curso8_mod1.js'
-				},
-			]
-		},
 		'9': {
 			name: "Engenharia Química - Integral",
 			modality: [
@@ -2612,67 +2418,6 @@ const catalogueOptions = {
 				{
 					name: '',
 					file: '2015/curso10_mod1.js'
-				},
-			]
-		},
-		'11': {
-			name: "Engenharia Elétrica - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2015/curso11_mod1.js'
-				},
-			]
-		},
-		'12': {
-			name: "Engenharia Civil - Integral",
-			modality: [
-				{
-					name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
-					file: '2015/curso12_mod1.js'
-				},
-				{
-					name: 'EE - Ênfase em Estruturas',
-					file: '2015/curso12_mod2.js'
-				},
-				{
-					name: 'EP - Ênfase em Gestão do Projeto e da Construção',
-					file: '2015/curso12_mod3.js'
-				},
-				{
-					name: 'ES - Ênfase em Saneamento e Ambiente',
-					file: '2015/curso12_mod4.js'
-				},
-				{
-					name: 'ET - Ênfase em Transportes e Geotecnia',
-					file: '2015/curso12_mod5.js'
-				},
-			]
-		},
-		'13': {
-			name: "Engenharia de Alimentos - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2015/curso13_mod1.js'
-				},
-			]
-		},
-		'14': {
-			name: "Odontologia - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2015/curso14_mod1.js'
-				},
-			]
-		},
-		'15': {
-			name: "Medicina - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2015/curso15_mod1.js'
 				},
 			]
 		},
@@ -2729,15 +2474,6 @@ const catalogueOptions = {
 				{
 					name: 'AB - Licenciatura em História',
 					file: '2015/curso19_mod2.js'
-				},
-			]
-		},
-		'20': {
-			name: "Pedagogia - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2015/curso20_mod1.js'
 				},
 			]
 		},
@@ -2952,15 +2688,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'38': {
-			name: "Pedagogia - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2015/curso38_mod1.js'
-				},
-			]
-		},
 		'39': {
 			name: "Engenharia Química - Noturno",
 			modality: [
@@ -3098,15 +2825,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'52': {
-			name: "Ciências da Terra - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2015/curso52_mod1.js'
-				},
-			]
-		},
 		'53': {
 			name: "Geologia - Integral",
 			modality: [
@@ -3181,15 +2899,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'60': {
-			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2015/curso60_mod1.js'
-				},
-			]
-		},
 		'63': {
 			name: "Farmácia - Integral",
 			modality: [
@@ -3217,66 +2926,12 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'74': {
-			name: "Curso Superior de Tecnologia em Sistemas de Telecomunicações - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2015/curso74_mod1.js'
-				},
-			]
-		},
-		'75': {
-			name: "Estudos Literários - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2015/curso75_mod1.js'
-				},
-			]
-		},
-		'82': {
-			name: "Curso Superior de Tecnologia da Construção Civil - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2015/curso82_mod1.js'
-				},
-			]
-		},
 		'83': {
 			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
 			modality: [
 				{
 					name: '',
 					file: '2015/curso83_mod1.js'
-				},
-			]
-		},
-		'84': {
-			name: "Curso Superior de Tecnologia em Estradas - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2015/curso84_mod1.js'
-				},
-			]
-		},
-		'85': {
-			name: "Curso Superior de Tecnologia Ambiental - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2015/curso85_mod1.js'
-				},
-			]
-		},
-		'86': {
-			name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2015/curso86_mod1.js'
 				},
 			]
 		},
@@ -3664,15 +3319,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'20': {
-			name: "Pedagogia - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2016/curso20_mod1.js'
-				},
-			]
-		},
 		'21': {
 			name: "Enfermagem - Integral",
 			modality: [
@@ -3884,15 +3530,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'38': {
-			name: "Pedagogia - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2016/curso38_mod1.js'
-				},
-			]
-		},
 		'39': {
 			name: "Engenharia Química - Noturno",
 			modality: [
@@ -4030,15 +3667,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'52': {
-			name: "Ciências da Terra - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2016/curso52_mod1.js'
-				},
-			]
-		},
 		'53': {
 			name: "Geologia - Integral",
 			modality: [
@@ -4113,15 +3741,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'60': {
-			name: "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2016/curso60_mod1.js'
-				},
-			]
-		},
 		'63': {
 			name: "Farmácia - Integral",
 			modality: [
@@ -4149,66 +3768,12 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'74': {
-			name: "Curso Superior de Tecnologia em Sistemas de Telecomunicações - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2016/curso74_mod1.js'
-				},
-			]
-		},
-		'75': {
-			name: "Estudos Literários - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2016/curso75_mod1.js'
-				},
-			]
-		},
-		'82': {
-			name: "Curso Superior de Tecnologia da Construção Civil - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2016/curso82_mod1.js'
-				},
-			]
-		},
 		'83': {
 			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
 			modality: [
 				{
 					name: '',
 					file: '2016/curso83_mod1.js'
-				},
-			]
-		},
-		'84': {
-			name: "Curso Superior de Tecnologia em Estradas - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2016/curso84_mod1.js'
-				},
-			]
-		},
-		'85': {
-			name: "Curso Superior de Tecnologia Ambiental - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2016/curso85_mod1.js'
-				},
-			]
-		},
-		'86': {
-			name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2016/curso86_mod1.js'
 				},
 			]
 		},
@@ -4592,15 +4157,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'20': {
-			name: "Pedagogia - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2017/curso20_mod1.js'
-				},
-			]
-		},
 		'21': {
 			name: "Enfermagem - Integral",
 			modality: [
@@ -4809,15 +4365,6 @@ const catalogueOptions = {
 				{
 					name: '',
 					file: '2017/curso36_mod1.js'
-				},
-			]
-		},
-		'38': {
-			name: "Pedagogia - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2017/curso38_mod1.js'
 				},
 			]
 		},
@@ -5056,15 +4603,6 @@ const catalogueOptions = {
 				{
 					name: '',
 					file: '2017/curso73_mod1.js'
-				},
-			]
-		},
-		'75': {
-			name: "Estudos Literários - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2017/curso75_mod1.js'
 				},
 			]
 		},
@@ -5421,15 +4959,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'20': {
-			name: "Pedagogia - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2018/curso20_mod1.js'
-				},
-			]
-		},
 		'21': {
 			name: "Enfermagem - Integral",
 			modality: [
@@ -5637,15 +5166,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'38': {
-			name: "Pedagogia - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2018/curso38_mod1.js'
-				},
-			]
-		},
 		'39': {
 			name: "Engenharia Química - Noturno",
 			modality: [
@@ -5783,15 +5303,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'52': {
-			name: "Ci�ncias da Terra - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2018/curso52_mod1.js'
-				},
-			]
-		},
 		'53': {
 			name: "Geologia - Integral",
 			modality: [
@@ -5866,15 +5377,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'60': {
-			name: "Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2018/curso60_mod1.js'
-				},
-			]
-		},
 		'63': {
 			name: "Farmácia - Integral",
 			modality: [
@@ -5902,66 +5404,12 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'74': {
-			name: "Curso Superior de Tecnologia em Sistemas de Telecomunica��es - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2018/curso74_mod1.js'
-				},
-			]
-		},
-		'75': {
-			name: "Estudos Literários - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2018/curso75_mod1.js'
-				},
-			]
-		},
-		'82': {
-			name: "Curso Superior de Tecnologia da Constru��o Civil - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2018/curso82_mod1.js'
-				},
-			]
-		},
 		'83': {
 			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
 			modality: [
 				{
 					name: '',
 					file: '2018/curso83_mod1.js'
-				},
-			]
-		},
-		'84': {
-			name: "Curso Superior de Tecnologia em Estradas - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2018/curso84_mod1.js'
-				},
-			]
-		},
-		'85': {
-			name: "Curso Superior de Tecnologia Ambiental - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2018/curso85_mod1.js'
-				},
-			]
-		},
-		'86': {
-			name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2018/curso86_mod1.js'
 				},
 			]
 		},
@@ -6345,15 +5793,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'20': {
-			name: "Pedagogia - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2019/curso20_mod1.js'
-				},
-			]
-		},
 		'21': {
 			name: "Enfermagem - Integral",
 			modality: [
@@ -6561,15 +6000,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'38': {
-			name: "Pedagogia - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2019/curso38_mod1.js'
-				},
-			]
-		},
 		'39': {
 			name: "Engenharia Química - Noturno",
 			modality: [
@@ -6707,15 +6137,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'52': {
-			name: "Ci�ncias da Terra - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2019/curso52_mod1.js'
-				},
-			]
-		},
 		'53': {
 			name: "Geologia - Integral",
 			modality: [
@@ -6790,15 +6211,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'60': {
-			name: "Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2019/curso60_mod1.js'
-				},
-			]
-		},
 		'63': {
 			name: "Farmácia - Integral",
 			modality: [
@@ -6826,66 +6238,12 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'74': {
-			name: "Curso Superior de Tecnologia em Sistemas de Telecomunica��es - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2019/curso74_mod1.js'
-				},
-			]
-		},
-		'75': {
-			name: "Estudos Literários - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2019/curso75_mod1.js'
-				},
-			]
-		},
-		'82': {
-			name: "Curso Superior de Tecnologia da Constru��o Civil - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2019/curso82_mod1.js'
-				},
-			]
-		},
 		'83': {
 			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
 			modality: [
 				{
 					name: '',
 					file: '2019/curso83_mod1.js'
-				},
-			]
-		},
-		'84': {
-			name: "Curso Superior de Tecnologia em Estradas - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2019/curso84_mod1.js'
-				},
-			]
-		},
-		'85': {
-			name: "Curso Superior de Tecnologia Ambiental - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2019/curso85_mod1.js'
-				},
-			]
-		},
-		'86': {
-			name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2019/curso86_mod1.js'
 				},
 			]
 		},
@@ -7278,15 +6636,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'20': {
-			name: "Pedagogia - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2020/curso20_mod1.js'
-				},
-			]
-		},
 		'21': {
 			name: "Enfermagem - Integral",
 			modality: [
@@ -7494,15 +6843,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'38': {
-			name: "Pedagogia - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2020/curso38_mod1.js'
-				},
-			]
-		},
 		'39': {
 			name: "Engenharia Química - Noturno",
 			modality: [
@@ -7640,15 +6980,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'52': {
-			name: "Ci�ncias da Terra - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2020/curso52_mod1.js'
-				},
-			]
-		},
 		'53': {
 			name: "Geologia - Integral",
 			modality: [
@@ -7723,15 +7054,6 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'60': {
-			name: "Curso Superior de Tecnologia em An�lise e Desenvolvimento de Sistemas - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2020/curso60_mod1.js'
-				},
-			]
-		},
 		'63': {
 			name: "Farmácia - Integral",
 			modality: [
@@ -7759,66 +7081,12 @@ const catalogueOptions = {
 				},
 			]
 		},
-		'74': {
-			name: "Curso Superior de Tecnologia em Sistemas de Telecomunica��es - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2020/curso74_mod1.js'
-				},
-			]
-		},
-		'75': {
-			name: "Estudos Literários - Integral",
-			modality: [
-				{
-					name: '',
-					file: '2020/curso75_mod1.js'
-				},
-			]
-		},
-		'82': {
-			name: "Curso Superior de Tecnologia da Constru��o Civil - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2020/curso82_mod1.js'
-				},
-			]
-		},
 		'83': {
 			name: "Curso Superior de Tecnologia em Construção de Edifícios - Noturno",
 			modality: [
 				{
 					name: '',
 					file: '2020/curso83_mod1.js'
-				},
-			]
-		},
-		'84': {
-			name: "Curso Superior de Tecnologia em Estradas - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2020/curso84_mod1.js'
-				},
-			]
-		},
-		'85': {
-			name: "Curso Superior de Tecnologia Ambiental - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2020/curso85_mod1.js'
-				},
-			]
-		},
-		'86': {
-			name: "Superior Tecnologia em Saneamento Ambiental - Noturno",
-			modality: [
-				{
-					name: '',
-					file: '2020/curso86_mod1.js'
 				},
 			]
 		},
