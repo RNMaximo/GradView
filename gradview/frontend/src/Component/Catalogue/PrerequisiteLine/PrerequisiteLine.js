@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CurveTo from "react-curveto";
+import CurveTo from "../../../External Libs/react-curveto/src/index";
 import {hexToRgbA} from "../../../Functions/Colors/rgbMeanColor";
 
 import './PrerequisiteLine.css'
