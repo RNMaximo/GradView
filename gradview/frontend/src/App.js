@@ -12,7 +12,8 @@ import CourseSelectBar from "./Component/Catalogue/CourseSelectBar/CourseSelectB
 import {
   getModalitiesOptionsByYearAndCourse,
   getCatalogueYearOptions,
-  getCatalogueCourseOptionsByYear, getCourseName
+  getCatalogueCourseOptionsByYear,
+  getCourseName, findIndexByValue, findIndexByCatalogueLabel
 } from "./Component/Catalogue/Catalogues/cataloguesFunctions";
 
 class App extends React.Component {
@@ -312,17 +313,20 @@ class App extends React.Component {
   handleChangeCatalogueYear = (catalogueYear) => {
     this.setState({catalogueYear: catalogueYear});
     this.currentYear = catalogueYear.value;
-    this.handleChangeCatalogueCourse(this.cataloguesOptions[this.currentYear][28])
+    const courseIndex = findIndexByValue(this.cataloguesOptions[this.currentYear], this.currentCourse);
+    this.handleChangeCatalogueCourse(this.cataloguesOptions[this.currentYear][courseIndex])
   };
+
 
   handleChangeCatalogueCourse = (selectedOption) => {
     this.setState({catalogueCourse: selectedOption});
     this.currentCourse = selectedOption.value;
-    this.handleChangeCatalogue(this.optionsByYearAndCourse[this.currentYear][this.currentCourse][0])
+    const catalogueIndex = findIndexByCatalogueLabel(this.optionsByYearAndCourse[this.currentYear][this.currentCourse], this.currentCatalogueLabel);
+    this.handleChangeCatalogue(this.optionsByYearAndCourse[this.currentYear][this.currentCourse][catalogueIndex])
   };
 
   handleChangeCatalogue = (selectedOption) => {
-    this.currentCatalogue = selectedOption.label;
+    this.currentCatalogueLabel = selectedOption.label;
     this.setState({catalogueOpt: selectedOption});
   };
 
@@ -331,7 +335,7 @@ class App extends React.Component {
     if (! selectedCatalogue) {
       this.setState({catalogue: null})
     } else {
-      this.selectedCatalogue = {year: this.currentYear, course: this.currentCourse, catalogue: this.currentCatalogue};
+      this.selectedCatalogue = {year: this.currentYear, course: this.currentCourse, catalogue: this.currentCatalogueLabel};
 
       const newValue = selectedCatalogue.value;
       // Code Spliting

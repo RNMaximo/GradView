@@ -58,3 +58,22 @@ export const getModalitiesOptionsByYearAndCourse = () => {
 
   return cataloguesByYear
 };
+
+
+// Caso não encontre retorna 0.
+export const findIndexByValue = (array, value) => {
+  const selectedObj = array.filter(obj => obj.value === value)[0];
+  return selectedObj ? array.indexOf(selectedObj) : 0;
+};
+
+// Caso não encontre retorna 0.
+export const findIndexByCatalogueLabel = (array, label) => {
+  if (!label || ! array) return 0;
+
+  let selectedObj = array.filter(obj => obj.label === label);
+  if (selectedObj.length === 1) {
+    return array.indexOf(selectedObj[0]);
+  } else {
+    return 0;
+  }
+};
