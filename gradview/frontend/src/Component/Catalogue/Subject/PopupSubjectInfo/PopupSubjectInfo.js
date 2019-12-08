@@ -1,9 +1,9 @@
 import React from 'react';
-import './PopupSubject.css';
+import './PopupSubjectInfo.css';
 import {getVisualCode, isEletiva} from "../../../../Functions/SubjectCode/SubjectCode";
 import Popup from "reactjs-popup";
 
-class PopupSubject extends React.Component {
+class PopupSubjectInfo extends React.Component {
   render() {
     const subject = this.props.subject;
     const requisitesCodes = subject.requisitos ? subject.requisitos.map((r) => {return getVisualCode(r)}) : null;
@@ -36,4 +36,4 @@ class PopupSubject extends React.Component {
   }
 }
 
-export default PopupSubject;
+export default PopupSubjectInfo;

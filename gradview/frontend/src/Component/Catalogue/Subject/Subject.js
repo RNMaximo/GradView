@@ -5,7 +5,7 @@ import './Subject.css';
 import {Draggable} from 'react-beautiful-dnd';
 
 import Alert from "./Alert/Alert";
-import PopupSubject from "./PopupSubject/PopupSubject";
+import PopupSubjectInfo from "./PopupSubjectInfo/PopupSubjectInfo";
 import PopupAlert from "./PopupAlert/PopupAlert";
 
 import {getVisualCode, isEletiva} from "../../../Functions/SubjectCode/SubjectCode";
@@ -159,7 +159,7 @@ class Subject extends React.Component {
             </Draggable>
           }
 
-          <PopupSubject
+          <PopupSubjectInfo
             open={this.state.isDetailsOpen}
             closeOnDocumentClick
             onClose={this.closeModal}
