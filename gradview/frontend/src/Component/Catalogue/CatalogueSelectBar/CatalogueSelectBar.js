@@ -9,7 +9,7 @@ import {
   getCatalogueCourseOptionsByYear,
   getCatalogueYearOptions,
   getModalitiesOptionsByYearAndCourse
-} from "../../Catalogue/Catalogues/cataloguesFunctions";
+} from "../../../Functions/Catalogues/cataloguesFunctions";
 
 class CatalogueSelectBar extends React.Component {
 

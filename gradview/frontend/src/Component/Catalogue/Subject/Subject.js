@@ -10,7 +10,7 @@ import PopupAlert from "./PopupAlert/PopupAlert";
 
 import {getVisualCode, isEletiva} from "../../../Functions/SubjectCode/SubjectCode";
 import Check from "./Check/Check";
-import {getLinearGradColors} from "../colorConstants";
+import {getLinearGradColors} from "../../../Functions/Colors/catalogueColors";
 
 
 class Subject extends React.Component {

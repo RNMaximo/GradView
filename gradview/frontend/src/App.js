@@ -8,7 +8,7 @@ import {getVisualCode} from "./Functions/SubjectCode/SubjectCode";
 
 import Switch from "./UI/SwitchButton/SwitchButton";
 import CatalogueSelectBar from "./Component/Catalogue/CatalogueSelectBar/CatalogueSelectBar";
-import { getCourseName } from "./Component/Catalogue/Catalogues/cataloguesFunctions";
+import { getCourseName } from "./Functions/Catalogues/cataloguesFunctions";
 
 class App extends React.Component {
   state = {

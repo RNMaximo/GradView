@@ -1,4 +1,4 @@
-import catalogueOptions from './allCatalogues';
+import catalogueOptions from '../../Component/Catalogue/allCatalogues';
 
 export const firstCourseToLoad = '34';
 
