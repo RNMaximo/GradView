@@ -45,6 +45,7 @@
   margin: 10px 0;
 }
 .catalogue-control {
+  height: 40px;
   display: flex;
   margin: 4px auto;
   align-items: center;

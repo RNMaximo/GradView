@@ -7,24 +7,15 @@ import * as Constants from "./Component/Catalogue/constants";
 import {getVisualCode} from "./Functions/SubjectCode/SubjectCode";
 
 import Switch from "./UI/SwitchButton/SwitchButton";
-import CourseSelectBar from "./Component/Catalogue/CourseSelectBar/CourseSelectBar";
-import {
-  getModalitiesOptionsByYearAndCourse,
-  getCatalogueYearOptions,
-  getCatalogueCourseOptionsByYear,
-  getCourseName, findIndexByValue, findIndexByCatalogueLabel, firstCourseToLoad
-} from "./Component/Catalogue/Catalogues/cataloguesFunctions";
+import CatalogueSelectBar from "./Component/Catalogue/CatalogueSelectBar/CatalogueSelectBar";
+import { getCourseName } from "./Component/Catalogue/Catalogues/cataloguesFunctions";
 
 class App extends React.Component {
   state = {
-    catalogueYear: null,
-    catalogueCourse: null,
-    catalogueOpt: null,
     catalogueId: "",
     catalogue: null,
 
     borderColored: false,
-    shouldChangeColor: true,
 
     isColoredByTPChecked: false,
     isSizedByCreditsChecked: false,
@@ -39,10 +30,6 @@ class App extends React.Component {
   };
   catalogue = React.createRef();
 
-  componentDidMount() {
-    this.initializeOptions();
-  }
-
   onDragStart = (info) => {
     const catalogue = this.state.catalogue;
     const { source, draggableId } = info;
@@ -54,7 +41,6 @@ class App extends React.Component {
     }
     this.setState({isEditing: true, isRemoverDisable: isRemoverDisable})
   };
-
   onDragEnd = (result) => {
     const catalogue = this.state.catalogue;
     const { destination, source, draggableId } = result;
@@ -247,62 +233,20 @@ class App extends React.Component {
 
     this.setState({catalogue: {...this.state.catalogue, subjects: subjectsAsObject}, onSearch: onSearch})
   };
-
   clearSearch = () => {
     const searchedStr = "";
     this.setState({searchedValue: searchedStr});
     this.handleSearch(searchedStr);
-
-  };
-  createOptions = () => {
-    this.yearsOptions = getCatalogueYearOptions();
-    this.cataloguesOptions = getCatalogueCourseOptionsByYear();
-    this.optionsByYearAndCourse = getModalitiesOptionsByYearAndCourse();
   };
 
-  initializeOptions = () => {
-    // Inicia sempre com o último ano cadastrado
-    const initialYearOpt = this.yearsOptions[this.yearsOptions.length-1];
-    this.currentYear = initialYearOpt.value;
-    const courseIndex = findIndexByValue(this.cataloguesOptions[this.currentYear], firstCourseToLoad);
-    const initialCourseOpt = this.cataloguesOptions[this.currentYear][courseIndex];
-    this.currentCourse = initialCourseOpt.value;
-    const initialCatalogueOpt = this.optionsByYearAndCourse[this.currentYear][this.currentCourse][0];
-
-    this.handleChangeCatalogueYear(initialYearOpt);
-    //this.handleChangeCatalogueCourse(initialCourseOpt);
-    //this.handleChangeCatalogue(initialCatalogueOpt);
-    this.handleSearchCatalogue(initialCatalogueOpt)
-  };
-
-  handleChangeCatalogueYear = (catalogueYear) => {
-    this.setState({catalogueYear: catalogueYear});
-    this.currentYear = catalogueYear.value;
-    const courseIndex = findIndexByValue(this.cataloguesOptions[this.currentYear], this.currentCourse);
-    this.handleChangeCatalogueCourse(this.cataloguesOptions[this.currentYear][courseIndex])
-  };
-
-
-  handleChangeCatalogueCourse = (selectedOption) => {
-    this.setState({catalogueCourse: selectedOption});
-    this.currentCourse = selectedOption.value;
-    const catalogueIndex = findIndexByCatalogueLabel(this.optionsByYearAndCourse[this.currentYear][this.currentCourse], this.currentCatalogueLabel);
-    this.handleChangeCatalogue(this.optionsByYearAndCourse[this.currentYear][this.currentCourse][catalogueIndex])
-  };
-
-  handleChangeCatalogue = (selectedOption) => {
-    this.currentCatalogueLabel = selectedOption.label;
-    this.setState({catalogueOpt: selectedOption});
-  };
-
-  handleSearchCatalogue = (catalogue) => {
-    const selectedCatalogue = catalogue ? catalogue : this.state.catalogueOpt;
+  handleSearchCatalogue = (selectedCatalogue, selectedCatalogueInfo) => {
     if (! selectedCatalogue) {
-      this.setState({catalogue: null})
+      this.setState({catalogue: null, catalogueId: 'noCatalogue'})
     } else {
-      this.selectedCatalogue = {year: this.currentYear, course: this.currentCourse, catalogue: this.currentCatalogueLabel};
+      this.selectedCatalogue = {...selectedCatalogueInfo};
 
       const newValue = selectedCatalogue.value;
+
       // Code Spliting
       import('../public/catalogues/' + newValue).then(response => {
         const catalogue = response.default;
@@ -328,41 +272,25 @@ class App extends React.Component {
   };
 
   render() {
-    this.createOptions();
-
-    const currentCataloguesYear = this.state.catalogueYear ? this.state.catalogueYear.value : null;
-    const currentCataloguesCourse = this.state.catalogueCourse ? this.state.catalogueCourse.value : null;
-    const aux = this.optionsByYearAndCourse[currentCataloguesYear]
-    const modalitiesOpt = aux ? aux[currentCataloguesCourse] : null;
-
+    const selectedYear = this.selectedCatalogue ? this.selectedCatalogue.year : "Carregando..."
+    const selectedCourse = this.selectedCatalogue ? this.selectedCatalogue.course+' - '+getCourseName(this.selectedCatalogue.year, this.selectedCatalogue.course) : ""
+    const selectedCatalogue = this.selectedCatalogue ? this.selectedCatalogue.catalogue : ""
     return (
       <div className="App">
         <div className={"app-navbar"}>
-          <CourseSelectBar
-            yearOpt={this.state.catalogueYear}
-            yearsOptions={this.yearsOptions}
-            courseOpt={this.state.catalogueCourse}
-            coursesOptions={this.cataloguesOptions[currentCataloguesYear]}
-            modalityOpt={this.state.catalogueOpt}
-            modalitiesOptions={modalitiesOpt}
-
-            handleChangeCatalogueYear={this.handleChangeCatalogueYear}
-            handleChangeCatalogueCourse={this.handleChangeCatalogueCourse}
-            handleChangeCatalogue={this.handleChangeCatalogue}
-            handleSearchCatalogue={() => this.handleSearchCatalogue()}
+          <CatalogueSelectBar
+            handleSearchCatalogue={this.handleSearchCatalogue}
           />
           <div className={"catalogue-control"}>
-            {
-              this.selectedCatalogue ?
-                <div className={"selected-catalogue"}>
-                  <p className={"year"}>{this.selectedCatalogue.year}</p>
-                  <div >
-                    <p className={"course"}>{this.selectedCatalogue.course+' - '+getCourseName(this.selectedCatalogue.year, this.selectedCatalogue.course)}</p>
-                    <p className={"modality"}>{this.selectedCatalogue.catalogue}</p>
-                  </div>
-                </div>
-                : null
-            }
+
+            <div className={"selected-catalogue"}>
+              <p className={"year"}>{selectedYear}</p>
+              <div>
+                <p className={"course"}>{selectedCourse}</p>
+                <p className={"modality"}>{selectedCatalogue}</p>
+              </div>
+            </div>
+
             <div className={"control-buttons"}>
               <Switch
                 text={"Teoria / Prática"}
@@ -384,13 +312,15 @@ class App extends React.Component {
             </div>
           </div>
         </div>
+
         <div className={"content-page"}>
           <div style={{margin: "auto", alignItems: "center"}}>
-            <SearchInput value={this.state.searchedValue} onChangeHandler = {this.handleOnChange} clear = {this.clearSearch}/>
+            <SearchInput value={this.state.searchedValue} onChangeHandler={this.handleOnChange}
+                         clear={this.clearSearch}/>
           </div>
-          {this.state.catalogue && ! this.state.error ?
+          {this.state.catalogue ?
             <Catalogue
-              key={"catalogue"+this.state.catalogueId}
+              key={"catalogue" + this.state.catalogueId}
               ref={this.catalogue}
               onDragEnd={this.onDragEnd}
               onDragStart={this.onDragStart}
@@ -403,7 +333,8 @@ class App extends React.Component {
 
               onSearch={this.state.onSearch}
               editing={this.state.isEditing}
-            /> : <p>O catálogo especificado não foi encontrado.</p>}
+            /> : null}
+          {this.state.error ? <p>O catálogo especificado não foi encontrado.</p> : null}
         </div>
       </div>
     );
