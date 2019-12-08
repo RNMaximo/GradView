@@ -551,6 +551,125 @@ const catalogueOptions = {
         },
       ]
     },
+    '45': {
+      name: "Educação Física - Noturno",
+      modality: [
+        {
+          name: 'AB - Licenciatura em Educação Física',
+          file: '2012/curso45_mod1.js'
+        },
+        {
+          name: 'AF - Bacharelado em Educação Física',
+          file: '2012/curso45_mod2.js'
+        },
+      ]
+    },
+    '46': {
+      name: "Licenciatura em Ciências Biológicas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2012/curso46_mod1.js'
+        },
+      ]
+    },
+    '47': {
+      name: "Ciências Econômicas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2012/curso47_mod1.js'
+        },
+      ]
+    },
+    '48': {
+      name: "Arquitetura e Urbanismo - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2012/curso48_mod1.js'
+        },
+      ]
+    },
+    '49': {
+      name: "Engenharia de Controle e Automação - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2012/curso49_mod1.js'
+        },
+      ]
+    },
+    '50': {
+      name: "Química Tecnológica - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2012/curso50_mod1.js'
+        },
+      ]
+    },
+    '51': {
+      name: "Matemática/Física/Matemática Aplicada e Computacional - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2012/curso51_mod1.js'
+        },
+      ]
+    },
+    '53': {
+      name: "Geologia - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2012/curso53_mod1.js'
+        },
+      ]
+    },
+    '54': {
+      name: "Geografia - Integral",
+      modality: [
+        {
+          name: 'AA - Bacharelado em Geografia',
+          file: '2012/curso54_mod1.js'
+        },
+        {
+          name: 'AB - Licenciatura em Geografia',
+          file: '2012/curso54_mod2.js'
+        },
+      ]
+    },
+    '55': {
+      name: "Geografia - Noturno",
+      modality: [
+        {
+          name: 'AA - Bacharelado em Geografia',
+          file: '2012/curso55_mod1.js'
+        },
+        {
+          name: 'AB - Licenciatura em Geografia',
+          file: '2012/curso55_mod2.js'
+        },
+      ]
+    },
+    '56': {
+      name: "Licenciatura Integrada Química/Física - Noturno",
+      modality: [
+        {
+          name: 'AA - Licenciatura em Química',
+          file: '2012/curso56_mod1.js'
+        },
+        {
+          name: 'AB - Licenciatura em Física',
+          file: '2012/curso56_mod2.js'
+        },
+        {
+          name: 'AX - Para Matrícula Antes da Opção',
+          file: '2012/curso56_mod3.js'
+        },
+      ]
+    },
     '57': {
       name: "Licenciatura em Letras - Português - Noturno",
       modality: [
@@ -692,6 +811,51 @@ const catalogueOptions = {
         {
           name: '',
           file: '2012/curso102_mod1.js'
+        },
+      ]
+    },
+    '103': {
+      name: "Gestão do Agronegócio - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2012/curso103_mod1.js'
+        },
+      ]
+    },
+    '104': {
+      name: "Gestão de Comércio Internacional - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2012/curso104_mod1.js'
+        },
+      ]
+    },
+    '105': {
+      name: "Gestão de Empresas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2012/curso105_mod1.js'
+        },
+      ]
+    },
+    '106': {
+      name: "Gestão de Políticas Públicas - Noturno",
+      modality: [
+        {
+          name: '',
+          file: '2012/curso106_mod1.js'
+        },
+      ]
+    },
+    '107': {
+      name: "Nutrição - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2012/curso107_mod1.js'
         },
       ]
     },
@@ -2403,6 +2567,58 @@ const catalogueOptions = {
         },
       ]
     },
+    '5': {
+      name: "Química - Integral",
+      modality: [
+        {
+          name: 'AA - Bacharelado em Química',
+          file: '2015/curso5_mod1.js'
+        },
+        {
+          name: 'AB - Licenciatura em Química',
+          file: '2015/curso5_mod2.js'
+        },
+        {
+          name: 'AD - Bacharelado em Química Tecnológica',
+          file: '2015/curso5_mod3.js'
+        },
+      ]
+    },
+    '6': {
+      name: "Ciências Biológicas - Integral",
+      modality: [
+        {
+          name: 'AJ - Licenciatura Plena em Ciências Biológicas',
+          file: '2015/curso6_mod1.js'
+        },
+        {
+          name: 'AL - Bacharelado em Ciências Biológicas',
+          file: '2015/curso6_mod2.js'
+        },
+      ]
+    },
+    '7': {
+      name: "Letras - Integral",
+      modality: [
+        {
+          name: 'AE - Licenciatura em Letras',
+          file: '2015/curso7_mod1.js'
+        },
+        {
+          name: 'AF - Licenciatura em Letras - Português como Segunda Língua / Língua Estrangeira',
+          file: '2015/curso7_mod2.js'
+        },
+      ]
+    },
+    '8': {
+      name: "Engenharia Agrícola - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso8_mod1.js'
+        },
+      ]
+    },
     '9': {
       name: "Engenharia Química - Integral",
       modality: [
@@ -2418,6 +2634,67 @@ const catalogueOptions = {
         {
           name: '',
           file: '2015/curso10_mod1.js'
+        },
+      ]
+    },
+    '11': {
+      name: "Engenharia Elétrica - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso11_mod1.js'
+        },
+      ]
+    },
+    '12': {
+      name: "Engenharia Civil - Integral",
+      modality: [
+        {
+          name: 'EA - Ênfase em Recursos Hídricos, Energéticos e Ambientais',
+          file: '2015/curso12_mod1.js'
+        },
+        {
+          name: 'EE - Ênfase em Estruturas',
+          file: '2015/curso12_mod2.js'
+        },
+        {
+          name: 'EP - Ênfase em Gestão do Projeto e da Construção',
+          file: '2015/curso12_mod3.js'
+        },
+        {
+          name: 'ES - Ênfase em Saneamento e Ambiente',
+          file: '2015/curso12_mod4.js'
+        },
+        {
+          name: 'ET - Ênfase em Transportes e Geotecnia',
+          file: '2015/curso12_mod5.js'
+        },
+      ]
+    },
+    '13': {
+      name: "Engenharia de Alimentos - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso13_mod1.js'
+        },
+      ]
+    },
+    '14': {
+      name: "Odontologia - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso14_mod1.js'
+        },
+      ]
+    },
+    '15': {
+      name: "Medicina - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2015/curso15_mod1.js'
         },
       ]
     },

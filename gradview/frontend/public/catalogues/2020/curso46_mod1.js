@@ -4,11 +4,11 @@ const catalogue = {
 	semesters: {
 		'sem-1': {
 			id: '1',
-			subjects: ['BC183', 'BG181', 'BZ183', 'EL212', 'QG107']
+			subjects: ['BG181', 'BC183', 'QG107', 'EL212', 'BZ183']
 		},
 		'sem-2': {
 			id: '2',
-			subjects: ['BB281', 'BC283', 'BL583', 'BT285', 'BZ285', 'EL683']
+			subjects: ['BB281', 'BC283', 'BT285', 'BZ285', 'BL583', 'EL683']
 		},
 		'sem-3': {
 			id: '3',
@@ -16,31 +16,31 @@ const catalogue = {
 		},
 		'sem-4': {
 			id: '4',
-			subjects: ['BA480', 'BF483', 'BG200', 'BH482', 'BT485']
+			subjects: ['BF483', 'BH482', 'BT485', 'BA480', 'BG200']
 		},
 		'sem-5': {
 			id: '5',
-			subjects: ['BE180', 'BF583', 'BL300', 'BM720', 'F_107']
+			subjects: ['BF583', 'BM720', 'BL300', 'F_107', 'BE180']
 		},
 		'sem-6': {
 			id: '6',
-			subjects: ['BE480', 'BG481', 'BH620', 'BV620', 'BZ485', 'EL511', 'ELET06']
+			subjects: ['BH620', 'BG481', 'BV620', 'EL511', 'BZ485', 'BE480', 'ELET06']
 		},
 		'sem-7': {
 			id: '7',
-			subjects: ['BG520', 'BL036', 'BV720', 'EL774', 'FN468', 'GM280']
+			subjects: ['BG520', 'BL036', 'BV720', 'FN468', 'GM280', 'EL774']
 		},
 		'sem-8': {
 			id: '8',
-			subjects: ['BD520', 'BL037', 'BL600', 'BP820', 'EL885', 'GM450', 'ELET08']
+			subjects: ['BD520', 'ELET08', 'BP820', 'EL885', 'GM450', 'BL600', 'BL037']
 		},
 		'sem-9': {
 			id: '9',
-			subjects: ['BD694', 'BH780', 'BI520', 'BL034', 'BT205', 'EL142', 'EL876', 'ELET09']
+			subjects: ['BD694', 'BH780', 'BI520', 'BL034', 'EL142', 'EL876', 'BT205', 'ELET09']
 		},
 		'sem-10': {
 			id: '10',
-			subjects: ['BG680', 'BL031', 'BL035', 'BT681', 'EL485', 'ELET10']
+			subjects: ['BG680', 'BL031', 'ELET10', 'BT681', 'EL485', 'BL035']
 		}
 	},
 
@@ -70,7 +70,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D9C1',
+			color: '#4695B9',
 			obligatory: true
 		},
 		'BG181': {
@@ -80,7 +80,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D9406F',
+			color: '#97B946',
 			obligatory: true
 		},
 		'BZ183': {
@@ -90,7 +90,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D98740',
+			color: '#B96446',
 			obligatory: true
 		},
 		'EL212': {
@@ -100,7 +100,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D962',
+			color: '#B97046',
 			obligatory: true
 		},
 		'QG107': {
@@ -110,7 +110,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:4, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#D9B640',
+			color: '#B94664',
 			obligatory: true
 		},
 		'BB281': {
@@ -120,7 +120,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D982',
+			color: '#46B954',
 			obligatory: true
 		},
 		'BC283': {
@@ -130,7 +130,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['BC183'],
-			color: '#40D9C1',
+			color: '#4695B9',
 			obligatory: true
 		},
 		'BL583': {
@@ -140,7 +140,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:2, L:1, O:4, D:0, HS:8, SL:2, C:8},
 			requisitos: '',
-			color: '#404AD9',
+			color: '#8046B9',
 			obligatory: true
 		},
 		'BT285': {
@@ -150,7 +150,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:2, O:1, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#8CD940',
+			color: '#6846B9',
 			obligatory: true
 		},
 		'BZ285': {
@@ -160,7 +160,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:1, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40B1D9',
+			color: '#A346B9',
 			obligatory: true
 		},
 		'EL683': {
@@ -170,7 +170,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#4540D9',
+			color: '#AF46B9',
 			obligatory: true
 		},
 		'BB381': {
@@ -180,7 +180,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940AF',
+			color: '#B9467C',
 			obligatory: true
 		},
 		'BD692': {
@@ -190,7 +190,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#D3D940',
+			color: '#9146B9',
 			obligatory: true
 		},
 		'BT385': {
@@ -200,7 +200,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:2, O:1, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D95A',
+			color: '#5046B9',
 			obligatory: true
 		},
 		'BZ385': {
@@ -210,7 +210,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:1, D:0, HS:6, SL:4, C:6},
 			requisitos: ['BZ285'],
-			color: '#40B1D9',
+			color: '#A346B9',
 			obligatory: true
 		},
 		'MS380': {
@@ -220,7 +220,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D95740',
+			color: '#B9466A',
 			obligatory: true
 		},
 		'BA480': {
@@ -230,7 +230,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940BE',
+			color: '#B946B7',
 			obligatory: true
 		},
 		'BF483': {
@@ -240,7 +240,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94087',
+			color: '#46A7B9',
 			obligatory: true
 		},
 		'BG200': {
@@ -250,7 +250,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MS380'],
-			color: '#D95740',
+			color: '#B9466A',
 			obligatory: true
 		},
 		'BH482': {
@@ -260,7 +260,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BC183'],
-			color: '#40D9C1',
+			color: '#4695B9',
 			obligatory: true
 		},
 		'BT485': {
@@ -270,7 +270,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:2, O:1, D:0, HS:6, SL:4, C:6},
 			requisitos: ['BT385'],
-			color: '#40D95A',
+			color: '#5046B9',
 			obligatory: true
 		},
 		'BE180': {
@@ -280,7 +280,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:5, L:0, O:0, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D9B1',
+			color: '#46B94E',
 			obligatory: true
 		},
 		'BF583': {
@@ -290,7 +290,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BF483'],
-			color: '#D94087',
+			color: '#46A7B9',
 			obligatory: true
 		},
 		'BL300': {
@@ -300,7 +300,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#9C40D9',
+			color: '#4666B9',
 			obligatory: true
 		},
 		'BM720': {
@@ -310,7 +310,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4D40D9',
+			color: '#466CB9',
 			obligatory: true
 		},
 		'F_107': {
@@ -320,7 +320,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#65D940',
+			color: '#B946B1',
 			obligatory: true
 		},
 		'BE480': {
@@ -330,7 +330,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:1, L:0, O:1, D:0, HS:6, SL:4, C:6},
 			requisitos: ['BE180'],
-			color: '#40D9B1',
+			color: '#46B94E',
 			obligatory: true
 		},
 		'BG481': {
@@ -340,7 +340,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['BG181'],
-			color: '#D9406F',
+			color: '#97B946',
 			obligatory: true
 		},
 		'BH620': {
@@ -350,7 +350,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['BH482'],
-			color: '#40D9C1',
+			color: '#4695B9',
 			obligatory: true
 		},
 		'BV620': {
@@ -360,7 +360,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:2, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#4092D9',
+			color: '#B9464C',
 			obligatory: true
 		},
 		'BZ485': {
@@ -370,7 +370,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:3, L:0, O:1, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#40D9A1',
+			color: '#9D46B9',
 			obligatory: true
 		},
 		'EL511': {
@@ -380,7 +380,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#D99F40',
+			color: '#B5B946',
 			obligatory: true
 		},
 		'ELET06': {
@@ -400,7 +400,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BG481'],
-			color: '#D9406F',
+			color: '#97B946',
 			obligatory: true
 		},
 		'BL036': {
@@ -410,7 +410,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#B440D9',
+			color: '#A9B946',
 			obligatory: true
 		},
 		'BV720': {
@@ -420,7 +420,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#4052D9',
+			color: '#46ADB9',
 			obligatory: true
 		},
 		'EL774': {
@@ -430,7 +430,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['AA200', 'AA445'],
-			color: '#40D94A',
+			color: '#B9468D',
 			obligatory: true
 		},
 		'FN468': {
@@ -440,7 +440,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94057',
+			color: '#46B9B3',
 			obligatory: true
 		},
 		'GM280': {
@@ -450,7 +450,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D94067',
+			color: '#B98746',
 			obligatory: true
 		},
 		'BD520': {
@@ -460,7 +460,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40C1D9',
+			color: '#46B97E',
 			obligatory: true
 		},
 		'BL037': {
@@ -470,7 +470,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: ['AA460'],
-			color: '#4DD940',
+			color: '#B9A546',
 			obligatory: true
 		},
 		'BL600': {
@@ -480,7 +480,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#4099D9',
+			color: '#80B946',
 			obligatory: true
 		},
 		'BP820': {
@@ -490,7 +490,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:3, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D340D9',
+			color: '#4672B9',
 			obligatory: true
 		},
 		'EL885': {
@@ -500,7 +500,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:9, D:0, HS:13, SL:4, C:13},
 			requisitos: '',
-			color: '#40D9B9',
+			color: '#91B946',
 			obligatory: true
 		},
 		'GM450': {
@@ -510,7 +510,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:1, L:1, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#40D98A',
+			color: '#46B948',
 			obligatory: true
 		},
 		'ELET08': {
@@ -530,7 +530,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: '',
-			color: '#CCD940',
+			color: '#74B946',
 			obligatory: true
 		},
 		'BH780': {
@@ -540,7 +540,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:2, D:0, HS:4, SL:2, C:4},
 			requisitos: ['BG520', 'BH620'],
-			color: '#8D8D98',
+			color: '#6FA780',
 			obligatory: true
 		},
 		'BI520': {
@@ -550,7 +550,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BC283'],
-			color: '#40D9C1',
+			color: '#4695B9',
 			obligatory: true
 		},
 		'BL034': {
@@ -560,7 +560,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:0, L:1, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['BT285', 'BT485', 'BV620', 'BV720'],
-			color: '#53A693',
+			color: '#6E609E',
 			obligatory: true
 		},
 		'BT205': {
@@ -570,7 +570,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:1, D:0, HS:3, SL:2, C:3},
 			requisitos: '',
-			color: '#8440D9',
+			color: '#467EB9',
 			obligatory: true
 		},
 		'EL142': {
@@ -580,7 +580,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#BCD940',
+			color: '#85B946',
 			obligatory: true
 		},
 		'EL876': {
@@ -590,7 +590,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:4, D:0, HS:8, SL:4, C:8},
 			requisitos: ['AA200', 'AA450'],
-			color: '#4082D9',
+			color: '#68B946',
 			obligatory: true
 		},
 		'ELET09': {
@@ -610,7 +610,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:3, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['BG520'],
-			color: '#D9406F',
+			color: '#97B946',
 			obligatory: true
 		},
 		'BL031': {
@@ -620,7 +620,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#40A1D9',
+			color: '#5C46B9',
 			obligatory: true
 		},
 		'BL035': {
@@ -630,7 +630,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:1, P:1, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94840',
+			color: '#8B46B9',
 			obligatory: true
 		},
 		'BT681': {
@@ -640,7 +640,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA460'],
-			color: '#D94050',
+			color: '#46B9A1',
 			obligatory: true
 		},
 		'EL485': {
@@ -650,7 +650,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:2, D:0, HS:6, SL:4, C:6},
 			requisitos: '',
-			color: '#AC40D9',
+			color: '#B9AB46',
 			obligatory: true
 		},
 		'ELET10': {
@@ -670,7 +670,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#BC40D9',
+			color: '#B9465E',
 			obligatory: false
 		},
 		'BA600': {
@@ -680,7 +680,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#D94048',
+			color: '#B9B146',
 			obligatory: false
 		},
 		'BB500': {
@@ -690,7 +690,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#40D9D1',
+			color: '#A3B946',
 			obligatory: false
 		},
 		'BB600': {
@@ -700,7 +700,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#45D940',
+			color: '#B95846',
 			obligatory: false
 		},
 		'BC500': {
@@ -710,7 +710,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#D97740',
+			color: '#B94687',
 			obligatory: false
 		},
 		'BC600': {
@@ -720,7 +720,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#4062D9',
+			color: '#46B95A',
 			obligatory: false
 		},
 		'BD001': {
@@ -730,7 +730,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:1, D:0, HS:1, SL:0, C:1},
 			requisitos: ['AA200'],
-			color: '#D940C6',
+			color: '#464EB9',
 			obligatory: false
 		},
 		'BD002': {
@@ -740,7 +740,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:2, D:0, HS:2, SL:0, C:2},
 			requisitos: ['AA200'],
-			color: '#D9BE40',
+			color: '#B97646',
 			obligatory: false
 		},
 		'BD003': {
@@ -750,7 +750,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:3, D:0, HS:3, SL:0, C:3},
 			requisitos: ['AA200'],
-			color: '#40D96A',
+			color: '#B546B9',
 			obligatory: false
 		},
 		'BD004': {
@@ -760,7 +760,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200'],
-			color: '#D9405F',
+			color: '#B946A5',
 			obligatory: false
 		},
 		'BD005': {
@@ -770,7 +770,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:5, D:0, HS:5, SL:0, C:5},
 			requisitos: ['AA200'],
-			color: '#C4D940',
+			color: '#46B995',
 			obligatory: false
 		},
 		'BD006': {
@@ -780,7 +780,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:6, D:0, HS:6, SL:0, C:6},
 			requisitos: ['AA200'],
-			color: '#7540D9',
+			color: '#6246B9',
 			obligatory: false
 		},
 		'BD007': {
@@ -790,7 +790,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:1, D:0, HS:1, SL:0, C:1},
 			requisitos: ['AA200'],
-			color: '#40D1D9',
+			color: '#9DB946',
 			obligatory: false
 		},
 		'BD008': {
@@ -800,7 +800,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:2, D:0, HS:2, SL:0, C:2},
 			requisitos: ['AA200'],
-			color: '#D94077',
+			color: '#46B3B9',
 			obligatory: false
 		},
 		'BD009': {
@@ -810,7 +810,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:3, D:0, HS:3, SL:0, C:3},
 			requisitos: ['AA200'],
-			color: '#D96740',
+			color: '#B95E46',
 			obligatory: false
 		},
 		'BD010': {
@@ -820,7 +820,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200'],
-			color: '#D9409F',
+			color: '#4648B9',
 			obligatory: false
 		},
 		'BD011': {
@@ -830,7 +830,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:5, D:0, HS:5, SL:0, C:5},
 			requisitos: ['AA200'],
-			color: '#94D940',
+			color: '#46B9B9',
 			obligatory: false
 		},
 		'BD012': {
@@ -840,7 +840,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:6, D:0, HS:6, SL:0, C:6},
 			requisitos: ['AA200'],
-			color: '#D97F40',
+			color: '#469BB9',
 			obligatory: false
 		},
 		'BD013': {
@@ -850,7 +850,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:1, D:0, HS:1, SL:0, C:1},
 			requisitos: ['AA200'],
-			color: '#D9D640',
+			color: '#4660B9',
 			obligatory: false
 		},
 		'BD014': {
@@ -860,7 +860,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:2, D:0, HS:2, SL:0, C:2},
 			requisitos: ['AA200'],
-			color: '#406AD9',
+			color: '#62B946',
 			obligatory: false
 		},
 		'BD015': {
@@ -870,7 +870,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:3, D:0, HS:3, SL:0, C:3},
 			requisitos: ['AA200'],
-			color: '#40D999',
+			color: '#7A46B9',
 			obligatory: false
 		},
 		'BD016': {
@@ -880,7 +880,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200'],
-			color: '#D9C640',
+			color: '#B99F46',
 			obligatory: false
 		},
 		'BD017': {
@@ -890,7 +890,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:5, D:0, HS:5, SL:0, C:5},
 			requisitos: ['AA200'],
-			color: '#D940B6',
+			color: '#B99946',
 			obligatory: false
 		},
 		'BD018': {
@@ -900,7 +900,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:6, D:0, HS:6, SL:0, C:6},
 			requisitos: ['AA200'],
-			color: '#6D40D9',
+			color: '#46B96C',
 			obligatory: false
 		},
 		'BD019': {
@@ -910,7 +910,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:1, D:0, HS:1, SL:0, C:1},
 			requisitos: ['AA200'],
-			color: '#405AD9',
+			color: '#8546B9',
 			obligatory: false
 		},
 		'BD020': {
@@ -920,7 +920,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:2, D:0, HS:2, SL:0, C:2},
 			requisitos: ['AA200'],
-			color: '#D940CE',
+			color: '#46B9A7',
 			obligatory: false
 		},
 		'BD021': {
@@ -930,7 +930,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:3, D:0, HS:3, SL:0, C:3},
 			requisitos: ['AA200'],
-			color: '#40C9D9',
+			color: '#A946B9',
 			obligatory: false
 		},
 		'BD022': {
@@ -940,7 +940,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:4, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200'],
-			color: '#D9407F',
+			color: '#7446B9',
 			obligatory: false
 		},
 		'BD023': {
@@ -950,7 +950,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:5, D:0, HS:5, SL:0, C:5},
 			requisitos: ['AA200'],
-			color: '#D99740',
+			color: '#5646B9',
 			obligatory: false
 		},
 		'BD024': {
@@ -960,7 +960,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:6, D:0, HS:6, SL:0, C:6},
 			requisitos: ['AA200'],
-			color: '#7CD940',
+			color: '#5CB946',
 			obligatory: false
 		},
 		'BD025': {
@@ -970,7 +970,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:10, D:0, HS:10, SL:0, C:10},
 			requisitos: ['AA200'],
-			color: '#9440D9',
+			color: '#4A46B9',
 			obligatory: false
 		},
 		'BD026': {
@@ -980,7 +980,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:0, O:12, D:0, HS:12, SL:0, C:12},
 			requisitos: ['AA200'],
-			color: '#D9A740',
+			color: '#50B946',
 			obligatory: false
 		},
 		'BD500': {
@@ -990,7 +990,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200'],
-			color: '#40D942',
+			color: '#465AB9',
 			obligatory: false
 		},
 		'BD600': {
@@ -1000,7 +1000,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200'],
-			color: '#40D972',
+			color: '#46B983',
 			obligatory: false
 		},
 		'BE500': {
@@ -1010,7 +1010,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#5D40D9',
+			color: '#4683B9',
 			obligatory: false
 		},
 		'BE501': {
@@ -1020,7 +1020,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#8C40D9',
+			color: '#B94693',
 			obligatory: false
 		},
 		'BE600': {
@@ -1030,7 +1030,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#B4D940',
+			color: '#B95246',
 			obligatory: false
 		},
 		'BE601': {
@@ -1040,7 +1040,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#40A9D9',
+			color: '#B94670',
 			obligatory: false
 		},
 		'BF500': {
@@ -1050,7 +1050,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#40D97A',
+			color: '#7AB946',
 			obligatory: false
 		},
 		'BF501': {
@@ -1060,7 +1060,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#40D952',
+			color: '#B94646',
 			obligatory: false
 		},
 		'BF600': {
@@ -1070,7 +1070,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#D9408F',
+			color: '#B9469F',
 			obligatory: false
 		},
 		'BF601': {
@@ -1080,7 +1080,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#D94040',
+			color: '#B94658',
 			obligatory: false
 		},
 		'BG500': {
@@ -1090,7 +1090,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#D96F40',
+			color: '#B97C46',
 			obligatory: false
 		},
 		'BG501': {
@@ -1100,7 +1100,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#D9CE40',
+			color: '#8BB946',
 			obligatory: false
 		},
 		'BG600': {
@@ -1110,7 +1110,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#D95040',
+			color: '#46B98F',
 			obligatory: false
 		},
 		'BG601': {
@@ -1120,7 +1120,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#407AD9',
+			color: '#4689B9',
 			obligatory: false
 		},
 		'BH501': {
@@ -1130,7 +1130,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#408AD9',
+			color: '#9746B9',
 			obligatory: false
 		},
 		'BH502': {
@@ -1140,7 +1140,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#D94097',
+			color: '#B94C46',
 			obligatory: false
 		},
 		'BH511': {
@@ -1150,7 +1150,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#9CD940',
+			color: '#B94652',
 			obligatory: false
 		},
 		'BH601': {
@@ -1160,7 +1160,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#D9AF40',
+			color: '#46A1B9',
 			obligatory: false
 		},
 		'BH602': {
@@ -1170,7 +1170,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#CC40D9',
+			color: '#46B989',
 			obligatory: false
 		},
 		'BH611': {
@@ -1180,7 +1180,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#40D992',
+			color: '#B96A46',
 			obligatory: false
 		},
 		'BI500': {
@@ -1190,7 +1190,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#55D940',
+			color: '#4654B9',
 			obligatory: false
 		},
 		'BI600': {
@@ -1200,7 +1200,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#75D940',
+			color: '#46B99B',
 			obligatory: false
 		},
 		'BL500': {
@@ -1210,7 +1210,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#D940A7',
+			color: '#B99346',
 			obligatory: false
 		},
 		'BL601': {
@@ -1220,7 +1220,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#5540D9',
+			color: '#46B960',
 			obligatory: false
 		},
 		'BM500': {
@@ -1230,7 +1230,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#40B9D9',
+			color: '#468FB9',
 			obligatory: false
 		},
 		'BM600': {
@@ -1240,7 +1240,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#7C40D9',
+			color: '#B94676',
 			obligatory: false
 		},
 		'BP500': {
@@ -1250,7 +1250,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#C440D9',
+			color: '#56B946',
 			obligatory: false
 		},
 		'BP600': {
@@ -1260,7 +1260,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#4072D9',
+			color: '#46B978',
 			obligatory: false
 		},
 		'BT500': {
@@ -1270,7 +1270,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#D98F40',
+			color: '#4678B9',
 			obligatory: false
 		},
 		'BT501': {
@@ -1280,7 +1280,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#5DD940',
+			color: '#B98D46',
 			obligatory: false
 		},
 		'BT600': {
@@ -1290,7 +1290,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#4042D9',
+			color: '#B94699',
 			obligatory: false
 		},
 		'BT601': {
@@ -1300,7 +1300,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#6540D9',
+			color: '#B98146',
 			obligatory: false
 		},
 		'BV500': {
@@ -1310,7 +1310,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#40D9A9',
+			color: '#B9B746',
 			obligatory: false
 		},
 		'BV600': {
@@ -1320,7 +1320,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#D940D6',
+			color: '#46B966',
 			obligatory: false
 		},
 		'BZ500': {
@@ -1330,7 +1330,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#84D940',
+			color: '#6EB946',
 			obligatory: false
 		},
 		'BZ600': {
@@ -1340,7 +1340,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:4, L:0, O:0, D:0, HS:4, SL:0, C:4},
 			requisitos: ['AA200', 'AA430'],
-			color: '#40D9C9',
+			color: '#AFB946',
 			obligatory: false
 		},
 		'EL101': {
@@ -1350,7 +1350,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:0, C:2},
 			requisitos: ['AA200'],
-			color: '#ACD940',
+			color: '#46B9AD',
 			obligatory: false
 		},
 		'EL201': {
@@ -1360,7 +1360,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:2, L:0, O:0, D:0, HS:2, SL:0, C:2},
 			requisitos: ['AA200'],
-			color: '#A440D9',
+			color: '#4AB946',
 			obligatory: false
 		},
 		'EL505': {
@@ -1370,7 +1370,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#6DD940',
+			color: '#6E46B9',
 			obligatory: false
 		},
 		'EL506': {
@@ -1380,7 +1380,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#40D9D9',
+			color: '#46B972',
 			obligatory: false
 		},
 		'EL605': {
@@ -1390,7 +1390,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#A4D940',
+			color: '#B946AB',
 			obligatory: false
 		},
 		'EL606': {
@@ -1400,7 +1400,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['AA200'],
-			color: '#D95F40',
+			color: '#B94681',
 			obligatory: false
 		}
 	}

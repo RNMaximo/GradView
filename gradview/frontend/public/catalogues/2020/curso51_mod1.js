@@ -4,15 +4,15 @@ const catalogue = {
 	semesters: {
 		'sem-1': {
 			id: '1',
-			subjects: ['F_128', 'F_129', 'FM003', 'MA111', 'MA141', 'MS149']
+			subjects: ['F_129', 'F_128', 'MA111', 'MA141', 'MS149', 'FM003']
 		},
 		'sem-2': {
 			id: '2',
-			subjects: ['F_228', 'F_229', 'MA211', 'MA327', 'MC102']
+			subjects: ['F_229', 'F_228', 'MA327', 'MA211', 'MC102']
 		},
 		'sem-3': {
 			id: '3',
-			subjects: ['F_328', 'F_329', 'MA311', 'ME210', 'MS211']
+			subjects: ['F_329', 'ME210', 'F_328', 'MS211', 'MA311']
 		}
 	},
 
@@ -27,7 +27,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D940C3',
+			color: '#6746B9',
 			obligatory: true
 		},
 		'F_129': {
@@ -37,7 +37,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#6B40D9',
+			color: '#46B988',
 			obligatory: true
 		},
 		'FM003': {
@@ -47,7 +47,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#D94040',
+			color: '#B946A8',
 			obligatory: true
 		},
 		'MA111': {
@@ -57,7 +57,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#40D997',
+			color: '#67B946',
 			obligatory: true
 		},
 		'MA141': {
@@ -67,7 +67,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: '',
-			color: '#D9C340',
+			color: '#B94646',
 			obligatory: true
 		},
 		'MS149': {
@@ -77,7 +77,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:0, L:0, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: '',
-			color: '#6BD940',
+			color: '#B9A846',
 			obligatory: true
 		},
 		'F_228': {
@@ -87,7 +87,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['*F_128'],
-			color: '#D940C3',
+			color: '#6746B9',
 			obligatory: true
 		},
 		'F_229': {
@@ -97,7 +97,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_128', 'F_129'],
-			color: '#A240CE',
+			color: '#5780A1',
 			obligatory: true
 		},
 		'MA211': {
@@ -107,7 +107,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA111', 'MA141'],
-			color: '#8DCE6C',
+			color: '#908046',
 			obligatory: true
 		},
 		'MA327': {
@@ -117,7 +117,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA141'],
-			color: '#D9C340',
+			color: '#B94646',
 			obligatory: true
 		},
 		'MC102': {
@@ -127,7 +127,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: '',
-			color: '#4097D9',
+			color: '#4688B9',
 			obligatory: true
 		},
 		'F_328': {
@@ -137,7 +137,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['F_128', 'MA111', 'MA141'],
-			color: '#A69F89',
+			color: '#826C6C',
 			obligatory: true
 		},
 		'F_329': {
@@ -147,7 +147,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:0, P:0, L:2, O:0, D:0, HS:2, SL:2, C:2},
 			requisitos: ['F_129', 'MA111'],
-			color: '#568DB8',
+			color: '#57B967',
 			obligatory: true
 		},
 		'MA311': {
@@ -157,7 +157,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:2, L:0, O:0, D:0, HS:6, SL:6, C:6},
 			requisitos: ['MA211'],
-			color: '#8DCE6C',
+			color: '#908046',
 			obligatory: true
 		},
 		'ME210': {
@@ -167,7 +167,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:4, P:0, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111'],
-			color: '#40D997',
+			color: '#67B946',
 			obligatory: true
 		},
 		'MS211': {
@@ -177,7 +177,7 @@ const catalogue = {
 			semestre: 1,
 			vector: {T:3, P:1, L:0, O:0, D:0, HS:4, SL:4, C:4},
 			requisitos: ['MA111', 'MA141', 'MC102'],
-			color: '#73BC90',
+			color: '#77826C',
 			obligatory: true
 		}
 	}
