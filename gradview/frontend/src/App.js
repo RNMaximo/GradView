@@ -281,7 +281,7 @@ class App extends React.Component {
           <CatalogueSelectBar
             handleSearchCatalogue={this.handleSearchCatalogue}
           />
-          <div className={"catalogue-control"}>
+          <div className={"catalogue-control bar-content"}>
 
             <div className={"selected-catalogue"}>
               <p className={"year"}>{selectedYear}</p>

@@ -91,9 +91,10 @@ class CatalogueSelectBar extends React.Component {
 
     return (
       <div
-        className={"course-select-bar content"}
+        className={"course-select-bar"}
       >
         <div
+          className={"bar-content"}
           style={
             {
               justifyContent: 'space-between',
