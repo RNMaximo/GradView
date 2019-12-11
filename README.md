@@ -14,6 +14,8 @@ Após o build os catálogos podem ser consultados localmente através do arquivo
 ```bash
 # Clona o repositório
 $ git clone https://gitlab.ic.unicamp.br/ra176675/mc030-gradview.git
+# Entra no repositório clonado
+$ cd mc030-gradview/
 # Coleta dados dos catálogos da UNICAMP, instala as dependências do projeto, constrói e abre o arquivo HTML no browser padrão.
 $ sh init.sh
 ```
