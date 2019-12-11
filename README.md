@@ -25,7 +25,7 @@ $ sh init.sh
 A seguir estão capturas da tela da aplicação destacando algumas de suas funcionalidades.
 
 <div align="center">
-    <img align="center" src="/gradview/images/34.png" alt="GradView curso 34" width="65%">
+    <img align="center" src="/images/34.png" alt="GradView curso 34" width="65%">
 </div>
 
 ### Diferentes vizualizações
@@ -33,8 +33,8 @@ A seguir estão capturas da tela da aplicação destacando algumas de suas funci
 Também é possível modificar o tamanho de cada disciplina para que seja proporcional à quantidade total de créditos da mesma.
 
 <div align="center">
-    <img align="center" src="/gradview/images/34-TP.png" alt="GradView curso 34 na visualização Teoria / Prática"  width="40%">
-    <img align="center" src="/gradview/images/34-TP-CR.png" alt="GradView curso 34 na visualização Teoria / Prática e Tamanho por créditos"  width="42%">
+    <img align="center" src="/images/34-TP.png" alt="GradView curso 34 na visualização Teoria / Prática"  width="40%">
+    <img align="center" src="/images/34-TP-CR.png" alt="GradView curso 34 na visualização Teoria / Prática e Tamanho por créditos"  width="42%">
 </div>
 
 ### Campo de busca por nome, ementa e código da disciplina.
@@ -43,30 +43,30 @@ A busca não diferencia letras maiúsculas de minúsculas, não diferencia letra
 
 
 <div align="center">
-    <img align="center" src="/gradview/images/34-B-redes.png" alt="GradView curso 34 buscando a palavra redes"  width="44.5%">
-    <img align="center" src="/gradview/images/34-B-MC.png" alt="GradView curso 34 buscando a palavra MC"  width="40%">
+    <img align="center" src="/images/34-B-redes.png" alt="GradView curso 34 buscando a palavra redes"  width="44.5%">
+    <img align="center" src="/images/34-B-MC.png" alt="GradView curso 34 buscando a palavra MC"  width="40%">
 </div>
 
 ###  Efeito quando mouse está sobre uma disciplina
 Toda a cadeia de disciplinas pré-requisitos anteriores à disciplina sob o mouse ficam coloridas enquanto as outras disciplinas do catálogo ficam cinza e com baixa opacidade.
 
 <div align="center">
-    <img align="center" src="/gradview/images/34-hover-MC732.png" alt="GradView curso 34 na visualização Teoria / Prática"  width="40%">
+    <img align="center" src="/images/34-hover-MC732.png" alt="GradView curso 34 na visualização Teoria / Prática"  width="40%">
 </div>
 
 ### Arrastar disciplinas dentro do mesmo semestre e para outros.
 É possível arrastar as disciplinas e caso ela não tenha todos seus pré-requisitos cumpridos até o semestre em que está posicionada, uma exclamação aparece no canto direito superior da mesma.
 Ao clicar na exclamação é aberto um popup com a lista de pré-requisitos não cumpridos.
 <div align="center">
-    <img align="center" src="/gradview/images/34-Move-F429.png" alt="GradView curso 34 com disciplina F 429 movida para o semestre 1 e com exclamação"  width="40%">
-    <img align="center" src="/gradview/images/34-Move-F429(!).png" alt="GradView curso 34 popup com lista de pré-requisitos não cumpridos"  width="40%">
+    <img align="center" src="/images/34-Move-F429.png" alt="GradView curso 34 com disciplina F 429 movida para o semestre 1 e com exclamação"  width="40%">
+    <img align="center" src="/images/34-Move-F429(!).png" alt="GradView curso 34 popup com lista de pré-requisitos não cumpridos"  width="40%">
 </div>
 
 ### Planejamento de eletivas
 É possível visualizar os blocos de eletivas do curso ao clicar em 'Mostrar Eletivas' e arrastá-las para os semestres. As eletivas movidas para um semestre terão uma borda preta e podem ser removidas arrastando para o retângulo com texto 'REMOVER'.
 <div align="center">
-    <img align="center" src="/gradview/images/34-EL-0.png" alt="GradView curso 34 na visualização Teoria / Prática"  width="40%">
-    <img align="center" src="/gradview/images/34-EL-TP-4.png" alt="GradView curso 34 na visualização Teoria / Prática"  width="40%">
+    <img align="center" src="/images/34-EL-0.png" alt="GradView curso 34 na visualização Teoria / Prática"  width="40%">
+    <img align="center" src="/images/34-EL-TP-4.png" alt="GradView curso 34 na visualização Teoria / Prática"  width="40%">
 </div>
 
 
