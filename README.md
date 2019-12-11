@@ -41,8 +41,8 @@ A busca não diferencia letras maiúsculas de minúsculas, não diferencia letra
 
 
 <div align="center">
-    <img align="center" src="/gradview/images/34-B-redes.png" alt="GradView curso 34 buscando a palavra redes"  width="42%">
-    <img align="center" src="/gradview/images/34-B-MC.png" alt="GradView curso 34 buscando a palavra MC"  width="42%">
+    <img align="center" src="/gradview/images/34-B-redes.png" alt="GradView curso 34 buscando a palavra redes"  width="44.5%">
+    <img align="center" src="/gradview/images/34-B-MC.png" alt="GradView curso 34 buscando a palavra MC"  width="40%">
 </div>
 
 ###  Efeito quando mouse está sobre uma disciplina
