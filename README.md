@@ -2,23 +2,48 @@
 Uma visualização gráfica inteligente dos catálogos de cursos da UNICAMP.
 
 ## Sobre
-Este projeto é composto de um front-end interativo feito em React, com armazenamento de dados em objetos JSON salvos em arquivos. O projeto atual possui alguns elementos específicos para a UNICAMP, mas que podem ser modificados para serem usado em outras universidades brasileiras.
+Este projeto é composto de um front-end interativo feito em React, com armazenamento de dados em objetos JSON salvos em arquivos. O projeto atual possui alguns elementos específicos para a UNICAMP, mas que podem ser modificados para uso em outras universidades brasileiras.
 
-## Funcionamento
-### Coleta de Dados (crawling/scraping)
-Os scripts de coleta de dados funcionam apenas para a versão do site da DAC disponível em dez/2019, podendo funcionar para anos posteriores caso não ocorram mudanças no layout das páginas. Estes scripts varrem as páginas da DAC e coletam dados de todas as disciplinas, cursos e suas modalidades desde o ano de 2012. Os  dados são salvos como objetos JSON em arquivos texto que posteriormente são usados na etapa de compilação do React.
-### Navegação
-Após o build os catálogos podem ser consultados localmente através do arquivo index.html.
 
 ## Instalação
+#### Requisitos do sistema
+É necessário ter instalado: 
+* [**git**](https://git-scm.com/downloads) para clonar o repositório.
+* [**Node.js**](https://nodejs.org/en/) para instalar dependências e construir a página HTML.
+
+#### Linux
 ```bash
 # Clona o repositório
 $ git clone https://gitlab.ic.unicamp.br/ra176675/mc030-gradview.git
 # Entra no repositório clonado
 $ cd mc030-gradview/
-# Coleta dados dos catálogos da UNICAMP, instala as dependências do projeto, constrói e abre o arquivo HTML no browser padrão.
-$ sh init.sh
+# Instala as dependências do projeto, constrói e abre o arquivo HTML no browser padrão.
+$ sh build-linux.sh
 ```
+
+#### Windows
+No menu "Iniciar" digite "cmd" e abra o "Prompt de Comandos" clicando com o botão direito e selecionando a opção "Executar como Administrador". Aceite o pedido de permissão no popup.
+```bat
+:: Clona o repositório
+git clone https://gitlab.ic.unicamp.br/ra176675/mc030-gradview.git
+:: Entra no repositório clonado
+cd mc030-gradview/
+:: Instala as dependências do projeto, constrói e abre o arquivo HTML no browser padrão.
+build-windows.bat
+```
+
+#### Navegação
+Após a instalação e construção do HTML, os catálogos podem ser consultados localmente através do arquivo `index.html`, localizado em `mc030-gradview/gradview/frontend/build`.
+
+## Dados dos Catálogos
+### Coleta de Dados (crawling/scraping)
+Os scripts de coleta de dados funcionam apenas para a versão do site da [DAC](https://www.dac.unicamp.br/portal/graduacao/catalogos-de-cursos) disponível em dez/2019, podendo funcionar para anos posteriores caso não ocorram mudanças no layout das páginas. 
+Estes scripts varrem as páginas da DAC e coletam dados de todas as disciplinas, cursos e suas modalidades desde o ano de 2012. 
+Os dados são salvos como objetos JSON em arquivos texto que posteriormente são usados na etapa de compilação do React.
+
+### Atualizando os catálogos de cursos (Anos 2021 em diante)
+Para rodar o script de atualização dos catálogos basta executar o script do Matlab `update_data/update_data.m` e ele irá automaticamente gerar os arquivos necessários para um novo build contendo as informações mais atuais da DAC.
+Será necessário construir o HTML novamente, utilizando o build descrito na instalação ou pelo comando `npm run-script build` em `mc030-gradview/gradview/frontend`.
 
 
 ## Funcionalidades
@@ -74,5 +99,8 @@ Ao clicar na exclamação é aberto um popup com a lista de pré-requisitos não
 * Douglas Delgado de Souza
 * Renato Noronha Máximo
 * Breno Bernard Nicolau de França
+
+## Como contribuir
+
 
 ## Licença 
