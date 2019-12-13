@@ -38,6 +38,9 @@ Após a instalação e construção do HTML, os catálogos podem ser consultados
 ## Funcionalidades
 A seguir estão capturas da tela da aplicação destacando algumas de suas funcionalidades.
 
+Cada retângulo é uma disciplina a ser cursada e as linhas que interligam as disciplinas são as linhas de pré-requisito.
+Para facilitar a identificação de disciplinas de uma mesma cadeia, a cor de uma disciplina é uma mistura das cores de seus pré-requisitos (média dos RGBs).
+
 <div align="center">
     <img align="center" src="/images/34.png" alt="GradView curso 34" width="65%">
 </div>
