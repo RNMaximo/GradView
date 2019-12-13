@@ -35,17 +35,6 @@ build-windows.bat
 #### Navegação
 Após a instalação e construção do HTML, os catálogos podem ser consultados localmente através do arquivo `index.html`, localizado em `mc030-gradview/gradview/frontend/build`.
 
-## Dados dos Catálogos
-### Coleta de Dados (crawling/scraping)
-Os scripts de coleta de dados funcionam apenas para a versão do site da [DAC](https://www.dac.unicamp.br/portal/graduacao/catalogos-de-cursos) disponível em dez/2019, podendo funcionar para anos posteriores caso não ocorram mudanças no layout das páginas. 
-Estes scripts varrem as páginas da DAC e coletam dados de todas as disciplinas, cursos e suas modalidades desde o ano de 2012. 
-Os dados são salvos como objetos JSON em arquivos texto que posteriormente são usados na etapa de compilação do React.
-
-### Atualizando os catálogos de cursos (Anos 2021 em diante)
-Para rodar o script de atualização dos catálogos basta executar o script do Matlab `update_data/update_data.m` e ele irá automaticamente gerar os arquivos necessários para um novo build contendo as informações mais atuais da DAC.
-Será necessário construir o HTML novamente, utilizando o build descrito na instalação ou pelo comando `npm run-script build` em `mc030-gradview/gradview/frontend`.
-
-
 ## Funcionalidades
 A seguir estão capturas da tela da aplicação destacando algumas de suas funcionalidades.
 
@@ -95,12 +84,187 @@ Ao clicar na exclamação é aberto um popup com a lista de pré-requisitos não
 </div>
 
 
+## Dados
+### Formatação dos Dados
+Existem dois formatos de arquivos de dados. Um com informações de catálogos, cursos e modalidades e outro com as informações de uma proposta de cumprimento de currículo específico.
+O único arquivo do primeiro formato está localizado em `mc030-gradview/gradview/frontend/src/Component/Catalogue/allCatalogues.js`. 
+Já com relação ao segundo formato, existe um arquivo para cada ano, curso, modalidade existente em `allCatalogues.js`. Todos eles estão organizados por ano nas pastas dentro de `mc030-gradview/gradview/frontend/public/catalogues/`
+
+#### Estrutura do objeto JSON com informações de catálogos, cursos e modalidades
+<details>
+ <summary>Clique para expandir / colapsar</summary>
+ 
+```js
+const catalogueOptions = {
+  "2012": {
+    '1': {
+      name: "Matemática - Integral",
+      modality: [
+        {
+          name: 'AA - Bacharelado em Matemática',
+          file: '2012/curso1_mod1.js'
+        },
+        {
+          name: 'AB - Licenciatura em Matemática',
+          file: '2012/curso1_mod2.js'
+        },
+        {
+          name: 'EF - Ênfase em Física Matemática',
+          file: '2012/curso1_mod3.js'
+        },
+      ]
+    },
+    '2': {
+      name: "Estatística - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2012/curso2_mod1.js'
+        },
+      ]
+    },
+    //...
+  },
+  //...
+  "2020": {
+    '1': {
+      name: "Matemática - Integral",
+      modality: [
+        {
+          name: 'AA - Bacharelado em Matemática',
+          file: '2020/curso1_mod1.js'
+        },
+        {
+          name: 'EF - Ênfase em Física Matemática',
+          file: '2020/curso1_mod2.js'
+        },
+      ]
+    },
+    '2': {
+      name: "Estatística - Integral",
+      modality: [
+        {
+          name: '',
+          file: '2020/curso2_mod1.js'
+        },
+      ]
+    }
+    //...
+  }
+};
+export default catalogueOptions;
+```
+
+</details>
+
+#### Exemplo para o currículo de 2020, curso 34 - Engenharia de Computação - Integral, modalidade AA - Sistemas de Computação
+<details>
+ <summary>Clique para expandir / colapsar</summary>
+ 
+```js
+const catalogue = {
+  totalCredits: 240,
+  maxCreditsSem: 30,
+  semesters: {
+    'sem-1': {
+      id: '1',
+      subjects: ['HZ291', 'F_128', 'F_129', 'MA111', 'MA141', 'MC102', 'QG111',
+                 'QG122']
+    },
+    'sem-2': {
+      id: '2',
+      subjects: ['F_228', 'F_229', 'MA211', 'MA327', 'MC202', 'LA122']
+    },
+    //...
+  },
+
+  eletivas: {
+    'elet-1': {
+      credits: 13,
+      hasRestrictions: false,
+      subjects: [],
+    },
+    'elet-2': {
+      credits: 12,
+      hasRestrictions: true,
+      subjects: ['MC019', 'MC020', 'MC032', 'MC033', 'MC040', 'MC041', 'MC050',
+                 'MC051'],
+    },
+    //...
+  },
+
+  subjects: {
+    'F_128': {
+      code: 'F_128',
+      name: 'Física Geral I',
+      ementa: 'Cinemática do ponto. Leis de Newton. Estática e dinâmica da
+               partícula. Trabalho e energia. Conservação da Energia. Momento
+               linear e sua conservação. Colisões. Momento angular da partícula
+               e de sistemas de partículas. Rotação de corpos rígidos.',
+      semestre: 1,
+      vector: {T:2, P:2, L:0, O:0, D:0, HS:4, SL:4, C:4},
+      requisitos: '',
+      color: '#B9A246',
+      obligatory: true
+    },
+    'MC102': {
+      code: 'MC102',
+      name: 'Algoritmos e Programação de Computadores',
+      ementa: 'Conceitos básicos de organização de computadores. Construção de
+               algoritmos e sua representação em pseudocódigo e linguagens de
+               alto nível. Desenvolvimento sistemático e implementação de
+               programas. Estruturação, depuração, testes e documentação de
+               programas. Resolução de problemas.',
+      semestre: 1,
+      vector: {T:4, P:0, L:2, O:0, D:0, HS:6, SL:6, C:6},
+      requisitos: '',
+      color: '#A2B946',
+      obligatory: true
+    },
+    //...
+  }
+};
+
+export default catalogue;
+```
+
+</details>
+
+### Coleta de Dados (crawling/scraping)
+Os scripts de coleta de dados funcionam apenas para a versão do site da [DAC](https://www.dac.unicamp.br/portal/graduacao/catalogos-de-cursos) disponível em dez/2019, podendo funcionar para anos posteriores caso não ocorram mudanças no layout das páginas. 
+Estes scripts varrem as páginas da DAC e coletam dados de todas as disciplinas, cursos e suas modalidades desde o ano de 2012. 
+Os dados são salvos como objetos JSON em arquivos texto que posteriormente são usados na etapa de compilação do React.
+
+### Atualizando os catálogos de cursos (Anos 2021 em diante)
+Para rodar o script de atualização dos catálogos basta executar o script do Matlab `update_data/update_data.m` e ele irá automaticamente gerar os arquivos necessários para um novo build contendo as informações mais atuais da DAC.
+Será necessário construir o HTML novamente, utilizando o build descrito na instalação ou pelo comando `npm run-script build` em `mc030-gradview/gradview/frontend`.
+
+
 ## Autores
+* Breno Bernard Nicolau de França
 * Douglas Delgado de Souza
 * Renato Noronha Máximo
-* Breno Bernard Nicolau de França
-
-## Como contribuir
 
 
 ## Licença 
+MIT License
+
+Copyright (c) 2019 Breno Bernard Nicolau de França; Douglas Delgado de Souza; Renato Noronha Maximo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
